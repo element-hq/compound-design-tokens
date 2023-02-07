@@ -1,0 +1,64 @@
+{
+  "color": {
+    "grey-100": {
+      "value": "#fbfbfc",
+      "type": "color"
+    },
+    "gray-200": {
+      "value": "#f7f8f9",
+      "type": "color"
+    },
+    "gray-300": {
+      "value": "#f0f1f3",
+      "type": "color"
+    },
+    "gray-400": {
+      "value": "#e3e5e8",
+      "type": "color"
+    },
+    "gray-500": {
+      "value": "#cfd2d8",
+      "type": "color"
+    },
+    "gray-600": {
+      "value": "#bfc4cc",
+      "type": "color"
+    },
+    "gray-700": {
+      "value": "#a7adb8",
+      "type": "color"
+    },
+    "gray-800": {
+      "value": "#828996",
+      "type": "color"
+    },
+    "gray-900": {
+      "value": "#656c79",
+      "type": "color"
+    },
+    "gray-1000": {
+      "value": "#585e6a",
+      "type": "color"
+    },
+    "gray-1100": {
+      "value": "#4b515a",
+      "type": "color"
+    },
+    "gray-1200": {
+      "value": "#3b3f47",
+      "type": "color"
+    },
+    "gray-1300": {
+      "value": "#2a2d33",
+      "type": "color"
+    },
+    "gray-1400": {
+      "value": "#1c1d20",
+      "type": "color"
+    },
+    "green-900": {
+      "value": "#007a62",
+      "type": "color"
+    }
+  }
+}

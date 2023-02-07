@@ -1,0 +1,15 @@
+/**
+ * TODO: Auto-generate this file to allow for dynamic themes to be generated
+ */
+
+@import url("./cpd-light.css") screen;
+@import url("./cpd-light-hc.css") screen;
+@import url("./cpd-dark.css") screen;
+@import url("./cpd-dark-hc.css") screen;
+
+@import url("./cpd-light-mq.css") screen and (prefers-color-scheme: light);
+@import url("./cpd-light-hc-mq.css") screen and (prefers-color-scheme: light)
+  and (prefers-contrast: more);
+@import url("./cpd-dark-mq.css") screen and (prefers-color-scheme: dark);
+@import url("./cpd-dark-hc-mq.css") screen and (prefers-color-scheme: dark) and
+  (prefers-contrast: more);

@@ -1,0 +1,21 @@
+:root {
+  --cpd-color-green-900: #125b4a;
+  --cpd-color-gray-1400: #1b1c1f;
+  --cpd-color-gray-1300: #202125;
+  --cpd-color-gray-1200: #2d2f35;
+  --cpd-color-gray-1100: #34383f;
+  --cpd-color-gray-1000: #40444d;
+  --cpd-color-gray-900: #4b505b;
+  --cpd-color-gray-800: #6d7381;
+  --cpd-color-gray-700: #888f9d;
+  --cpd-color-gray-600: #a7adb8;
+  --cpd-color-gray-500: #c0c4cc;
+  --cpd-color-gray-400: #dadce1;
+  --cpd-color-gray-300: #e5e6ea;
+  --cpd-color-gray-200: #f0f1f3;
+  --cpd-color-grey-100: #f7f8f9;
+  --cpd-color-surface-level-1: var(--cpd-color-gray-200);
+  --cpd-color-text-accent: var(--cpd-color-green-900);
+  --cpd-color-text-secondary: var(--cpd-color-gray-900);
+  --cpd-color-text-primary: var(--cpd-color-gray-1400);
+}

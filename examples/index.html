@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        max-width: 80vw;
+      }
+      aside {
+        border: 1px solid var(--cpd-color-text-secondary);
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      input {
+        accent-color: #0dbd8b;
+      }
+      style {
+        white-space: pre;
+        border: 1px solid var(--cpd-color-text-secondary);
+        border-radius: 8px;
+      }
+    </style>
+    <main>
+      <h1>Compound design tokens</h1>
+      <p>
+        Design tokens are a way to define and manage design-related variables
+        such as colors, typography, and spacing in a consistent and reusable
+        manner. They can be used to define the visual design language of a
+        product across different platforms, such as web, mobile, and print. They
+        can be stored in a central location and be easily updated and shared
+        across teams, allowing for consistent design across different platforms.
+      </p>
+      <a href="https://github.com/vector-im/compound/tree/main/design-tokens"
+        >https://github.com/vector-im/compound/tree/main/design-tokens</a
+      >
+      <style style="display: block" contenteditable="true">
+        body {
+          font: var(--cpd-font-body-md);
+          background: var(--cpd-color-surface-level-1);
+        }
+
+        * {
+          color: var(--cpd-color-text-primary);
+        }
+
+        h1 {
+          font: var(--cpd-font-heading-md);
+          color: var(--cpd-color-text-secondary);
+        }
+
+        main {
+          padding: var(--cpd-space-6x);
+        }
+      </style>
+    </main>
+    <aside>
+      <label>
+        <input type="radio" name="theme" id="light" value="light" checked />
+        ☀️ Light
+      </label>
+      <label>
+        <input type="radio" name="theme" id="dark" value="dark" />
+        🌑 Dark
+      </label>
+      <label>
+        <input type="checkbox" name="hc" id="hc" />
+        High contrast
+      </label>
+    </aside>
+
+    <script>
+      const themeRadios = document.querySelectorAll("[name=theme]");
+      const hcCheckbox = document.querySelector("#hc");
+
+      document.querySelectorAll("input").forEach((input) => {
+        input.addEventListener("change", () => setTheme());
+      });
+
+      function setTheme() {
+        let theme;
+
+        for (const themeRadio of themeRadios) {
+          if (themeRadio.checked) {
+            theme = themeRadio.value;
+          }
+        }
+
+        if (hcCheckbox.checked) {
+          theme += "-hc";
+        }
+
+        theme += ".css";
+
+        document
+          .querySelectorAll("link")
+          .forEach((link) => document.body.removeChild(link));
+
+        const ln = document.createElement("link");
+        ln.href = "../assets/web/css/" + theme;
+        ln.rel = "stylesheet";
+        document.body.append(ln);
+      }
+
+      setTheme();
+    </script>
+  </body>
+</html>
