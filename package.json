@@ -18,13 +18,13 @@
   "main": "assets/web/js/index.js",
   "author": "",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/vector-im/compound/tree/main/design-tokens",
+  "homepage": "https://github.com/vector-im/compound-design-tokens",
   "bugs": {
     "url": "https://github.com/vector-im/compound/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vector-im/compound.git"
+    "url": "git+https://github.com/vector-im/compound-design-tokens.git"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^0.3.1",
