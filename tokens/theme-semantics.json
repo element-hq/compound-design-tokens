@@ -2,21 +2,21 @@
   "color": {
     "text": {
       "primary": {
-        "value": "{color.gray-1400}",
+        "value": "{color.gray.1400}",
         "type": "color"
       },
       "secondary": {
-        "value": "{color.gray-900}",
+        "value": "{color.gray.900}",
         "type": "color"
       },
       "accent": {
-        "value": "{color.green-900}",
+        "value": "{color.green.900}",
         "type": "color"
       }
     },
     "surface": {
       "level-1": {
-        "value": "{color.gray-200}",
+        "value": "{color.gray.200}",
         "type": "color"
       }
     }
