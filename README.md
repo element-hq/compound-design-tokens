@@ -19,28 +19,8 @@ Tokens are exported to three platforms
 - **Android**
   - Kotlin
 
-## 🤓 Development
+## 📗 Documentation
 
-The tokens are defined under the `tokens/` folder and follow the [tokens.studio specification](https://docs.tokens.studio/tokens/json-schema).
-They are then transformed to the supported platforms using [Style Dictionary](https://amzn.github.io/style-dictionary/).
-
-All consumable tokens are generated under `assets/`. Generate them by running
-
-```
-yarn build
-```
-
-## 🔄 Synchronise tokens with tokens.studio
-
-Prequisite
-
-- [Read tokens.studio documentation about GitHub sync](https://docs.tokens.studio/sync/github)
-- [Create a personal access token on GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-
-| Property       | Value                            |
-| -------------- | -------------------------------- |
-| **Name**       | Compound design tokens           |
-| **Repository** | vector-im/compound-design-tokens |
-| **Branch**     | main                             |
-| **File path**  | tokens/                          |
-| **baseUrl**    | N/A                              |
+- [Development](./docs/development.md)
+- [Release](./docs/development.md)
+- [Synchronise with Figma](./docs/sync-tokens.md)
