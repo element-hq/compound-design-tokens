@@ -168,10 +168,6 @@ object DarkHcDesignTokens {
   val cpdBorderWidth1 = 1
   val cpdSpace0X = 0
   val cpdSpaceScale = 4
-  val cpdColorSurfaceLevel1 = cpdColorGray200
-  val cpdColorTextAccent = cpdColorGreen900
-  val cpdColorTextSecondary = cpdColorGray900
-  val cpdColorTextPrimary = cpdColorGray1400
   val cpdSpace64X = cpdSpaceScale * 64
   val cpdSpace56X = cpdSpaceScale * 56
   val cpdSpace48X = cpdSpaceScale * 48

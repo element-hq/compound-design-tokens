@@ -166,10 +166,6 @@ public class CpdLightDesignTokens {
     public static let cpdBorderWidth1 = 1
     public static let cpdSpace0X = 0
     public static let cpdSpaceScale = 4
-    public static let cpdColorSurfaceLevel1 = cpdColorGray200
-    public static let cpdColorTextAccent = cpdColorGreen900
-    public static let cpdColorTextSecondary = cpdColorGray900
-    public static let cpdColorTextPrimary = cpdColorGray1400
     public static let cpdSpace64X = cpdSpaceScale * 64
     public static let cpdSpace56X = cpdSpaceScale * 56
     public static let cpdSpace48X = cpdSpaceScale * 48

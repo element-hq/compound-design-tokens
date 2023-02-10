@@ -218,7 +218,3 @@ export const cpdColorPink1100 = "#ffbbc9";
 export const cpdColorPink1200 = "#ffccd7";
 export const cpdColorPink1300 = "#ffe7ec";
 export const cpdColorPink1400 = "#fff0f3";
-export const cpdColorTextPrimary = "#f3f4f6";
-export const cpdColorTextSecondary = "#a9b4c0";
-export const cpdColorTextAccent = "#37c998";
-export const cpdColorSurfaceLevel1 = "#11202f";
