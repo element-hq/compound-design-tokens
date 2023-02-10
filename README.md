@@ -19,7 +19,7 @@ Tokens are exported to three platforms
 - **Android**
   - Kotlin
 
-## 📗 Documentation
+## 📗 Documentation
 
 - [Development](./docs/development.md)
 - [Release](./docs/development.md)
