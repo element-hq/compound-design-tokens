@@ -38,7 +38,7 @@
       "type": "spacing"
     },
     "6x": {
-      "value": "{space.scale} * 6",
+      "value": "24",
       "type": "spacing"
     },
     "7x": {
@@ -54,15 +54,15 @@
       "type": "spacing"
     },
     "10x": {
-      "value": "{space.scale} * 10",
+      "value": "40",
       "type": "spacing"
     },
     "11x": {
-      "value": "{space.scale} * 11",
+      "value": "44",
       "type": "spacing"
     },
     "12x": {
-      "value": "{space.scale} * 12",
+      "value": "48",
       "type": "spacing"
     },
     "13x": {
@@ -78,7 +78,7 @@
       "type": "spacing"
     },
     "16x": {
-      "value": "{space.scale} * 16",
+      "value": "64",
       "type": "spacing"
     },
     "20x": {
@@ -98,7 +98,7 @@
       "type": "spacing"
     },
     "36x": {
-      "value": "{space.scale} * 36",
+      "value": "144",
       "type": "spacing"
     },
     "40x": {
@@ -110,7 +110,7 @@
       "type": "spacing"
     },
     "56x": {
-      "value": "{space.scale} * 56",
+      "value": "224",
       "type": "spacing"
     },
     "64x": {
