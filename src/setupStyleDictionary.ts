@@ -20,6 +20,8 @@ import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
 
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
+import pxToCGFloat from "./transforms/swift/pxToCGFloat";
+import toFontWeight from "./transforms/swift/toFontWeight";
 import { getStyleDictionaryConfig } from "./configs";
 import { Platform, Theme } from "./@types";
 
@@ -29,6 +31,14 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerTransform({
     name: "camelCaseDecimal",
     ...camelCaseDecimal,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/pxToCGFloat",
+    ...pxToCGFloat,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/toFontWeight",
+    ...toFontWeight,
   } as Named<Transform>);
   return sb;
 }

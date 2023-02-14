@@ -14,20 +14,28 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Platform } from "style-dictionary/types/Platform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import { camelCase } from "lodash";
 import { Transform } from "style-dictionary/types/Transform";
+import { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
  * after a camel case operation
  */
 export default {
-  type: "name",
-  transformer: function (token: TransformedToken, options: Platform): string {
-    const underscore = "ThisShouldBeAnUnderscore";
-    const name = [options.prefix].concat(token.path).join(" ");
-    return camelCase(name.replaceAll("_", underscore)).replace(underscore, "_");
+  type: "value",
+  matcher: (token: TransformedToken) => {
+    const attrs = token.attributes ?? {};
+    return attrs.category === "font" && attrs.type === "weight";
+  },
+  transformer: function (token: TransformedToken): string {
+    switch (token.value) {
+      case "700":
+        return "Font.Weight.bold";
+      case "600":
+        return "Font.Weight.semibold";
+      case "400":
+      default:
+        return "Font.Weight.regular";
+    }
   },
 } as Transform;

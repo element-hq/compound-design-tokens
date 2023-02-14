@@ -23,7 +23,15 @@ export default function getIOSConfig(theme: Theme): Platform {
   return {
     transformGroup: `tokens-ios`,
     prefix: COMPOUND_TOKENS_NAMESPACE,
-    transforms: ["attribute/cti", "color/UIColorSwift", "camelCaseDecimal"],
+    transforms: [
+      "attribute/cti",
+      "color/UIColorSwift",
+      "font/swift/literal",
+      "swift/pxToCGFloat",
+      "swift/toFontWeight",
+      "camelCaseDecimal",
+      "ts/resolveMath",
+    ],
     buildPath: `assets/ios/swift/`,
     files: [
       {
