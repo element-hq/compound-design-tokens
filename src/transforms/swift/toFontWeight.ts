@@ -18,8 +18,8 @@ import { Transform } from "style-dictionary/types/Transform";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
- * A transformer to change tokens.0_5x and keep the underscore
- * after a camel case operation
+ * A transformer to weight values to UIKit `Font.Weight`
+ * https://developer.apple.com/documentation/swiftui/font/weight
  */
 export default {
   type: "value",
