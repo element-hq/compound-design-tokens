@@ -119,7 +119,7 @@
     "letter-spacing": {
       "body": {
         "xs": {
-          "value": "0%",
+          "value": "0",
           "type": "letterSpacing"
         },
         "sm": {
