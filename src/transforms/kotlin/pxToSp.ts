@@ -22,7 +22,6 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
 export default {
   type: "value",
   matcher: function (token: TransformedToken): boolean {
-    console.log(token.attributes);
     const attrs = token.attributes ?? {};
     return (
       attrs.category === "font" &&

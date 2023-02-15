@@ -167,7 +167,7 @@ public class CpdLightDesignTokens {
     public static let cpdFontLetterSpacingBodyLg = -2.6%
     public static let cpdFontLetterSpacingBodyMd = -1.6%
     public static let cpdFontLetterSpacingBodySm = -0.6%
-    public static let cpdFontLetterSpacingBodyXs = 0%
+    public static let cpdFontLetterSpacingBodyXs = 0
     public static let cpdFontSizeHeadingXl = 34
     public static let cpdFontSizeHeadingLg = 28
     public static let cpdFontSizeHeadingMd = 22
