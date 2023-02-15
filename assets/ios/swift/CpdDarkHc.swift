@@ -3,7 +3,7 @@
 // CpdDarkHc.swift
 //
 
-import SwiftUI
+import UIKit
 
 public class CpdDarkHcDesignTokens {
     public static let cpdColorPink1400 = UIColor(red: 1.000, green: 0.941, blue: 0.953, alpha: 1)

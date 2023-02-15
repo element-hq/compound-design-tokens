@@ -21,15 +21,11 @@ import _ from "lodash";
 
 export default function getAndroidConfig(theme: Theme): Platform {
   return {
-    transformGroup: `tokens-android`,
-    prefix: COMPOUND_TOKENS_NAMESPACE,
     transforms: [
-      "ts/size/letterspacing",
-      "ts/color/hexrgba",
-      "ts/typography/shorthand",
-      "ts/shadow/shorthand",
       "attribute/cti",
       "color/composeColor",
+      "kotlin/fontWeight",
+      "kotlin/literal",
       "camelCaseDecimal",
     ],
     buildPath: `assets/android/kotlin/`,
@@ -39,7 +35,8 @@ export default function getAndroidConfig(theme: Theme): Platform {
           _.camelCase(COMPOUND_TOKENS_NAMESPACE + " " + theme)
         )}.kt`,
         format: "compose/object",
-        className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
+        className:
+          "Compound" + _.upperFirst(_.camelCase(theme)) + "DesignTokens",
         packageName: "io.element.compound.tokens",
         options: {
           showFileHeader: false,

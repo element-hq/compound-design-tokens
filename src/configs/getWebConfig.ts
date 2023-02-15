@@ -26,7 +26,6 @@ export default function (target: "js" | "css", theme: Theme): Platform {
   }
 
   return {
-    transformGroup: `tokens-${target}`,
     prefix: COMPOUND_TOKENS_NAMESPACE,
     transforms: [
       "ts/resolveMath",
