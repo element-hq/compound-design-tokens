@@ -166,10 +166,10 @@ object LightHcDesignTokens {
   val cpdFontLetterSpacingHeadingLg = 0
   val cpdFontLetterSpacingHeadingMd = 0
   val cpdFontLetterSpacingHeadingSm = 0
-  val cpdFontLetterSpacingBodyLg = 0.25px
-  val cpdFontLetterSpacingBodyMd = 0.25px
-  val cpdFontLetterSpacingBodySm = 0.4px
-  val cpdFontLetterSpacingBodyXs = 0.5px
+  val cpdFontLetterSpacingBodyLg = 0.015625em
+  val cpdFontLetterSpacingBodyMd = 0.017857em
+  val cpdFontLetterSpacingBodySm = 0.033333em
+  val cpdFontLetterSpacingBodyXs = 0.045454em
   val cpdFontSizeHeadingXl = 34
   val cpdFontSizeHeadingLg = 28
   val cpdFontSizeHeadingMd = 22

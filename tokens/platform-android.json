@@ -119,20 +119,24 @@
     "letter-spacing": {
       "body": {
         "xs": {
-          "value": "0.5px",
-          "type": "letterSpacing"
+          "value": "4.5454%",
+          "type": "letterSpacing",
+          "description": "px: 0.5px"
         },
         "sm": {
-          "value": "0.4px",
-          "type": "letterSpacing"
+          "value": "3.3333%",
+          "type": "letterSpacing",
+          "description": "px: 0.4px"
         },
         "md": {
-          "value": "0.25px",
-          "type": "letterSpacing"
+          "value": "1.7857%",
+          "type": "letterSpacing",
+          "description": "px: 0.25px"
         },
         "lg": {
-          "value": "0.25px",
-          "type": "letterSpacing"
+          "value": "1.5625%",
+          "type": "letterSpacing",
+          "description": "px: 0.25px"
         }
       },
       "heading": {
