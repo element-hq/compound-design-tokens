@@ -15,7 +15,6 @@ limitations under the License.
 */
 
 import { Platform } from "style-dictionary/types/Platform";
-import { COMPOUND_TOKENS_NAMESPACE } from "./utils";
 import { Theme } from "../@types";
 import _ from "lodash";
 
@@ -35,13 +34,10 @@ export default function getAndroidConfig(theme: Theme): Platform {
     buildPath: `assets/android/kotlin/`,
     files: [
       {
-        destination: `${_.upperFirst(
-          _.camelCase(COMPOUND_TOKENS_NAMESPACE + " " + theme)
-        )}.kt`,
         format: "compose/object",
-        className:
-          "Compound" + _.upperFirst(_.camelCase(theme)) + "DesignTokens",
-        packageName: "io.element.compound.tokens",
+        destination: `${_.upperFirst(_.camelCase(theme))}DesignTokens.kt`,
+        className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
+        packageName: "io.element.android.compound",
         options: {
           showFileHeader: false,
         },

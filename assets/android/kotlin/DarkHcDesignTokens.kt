@@ -1,13 +1,13 @@
 
 
 
-package io.element.compound.tokens;
+package io.element.android.compound;
 
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
-object CompoundDarkHcDesignTokens {
+object DarkHcDesignTokens {
   val borderWidth0_5 = 0.5.dp
   val borderWidth1 = 1.dp
   val borderWidth2 = 2.dp
