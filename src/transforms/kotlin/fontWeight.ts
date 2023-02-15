@@ -28,14 +28,7 @@ export default {
     return attrs.category === "font" && attrs.type === "weight";
   },
   transformer: function (token: TransformedToken): string {
-    switch (token.value) {
-      case "700":
-        return `FontWeight.Bold`;
-      case "500":
-        return `FontWeight.Medium`;
-      case "400":
-      default:
-        return `FontWeight.Regular`;
-    }
+    // See https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight
+    return `FontWeight.W${token.value}`;
   },
 };

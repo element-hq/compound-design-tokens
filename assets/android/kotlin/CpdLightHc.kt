@@ -168,56 +168,56 @@ object CompoundLightHcDesignTokens {
   val colorYellow900 = Color(0xffbb7a00)
   val fontBodyLgMedium = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Medium
+fontWeight = FontWeight.W500
 lineHeight = 22.dp
 fontSize = 16.dp
 letterSpacing = 0.015625.em
 )
   val fontBodyLgRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 22.dp
 fontSize = 16.dp
 letterSpacing = 0.015625.em
 )
   val fontBodyMdMedium = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Medium
+fontWeight = FontWeight.W500
 lineHeight = 20.dp
 fontSize = 14.dp
 letterSpacing = 0.017857.em
 )
   val fontBodyMdRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 20.dp
 fontSize = 14.dp
 letterSpacing = 0.017857.em
 )
   val fontBodySmMedium = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Medium
+fontWeight = FontWeight.W500
 lineHeight = 17.dp
 fontSize = 12.dp
 letterSpacing = 0.033333.em
 )
   val fontBodySmRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 17.dp
 fontSize = 12.dp
 letterSpacing = 0.033333.em
 )
   val fontBodyXsMedium = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Medium
+fontWeight = FontWeight.W500
 lineHeight = 15.dp
 fontSize = 11.dp
 letterSpacing = 0.045454.em
 )
   val fontBodyXsRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 15.dp
 fontSize = 11.dp
 letterSpacing = 0.045454.em
@@ -226,56 +226,56 @@ letterSpacing = 0.045454.em
   val fontFamilySans = "Roboto"
   val fontHeadingLgBold = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Bold
+fontWeight = FontWeight.W700
 lineHeight = 34.dp
 fontSize = 28.dp
 letterSpacing = 0.em
 )
   val fontHeadingLgRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 34.dp
 fontSize = 28.dp
 letterSpacing = 0.em
 )
   val fontHeadingMdBold = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Bold
+fontWeight = FontWeight.W700
 lineHeight = 27.dp
 fontSize = 22.dp
 letterSpacing = 0.em
 )
   val fontHeadingMdRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 27.dp
 fontSize = 22.dp
 letterSpacing = 0.em
 )
   val fontHeadingSmMedium = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Medium
+fontWeight = FontWeight.W500
 lineHeight = 25.dp
 fontSize = 20.dp
 letterSpacing = 0.em
 )
   val fontHeadingSmRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 25.dp
 fontSize = 20.dp
 letterSpacing = 0.em
 )
   val fontHeadingXlBold = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Bold
+fontWeight = FontWeight.W700
 lineHeight = 41.dp
 fontSize = 34.dp
 letterSpacing = 0.em
 )
   val fontHeadingXlRegular = TextStyle(
 fontFamily = "Roboto"
-fontWeight = FontWeight.Regular
+fontWeight = FontWeight.W400
 lineHeight = 41.dp
 fontSize = 34.dp
 letterSpacing = 0.em
@@ -304,9 +304,9 @@ letterSpacing = 0.em
   val fontSizeHeadingMd = 22.dp
   val fontSizeHeadingSm = 20.dp
   val fontSizeHeadingXl = 34.dp
-  val fontWeightBold = FontWeight.Bold
-  val fontWeightMedium = FontWeight.Medium
-  val fontWeightRegular = FontWeight.Regular
+  val fontWeightBold = FontWeight.W700
+  val fontWeightMedium = FontWeight.W500
+  val fontWeightRegular = FontWeight.W400
   val space0X = 0.dp
   val space0_5X = 4.dp * 0.5
   val space10X = 40.dp
