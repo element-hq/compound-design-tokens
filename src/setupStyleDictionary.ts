@@ -27,6 +27,7 @@ import literal from "./transforms/kotlin/literal";
 import typography from "./transforms/kotlin/typography";
 import pxToDp from "./transforms/kotlin/pxToDp";
 import pxToSp from "./transforms/kotlin/pxToSp";
+import percentageToEm from "./transforms/kotlin/percentageToEm";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -50,6 +51,10 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerTransform({
     name: "kotlin/pxToSp",
     ...pxToSp,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/percentageToEm",
+    ...percentageToEm,
   } as Named<Transform>);
   sb.registerTransform({
     name: "kotlin/typography/shorthand",
