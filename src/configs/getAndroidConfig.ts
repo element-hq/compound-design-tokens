@@ -26,6 +26,7 @@ export default function getAndroidConfig(theme: Theme): Platform {
       "color/composeColor",
       "kotlin/fontWeight",
       "kotlin/literal",
+      "kotlin/typography/shorthand",
       "camelCaseDecimal",
     ],
     buildPath: `assets/android/kotlin/`,
@@ -40,7 +41,6 @@ export default function getAndroidConfig(theme: Theme): Platform {
         packageName: "io.element.compound.tokens",
         options: {
           showFileHeader: false,
-          outputReferences: true,
         },
       },
     ],
