@@ -24,6 +24,8 @@ import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import toFontWeight from "./transforms/swift/toFontWeight";
 import { getStyleDictionaryConfig } from "./configs";
 import { Platform, Theme } from "./@types";
+import colorset from "./actions/swift/colorset";
+import { Action } from "style-dictionary/types/Action";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -40,5 +42,11 @@ export default async function (theme: Theme, platform: Platform) {
     name: "swift/toFontWeight",
     ...toFontWeight,
   } as Named<Transform>);
+
+  sb.registerAction({
+    name: "ios/colorset",
+    ...colorset,
+  } as Named<Action>);
+
   return sb;
 }

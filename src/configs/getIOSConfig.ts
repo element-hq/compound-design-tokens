@@ -21,8 +21,6 @@ import _ from "lodash";
 
 export default function getIOSConfig(theme: Theme): Platform {
   return {
-    transformGroup: `tokens-ios`,
-    prefix: COMPOUND_TOKENS_NAMESPACE,
     transforms: [
       "attribute/cti",
       "color/UIColorSwift",
@@ -32,6 +30,10 @@ export default function getIOSConfig(theme: Theme): Platform {
       "camelCaseDecimal",
       "ts/resolveMath",
     ],
+    options: {
+      theme,
+    },
+    actions: ["ios/colorset"],
     buildPath: `assets/ios/swift/`,
     files: [
       {
