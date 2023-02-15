@@ -27,6 +27,8 @@ export default function getAndroidConfig(theme: Theme): Platform {
       "kotlin/fontWeight",
       "kotlin/literal",
       "kotlin/typography/shorthand",
+      "kotlin/pxToDp",
+      "kotlin/pxToSp",
       "camelCaseDecimal",
     ],
     buildPath: `assets/android/kotlin/`,

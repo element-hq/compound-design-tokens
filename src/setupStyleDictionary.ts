@@ -25,6 +25,8 @@ import { Platform, Theme } from "./@types";
 import fontWeight from "./transforms/kotlin/fontWeight";
 import literal from "./transforms/kotlin/literal";
 import typography from "./transforms/kotlin/typography";
+import pxToDp from "./transforms/kotlin/pxToDp";
+import pxToSp from "./transforms/kotlin/pxToSp";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -40,6 +42,14 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerTransform({
     name: "kotlin/literal",
     ...literal,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/pxToDp",
+    ...pxToDp,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/pxToSp",
+    ...pxToSp,
   } as Named<Transform>);
   sb.registerTransform({
     name: "kotlin/typography/shorthand",
