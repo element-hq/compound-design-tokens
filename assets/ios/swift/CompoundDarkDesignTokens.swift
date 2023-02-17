@@ -1,11 +1,11 @@
 
 //
-// CpdDark.swift
+// CompoundDarkDesignTokens.swift
 //
 
 import UIKit
 
-public class CpdDarkDesignTokens {
+public class CompoundDarkDesignTokens {
     public static let colorPink1400 = UIColor(red: 0.255, green: 0.000, blue: 0.082, alpha: 1)
     public static let colorPink1300 = UIColor(red: 0.290, green: 0.000, blue: 0.110, alpha: 1)
     public static let colorPink1200 = UIColor(red: 0.392, green: 0.000, blue: 0.184, alpha: 1)

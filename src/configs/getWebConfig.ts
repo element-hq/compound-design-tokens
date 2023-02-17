@@ -15,10 +15,11 @@ limitations under the License.
 */
 
 import { Platform } from "style-dictionary/types/Platform";
-import { COMPOUND_TOKENS_NAMESPACE } from "./utils";
 import { Theme } from "../@types";
 import { File } from "style-dictionary/types/File";
 import _ from "lodash";
+
+const COMPOUND_TOKENS_NAMESPACE = "cpd";
 
 export default function (target: "js" | "css", theme: Theme): Platform {
   if (target !== "css" && target !== "js") {

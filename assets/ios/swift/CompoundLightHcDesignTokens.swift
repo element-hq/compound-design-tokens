@@ -1,11 +1,11 @@
 
 //
-// CpdLightHc.swift
+// CompoundLightHcDesignTokens.swift
 //
 
 import UIKit
 
-public class CpdLightHcDesignTokens {
+public class CompoundLightHcDesignTokens {
     public static let colorPink1400 = UIColor(red: 1.000, green: 0.906, blue: 0.925, alpha: 1)
     public static let colorPink1300 = UIColor(red: 1.000, green: 0.820, blue: 0.859, alpha: 1)
     public static let colorPink1200 = UIColor(red: 1.000, green: 0.671, blue: 0.741, alpha: 1)
