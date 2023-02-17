@@ -3,7 +3,7 @@
 // CpdLight.swift
 //
 
-import SwiftUI
+import UIKit
 
 public class CpdLightDesignTokens {
     public static let cpdColorPink1400 = UIColor(red: 0.263, green: 0.000, blue: 0.090, alpha: 1)

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es6",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM"],
     "strict": true,
     "sourceMap": true,
     "declaration": true,
