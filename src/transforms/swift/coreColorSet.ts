@@ -17,7 +17,7 @@ limitations under the License.
 import _ from "lodash";
 import { Transform } from "style-dictionary/types/Transform";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import isCoreColor from "../../filters/isCoreColor";
+import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore

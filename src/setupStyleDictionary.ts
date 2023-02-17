@@ -34,6 +34,9 @@ import pxToSp from "./transforms/kotlin/pxToSp";
 import percentageToEm from "./transforms/kotlin/percentageToEm";
 import coreColorSet from "./transforms/swift/coreColorSet";
 import iosExclude from "./filters/ios/exclude";
+import pxToRem from "./transforms/pxToRem";
+import percentageToUnitless from "./transforms/css/percentageToUnitless";
+import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -84,8 +87,18 @@ export default async function (theme: Theme, platform: Platform) {
     name: "kotlin/typography/shorthand",
     ...typography,
   } as Named<Transform>);
+  sb.registerTransform({
+    name: "css/pxToRem",
+    ...pxToRem,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "css/percentageToUnitless",
+    ...percentageToUnitless,
+  } as Named<Transform>);
 
   sb.registerFilter(iosExclude);
+  sb.registerFilter(isCoreColor);
+  sb.registerFilter(isNotCoreColor);
 
   return sb;
 }

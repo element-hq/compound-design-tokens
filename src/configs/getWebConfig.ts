@@ -21,6 +21,8 @@ import _ from "lodash";
 
 const COMPOUND_TOKENS_NAMESPACE = "cpd";
 
+const basePxFontSize = 16;
+
 export default function (target: "js" | "css", theme: Theme): Platform {
   if (target !== "css" && target !== "js") {
     throw `Unsupport web platform: ${target}`;
@@ -33,10 +35,12 @@ export default function (target: "js" | "css", theme: Theme): Platform {
       "ts/size/px",
       "ts/size/letterspacing",
       "ts/color/hexrgba",
-      "ts/typography/shorthand",
+      "ts/typography/css/shorthand",
       "ts/shadow/shorthand",
       "attribute/cti",
       "color/hex",
+      "css/pxToRem",
+      "css/percentageToUnitless",
       target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
     ],
     buildPath: `assets/web/${target}/`,
@@ -55,20 +59,33 @@ function getFilesFormat(theme: Theme, target: "css" | "js"): File[] {
         options: {
           showFileHeader: false,
           outputReferences: true,
+          basePxFontSize,
         },
       },
     ];
   } else {
     return [
+      {
+        destination: `${COMPOUND_TOKENS_NAMESPACE}-common.css`,
+        format: "css/variables",
+        filter: "isNotCoreColor",
+        options: {
+          showFileHeader: false,
+          outputReferences: true,
+          basePxFontSize,
+        },
+      },
       // Generates the theme under a scoped selector
       // e.g. .cpd-dark-hc { /* ... */ }
       {
         destination: `${COMPOUND_TOKENS_NAMESPACE}-${theme}.css`,
         format: "css/variables",
+        filter: "isCoreColor",
         options: {
           showFileHeader: false,
           outputReferences: true,
           selector: `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
+          basePxFontSize,
         },
       },
       // Generates the theme under the :root
@@ -76,9 +93,11 @@ function getFilesFormat(theme: Theme, target: "css" | "js"): File[] {
       {
         destination: `${COMPOUND_TOKENS_NAMESPACE}-${theme}-mq.css`,
         format: "css/variables",
+        filter: "isCoreColor",
         options: {
           showFileHeader: false,
           outputReferences: true,
+          basePxFontSize,
         },
       },
     ];
