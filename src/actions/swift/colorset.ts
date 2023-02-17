@@ -18,7 +18,7 @@ import StyleDictionary from "style-dictionary";
 import fs from "fs-extra";
 import { Theme } from "../../@types";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import isCoreColor from "../../filters/isCoreColor";
+import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
  * Filter the core color

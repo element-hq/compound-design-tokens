@@ -48,13 +48,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tokens-studio/sd-transforms@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@tokens-studio/sd-transforms/-/sd-transforms-0.3.1.tgz"
-  integrity sha512-F5l/gjDr8km/Tuvk98rXyakJg/8p9R3slLSGB74fjYzGEuMtozRJyGWyeI0+kFgzwUj/mdB4Rb856Zr2LATvLw==
+"@tokens-studio/sd-transforms@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@tokens-studio/sd-transforms/-/sd-transforms-0.4.3.tgz#f8d9ab99c1b7d833aa7953bff63203cda3373bd2"
+  integrity sha512-+StZpzFNONjoIMx5ys5cxU6FjJgpJCOnLCTWA5ctT4s3/kAfCpJ8oEant+cEJvSI8vcNkWxWLK56VAvXyLQ1dA==
   dependencies:
     color2k "^2.0.1"
-    expr-eval "^2.0.2"
+    colorjs.io "^0.4.3"
     postcss-calc-ast-parser "^0.1.4"
     style-dictionary "^3.7.2"
 
@@ -98,14 +98,9 @@
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.191.tgz"
   integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^18.13.0":
   version "18.13.0"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.13.0.tgz"
-  integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
-
-"@types/node@^18.13.0":
-  version "18.13.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.13.0.tgz#0400d1e6ce87e9d3032c19eb6c58205b0d3f7850"
   integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
 
 acorn-walk@^8.1.1:
@@ -232,6 +227,11 @@ color2k@^2.0.1:
   resolved "https://registry.npmjs.org/color2k/-/color2k-2.0.1.tgz"
   integrity sha512-iCg+xrEqtYISsSJZN1z44fyhv4EfX8lSkcDhodt6VnMf1+iMwZxAtmGXchTCeMUnTbXunGvUVK6E3skkApPnZw==
 
+colorjs.io@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/colorjs.io/-/colorjs.io-0.4.3.tgz#0f12aca97508d7db8f53ed304d28f079b3b3fff5"
+  integrity sha512-Jr6NiWFZCuSECl23Bhe4jvDldQsE0ErnWrdl3xIUFy+Bkp0l8r5qt/iZlNH47/xxGP5izcyC8InjoUoI4Po+Pg==
+
 commander@^8.3.0:
   version "8.3.0"
   resolved "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz"
@@ -285,11 +285,6 @@ eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
-
-expr-eval@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/expr-eval/-/expr-eval-2.0.2.tgz"
-  integrity sha512-4EMSHGOPSwAfBiibw3ndnP0AvjDWLsMvGOvWEZ2F96IGk0bIVdjQisOHxReSkE13mHcfbuCiXw+G4y0zv6N8Eg==
 
 fast-glob@^3.2.12:
   version "3.2.12"

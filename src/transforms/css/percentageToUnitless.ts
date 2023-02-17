@@ -14,25 +14,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import isCoreToken from "./isCoreToken";
+import { Transform } from "style-dictionary/types/Transform";
 
 /**
- * Filter the core color
+ * A transformer to change tokens.0_5x and keep the underscore
+ * after a camel case operation
  */
-const isCoreColor = {
-  name: "isCoreColor",
-  matcher: function (token: TransformedToken): boolean {
-    return isCoreToken.matcher(token) && token.attributes?.category === "color";
+export default {
+  type: "value",
+  matcher: function (token) {
+    const attrs = token.attributes ?? {};
+    return attrs.category === "font" && attrs.type === "line-height";
   },
-} as StyleDictionary.Filter;
-
-const isNotCoreColor = {
-  name: "isNotCoreColor",
-  matcher: function (token: TransformedToken): boolean {
-    return !isCoreColor.matcher(token);
+  transformer: function (token, options) {
+    const val = parseFloat(token.value.replace("%", ""));
+    return `${val / 100}`;
   },
-};
-
-export { isCoreColor, isNotCoreColor };
+} as Transform;
