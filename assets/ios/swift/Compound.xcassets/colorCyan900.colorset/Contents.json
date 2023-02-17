@@ -4,51 +4,70 @@
       "idiom": "universal",
       "color": {
         "color-space": "srgb",
-        "components": "UIColor(red: 0.000, green: 0.447, blue: 0.675, alpha: 1)",
-        "appearances": []
+        "components": {
+          "alpha": "0.0039",
+          "red": "0.0000",
+          "green": "0.4471",
+          "blue": "0.6745"
+        }
       }
     },
     {
       "idiom": "universal",
+      "appearances": [
+        {
+          "appearance": "contrast",
+          "value": "high"
+        }
+      ],
       "color": {
         "color-space": "srgb",
-        "components": "UIColor(red: 0.000, green: 0.576, blue: 0.745, alpha: 1)",
-        "appearances": [
-          {
-            "appearance": "contrast",
-            "value": "high"
-          }
-        ]
+        "components": {
+          "alpha": "0.0039",
+          "red": "0.0000",
+          "green": "0.5765",
+          "blue": "0.7451"
+        }
       }
     },
     {
       "idiom": "universal",
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
       "color": {
         "color-space": "srgb",
-        "components": "UIColor(red: 0.000, green: 0.298, blue: 0.518, alpha: 1)",
-        "appearances": [
-          {
-            "appearance": "luminosity",
-            "value": "dark"
-          }
-        ]
+        "components": {
+          "alpha": "0.0039",
+          "red": "0.0000",
+          "green": "0.2980",
+          "blue": "0.5176"
+        }
       }
     },
     {
       "idiom": "universal",
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        },
+        {
+          "appearance": "contrast",
+          "value": "high"
+        }
+      ],
       "color": {
         "color-space": "srgb",
-        "components": "UIColor(red: 0.263, green: 0.765, blue: 0.824, alpha: 1)",
-        "appearances": [
-          {
-            "appearance": "luminosity",
-            "value": "dark"
-          },
-          {
-            "appearance": "contrast",
-            "value": "high"
-          }
-        ]
+        "components": {
+          "alpha": "0.0039",
+          "red": "0.2627",
+          "green": "0.7647",
+          "blue": "0.8235"
+        }
       }
     }
   ],

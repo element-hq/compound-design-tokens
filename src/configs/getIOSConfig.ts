@@ -22,6 +22,7 @@ export default function getIOSConfig(theme: Theme): Platform {
   return {
     transforms: [
       "attribute/cti",
+      "attribute/color",
       "color/UIColorSwift",
       "font/swift/literal",
       "swift/pxToCGFloat",

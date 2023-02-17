@@ -30,8 +30,17 @@ export default {
     // the first one in the list...
     if (platform.options!.theme === "light") {
       fs.rmSync(assetPath, { recursive: true });
+      fs.ensureDirSync(assetPath);
+      // We need an empty `Contents.json` file at the root of the xcassets folder
+      // and another one in each colorset folder too
+      fs.writeFileSync(
+        assetPath + "/Contents.json",
+        JSON.stringify(contents),
+        "utf8"
+      );
+    } else {
+      fs.ensureDirSync(assetPath);
     }
-    fs.ensureDirSync(assetPath);
 
     /**
      * We're only interested in creating colorset for the core tokens. All the
@@ -52,18 +61,28 @@ export default {
       fs.ensureDirSync(colorsetPath);
 
       const colorset = getOrCreateColorset(colorsetPath + "/Contents.json");
-      colorset.colors.push({
+
+      const color: {
+        idiom: string;
+        appearances?: ColorSetAppearance[];
+        color: SRGBColor;
+      } = {
         idiom: "universal",
+        appearances: getAppearances(platform.options!.theme),
         color: {
           "color-space": `srgb`,
-          components: coreColor.value,
+          components: getSRGBComponent(coreColor.attributes!.rgb),
           /**
            * The `theme` is not a `style-dictionary` value, but an option we pass
            * on the iOS config. They refer to the compound themes
            */
-          appearances: getAppearances(platform.options!.theme),
         },
-      });
+      };
+      if (color.appearances!.length === 0) {
+        delete color.appearances;
+      }
+
+      colorset.colors.push(color);
 
       fs.writeFileSync(
         `${colorsetPath}/Contents.json`,
@@ -84,6 +103,16 @@ export default {
 type ColorSetAppearance = {
   appearance: string;
   value: string;
+};
+
+type SRGBColor = {
+  "color-space": "srgb";
+  components: {
+    alpha: string;
+    red: string;
+    green: string;
+    blue: string;
+  };
 };
 
 function getAppearances(theme: Theme): ColorSetAppearance[] {
@@ -115,10 +144,33 @@ function getOrCreateColorset(path: string): any {
   return (
     colorset ?? {
       colors: [],
-      info: {
-        author: "xcode",
-        version: 1,
-      },
+      ...contents,
     }
   );
 }
+
+const contents = {
+  info: {
+    author: "xcode",
+    version: 1,
+  },
+};
+
+const getSRGBComponent = ({
+  a,
+  r,
+  g,
+  b,
+}: {
+  a: number;
+  r: number;
+  g: number;
+  b: number;
+}): SRGBColor["components"] => {
+  return {
+    alpha: (a / 255).toFixed(4).toString(),
+    red: (r / 255).toFixed(4).toString(),
+    green: (g / 255).toFixed(4).toString(),
+    blue: (b / 255).toFixed(4).toString(),
+  };
+};
