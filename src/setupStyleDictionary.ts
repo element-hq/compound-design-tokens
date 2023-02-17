@@ -32,6 +32,7 @@ import typography from "./transforms/kotlin/typography";
 import pxToDp from "./transforms/kotlin/pxToDp";
 import pxToSp from "./transforms/kotlin/pxToSp";
 import percentageToEm from "./transforms/kotlin/percentageToEm";
+import coreColorSet from "./transforms/swift/coreColorSet";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -47,6 +48,10 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerTransform({
     name: "swift/toFontWeight",
     ...toFontWeight,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/coreColorSet",
+    ...coreColorSet,
   } as Named<Transform>);
 
   sb.registerAction({
