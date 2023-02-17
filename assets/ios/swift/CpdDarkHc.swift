@@ -167,7 +167,7 @@ public class CpdDarkHcDesignTokens {
     public static let fontLetterSpacingBodyLg = "-2.6%"
     public static let fontLetterSpacingBodyMd = "-1.6%"
     public static let fontLetterSpacingBodySm = "-0.6%"
-    public static let fontLetterSpacingBodyXs = "0%"
+    public static let fontLetterSpacingBodyXs = "0"
     public static let fontSizeHeadingXl = CGFloat(34)
     public static let fontSizeHeadingLg = CGFloat(28)
     public static let fontSizeHeadingMd = CGFloat(22)
