@@ -15,30 +15,38 @@ limitations under the License.
 */
 
 import { Platform } from "style-dictionary/types/Platform";
-import { COMPOUND_TOKENS_NAMESPACE } from "./utils";
 import { Theme } from "../@types";
 import _ from "lodash";
 
 export default function getIOSConfig(theme: Theme): Platform {
   return {
-    transformGroup: `tokens-ios`,
-    prefix: COMPOUND_TOKENS_NAMESPACE,
-    transforms: ["attribute/cti", "color/UIColorSwift", "camelCaseDecimal"],
+    transforms: [
+      "attribute/cti",
+      "attribute/color",
+      "font/swift/literal",
+      "swift/pxToCGFloat",
+      "swift/toFontWeight",
+      "swift/coreColorSet",
+      "camelCaseDecimal",
+      "ts/resolveMath",
+    ],
+    options: {
+      theme,
+    },
+    actions: ["ios/colorset"],
     buildPath: `assets/ios/swift/`,
     files: [
       {
+        filter: "ios/exclude",
         destination: `${_.upperFirst(
-          _.camelCase(COMPOUND_TOKENS_NAMESPACE + " " + theme)
+          _.camelCase(`Compound ${theme} DesignTokens`)
         )}.swift`,
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
         },
-        className:
-          _.upperFirst(COMPOUND_TOKENS_NAMESPACE) +
-          _.upperFirst(_.camelCase(theme)) +
-          "DesignTokens",
+        className: `Compound${_.upperFirst(_.camelCase(theme))}DesignTokens`,
       },
     ],
   };

@@ -22,8 +22,6 @@ import getAndroidConfig from "./getAndroidConfig";
 import getIOSConfig from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 
-export const COMPOUND_TOKENS_NAMESPACE = "cpd";
-
 export function getStyleDictionaryConfig(
   theme: Theme,
   platform: Platform

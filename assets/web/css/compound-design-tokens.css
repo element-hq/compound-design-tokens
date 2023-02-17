@@ -2,6 +2,8 @@
  * TODO: Auto-generate this file to allow for dynamic themes to be generated
  */
 
+@import url("./cpd-common.css");
+
 @import url("./cpd-light.css") screen;
 @import url("./cpd-light-hc.css") screen;
 @import url("./cpd-dark.css") screen;

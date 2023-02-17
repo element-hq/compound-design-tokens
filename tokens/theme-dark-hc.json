@@ -1,64 +1,796 @@
 {
   "color": {
-    "grey-100": {
-      "value": "#17181a",
-      "type": "color"
+    "gray": {
+      "100": {
+        "value": "#0c1b29",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#11202f",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#1a2939",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#1f2f3f",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#304051",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#3f5062",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#56687a",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#718295",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#a9b4c0",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#b5bec9",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#c7ced5",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#d4dadf",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#ebedf0",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#f3f4f6",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-200": {
-      "value": "#1b1c1f",
-      "type": "color"
+    "red": {
+      "100": {
+        "value": "#3b0000",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#470000",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#570000",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#640000",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#830009",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#9e0c1e",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#c81d28",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#f52f33",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#ff958a",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#ffa79c",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#ffbdb5",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#ffcec7",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#ffe8e5",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#fff2ef",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-300": {
-      "value": "#25262b",
-      "type": "color"
+    "orange": {
+      "100": {
+        "value": "#3c0000",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#470000",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#580000",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#650000",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#820300",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#972105",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#b34007",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#d15f0b",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#f89d58",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#faac73",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#fdc096",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#fed0b1",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#ffe9db",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#fff2e8",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-400": {
-      "value": "#2b2d33",
-      "type": "color"
+    "yellow": {
+      "100": {
+        "value": "#3a0300",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#410900",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#4c1400",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#541d00",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#682e03",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#7b3e03",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#975600",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#b47200",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#e2aa00",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#ebb607",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#f6c816",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#fed632",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#ffedb0",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#fff4d0",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-500": {
-      "value": "#3a3d45",
-      "type": "color"
+    "lime": {
+      "100": {
+        "value": "#001e00",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#002500",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#002f00",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#003700",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#004a00",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#005c00",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#187611",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#31941d",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#5eca2f",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#69d536",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#91e173",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#ade998",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#daf6d0",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#e8f9e3",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-600": {
-      "value": "#494d57",
-      "type": "color"
+    "green": {
+      "100": {
+        "value": "#001f0e",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#002513",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#002e1b",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#003622",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#004832",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#005a43",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#00745c",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#109173",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#37c998",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#61d1a6",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#8eddbc",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#abe5cb",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#d9f3e7",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#e8f8f0",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-700": {
-      "value": "#5f6572",
-      "type": "color"
+    "cyan": {
+      "100": {
+        "value": "#001448",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#001b4e",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#002559",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#002d61",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#003f74",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#005188",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#006ba4",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#008aba",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#43c3d2",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#6accd9",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#92d8e2",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#afe2e9",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#d9f2f5",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#e8f7f9",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-800": {
-      "value": "#797f8e",
-      "type": "color"
+    "blue": {
+      "100": {
+        "value": "#00095d",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#001063",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#001d6e",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#032677",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#083890",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#0b48ab",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#0e61d1",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#327fe9",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#88b4f6",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#99c0f8",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#b2cffa",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#c4dbfc",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#e4eefe",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#eef4fe",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-900": {
-      "value": "#a4a8b4",
-      "type": "color"
+    "purple": {
+      "100": {
+        "value": "#1c005a",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#210068",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#2c0080",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#350090",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#490bb1",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#5a27c6",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#7343e5",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#8b66f8",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#b6a7ff",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#c0b5ff",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#cec6ff",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#dad4ff",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#eeebff",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#f4f3ff",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-1000": {
-      "value": "#b6b9c3",
-      "type": "color"
+    "fuchsia": {
+      "100": {
+        "value": "#2c0042",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#37004e",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#44005c",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#4f0368",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#65177d",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#7d2394",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#a233b3",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#c152cb",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#dd9ce2",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#e3abe7",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#eabfed",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#f0cff2",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#f8e8f9",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#fbf1fb",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     },
-    "gray-1100": {
-      "value": "#c9cbd3",
-      "type": "color"
-    },
-    "gray-1200": {
-      "value": "#d5d7dd",
-      "type": "color"
-    },
-    "gray-1300": {
-      "value": "#eaebee",
-      "type": "color"
-    },
-    "gray-1400": {
-      "value": "#f1f2f4",
-      "type": "color"
-    },
-    "green-900": {
-      "value": "#19be8d",
-      "type": "color"
+    "pink": {
+      "100": {
+        "value": "#3c0012",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#450018",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#550024",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#61002d",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#7b0c41",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#98114f",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#c51761",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#f12b75",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#ff92ac",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#ffa4b8",
+        "type": "color",
+        "description": "WCAG: 10"
+      },
+      "1100": {
+        "value": "#ffbbc9",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#ffccd7",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#ffe7ec",
+        "type": "color",
+        "description": "WCAG: 16"
+      },
+      "1400": {
+        "value": "#fff0f3",
+        "type": "color",
+        "description": "WCAG: 17"
+      }
     }
   }
 }

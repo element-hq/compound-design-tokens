@@ -20,8 +20,23 @@ import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
 
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
+import pxToCGFloat from "./transforms/swift/pxToCGFloat";
+import toFontWeight from "./transforms/swift/toFontWeight";
 import { getStyleDictionaryConfig } from "./configs";
 import { Platform, Theme } from "./@types";
+import colorset from "./actions/swift/colorset";
+import { Action } from "style-dictionary/types/Action";
+import fontWeight from "./transforms/kotlin/fontWeight";
+import literal from "./transforms/kotlin/literal";
+import typography from "./transforms/kotlin/typography";
+import pxToDp from "./transforms/kotlin/pxToDp";
+import pxToSp from "./transforms/kotlin/pxToSp";
+import percentageToEm from "./transforms/kotlin/percentageToEm";
+import coreColorSet from "./transforms/swift/coreColorSet";
+import iosExclude from "./filters/ios/exclude";
+import pxToRem from "./transforms/pxToRem";
+import percentageToUnitless from "./transforms/css/percentageToUnitless";
+import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -30,5 +45,60 @@ export default async function (theme: Theme, platform: Platform) {
     name: "camelCaseDecimal",
     ...camelCaseDecimal,
   } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/pxToCGFloat",
+    ...pxToCGFloat,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/toFontWeight",
+    ...toFontWeight,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/coreColorSet",
+    ...coreColorSet,
+  } as Named<Transform>);
+
+  sb.registerAction({
+    name: "ios/colorset",
+    ...colorset,
+  } as Named<Action>);
+
+  sb.registerTransform({
+    name: "kotlin/fontWeight",
+    ...fontWeight,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/literal",
+    ...literal,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/pxToDp",
+    ...pxToDp,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/pxToSp",
+    ...pxToSp,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/percentageToEm",
+    ...percentageToEm,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "kotlin/typography/shorthand",
+    ...typography,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "css/pxToRem",
+    ...pxToRem,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "css/percentageToUnitless",
+    ...percentageToUnitless,
+  } as Named<Transform>);
+
+  sb.registerFilter(iosExclude);
+  sb.registerFilter(isCoreColor);
+  sb.registerFilter(isNotCoreColor);
+
   return sb;
 }
