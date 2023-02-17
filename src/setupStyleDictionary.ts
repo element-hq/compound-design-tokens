@@ -33,6 +33,7 @@ import pxToDp from "./transforms/kotlin/pxToDp";
 import pxToSp from "./transforms/kotlin/pxToSp";
 import percentageToEm from "./transforms/kotlin/percentageToEm";
 import coreColorSet from "./transforms/swift/coreColorSet";
+import iosExclude from "./filters/ios/exclude";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -83,5 +84,8 @@ export default async function (theme: Theme, platform: Platform) {
     name: "kotlin/typography/shorthand",
     ...typography,
   } as Named<Transform>);
+
+  sb.registerFilter(iosExclude);
+
   return sb;
 }

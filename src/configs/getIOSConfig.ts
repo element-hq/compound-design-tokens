@@ -37,6 +37,7 @@ export default function getIOSConfig(theme: Theme): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
+        filter: "ios/exclude",
         destination: `${_.upperFirst(
           _.camelCase(`Compound ${theme} DesignTokens`)
         )}.swift`,
