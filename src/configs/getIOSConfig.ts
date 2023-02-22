@@ -45,6 +45,7 @@ export default function getIOSConfig(theme: Theme): Platform {
         options: {
           showFileHeader: false,
           outputReferences: true,
+          import: "SwiftUI",
         },
         className: `Compound${_.upperFirst(_.camelCase(theme))}DesignTokens`,
       },

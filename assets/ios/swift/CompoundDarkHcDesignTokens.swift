@@ -3,7 +3,7 @@
 // CompoundDarkHcDesignTokens.swift
 //
 
-import UIKit
+import SwiftUI
 
 public class CompoundDarkHcDesignTokens {
     public static let colorPink1400 = Color("colorPink1400")

@@ -3,7 +3,7 @@
 // CompoundLightDesignTokens.swift
 //
 
-import UIKit
+import SwiftUI
 
 public class CompoundLightDesignTokens {
     public static let colorPink1400 = Color("colorPink1400")
