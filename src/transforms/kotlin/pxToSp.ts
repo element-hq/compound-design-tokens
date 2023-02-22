@@ -29,6 +29,6 @@ export default {
     );
   },
   transformer: function (token: TransformedToken): string {
-    return token.value.toString().replace("px", "") + ".dp";
+    return token.value.toString().replace("px", "") + ".sp";
   },
 };
