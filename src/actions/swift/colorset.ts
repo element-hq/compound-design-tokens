@@ -168,7 +168,7 @@ const getSRGBComponent = ({
   b: number;
 }): SRGBColor["components"] => {
   return {
-    alpha: (a / 255).toFixed(4).toString(),
+    alpha: a.toFixed(4).toString(),
     red: (r / 255).toFixed(4).toString(),
     green: (g / 255).toFixed(4).toString(),
     blue: (b / 255).toFixed(4).toString(),
