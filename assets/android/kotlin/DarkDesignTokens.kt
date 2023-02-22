@@ -3,9 +3,9 @@
 
 package io.element.android.compound;
 
-
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
+import androidx.compose.ui.text.*
 
 object DarkDesignTokens {
   val borderWidth0_5 = 0.5.dp
