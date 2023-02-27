@@ -23,5 +23,5 @@ Tokens are exported to three platforms
 ## 📗 Documentation
 
 - [Development](./docs/development.md)
-- [Release](./docs/development.md)
+- [Release](./docs/release.md)
 - [Synchronise with Figma](./docs/sync-tokens.md)
