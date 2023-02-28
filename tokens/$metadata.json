@@ -5,8 +5,8 @@
     "platform-android",
     "platform-ios",
     "theme-light",
-    "theme-light-hc",
     "theme-dark",
+    "theme-light-hc",
     "theme-dark-hc",
     "theme-semantics"
   ]
