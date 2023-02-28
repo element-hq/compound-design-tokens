@@ -1,9 +1,9 @@
 {
   "tokenSetOrder": [
     "cross-platform",
-    "platform-web",
     "platform-android",
     "platform-ios",
+    "platform-web",
     "theme-light",
     "theme-dark",
     "theme-light-hc",

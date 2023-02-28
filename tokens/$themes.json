@@ -686,5 +686,37 @@
       "color.text.action.link": "S:4673d93435a2b74439bedc4c07b6ce9571c76031,",
       "color.theme.bg": "S:781f24cd0727c7430fedfc98aac0e29689432438,"
     }
+  },
+  {
+    "id": "e12210b9270d7047e0bed40f06eaa66d5bd7a9c7",
+    "name": "Global",
+    "selectedTokenSets": {
+      "cross-platform": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "96f4f9bd2bf32c4657bfe283f418fc093117942f",
+    "name": "Android",
+    "selectedTokenSets": {
+      "platform-android": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "0022f9989257cb4474cf2429dc471f3ea70d0f9d",
+    "name": "iOS",
+    "selectedTokenSets": {
+      "platform-ios": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "22ad1f7c65308da86722dc9335e31be4d9fa53d7",
+    "name": "Web",
+    "selectedTokenSets": {
+      "platform-web": "enabled"
+    },
+    "$figmaStyleReferences": {}
   }
 ]
