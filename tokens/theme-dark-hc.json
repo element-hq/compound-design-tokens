@@ -791,6 +791,10 @@
         "type": "color",
         "description": "WCAG: 17"
       }
+    },
+    "bg": {
+      "value": "#101317",
+      "type": "color"
     }
   }
 }

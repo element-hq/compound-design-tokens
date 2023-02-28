@@ -27,6 +27,12 @@
           "type": "color"
         }
       }
+    },
+    "bg": {
+      "canvas": {
+        "value": "{color.bg}",
+        "type": "color"
+      }
     }
   }
 }

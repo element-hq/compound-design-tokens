@@ -166,7 +166,9 @@
       "color.pink.1100": "S:d98c7534d8a792203de1e6fbba53da8648d80866,",
       "color.pink.1200": "S:a6087081715663d81b166fb74b5802905b562b1d,",
       "color.pink.1300": "S:1ed525614cbf52c3f0d04d27ec648f47cee2df07,",
-      "color.pink.1400": "S:92eb607beb21b7193c17743c8ba476cfb7bc9743,"
+      "color.pink.1400": "S:92eb607beb21b7193c17743c8ba476cfb7bc9743,",
+      "color.bg.canvas": "S:48cbbc475ac0223687b8967c84bd401827a7d38c,",
+      "color.bg": "S:ea2b035df90403b26b5caf7b87140adb5aee2cdc,"
     }
   },
   {
@@ -336,7 +338,9 @@
       "color.pink.1100": "S:e4752b182c961859a08d08adef83a550b391c049,",
       "color.pink.1200": "S:a44486083e0b99f278467cf3a156bfad03be2ebd,",
       "color.pink.1300": "S:7b00026b125559cc523433f9e5eca0ba0363e02b,",
-      "color.pink.1400": "S:0434ff0dace9a3ac811fec73d2cae85c64a26225,"
+      "color.pink.1400": "S:0434ff0dace9a3ac811fec73d2cae85c64a26225,",
+      "color.bg.canvas": "S:af4373d7bd6a4cffc97d62beaba6a3c25227c56c,",
+      "color.bg": "S:bb5bb913b909a2009f4dba8fb66df25065d97419,"
     }
   },
   {
@@ -506,7 +510,9 @@
       "color.pink.1100": "S:dbe59f2f197b9567ce9ea8a2be56939fd6d8e66d,",
       "color.pink.1200": "S:06db6ff35832d64d263db703aee5278da5f58cd0,",
       "color.pink.1300": "S:e5291de4a6473bb1d181916b0f89fdef22ab6371,",
-      "color.pink.1400": "S:0185414e396dadff66357f27cc5e3350fe6b55be,"
+      "color.pink.1400": "S:0185414e396dadff66357f27cc5e3350fe6b55be,",
+      "color.bg.canvas": "S:c5e410ba57cb79432d4fb2ad435b9e24dbb01f8f,",
+      "color.bg": "S:f3ec19b5cc362bc18d3b8cd039a87dd5ee61b415,"
     }
   },
   {
@@ -676,7 +682,9 @@
       "color.pink.1100": "S:ffc055bf66ceda1e78889c3f7693d25c7fe2b75d,",
       "color.pink.1200": "S:18075f23c6783872ddedf102fdc7568119f176f5,",
       "color.pink.1300": "S:2e3a089f900218ee608a21d093f6f10409e1c908,",
-      "color.pink.1400": "S:3202ac58fc24084fbbabebd223fa28295b1be965,"
+      "color.pink.1400": "S:3202ac58fc24084fbbabebd223fa28295b1be965,",
+      "color.bg.canvas": "S:9b4776cff69fa0eaeb34d843285c65204d029156,",
+      "color.bg": "S:781f24cd0727c7430fedfc98aac0e29689432438,"
     }
   }
 ]
