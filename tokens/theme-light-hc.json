@@ -1,5 +1,12 @@
 {
   "color": {
+    "theme": {
+      "bg": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "WCAG: 1"
+      }
+    },
     "gray": {
       "100": {
         "value": "#f7f9fa",
@@ -790,12 +797,6 @@
         "value": "#410015",
         "type": "color",
         "description": "WCAG: 17"
-      }
-    },
-    "theme": {
-      "bg": {
-        "value": "#fff",
-        "type": "color"
       }
     }
   }
