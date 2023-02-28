@@ -792,9 +792,11 @@
         "description": "WCAG: 17"
       }
     },
-    "bg": {
-      "value": "#fff",
-      "type": "color"
+    "theme": {
+      "bg": {
+        "value": "#fff",
+        "type": "color"
+      }
     }
   }
 }

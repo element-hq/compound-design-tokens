@@ -1,10 +1,12 @@
 {
   "color": {
-    "text": {
-      "link": {
-        "value": "{color.blue.900}",
+    "bg": {
+      "canvas": {
+        "value": "{color.theme.bg}",
         "type": "color"
-      },
+      }
+    },
+    "text": {
       "primary": {
         "value": "{color.gray.1400}",
         "type": "color"
@@ -25,13 +27,11 @@
         "critical": {
           "value": "{color.red.900}",
           "type": "color"
+        },
+        "link": {
+          "value": "{color.blue.900}",
+          "type": "color"
         }
-      }
-    },
-    "bg": {
-      "canvas": {
-        "value": "{color.bg}",
-        "type": "color"
       }
     }
   }
