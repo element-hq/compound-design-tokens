@@ -2,79 +2,79 @@
   "color": {
     "gray": {
       "100": {
-        "value": "#0c1b29",
+        "value": "#181a1f",
         "type": "color",
         "description": "WCAG: 1.06"
       },
       "200": {
-        "value": "#11202f",
+        "value": "#1d1f24",
         "type": "color",
         "description": "WCAG: 1.12"
       },
       "300": {
-        "value": "#1a2939",
+        "value": "#26282d",
         "type": "color",
         "description": "WCAG: 1.25"
       },
       "400": {
-        "value": "#1f2f3f",
+        "value": "#2b2e33",
         "type": "color",
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#304051",
+        "value": "#3c3f44",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#3f5062",
+        "value": "#4a4f55",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#56687a",
+        "value": "#606770",
         "type": "color",
         "description": "WCAG: 3.25"
       },
       "800": {
-        "value": "#718295",
+        "value": "#79818d",
         "type": "color",
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#a9b4c0",
+        "value": "#acb4bd",
         "type": "color",
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#b5bec9",
+        "value": "#b8bfc7",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#c7ced5",
+        "value": "#c8ced5",
         "type": "color",
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#d4dadf",
+        "value": "#d5dae1",
         "type": "color",
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#ebedf0",
+        "value": "#ebeef2",
         "type": "color",
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#f3f4f6",
+        "value": "#f2f5f7",
         "type": "color",
         "description": "WCAG: 17"
       }
     },
     "red": {
       "100": {
-        "value": "#3b0000",
+        "value": "#3e0000",
         "type": "color",
         "description": "WCAG: 1.06"
       },
@@ -84,7 +84,7 @@
         "description": "WCAG: 1.12"
       },
       "300": {
-        "value": "#570000",
+        "value": "#590000",
         "type": "color",
         "description": "WCAG: 1.25"
       },
@@ -99,12 +99,12 @@
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#9e0c1e",
+        "value": "#9f0d1e",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#c81d28",
+        "value": "#c81e28",
         "type": "color",
         "description": "WCAG: 3.25"
       },
@@ -114,12 +114,12 @@
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#ff958a",
+        "value": "#ff968c",
         "type": "color",
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#ffa79c",
+        "value": "#ffa79d",
         "type": "color",
         "description": "WCAG: 10"
       },
@@ -129,12 +129,12 @@
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#ffcec7",
+        "value": "#ffcfc8",
         "type": "color",
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#ffe8e5",
+        "value": "#ffe9e6",
         "type": "color",
         "description": "WCAG: 16"
       },
@@ -166,17 +166,17 @@
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#820300",
+        "value": "#830500",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#972105",
+        "value": "#972206",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#b34007",
+        "value": "#b44007",
         "type": "color",
         "description": "WCAG: 3.25"
       },
@@ -191,12 +191,12 @@
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#faac73",
+        "value": "#faad73",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#fdc096",
+        "value": "#fdc197",
         "type": "color",
         "description": "WCAG: 11.75"
       },
@@ -206,12 +206,12 @@
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#ffe9db",
+        "value": "#ffeadb",
         "type": "color",
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#fff2e8",
+        "value": "#fff2ea",
         "type": "color",
         "description": "WCAG: 17"
       }
@@ -243,12 +243,12 @@
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#7b3e03",
+        "value": "#7c3e02",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#975600",
+        "value": "#985600",
         "type": "color",
         "description": "WCAG: 3.25"
       },
@@ -258,7 +258,7 @@
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#e2aa00",
+        "value": "#e3aa00",
         "type": "color",
         "description": "WCAG: 8.87"
       },
@@ -268,7 +268,7 @@
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#f6c816",
+        "value": "#f7c816",
         "type": "color",
         "description": "WCAG: 11.75"
       },
@@ -278,7 +278,7 @@
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#ffedb0",
+        "value": "#ffedb1",
         "type": "color",
         "description": "WCAG: 16"
       },
@@ -290,17 +290,17 @@
     },
     "lime": {
       "100": {
-        "value": "#001e00",
+        "value": "#002000",
         "type": "color",
         "description": "WCAG: 1.06"
       },
       "200": {
-        "value": "#002500",
+        "value": "#002600",
         "type": "color",
         "description": "WCAG: 1.12"
       },
       "300": {
-        "value": "#002f00",
+        "value": "#003000",
         "type": "color",
         "description": "WCAG: 1.25"
       },
@@ -335,17 +335,17 @@
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#69d536",
+        "value": "#6ad639",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#91e173",
+        "value": "#92e175",
         "type": "color",
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#ade998",
+        "value": "#afe99a",
         "type": "color",
         "description": "WCAG: 13.25"
       },
@@ -355,7 +355,7 @@
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#e8f9e3",
+        "value": "#e9f9e3",
         "type": "color",
         "description": "WCAG: 17"
       }
@@ -407,27 +407,27 @@
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#61d1a6",
+        "value": "#61d2a6",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#8eddbc",
+        "value": "#8fddbc",
         "type": "color",
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#abe5cb",
+        "value": "#ace6cc",
         "type": "color",
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#d9f3e7",
+        "value": "#d9f4e7",
         "type": "color",
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#e8f8f0",
+        "value": "#e9f8f1",
         "type": "color",
         "description": "WCAG: 17"
       }
@@ -454,7 +454,7 @@
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#003f74",
+        "value": "#003f75",
         "type": "color",
         "description": "WCAG: 1.75"
       },
@@ -464,7 +464,7 @@
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#006ba4",
+        "value": "#006ca4",
         "type": "color",
         "description": "WCAG: 3.25"
       },
@@ -474,17 +474,17 @@
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#43c3d2",
+        "value": "#46c3d2",
         "type": "color",
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#6accd9",
+        "value": "#6bccd9",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#92d8e2",
+        "value": "#93d9e2",
         "type": "color",
         "description": "WCAG: 11.75"
       },
@@ -494,12 +494,12 @@
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#d9f2f5",
+        "value": "#dbf2f5",
         "type": "color",
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#e8f7f9",
+        "value": "#eaf7f9",
         "type": "color",
         "description": "WCAG: 17"
       }
@@ -511,12 +511,12 @@
         "description": "WCAG: 1.06"
       },
       "200": {
-        "value": "#001063",
+        "value": "#001264",
         "type": "color",
         "description": "WCAG: 1.12"
       },
       "300": {
-        "value": "#001d6e",
+        "value": "#001e6f",
         "type": "color",
         "description": "WCAG: 1.25"
       },
@@ -526,12 +526,12 @@
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#083890",
+        "value": "#083891",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#0b48ab",
+        "value": "#0b49ab",
         "type": "color",
         "description": "WCAG: 2.25"
       },
@@ -541,17 +541,17 @@
         "description": "WCAG: 3.25"
       },
       "800": {
-        "value": "#327fe9",
+        "value": "#337fe9",
         "type": "color",
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#88b4f6",
+        "value": "#89b5f6",
         "type": "color",
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#99c0f8",
+        "value": "#9ac0f8",
         "type": "color",
         "description": "WCAG: 10"
       },
@@ -561,7 +561,7 @@
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#c4dbfc",
+        "value": "#c5dbfc",
         "type": "color",
         "description": "WCAG: 13.25"
       },
@@ -571,7 +571,7 @@
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#eef4fe",
+        "value": "#eff5fe",
         "type": "color",
         "description": "WCAG: 17"
       }
@@ -583,7 +583,7 @@
         "description": "WCAG: 1.06"
       },
       "200": {
-        "value": "#210068",
+        "value": "#22006a",
         "type": "color",
         "description": "WCAG: 1.12"
       },
@@ -598,7 +598,7 @@
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#490bb1",
+        "value": "#4a0db1",
         "type": "color",
         "description": "WCAG: 1.75"
       },
@@ -608,7 +608,7 @@
         "description": "WCAG: 2.25"
       },
       "700": {
-        "value": "#7343e5",
+        "value": "#7343e6",
         "type": "color",
         "description": "WCAG: 3.25"
       },
@@ -628,12 +628,12 @@
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#cec6ff",
+        "value": "#cec7ff",
         "type": "color",
         "description": "WCAG: 11.75"
       },
       "1200": {
-        "value": "#dad4ff",
+        "value": "#dad5ff",
         "type": "color",
         "description": "WCAG: 13.25"
       },
@@ -643,14 +643,14 @@
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#f4f3ff",
+        "value": "#f5f3ff",
         "type": "color",
         "description": "WCAG: 17"
       }
     },
     "fuchsia": {
       "100": {
-        "value": "#2c0042",
+        "value": "#2e0044",
         "type": "color",
         "description": "WCAG: 1.06"
       },
@@ -660,7 +660,7 @@
         "description": "WCAG: 1.12"
       },
       "300": {
-        "value": "#44005c",
+        "value": "#46005e",
         "type": "color",
         "description": "WCAG: 1.25"
       },
@@ -685,12 +685,12 @@
         "description": "WCAG: 3.25"
       },
       "800": {
-        "value": "#c152cb",
+        "value": "#c153cb",
         "type": "color",
         "description": "WCAG: 4.75"
       },
       "900": {
-        "value": "#dd9ce2",
+        "value": "#dd9de3",
         "type": "color",
         "description": "WCAG: 8.87"
       },
@@ -700,7 +700,7 @@
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#eabfed",
+        "value": "#eac0ed",
         "type": "color",
         "description": "WCAG: 11.75"
       },
@@ -710,7 +710,7 @@
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#f8e8f9",
+        "value": "#f8e9f9",
         "type": "color",
         "description": "WCAG: 16"
       },
@@ -742,12 +742,12 @@
         "description": "WCAG: 1.37"
       },
       "500": {
-        "value": "#7b0c41",
+        "value": "#7c0c41",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "600": {
-        "value": "#98114f",
+        "value": "#99114f",
         "type": "color",
         "description": "WCAG: 2.25"
       },
@@ -757,7 +757,7 @@
         "description": "WCAG: 3.25"
       },
       "800": {
-        "value": "#f12b75",
+        "value": "#f12c75",
         "type": "color",
         "description": "WCAG: 4.75"
       },
@@ -767,12 +767,12 @@
         "description": "WCAG: 8.87"
       },
       "1000": {
-        "value": "#ffa4b8",
+        "value": "#ffa4b9",
         "type": "color",
         "description": "WCAG: 10"
       },
       "1100": {
-        "value": "#ffbbc9",
+        "value": "#ffbbca",
         "type": "color",
         "description": "WCAG: 11.75"
       },
@@ -782,12 +782,12 @@
         "description": "WCAG: 13.25"
       },
       "1300": {
-        "value": "#ffe7ec",
+        "value": "#ffe8ed",
         "type": "color",
         "description": "WCAG: 16"
       },
       "1400": {
-        "value": "#fff0f3",
+        "value": "#fff1f4",
         "type": "color",
         "description": "WCAG: 17"
       }
