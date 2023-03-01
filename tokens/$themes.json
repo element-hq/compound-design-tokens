@@ -6,9 +6,7 @@
       "theme-light": "enabled",
       "theme-semantics": "enabled"
     },
-    "$figmaStyleReferences": {
-      "color.text.action.link.external": "S:04511cbb75b374356d7fe0f060e42371e92cd788,"
-    }
+    "$figmaStyleReferences": {}
   },
   {
     "id": "d15c383f4f0dc957a019c3053bc0f2d8ba4d44f2",
