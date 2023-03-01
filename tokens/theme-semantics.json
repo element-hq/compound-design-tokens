@@ -3,34 +3,41 @@
     "bg": {
       "canvas": {
         "value": "{color.theme.bg}",
-        "type": "color"
+        "type": "color",
+        "description": "Default global background for the user interface."
       }
     },
     "text": {
       "primary": {
         "value": "{color.gray.1400}",
-        "type": "color"
+        "type": "color",
+        "description": "Highest contrast text."
       },
       "secondary": {
         "value": "{color.gray.900}",
-        "type": "color"
+        "type": "color",
+        "description": "Lowest contrast text."
       },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
-          "type": "color"
+          "type": "color",
+          "description": "Default text colour for plain actions."
         },
         "accent": {
           "value": "{color.green.900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent text colour for plain actions."
         },
         "critical": {
           "value": "{color.red.900}",
-          "type": "color"
+          "type": "color",
+          "description": "Text colour for destructive plain actions."
         },
         "link": {
           "value": "{color.blue.900}",
-          "type": "color"
+          "type": "color",
+          "description": "Text colour for external links."
         }
       }
     }
