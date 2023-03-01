@@ -33,8 +33,10 @@
           "value": "{color.red.900}",
           "type": "color",
           "description": "Text colour for destructive plain actions."
-        },
-        "link": {
+        }
+      },
+      "link": {
+        "external": {
           "value": "{color.blue.900}",
           "type": "color",
           "description": "Text colour for external links."
