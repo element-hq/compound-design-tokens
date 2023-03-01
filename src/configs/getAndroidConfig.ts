@@ -21,6 +21,7 @@ import _ from "lodash";
 export default function getAndroidConfig(theme: Theme): Platform {
   return {
     transforms: [
+      "camelCaseDecimal",
       "ts/resolveMath",
       "attribute/cti",
       "color/composeColor",
@@ -31,7 +32,6 @@ export default function getAndroidConfig(theme: Theme): Platform {
       "kotlin/pxToSp",
       "kotlin/percentageToEm",
       "kotlin/svgToDrawable",
-      "camelCaseDecimal",
     ],
     buildPath: `assets/android/kotlin/`,
     files: [

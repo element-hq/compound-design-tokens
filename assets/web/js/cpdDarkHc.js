@@ -231,3 +231,4 @@ export const cpdColorPink1100 = "#ffbbc9";
 export const cpdColorPink1200 = "#ffccd7";
 export const cpdColorPink1300 = "#ffe7ec";
 export const cpdColorPink1400 = "#fff0f3";
+export const cpdIconThread = "icons/thread.svg";

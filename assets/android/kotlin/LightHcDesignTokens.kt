@@ -307,6 +307,7 @@ letterSpacing = 0.em,
   val fontWeightBold = FontWeight.W700
   val fontWeightMedium = FontWeight.W500
   val fontWeightRegular = FontWeight.W400
+  val iconThread = "./res/drawable/iconThread.xml"
   val space0X = 0.dp
   val space0_5X = 4.dp * 0.5f
   val space10X = 40.dp
@@ -336,5 +337,4 @@ letterSpacing = 0.em,
   val space8X = 4.dp * 8f
   val space9X = 4.dp * 9f
   val spaceScale = 4.dp
-  val thread = "/res/drawablethread.xml"
 }

@@ -43,7 +43,7 @@ export default function generateIconTokens(): void {
 
   fs.writeFileSync(
     path.join(iconsFolder, outputFileName),
-    JSON.stringify(Object.fromEntries(iconsPath)),
+    JSON.stringify({ icon: Object.fromEntries(iconsPath) }),
     "utf-8"
   );
 }

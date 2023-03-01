@@ -28,21 +28,27 @@ export default function (target: "js" | "css", theme: Theme): Platform {
     throw `Unsupport web platform: ${target}`;
   }
 
+  const transforms = [
+    "ts/resolveMath",
+    "ts/size/px",
+    "ts/size/letterspacing",
+    "ts/color/hexrgba",
+    "ts/typography/css/shorthand",
+    "ts/shadow/shorthand",
+    "attribute/cti",
+    "color/hex",
+    "css/pxToRem",
+    "css/percentageToUnitless",
+    target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
+  ];
+
+  if (target === "css") {
+    transforms.push("css/iconsImport");
+  }
+
   return {
     prefix: COMPOUND_TOKENS_NAMESPACE,
-    transforms: [
-      "ts/resolveMath",
-      "ts/size/px",
-      "ts/size/letterspacing",
-      "ts/color/hexrgba",
-      "ts/typography/css/shorthand",
-      "ts/shadow/shorthand",
-      "attribute/cti",
-      "color/hex",
-      "css/pxToRem",
-      "css/percentageToUnitless",
-      target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
-    ],
+    transforms,
     buildPath: `assets/web/${target}/`,
     files: getFilesFormat(theme, target),
   };

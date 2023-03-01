@@ -14,31 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
-import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
-import svg2vectordrawable from "svg2vectordrawable";
 
 /**
- * A transformer to change svg path to vector drawable path
- * Also generates the drawable.
+ * transforms path to a `url()` in CSS
+ * Prepends `options.pathImportPrefix` if it exists
  */
 export default {
   type: "value",
   matcher: function (token) {
     return token.type === "icon";
   },
-  transformer: function (token, platform) {
-    const iconPath = path.join(dirname(require.main!.filename), token.value);
-    const resPath = `/res/drawable`;
-
-    const svgContent = fs.readFileSync(iconPath, "utf8");
-    svg2vectordrawable(svgContent).then((xmlContent) => {
-      const outputFolder = `${platform!.buildPath}${resPath}`;
-      console.log(token.name);
-      fs.writeFileSync(`${outputFolder}/${token.name}.xml`, xmlContent, "utf8");
-    });
-
-    return `".${resPath}/${token.name}.xml"`;
+  transformer: function (token) {
+    return `url(../../../${token.value})`;
   },
 } as Transform;
