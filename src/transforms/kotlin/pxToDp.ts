@@ -21,6 +21,7 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
  */
 export default {
   type: "value",
+  transitive: true,
   matcher: function (token: TransformedToken): boolean {
     const attrs = token.attributes ?? {};
     return (
@@ -29,6 +30,21 @@ export default {
     );
   },
   transformer: function (token: TransformedToken): string {
-    return token.value.toString().replace("px", "") + ".dp";
+    const [val, multiplier] = token.value.split("*");
+
+    let transformedValue = !val.includes(".dp")
+      ? val.trim().replace("px", "") + ".dp"
+      : val.trim();
+
+    /**
+     * In Kotlin, 1 can be used to multiply a Float, but 0.5 can't
+     * (it's recognised as a Double instead). To make these multipliers work with
+     * any number, instead of * 0.5 or * 2, it should be * 0.5f and * 2f
+     */
+    if (multiplier) {
+      transformedValue += ` * ${multiplier.trim()}f`;
+    }
+
+    return transformedValue;
   },
 };

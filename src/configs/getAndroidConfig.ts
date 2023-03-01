@@ -21,6 +21,7 @@ import _ from "lodash";
 export default function getAndroidConfig(theme: Theme): Platform {
   return {
     transforms: [
+      "ts/resolveMath",
       "attribute/cti",
       "color/composeColor",
       "kotlin/fontWeight",

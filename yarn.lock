@@ -49,9 +49,9 @@
     fastq "^1.6.0"
 
 "@tokens-studio/sd-transforms@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@tokens-studio/sd-transforms/-/sd-transforms-0.4.3.tgz#f8d9ab99c1b7d833aa7953bff63203cda3373bd2"
-  integrity sha512-+StZpzFNONjoIMx5ys5cxU6FjJgpJCOnLCTWA5ctT4s3/kAfCpJ8oEant+cEJvSI8vcNkWxWLK56VAvXyLQ1dA==
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@tokens-studio/sd-transforms/-/sd-transforms-0.4.4.tgz#54ac3dfcd62c6e0b6a73e7cd8635b3548b4c7cdf"
+  integrity sha512-AHKl1cvQzpXPcNF6+q83w/tFMftD3WHit6GSSvAQzxfvtoDAAfBmMO5AqEUZp6Dds7WPMPwvp/vw3CoEGP6xyg==
   dependencies:
     color2k "^2.0.1"
     colorjs.io "^0.4.3"
@@ -223,9 +223,9 @@ color-name@~1.1.4:
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
 color2k@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/color2k/-/color2k-2.0.1.tgz"
-  integrity sha512-iCg+xrEqtYISsSJZN1z44fyhv4EfX8lSkcDhodt6VnMf1+iMwZxAtmGXchTCeMUnTbXunGvUVK6E3skkApPnZw==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/color2k/-/color2k-2.0.2.tgz#ac2b4aea11c822a6bcb70c768b5a289f4fffcebb"
+  integrity sha512-kJhwH5nAwb34tmyuqq/lgjEKzlFXn1U99NlnB6Ws4qVaERcRUYeYP1cBw6BJ4vxaWStAUEef4WMr7WjOCnBt8w==
 
 colorjs.io@^0.4.3:
   version "0.4.3"
@@ -470,7 +470,7 @@ is-number@^7.0.0:
   resolved "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-json5@^2.2.0:
+json5@^2.2.0, json5@^2.2.2:
   version "2.2.3"
   resolved "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
@@ -618,14 +618,14 @@ portfinder@^1.0.28:
 
 postcss-calc-ast-parser@^0.1.4:
   version "0.1.4"
-  resolved "https://registry.npmjs.org/postcss-calc-ast-parser/-/postcss-calc-ast-parser-0.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/postcss-calc-ast-parser/-/postcss-calc-ast-parser-0.1.4.tgz#9aeee3650a91c0b2902789689bc044c9f83bc447"
   integrity sha512-CebpbHc96zgFjGgdQ6BqBy6XIUgRx1xXWCAAk6oke02RZ5nxwo9KQejTg8y7uYEeI9kv8jKQPYjoe6REsY23vw==
   dependencies:
     postcss-value-parser "^3.3.1"
 
 postcss-value-parser@^3.3.1:
   version "3.3.1"
-  resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz"
+  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
 
 qs@^6.4.0:
@@ -709,6 +709,20 @@ style-dictionary@^3.7.2:
     fs-extra "^10.0.0"
     glob "^7.2.0"
     json5 "^2.2.0"
+    jsonc-parser "^3.0.0"
+    lodash "^4.17.15"
+    tinycolor2 "^1.4.1"
+
+"style-dictionary@https://github.com/amzn/style-dictionary":
+  version "3.7.2"
+  resolved "https://github.com/amzn/style-dictionary#6182d63765b86b19a83d27eeee227d5b0b9ea4ee"
+  dependencies:
+    chalk "^4.0.0"
+    change-case "^4.1.2"
+    commander "^8.3.0"
+    fs-extra "^10.0.0"
+    glob "^7.2.0"
+    json5 "^2.2.2"
     jsonc-parser "^3.0.0"
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
