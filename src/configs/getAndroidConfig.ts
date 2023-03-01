@@ -30,6 +30,7 @@ export default function getAndroidConfig(theme: Theme): Platform {
       "kotlin/pxToDp",
       "kotlin/pxToSp",
       "kotlin/percentageToEm",
+      "kotlin/svgToDrawable",
       "camelCaseDecimal",
     ],
     buildPath: `assets/android/kotlin/`,

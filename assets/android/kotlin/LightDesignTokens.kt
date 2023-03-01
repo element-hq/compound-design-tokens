@@ -336,4 +336,5 @@ letterSpacing = 0.em,
   val space8X = 4.dp * 8f
   val space9X = 4.dp * 9f
   val spaceScale = 4.dp
+  val thread = "/res/drawablethread.xml"
 }
