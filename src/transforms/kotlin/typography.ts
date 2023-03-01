@@ -25,8 +25,15 @@ export default {
       Object.entries(token.value).reduce((props, [propName, val]) => {
         let output = props;
         if (textStylePropertiesMapping[propName]) {
-          output += `${textStylePropertiesMapping[propName]} = ${val}\n`;
+          output += `${textStylePropertiesMapping[propName]} = `;
+          if (propName === "fontFamily") {
+            output += "FontFamily.Default";
+          } else {
+            output += val;
+          }
+          output += `,\n`;
         }
+
         return output;
       }, "TextStyle(\n") + ")"
     );

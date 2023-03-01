@@ -21,6 +21,7 @@ import _ from "lodash";
 export default function getAndroidConfig(theme: Theme): Platform {
   return {
     transforms: [
+      "ts/resolveMath",
       "attribute/cti",
       "color/composeColor",
       "kotlin/fontWeight",
@@ -40,6 +41,11 @@ export default function getAndroidConfig(theme: Theme): Platform {
         packageName: "io.element.android.compound",
         options: {
           showFileHeader: false,
+          import: [
+            "androidx.compose.ui.graphics.Color",
+            "androidx.compose.ui.unit.*",
+            "androidx.compose.ui.text.*",
+          ],
         },
       },
     ],
