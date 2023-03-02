@@ -40,7 +40,24 @@
     "selectedTokenSets": {
       "platform-android": "enabled"
     },
-    "$figmaStyleReferences": {}
+    "$figmaStyleReferences": {
+      "font.body.xs.regular": "S:25abcdb5e09930db0b8238606cb722f34dd09f34,",
+      "font.body.xs.medium": "S:a91876852d77a4a51c113bb01d10b6bb46bb87bb,",
+      "font.body.sm.regular": "S:7e740e072536c5d459df4747ecb423a7e04064a0,",
+      "font.body.sm.medium": "S:1d6a051186b840eabd56a13e6e81c653876e0f0c,",
+      "font.body.md.regular": "S:1056a8bd77b6227ccb9e93a5834ac2cf1b910f0a,",
+      "font.body.md.medium": "S:4714f95c47004d9a98d74f460a15aa45f498bf41,",
+      "font.body.lg.regular": "S:ec7c1457b18a0e401e4e085af66876b5ccc3aea3,",
+      "font.body.lg.medium": "S:e4c154af29faac33a95805ef17972a3fcc2c1ee9,",
+      "font.heading.sm.regular": "S:afcd78bf951f5c8f3ffb38254791cbcb5ddc12fb,",
+      "font.heading.sm.medium": "S:51f6365ac0a18b0991dc820579825a2770b05805,",
+      "font.heading.md.regular": "S:7f6fa5bff9cac780d7b5c877168fe4c265fd5261,",
+      "font.heading.md.bold": "S:73af4d7b17049e74b34a642e469fb4045e42b373,",
+      "font.heading.lg.regular": "S:53fd2f14fde600bb823a3fcceb49215cb9ac83c9,",
+      "font.heading.lg.bold": "S:7156d03d0382433247d13363a4d61bbd94d6d8a0,",
+      "font.heading.xl.regular": "S:ed5e373d73f926b2a445422f5123af608aff3608,",
+      "font.heading.xl.bold": "S:ed964402b2d621a3b42c593a006106ef8d16d997,"
+    }
   },
   {
     "id": "0022f9989257cb4474cf2429dc471f3ea70d0f9d",
