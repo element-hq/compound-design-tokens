@@ -35,7 +35,6 @@ export default {
     const svgContent = fs.readFileSync(iconPath, "utf8");
     svg2vectordrawable(svgContent).then((xmlContent) => {
       const outputFolder = `${platform!.buildPath}${resPath}`;
-      console.log(token.name);
       fs.writeFileSync(`${outputFolder}/${token.name}.xml`, xmlContent, "utf8");
     });
 

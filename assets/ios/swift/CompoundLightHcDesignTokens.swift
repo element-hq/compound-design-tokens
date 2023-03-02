@@ -6,6 +6,7 @@
 import SwiftUI
 
 public class CompoundLightHcDesignTokens {
+    public static let iconThread = Image("iconThread", bundle: Bundle.module) 
     public static let colorPink1400 = Color("colorPink1400", bundle: Bundle.module) 
     public static let colorPink1300 = Color("colorPink1300", bundle: Bundle.module) 
     public static let colorPink1200 = Color("colorPink1200", bundle: Bundle.module) 

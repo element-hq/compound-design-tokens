@@ -149,7 +149,7 @@ function getOrCreateColorset(path: string): any {
   );
 }
 
-const contents = {
+export const contents = {
   info: {
     author: "xcode",
     version: 1,
