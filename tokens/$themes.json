@@ -90,7 +90,29 @@
     "selectedTokenSets": {
       "platform-web": "enabled"
     },
-    "$figmaStyleReferences": {}
+    "$figmaStyleReferences": {
+      "font.body.xs.regular": "S:acd9364fb96bf307fcc23106bc9958664af9b4f3,",
+      "font.body.xs.medium": "S:34457ea8c366132f354b7d44c97b43836bc24886,",
+      "font.body.xs.semibold": "S:6c4d867d0f99d331d6a7f97baff94817912f85bf,",
+      "font.body.sm.regular": "S:10f327057e27854f72a93b08a7354594482c2355,",
+      "font.body.sm.medium": "S:5c6e7e9c2b9857489399fa97ef0937a6b2633ca7,",
+      "font.body.sm.semibold": "S:c702ce7b688845c6163c0684ab9b5bfeef746f1f,",
+      "font.body.md.regular": "S:4a186f13061ceaa7a27a7f29ab27148240f8c64b,",
+      "font.body.md.medium": "S:313b6ec4cb5c27176425705dfe36e0edc7459a1f,",
+      "font.body.md.semibold": "S:8c3c11a0d898d59c447f697fd43fd780b245b48d,",
+      "font.body.lg.regular": "S:98bd650fb266759375ccb5d41db5b8528207756f,",
+      "font.body.lg.medium": "S:8481c8ea865fbea99f42fefdce383126e153387b,",
+      "font.body.lg.semibold": "S:128343feda4bb482425bea0fe6fb6d28cbdd7a5d,",
+      "font.heading.sm.regular": "S:4646e41028e1944c0b558f87b6063a6c910c36d3,",
+      "font.heading.sm.medium": "S:5aacc50a3f4d05623d2ba189d4561b74038e8d5c,",
+      "font.heading.sm.semibold": "S:2eeb910dca2905bd81eec0271ce83e7a7dc1bf44,",
+      "font.heading.md.regular": "S:95f49b17b2dea25b00f51931a6d9e573f11329c3,",
+      "font.heading.md.semibold": "S:cce4119a4f4aecba3aaa69158919eb92de74074f,",
+      "font.heading.lg.regular": "S:65d4de1c95af6ee74de032576953e04cb31c8c63,",
+      "font.heading.lg.semibold": "S:a1463858c179d0f7f978e6cbddd5e47f188c1d22,",
+      "font.heading.xl.regular": "S:e4134051ce14f7e7a235e230437cce8987138117,",
+      "font.heading.xl.semibold": "S:f182744c7886658e9aa79987e9abc4cb5187d958,"
+    }
   },
   {
     "id": "25ad1161805c593282b722f6ba4d53ad141d1f1a",
