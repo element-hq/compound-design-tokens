@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "id": "abf8e2aa6d1c09197edbc57274569f0591a2f50f",
+    "name": "Light",
+    "selectedTokenSets": {
+      "theme-light": "enabled",
+      "theme-semantics": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "d15c383f4f0dc957a019c3053bc0f2d8ba4d44f2",
+    "name": "Light HC",
+    "selectedTokenSets": {
+      "theme-light-hc": "enabled",
+      "theme-semantics": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "3c14265b144e3fb13cddc5c4f5ecdcdb8c035d03",
+    "name": "Dark HC",
+    "selectedTokenSets": {
+      "theme-dark-hc": "enabled",
+      "theme-semantics": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "e12210b9270d7047e0bed40f06eaa66d5bd7a9c7",
+    "name": "Global",
+    "selectedTokenSets": {
+      "cross-platform": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "96f4f9bd2bf32c4657bfe283f418fc093117942f",
+    "name": "Android",
+    "selectedTokenSets": {
+      "platform-android": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "0022f9989257cb4474cf2429dc471f3ea70d0f9d",
+    "name": "iOS",
+    "selectedTokenSets": {
+      "platform-ios": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "22ad1f7c65308da86722dc9335e31be4d9fa53d7",
+    "name": "Web",
+    "selectedTokenSets": {
+      "platform-web": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "25ad1161805c593282b722f6ba4d53ad141d1f1a",
+    "name": "Dark",
+    "selectedTokenSets": {
+      "theme-dark": "enabled",
+      "theme-semantics": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  }
+]
