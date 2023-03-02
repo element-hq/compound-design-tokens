@@ -26,6 +26,6 @@ export default {
     return token.type === "icon";
   },
   transformer: function (token) {
-    return `url(../../../${token.value})`;
+    return `url(../${token.value})`;
   },
 } as Transform;
