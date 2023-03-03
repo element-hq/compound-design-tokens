@@ -18,6 +18,7 @@ import path, { dirname } from "path";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import svg2vectordrawable from "svg2vectordrawable";
+import _ from "lodash";
 
 /**
  * A transformer to change svg path to vector drawable path
@@ -32,12 +33,17 @@ export default {
     const iconPath = path.join(dirname(require.main!.filename), token.value);
     const resPath = `/res/drawable`;
 
+    // Snake case and replace `icon` with `ic` as this is the convention on Android
+    // and on Material
+    const imageId = _.snakeCase(token.name.replace("icon", "ic"));
+
     const svgContent = fs.readFileSync(iconPath, "utf8");
     svg2vectordrawable(svgContent).then((xmlContent) => {
-      const outputFolder = `${platform!.buildPath}${resPath}`;
-      fs.writeFileSync(`${outputFolder}/${token.name}.xml`, xmlContent, "utf8");
+      const outputFolder = path.join(platform?.buildPath!, resPath);
+      fs.ensureDirSync(outputFolder);
+      fs.writeFileSync(`${outputFolder}/${imageId}.xml`, xmlContent, "utf8");
     });
 
-    return `".${resPath}/${token.name}.xml"`;
+    return `R.drawable.${imageId}`;
   },
 } as Transform;

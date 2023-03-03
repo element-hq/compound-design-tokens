@@ -33,7 +33,7 @@ export default function getAndroidConfig(theme: Theme): Platform {
       "kotlin/percentageToEm",
       "kotlin/svgToDrawable",
     ],
-    buildPath: `assets/android/kotlin/`,
+    buildPath: `assets/android/`,
     files: [
       {
         format: "compose/object",
