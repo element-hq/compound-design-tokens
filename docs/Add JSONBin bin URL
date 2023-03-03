@@ -1,7 +1,8 @@
-# ⬇️ Use tokens in a Figma document
+#  ⬇️ Use tokens in a Figma document
 
 - Install [themer](https://www.figma.com/community/plugin/731176732337510831/Themer)
 - Get the JSONBin access token in your password manager
+- Input the bin URL: https://api.jsonbin.io/v3/b/6400f859c0e7653a05816945
 
 # 🔄 Setup tokens.studio sync with GitHub
 
