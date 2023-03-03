@@ -239,3 +239,4 @@ export const cpdColorTextActionPrimary = "#1a1c21";
 export const cpdColorTextActionAccent = "#00553d";
 export const cpdColorTextActionCritical = "#99001a";
 export const cpdColorTextLinkExternal = "#0543a7";
+export const cpdIconThread = "icons/thread.svg";

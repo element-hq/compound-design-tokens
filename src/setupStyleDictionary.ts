@@ -37,6 +37,9 @@ import iosExclude from "./filters/ios/exclude";
 import pxToRem from "./transforms/pxToRem";
 import percentageToUnitless from "./transforms/css/percentageToUnitless";
 import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
+import svgToDrawable from "./transforms/kotlin/svgToDrawable";
+import iconsImport from "./transforms/css/iconsImport";
+import svgToImageView from "./transforms/swift/svgToImageView";
 
 export default async function (theme: Theme, platform: Platform) {
   const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
@@ -57,11 +60,19 @@ export default async function (theme: Theme, platform: Platform) {
     name: "swift/coreColorSet",
     ...coreColorSet,
   } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/svgToImageView",
+    ...svgToImageView,
+  } as Named<Transform>);
 
   sb.registerAction({
     name: "ios/colorset",
     ...colorset,
   } as Named<Action>);
+  sb.registerTransform({
+    name: "kotlin/svgToDrawable",
+    ...svgToDrawable,
+  } as Named<Transform>);
 
   sb.registerTransform({
     name: "kotlin/fontWeight",
@@ -94,6 +105,10 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerTransform({
     name: "css/percentageToUnitless",
     ...percentageToUnitless,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "css/iconsImport",
+    ...iconsImport,
   } as Named<Transform>);
 
   sb.registerFilter(iosExclude);

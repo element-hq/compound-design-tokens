@@ -22,12 +22,13 @@ export default function getIOSConfig(theme: Theme): Platform {
   return {
     transforms: [
       "attribute/cti",
+      "camelCaseDecimal",
       "attribute/color",
       "font/swift/literal",
       "swift/pxToCGFloat",
       "swift/toFontWeight",
       "swift/coreColorSet",
-      "camelCaseDecimal",
+      "swift/svgToImageView",
       "ts/resolveMath",
     ],
     options: {

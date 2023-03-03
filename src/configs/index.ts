@@ -35,6 +35,7 @@ export function getStyleDictionaryConfig(
     `tokens/platform-${platform}.json`,
     `tokens/theme-${theme}.json`,
     `tokens/theme-semantics.json`,
+    `icons/$icons.json`,
   ]);
 
   switch (platform) {
