@@ -1,4 +1,9 @@
-# 🔄 Synchronise tokens with Figma
+# ⬇️ Use tokens in a Figma document
+
+- Install [themer](https://www.figma.com/community/plugin/731176732337510831/Themer)
+- Get the JSONBin access token in your password manager
+
+# 🔄 Setup tokens.studio sync with GitHub
 
 This repository is the single source of truth for design tokens. They are stored in the `tokens/` folder of this repository.
 
