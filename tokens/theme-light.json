@@ -1,73 +1,80 @@
 {
   "color": {
+    "theme": {
+      "bg": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "WCAG: 1"
+      }
+    },
     "gray": {
       "100": {
-        "value": "#fbfbfc",
+        "value": "#fbfcfd",
         "type": "color",
         "description": "WCAG: 1.03"
       },
       "200": {
-        "value": "#f7f8f9",
+        "value": "#f7f9fa",
         "type": "color",
         "description": "WCAG: 1.06"
       },
       "300": {
-        "value": "#eef1f3",
+        "value": "#f0f2f5",
         "type": "color",
         "description": "WCAG: 1.12"
       },
       "400": {
-        "value": "#e2e6ea",
+        "value": "#e1e6ec",
         "type": "color",
         "description": "WCAG: 1.25"
       },
       "500": {
-        "value": "#ccd3da",
+        "value": "#cdd3da",
         "type": "color",
         "description": "WCAG: 1.5"
       },
       "600": {
-        "value": "#bcc5ce",
+        "value": "#bdc4cc",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "700": {
-        "value": "#a2aebc",
+        "value": "#a6adb7",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "800": {
-        "value": "#798b9d",
+        "value": "#818a95",
         "type": "color",
         "description": "WCAG: 3.5"
       },
       "900": {
-        "value": "#5b6e81",
+        "value": "#656d77",
         "type": "color",
         "description": "WCAG: 5.25"
       },
       "1000": {
-        "value": "#4d5f72",
+        "value": "#595e67",
         "type": "color",
         "description": "WCAG: 6.5"
       },
       "1100": {
-        "value": "#415265",
+        "value": "#4c5158",
         "type": "color",
         "description": "WCAG: 8"
       },
       "1200": {
-        "value": "#2f4152",
+        "value": "#3c4045",
         "type": "color",
         "description": "WCAG: 10.5"
       },
       "1300": {
-        "value": "#1e2e3f",
+        "value": "#2b2d32",
         "type": "color",
         "description": "WCAG: 13.75"
       },
       "1400": {
-        "value": "#0f1e2e",
+        "value": "#1b1d22",
         "type": "color",
         "description": "WCAG: 16.75"
       }

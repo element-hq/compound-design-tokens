@@ -161,6 +161,7 @@ public class CompoundLightHcDesignTokens {
     public static let colorGray300 = Color("colorGray300", bundle: Bundle.module) 
     public static let colorGray200 = Color("colorGray200", bundle: Bundle.module) 
     public static let colorGray100 = Color("colorGray100", bundle: Bundle.module) 
+    public static let colorThemeBg = Color("colorThemeBg", bundle: Bundle.module) 
     public static let fontSizeHeadingXl = CGFloat(34)
     public static let fontSizeHeadingLg = CGFloat(28)
     public static let fontSizeHeadingMd = CGFloat(22)
@@ -195,6 +196,13 @@ public class CompoundLightHcDesignTokens {
     public static let space6X = CGFloat(24)
     public static let space0X = CGFloat(0)
     public static let spaceScale = CGFloat(4)
+    public static let colorTextLinkExternal = colorBlue900
+    public static let colorTextActionCritical = colorRed900
+    public static let colorTextActionAccent = colorGreen900
+    public static let colorTextActionPrimary = colorGray1400
+    public static let colorTextSecondary = colorGray900
+    public static let colorTextPrimary = colorGray1400
+    public static let colorBgCanvas = colorThemeBg
     public static let space64X = spaceScale * 64
     public static let space48X = spaceScale * 48
     public static let space40X = spaceScale * 40
