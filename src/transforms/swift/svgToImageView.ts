@@ -48,7 +48,17 @@ export default {
 
     const imageAssetPath = outputAssetPath + "/" + token.name + ".imageset";
     fs.ensureDirSync(imageAssetPath);
-    fs.copyFileSync(sourceIconPath, `${imageAssetPath}/${filename}`);
+
+    const svgContent = fs.readFileSync(sourceIconPath, "utf8");
+    fs.writeFileSync(
+      `${imageAssetPath}/${filename}`,
+      // currentColor is not previewable in XCode so we need to change it
+      // It would theoratically still works but is not convienient when developing
+      // as the icon is invisible in the image set
+      svgContent.replaceAll("currentColor", "black"),
+      "utf-8"
+    );
+
     fs.writeFileSync(
       `${imageAssetPath}/Contents.json`,
       JSON.stringify(getImagesetContents(filename)),
@@ -70,6 +80,7 @@ function getImagesetContents(filename: string) {
     ...contents,
     properties: {
       "preserves-vector-representation": true,
+      "template-rendering-intent": "template",
     },
   };
 }
