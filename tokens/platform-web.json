@@ -22,10 +22,6 @@
       "semibold": {
         "value": "600",
         "type": "fontWeights"
-      },
-      "bold": {
-        "value": "700",
-        "type": "fontWeights"
       }
     },
     "line-height": {
