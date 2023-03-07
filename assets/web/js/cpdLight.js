@@ -36,7 +36,6 @@ export const cpdFontFamilyMono = "Inconsolata";
 export const cpdFontWeightRegular = "400";
 export const cpdFontWeightMedium = "500";
 export const cpdFontWeightSemibold = "600";
-export const cpdFontWeightBold = "700";
 export const cpdFontLineHeightMinimum = "1";
 export const cpdFontLineHeightTight = "1.25";
 export const cpdFontLineHeightRegular = "1.5";
