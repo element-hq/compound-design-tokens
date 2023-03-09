@@ -23,11 +23,7 @@ const COMPOUND_TOKENS_NAMESPACE = "cpd";
 
 const basePxFontSize = 16;
 
-export default function (target: "js" | "css", theme: Theme): Platform {
-  if (target !== "css" && target !== "js") {
-    throw `Unsupport web platform: ${target}`;
-  }
-
+export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
   const transforms = [
     "ts/resolveMath",
     "ts/size/px",
@@ -49,24 +45,36 @@ export default function (target: "js" | "css", theme: Theme): Platform {
   return {
     prefix: COMPOUND_TOKENS_NAMESPACE,
     transforms,
-    buildPath: `assets/web/${target}/`,
+    buildPath: `assets/web/${target === "css" ? "css" : "js"}/`,
     files: getFilesFormat(theme, target),
   };
 }
 
-function getFilesFormat(theme: Theme, target: "css" | "js"): File[] {
-  if (target === "js") {
+const options = {
+  showFileHeader: false,
+  outputReferences: true,
+  basePxFontSize,
+};
+
+function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
+  if (target === "ts") {
+    return [
+      {
+        destination: `${_.camelCase(
+          COMPOUND_TOKENS_NAMESPACE + "." + theme
+        )}.d.ts`,
+        format: "typescript/es6-declarations",
+        options,
+      },
+    ];
+  } else if (target === "js") {
     return [
       {
         destination: `${_.camelCase(
           COMPOUND_TOKENS_NAMESPACE + "." + theme
         )}.js`,
         format: "javascript/es6",
-        options: {
-          showFileHeader: false,
-          outputReferences: true,
-          basePxFontSize,
-        },
+        options,
       },
     ];
   } else {

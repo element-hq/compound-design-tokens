@@ -41,6 +41,7 @@ export function getStyleDictionaryConfig(
   switch (platform) {
     case "web":
       config.platforms.js = getWebConfig("js", theme);
+      config.platforms.ts = getWebConfig("ts", theme);
       config.platforms.css = getWebConfig("css", theme);
       break;
     case "android":
