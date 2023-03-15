@@ -88,7 +88,7 @@
         "tertiary": {
           "value": "{color.green.800}",
           "type": "color",
-          "description": "Lowest contrast accessible icon."
+          "description": "Lowest contrast accessible accent icon."
         }
       }
     }
