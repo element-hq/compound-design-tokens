@@ -5,6 +5,18 @@
         "value": "{color.theme.bg}",
         "type": "color",
         "description": "Default global background for the user interface."
+      },
+      "secondary": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "Lower contrast surfaces."
+      },
+      "action": {
+        "primary": {
+          "value": "{color.gray.1400}",
+          "type": "color",
+          "description": "Default background colour for actions."
+        }
       }
     },
     "text": {
@@ -17,6 +29,16 @@
         "value": "{color.gray.900}",
         "type": "color",
         "description": "Lowest contrast text."
+      },
+      "placeholder": {
+        "value": "{color.gray.800}",
+        "type": "color",
+        "description": "Use for placeholder text. Placeholder text should be non-essential. Do not rely exclusively on it."
+      },
+      "disabled": {
+        "value": "{color.gray.800}",
+        "type": "color",
+        "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
       },
       "action": {
         "primary": {
@@ -40,6 +62,35 @@
           "value": "{color.blue.900}",
           "type": "color",
           "description": "Text colour for external links."
+        }
+      }
+    },
+    "icon": {
+      "primary": {
+        "value": "{color.gray.1400}",
+        "type": "color",
+        "description": "Highest contrast icons."
+      },
+      "secondary": {
+        "value": "{color.gray.900}",
+        "type": "color",
+        "description": "Lower contrast icons."
+      },
+      "tertiary": {
+        "value": "{color.gray.800}",
+        "type": "color",
+        "description": "Lowest contrast accessible icons."
+      },
+      "quaternary": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "⚠️ Lowest contrast non-accessible icons, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
         }
       }
     }
