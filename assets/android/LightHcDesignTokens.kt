@@ -12,7 +12,9 @@ object LightHcDesignTokens {
   val borderWidth1 = 1.dp
   val borderWidth2 = 2.dp
   val borderWidth4 = 4.dp
+  val colorBgActionPrimary = Color(0xff1a1c21)
   val colorBgCanvas = Color(0xffffffff)
+  val colorBgSecondary = Color(0xffe1e6ec)
   val colorBlue100 = Color(0xfff4f8ff)
   val colorBlue1000 = Color(0xff053b9a)
   val colorBlue1100 = Color(0xff043088)
@@ -83,6 +85,11 @@ object LightHcDesignTokens {
   val colorGreen700 = Color(0xff00a27c)
   val colorGreen800 = Color(0xff008268)
   val colorGreen900 = Color(0xff00553d)
+  val colorIconAccentTertiary = Color(0xff008268)
+  val colorIconPrimary = Color(0xff1a1c21)
+  val colorIconQuaternary = Color(0xff878f9b)
+  val colorIconSecondary = Color(0xff474a51)
+  val colorIconTertiary = Color(0xff6c737e)
   val colorLime100 = Color(0xfff1fcee)
   val colorLime1000 = Color(0xff004f00)
   val colorLime1100 = Color(0xff004200)
@@ -156,7 +163,9 @@ object LightHcDesignTokens {
   val colorTextActionAccent = Color(0xff00553d)
   val colorTextActionCritical = Color(0xff99001a)
   val colorTextActionPrimary = Color(0xff1a1c21)
+  val colorTextDisabled = Color(0xff6c737e)
   val colorTextLinkExternal = Color(0xff0543a7)
+  val colorTextPlaceholder = Color(0xff6c737e)
   val colorTextPrimary = Color(0xff1a1c21)
   val colorTextSecondary = Color(0xff474a51)
   val colorThemeBg = Color(0xffffffff)

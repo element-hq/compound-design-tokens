@@ -12,7 +12,9 @@ object DarkHcDesignTokens {
   val borderWidth1 = 1.dp
   val borderWidth2 = 2.dp
   val borderWidth4 = 4.dp
+  val colorBgActionPrimary = Color(0xfff2f5f7)
   val colorBgCanvas = Color(0xff101317)
+  val colorBgSecondary = Color(0xff26282d)
   val colorBlue100 = Color(0xff00095d)
   val colorBlue1000 = Color(0xff9ac0f8)
   val colorBlue1100 = Color(0xffb2cffa)
@@ -83,6 +85,11 @@ object DarkHcDesignTokens {
   val colorGreen700 = Color(0xff00745c)
   val colorGreen800 = Color(0xff109173)
   val colorGreen900 = Color(0xff37c998)
+  val colorIconAccentTertiary = Color(0xff109173)
+  val colorIconPrimary = Color(0xfff2f5f7)
+  val colorIconQuaternary = Color(0xff606770)
+  val colorIconSecondary = Color(0xffacb4bd)
+  val colorIconTertiary = Color(0xff79818d)
   val colorLime100 = Color(0xff002000)
   val colorLime1000 = Color(0xff6ad639)
   val colorLime1100 = Color(0xff92e175)
@@ -156,7 +163,9 @@ object DarkHcDesignTokens {
   val colorTextActionAccent = Color(0xff37c998)
   val colorTextActionCritical = Color(0xffff968c)
   val colorTextActionPrimary = Color(0xfff2f5f7)
+  val colorTextDisabled = Color(0xff79818d)
   val colorTextLinkExternal = Color(0xff89b5f6)
+  val colorTextPlaceholder = Color(0xff79818d)
   val colorTextPrimary = Color(0xfff2f5f7)
   val colorTextSecondary = Color(0xffacb4bd)
   val colorThemeBg = Color(0xff101317)

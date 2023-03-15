@@ -12,7 +12,9 @@ object LightDesignTokens {
   val borderWidth1 = 1.dp
   val borderWidth2 = 2.dp
   val borderWidth4 = 4.dp
+  val colorBgActionPrimary = Color(0xff1b1d22)
   val colorBgCanvas = Color(0xffffffff)
+  val colorBgSecondary = Color(0xfff0f2f5)
   val colorBlue100 = Color(0xfff9fcff)
   val colorBlue1000 = Color(0xff0558c7)
   val colorBlue1100 = Color(0xff064ab1)
@@ -83,6 +85,11 @@ object LightDesignTokens {
   val colorGreen700 = Color(0xff0bc491)
   val colorGreen800 = Color(0xff009b78)
   val colorGreen900 = Color(0xff007a61)
+  val colorIconAccentTertiary = Color(0xff009b78)
+  val colorIconPrimary = Color(0xff1b1d22)
+  val colorIconQuaternary = Color(0xffa6adb7)
+  val colorIconSecondary = Color(0xff656d77)
+  val colorIconTertiary = Color(0xff818a95)
   val colorLime100 = Color(0xfff8fdf6)
   val colorLime1000 = Color(0xff006e00)
   val colorLime1100 = Color(0xff005f00)
@@ -156,7 +163,9 @@ object LightDesignTokens {
   val colorTextActionAccent = Color(0xff007a61)
   val colorTextActionCritical = Color(0xffd51928)
   val colorTextActionPrimary = Color(0xff1b1d22)
+  val colorTextDisabled = Color(0xff818a95)
   val colorTextLinkExternal = Color(0xff0467dd)
+  val colorTextPlaceholder = Color(0xff818a95)
   val colorTextPrimary = Color(0xff1b1d22)
   val colorTextSecondary = Color(0xff656d77)
   val colorThemeBg = Color(0xffffffff)
