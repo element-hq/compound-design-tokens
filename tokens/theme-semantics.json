@@ -8,12 +8,14 @@
       },
       "secondary": {
         "value": "{color.gray.300}",
-        "type": "color"
+        "type": "color",
+        "description": "Lower contrast surfaces."
       },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
-          "type": "color"
+          "type": "color",
+          "description": "Default background colour for actions."
         }
       }
     },
