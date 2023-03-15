@@ -349,7 +349,16 @@
       "color.pink.1100": "S:8cbd180e1cef6406b5c9e360da8ac4bcf3986638,",
       "color.pink.1200": "S:a0a73e0d8f8075538b3a4703da1a2fa57ceb9751,",
       "color.pink.1300": "S:18d93d563878a5819ffce86e74307d9b37fbc389,",
-      "color.pink.1400": "S:06d8255b03f5b33f0b47101b87c59052f1564a10,"
+      "color.pink.1400": "S:06d8255b03f5b33f0b47101b87c59052f1564a10,",
+      "color.bg.secondary": "S:9182fb7bcc21cb1f68ede89413c52f2bbce13293,",
+      "color.bg.action.primary": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,",
+      "color.text.placeholder": "S:5667befff4c534ba8d1fc97bd84dead8c4b61ef4,",
+      "color.text.disabled": "S:f2a0fa920d084dc98fd4d7d8c1753a953fece34b,",
+      "color.icon.primary": "S:5fb3e41fc85b271d927a4ff193ad651a803d8f01,",
+      "color.icon.secondary": "S:5983df9a83dc807cc3c4c383f133e8bf157d369c,",
+      "color.icon.tertiary": "S:f9f7cb2a83bc3a154013117d60d68a7e1ee343ca,",
+      "color.icon.quaternary": "S:90d67395c3c82f67e58cc3b247d9463e1261e155,",
+      "color.icon.accent.tertiary": "S:e3a0b584a473c359c77be827e007fdd82aecfac1,"
     }
   },
   {
