@@ -66,25 +66,29 @@
     "icon": {
       "primary": {
         "value": "{color.gray.1400}",
-        "type": "color"
+        "type": "color",
+        "description": "Highest contrast icon."
       },
       "secondary": {
         "value": "{color.gray.900}",
-        "type": "color"
+        "type": "color",
+        "description": "Lower contrast icon."
       },
       "tertiary": {
         "value": "{color.gray.800}",
-        "type": "color"
+        "type": "color",
+        "description": "Lowest contrast accessible icon."
       },
       "quaternary": {
         "value": "{color.gray.700}",
         "type": "color",
-        "description": "⚠️ Lower than 3:1 contrast. Only use for non-essential icons. Do not rely exclusively on them."
+        "description": "⚠️ Lowest contrast non-accessible icon, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
       },
       "accent": {
         "tertiary": {
           "value": "{color.green.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Lowest contrast accessible icon."
         }
       }
     }
