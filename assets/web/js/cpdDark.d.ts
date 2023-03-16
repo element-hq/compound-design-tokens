@@ -232,6 +232,7 @@ export const cpdColorPink1200 : string;
 export const cpdColorPink1300 : string;
 export const cpdColorPink1400 : string;
 export const cpdColorBgCanvas : string;
+export const cpdColorBgPrimary : string;
 export const cpdColorBgSecondary : string;
 export const cpdColorBgActionPrimary : string;
 export const cpdColorTextPrimary : string;

@@ -14,6 +14,7 @@ object LightDesignTokens {
   val borderWidth4 = 4.dp
   val colorBgActionPrimary = Color(0xff1b1d22)
   val colorBgCanvas = Color(0xffffffff)
+  val colorBgPrimary = Color(0xffe1e6ec)
   val colorBgSecondary = Color(0xfff0f2f5)
   val colorBlue100 = Color(0xfff9fcff)
   val colorBlue1000 = Color(0xff0558c7)

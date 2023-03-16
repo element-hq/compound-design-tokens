@@ -14,6 +14,7 @@ object DarkHcDesignTokens {
   val borderWidth4 = 4.dp
   val colorBgActionPrimary = Color(0xfff2f5f7)
   val colorBgCanvas = Color(0xff101317)
+  val colorBgPrimary = Color(0xff2b2e33)
   val colorBgSecondary = Color(0xff26282d)
   val colorBlue100 = Color(0xff00095d)
   val colorBlue1000 = Color(0xff9ac0f8)

@@ -232,6 +232,7 @@ export const cpdColorPink1200 = "#64002f";
 export const cpdColorPink1300 = "#4a001c";
 export const cpdColorPink1400 = "#410015";
 export const cpdColorBgCanvas = "#ffffff";
+export const cpdColorBgPrimary = "#d7dce3";
 export const cpdColorBgSecondary = "#e1e6ec";
 export const cpdColorBgActionPrimary = "#1a1c21";
 export const cpdColorTextPrimary = "#1a1c21";

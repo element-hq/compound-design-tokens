@@ -52,6 +52,7 @@
   --cpd-color-text-primary: var(--cpd-color-gray-1400);
   --cpd-color-bg-action-primary: var(--cpd-color-gray-1400);
   --cpd-color-bg-secondary: var(--cpd-color-gray-300);
+  --cpd-color-bg-primary: var(--cpd-color-gray-400);
   --cpd-color-bg-canvas: var(--cpd-color-theme-bg);
   --cpd-font-heading-xl-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-heading-xl)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-heading-xl-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-heading-xl)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
