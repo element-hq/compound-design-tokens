@@ -211,6 +211,7 @@ public class CompoundDarkDesignTokens {
     public static let colorTextPrimary = colorGray1400
     public static let colorBgActionPrimary = colorGray1400
     public static let colorBgSecondary = colorGray300
+    public static let colorBgPrimary = colorGray400
     public static let colorBgCanvas = colorThemeBg
     public static let space64X = spaceScale * 64
     public static let space48X = spaceScale * 48
