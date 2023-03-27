@@ -27,6 +27,6 @@ export default {
      * all tokens that are not in the semantics files are "core" and should
      * only be used directly under rare occasions
      */
-    return token.filePath.indexOf("theme-semantics") < 0;
+    return !token.filePath.endsWith("-semantics");
   },
 } as StyleDictionary.Filter;
