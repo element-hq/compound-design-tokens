@@ -260,8 +260,7 @@ function generateThemeJson(leonardoConfig, theme) {
   });
 
   return leonardoTheme.contrastColors;
-}
-
+  getAlphaColor
 function renderKeyColorsHtml(leonardoConfig) {
   let html = "";
 

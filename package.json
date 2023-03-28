@@ -28,10 +28,14 @@
     "url": "git+https://github.com/vector-im/compound-design-tokens.git"
   },
   "devDependencies": {
+    "@adobe/leonardo-contrast-colors": "https://gitpkg.now.sh/adobe/leonardo/packages/contrast-colors?4459610",
     "@tokens-studio/sd-transforms": "^0.4.3",
+    "@types/chroma-js": "^2.4.0",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.13.0",
+    "apca-w3": "^0.1.9",
+    "chroma-js": "^2.4.2",
     "fast-glob": "^3.2.12",
     "http-server": "^14.1.1",
     "style-dictionary": "https://github.com/amzn/style-dictionary",
