@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "ts-node --esm ./build.ts",
-    "dev": "http-server ."
+    "dev": "npx http-server ./ -o public/"
   },
   "keywords": [
     "compound",

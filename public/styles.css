@@ -1,0 +1,251 @@
+/*
+Copyright 2023 The Matrix.org Foundation C.I.C.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap");
+
+@import url("../../../assets/web/css/compound-design-tokens.css");
+
+/*
+Inter Dynamic Metrics 
+https://rsms.me/inter/dynmetrics/
+*/
+:root {
+  --f-ls-14: -0.006em;
+  --f-ls-16: -0.011em;
+  --f-ls-24: -0.019em;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, system-ui;
+  font-size: 1rem;
+  color: var(--color-gray-1400-light);
+  margin: 16px;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-bottom: 8px;
+}
+
+pre {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-0_5 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.m-b-1 {
+  margin-block-end: 1rem;
+}
+
+.tokens-studio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.key-colors {
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.key-colors__swatch {
+  height: 24px;
+  width: 40px;
+}
+
+.themes,
+.themes-alpha {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.theme {
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.theme__action {
+  transition: transform 250ms ease;
+}
+
+.theme__action:hover {
+  transform: scale(1.1);
+}
+
+.theme__swatch {
+  height: 24px;
+  width: 40px;
+}
+
+.tests__case {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.bg {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.bg--light {
+  background-color: var(--color-bg-light);
+}
+
+.bg--lightHc {
+  background-color: var(--color-bg-lightHc);
+}
+
+.bg--dark {
+  background-color: var(--color-bg-dark);
+}
+
+.bg--darkHc {
+  background-color: var(--color-bg-darkHc);
+}
+
+.button {
+  align-items: center;
+  border-radius: 9999px;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 44px;
+  letter-spacing: var(--f-ls-16);
+  padding: 8px 24px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/*
+.button--{colorName}-{themeName} {
+  background-color: var(--color-{colorName}-900-{themeName});
+  color: var(--color-bg-{themeName});
+}`;
+*/
+
+.button--gray-light {
+  background-color: var(--color-gray-1400-light) !important;
+}
+
+.button--gray-lightHc {
+  background-color: var(--color-gray-1400-lightHc) !important;
+}
+
+.button--gray-dark {
+  background-color: var(--color-gray-1400-dark) !important;
+}
+
+.button--gray-darkHc {
+  background-color: var(--color-gray-1400-darkHc) !important;
+}
+
+.label {
+  align-items: center;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: var(--f-ls-14);
+  padding: 4px 12px;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+
+/*
+.label--{colorName}-{themeName} {
+  background-color: var(--color-{colorName}-300-{themeName});
+  border-color: var(--color-{colorName}-700-{themeName});
+  color: var(--color-{colorName}-900-{themeName});
+}
+*/
+
+.text-heading {
+  font-size: 1.5rem;
+  letter-spacing: var(--f-ls-24);
+  margin-top: 0;
+}
+
+.text-body-md {
+  font-size: 1rem;
+  letter-spacing: var(--f-ls-16);
+}
+
+.text-body-sm {
+  font-size: 0.875rem;
+  letter-spacing: var(--f-ls-14);
+}
+
+/*
+.text--primary-{themeName} {
+  color: var(--color-{colorName}-1400-light);
+}
+.text--secondary-{themeName} {
+  color: var(--color-{colorName}-900-light);
+}
+*/

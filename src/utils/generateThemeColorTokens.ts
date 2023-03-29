@@ -19,7 +19,6 @@ import path from "path";
 import process from "process";
 import { Theme } from "../@types";
 
-import { getAlphaColor } from "./color";
 import { generateColorScales } from "./generateColorScales";
 
 /**
@@ -60,7 +59,6 @@ export async function generateThemeColorTokens(theme: Theme) {
       /**
        * Construct all the translucent colour scale
        */
-      // TODO: Uncomment the following when we're ready to publish the alpha scale
       /*alpha: {
         ...contrastColors.reduce((memo, entry) => {
           for (const value of entry.values) {
