@@ -19,6 +19,7 @@ import setupStyleDictionary from "./src/setupStyleDictionary";
 import generateIconTokens from "./src/utils/generateIconTokens";
 
 import fs from "fs-extra";
+import { generateThemeColorTokens } from "./src/utils/generateThemeColorTokens";
 
 const themes: Theme[] = ["light", "light-hc", "dark", "dark-hc"];
 const platforms: Platform[] = ["web", "android", "ios"];
@@ -26,6 +27,8 @@ const platforms: Platform[] = ["web", "android", "ios"];
 (async () => {
   generateIconTokens();
   for (const theme of themes) {
+    await generateThemeColorTokens(theme);
+
     for (const platform of platforms) {
       const sb = await setupStyleDictionary(theme, platform);
       sb.buildAllPlatforms();

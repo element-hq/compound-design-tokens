@@ -14,21 +14,24 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {
-  ContrastColor,
-  ContrastColorBackground,
-} from "@adobe/leonardo-contrast-colors";
+import fs from "fs-extra";
+import path from "path";
+import process from "process";
+import { Theme } from "../@types";
+
 import { getAlphaColor } from "./color";
+import { generateColorScales } from "./generateColorScales";
 
 /**
  * Adapter from the leonardo format to the tokens studio output
  * @returns
  */
-export function fromLeonardoColorToTokenStudio([
-  constrastBackground,
-  ...constrastColors
-]: [ContrastColorBackground, ...ContrastColor[]]) {
-  return {
+export async function generateThemeColorTokens(theme: Theme) {
+  const [constrastBackground, ...contrastColors] = await generateColorScales(
+    theme
+  );
+
+  const tokenList = {
     color: {
       theme: {
         bg: {
@@ -40,7 +43,7 @@ export function fromLeonardoColorToTokenStudio([
       /**
        * Construct all the solid colour scale
        */
-      ...constrastColors.reduce((memo, entry) => {
+      ...contrastColors.reduce((memo, entry) => {
         for (const value of entry.values) {
           const [name, shade] = value.name.split(/(\d+)/);
           memo[name] = {
@@ -57,8 +60,9 @@ export function fromLeonardoColorToTokenStudio([
       /**
        * Construct all the translucent colour scale
        */
-      alpha: {
-        ...constrastColors.reduce((memo, entry) => {
+      // TODO: Uncomment the following when we're ready to publish the alpha scale
+      /*alpha: {
+        ...contrastColors.reduce((memo, entry) => {
           for (const value of entry.values) {
             const [name, shade] = value.name.split(/(\d+)/);
             const { h, s, l, a } = getAlphaColor(
@@ -76,7 +80,14 @@ export function fromLeonardoColorToTokenStudio([
           }
           return memo;
         }, {} as Record<string, any>),
-      },
+      },*/
     },
   };
+
+  const content = JSON.stringify(tokenList, null, 2);
+  fs.writeFileSync(
+    path.join(process.cwd(), "tokens", `theme-${theme}.json`),
+    content,
+    "utf-8"
+  );
 }
