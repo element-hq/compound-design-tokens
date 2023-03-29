@@ -15,7 +15,8 @@ limitations under the License.
 */
 
 import fs from "fs-extra";
-import path, { dirname } from "path";
+import path from "path";
+import process from "process";
 
 /**
  * Generates `icons/$icons.json` off all the SVG icons discovered in the
@@ -24,7 +25,7 @@ import path, { dirname } from "path";
 export default function generateIconTokens(): void {
   const outputFileName = "$icons.json";
   const folder = "icons/";
-  const iconsFolder = path.join(dirname(require.main!.filename), folder);
+  const iconsFolder = path.join(process.cwd(), folder);
 
   const iconsPath = fs
     .readdirSync(iconsFolder)

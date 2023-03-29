@@ -1,5 +1,10 @@
 {
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
   "compilerOptions": {
+    "module": "ESNext",
     "moduleResolution": "node",
     "target": "es6",
     "lib": ["ES2022", "DOM"],

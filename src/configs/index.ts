@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as glob from "fast-glob";
+import glob from "fast-glob";
 import { Config } from "style-dictionary/types/Config";
 
 import { Theme, Platform } from "../@types";

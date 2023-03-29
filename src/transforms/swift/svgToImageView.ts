@@ -14,7 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path from "path";
+import process from "process";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
@@ -31,10 +32,7 @@ export default {
   transformer: function (token, platform) {
     const filename = token.name + ".svg";
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
-    const sourceIconPath = path.join(
-      dirname(require.main!.filename),
-      token.value
-    );
+    const sourceIconPath = path.join(process.cwd(), token.value);
 
     // Create the xcassets folder and its `Contents.json` root file if they don't exist
     if (!fs.existsSync(outputAssetPath)) {

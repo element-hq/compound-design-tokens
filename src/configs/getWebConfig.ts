@@ -17,7 +17,7 @@ limitations under the License.
 import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
 import { File } from "style-dictionary/types/File";
-import _ from "lodash";
+import _ from "lodash-es";
 
 const COMPOUND_TOKENS_NAMESPACE = "cpd";
 

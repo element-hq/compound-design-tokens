@@ -16,7 +16,7 @@ limitations under the License.
 
 import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
-import _ from "lodash";
+import _ from "lodash-es";
 
 export default function getIOSConfig(theme: Theme): Platform {
   return {

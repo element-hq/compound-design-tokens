@@ -21,17 +21,14 @@ import {
   ContrastColor,
 } from "@adobe/leonardo-contrast-colors";
 
-import { LeonardoConfig, Theme } from "../@types";
-import { getHues } from "./colorConfig";
+import { Theme } from "../@types";
+import { getHues, leonardoConfig } from "./colorConfig";
 
 /**
- *
- * @param leonardoConfig con
  * @param theme the theme to generate the config for
  * @returns the JSON containing the tokens
  */
 export async function generateColorScales(
-  leonardoConfig: LeonardoConfig,
   theme: Theme
 ): Promise<[ContrastColorBackground, ...ContrastColor[]]> {
   const { colorSpace, colorSmoothing, output, formula, backgroundColor } =

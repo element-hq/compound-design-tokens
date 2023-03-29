@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as StyleDictionary from "style-dictionary";
+import StyleDictionary from "style-dictionary";
 import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";

@@ -14,11 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path from "path";
+import process from "process";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import svg2vectordrawable from "svg2vectordrawable";
-import _ from "lodash";
+import _ from "lodash-es";
 
 /**
  * A transformer to change svg path to vector drawable path
@@ -30,7 +31,7 @@ export default {
     return token.type === "icon";
   },
   transformer: function (token, platform) {
-    const iconPath = path.join(dirname(require.main!.filename), token.value);
+    const iconPath = path.join(process.cwd(), token.value);
     const resPath = `/res/drawable`;
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android

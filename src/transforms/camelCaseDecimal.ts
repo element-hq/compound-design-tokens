@@ -16,7 +16,7 @@ limitations under the License.
 
 import { Platform } from "style-dictionary/types/Platform";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import { camelCase } from "lodash";
+import { camelCase } from "lodash-es";
 import { Transform } from "style-dictionary/types/Transform";
 
 /**
