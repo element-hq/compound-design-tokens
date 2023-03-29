@@ -4,8 +4,6 @@ function roundToTwo(num) {
   return +(Math.ceil(num + "e+2") + "e-2");
 }
 
-export const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-
 const hexToRgb = (hex) => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return [
@@ -57,20 +55,6 @@ const rgbToHsl = (r, g, b) => {
   l = +(l * 100).toFixed(1);
 
   return [h, s, Math.round(l)];
-};
-
-export const hslaToHex = (h, s, l, alpha) => {
-  l /= 100;
-  const a = (s * Math.min(l, 1 - l)) / 100;
-  const f = (n) => {
-    const k = (n + h / 30) % 12;
-    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-    return Math.round(255 * color)
-      .toString(16)
-      .padStart(2, "0")
-      .toUpperCase(); // convert to Hex and prefix "0" if needed
-  };
-  return `#${f(0)}${f(8)}${f(4)}, ${alpha}`;
 };
 
 export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {

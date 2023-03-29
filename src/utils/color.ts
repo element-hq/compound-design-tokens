@@ -33,23 +33,13 @@ export function hslToHex(h: number, s: number, l: number): RgbHexColor {
  */
 
 /**
- * TODO: @jano to add description
- * @param num ?
- * @returns ?
+ * round the number to maximum two decimal point
+ * @param num the number to round
+ * @returns the rounded number
  */
 function roundToTwo(num: number): number {
-  // @ts-ignore
-  return +(Math.ceil(num + "e+2") + "e-2");
+  return Number.parseFloat(num.toFixed(2));
 }
-
-/**
- * @param num the number to clamp
- * @param min the min value
- * @param max the max value
- * @returns the clamped output
- */
-export const clamp = (num: number, min: number, max: number): number =>
-  Math.min(Math.max(num, min), max);
 
 /**
  *
@@ -114,33 +104,6 @@ const rgbToHsl = (r: number, g: number, b: number): number[] => {
   l = +(l * 100).toFixed(1);
 
   return [h, s, Math.round(l)];
-};
-
-/**
- * Transforms HSLA to HEX
- * @param h hue
- * @param s saturation
- * @param l lightness
- * @param alpha transparency
- * @returns an hexadecimal color code
- */
-export const hslaToHex = (
-  h: number,
-  s: number,
-  l: number,
-  alpha: number
-): string => {
-  l /= 100;
-  const a = (s * Math.min(l, 1 - l)) / 100;
-  const f = (n: number) => {
-    const k = (n + h / 30) % 12;
-    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-    return Math.round(255 * color)
-      .toString(16)
-      .padStart(2, "0")
-      .toUpperCase(); // convert to Hex and prefix "0" if needed
-  };
-  return `#${f(0)}${f(8)}${f(4)}, ${alpha}`;
 };
 
 /**
