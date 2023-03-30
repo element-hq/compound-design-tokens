@@ -2,9 +2,11 @@
   "color": {
     "bg": {
       "canvas": {
-        "value": "{color.theme.bg}",
-        "type": "color",
-        "description": "Default global background for the user interface."
+        "elevation-default": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Default global background for the user interface. Elevation: Default (Level 0)."
+        }
       }
     }
   }
