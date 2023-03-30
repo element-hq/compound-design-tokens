@@ -12,7 +12,12 @@
           "type": "color",
           "description": "Default global background for the user interface.\nElevation: Level 1."
         }
-      }
+      },
+      "secondary": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "Lower contrast surfaces.\nElevation: Default (Level 1)."
+      }      
     }
   }
 }
