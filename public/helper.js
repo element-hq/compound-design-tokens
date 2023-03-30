@@ -16,7 +16,10 @@ limitations under the License.
 
 const levels = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400];
 
-function renderTheme(themeJson, themeName, alpha = false) {
+const templateHue = document.querySelector('#template-hue');
+const templatePreview = document.querySelector("#template-preview");
+
+export function renderTheme(themeJson, themeName, alpha = false) {
   const {
     theme,
     alpha: alphaColors,
@@ -24,13 +27,24 @@ function renderTheme(themeJson, themeName, alpha = false) {
   } = themeJson.color;
   const root = document.createElement("div");
   root.classList.add("theme", `theme--${themeName}`);
+  root.classList.add("theme", `cpd-theme-${themeName}`);
   root.style = `background-color: ${theme.bg.value}; `;
   for (const color of Object.keys(colors)) {
     const hue = templateHue.content.cloneNode(true).firstChild;
-    for (const level of levels) {
-      hue.style.setProperty(`--hue-${level}`, `var(--cpd-color-${color}-${level})`);
-    }
+    setHueProperties(hue, color);
     root.appendChild(hue);
   }
   return root;
+}
+
+export function renderPreview(themeName) {
+  const preview = templatePreview.content.cloneNode(true).firstChild;
+  preview.classList.add(`cpd-theme-${themeName}`);
+  return preview;
+}
+
+function setHueProperties(node, color) {
+  for (const level of levels) {
+    node.style.setProperty(`--hue-${level}`, `var(--cpd-color-${color}-${level})`);
+  }
 }

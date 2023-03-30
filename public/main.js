@@ -13,17 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+import { renderPreview, renderTheme  } from "./helper.js";
 
 const themeLight = await fetchJson("../tokens/theme-light.json");
 const themeDark = await fetchJson("../tokens/theme-dark.json");
 const themeLightHc = await fetchJson("../tokens/theme-light-hc.json");
 const themeDarkHc = await fetchJson("../tokens/theme-dark-hc.json");
-
-const templateHue = document.querySelector('#template-hue');
-
-function generateContrastGridUrl() {
-  return "http://perdu.com";
-}
 
 function fetchJson(url) {
   return fetch(url).then(response => response.json());
@@ -35,3 +30,10 @@ themes.appendChild(renderTheme(themeLight, "light"));
 themes.appendChild(renderTheme(themeDark, "dark"));
 themes.appendChild(renderTheme(themeLightHc, "light-hc"));
 themes.appendChild(renderTheme(themeDarkHc, "dark-hc"));
+
+const tests = document.querySelector(".tests");
+
+tests.appendChild(renderPreview("light"));
+tests.appendChild(renderPreview("dark"));
+tests.appendChild(renderPreview("light-hc"));
+tests.appendChild(renderPreview("dark-hc"));

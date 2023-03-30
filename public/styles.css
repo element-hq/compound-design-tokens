@@ -44,7 +44,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Inter, system-ui;
   font-size: 1rem;
-  color: var(--color-gray-1400-light);
+  color: var(--cpd-color-text-primary);
   margin: 16px;
 }
 
@@ -178,7 +178,7 @@ pre {
 }
 
 /*
-.button--{colorName}-{themeName} {
+.button--gray {
   background-color: var(--color-{colorName}-900-{themeName});
   color: var(--color-bg-{themeName});
 }`;
@@ -218,7 +218,7 @@ pre {
 }
 
 /*
-.label--{colorName}-{themeName} {
+.label--gray {
   background-color: var(--color-{colorName}-300-{themeName});
   border-color: var(--color-{colorName}-700-{themeName});
   color: var(--color-{colorName}-900-{themeName});
@@ -241,11 +241,38 @@ pre {
   letter-spacing: var(--f-ls-14);
 }
 
-/*
-.text--primary-{themeName} {
-  color: var(--color-{colorName}-1400-light);
+.text-preview,
+.text--primary {
+  color: var(--cpd-color-gray-1400);
 }
-.text--secondary-{themeName} {
-  color: var(--color-{colorName}-900-light);
+
+.text--secondary {
+  color: var(--cpd-color-gray-900);
 }
-*/
+
+.text--secondary-strong {
+  color: var(--cpd-color-gray-1100);
+}
+
+.text-preview.bg {
+  background-color: var(--cpd-color-theme-bg);
+}
+
+.bg--01-gray {
+  background-color: var(--cpd-color-gray-100);
+}
+.bg--02-gray {
+  background-color: var(--cpd-color-gray-200);
+}
+.bg--03-gray {
+  background-color: var(--cpd-color-gray-300);
+}
+.bg--04-gray {
+  background-color: var(--cpd-color-gray-400);
+}
+.bg--05-gray {
+  background-color: var(--cpd-color-gray-500);
+}
+.bg--06-gray {
+  background-color: var(--cpd-color-gray-600);
+}
