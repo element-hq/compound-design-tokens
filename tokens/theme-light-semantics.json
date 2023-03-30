@@ -1,1 +1,11 @@
-{}
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "value": "{color.theme.bg}",
+        "type": "color",
+        "description": "Default global background for the user interface."
+      }
+    }
+  }
+}
