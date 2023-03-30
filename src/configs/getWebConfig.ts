@@ -32,7 +32,6 @@ export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
     "ts/typography/css/shorthand",
     "ts/shadow/shorthand",
     "attribute/cti",
-    "color/hex",
     "css/pxToRem",
     "css/percentageToUnitless",
     target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
