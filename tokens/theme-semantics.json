@@ -1,11 +1,6 @@
 {
   "color": {
     "bg": {
-      "primary": {
-        "value": "{color.gray.400}",
-        "type": "color",
-        "description": "Medium contrast surfaces."
-      },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
