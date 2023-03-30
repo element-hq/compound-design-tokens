@@ -5,7 +5,12 @@
         "elevation-default": {
           "value": "{color.theme.bg}",
           "type": "color",
-          "description": "Default global background for the user interface. Elevation: Default (Level 0)."
+          "description": "Default global background for the user interface.\nElevation: Default (Level 0)."
+        },
+        "elevation-1": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Default global background for the user interface.\nElevation: Level 1."
         }
       }
     }
