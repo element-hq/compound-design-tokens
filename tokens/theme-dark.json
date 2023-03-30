@@ -802,792 +802,792 @@
     "alpha": {
       "gray": {
         "100": {
-          "value": "hsla(214, 10%, 86%, 0.02)",
+          "value": "hsl(214, 10%, 86%, 0.02)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 0.02"
         },
         "200": {
-          "value": "hsla(286, 31%, 82%, 0.04)",
+          "value": "hsl(286, 31%, 82%, 0.04)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 0.04"
         },
         "300": {
-          "value": "hsla(280, 41%, 90%, 0.06)",
+          "value": "hsl(280, 41%, 90%, 0.06)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 0.06"
         },
         "400": {
-          "value": "hsla(270, 37%, 93%, 0.1)",
+          "value": "hsl(270, 37%, 93%, 0.1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 0.1"
         },
         "500": {
-          "value": "hsla(214, 41%, 97%, 0.15)",
+          "value": "hsl(214, 41%, 97%, 0.15)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 0.15"
         },
         "600": {
-          "value": "hsla(225, 46%, 95%, 0.2)",
+          "value": "hsl(225, 46%, 95%, 0.2)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.2"
         },
         "700": {
-          "value": "hsla(213, 85%, 95%, 0.27)",
+          "value": "hsl(213, 85%, 95%, 0.27)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.27"
         },
         "800": {
-          "value": "hsla(216, 100%, 94%, 0.41)",
+          "value": "hsl(216, 100%, 94%, 0.41)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.41"
         },
         "900": {
-          "value": "hsla(211, 94%, 94%, 0.54)",
+          "value": "hsl(211, 94%, 94%, 0.54)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.54"
         },
         "1000": {
-          "value": "hsla(213, 93%, 94%, 0.61)",
+          "value": "hsl(213, 93%, 94%, 0.61)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.61"
         },
         "1100": {
-          "value": "hsla(215, 92%, 95%, 0.68)",
+          "value": "hsl(215, 92%, 95%, 0.68)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.68"
         },
         "1200": {
-          "value": "hsla(215, 74%, 96%, 0.79)",
+          "value": "hsl(215, 74%, 96%, 0.79)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.79"
         },
         "1300": {
-          "value": "hsla(213, 73%, 97%, 0.89)",
+          "value": "hsl(213, 73%, 97%, 0.89)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.89"
         },
         "1400": {
-          "value": "hsla(214, 78%, 98%, 0.95)",
+          "value": "hsl(214, 78%, 98%, 0.95)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 0.95"
         }
       },
       "red": {
         "100": {
-          "value": "hsla(0, 100%, 11%, 1)",
+          "value": "hsl(0, 100%, 11%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(0, 100%, 12%, 1)",
+          "value": "hsl(0, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(0, 100%, 14%, 1)",
+          "value": "hsl(0, 100%, 14%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(0, 100%, 18%, 1)",
+          "value": "hsl(0, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(0, 100%, 22%, 1)",
+          "value": "hsl(0, 100%, 22%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(356, 100%, 26%, 1)",
+          "value": "hsl(356, 100%, 26%, 1)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 1"
         },
         "700": {
-          "value": "hsla(354, 99%, 52%, 0.6)",
+          "value": "hsl(354, 99%, 52%, 0.6)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.6"
         },
         "800": {
-          "value": "hsla(357, 99%, 57%, 0.81)",
+          "value": "hsl(357, 99%, 57%, 0.81)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.81"
         },
         "900": {
-          "value": "hsla(1, 98%, 61%, 1)",
+          "value": "hsl(1, 98%, 61%, 1)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 1"
         },
         "1000": {
-          "value": "hsla(3, 100%, 68%, 1)",
+          "value": "hsl(3, 100%, 68%, 1)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 1"
         },
         "1100": {
-          "value": "hsla(5, 100%, 74%, 1)",
+          "value": "hsl(5, 100%, 74%, 1)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 1"
         },
         "1200": {
-          "value": "hsla(7, 100%, 82%, 1)",
+          "value": "hsl(7, 100%, 82%, 1)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 1"
         },
         "1300": {
-          "value": "hsla(8, 100%, 90%, 1)",
+          "value": "hsl(8, 100%, 90%, 1)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 1"
         },
         "1400": {
-          "value": "hsla(7, 100%, 95%, 1)",
+          "value": "hsl(7, 100%, 95%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
       },
       "orange": {
         "100": {
-          "value": "hsla(0, 100%, 11%, 1)",
+          "value": "hsl(0, 100%, 11%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(0, 100%, 12%, 1)",
+          "value": "hsl(0, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(0, 100%, 14%, 1)",
+          "value": "hsl(0, 100%, 14%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(0, 100%, 17%, 1)",
+          "value": "hsl(0, 100%, 17%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(0, 100%, 22%, 1)",
+          "value": "hsl(0, 100%, 22%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(2, 100%, 26%, 1)",
+          "value": "hsl(2, 100%, 26%, 1)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 1"
         },
         "700": {
-          "value": "hsla(12, 100%, 39%, 0.74)",
+          "value": "hsl(12, 100%, 39%, 0.74)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.74"
         },
         "800": {
-          "value": "hsla(21, 100%, 50%, 0.71)",
+          "value": "hsl(21, 100%, 50%, 0.71)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.71"
         },
         "900": {
-          "value": "hsla(26, 99%, 52%, 0.85)",
+          "value": "hsl(26, 99%, 52%, 0.85)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.85"
         },
         "1000": {
-          "value": "hsla(29, 99%, 53%, 0.92)",
+          "value": "hsl(29, 99%, 53%, 0.92)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.92"
         },
         "1100": {
-          "value": "hsla(27, 98%, 62%, 0.97)",
+          "value": "hsl(27, 98%, 62%, 0.97)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.97"
         },
         "1200": {
-          "value": "hsla(26, 97%, 75%, 0.99)",
+          "value": "hsl(26, 97%, 75%, 0.99)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.99"
         },
         "1300": {
-          "value": "hsla(24, 100%, 86%, 1)",
+          "value": "hsl(24, 100%, 86%, 1)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 1"
         },
         "1400": {
-          "value": "hsla(25, 100%, 93%, 1)",
+          "value": "hsl(25, 100%, 93%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
       },
       "yellow": {
         "100": {
-          "value": "hsla(0, 100%, 11%, 1)",
+          "value": "hsl(0, 100%, 11%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(3, 100%, 11%, 1)",
+          "value": "hsl(3, 100%, 11%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(8, 100%, 13%, 1)",
+          "value": "hsl(8, 100%, 13%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(16, 100%, 15%, 1)",
+          "value": "hsl(16, 100%, 15%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(23, 100%, 18%, 1)",
+          "value": "hsl(23, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(26, 100%, 23%, 0.87)",
+          "value": "hsl(26, 100%, 23%, 0.87)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.87"
         },
         "700": {
-          "value": "hsla(30, 100%, 26%, 0.92)",
+          "value": "hsl(30, 100%, 26%, 0.92)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.92"
         },
         "800": {
-          "value": "hsla(35, 100%, 31%, 1)",
+          "value": "hsl(35, 100%, 31%, 1)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 1"
         },
         "900": {
-          "value": "hsla(39, 100%, 37%, 1)",
+          "value": "hsl(39, 100%, 37%, 1)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 1"
         },
         "1000": {
-          "value": "hsla(41, 100%, 40%, 1)",
+          "value": "hsl(41, 100%, 40%, 1)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 1"
         },
         "1100": {
-          "value": "hsla(44, 100%, 43%, 1)",
+          "value": "hsl(44, 100%, 43%, 1)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 1"
         },
         "1200": {
-          "value": "hsla(46, 98%, 52%, 0.94)",
+          "value": "hsl(46, 98%, 52%, 0.94)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.94"
         },
         "1300": {
-          "value": "hsla(47, 99%, 67%, 1)",
+          "value": "hsl(47, 99%, 67%, 1)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 1"
         },
         "1400": {
-          "value": "hsla(46, 100%, 85%, 1)",
+          "value": "hsl(46, 100%, 85%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
       },
       "lime": {
         "100": {
-          "value": "hsla(120, 100%, 5%, 1)",
+          "value": "hsl(120, 100%, 5%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(120, 100%, 6%, 1)",
+          "value": "hsl(120, 100%, 6%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(120, 100%, 8%, 1)",
+          "value": "hsl(120, 100%, 8%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(120, 100%, 9%, 1)",
+          "value": "hsl(120, 100%, 9%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(120, 100%, 12%, 1)",
+          "value": "hsl(120, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(120, 100%, 15%, 1)",
+          "value": "hsl(120, 100%, 15%, 1)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 1"
         },
         "700": {
-          "value": "hsla(120, 100%, 18%, 1)",
+          "value": "hsl(120, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 1"
         },
         "800": {
-          "value": "hsla(112, 98%, 52%, 0.45)",
+          "value": "hsl(112, 98%, 52%, 0.45)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.45"
         },
         "900": {
-          "value": "hsla(107, 98%, 57%, 0.58)",
+          "value": "hsl(107, 98%, 57%, 0.58)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.58"
         },
         "1000": {
-          "value": "hsla(105, 97%, 58%, 0.66)",
+          "value": "hsl(105, 97%, 58%, 0.66)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.66"
         },
         "1100": {
-          "value": "hsla(102, 98%, 60%, 0.74)",
+          "value": "hsl(102, 98%, 60%, 0.74)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.74"
         },
         "1200": {
-          "value": "hsla(102, 100%, 68%, 0.84)",
+          "value": "hsl(102, 100%, 68%, 0.84)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.84"
         },
         "1300": {
-          "value": "hsla(104, 100%, 84%, 0.92)",
+          "value": "hsl(104, 100%, 84%, 0.92)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.92"
         },
         "1400": {
-          "value": "hsla(105, 91%, 92%, 0.97)",
+          "value": "hsl(105, 91%, 92%, 0.97)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 0.97"
         }
       },
       "green": {
         "100": {
-          "value": "hsla(144, 100%, 6%, 1)",
+          "value": "hsl(144, 100%, 6%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(147, 100%, 6%, 1)",
+          "value": "hsl(147, 100%, 6%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(151, 100%, 7%, 1)",
+          "value": "hsl(151, 100%, 7%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(155, 100%, 9%, 1)",
+          "value": "hsl(155, 100%, 9%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(160, 100%, 12%, 1)",
+          "value": "hsl(160, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(162, 100%, 14%, 1)",
+          "value": "hsl(162, 100%, 14%, 1)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 1"
         },
         "700": {
-          "value": "hsla(165, 100%, 18%, 1)",
+          "value": "hsl(165, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 1"
         },
         "800": {
-          "value": "hsla(168, 100%, 24%, 1)",
+          "value": "hsl(168, 100%, 24%, 1)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 1"
         },
         "900": {
-          "value": "hsla(164, 98%, 53%, 0.58)",
+          "value": "hsl(164, 98%, 53%, 0.58)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.58"
         },
         "1000": {
-          "value": "hsla(163, 99%, 55%, 0.65)",
+          "value": "hsl(163, 99%, 55%, 0.65)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.65"
         },
         "1100": {
-          "value": "hsla(162, 98%, 57%, 0.74)",
+          "value": "hsl(162, 98%, 57%, 0.74)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.74"
         },
         "1200": {
-          "value": "hsla(156, 97%, 76%, 0.83)",
+          "value": "hsl(156, 97%, 76%, 0.83)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.83"
         },
         "1300": {
-          "value": "hsla(152, 93%, 88%, 0.91)",
+          "value": "hsl(152, 93%, 88%, 0.91)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.91"
         },
         "1400": {
-          "value": "hsla(152, 88%, 94%, 0.96)",
+          "value": "hsl(152, 88%, 94%, 0.96)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 0.96"
         }
       },
       "cyan": {
         "100": {
-          "value": "hsla(225, 100%, 13%, 1)",
+          "value": "hsl(225, 100%, 13%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(223, 100%, 14%, 1)",
+          "value": "hsl(223, 100%, 14%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(219, 100%, 15%, 1)",
+          "value": "hsl(219, 100%, 15%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(215, 100%, 18%, 1)",
+          "value": "hsl(215, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(210, 100%, 20%, 1)",
+          "value": "hsl(210, 100%, 20%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(208, 100%, 23%, 1)",
+          "value": "hsl(208, 100%, 23%, 1)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 1"
         },
         "700": {
-          "value": "hsla(204, 100%, 27%, 1)",
+          "value": "hsl(204, 100%, 27%, 1)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 1"
         },
         "800": {
-          "value": "hsla(200, 100%, 37%, 0.88)",
+          "value": "hsl(200, 100%, 37%, 0.88)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.88"
         },
         "900": {
-          "value": "hsla(194, 100%, 37%, 1)",
+          "value": "hsl(194, 100%, 37%, 1)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 1"
         },
         "1000": {
-          "value": "hsla(189, 100%, 44%, 0.88)",
+          "value": "hsl(189, 100%, 44%, 0.88)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.88"
         },
         "1100": {
-          "value": "hsla(186, 98%, 57%, 0.79)",
+          "value": "hsl(186, 98%, 57%, 0.79)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.79"
         },
         "1200": {
-          "value": "hsla(187, 100%, 77%, 0.85)",
+          "value": "hsl(187, 100%, 77%, 0.85)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.85"
         },
         "1300": {
-          "value": "hsla(187, 93%, 89%, 0.92)",
+          "value": "hsl(187, 93%, 89%, 0.92)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.92"
         },
         "1400": {
-          "value": "hsla(187, 93%, 94%, 0.96)",
+          "value": "hsl(187, 93%, 94%, 0.96)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 0.96"
         }
       },
       "blue": {
         "100": {
-          "value": "hsla(237, 100%, 18%, 1)",
+          "value": "hsl(237, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(234, 100%, 18%, 1)",
+          "value": "hsl(234, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(229, 100%, 20%, 1)",
+          "value": "hsl(229, 100%, 20%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(224, 100%, 22%, 1)",
+          "value": "hsl(224, 100%, 22%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(221, 100%, 37%, 0.63)",
+          "value": "hsl(221, 100%, 37%, 0.63)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 0.63"
         },
         "600": {
-          "value": "hsla(219, 99%, 50%, 0.53)",
+          "value": "hsl(219, 99%, 50%, 0.53)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.53"
         },
         "700": {
-          "value": "hsla(217, 99%, 51%, 0.64)",
+          "value": "hsl(217, 99%, 51%, 0.64)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.64"
         },
         "800": {
-          "value": "hsla(214, 99%, 53%, 0.84)",
+          "value": "hsl(214, 99%, 53%, 0.84)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.84"
         },
         "900": {
-          "value": "hsla(215, 98%, 63%, 0.92)",
+          "value": "hsl(215, 98%, 63%, 0.92)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.92"
         },
         "1000": {
-          "value": "hsla(216, 99%, 69%, 0.94)",
+          "value": "hsl(216, 99%, 69%, 0.94)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.94"
         },
         "1100": {
-          "value": "hsla(215, 97%, 74%, 0.96)",
+          "value": "hsl(215, 97%, 74%, 0.96)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.96"
         },
         "1200": {
-          "value": "hsla(216, 100%, 82%, 0.97)",
+          "value": "hsl(216, 100%, 82%, 0.97)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.97"
         },
         "1300": {
-          "value": "hsla(216, 96%, 90%, 0.99)",
+          "value": "hsl(216, 96%, 90%, 0.99)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.99"
         },
         "1400": {
-          "value": "hsla(217, 93%, 95%, 1)",
+          "value": "hsl(217, 93%, 95%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
       },
       "purple": {
         "100": {
-          "value": "hsla(258, 100%, 17%, 1)",
+          "value": "hsl(258, 100%, 17%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(259, 100%, 18%, 1)",
+          "value": "hsl(259, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(259, 100%, 21%, 1)",
+          "value": "hsl(259, 100%, 21%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(261, 100%, 25%, 1)",
+          "value": "hsl(261, 100%, 25%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(263, 100%, 31%, 1)",
+          "value": "hsl(263, 100%, 31%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(263, 98%, 52%, 0.67)",
+          "value": "hsl(263, 98%, 52%, 0.67)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.67"
         },
         "700": {
-          "value": "hsla(260, 98%, 58%, 0.76)",
+          "value": "hsl(260, 98%, 58%, 0.76)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.76"
         },
         "800": {
-          "value": "hsla(257, 100%, 65%, 0.92)",
+          "value": "hsl(257, 100%, 65%, 0.92)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.92"
         },
         "900": {
-          "value": "hsla(254, 99%, 72%, 0.98)",
+          "value": "hsl(254, 99%, 72%, 0.98)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.98"
         },
         "1000": {
-          "value": "hsla(252, 98%, 77%, 0.99)",
+          "value": "hsl(252, 98%, 77%, 0.99)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.99"
         },
         "1100": {
-          "value": "hsla(250, 98%, 80%, 1)",
+          "value": "hsl(250, 98%, 80%, 1)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 1"
         },
         "1200": {
-          "value": "hsla(249, 100%, 87%, 1)",
+          "value": "hsl(249, 100%, 87%, 1)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 1"
         },
         "1300": {
-          "value": "hsla(246, 100%, 93%, 1)",
+          "value": "hsl(246, 100%, 93%, 1)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 1"
         },
         "1400": {
-          "value": "hsla(249, 100%, 96%, 1)",
+          "value": "hsl(249, 100%, 96%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
       },
       "fuchsia": {
         "100": {
-          "value": "hsla(279, 100%, 12%, 1)",
+          "value": "hsl(279, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(281, 100%, 13%, 1)",
+          "value": "hsl(281, 100%, 13%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(282, 100%, 15%, 1)",
+          "value": "hsl(282, 100%, 15%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(285, 100%, 18%, 1)",
+          "value": "hsl(285, 100%, 18%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(287, 100%, 52%, 0.38)",
+          "value": "hsl(287, 100%, 52%, 0.38)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 0.38"
         },
         "600": {
-          "value": "hsla(288, 100%, 56%, 0.44)",
+          "value": "hsl(288, 100%, 56%, 0.44)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.44"
         },
         "700": {
-          "value": "hsla(289, 99%, 59%, 0.54)",
+          "value": "hsl(289, 99%, 59%, 0.54)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.54"
         },
         "800": {
-          "value": "hsla(294, 98%, 63%, 0.71)",
+          "value": "hsl(294, 98%, 63%, 0.71)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.71"
         },
         "900": {
-          "value": "hsla(295, 97%, 72%, 0.8)",
+          "value": "hsl(295, 97%, 72%, 0.8)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.8"
         },
         "1000": {
-          "value": "hsla(296, 98%, 78%, 0.83)",
+          "value": "hsl(296, 98%, 78%, 0.83)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.83"
         },
         "1100": {
-          "value": "hsla(297, 98%, 82%, 0.86)",
+          "value": "hsl(297, 98%, 82%, 0.86)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 0.86"
         },
         "1200": {
-          "value": "hsla(296, 97%, 88%, 0.91)",
+          "value": "hsl(296, 97%, 88%, 0.91)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 0.91"
         },
         "1300": {
-          "value": "hsla(296, 100%, 94%, 0.95)",
+          "value": "hsl(296, 100%, 94%, 0.95)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 0.95"
         },
         "1400": {
-          "value": "hsla(296, 90%, 96%, 0.98)",
+          "value": "hsl(296, 90%, 96%, 0.98)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 0.98"
         }
       },
       "pink": {
         "100": {
-          "value": "hsla(344, 100%, 11%, 1)",
+          "value": "hsl(344, 100%, 11%, 1)",
           "type": "color",
           "description": "WCAG: 1.03 Opacity: 1"
         },
         "200": {
-          "value": "hsla(342, 100%, 12%, 1)",
+          "value": "hsl(342, 100%, 12%, 1)",
           "type": "color",
           "description": "WCAG: 1.06 Opacity: 1"
         },
         "300": {
-          "value": "hsla(339, 100%, 14%, 1)",
+          "value": "hsl(339, 100%, 14%, 1)",
           "type": "color",
           "description": "WCAG: 1.12 Opacity: 1"
         },
         "400": {
-          "value": "hsla(335, 100%, 17%, 1)",
+          "value": "hsl(335, 100%, 17%, 1)",
           "type": "color",
           "description": "WCAG: 1.25 Opacity: 1"
         },
         "500": {
-          "value": "hsla(330, 100%, 21%, 1)",
+          "value": "hsl(330, 100%, 21%, 1)",
           "type": "color",
           "description": "WCAG: 1.5 Opacity: 1"
         },
         "600": {
-          "value": "hsla(333, 97%, 50%, 0.46)",
+          "value": "hsl(333, 97%, 50%, 0.46)",
           "type": "color",
           "description": "WCAG: 1.75 Opacity: 0.46"
         },
         "700": {
-          "value": "hsla(334, 98%, 53%, 0.58)",
+          "value": "hsl(334, 98%, 53%, 0.58)",
           "type": "color",
           "description": "WCAG: 2.25 Opacity: 0.58"
         },
         "800": {
-          "value": "hsla(335, 99%, 55%, 0.8)",
+          "value": "hsl(335, 99%, 55%, 0.8)",
           "type": "color",
           "description": "WCAG: 3.5 Opacity: 0.8"
         },
         "900": {
-          "value": "hsla(340, 99%, 63%, 0.96)",
+          "value": "hsl(340, 99%, 63%, 0.96)",
           "type": "color",
           "description": "WCAG: 5.25 Opacity: 0.96"
         },
         "1000": {
-          "value": "hsla(343, 100%, 70%, 0.98)",
+          "value": "hsl(343, 100%, 70%, 0.98)",
           "type": "color",
           "description": "WCAG: 6.5 Opacity: 0.98"
         },
         "1100": {
-          "value": "hsla(345, 98%, 76%, 1)",
+          "value": "hsl(345, 98%, 76%, 1)",
           "type": "color",
           "description": "WCAG: 8 Opacity: 1"
         },
         "1200": {
-          "value": "hsla(346, 100%, 84%, 1)",
+          "value": "hsl(346, 100%, 84%, 1)",
           "type": "color",
           "description": "WCAG: 10.5 Opacity: 1"
         },
         "1300": {
-          "value": "hsla(347, 100%, 91%, 1)",
+          "value": "hsl(347, 100%, 91%, 1)",
           "type": "color",
           "description": "WCAG: 13.75 Opacity: 1"
         },
         "1400": {
-          "value": "hsla(347, 100%, 96%, 1)",
+          "value": "hsl(347, 100%, 96%, 1)",
           "type": "color",
           "description": "WCAG: 16 Opacity: 1"
         }
