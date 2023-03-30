@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "ts-node --esm ./build.ts",
-    "dev": "npx http-server ./ -o public/"
+    "dev": "concurrently 'npx http-server ./ -o public/' 'yarn watch'",
+    "watch": "onchange 'src/**/*' -e 'assets/**/*' -- yarn build"
   },
   "keywords": [
     "compound",
@@ -37,9 +38,11 @@
     "@types/node": "^18.13.0",
     "apca-w3": "^0.1.9",
     "chroma-js": "^2.4.2",
+    "concurrently": "^8.0.1",
     "fast-glob": "^3.2.12",
     "http-server": "^14.1.1",
     "lodash-es": "^4.17.21",
+    "onchange": "^7.1.0",
     "style-dictionary": "https://github.com/amzn/style-dictionary",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
