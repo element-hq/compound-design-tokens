@@ -16,7 +16,7 @@
       "primary": {
         "value": "{color.gray.400}",
         "type": "color",
-        "description": "Medium contrast surfaces.\nElevation: Default (Level 1)."
+        "description": "Medium contrast surfaces.\nElevation: Default (Level 2)."
       },      
       "secondary": {
         "value": "{color.gray.300}",
