@@ -13,27 +13,46 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-import { renderPreview, renderTheme  } from "./helper.js";
+import {
+  renderPreview,
+  renderTheme,
+  renderButtonsPreview,
+  renderLabels,
+  fetchJson
+} from "./helper.js";
 
-const themeLight = await fetchJson("../tokens/theme-light.json");
-const themeDark = await fetchJson("../tokens/theme-dark.json");
-const themeLightHc = await fetchJson("../tokens/theme-light-hc.json");
-const themeDarkHc = await fetchJson("../tokens/theme-dark-hc.json");
+const themes = {
+  "light": await fetchJson("../tokens/theme-light.json"),
+  "dark": await fetchJson("../tokens/theme-dark.json"),
+  "light-hc": await fetchJson("../tokens/theme-light-hc.json"),
+  "dark-hc": await fetchJson("../tokens/theme-dark-hc.json")
+};
 
-function fetchJson(url) {
-  return fetch(url).then(response => response.json());
-}
+const themeEntries = Object.entries(themes);
 
-const themes = document.querySelector(".themes");
+/**
+ * Query the nodes we're going to render the application in
+ */
 
-themes.appendChild(renderTheme(themeLight, "light"));
-themes.appendChild(renderTheme(themeDark, "dark"));
-themes.appendChild(renderTheme(themeLightHc, "light-hc"));
-themes.appendChild(renderTheme(themeDarkHc, "dark-hc"));
-
+const themesPreview = document.querySelector(".themes");
 const tests = document.querySelector(".tests");
 
-tests.appendChild(renderPreview("light"));
-tests.appendChild(renderPreview("dark"));
-tests.appendChild(renderPreview("light-hc"));
-tests.appendChild(renderPreview("dark-hc"));
+/**
+ * Render all the visual tests for the different themes
+ */
+
+for (const [themeName, themeJson] of themeEntries) {
+  themesPreview.appendChild(renderTheme(themeJson, themeName));
+}
+
+for (const [themeName] of themeEntries) {
+  tests.appendChild(renderPreview(themeName));
+}
+
+for (const [themeName] of themeEntries) {
+  tests.appendChild(renderButtonsPreview(themeName));
+}
+
+for (const [themeName] of themeEntries) {
+  tests.appendChild(renderLabels(themeName));
+}

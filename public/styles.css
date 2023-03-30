@@ -144,22 +144,7 @@ pre {
 .bg {
   border-radius: 8px;
   padding: 16px;
-}
-
-.bg--light {
-  background-color: var(--color-bg-light);
-}
-
-.bg--lightHc {
-  background-color: var(--color-bg-lightHc);
-}
-
-.bg--dark {
-  background-color: var(--color-bg-dark);
-}
-
-.bg--darkHc {
-  background-color: var(--color-bg-darkHc);
+  background-color: var(--cpd-color-theme-bg);
 }
 
 .button {
@@ -171,6 +156,8 @@ pre {
   height: 44px;
   letter-spacing: var(--f-ls-16);
   padding: 8px 24px;
+  background-color: var(--hue-900);
+  color: var(--cpd-color-theme-bg);
 }
 
 .button:hover {
@@ -211,6 +198,9 @@ pre {
   height: 32px;
   letter-spacing: var(--f-ls-14);
   padding: 4px 12px;
+  background-color: var(--hue-300);
+  border-color: var(--hue-600);
+  color: var(--hue-900);
 }
 
 .label:hover {
