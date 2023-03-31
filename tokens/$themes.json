@@ -93,7 +93,7 @@
     "selectedTokenSets": {
       "theme-light": "enabled",
       "theme-semantics": "enabled",
-      "theme-light-hc-semantics": "enabled"
+      "theme-light-semantics": "enabled"
     },
     "$figmaStyleReferences": {
       "color.bg.canvas": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,",
