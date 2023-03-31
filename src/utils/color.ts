@@ -107,10 +107,10 @@ const rgbToHsl = (r: number, g: number, b: number): number[] => {
 };
 
 /**
- * TODO
- * @param colorHex TODO –  ...
- * @param backgroundHex TODO – ...
- * @param strength TODO – ...
+ * Generates the equivalent alpha color with the lowest opacity for a solid color against a given background.
+ * @param colorHex target foreground color
+ * @param backgroundHex background color
+ * @param strength saturation adjustment.
  * @returns A color in the HSLA format
  */
 export const getAlphaColor = (
