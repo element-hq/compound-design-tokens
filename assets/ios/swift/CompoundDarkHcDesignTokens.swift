@@ -209,10 +209,11 @@ public class CompoundDarkHcDesignTokens {
     public static let colorTextPlaceholder = colorGray800
     public static let colorTextSecondary = colorGray900
     public static let colorTextPrimary = colorGray1400
+    public static let colorBgSecondaryElevationDefault = colorGray300
+    public static let colorBgPrimaryElevationDefault = colorGray400
+    public static let colorBgCanvasElevation1 = colorGray300
+    public static let colorBgCanvasElevationDefault = colorThemeBg
     public static let colorBgActionPrimary = colorGray1400
-    public static let colorBgSecondary = colorGray300
-    public static let colorBgPrimary = colorGray400
-    public static let colorBgCanvas = colorThemeBg
     public static let space64X = spaceScale * 64
     public static let space48X = spaceScale * 48
     public static let space40X = spaceScale * 40

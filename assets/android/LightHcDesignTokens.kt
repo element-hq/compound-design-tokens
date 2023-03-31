@@ -13,9 +13,10 @@ object LightHcDesignTokens {
   val borderWidth2 = 2.dp
   val borderWidth4 = 4.dp
   val colorBgActionPrimary = Color(0xff1a1c21)
-  val colorBgCanvas = Color(0xffffffff)
-  val colorBgPrimary = Color(0xffd7dce3)
-  val colorBgSecondary = Color(0xffe1e6ec)
+  val colorBgCanvasElevation1 = Color(0xffffffff)
+  val colorBgCanvasElevationDefault = Color(0xffffffff)
+  val colorBgPrimaryElevationDefault = Color(0xffd7dce3)
+  val colorBgSecondaryElevationDefault = Color(0xffe1e6ec)
   val colorBlue100 = Color(0xfff4f8ff)
   val colorBlue1000 = Color(0xff053b9a)
   val colorBlue1100 = Color(0xff043088)

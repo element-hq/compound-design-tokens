@@ -154,4 +154,8 @@
   --cpd-color-gray-200: #1d1f24;
   --cpd-color-gray-100: #181a1f;
   --cpd-color-theme-bg: #101317;
+  --cpd-color-bg-secondary-elevation-default: var(--cpd-color-gray-300);
+  --cpd-color-bg-primary-elevation-default: var(--cpd-color-gray-400);
+  --cpd-color-bg-canvas-elevation-1: var(--cpd-color-gray-300);
+  --cpd-color-bg-canvas-elevation-default: var(--cpd-color-theme-bg);
 }
