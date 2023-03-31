@@ -46,13 +46,8 @@ function roundToTwo(num: number): number {
  * @param hex hexadecimal color code
  * @returns an array of rgb composant
  */
-const hexToRgb = (hex: string): number[] => {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return [
-    parseInt(result?.[1] ?? "0", 16),
-    parseInt(result?.[2] ?? "0", 16),
-    parseInt(result?.[3] ?? "0", 16),
-  ];
+const hexToRgb = (hex: string): [number, number, number] => {
+  return chroma.hex(hex).rgb();
 };
 
 /**
@@ -62,48 +57,12 @@ const hexToRgb = (hex: string): number[] => {
  * @param b blue
  * @returns An array of HSL composant
  */
-const rgbToHsl = (r: number, g: number, b: number): number[] => {
-  // https://css-tricks.com/converting-color-spaces-in-javascript/
-
-  // Make r, g, and b fractions of 1
-  r /= 255;
-  g /= 255;
-  b /= 255;
-
-  // Find greatest and smallest channel values
-  let cmin = Math.min(r, g, b),
-    cmax = Math.max(r, g, b),
-    delta = cmax - cmin,
-    h = 0,
-    s = 0,
-    l = 0;
-
-  // Calculate hue
-  // No difference
-  if (delta == 0) h = 0;
-  // Red is max
-  else if (cmax == r) h = ((g - b) / delta) % 6;
-  // Green is max
-  else if (cmax == g) h = (b - r) / delta + 2;
-  // Blue is max
-  else h = (r - g) / delta + 4;
-
-  h = Math.round(h * 60);
-
-  // Make negative hues positive behind 360°
-  if (h < 0) h += 360;
-
-  // Calculate lightness
-  l = (cmax + cmin) / 2;
-
-  // Calculate saturation
-  s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
-
-  // Multiply l and s by 100
-  s = +(s * 100).toFixed(1);
-  l = +(l * 100).toFixed(1);
-
-  return [h, s, Math.round(l)];
+const rgbToHsl = (
+  r: number,
+  g: number,
+  b: number
+): [number, number, number] => {
+  return chroma.rgb(r, g, b).hsl();
 };
 
 /**
@@ -111,7 +70,7 @@ const rgbToHsl = (r: number, g: number, b: number): number[] => {
  * @param colorHex target foreground color
  * @param backgroundHex background color
  * @param strength saturation adjustment.
- * @returns A color in the HSLA format
+ * @returns A color in the HSL format
  */
 export const getAlphaColor = (
   colorHex: string,
