@@ -798,6 +798,800 @@
         "type": "color",
         "description": "WCAG: 17"
       }
+    },
+    "alpha": {
+      "gray": {
+        "100": {
+          "value": "hsl(200, 41%, 36%, 0.04)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.04"
+        },
+        "200": {
+          "value": "hsl(216, 89%, 18%, 0.06)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.06"
+        },
+        "300": {
+          "value": "hsl(213, 90%, 20%, 0.12)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.12"
+        },
+        "400": {
+          "value": "hsl(215, 88%, 17%, 0.16)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.16"
+        },
+        "500": {
+          "value": "hsl(212, 97%, 12%, 0.26)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.26"
+        },
+        "600": {
+          "value": "hsl(215, 96%, 10%, 0.35)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.35"
+        },
+        "700": {
+          "value": "hsl(216, 81%, 10%, 0.48)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.48"
+        },
+        "800": {
+          "value": "hsl(217, 89%, 7%, 0.58)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.58"
+        },
+        "900": {
+          "value": "hsl(223, 70%, 4%, 0.73)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 0.73"
+        },
+        "1000": {
+          "value": "hsl(220, 75%, 3%, 0.76)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 0.76"
+        },
+        "1100": {
+          "value": "hsl(222, 63%, 3%, 0.8)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 0.8"
+        },
+        "1200": {
+          "value": "hsl(210, 67%, 2%, 0.83)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 0.83"
+        },
+        "1300": {
+          "value": "hsl(218, 100%, 2%, 0.88)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 0.88"
+        },
+        "1400": {
+          "value": "hsl(223, 78%, 2%, 0.9)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 0.9"
+        }
+      },
+      "red": {
+        "100": {
+          "value": "hsl(7, 100%, 56%, 0.04)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.04"
+        },
+        "200": {
+          "value": "hsl(9, 100%, 54%, 0.08)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.08"
+        },
+        "300": {
+          "value": "hsl(8, 100%, 52%, 0.15)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.15"
+        },
+        "400": {
+          "value": "hsl(8, 100%, 51%, 0.21)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.21"
+        },
+        "500": {
+          "value": "hsl(7, 100%, 51%, 0.36)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.36"
+        },
+        "600": {
+          "value": "hsl(5, 100%, 51%, 0.5)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.5"
+        },
+        "700": {
+          "value": "hsl(2, 100%, 50%, 0.72)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.72"
+        },
+        "800": {
+          "value": "hsl(356, 98%, 44%, 0.89)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.89"
+        },
+        "900": {
+          "value": "hsl(350, 100%, 30%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(355, 100%, 27%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(0, 100%, 23%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(0, 100%, 20%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(0, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(0, 100%, 13%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "orange": {
+        "100": {
+          "value": "hsl(26, 100%, 55%, 0.07)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.07"
+        },
+        "200": {
+          "value": "hsl(24, 100%, 52%, 0.11)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.11"
+        },
+        "300": {
+          "value": "hsl(25, 100%, 51%, 0.22)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.22"
+        },
+        "400": {
+          "value": "hsl(25, 100%, 52%, 0.3)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.3"
+        },
+        "500": {
+          "value": "hsl(26, 98%, 50%, 0.52)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.52"
+        },
+        "600": {
+          "value": "hsl(27, 100%, 48%, 0.75)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.75"
+        },
+        "700": {
+          "value": "hsl(29, 100%, 44%, 1)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "hsl(24, 100%, 38%, 1)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 1"
+        },
+        "900": {
+          "value": "hsl(9, 100%, 29%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(4, 100%, 27%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(0, 100%, 23%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(0, 100%, 20%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(0, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(0, 100%, 13%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "yellow": {
+        "100": {
+          "value": "hsl(46, 100%, 53%, 0.13)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.13"
+        },
+        "200": {
+          "value": "hsl(47, 100%, 51%, 0.25)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.25"
+        },
+        "300": {
+          "value": "hsl(47, 100%, 51%, 0.49)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.49"
+        },
+        "400": {
+          "value": "hsl(48, 100%, 50%, 0.72)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.72"
+        },
+        "500": {
+          "value": "hsl(47, 100%, 47%, 1)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 1"
+        },
+        "600": {
+          "value": "hsl(44, 100%, 44%, 1)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 1"
+        },
+        "700": {
+          "value": "hsl(40, 100%, 38%, 1)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "hsl(36, 100%, 33%, 1)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 1"
+        },
+        "900": {
+          "value": "hsl(28, 100%, 23%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(27, 100%, 22%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(24, 100%, 19%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(20, 100%, 17%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(10, 100%, 14%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(5, 100%, 12%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "lime": {
+        "100": {
+          "value": "hsl(107, 89%, 44%, 0.07)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.07"
+        },
+        "200": {
+          "value": "hsl(107, 98%, 41%, 0.15)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.15"
+        },
+        "300": {
+          "value": "hsl(105, 92%, 42%, 0.28)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.28"
+        },
+        "400": {
+          "value": "hsl(105, 95%, 41%, 0.4)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.4"
+        },
+        "500": {
+          "value": "hsl(102, 97%, 41%, 0.71)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.71"
+        },
+        "600": {
+          "value": "hsl(102, 100%, 37%, 0.86)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.86"
+        },
+        "700": {
+          "value": "hsl(106, 99%, 30%, 0.9)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.9"
+        },
+        "800": {
+          "value": "hsl(112, 97%, 25%, 0.95)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.95"
+        },
+        "900": {
+          "value": "hsl(120, 100%, 17%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(120, 100%, 16%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(120, 100%, 13%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(120, 100%, 11%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(120, 100%, 8%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(120, 100%, 7%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "green": {
+        "100": {
+          "value": "hsl(150, 79%, 41%, 0.06)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.06"
+        },
+        "200": {
+          "value": "hsl(150, 100%, 36%, 0.11)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.11"
+        },
+        "300": {
+          "value": "hsl(151, 93%, 37%, 0.23)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.23"
+        },
+        "400": {
+          "value": "hsl(153, 95%, 37%, 0.32)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.32"
+        },
+        "500": {
+          "value": "hsl(156, 99%, 36%, 0.56)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.56"
+        },
+        "600": {
+          "value": "hsl(163, 99%, 38%, 0.96)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.96"
+        },
+        "700": {
+          "value": "hsl(166, 100%, 32%, 1)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "hsl(168, 100%, 26%, 1)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 1"
+        },
+        "900": {
+          "value": "hsl(163, 100%, 17%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(162, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(160, 100%, 13%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(158, 100%, 11%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(152, 100%, 8%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(147, 100%, 7%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "cyan": {
+        "100": {
+          "value": "hsl(186, 79%, 41%, 0.06)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.06"
+        },
+        "200": {
+          "value": "hsl(188, 100%, 38%, 0.11)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.11"
+        },
+        "300": {
+          "value": "hsl(186, 100%, 37%, 0.22)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.22"
+        },
+        "400": {
+          "value": "hsl(187, 97%, 38%, 0.31)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.31"
+        },
+        "500": {
+          "value": "hsl(187, 99%, 38%, 0.54)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.54"
+        },
+        "600": {
+          "value": "hsl(186, 99%, 40%, 0.92)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.92"
+        },
+        "700": {
+          "value": "hsl(193, 100%, 38%, 1)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "hsl(199, 100%, 35%, 1)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 1"
+        },
+        "900": {
+          "value": "hsl(205, 100%, 26%, 1)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "hsl(207, 100%, 24%, 1)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 1"
+        },
+        "1100": {
+          "value": "hsl(210, 100%, 22%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(212, 100%, 20%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(218, 100%, 16%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(222, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "blue": {
+        "100": {
+          "value": "hsl(218, 100%, 57%, 0.05)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.05"
+        },
+        "200": {
+          "value": "hsl(215, 100%, 52%, 0.09)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.09"
+        },
+        "300": {
+          "value": "hsl(216, 95%, 51%, 0.16)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.16"
+        },
+        "400": {
+          "value": "hsl(216, 96%, 49%, 0.22)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.22"
+        },
+        "500": {
+          "value": "hsl(216, 95%, 48%, 0.37)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.37"
+        },
+        "600": {
+          "value": "hsl(215, 98%, 47%, 0.51)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.51"
+        },
+        "700": {
+          "value": "hsl(215, 100%, 46%, 0.71)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.71"
+        },
+        "800": {
+          "value": "hsl(212, 99%, 46%, 0.99)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.99"
+        },
+        "900": {
+          "value": "hsl(217, 98%, 33%, 0.99)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 0.99"
+        },
+        "1000": {
+          "value": "hsl(218, 97%, 30%, 0.99)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 0.99"
+        },
+        "1100": {
+          "value": "hsl(220, 99%, 27%, 0.99)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 0.99"
+        },
+        "1200": {
+          "value": "hsl(222, 100%, 24%, 0.99)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 0.99"
+        },
+        "1300": {
+          "value": "hsl(228, 100%, 21%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(233, 100%, 19%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "purple": {
+        "100": {
+          "value": "hsl(248, 100%, 61%, 0.04)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.04"
+        },
+        "200": {
+          "value": "hsl(248, 100%, 55%, 0.07)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.07"
+        },
+        "300": {
+          "value": "hsl(248, 100%, 53%, 0.12)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.12"
+        },
+        "400": {
+          "value": "hsl(248, 100%, 52%, 0.16)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.16"
+        },
+        "500": {
+          "value": "hsl(249, 100%, 51%, 0.27)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.27"
+        },
+        "600": {
+          "value": "hsl(251, 100%, 51%, 0.38)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.38"
+        },
+        "700": {
+          "value": "hsl(254, 100%, 50%, 0.53)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.53"
+        },
+        "800": {
+          "value": "hsl(258, 98%, 49%, 0.7)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.7"
+        },
+        "900": {
+          "value": "hsl(261, 97%, 38%, 0.9)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 0.9"
+        },
+        "1000": {
+          "value": "hsl(263, 100%, 36%, 0.95)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 0.95"
+        },
+        "1100": {
+          "value": "hsl(264, 100%, 33%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(262, 100%, 29%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(259, 100%, 22%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(259, 100%, 19%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "fuchsia": {
+        "100": {
+          "value": "hsl(293, 95%, 41%, 0.04)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.04"
+        },
+        "200": {
+          "value": "hsl(295, 89%, 41%, 0.07)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.07"
+        },
+        "300": {
+          "value": "hsl(298, 91%, 40%, 0.13)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.13"
+        },
+        "400": {
+          "value": "hsl(296, 95%, 38%, 0.18)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.18"
+        },
+        "500": {
+          "value": "hsl(297, 93%, 38%, 0.31)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.31"
+        },
+        "600": {
+          "value": "hsl(295, 96%, 37%, 0.43)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.43"
+        },
+        "700": {
+          "value": "hsl(295, 97%, 37%, 0.6)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.6"
+        },
+        "800": {
+          "value": "hsl(294, 98%, 36%, 0.79)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.79"
+        },
+        "900": {
+          "value": "hsl(287, 96%, 27%, 0.9)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 0.9"
+        },
+        "1000": {
+          "value": "hsl(286, 100%, 24%, 0.91)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 0.91"
+        },
+        "1100": {
+          "value": "hsl(285, 97%, 22%, 0.95)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 0.95"
+        },
+        "1200": {
+          "value": "hsl(285, 96%, 22%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(283, 100%, 16%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(281, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "pink": {
+        "100": {
+          "value": "hsl(348, 100%, 51%, 0.04)",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 0.04"
+        },
+        "200": {
+          "value": "hsl(347, 100%, 54%, 0.08)",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 0.08"
+        },
+        "300": {
+          "value": "hsl(347, 100%, 50%, 0.13)",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 0.13"
+        },
+        "400": {
+          "value": "hsl(347, 100%, 52%, 0.19)",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 0.19"
+        },
+        "500": {
+          "value": "hsl(346, 100%, 51%, 0.33)",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 0.33"
+        },
+        "600": {
+          "value": "hsl(345, 100%, 50%, 0.47)",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 0.47"
+        },
+        "700": {
+          "value": "hsl(341, 98%, 49%, 0.7)",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 0.7"
+        },
+        "800": {
+          "value": "hsl(333, 98%, 44%, 0.96)",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 0.96"
+        },
+        "900": {
+          "value": "hsl(331, 100%, 28%, 0.97)",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 0.97"
+        },
+        "1000": {
+          "value": "hsl(330, 97%, 26%, 0.98)",
+          "type": "color",
+          "description": "WCAG: 10 Opacity: 0.98"
+        },
+        "1100": {
+          "value": "hsl(329, 100%, 22%, 1)",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "hsl(332, 100%, 20%, 1)",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "hsl(337, 100%, 15%, 1)",
+          "type": "color",
+          "description": "WCAG: 16 Opacity: 1"
+        },
+        "1400": {
+          "value": "hsl(341, 100%, 13%, 1)",
+          "type": "color",
+          "description": "WCAG: 17 Opacity: 1"
+        }
+      }
     }
   }
 }
