@@ -74,9 +74,26 @@
       },
       "action": {
         "primary": {
-          "value": "{color.gray.1400}",
-          "type": "color",
-          "description": "Default background colour for actions."
+          "rest": {
+            "value": "{color.gray.1400}",
+            "type": "color",
+            "description": "Default background colour for actions. State: Rest."
+          },
+          "hovered": {
+            "value": "{color.gray.1200}",
+            "type": "color",
+            "description": "Default background colour for actions. State: Hover."
+          },
+          "pressed": {
+            "value": "{color.gray.1100}",
+            "type": "color",
+            "description": "Default background colour for actions. State: Pressed."
+          },
+          "disabled": {
+            "value": "{color.gray.700}",
+            "type": "color",
+            "description": "Default background colour for actions. State: Disabled."
+          }
         }
       }
     },
