@@ -21,6 +21,11 @@
         "type": "color",
         "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
       },
+      "critical": {
+        "value": "{color.red.900}",
+        "type": "color",
+        "description": "Default contrast text for critical state."
+      },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
