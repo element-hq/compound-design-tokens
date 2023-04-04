@@ -36,6 +36,11 @@
           "value": "{color.red.900}",
           "type": "color",
           "description": "Text colour for destructive plain actions."
+        },
+        "on-primary": {
+          "value": "{color.gray.100}",
+          "type": "color",
+          "description": "For use as text color on top of primary actions."
         }
       },
       "link": {
