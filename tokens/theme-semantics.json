@@ -91,6 +91,11 @@
         "type": "color",
         "description": "⚠️ Lowest contrast non-accessible icons, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
       },
+      "disabled": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
+      },
       "accent": {
         "tertiary": {
           "value": "{color.green.800}",
