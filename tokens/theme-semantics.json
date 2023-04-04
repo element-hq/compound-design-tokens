@@ -119,6 +119,13 @@
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
         }
+      },
+      "action": {
+        "on-primary": {
+          "value": "{color.gray.100}",
+          "type": "color",
+          "description": "For use as icon color on top of primary actions."
+        }
       }
     }
   }
