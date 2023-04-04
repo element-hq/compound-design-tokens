@@ -85,6 +85,11 @@
         "value": "{color.blue.900}",
         "type": "color",
         "description": "Used for the focus state outline."
+      },
+      "critical": {
+        "value": "{color.red.900}",
+        "type": "color",
+        "description": "High-contrast border for critical state."
       }
     },
     "icon": {
