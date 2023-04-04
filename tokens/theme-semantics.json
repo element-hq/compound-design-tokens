@@ -71,6 +71,11 @@
       }
     },
     "border": {
+      "disabled": {
+        "value": "{color.gray.500}",
+        "type": "color",
+        "description": "Used for borders of disabled elements. There's no minimum contrast requirement."
+      },
       "focused": {
         "value": "{color.blue.900}",
         "type": "color",
