@@ -145,7 +145,12 @@
         "primary": {
           "value": "{color.gray.800}",
           "type": "color",
-          "description": "Default contrast for accessible interactive element borders."
+          "description": "Default contrast for accessible interactive element borders. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.gray.1100}",
+          "type": "color",
+          "description": "Default contrast for accessible interactive element borders. State: Hover."
         }
       },
       "critical": {
