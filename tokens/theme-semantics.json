@@ -2,9 +2,67 @@
   "color": {
     "bg": {
       "canvas": {
-        "value": "{color.theme.bg}",
+        "default": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Default global background for the user interface."
+        },
+        "disabled": {
+          "value": "{color.gray.200}",
+          "type": "color",
+          "description": "Default background for disabled elements. There's no minimum contrast requirement."
+        }
+      },
+      "subtle-primary": {
+        "value": "{color.gray.400}",
         "type": "color",
-        "description": "Default global background for the user interface."
+        "description": "Medium contrast surfaces."
+      },
+      "subtle-secondary": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "Low contrast surfaces."
+      },
+      "action": {
+        "primary": {
+          "rest": {
+            "value": "{color.gray.1400}",
+            "type": "color",
+            "description": "Background colour for primary actions. State: Rest."
+          },
+          "hovered": {
+            "value": "{color.gray.1200}",
+            "type": "color",
+            "description": "Background colour for primary actions. State: Hover."
+          },
+          "pressed": {
+            "value": "{color.gray.1100}",
+            "type": "color",
+            "description": "Background colour for primary actions. State: Pressed."
+          },
+          "disabled": {
+            "value": "{color.gray.700}",
+            "type": "color",
+            "description": "Background colour for primary actions. State: Disabled."
+          }
+        },
+        "secondary": {
+          "rest": {
+            "value": "{color.theme.bg}",
+            "type": "color",
+            "description": "Background colour for secondary actions. State: Rest."
+          },
+          "hovered": {
+            "value": "{color.alpha.gray.200}",
+            "type": "color",
+            "description": "Background colour for secondary actions. State: Hover."
+          },
+          "pressed": {
+            "value": "{color.alpha.gray.300}",
+            "type": "color",
+            "description": "Background colour for secondary actions. State: Pressed."
+          }
+        }
       },
       "primary": {
         "value": "{color.gray.400}",
@@ -16,17 +74,26 @@
         "type": "color",
         "description": "Lower contrast surfaces."
       },
-      "action": {
-        "primary": {
-          "value": "{color.gray.1400}",
-          "type": "color",
-          "description": "Default background colour for actions."
-        }
-      },
       "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "High-contrast background color for critical state. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.red.1000}",
+          "type": "color",
+          "description": "High-contrast background color for critical state. State: Hover."
+        },
         "subtle": {
           "value": "{color.red.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Default subtle critical surfaces. State: Rest."
+        },
+        "subtle-hovered": {
+          "value": "{color.red.300}",
+          "type": "color",
+          "description": "Default subtle critical surfaces. State: Hover."
         }
       },
       "info": {
@@ -73,8 +140,10 @@
           "value": "{color.green.900}",
           "type": "color",
           "description": "Accent text colour for plain actions."
-        },
-        "critical": {
+        }
+      },
+      "critical": {
+        "primary": {
           "value": "{color.red.900}",
           "type": "color",
           "description": "Text colour for destructive plain actions."
@@ -99,10 +168,75 @@
           "type": "color"
         }
       },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
+      }
+    },
+    "border": {
+      "disabled": {
+        "value": "{color.gray.500}",
+        "type": "color",
+        "description": "Used for borders of disabled elements. There's no minimum contrast requirement."
+      },
+      "focused": {
+        "value": "{color.blue.900}",
+        "type": "color",
+        "description": "Used for the focus state outline."
+      },
+      "interactive": {
+        "primary": {
+          "value": "{color.gray.800}",
+          "type": "color",
+          "description": "Default contrast for accessible interactive element borders. State: Rest."
+        },
+        "secondary": {
+          "value": "{color.gray.600}",
+          "type": "color",
+          "description": "⚠️ Lowest contrast for non-accessible interactive element borders, <3:1. Only use for non-essential borders. Do not rely exclusively on them. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.gray.1100}",
+          "type": "color",
+          "description": "Default contrast for accessible interactive element borders. State: Hover."
+        }
+      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
+          "type": "color",
+          "description": "High-contrast border for critical state. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.red.1000}",
+          "type": "color",
+          "description": "High-contrast border for critical state. State: Hover."
+        },
+        "subtle": {
+          "value": "{color.red.500}",
           "type": "color"
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.500}",
+          "type": "color"
+        }
+      },
+      "success": {
+        "subtle": {
+          "value": "{color.green.500}",
+          "type": "color"
+        }
+      },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
       }
     },
@@ -127,18 +261,23 @@
         "type": "color",
         "description": "⚠️ Lowest contrast non-accessible icons, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
       },
-      "accent": {
-        "tertiary": {
-          "value": "{color.green.800}",
-          "type": "color",
-          "description": "Lowest contrast accessible accent icons."
-        }
+      "disabled": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
           "type": "color",
-          "description": "Critical icons' color "
+          "description": "High-contrast icon for critical state. State: Rest."
+        }
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
         }
       },
       "info": {
@@ -170,26 +309,6 @@
       "quaternary-alpha": {
         "value": "{color.alpha.gray.700}",
         "type": "color"
-      }
-    },
-    "border": {
-      "critical": {
-        "subtle": {
-          "value": "{color.red.500}",
-          "type": "color"
-        }
-      },
-      "info": {
-        "subtle": {
-          "value": "{color.blue.500}",
-          "type": "color"
-        }
-      },
-      "success": {
-        "subtle": {
-          "value": "{color.green.500}",
-          "type": "color"
-        }
       }
     }
   }

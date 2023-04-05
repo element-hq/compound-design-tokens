@@ -7,12 +7,10 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,",
       "color.text.primary": "S:8e148d8d80d552d40db795a6ef9191600e9408c8,",
       "color.text.secondary": "S:3caf9f69e6012302f803b937e0f146fdf89c2669,",
       "color.text.action.primary": "S:6c2a6266c7a6e93ff53dcf13fdb0f9c9e9654313,",
       "color.text.action.accent": "S:6a7617914f0a4da4e935075436aab343ca2916ce,",
-      "color.text.action.critical": "S:fe78e50739fbbc67b67f71c042304a830b2834e3,",
       "color.text.link.external": "S:b867fee4028c9da3de4af5445ee1739bf6d2628e,",
       "color.theme.bg": "S:657d22d5ec77c8fa4f24ca506fbdb3c51d3489f7,",
       "color.gray.100": "S:21c6784fb4583568b4d53e0939d023f7cf465d7b,",
@@ -169,8 +167,6 @@
       "color.pink.1200": "S:eb5066b25db0cad26515968a04799aa9eb9eb576,",
       "color.pink.1300": "S:8483a61fce3cd72aff9b7f59d2ff10f08c8da883,",
       "color.pink.1400": "S:53c44540f976de7eac7758da7fdd343c063eb89a,",
-      "color.bg.secondary": "S:222bd31e2d53b69636b90ee1efb9f772e707daf4,",
-      "color.bg.action.primary": "S:1f5d26f53bb439aa83421724c4b3d33f74a8509a,",
       "color.text.placeholder": "S:03ee4d5f515150d227cdc4f3bb7afa7ce4481bfa,",
       "color.text.disabled": "S:c0ef2df73b0c547df91c5f02b55aa44799888887,",
       "color.icon.primary": "S:22c36898bc78af4957b5e1e194a429d69acd226a,",
@@ -178,7 +174,6 @@
       "color.icon.tertiary": "S:a3d231a6676b48bcad604dddcc03fea5aec6669a,",
       "color.icon.quaternary": "S:fa35c96eafaac21490ef279ae770c01fbf34adb4,",
       "color.icon.accent.tertiary": "S:923a80444a9f3e0e72010adaecc1924dbaede6bf,",
-      "color.bg.primary": "S:908933be39ddc3c367f2db09e63f150a19c20cad,",
       "color.alpha.gray.100": "S:af6b898f3a4949bb98bb829f1aea9cf53ea58216,",
       "color.alpha.gray.200": "S:2f724e38bb4c9bf150674758039403a7bf8cb730,",
       "color.alpha.gray.300": "S:8dd6ebccb394f0dd5f95833adc050d54b5f8a64f,",
@@ -332,7 +327,12 @@
       "color.alpha.pink.1100": "S:fa7dd09c08305e7c703b13c9937dd97fe7990434,",
       "color.alpha.pink.1200": "S:156c8270372424076e6845b5605c9d841700a350,",
       "color.alpha.pink.1300": "S:8f83502ec87d7839033fdc5972f96d2b52cd835d,",
-      "color.alpha.pink.1400": "S:ff794094df99ef12cc9a9a2750c25e1c1839198c,"
+      "color.alpha.pink.1400": "S:ff794094df99ef12cc9a9a2750c25e1c1839198c,",
+      "color.bg.action.primary.rest": "S:1f5d26f53bb439aa83421724c4b3d33f74a8509a,",
+      "color.bg.canvas.default": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,",
+      "color.text.critical.primary": "S:fe78e50739fbbc67b67f71c042304a830b2834e3,",
+      "color.bg.subtle-primary": "S:908933be39ddc3c367f2db09e63f150a19c20cad,",
+      "color.bg.subtle-secondary": "S:222bd31e2d53b69636b90ee1efb9f772e707daf4,"
     }
   },
   {
@@ -343,12 +343,10 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,",
       "color.text.primary": "S:a73ecb030e9eb79f2e8007c51e678a952b1342da,",
       "color.text.secondary": "S:741c295f3dd4ba95c6c3dcc8b9be1f84e6150071,",
       "color.text.action.primary": "S:faf0e9648a0191a83d52dcd5b42fa9bf1ecf1adf,",
       "color.text.action.accent": "S:dbe9d70f66707d096a73f54af6aeac324ef21f93,",
-      "color.text.action.critical": "S:2aea1d724c7c3498a4fbcb0333dbaca02047ff27,",
       "color.text.link.external": "S:78811d6ef8bda7e9cc17f88a3304778ace93dd9a,",
       "color.theme.bg": "S:82e6cbf8aae02f73905b640fad84fd1e8874c637,",
       "color.gray.100": "S:6fc45815ce2ef1614500aa2a90e603ddca0ddc27,",
@@ -505,8 +503,6 @@
       "color.pink.1200": "S:a0a73e0d8f8075538b3a4703da1a2fa57ceb9751,",
       "color.pink.1300": "S:18d93d563878a5819ffce86e74307d9b37fbc389,",
       "color.pink.1400": "S:06d8255b03f5b33f0b47101b87c59052f1564a10,",
-      "color.bg.secondary": "S:9182fb7bcc21cb1f68ede89413c52f2bbce13293,",
-      "color.bg.action.primary": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,",
       "color.text.placeholder": "S:5667befff4c534ba8d1fc97bd84dead8c4b61ef4,",
       "color.text.disabled": "S:f2a0fa920d084dc98fd4d7d8c1753a953fece34b,",
       "color.icon.primary": "S:5fb3e41fc85b271d927a4ff193ad651a803d8f01,",
@@ -514,7 +510,6 @@
       "color.icon.tertiary": "S:f9f7cb2a83bc3a154013117d60d68a7e1ee343ca,",
       "color.icon.quaternary": "S:90d67395c3c82f67e58cc3b247d9463e1261e155,",
       "color.icon.accent.tertiary": "S:e3a0b584a473c359c77be827e007fdd82aecfac1,",
-      "color.bg.primary": "S:63969dbe7005b18685a42e89a74e397c9d4e8938,",
       "color.alpha.gray.100": "S:4072eb1a847c2bd3384f90d4e4302675af5f0616,",
       "color.alpha.gray.200": "S:38fdd64ec725c2084a01f1cefe9fe503ec5b7a0b,",
       "color.alpha.gray.300": "S:2493bfaa7e76b81cabb0d793f574d6e359a0c340,",
@@ -668,7 +663,12 @@
       "color.alpha.pink.1100": "S:f07de5c86bc27baa85699e57013ecb4cbead85f3,",
       "color.alpha.pink.1200": "S:8bc8eac1953f91d860bfc51733c7998cce70a064,",
       "color.alpha.pink.1300": "S:4531b2c30ab4319a9e76a86bb18aba0f5a890a7b,",
-      "color.alpha.pink.1400": "S:02cf46cb3f418506861f1b4aaa07bd9326cc3adb,"
+      "color.alpha.pink.1400": "S:02cf46cb3f418506861f1b4aaa07bd9326cc3adb,",
+      "color.bg.action.primary.rest": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,",
+      "color.bg.canvas.default": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,",
+      "color.text.critical.primary": "S:2aea1d724c7c3498a4fbcb0333dbaca02047ff27,",
+      "color.bg.subtle-primary": "S:63969dbe7005b18685a42e89a74e397c9d4e8938,",
+      "color.bg.subtle-secondary": "S:9182fb7bcc21cb1f68ede89413c52f2bbce13293,"
     }
   },
   {
@@ -679,12 +679,10 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,",
       "color.text.primary": "S:0f082c1f98d76b0dd50fd7043416aabf2da4347b,",
       "color.text.secondary": "S:5ae3c4a207600e56766442c491927b879f3661aa,",
       "color.text.action.primary": "S:7f9838779424cc5eea6f7277e9309eaadb4cc851,",
       "color.text.action.accent": "S:f0f23b34c74a4d29123fa079bc947e45b655ae06,",
-      "color.text.action.critical": "S:776b360f552d53663a69d458c72484e99564fc54,",
       "color.text.link.external": "S:f29758ef639fc78096fc0c9c23e308628416206a,",
       "color.theme.bg": "S:adb8d4264933bd1fbe3528a5ba940d0d9f8cf1be,",
       "color.gray.100": "S:665e2040f8b47867052bf6cefd0c7e22070ff2a6,",
@@ -841,8 +839,6 @@
       "color.pink.1200": "S:525a0ed6323d13459878556dece591b67e3c5f05,",
       "color.pink.1300": "S:94856c8a1871c56e702be00d7253ab7f1f63b00c,",
       "color.pink.1400": "S:5cc17ee5ed536339a3a0af0132dc4b4cc89116ae,",
-      "color.bg.secondary": "S:e7c26ccd2de72c476137ef06176d33489ab15e4d,",
-      "color.bg.action.primary": "S:d3d2abb419661e689166be085550173cee857ef3,",
       "color.text.placeholder": "S:5d10ebedc3e5f7a0aa1a86184d3e56f3b124d055,",
       "color.text.disabled": "S:590e955cd43f400c2d1970d771711ada8afb6926,",
       "color.icon.primary": "S:a3518cc53b2604689e1c0a2a2bb855dc66e14221,",
@@ -850,7 +846,6 @@
       "color.icon.tertiary": "S:e8d2b54f3e99e95ee8a1d9b8c53a12f29012e0e7,",
       "color.icon.quaternary": "S:29677c61b729d729d42f24b000390acc9d9717ca,",
       "color.icon.accent.tertiary": "S:843ff485d7c43e09cacbca6250d73ac6dcf523bd,",
-      "color.bg.primary": "S:cdef6f332233a8b6de08637e93a25d66848d836b,",
       "color.alpha.gray.100": "S:87ca2a6f14f5852a790945b1ab113189d6e9a7a3,",
       "color.alpha.gray.200": "S:d2c449522be0986702d20f7fa8c0d6e73df264cc,",
       "color.alpha.gray.300": "S:2c91dae5432e920f79327ff4d89594a69edcc26e,",
@@ -1004,7 +999,12 @@
       "color.alpha.pink.1100": "S:fde0b4b37d8568eb33ef2166687782dbeb70cbfd,",
       "color.alpha.pink.1200": "S:8dcb599ef61ba0868598636c3a21e3801c22c5a5,",
       "color.alpha.pink.1300": "S:a6fabf8ddf34ae63e4e09709390e1ee4b65a358f,",
-      "color.alpha.pink.1400": "S:9b20af2daef23644e2c9a1a3c7b6ca88160e518f,"
+      "color.alpha.pink.1400": "S:9b20af2daef23644e2c9a1a3c7b6ca88160e518f,",
+      "color.bg.action.primary.rest": "S:d3d2abb419661e689166be085550173cee857ef3,",
+      "color.bg.canvas.default": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,",
+      "color.text.critical.primary": "S:776b360f552d53663a69d458c72484e99564fc54,",
+      "color.bg.subtle-primary": "S:cdef6f332233a8b6de08637e93a25d66848d836b,",
+      "color.bg.subtle-secondary": "S:e7c26ccd2de72c476137ef06176d33489ab15e4d,"
     }
   },
   {
@@ -1103,12 +1103,10 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,",
       "color.text.primary": "S:21581fd42700feae0ea79137c3ee964382b80b15,",
       "color.text.secondary": "S:b7986c95b8385f98e4bf1ee0a971a65b3d0883b2,",
       "color.text.action.primary": "S:15bbd3fe0134aad9702d76dea21e0d6c30f6324d,",
       "color.text.action.accent": "S:cb9188f813a06379b29cc664e040fa401e17de56,",
-      "color.text.action.critical": "S:ef6ff8e84adcaec5fedfb0199bbb4e5e14936f9f,",
       "color.text.link.external": "S:0c85a77694b347e496ff934b0844b04995754ff5,",
       "color.theme.bg": "S:78aef9c6293b9d93d76dc1ac2238c58295a44c55,",
       "color.gray.100": "S:7e4bcb53cc7111f44c4e5e67c1f37ecaf8baab2b,",
@@ -1265,8 +1263,6 @@
       "color.pink.1200": "S:376b48ca6a6600fb661b3e28130226e341a437e1,",
       "color.pink.1300": "S:ebc013c1820223dbea255c368e9e1cd478d2c1c9,",
       "color.pink.1400": "S:0ce25e1027c24e66ed54a2110e6af405f17b36d7,",
-      "color.bg.secondary": "S:a898612b8d8c3722f180f4dfb43ef6fa095098e3,",
-      "color.bg.action.primary": "S:86bd90cac703fbdbbf3f68bcd77d347be65c12b0,",
       "color.text.placeholder": "S:bcb03fd9cc070fd7aa5ccadc33f0c39ad1df922a,",
       "color.text.disabled": "S:64b391fd8d9150db694dbb3a44e7d7793a31abcc,",
       "color.icon.primary": "S:3a7f4b6144afbeba725bafaafa963c12416e62d9,",
@@ -1274,7 +1270,6 @@
       "color.icon.tertiary": "S:c63cac5d1a99aad32c6ee774d34af155aa8aec35,",
       "color.icon.quaternary": "S:0d8f07bdea255ab3c8f7d3aafced639634ddb9e6,",
       "color.icon.accent.tertiary": "S:a2fcc2ea71b15d9699d78b54500bac16c090220d,",
-      "color.bg.primary": "S:a5ee376561678fe0b2a5dac5824cd176538e345c,",
       "color.alpha.gray.100": "S:6a35c38d77e01ffbc2affd86b511ec63ebe28ba9,",
       "color.alpha.gray.200": "S:c071fe8c5aec98d68a8f82b6802183f90c7c9ecf,",
       "color.alpha.gray.300": "S:5a9c9a6c803ccc7f6dd0bfeda2476c6988097640,",
@@ -1428,7 +1423,12 @@
       "color.alpha.pink.1100": "S:4226d34fca3b1405f30388a4975edf1946f800ce,",
       "color.alpha.pink.1200": "S:642238510a8cfd983d4654976f22ccc3f8cd9145,",
       "color.alpha.pink.1300": "S:7ae0845e4d5a37750c6525d739f1a959464a5ba6,",
-      "color.alpha.pink.1400": "S:5c5460f8546908bc10839b3e32ded7c88a6be247,"
+      "color.alpha.pink.1400": "S:5c5460f8546908bc10839b3e32ded7c88a6be247,",
+      "color.bg.action.primary.rest": "S:86bd90cac703fbdbbf3f68bcd77d347be65c12b0,",
+      "color.bg.canvas.default": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,",
+      "color.text.critical.primary": "S:ef6ff8e84adcaec5fedfb0199bbb4e5e14936f9f,",
+      "color.bg.subtle-primary": "S:a5ee376561678fe0b2a5dac5824cd176538e345c,",
+      "color.bg.subtle-secondary": "S:a898612b8d8c3722f180f4dfb43ef6fa095098e3,"
     }
   }
 ]
