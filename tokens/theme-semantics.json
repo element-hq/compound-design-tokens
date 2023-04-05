@@ -191,9 +191,11 @@
         "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
       "critical": {
-        "value": "{color.red.900}",
-        "type": "color",
-        "description": "High-contrast icon for critical state."
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "High-contrast icon for critical state. State: Rest."
+        }
       },
       "primary-on-solid": {
         "value": "{color.gray.100}",
