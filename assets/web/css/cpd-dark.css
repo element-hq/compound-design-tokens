@@ -349,8 +349,6 @@
   --cpd-color-bg-critical-subtle: var(--cpd-color-red-200);
   --cpd-color-bg-critical-hovered: var(--cpd-color-red-1000);
   --cpd-color-bg-critical-primary: var(--cpd-color-red-900);
-  --cpd-color-bg-secondary: var(--cpd-color-gray-300);
-  --cpd-color-bg-primary: var(--cpd-color-gray-400);
   --cpd-color-bg-action-secondary-pressed: var(--cpd-color-alpha-gray-300);
   --cpd-color-bg-action-secondary-hovered: var(--cpd-color-alpha-gray-200);
   --cpd-color-bg-action-secondary-rest: var(--cpd-color-theme-bg);

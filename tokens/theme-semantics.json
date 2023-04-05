@@ -64,16 +64,6 @@
           }
         }
       },
-      "primary": {
-        "value": "{color.gray.400}",
-        "type": "color",
-        "description": "Medium contrast surfaces."
-      },
-      "secondary": {
-        "value": "{color.gray.300}",
-        "type": "color",
-        "description": "Lower contrast surfaces."
-      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",

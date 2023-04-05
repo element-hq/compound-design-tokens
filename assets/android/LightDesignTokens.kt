@@ -180,8 +180,6 @@ object LightDesignTokens {
   val colorBgCriticalSubtle = Color(0xfffff7f6)
   val colorBgCriticalSubtleHovered = Color(0xffffefec)
   val colorBgInfoSubtle = Color(0xfff4f8ff)
-  val colorBgPrimary = Color(0xffe1e6ec)
-  val colorBgSecondary = Color(0xfff0f2f5)
   val colorBgSubtlePrimary = Color(0xffe1e6ec)
   val colorBgSubtleSecondary = Color(0xfff0f2f5)
   val colorBgSuccessSubtle = Color(0xfff1fbf6)

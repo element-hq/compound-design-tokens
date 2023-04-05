@@ -391,8 +391,6 @@ public class CompoundDarkHcDesignTokens {
     public static let colorBgCriticalSubtle = colorRed200
     public static let colorBgCriticalHovered = colorRed1000
     public static let colorBgCriticalPrimary = colorRed900
-    public static let colorBgSecondary = colorGray300
-    public static let colorBgPrimary = colorGray400
     public static let colorBgActionSecondaryPressed = colorAlphaGray300
     public static let colorBgActionSecondaryHovered = colorAlphaGray200
     public static let colorBgActionSecondaryRest = colorThemeBg

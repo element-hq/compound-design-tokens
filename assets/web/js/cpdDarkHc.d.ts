@@ -396,8 +396,6 @@ export const cpdColorBgActionPrimaryDisabled : string;
 export const cpdColorBgActionSecondaryRest : string;
 export const cpdColorBgActionSecondaryHovered : string;
 export const cpdColorBgActionSecondaryPressed : string;
-export const cpdColorBgPrimary : string;
-export const cpdColorBgSecondary : string;
 export const cpdColorBgCriticalPrimary : string;
 export const cpdColorBgCriticalHovered : string;
 export const cpdColorBgCriticalSubtle : string;

@@ -180,8 +180,6 @@ object DarkHcDesignTokens {
   val colorBgCriticalSubtle = Color(0xff470000)
   val colorBgCriticalSubtleHovered = Color(0xff590000)
   val colorBgInfoSubtle = Color(0xff001264)
-  val colorBgPrimary = Color(0xff2b2e33)
-  val colorBgSecondary = Color(0xff26282d)
   val colorBgSubtlePrimary = Color(0xff2b2e33)
   val colorBgSubtleSecondary = Color(0xff26282d)
   val colorBgSuccessSubtle = Color(0xff002513)
