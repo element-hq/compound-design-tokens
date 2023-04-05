@@ -159,6 +159,11 @@
           "type": "color",
           "description": "Default contrast for accessible interactive element borders. State: Rest."
         },
+        "secondary": {
+          "value": "{color.gray.600}",
+          "type": "color",
+          "description": "⚠️ Lowest contrast for non-accessible interactive element borders, <3:1. Only use for non-essential borders. Do not rely exclusively on them. State: Rest."
+        },
         "hovered": {
           "value": "{color.gray.1100}",
           "type": "color",
