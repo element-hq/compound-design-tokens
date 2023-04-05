@@ -65,7 +65,7 @@
         "disabled": {
           "value": "{color.gray.200}",
           "type": "color",
-          "description": "Defaul background for disabled elements. There's no minimum contrast requirement."
+          "description": "Default background for disabled elements. There's no minimum contrast requirement."
         }
       },
       "subtle-primary": {
