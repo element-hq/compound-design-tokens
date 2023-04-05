@@ -22,6 +22,24 @@
           "type": "color",
           "description": "Default background colour for actions."
         }
+      },
+      "critical": {
+        "subtle": {
+          "value": "{color.red.200}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.200}",
+          "type": "color"
+        }
+      },
+      "success": {
+        "subtle": {
+          "value": "{color.green.200}",
+          "type": "color"
+        }
       }
     },
     "text": {
@@ -68,6 +86,24 @@
           "type": "color",
           "description": "Text colour for external links."
         }
+      },
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "primary": {
+          "value": "{color.blue.900}",
+          "type": "color"
+        }
+      },
+      "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color"
+        }
       }
     },
     "icon": {
@@ -96,6 +132,63 @@
           "value": "{color.green.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
+        }
+      },
+      "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "Critical icons' color "
+        }
+      },
+      "info": {
+        "primary": {
+          "value": "{color.blue.900}",
+          "type": "color",
+          "description": "Info icons' color"
+        }
+      },
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Success icon's color"
+        }
+      },
+      "primary-alpha": {
+        "value": "{color.alpha.gray.1400}",
+        "type": "color"
+      },
+      "secondary-alpha": {
+        "value": "{color.alpha.gray.900}",
+        "type": "color"
+      },
+      "tertiary-alpha": {
+        "value": "{color.alpha.gray.800}",
+        "type": "color"
+      },
+      "quaternary-alpha": {
+        "value": "{color.alpha.gray.700}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "critical": {
+        "subtle": {
+          "value": "{color.red.500}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.500}",
+          "type": "color"
+        }
+      },
+      "success": {
+        "subtle": {
+          "value": "{color.green.500}",
+          "type": "color"
         }
       }
     }
