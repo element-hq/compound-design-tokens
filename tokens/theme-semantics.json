@@ -21,11 +21,6 @@
         "type": "color",
         "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
       },
-      "primary-on-solid": {
-        "value": "{color.gray.100}",
-        "type": "color",
-        "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
-      },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
@@ -50,6 +45,13 @@
           "value": "{color.blue.900}",
           "type": "color",
           "description": "Text colour for external links."
+        }
+      },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
       }
     },
@@ -192,11 +194,6 @@
         "type": "color",
         "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
-      "primary-on-solid": {
-        "value": "{color.gray.100}",
-        "type": "color",
-        "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
-      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
@@ -209,6 +206,13 @@
           "value": "{color.green.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
+        }
+      },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
       }
     }
