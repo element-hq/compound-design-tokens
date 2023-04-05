@@ -119,6 +119,18 @@
             "description": "Background colour for secondary actions. State: Pressed."
           }
         }
+      },
+      "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "High-contrast background color for critical state. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.red.1000}",
+          "type": "color",
+          "description": "High-contrast background color for critical state. State: Hover."
+        }
       }
     },
     "border": {
