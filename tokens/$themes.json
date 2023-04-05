@@ -11,7 +11,6 @@
       "color.text.secondary": "S:3caf9f69e6012302f803b937e0f146fdf89c2669,",
       "color.text.action.primary": "S:6c2a6266c7a6e93ff53dcf13fdb0f9c9e9654313,",
       "color.text.action.accent": "S:6a7617914f0a4da4e935075436aab343ca2916ce,",
-      "color.text.action.critical": "S:fe78e50739fbbc67b67f71c042304a830b2834e3,",
       "color.text.link.external": "S:b867fee4028c9da3de4af5445ee1739bf6d2628e,",
       "color.theme.bg": "S:657d22d5ec77c8fa4f24ca506fbdb3c51d3489f7,",
       "color.gray.100": "S:21c6784fb4583568b4d53e0939d023f7cf465d7b,",
@@ -332,7 +331,8 @@
       "color.alpha.pink.1300": "S:8f83502ec87d7839033fdc5972f96d2b52cd835d,",
       "color.alpha.pink.1400": "S:ff794094df99ef12cc9a9a2750c25e1c1839198c,",
       "color.bg.action.primary.rest": "S:1f5d26f53bb439aa83421724c4b3d33f74a8509a,",
-      "color.bg.canvas.default": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,"
+      "color.bg.canvas.default": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,",
+      "color.text.critical.primary": "S:fe78e50739fbbc67b67f71c042304a830b2834e3,"
     }
   },
   {
@@ -347,7 +347,6 @@
       "color.text.secondary": "S:741c295f3dd4ba95c6c3dcc8b9be1f84e6150071,",
       "color.text.action.primary": "S:faf0e9648a0191a83d52dcd5b42fa9bf1ecf1adf,",
       "color.text.action.accent": "S:dbe9d70f66707d096a73f54af6aeac324ef21f93,",
-      "color.text.action.critical": "S:2aea1d724c7c3498a4fbcb0333dbaca02047ff27,",
       "color.text.link.external": "S:78811d6ef8bda7e9cc17f88a3304778ace93dd9a,",
       "color.theme.bg": "S:82e6cbf8aae02f73905b640fad84fd1e8874c637,",
       "color.gray.100": "S:6fc45815ce2ef1614500aa2a90e603ddca0ddc27,",
@@ -668,7 +667,8 @@
       "color.alpha.pink.1300": "S:4531b2c30ab4319a9e76a86bb18aba0f5a890a7b,",
       "color.alpha.pink.1400": "S:02cf46cb3f418506861f1b4aaa07bd9326cc3adb,",
       "color.bg.action.primary.rest": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,",
-      "color.bg.canvas.default": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,"
+      "color.bg.canvas.default": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,",
+      "color.text.critical.primary": "S:2aea1d724c7c3498a4fbcb0333dbaca02047ff27,"
     }
   },
   {
@@ -683,7 +683,6 @@
       "color.text.secondary": "S:5ae3c4a207600e56766442c491927b879f3661aa,",
       "color.text.action.primary": "S:7f9838779424cc5eea6f7277e9309eaadb4cc851,",
       "color.text.action.accent": "S:f0f23b34c74a4d29123fa079bc947e45b655ae06,",
-      "color.text.action.critical": "S:776b360f552d53663a69d458c72484e99564fc54,",
       "color.text.link.external": "S:f29758ef639fc78096fc0c9c23e308628416206a,",
       "color.theme.bg": "S:adb8d4264933bd1fbe3528a5ba940d0d9f8cf1be,",
       "color.gray.100": "S:665e2040f8b47867052bf6cefd0c7e22070ff2a6,",
@@ -1004,7 +1003,8 @@
       "color.alpha.pink.1300": "S:a6fabf8ddf34ae63e4e09709390e1ee4b65a358f,",
       "color.alpha.pink.1400": "S:9b20af2daef23644e2c9a1a3c7b6ca88160e518f,",
       "color.bg.action.primary.rest": "S:d3d2abb419661e689166be085550173cee857ef3,",
-      "color.bg.canvas.default": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,"
+      "color.bg.canvas.default": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,",
+      "color.text.critical.primary": "S:776b360f552d53663a69d458c72484e99564fc54,"
     }
   },
   {
@@ -1107,7 +1107,6 @@
       "color.text.secondary": "S:b7986c95b8385f98e4bf1ee0a971a65b3d0883b2,",
       "color.text.action.primary": "S:15bbd3fe0134aad9702d76dea21e0d6c30f6324d,",
       "color.text.action.accent": "S:cb9188f813a06379b29cc664e040fa401e17de56,",
-      "color.text.action.critical": "S:ef6ff8e84adcaec5fedfb0199bbb4e5e14936f9f,",
       "color.text.link.external": "S:0c85a77694b347e496ff934b0844b04995754ff5,",
       "color.theme.bg": "S:78aef9c6293b9d93d76dc1ac2238c58295a44c55,",
       "color.gray.100": "S:7e4bcb53cc7111f44c4e5e67c1f37ecaf8baab2b,",
@@ -1428,7 +1427,8 @@
       "color.alpha.pink.1300": "S:7ae0845e4d5a37750c6525d739f1a959464a5ba6,",
       "color.alpha.pink.1400": "S:5c5460f8546908bc10839b3e32ded7c88a6be247,",
       "color.bg.action.primary.rest": "S:86bd90cac703fbdbbf3f68bcd77d347be65c12b0,",
-      "color.bg.canvas.default": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,"
+      "color.bg.canvas.default": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,",
+      "color.text.critical.primary": "S:ef6ff8e84adcaec5fedfb0199bbb4e5e14936f9f,"
     }
   }
 ]

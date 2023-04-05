@@ -21,11 +21,6 @@
         "type": "color",
         "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
       },
-      "critical": {
-        "value": "{color.red.900}",
-        "type": "color",
-        "description": "Default contrast text for critical state."
-      },
       "primary-on-solid": {
         "value": "{color.gray.100}",
         "type": "color",
@@ -41,8 +36,10 @@
           "value": "{color.green.900}",
           "type": "color",
           "description": "Accent text colour for plain actions."
-        },
-        "critical": {
+        }
+      },
+      "critical": {
+        "primary": {
           "value": "{color.red.900}",
           "type": "color",
           "description": "Text colour for destructive plain actions."
