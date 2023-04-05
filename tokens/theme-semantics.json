@@ -136,6 +136,13 @@
         "value": "{color.blue.900}",
         "type": "color",
         "description": "Used for the focus state outline."
+      },
+      "interactive": {
+        "primary": {
+          "value": "{color.gray.800}",
+          "type": "color",
+          "description": "Default contrast for accessible interactive element borders."
+        }
       }
     },
     "icon": {
