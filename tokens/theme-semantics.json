@@ -120,15 +120,15 @@
         "type": "color",
         "description": "Used for borders of disabled elements. There's no minimum contrast requirement."
       },
-      "focused": {
-        "value": "{color.blue.900}",
-        "type": "color",
-        "description": "Used for the focus state outline."
-      },
       "critical": {
         "value": "{color.red.900}",
         "type": "color",
         "description": "High-contrast border for critical state."
+      },
+      "focused": {
+        "value": "{color.blue.900}",
+        "type": "color",
+        "description": "Used for the focus state outline."
       }
     },
     "icon": {
