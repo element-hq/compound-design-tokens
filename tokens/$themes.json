@@ -7,7 +7,6 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,",
       "color.text.primary": "S:8e148d8d80d552d40db795a6ef9191600e9408c8,",
       "color.text.secondary": "S:3caf9f69e6012302f803b937e0f146fdf89c2669,",
       "color.text.action.primary": "S:6c2a6266c7a6e93ff53dcf13fdb0f9c9e9654313,",
@@ -332,7 +331,8 @@
       "color.alpha.pink.1200": "S:156c8270372424076e6845b5605c9d841700a350,",
       "color.alpha.pink.1300": "S:8f83502ec87d7839033fdc5972f96d2b52cd835d,",
       "color.alpha.pink.1400": "S:ff794094df99ef12cc9a9a2750c25e1c1839198c,",
-      "color.bg.action.primary.rest": "S:1f5d26f53bb439aa83421724c4b3d33f74a8509a,"
+      "color.bg.action.primary.rest": "S:1f5d26f53bb439aa83421724c4b3d33f74a8509a,",
+      "color.bg.canvas.default": "S:1eaa99b43d9de21336727b6b32a9da9a19642526,"
     }
   },
   {
@@ -343,7 +343,6 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,",
       "color.text.primary": "S:a73ecb030e9eb79f2e8007c51e678a952b1342da,",
       "color.text.secondary": "S:741c295f3dd4ba95c6c3dcc8b9be1f84e6150071,",
       "color.text.action.primary": "S:faf0e9648a0191a83d52dcd5b42fa9bf1ecf1adf,",
@@ -668,7 +667,8 @@
       "color.alpha.pink.1200": "S:8bc8eac1953f91d860bfc51733c7998cce70a064,",
       "color.alpha.pink.1300": "S:4531b2c30ab4319a9e76a86bb18aba0f5a890a7b,",
       "color.alpha.pink.1400": "S:02cf46cb3f418506861f1b4aaa07bd9326cc3adb,",
-      "color.bg.action.primary.rest": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,"
+      "color.bg.action.primary.rest": "S:a0fa8b6b0e634a65dad704999f2f8c75022e389b,",
+      "color.bg.canvas.default": "S:13fb53ef8b5aada00df980b7e77c0d3abddf70c1,"
     }
   },
   {
@@ -679,7 +679,6 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,",
       "color.text.primary": "S:0f082c1f98d76b0dd50fd7043416aabf2da4347b,",
       "color.text.secondary": "S:5ae3c4a207600e56766442c491927b879f3661aa,",
       "color.text.action.primary": "S:7f9838779424cc5eea6f7277e9309eaadb4cc851,",
@@ -1004,7 +1003,8 @@
       "color.alpha.pink.1200": "S:8dcb599ef61ba0868598636c3a21e3801c22c5a5,",
       "color.alpha.pink.1300": "S:a6fabf8ddf34ae63e4e09709390e1ee4b65a358f,",
       "color.alpha.pink.1400": "S:9b20af2daef23644e2c9a1a3c7b6ca88160e518f,",
-      "color.bg.action.primary.rest": "S:d3d2abb419661e689166be085550173cee857ef3,"
+      "color.bg.action.primary.rest": "S:d3d2abb419661e689166be085550173cee857ef3,",
+      "color.bg.canvas.default": "S:e48894def0b58d98c5af059ad3f26048ac14d38f,"
     }
   },
   {
@@ -1103,7 +1103,6 @@
       "theme-semantics": "enabled"
     },
     "$figmaStyleReferences": {
-      "color.bg.canvas": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,",
       "color.text.primary": "S:21581fd42700feae0ea79137c3ee964382b80b15,",
       "color.text.secondary": "S:b7986c95b8385f98e4bf1ee0a971a65b3d0883b2,",
       "color.text.action.primary": "S:15bbd3fe0134aad9702d76dea21e0d6c30f6324d,",
@@ -1428,7 +1427,8 @@
       "color.alpha.pink.1200": "S:642238510a8cfd983d4654976f22ccc3f8cd9145,",
       "color.alpha.pink.1300": "S:7ae0845e4d5a37750c6525d739f1a959464a5ba6,",
       "color.alpha.pink.1400": "S:5c5460f8546908bc10839b3e32ded7c88a6be247,",
-      "color.bg.action.primary.rest": "S:86bd90cac703fbdbbf3f68bcd77d347be65c12b0,"
+      "color.bg.action.primary.rest": "S:86bd90cac703fbdbbf3f68bcd77d347be65c12b0,",
+      "color.bg.canvas.default": "S:5a7d8df353a45c253944c2eb7f3bda37b5e2e194,"
     }
   }
 ]

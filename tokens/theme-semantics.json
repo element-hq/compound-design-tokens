@@ -58,9 +58,16 @@
     },
     "bg": {
       "canvas": {
-        "value": "{color.theme.bg}",
-        "type": "color",
-        "description": "Default global background for the user interface."
+        "default": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Default global background for the user interface."
+        },
+        "disabled": {
+          "value": "{color.gray.200}",
+          "type": "color",
+          "description": "Defaul background for disabled elements. There's no minimum contrast requirement."
+        }
       },
       "primary": {
         "value": "{color.gray.400}",
