@@ -192,17 +192,17 @@
         "type": "color",
         "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
+      "primary-on-solid": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
           "type": "color",
           "description": "High-contrast icon for critical state. State: Rest."
         }
-      },
-      "primary-on-solid": {
-        "value": "{color.gray.100}",
-        "type": "color",
-        "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
       },
       "accent": {
         "tertiary": {
