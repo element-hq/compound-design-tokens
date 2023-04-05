@@ -26,6 +26,11 @@
         "type": "color",
         "description": "Default contrast text for critical state."
       },
+      "primary-on-solid": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+      },
       "action": {
         "primary": {
           "value": "{color.gray.1400}",
@@ -41,11 +46,6 @@
           "value": "{color.red.900}",
           "type": "color",
           "description": "Text colour for destructive plain actions."
-        },
-        "on-primary": {
-          "value": "{color.gray.100}",
-          "type": "color",
-          "description": "For use as text color on top of primary actions."
         }
       },
       "link": {
@@ -176,18 +176,16 @@
         "type": "color",
         "description": "High-contrast icon for critical state."
       },
+      "primary-on-solid": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+      },
       "accent": {
         "tertiary": {
           "value": "{color.green.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
-        }
-      },
-      "action": {
-        "on-primary": {
-          "value": "{color.gray.100}",
-          "type": "color",
-          "description": "For use as icon color on top of primary actions."
         }
       }
     }
