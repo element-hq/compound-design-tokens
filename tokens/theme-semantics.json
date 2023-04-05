@@ -68,15 +68,15 @@
           "description": "Defaul background for disabled elements. There's no minimum contrast requirement."
         }
       },
-      "primary": {
+      "subtle-primary": {
         "value": "{color.gray.400}",
         "type": "color",
         "description": "Medium contrast surfaces."
       },
-      "secondary": {
+      "subtle-secondary": {
         "value": "{color.gray.300}",
         "type": "color",
-        "description": "Lower contrast surfaces."
+        "description": "Low contrast surfaces."
       },
       "action": {
         "primary": {
@@ -129,6 +129,16 @@
           "value": "{color.red.1000}",
           "type": "color",
           "description": "High-contrast background color for critical state. State: Hover."
+        },
+        "subtle": {
+          "value": "{color.red.200}",
+          "type": "color",
+          "description": "Default subtle critical surfaces. State: Rest."
+        },
+        "subtle-hovered": {
+          "value": "{color.red.300}",
+          "type": "color",
+          "description": "Default subtle critical surfaces. State: Hover."
         }
       }
     },
