@@ -60,6 +60,13 @@
           "type": "color",
           "description": "Accent text colour for informational elements."
         }
+      },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
       }
     },
     "bg": {
@@ -221,13 +228,6 @@
           "type": "color",
           "description": "Subtle border colour for informational elements."
         }
-      },
-      "on-solid": {
-        "primary": {
-          "value": "{color.theme.bg}",
-          "type": "color",
-          "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
-        }
       }
     },
     "icon": {
@@ -251,6 +251,18 @@
         "type": "color",
         "description": "⚠️ Lowest contrast non-accessible icons, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
       },
+      "disabled": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
+        }
+      },
       "primary-alpha": {
         "value": "{color.alpha.gray.1400}",
         "type": "color",
@@ -270,18 +282,6 @@
         "value": "{color.alpha.gray.700}",
         "type": "color",
         "description": "Translucent version of quaternary icon. Refer to it for intended use."
-      },
-      "disabled": {
-        "value": "{color.gray.700}",
-        "type": "color",
-        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
-      },
-      "accent": {
-        "tertiary": {
-          "value": "{color.green.800}",
-          "type": "color",
-          "description": "Lowest contrast accessible accent icons."
-        }
       },
       "critical": {
         "primary": {
@@ -308,7 +308,7 @@
         "primary": {
           "value": "{color.theme.bg}",
           "type": "color",
-          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+          "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
       }
     }

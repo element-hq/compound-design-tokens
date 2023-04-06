@@ -354,17 +354,16 @@ public class CompoundDarkDesignTokens {
     public static let colorIconInfoPrimary = colorBlue900
     public static let colorIconSuccessPrimary = colorGreen900
     public static let colorIconCriticalPrimary = colorRed900
-    public static let colorIconAccentTertiary = colorGreen800
-    public static let colorIconDisabled = colorGray700
     public static let colorIconQuaternaryAlpha = colorAlphaGray700
     public static let colorIconTertiaryAlpha = colorAlphaGray800
     public static let colorIconSecondaryAlpha = colorAlphaGray900
     public static let colorIconPrimaryAlpha = colorAlphaGray1400
+    public static let colorIconAccentTertiary = colorGreen800
+    public static let colorIconDisabled = colorGray700
     public static let colorIconQuaternary = colorGray700
     public static let colorIconTertiary = colorGray800
     public static let colorIconSecondary = colorGray900
     public static let colorIconPrimary = colorGray1400
-    public static let colorBorderOnSolidPrimary = colorThemeBg
     public static let colorBorderInfoSubtle = colorBlue500
     public static let colorBorderSuccessSubtle = colorGreen500
     public static let colorBorderCriticalSubtle = colorRed500
@@ -392,6 +391,7 @@ public class CompoundDarkDesignTokens {
     public static let colorBgSubtlePrimary = colorGray400
     public static let colorBgCanvasDisabled = colorGray200
     public static let colorBgCanvasDefault = colorThemeBg
+    public static let colorTextOnSolidPrimary = colorThemeBg
     public static let colorTextInfoPrimary = colorBlue900
     public static let colorTextSuccessPrimary = colorGreen900
     public static let colorTextCriticalPrimary = colorRed900
