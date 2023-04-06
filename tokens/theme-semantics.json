@@ -50,13 +50,15 @@
       "success": {
         "primary": {
           "value": "{color.green.900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent text colour for success state elements."
         }
       },
       "info": {
         "primary": {
           "value": "{color.blue.900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent text colour for informational elements."
         }
       }
     },
@@ -149,13 +151,15 @@
       "success": {
         "subtle": {
           "value": "{color.green.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Subtle background colour for success state elements. State: Rest."
         }
       },
       "info": {
         "subtle": {
           "value": "{color.blue.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Subtle background colour for informational elements. State: Rest."
         }
       }
     },
@@ -200,19 +204,22 @@
         },
         "subtle": {
           "value": "{color.red.500}",
-          "type": "color"
+          "type": "color",
+          "description": "Subtle border colour for critical state elements."
         }
       },
       "success": {
         "subtle": {
           "value": "{color.green.500}",
-          "type": "color"
+          "type": "color",
+          "description": "Subtle border colour for success state elements."
         }
       },
       "info": {
         "subtle": {
           "value": "{color.blue.500}",
-          "type": "color"
+          "type": "color",
+          "description": "Subtle border colour for informational elements."
         }
       },
       "on-solid": {
@@ -246,19 +253,23 @@
       },
       "primary-alpha": {
         "value": "{color.alpha.gray.1400}",
-        "type": "color"
+        "type": "color",
+        "description": "Translucent version of primary icon. Refer to it for intended use."
       },
       "secondary-alpha": {
         "value": "{color.alpha.gray.900}",
-        "type": "color"
+        "type": "color",
+        "description": "Translucent version of secondary icon. Refer to it for intended use."
       },
       "tertiary-alpha": {
         "value": "{color.alpha.gray.800}",
-        "type": "color"
+        "type": "color",
+        "description": "Translucent version of tertiary icon. Refer to it for intended use."
       },
       "quaternary-alpha": {
         "value": "{color.alpha.gray.700}",
-        "type": "color"
+        "type": "color",
+        "description": "Translucent version of quaternary icon. Refer to it for intended use."
       },
       "disabled": {
         "value": "{color.gray.700}",
@@ -283,14 +294,14 @@
         "primary": {
           "value": "{color.green.900}",
           "type": "color",
-          "description": "Success icon's color"
+          "description": "High-contrast icon for success state elements."
         }
       },
       "info": {
         "primary": {
           "value": "{color.blue.900}",
           "type": "color",
-          "description": "Info icons' color"
+          "description": "High-contrast icon for informational elements."
         }
       },
       "on-solid": {
