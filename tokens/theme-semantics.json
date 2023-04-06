@@ -33,6 +33,13 @@
           "description": "Accent text colour for plain actions."
         }
       },
+      "link": {
+        "external": {
+          "value": "{color.blue.900}",
+          "type": "color",
+          "description": "Text colour for external links."
+        }
+      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
@@ -40,11 +47,18 @@
           "description": "Text colour for destructive plain actions."
         }
       },
-      "link": {
-        "external": {
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Accent text colour for success state elements."
+        }
+      },
+      "info": {
+        "primary": {
           "value": "{color.blue.900}",
           "type": "color",
-          "description": "Text colour for external links."
+          "description": "Accent text colour for informational elements."
         }
       },
       "on-solid": {
@@ -140,6 +154,20 @@
           "type": "color",
           "description": "Default subtle critical surfaces. State: Hover."
         }
+      },
+      "success": {
+        "subtle": {
+          "value": "{color.green.200}",
+          "type": "color",
+          "description": "Subtle background colour for success state elements. State: Rest."
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.200}",
+          "type": "color",
+          "description": "Subtle background colour for informational elements. State: Rest."
+        }
       }
     },
     "border": {
@@ -180,6 +208,25 @@
           "value": "{color.red.1000}",
           "type": "color",
           "description": "High-contrast border for critical state. State: Hover."
+        },
+        "subtle": {
+          "value": "{color.red.500}",
+          "type": "color",
+          "description": "Subtle border colour for critical state elements."
+        }
+      },
+      "success": {
+        "subtle": {
+          "value": "{color.green.500}",
+          "type": "color",
+          "description": "Subtle border colour for success state elements."
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.500}",
+          "type": "color",
+          "description": "Subtle border colour for informational elements."
         }
       }
     },
@@ -209,6 +256,33 @@
         "type": "color",
         "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
+      "primary-alpha": {
+        "value": "{color.alpha.gray.1400}",
+        "type": "color",
+        "description": "Translucent version of primary icon. Refer to it for intended use."
+      },
+      "secondary-alpha": {
+        "value": "{color.alpha.gray.900}",
+        "type": "color",
+        "description": "Translucent version of secondary icon. Refer to it for intended use."
+      },
+      "tertiary-alpha": {
+        "value": "{color.alpha.gray.800}",
+        "type": "color",
+        "description": "Translucent version of tertiary icon. Refer to it for intended use."
+      },
+      "quaternary-alpha": {
+        "value": "{color.alpha.gray.700}",
+        "type": "color",
+        "description": "Translucent version of quaternary icon. Refer to it for intended use."
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
+        }
+      },
       "critical": {
         "primary": {
           "value": "{color.red.900}",
@@ -216,11 +290,18 @@
           "description": "High-contrast icon for critical state. State: Rest."
         }
       },
-      "accent": {
-        "tertiary": {
-          "value": "{color.green.800}",
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
           "type": "color",
-          "description": "Lowest contrast accessible accent icons."
+          "description": "High-contrast icon for success state elements."
+        }
+      },
+      "info": {
+        "primary": {
+          "value": "{color.blue.900}",
+          "type": "color",
+          "description": "High-contrast icon for informational elements."
         }
       },
       "on-solid": {
