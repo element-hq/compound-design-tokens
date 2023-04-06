@@ -354,11 +354,11 @@ public class CompoundLightHcDesignTokens {
     public static let colorIconInfoPrimary = colorBlue900
     public static let colorIconSuccessPrimary = colorGreen900
     public static let colorIconCriticalPrimary = colorRed900
+    public static let colorIconAccentTertiary = colorGreen800
     public static let colorIconQuaternaryAlpha = colorAlphaGray700
     public static let colorIconTertiaryAlpha = colorAlphaGray800
     public static let colorIconSecondaryAlpha = colorAlphaGray900
     public static let colorIconPrimaryAlpha = colorAlphaGray1400
-    public static let colorIconAccentTertiary = colorGreen800
     public static let colorIconDisabled = colorGray700
     public static let colorIconQuaternary = colorGray700
     public static let colorIconTertiary = colorGray800

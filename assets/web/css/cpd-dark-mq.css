@@ -312,11 +312,11 @@
   --cpd-color-icon-info-primary: var(--cpd-color-blue-900);
   --cpd-color-icon-success-primary: var(--cpd-color-green-900);
   --cpd-color-icon-critical-primary: var(--cpd-color-red-900);
+  --cpd-color-icon-accent-tertiary: var(--cpd-color-green-800);
   --cpd-color-icon-quaternary-alpha: var(--cpd-color-alpha-gray-700);
   --cpd-color-icon-tertiary-alpha: var(--cpd-color-alpha-gray-800);
   --cpd-color-icon-secondary-alpha: var(--cpd-color-alpha-gray-900);
   --cpd-color-icon-primary-alpha: var(--cpd-color-alpha-gray-1400);
-  --cpd-color-icon-accent-tertiary: var(--cpd-color-green-800);
   --cpd-color-icon-disabled: var(--cpd-color-gray-700);
   --cpd-color-icon-quaternary: var(--cpd-color-gray-700);
   --cpd-color-icon-tertiary: var(--cpd-color-gray-800);

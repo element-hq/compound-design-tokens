@@ -256,13 +256,6 @@
         "type": "color",
         "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
       },
-      "accent": {
-        "tertiary": {
-          "value": "{color.green.800}",
-          "type": "color",
-          "description": "Lowest contrast accessible accent icons."
-        }
-      },
       "primary-alpha": {
         "value": "{color.alpha.gray.1400}",
         "type": "color",
@@ -282,6 +275,13 @@
         "value": "{color.alpha.gray.700}",
         "type": "color",
         "description": "Translucent version of quaternary icon. Refer to it for intended use."
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
+        }
       },
       "critical": {
         "primary": {
