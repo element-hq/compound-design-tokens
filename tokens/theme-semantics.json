@@ -1,5 +1,65 @@
 {
   "color": {
+    "text": {
+      "primary": {
+        "value": "{color.gray.1400}",
+        "type": "color",
+        "description": "Highest contrast text."
+      },
+      "secondary": {
+        "value": "{color.gray.900}",
+        "type": "color",
+        "description": "Lowest contrast text."
+      },
+      "placeholder": {
+        "value": "{color.gray.800}",
+        "type": "color",
+        "description": "Use for placeholder text. Placeholder text should be non-essential. Do not rely exclusively on it."
+      },
+      "disabled": {
+        "value": "{color.gray.800}",
+        "type": "color",
+        "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
+      },
+      "action": {
+        "primary": {
+          "value": "{color.gray.1400}",
+          "type": "color",
+          "description": "Default text colour for plain actions."
+        },
+        "accent": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Accent text colour for plain actions."
+        }
+      },
+      "link": {
+        "external": {
+          "value": "{color.blue.900}",
+          "type": "color",
+          "description": "Text colour for external links."
+        }
+      },
+      "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "Text colour for destructive plain actions."
+        }
+      },
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "primary": {
+          "value": "{color.blue.900}",
+          "type": "color"
+        }
+      }
+    },
     "bg": {
       "canvas": {
         "default": {
@@ -86,83 +146,16 @@
           "description": "Default subtle critical surfaces. State: Hover."
         }
       },
-      "info": {
-        "subtle": {
-          "value": "{color.blue.200}",
-          "type": "color"
-        }
-      },
       "success": {
         "subtle": {
           "value": "{color.green.200}",
           "type": "color"
         }
-      }
-    },
-    "text": {
-      "primary": {
-        "value": "{color.gray.1400}",
-        "type": "color",
-        "description": "Highest contrast text."
-      },
-      "secondary": {
-        "value": "{color.gray.900}",
-        "type": "color",
-        "description": "Lowest contrast text."
-      },
-      "placeholder": {
-        "value": "{color.gray.800}",
-        "type": "color",
-        "description": "Use for placeholder text. Placeholder text should be non-essential. Do not rely exclusively on it."
-      },
-      "disabled": {
-        "value": "{color.gray.800}",
-        "type": "color",
-        "description": "Use for regular text in disabled elements. There's no minimum contrast requirement."
-      },
-      "action": {
-        "primary": {
-          "value": "{color.gray.1400}",
-          "type": "color",
-          "description": "Default text colour for plain actions."
-        },
-        "accent": {
-          "value": "{color.green.900}",
-          "type": "color",
-          "description": "Accent text colour for plain actions."
-        }
-      },
-      "critical": {
-        "primary": {
-          "value": "{color.red.900}",
-          "type": "color",
-          "description": "Text colour for destructive plain actions."
-        }
-      },
-      "link": {
-        "external": {
-          "value": "{color.blue.900}",
-          "type": "color",
-          "description": "Text colour for external links."
-        }
-      },
-      "success": {
-        "primary": {
-          "value": "{color.green.900}",
-          "type": "color"
-        }
       },
       "info": {
-        "primary": {
-          "value": "{color.blue.900}",
+        "subtle": {
+          "value": "{color.blue.200}",
           "type": "color"
-        }
-      },
-      "on-solid": {
-        "primary": {
-          "value": "{color.theme.bg}",
-          "type": "color",
-          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
       }
     },
@@ -210,15 +203,15 @@
           "type": "color"
         }
       },
-      "info": {
-        "subtle": {
-          "value": "{color.blue.500}",
-          "type": "color"
-        }
-      },
       "success": {
         "subtle": {
           "value": "{color.green.500}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "subtle": {
+          "value": "{color.blue.500}",
           "type": "color"
         }
       },
@@ -251,39 +244,6 @@
         "type": "color",
         "description": "⚠️ Lowest contrast non-accessible icons, <3:1. Only use for non-essential icons. Do not rely exclusively on them."
       },
-      "disabled": {
-        "value": "{color.gray.700}",
-        "type": "color",
-        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
-      },
-      "critical": {
-        "primary": {
-          "value": "{color.red.900}",
-          "type": "color",
-          "description": "High-contrast icon for critical state. State: Rest."
-        }
-      },
-      "accent": {
-        "tertiary": {
-          "value": "{color.green.800}",
-          "type": "color",
-          "description": "Lowest contrast accessible accent icons."
-        }
-      },
-      "info": {
-        "primary": {
-          "value": "{color.blue.900}",
-          "type": "color",
-          "description": "Info icons' color"
-        }
-      },
-      "success": {
-        "primary": {
-          "value": "{color.green.900}",
-          "type": "color",
-          "description": "Success icon's color"
-        }
-      },
       "primary-alpha": {
         "value": "{color.alpha.gray.1400}",
         "type": "color"
@@ -299,6 +259,46 @@
       "quaternary-alpha": {
         "value": "{color.alpha.gray.700}",
         "type": "color"
+      },
+      "disabled": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "Use for icons in disabled elements. There's no minimum contrast requirement."
+      },
+      "accent": {
+        "tertiary": {
+          "value": "{color.green.800}",
+          "type": "color",
+          "description": "Lowest contrast accessible accent icons."
+        }
+      },
+      "critical": {
+        "primary": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "High-contrast icon for critical state. State: Rest."
+        }
+      },
+      "success": {
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Success icon's color"
+        }
+      },
+      "info": {
+        "primary": {
+          "value": "{color.blue.900}",
+          "type": "color",
+          "description": "Info icons' color"
+        }
+      },
+      "on-solid": {
+        "primary": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
       }
     }
   }
