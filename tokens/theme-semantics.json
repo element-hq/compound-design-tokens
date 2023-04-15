@@ -74,7 +74,7 @@
         "default": {
           "value": "{color.theme.bg}",
           "type": "color",
-          "description": "Default global background for the user interface."
+          "description": "Default global background for the user interface.\nElevation: Default (Level 0)"
         },
         "disabled": {
           "value": "{color.gray.200}",
@@ -85,12 +85,12 @@
       "subtle-primary": {
         "value": "{color.gray.400}",
         "type": "color",
-        "description": "Medium contrast surfaces."
+        "description": "Medium contrast surfaces.\nElevation: Default (Level 2)."
       },
       "subtle-secondary": {
         "value": "{color.gray.300}",
         "type": "color",
-        "description": "Low contrast surfaces."
+        "description": "Low contrast surfaces.\nElevation: Default (Level 1)."
       },
       "action": {
         "primary": {
