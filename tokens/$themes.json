@@ -3,9 +3,7 @@
     "id": "e12210b9270d7047e0bed40f06eaa66d5bd7a9c7",
     "name": "Global",
     "selectedTokenSets": {
-      "cross-platform": "enabled",
-      "theme-semantics-light": "disabled",
-      "theme-semantics-dark": "disabled"
+      "cross-platform": "enabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -13,9 +11,7 @@
     "id": "96f4f9bd2bf32c4657bfe283f418fc093117942f",
     "name": "Android",
     "selectedTokenSets": {
-      "platform-android": "enabled",
-      "theme-semantics-light": "disabled",
-      "theme-semantics-dark": "disabled"
+      "platform-android": "enabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:25abcdb5e09930db0b8238606cb722f34dd09f34,",
@@ -40,9 +36,7 @@
     "id": "0022f9989257cb4474cf2429dc471f3ea70d0f9d",
     "name": "iOS",
     "selectedTokenSets": {
-      "platform-ios": "enabled",
-      "theme-semantics-light": "disabled",
-      "theme-semantics-dark": "disabled"
+      "platform-ios": "enabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:43243e3690f15fd4a49f5e9752d23ad2eaab8b5d,",
@@ -67,9 +61,7 @@
     "id": "22ad1f7c65308da86722dc9335e31be4d9fa53d7",
     "name": "Web",
     "selectedTokenSets": {
-      "platform-web": "enabled",
-      "theme-semantics-light": "disabled",
-      "theme-semantics-dark": "disabled"
+      "platform-web": "enabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:acd9364fb96bf307fcc23106bc9958664af9b4f3,",
@@ -101,8 +93,7 @@
     "selectedTokenSets": {
       "theme-light": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "enabled",
-      "theme-semantics-dark": "disabled"
+      "theme-semantics-light": "enabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:8e148d8d80d552d40db795a6ef9191600e9408c8,",
@@ -474,7 +465,6 @@
     "selectedTokenSets": {
       "theme-dark": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "disabled",
       "theme-semantics-dark": "enabled"
     },
     "$figmaStyleReferences": {
@@ -847,8 +837,7 @@
     "selectedTokenSets": {
       "theme-light-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "enabled",
-      "theme-semantics-dark": "disabled"
+      "theme-semantics-light": "enabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:a73ecb030e9eb79f2e8007c51e678a952b1342da,",
@@ -1220,7 +1209,6 @@
     "selectedTokenSets": {
       "theme-dark-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "disabled",
       "theme-semantics-dark": "enabled"
     },
     "$figmaStyleReferences": {
