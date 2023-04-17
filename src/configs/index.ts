@@ -35,7 +35,7 @@ export function getStyleDictionaryConfig(
     `tokens/platform-${platform}.json`,
     `tokens/theme-${theme}.json`,
     `tokens/theme-semantics.json`,
-    `tokens/theme-${theme}-semantics.json`,
+    `tokens/theme-semantics-${theme}.json`,
     `icons/$icons.json`,
   ]);
 

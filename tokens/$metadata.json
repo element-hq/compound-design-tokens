@@ -8,6 +8,8 @@
     "theme-dark",
     "theme-light-hc",
     "theme-dark-hc",
+    "theme-semantics-light",
+    "theme-semantics-dark",
     "theme-semantics"
   ]
 }

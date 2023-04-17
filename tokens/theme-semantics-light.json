@@ -1,0 +1,18 @@
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "default-level-1": {
+          "value": "{color.theme.bg}",
+          "type": "color",
+          "description": "Default global background for the user interface.\nElevation: Level 1."
+        }
+      },
+      "subtle-secondary-level-0": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "Lower contrast surfaces.\nElevation: Level 0."
+      }
+    }
+  }
+}

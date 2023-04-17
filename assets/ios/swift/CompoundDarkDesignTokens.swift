@@ -374,6 +374,7 @@ public class CompoundDarkDesignTokens {
     public static let colorBorderInteractivePrimary = colorGray800
     public static let colorBorderFocused = colorBlue900
     public static let colorBorderDisabled = colorGray500
+    public static let colorBgSubtleSecondaryLevel0 = colorThemeBg
     public static let colorBgInfoSubtle = colorBlue200
     public static let colorBgSuccessSubtle = colorGreen200
     public static let colorBgCriticalSubtleHovered = colorRed300
@@ -389,6 +390,7 @@ public class CompoundDarkDesignTokens {
     public static let colorBgActionPrimaryRest = colorGray1400
     public static let colorBgSubtleSecondary = colorGray300
     public static let colorBgSubtlePrimary = colorGray400
+    public static let colorBgCanvasDefaultLevel1 = colorGray300
     public static let colorBgCanvasDisabled = colorGray200
     public static let colorBgCanvasDefault = colorThemeBg
     public static let colorTextOnSolidPrimary = colorThemeBg
