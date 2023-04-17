@@ -456,7 +456,9 @@
       "color.icon.critical.primary": "S:edfb06c801e86c86626e44d8ead770a29b253193,",
       "color.icon.success.primary": "S:0f442375f0c5d0a7f141b693e3a5b0bd085a405c,",
       "color.icon.info.primary": "S:f259ae7aedb674cd29be686ac6d72ef8afabb7b1,",
-      "color.icon.on-solid.primary": "S:8afa150a81c836a4ee16d24f709cbaddb296b08b,"
+      "color.icon.on-solid.primary": "S:8afa150a81c836a4ee16d24f709cbaddb296b08b,",
+      "color.bg.canvas.default-level-1": "S:04233ecd06019bc7a04449b1d95b4d8af7ec2005,",
+      "color.bg.subtle-secondary-level-0": "S:db7501aebb577b3f17d8eee794407644ad539e7a,"
     }
   },
   {
@@ -828,7 +830,9 @@
       "color.icon.critical.primary": "S:3c6743bfcee4ee0fd24a98462f8eb6d64963f61d,",
       "color.icon.success.primary": "S:0a82573bbcc13e1d59899a0ce98e9cced6adbad2,",
       "color.icon.info.primary": "S:3ab8a17c57062f96c18c2eb5c9dd7dad72360e3f,",
-      "color.icon.on-solid.primary": "S:ea0c5e54c356cb6bee8de8e90562483d0678eda5,"
+      "color.icon.on-solid.primary": "S:ea0c5e54c356cb6bee8de8e90562483d0678eda5,",
+      "color.bg.canvas.default-level-1": "S:d2090ebc95eaf6832efaf96ffac3fe88852c94f0,",
+      "color.bg.subtle-secondary-level-0": "S:60d43e6541c7412028717530e17f1009545b21b1,"
     }
   },
   {
@@ -1200,7 +1204,9 @@
       "color.icon.critical.primary": "S:0a0e546a56558476fef1c6d5ec8d6d9be3c0060b,",
       "color.icon.success.primary": "S:bee92736f6ce30aa1395b8d7394799b749bd9b7d,",
       "color.icon.info.primary": "S:8a8555aeb788947f6b39b23491c44e23c36bdfb6,",
-      "color.icon.on-solid.primary": "S:e5f5a2a75cf793d1a2ee532cbad094c406c3a41e,"
+      "color.icon.on-solid.primary": "S:e5f5a2a75cf793d1a2ee532cbad094c406c3a41e,",
+      "color.bg.canvas.default-level-1": "S:5a7a28a9cacdc83f48f4b84361c7bd94744903d1,",
+      "color.bg.subtle-secondary-level-0": "S:20713d105be83e770686915f372bb159de563b78,"
     }
   },
   {
@@ -1572,7 +1578,9 @@
       "color.icon.critical.primary": "S:52a285a3fd21d89ad2bfe19fb21f41fc4a06c1fc,",
       "color.icon.success.primary": "S:23e1a09008c3b4ac6d2e5132d4b72ca4423462d4,",
       "color.icon.info.primary": "S:ef7051ecef582b1c537af11d2997a32635e08a7b,",
-      "color.icon.on-solid.primary": "S:50112b9da0def7552ba4d5353a65999ee95d87be,"
+      "color.icon.on-solid.primary": "S:50112b9da0def7552ba4d5353a65999ee95d87be,",
+      "color.bg.canvas.default-level-1": "S:939d26e5073c51a8656a69975c087df7bea3acad,",
+      "color.bg.subtle-secondary-level-0": "S:329a9b7516c81e59ed955e2a8be63af59a7533ef,"
     }
   }
 ]
