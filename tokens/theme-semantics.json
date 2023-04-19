@@ -70,6 +70,16 @@
       }
     },
     "bg": {
+      "subtle-primary": {
+        "value": "{color.gray.400}",
+        "type": "color",
+        "description": "Medium contrast surfaces.\nElevation: Default (Level 2)."
+      },
+      "subtle-secondary": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "Low contrast surfaces.\nElevation: Default (Level 1)."
+      },
       "canvas": {
         "default": {
           "value": "{color.theme.bg}",
@@ -81,16 +91,6 @@
           "type": "color",
           "description": "Default background for disabled elements. There's no minimum contrast requirement."
         }
-      },
-      "subtle-primary": {
-        "value": "{color.gray.400}",
-        "type": "color",
-        "description": "Medium contrast surfaces.\nElevation: Default (Level 2)."
-      },
-      "subtle-secondary": {
-        "value": "{color.gray.300}",
-        "type": "color",
-        "description": "Low contrast surfaces.\nElevation: Default (Level 1)."
       },
       "action": {
         "primary": {
