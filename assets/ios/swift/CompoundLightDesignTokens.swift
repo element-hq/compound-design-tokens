@@ -388,11 +388,11 @@ public class CompoundLightDesignTokens {
     public static let colorBgActionPrimaryPressed = colorGray1100
     public static let colorBgActionPrimaryHovered = colorGray1200
     public static let colorBgActionPrimaryRest = colorGray1400
-    public static let colorBgSubtleSecondary = colorGray300
-    public static let colorBgSubtlePrimary = colorGray400
     public static let colorBgCanvasDefaultLevel1 = colorThemeBg
     public static let colorBgCanvasDisabled = colorGray200
     public static let colorBgCanvasDefault = colorThemeBg
+    public static let colorBgSubtleSecondary = colorGray300
+    public static let colorBgSubtlePrimary = colorGray400
     public static let colorTextOnSolidPrimary = colorThemeBg
     public static let colorTextInfoPrimary = colorBlue900
     public static let colorTextSuccessPrimary = colorGreen900
