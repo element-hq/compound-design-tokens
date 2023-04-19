@@ -346,11 +346,11 @@
   --cpd-color-bg-action-primary-pressed: var(--cpd-color-gray-1100);
   --cpd-color-bg-action-primary-hovered: var(--cpd-color-gray-1200);
   --cpd-color-bg-action-primary-rest: var(--cpd-color-gray-1400);
-  --cpd-color-bg-subtle-secondary: var(--cpd-color-gray-300);
-  --cpd-color-bg-subtle-primary: var(--cpd-color-gray-400);
   --cpd-color-bg-canvas-default-level-1: var(--cpd-color-theme-bg);
   --cpd-color-bg-canvas-disabled: var(--cpd-color-gray-200);
   --cpd-color-bg-canvas-default: var(--cpd-color-theme-bg);
+  --cpd-color-bg-subtle-secondary: var(--cpd-color-gray-300);
+  --cpd-color-bg-subtle-primary: var(--cpd-color-gray-400);
   --cpd-color-text-on-solid-primary: var(--cpd-color-theme-bg);
   --cpd-color-text-info-primary: var(--cpd-color-blue-900);
   --cpd-color-text-success-primary: var(--cpd-color-green-900);
