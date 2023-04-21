@@ -841,7 +841,7 @@
     "selectedTokenSets": {
       "theme-light-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "enabled"
+      "theme-semantics-light-hc": "enabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:a73ecb030e9eb79f2e8007c51e678a952b1342da,",
@@ -1215,7 +1215,7 @@
     "selectedTokenSets": {
       "theme-dark-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-dark": "enabled"
+      "theme-semantics-dark-hc": "enabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:0f082c1f98d76b0dd50fd7043416aabf2da4347b,",

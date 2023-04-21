@@ -10,6 +10,8 @@
     "theme-dark-hc",
     "theme-semantics-light",
     "theme-semantics-dark",
+    "theme-semantics-light-hc",
+    "theme-semantics-dark-hc",
     "theme-semantics"
   ]
 }
