@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import { Platform, Theme } from "./src/@types/index";
-import setupStyleDictionary from "./src/setupStyleDictionary";
+import * as setupStyleDictionary from "./src/setupStyleDictionary";
 import generateIconTokens from "./src/utils/generateIconTokens";
 
 import fs from "fs-extra";
@@ -25,11 +25,13 @@ const platforms: Platform[] = ["web", "android", "ios"];
 
 (async () => {
   generateIconTokens();
-  for (const theme of themes) {
-    for (const platform of platforms) {
-      const sb = await setupStyleDictionary(theme, platform);
+  for (const platform of platforms) {
+    for (const theme of themes) {
+      const sb = await setupStyleDictionary.themed(theme, platform);
       sb.buildAllPlatforms();
     }
+    const sb = await setupStyleDictionary.common(platform);
+    sb.buildAllPlatforms();
   }
   fs.copySync("icons", "assets/web/icons", { overwrite: true });
 })();

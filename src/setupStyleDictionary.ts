@@ -15,14 +15,17 @@ limitations under the License.
 */
 
 import * as StyleDictionary from "style-dictionary";
+import { Core } from "style-dictionary";
 import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
+import * as fs from 'fs';
+import * as path from 'path';
 
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import toFontWeight from "./transforms/swift/toFontWeight";
-import { getStyleDictionaryConfig } from "./configs";
+import { getStyleDictionaryConfig, getStyleDictionaryCommonConfig } from "./configs";
 import { Platform, Theme } from "./@types";
 import colorset from "./actions/swift/colorset";
 import { Action } from "style-dictionary/types/Action";
@@ -40,9 +43,9 @@ import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
 import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import iconsImport from "./transforms/css/iconsImport";
 import svgToImageView from "./transforms/swift/svgToImageView";
+import * as lodash from "lodash";
 
-export default async function (theme: Theme, platform: Platform) {
-  const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
+async function setupDictionary(sb: Core) {
   await registerTransforms(sb);
   sb.registerTransform({
     name: "camelCaseDecimal",
@@ -115,5 +118,23 @@ export default async function (theme: Theme, platform: Platform) {
   sb.registerFilter(isCoreColor);
   sb.registerFilter(isNotCoreColor);
 
+  const extraColorsTemplate = lodash.template(
+    fs.readFileSync(path.join(__dirname, 'formats/templates/compose/extra-colors.kt.template')).toString()
+  );
+  sb.registerFormat({
+    name: 'compose/extra-colors',
+    formatter: extraColorsTemplate
+  });
+}
+
+export async function themed(theme: Theme, platform: Platform) {
+  const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
+  setupDictionary(sb);
+  return sb;
+}
+
+export async function common(platform: Platform) {
+  const sb = StyleDictionary.extend(getStyleDictionaryCommonConfig(platform));
+  setupDictionary(sb);
   return sb;
 }
