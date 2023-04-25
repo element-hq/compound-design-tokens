@@ -24,6 +24,8 @@ function isFontType(token: TransformedToken) {
   return ['typography', 'fontFamilies', 'fontWeights', 'letterSpacing', 'fontSizes', 'lineHeights'].includes(token.type);
 }
 
+const packageName = "io.element.android.compound";
+
 export function getAndroidConfig(theme: Theme): Platform {
   return {
     transforms: [
@@ -45,7 +47,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         format: "compose/object",
         destination: `${_.upperFirst(_.camelCase(theme))}DesignTokens.kt`,
         className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
-        packageName: "io.element.android.compound",
+        packageName: packageName,
         filter: function(token: TransformedToken) {
           return isCoreColor.matcher(token);
         },
@@ -64,7 +66,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         format: "compose/extra-colors",
         destination: `CompoundColors.kt`,
         className: "CompoundColors",
-        packageName: "io.element.android.compound",
+        packageName: packageName,
         filter: function(token: TransformedToken) {
           return token.type == 'color' && isNotCoreColor.matcher(token);
         },
@@ -98,7 +100,7 @@ export function getCommonAndroidConfig(): Platform {
         format: "compose/object",
         destination: `CompoundTypography.kt`,
         className: "CompoundTypography",
-        packageName: "io.element.android.compound",
+        packageName: packageName,
         filter: isFontType,
         options: {
           showFileHeader: false,
