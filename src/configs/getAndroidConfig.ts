@@ -18,11 +18,8 @@ import { Platform } from "style-dictionary/types/Platform";
 import { TransformedToken } from "style-dictionary/types";
 import { Theme } from "../@types";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
+import isFontToken from "../filters/isFontToken";
 import _ from "lodash";
-
-function isFontType(token: TransformedToken) {
-  return ['typography', 'fontFamilies', 'fontWeights', 'letterSpacing', 'fontSizes', 'lineHeights'].includes(token.type);
-}
 
 const packageName = "io.element.android.compound";
 
@@ -101,7 +98,7 @@ export function getCommonAndroidConfig(): Platform {
         destination: `CompoundTypography.kt`,
         className: "CompoundTypography",
         packageName: packageName,
-        filter: isFontType,
+        filter: isFontToken,
         options: {
           showFileHeader: false,
           outputReferences: true,
