@@ -47,7 +47,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
         packageName: "io.element.android.compound",
         filter: function(token: TransformedToken) {
-          return !isFontType(token) && isCoreColor.matcher(token);
+          return isCoreColor.matcher(token);
         },
         options: {
           showFileHeader: false,
