@@ -86,6 +86,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
           showFileHeader: false,
           outputReferences: true,
           basePxFontSize,
+          selector: `:root, [class*="cpd-theme-"]`,
         },
       },
       // Generates the theme under a scoped selector
