@@ -1,4 +1,4 @@
-:root {
+:root, [class*="cpd-theme-"] {
   --cpd-icon-web-browser: url(../icons/web-browser.svg);
   --cpd-icon-visibility-visible: url(../icons/visibility-visible.svg);
   --cpd-icon-visibility-invisible: url(../icons/visibility-invisible.svg);
