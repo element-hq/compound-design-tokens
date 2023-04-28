@@ -18,14 +18,11 @@ import * as glob from "fast-glob";
 import { Config } from "style-dictionary/types/Config";
 
 import { Theme, Platform } from "../@types";
-import getAndroidConfig from "./getAndroidConfig";
+import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
 import getIOSConfig from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 
-export function getStyleDictionaryConfig(
-  theme: Theme,
-  platform: Platform
-): Config {
+function getConfig(platform: Platform) {
   const config: Config = {
     platforms: {},
   };
@@ -33,11 +30,27 @@ export function getStyleDictionaryConfig(
   config.source = glob.sync([
     "tokens/cross-platform.json",
     `tokens/platform-${platform}.json`,
+    `icons/$icons.json`,
+  ]);
+  return config;
+}
+
+export function getStyleDictionaryConfig(
+  theme: Theme,
+  platform: Platform
+): Config {
+  const config: Config = getConfig(platform);
+
+  let themeSources = glob.sync([
     `tokens/theme-${theme}.json`,
     `tokens/theme-semantics.json`,
     `tokens/theme-semantics-${theme}.json`,
-    `icons/$icons.json`,
   ]);
+  if (config.source) {
+    config.source = config.source.concat(themeSources);
+  } else {
+    config.source = themeSources;
+  }
 
   switch (platform) {
     case "web":
@@ -50,6 +63,26 @@ export function getStyleDictionaryConfig(
       break;
     case "ios":
       config.platforms.iosSwift = getIOSConfig(theme);
+      break;
+    default:
+      throw `Unsupported platform: ${platform}`;
+  }
+
+  return config;
+}
+
+export function getStyleDictionaryCommonConfig(
+  platform: Platform
+): Config {
+  const config: Config = getConfig(platform);
+
+  switch (platform) {
+    case "web":
+      break;
+    case "android":
+      config.platforms.compose = getCommonAndroidConfig();
+      break;
+    case "ios":
       break;
     default:
       throw `Unsupported platform: ${platform}`;

@@ -6,7 +6,6 @@
 import SwiftUI
 
 public class CompoundDarkHcDesignTokens {
-    public static let iconThread = Image("iconThread", bundle: Bundle.module) 
     public static let colorAlphaPink1400 = Color("colorAlphaPink1400", bundle: Bundle.module) 
     public static let colorAlphaPink1300 = Color("colorAlphaPink1300", bundle: Bundle.module) 
     public static let colorAlphaPink1200 = Color("colorAlphaPink1200", bundle: Bundle.module) 
@@ -316,6 +315,7 @@ public class CompoundDarkHcDesignTokens {
     public static let colorGray200 = Color("colorGray200", bundle: Bundle.module) 
     public static let colorGray100 = Color("colorGray100", bundle: Bundle.module) 
     public static let colorThemeBg = Color("colorThemeBg", bundle: Bundle.module) 
+    public static let iconThread = Image("iconThread", bundle: Bundle.module) 
     public static let fontSizeHeadingXl = CGFloat(34)
     public static let fontSizeHeadingLg = CGFloat(28)
     public static let fontSizeHeadingMd = CGFloat(22)
