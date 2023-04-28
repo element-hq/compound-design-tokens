@@ -1,4 +1,4 @@
-:root {
+:root, [class*="cpd-theme-"] {
   --cpd-icon-thread: url(../icons/thread.svg);
   --cpd-font-letter-spacing-heading-xl: -0.0216em;
   --cpd-font-letter-spacing-heading-lg: -0.0209em;
