@@ -24,7 +24,11 @@ import isCoreToken from "./isCoreToken";
 const isCoreColor = {
   name: "isCoreColor",
   matcher: function (token: TransformedToken): boolean {
-    return isCoreToken.matcher(token) && token.attributes?.category === "color";
+    return (
+      (isCoreToken.matcher(token) ||
+        token.filePath.includes("theme-semantics-")) &&
+      token.attributes?.category === "color"
+    );
   },
 } as StyleDictionary.Filter;
 
