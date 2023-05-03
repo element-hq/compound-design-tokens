@@ -39,7 +39,6 @@ class CompoundColors(
     colorBgSubtleSecondary: Color,
     colorBgCanvasDefault: Color,
     colorBgCanvasDisabled: Color,
-    colorBgCanvasDefaultLevel1: Color,
     colorBgActionPrimaryRest: Color,
     colorBgActionPrimaryHovered: Color,
     colorBgActionPrimaryPressed: Color,
@@ -53,7 +52,6 @@ class CompoundColors(
     colorBgCriticalSubtleHovered: Color,
     colorBgSuccessSubtle: Color,
     colorBgInfoSubtle: Color,
-    colorBgSubtleSecondaryLevel0: Color,
     colorBorderDisabled: Color,
     colorBorderFocused: Color,
     colorBorderInteractivePrimary: Color,
@@ -130,10 +128,6 @@ Elevation: Default (Level 0) */
     /** Default background for disabled elements. There's no minimum contrast requirement. */
     var colorBgCanvasDisabled by mutableStateOf(colorBgCanvasDisabled)
         private set
-    /** Default global background for the user interface.
-Elevation: Level 1. */
-    var colorBgCanvasDefaultLevel1 by mutableStateOf(colorBgCanvasDefaultLevel1)
-        private set
     /** Background colour for primary actions. State: Rest. */
     var colorBgActionPrimaryRest by mutableStateOf(colorBgActionPrimaryRest)
         private set
@@ -172,10 +166,6 @@ Elevation: Level 1. */
         private set
     /** Subtle background colour for informational elements. State: Rest. */
     var colorBgInfoSubtle by mutableStateOf(colorBgInfoSubtle)
-        private set
-    /** Lower contrast surfaces.
-Elevation: Level 0. */
-    var colorBgSubtleSecondaryLevel0 by mutableStateOf(colorBgSubtleSecondaryLevel0)
         private set
     /** Used for borders of disabled elements. There's no minimum contrast requirement. */
     var colorBorderDisabled by mutableStateOf(colorBorderDisabled)
@@ -266,7 +256,6 @@ Elevation: Level 0. */
         colorBgSubtleSecondary: Color = this.colorBgSubtleSecondary,
         colorBgCanvasDefault: Color = this.colorBgCanvasDefault,
         colorBgCanvasDisabled: Color = this.colorBgCanvasDisabled,
-        colorBgCanvasDefaultLevel1: Color = this.colorBgCanvasDefaultLevel1,
         colorBgActionPrimaryRest: Color = this.colorBgActionPrimaryRest,
         colorBgActionPrimaryHovered: Color = this.colorBgActionPrimaryHovered,
         colorBgActionPrimaryPressed: Color = this.colorBgActionPrimaryPressed,
@@ -280,7 +269,6 @@ Elevation: Level 0. */
         colorBgCriticalSubtleHovered: Color = this.colorBgCriticalSubtleHovered,
         colorBgSuccessSubtle: Color = this.colorBgSuccessSubtle,
         colorBgInfoSubtle: Color = this.colorBgInfoSubtle,
-        colorBgSubtleSecondaryLevel0: Color = this.colorBgSubtleSecondaryLevel0,
         colorBorderDisabled: Color = this.colorBorderDisabled,
         colorBorderFocused: Color = this.colorBorderFocused,
         colorBorderInteractivePrimary: Color = this.colorBorderInteractivePrimary,
@@ -322,7 +310,6 @@ Elevation: Level 0. */
         colorBgSubtleSecondary = colorBgSubtleSecondary,
         colorBgCanvasDefault = colorBgCanvasDefault,
         colorBgCanvasDisabled = colorBgCanvasDisabled,
-        colorBgCanvasDefaultLevel1 = colorBgCanvasDefaultLevel1,
         colorBgActionPrimaryRest = colorBgActionPrimaryRest,
         colorBgActionPrimaryHovered = colorBgActionPrimaryHovered,
         colorBgActionPrimaryPressed = colorBgActionPrimaryPressed,
@@ -336,7 +323,6 @@ Elevation: Level 0. */
         colorBgCriticalSubtleHovered = colorBgCriticalSubtleHovered,
         colorBgSuccessSubtle = colorBgSuccessSubtle,
         colorBgInfoSubtle = colorBgInfoSubtle,
-        colorBgSubtleSecondaryLevel0 = colorBgSubtleSecondaryLevel0,
         colorBorderDisabled = colorBorderDisabled,
         colorBorderFocused = colorBorderFocused,
         colorBorderInteractivePrimary = colorBorderInteractivePrimary,
@@ -380,7 +366,6 @@ Elevation: Level 0. */
         colorBgSubtleSecondary = other.colorBgSubtleSecondary,
         colorBgCanvasDefault = other.colorBgCanvasDefault,
         colorBgCanvasDisabled = other.colorBgCanvasDisabled,
-        colorBgCanvasDefaultLevel1 = other.colorBgCanvasDefaultLevel1,
         colorBgActionPrimaryRest = other.colorBgActionPrimaryRest,
         colorBgActionPrimaryHovered = other.colorBgActionPrimaryHovered,
         colorBgActionPrimaryPressed = other.colorBgActionPrimaryPressed,
@@ -394,7 +379,6 @@ Elevation: Level 0. */
         colorBgCriticalSubtleHovered = other.colorBgCriticalSubtleHovered,
         colorBgSuccessSubtle = other.colorBgSuccessSubtle,
         colorBgInfoSubtle = other.colorBgInfoSubtle,
-        colorBgSubtleSecondaryLevel0 = other.colorBgSubtleSecondaryLevel0,
         colorBorderDisabled = other.colorBorderDisabled,
         colorBorderFocused = other.colorBorderFocused,
         colorBorderInteractivePrimary = other.colorBorderInteractivePrimary,

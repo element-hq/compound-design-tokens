@@ -317,4 +317,6 @@ object LightHcDesignTokens {
   val colorGray200 = Color(0xfff0f2f5)
   val colorGray100 = Color(0xfff7f9fa)
   val colorThemeBg = Color(0xffffffff)
+  val colorBgSubtleSecondaryLevel0 = colorGray300
+  val colorBgCanvasDefaultLevel1 = colorThemeBg
 }

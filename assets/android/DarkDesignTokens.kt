@@ -317,4 +317,6 @@ object DarkDesignTokens {
   val colorGray200 = Color(0xff181a1f)
   val colorGray100 = Color(0xff14171b)
   val colorThemeBg = Color(0xff101317)
+  val colorBgSubtleSecondaryLevel0 = colorThemeBg
+  val colorBgCanvasDefaultLevel1 = colorGray300
 }

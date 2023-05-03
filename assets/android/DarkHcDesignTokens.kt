@@ -317,4 +317,6 @@ object DarkHcDesignTokens {
   val colorGray200 = Color(0xff1d1f24)
   val colorGray100 = Color(0xff181a1f)
   val colorThemeBg = Color(0xff101317)
+  val colorBgSubtleSecondaryLevel0 = colorThemeBg
+  val colorBgCanvasDefaultLevel1 = colorGray300
 }
