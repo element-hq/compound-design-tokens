@@ -98,7 +98,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
         options: {
           showFileHeader: false,
           outputReferences: true,
-          selector: `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
+          selector: `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
           basePxFontSize,
         },
       },
