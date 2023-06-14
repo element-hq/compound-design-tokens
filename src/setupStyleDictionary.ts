@@ -19,13 +19,16 @@ import { Core } from "style-dictionary";
 import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from "fs";
+import * as path from "path";
 
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import toFontWeight from "./transforms/swift/toFontWeight";
-import { getStyleDictionaryConfig, getStyleDictionaryCommonConfig } from "./configs";
+import {
+  getStyleDictionaryConfig,
+  getStyleDictionaryCommonConfig,
+} from "./configs";
 import { Platform, Theme } from "./@types";
 import colorset from "./actions/swift/colorset";
 import { Action } from "style-dictionary/types/Action";
@@ -44,6 +47,7 @@ import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import iconsImport from "./transforms/css/iconsImport";
 import svgToImageView from "./transforms/swift/svgToImageView";
 import * as lodash from "lodash";
+import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
 
 async function setupDictionary(sb: Core) {
   await registerTransforms(sb);
@@ -117,13 +121,21 @@ async function setupDictionary(sb: Core) {
   sb.registerFilter(iosExclude);
   sb.registerFilter(isCoreColor);
   sb.registerFilter(isNotCoreColor);
+  sb.registerFilter(isSharedAcrossTheme);
 
   const extraColorsTemplate = lodash.template(
-    fs.readFileSync(path.join(__dirname, 'formats/templates/compose/extra-colors.kt.template')).toString()
+    fs
+      .readFileSync(
+        path.join(
+          __dirname,
+          "formats/templates/compose/extra-colors.kt.template"
+        )
+      )
+      .toString()
   );
   sb.registerFormat({
-    name: 'compose/extra-colors',
-    formatter: extraColorsTemplate
+    name: "compose/extra-colors",
+    formatter: extraColorsTemplate,
   });
 }
 

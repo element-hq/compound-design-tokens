@@ -37,10 +37,6 @@ export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
     target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
   ];
 
-  if (target === "css") {
-    transforms.push("css/iconsImport");
-  }
-
   return {
     prefix: COMPOUND_TOKENS_NAMESPACE,
     transforms,
@@ -81,7 +77,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
       {
         destination: `${COMPOUND_TOKENS_NAMESPACE}-common.css`,
         format: "css/variables",
-        filter: "isNotCoreColor",
+        filter: "isSharedAcrossTheme",
         options: {
           showFileHeader: false,
           outputReferences: true,
