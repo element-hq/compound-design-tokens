@@ -1,0 +1,20 @@
+<%= androidLicenseHeader() %>
+<%= fileHeader({file, commentStyle: 'short'}) %>
+
+@file:Suppress("all")
+package <%= file.packageName %>
+
+<%= options.import.map(function(item) {
+    return 'import ' + item
+  }).join('\n')
+%>
+
+<%= isInternal ? "internal " : "" %>object <%= file.className %> {
+  <%= allProperties.map(function(prop) {
+    let comment = "";
+    if (prop.comment) {
+      comment = `/** ${prop.comment} */\n  `
+    }
+    return comment + 'val ' + formatProperty(prop)
+  }).join('\n  ' ) %>
+}

@@ -25,7 +25,7 @@ export default {
       Object.entries(token.value).reduce((props, [propName, val]) => {
         let output = props;
         if (textStylePropertiesMapping[propName]) {
-          output += `\t\t${textStylePropertiesMapping[propName]} = `;
+          output += `        ${textStylePropertiesMapping[propName]} = `;
           if (propName === "fontFamily") {
             output += "FontFamily.Default";
           } else {
@@ -35,7 +35,7 @@ export default {
         }
 
         return output;
-      }, "TextStyle(\n") + "\t)"
+      }, "TextStyle(\n") + "    )"
     );
   },
 } as StyleDictionary.Transform;

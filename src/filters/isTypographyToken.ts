@@ -17,22 +17,12 @@ limitations under the License.
 import StyleDictionary from "style-dictionary";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
 
-/** Font token types used in the project. */
-const fontTokenTypes = [
-  'typography',
-  'fontFamilies',
-  'fontWeights',
-  'letterSpacing',
-  'fontSizes',
-  'lineHeights'
-]
-
 /**
- * Filter any token related to fonts (typography, size, spacing, etc.).
+ * Filter only typography tokens.
  */
 export default {
-  name: "isFontToken",
-  matcher: function (token: TransformedToken): boolean {
-    return fontTokenTypes.includes(token.type);
-  },
-} as StyleDictionary.Filter;
+    name: "isTypography",
+    matcher: function (token: TransformedToken): boolean {
+      return token.type === 'typography';
+    },
+  } as StyleDictionary.Filter;

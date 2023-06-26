@@ -1,19 +1,6 @@
-/*
- * Copyright <%= (new Date()).getFullYear() %> New Vector Ltd
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+<%= androidLicenseHeader() %>
 
+@file:Suppress("all")
 package <%= file.packageName %>
 
 import androidx.compose.runtime.Stable
@@ -24,10 +11,23 @@ import androidx.compose.ui.graphics.Color
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n') %>
+
+<%= fileHeader({file, commentStyle: 'short'}) %>
+
+<%
+function colorName(prop) {
+  let name = prop.name.replace(/^color/, "");
+  return name.charAt(0).toLowerCase() + name.slice(1);
+}
+%>
+
+/**
+  * This class holds all the semantic tokens of the Compound theme.
+  */
 @Stable
 class <%= file.className %>(
 <%= allProperties.map(function(prop) {
-    return '    ' + prop.name + ': Color,'
+    return '    ' + colorName(prop) + ': Color,'
   }).join('\n')
 %>
     isLight: Boolean,
@@ -39,18 +39,18 @@ class <%= file.className %>(
   if (prop.description) {
     comment = `    /** ${prop.description} */\n`
   }
-  return comment + '    var ' + prop.name + ' by mutableStateOf(' + prop.name + ')\n        private set'
+  return comment + '    var ' + colorName(prop) + ' by mutableStateOf(' + colorName(prop) + ')\n        private set'
 }).join('\n' ) %>
 
     fun copy(
 <%= allProperties.map(function(prop) {
-    return '        ' + prop.name + ': Color = this.' + prop.name + ','
+    return '        ' + colorName(prop) + ': Color = this.' + colorName(prop) + ','
   }).join('\n')
 %>
         isLight: Boolean = this.isLight,
     ) = <%= file.className %>(
 <%= allProperties.map(function(prop) {
-    return '        ' + prop.name + ' = ' + prop.name + ','
+    return '        ' + colorName(prop) + ' = ' + colorName(prop) + ','
   }).join('\n')
 %>
         isLight = isLight,
@@ -58,7 +58,7 @@ class <%= file.className %>(
 
     fun updateColorsFrom(other: <%= file.className %>) {
 <%= allProperties.map(function(prop) {
-    return '        ' + prop.name + ' = other.' + prop.name + ','
+    return '        ' + colorName(prop) + ' = other.' + colorName(prop)
   }).join('\n')
     %>
         isLight = other.isLight

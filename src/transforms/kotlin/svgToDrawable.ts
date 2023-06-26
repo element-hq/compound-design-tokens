@@ -37,8 +37,12 @@ export default {
     // and on Material
     const imageId = _.snakeCase(token.name.replace("icon", "ic"));
 
+    let options = {
+      fillBlack: true, // Add black color to path element, defaults to false
+    };
+
     const svgContent = fs.readFileSync(iconPath, "utf8");
-    svg2vectordrawable(svgContent).then((xmlContent) => {
+    svg2vectordrawable(svgContent, options).then((xmlContent) => {
       const outputFolder = path.join(platform?.buildPath!, resPath);
       fs.ensureDirSync(outputFolder);
       fs.writeFileSync(`${outputFolder}/${imageId}.xml`, xmlContent, "utf8");

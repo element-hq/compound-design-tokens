@@ -122,21 +122,6 @@ async function setupDictionary(sb: Core) {
   sb.registerFilter(isCoreColor);
   sb.registerFilter(isNotCoreColor);
   sb.registerFilter(isSharedAcrossTheme);
-
-  const extraColorsTemplate = lodash.template(
-    fs
-      .readFileSync(
-        path.join(
-          __dirname,
-          "formats/templates/compose/extra-colors.kt.template"
-        )
-      )
-      .toString()
-  );
-  sb.registerFormat({
-    name: "compose/extra-colors",
-    formatter: extraColorsTemplate,
-  });
 }
 
 export async function themed(theme: Theme, platform: Platform) {
