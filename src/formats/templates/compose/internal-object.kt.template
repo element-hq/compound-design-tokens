@@ -1,4 +1,4 @@
-<%= androidLicenseHeader() %>
+<%= options.customLicense ?? '' %>
 <%= fileHeader({file, commentStyle: 'short'}) %>
 
 @file:Suppress("all")
@@ -9,12 +9,12 @@ package <%= file.packageName %>
   }).join('\n')
 %>
 
-<%= isInternal ? "internal " : "" %>object <%= file.className %> {
+<%= options.isInternal ? "internal " : "" %>object <%= file.className %> {
   <%= allProperties.map(function(prop) {
     let comment = "";
     if (prop.comment) {
       comment = `/** ${prop.comment} */\n  `
     }
     return comment + 'val ' + formatProperty(prop)
-  }).join('\n  ' ) %>
+  }).join('\n' + options.indentLevel ) %>
 }

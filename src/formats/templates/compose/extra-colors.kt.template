@@ -1,4 +1,4 @@
-<%= androidLicenseHeader() %>
+<%= options.customLicense ?? '' %>
 
 @file:Suppress("all")
 package <%= file.packageName %>
@@ -13,12 +13,12 @@ import androidx.compose.ui.graphics.Color
   }).join('\n') %>
 
 <%= fileHeader({file, commentStyle: 'short'}) %>
-
 <%
-function colorName(prop) {
-  let name = prop.name.replace(/^color/, "");
-  return name.charAt(0).toLowerCase() + name.slice(1);
-}
+  let colors = allProperties.map(function(prop) {
+    return { name: options.fixColorName(prop.name), description: prop.description };
+  });
+  let INDENT_LEVEL = options.indentLevel;
+  let INDENT_2_LEVELS = INDENT_LEVEL + INDENT_LEVEL;
 %>
 
 /**
@@ -26,39 +26,39 @@ function colorName(prop) {
   */
 @Stable
 class <%= file.className %>(
-<%= allProperties.map(function(prop) {
-    return '    ' + colorName(prop) + ': Color,'
+<%= colors.map(function(color) {
+    return INDENT_LEVEL + color.name + ': Color,'
   }).join('\n')
 %>
     isLight: Boolean,
 ) {
     var isLight by mutableStateOf(isLight)
         private set
-<%= allProperties.map(function(prop) {
+<%= colors.map(function(color) {
   let comment = "";
-  if (prop.description) {
-    comment = `    /** ${prop.description} */\n`
+  if (color.description) {
+    comment = INDENT_LEVEL + `/** ${color.description} */\n`
   }
-  return comment + '    var ' + colorName(prop) + ' by mutableStateOf(' + colorName(prop) + ')\n        private set'
+  return comment + INDENT_LEVEL + 'var ' + color.name + ' by mutableStateOf(' + color.name + ')\n' + INDENT_2_LEVELS + 'private set'
 }).join('\n' ) %>
 
     fun copy(
-<%= allProperties.map(function(prop) {
-    return '        ' + colorName(prop) + ': Color = this.' + colorName(prop) + ','
+<%= colors.map(function(color) {
+    return INDENT_2_LEVELS + color.name + ': Color = this.' + color.name + ','
   }).join('\n')
 %>
         isLight: Boolean = this.isLight,
     ) = <%= file.className %>(
-<%= allProperties.map(function(prop) {
-    return '        ' + colorName(prop) + ' = ' + colorName(prop) + ','
+<%= colors.map(function(color) {
+    return INDENT_2_LEVELS + color.name + ' = ' + color.name + ','
   }).join('\n')
 %>
         isLight = isLight,
     )
 
     fun updateColorsFrom(other: <%= file.className %>) {
-<%= allProperties.map(function(prop) {
-    return '        ' + colorName(prop) + ' = other.' + colorName(prop)
+<%= colors.map(function(color) {
+    return INDENT_2_LEVELS + color.name + ' = other.' + color.name
   }).join('\n')
     %>
         isLight = other.isLight
