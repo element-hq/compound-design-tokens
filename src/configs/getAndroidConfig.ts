@@ -22,16 +22,16 @@ import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
 import _ from "lodash";
 import isTypographyToken from "../filters/isTypographyToken";
 import { FormatterArguments } from "style-dictionary/types/Format";
-import lodashTemplate from "../utils/lodashTemplate";
+import createTemplate from "../utils/createTemplate";
 
 const packageName = "io.element.android.libraries.theme.compound.generated";
 
 function composeInternalObject(args: FormatterArguments) {
-  return lodashTemplate("../formats/templates/compose/internal-object.kt.template", args);
+  return createTemplate("../formats/templates/compose/internal-object.kt.template", args);
 }
 
 function composeExtraColors(args: FormatterArguments) {
-  return lodashTemplate("../formats/templates/compose/extra-colors.kt.template", args);
+  return createTemplate("../formats/templates/compose/extra-colors.kt.template", args);
 }
 
 export function getAndroidConfig(theme: Theme): Platform {
