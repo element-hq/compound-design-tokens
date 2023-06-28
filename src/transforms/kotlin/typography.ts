@@ -1,5 +1,6 @@
 import StyleDictionary from "style-dictionary";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import { ANDROID_INDENT_LEVEL } from "../../utils/constants";
 
 export default {
   type: "value",
@@ -25,7 +26,7 @@ export default {
       Object.entries(token.value).reduce((props, [propName, val]) => {
         let output = props;
         if (textStylePropertiesMapping[propName]) {
-          output += `        ${textStylePropertiesMapping[propName]} = `;
+          output += `${ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL + textStylePropertiesMapping[propName]} = `;
           if (propName === "fontFamily") {
             output += "FontFamily.Default";
           } else {
@@ -35,7 +36,7 @@ export default {
         }
 
         return output;
-      }, "TextStyle(\n") + "    )"
+      }, "TextStyle(\n") + ANDROID_INDENT_LEVEL + ")"
     );
   },
 } as StyleDictionary.Transform;

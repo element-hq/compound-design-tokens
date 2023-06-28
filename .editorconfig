@@ -17,3 +17,7 @@ insert_final_newline=false
 # and it doesn't generate a final new line
 [assets/**/*]
 insert_final_newline=false
+
+[assets/android/*]
+indent_style = space
+indent_size = 4
