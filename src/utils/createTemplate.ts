@@ -20,6 +20,12 @@ import * as fs from "fs";
 import * as path from "path";
 import { FormatterArguments } from "style-dictionary/types/Format";
   
+  /**
+   * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.
+   * @param templatePath path to the template file in the project
+   * @param args a nullable set of arguments for the formatter, including dictionary and file info, as well as formatting options
+   * @returns 
+   */
   export default function createTemplate(templatePath: string, args: FormatterArguments | null) {
     const template = _.template(fs.readFileSync(path.join(__dirname, templatePath)).toString());
   

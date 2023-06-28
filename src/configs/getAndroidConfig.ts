@@ -25,7 +25,7 @@ import isTypographyToken from "../filters/isTypographyToken";
 import { FormatterArguments } from "style-dictionary/types/Format";
 import createTemplate from "../utils/createTemplate";
 import { ANDROID_INDENT_LEVEL } from "../utils/constants";
-import { removePrefixAndCamelCase } from "../utils/removePrefix";
+import { removePrefixAndCamelCase } from "../utils/removePrefixAndCamelCase";
 
 const packageName = "io.element.android.libraries.theme.compound.generated";
 

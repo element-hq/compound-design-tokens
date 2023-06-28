@@ -16,6 +16,12 @@ limitations under the License.
 
 import { lowerFirst, camelCase } from "lodash";
 
+/**
+ * Removes a given prefix and sets the resulting string to camel case.
+ * @param original the string to modify
+ * @param prefix the prefix to remove from the string
+ * @returns the original string without the prefix in camel case form.
+ */
 export function removePrefixAndCamelCase(original: string, prefix: string): string {
     let regex = new RegExp("^" + prefix);
     let trimmed = original.replace(regex, '');
