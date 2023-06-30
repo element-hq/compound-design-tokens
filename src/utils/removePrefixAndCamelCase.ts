@@ -14,25 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
-
-/** Font token types used in the project. */
-const fontTokenTypes = [
-  'typography',
-  'fontFamilies',
-  'fontWeights',
-  'letterSpacing',
-  'fontSizes',
-  'lineHeights'
-]
+import { lowerFirst, camelCase } from "lodash";
 
 /**
- * Filter any token related to fonts (typography, size, spacing, etc.).
+ * Removes a given prefix and sets the resulting string to camel case.
+ * @param original the string to modify
+ * @param prefix the prefix to remove from the string
+ * @returns the original string without the prefix in camel case form.
  */
-export default {
-  name: "isFontToken",
-  matcher: function (token: TransformedToken): boolean {
-    return fontTokenTypes.includes(token.type);
-  },
-} as StyleDictionary.Filter;
+export function removePrefixAndCamelCase(original: string, prefix: string): string {
+    let regex = new RegExp("^" + prefix);
+    let trimmed = original.replace(regex, '');
+    return camelCase(lowerFirst(trimmed));
+}

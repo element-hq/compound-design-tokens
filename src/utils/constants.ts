@@ -14,25 +14,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
-
-/** Font token types used in the project. */
-const fontTokenTypes = [
-  'typography',
-  'fontFamilies',
-  'fontWeights',
-  'letterSpacing',
-  'fontSizes',
-  'lineHeights'
-]
-
-/**
- * Filter any token related to fonts (typography, size, spacing, etc.).
- */
-export default {
-  name: "isFontToken",
-  matcher: function (token: TransformedToken): boolean {
-    return fontTokenTypes.includes(token.type);
-  },
-} as StyleDictionary.Filter;
+/** 4 spaces per tab character for Android. */
+export const ANDROID_INDENT_LEVEL = "    ";
