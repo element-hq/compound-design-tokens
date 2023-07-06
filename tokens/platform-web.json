@@ -78,7 +78,7 @@
       "root": {
         "value": "16px",
         "type": "fontSizes",
-        "description": "Configures the value 1rem represents"
+        "description": "Base font size for Tokens Studio and the root html element. https://docs.tokens.studio/tokens/settings"
       }
     },
     "letter-spacing": {
