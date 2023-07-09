@@ -1599,10 +1599,10 @@
     "name": "M3 Dark",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "theme-light": "source",
-      "theme-semantics-light": "source",
       "theme-semantics": "source",
-      "theme-m3-dark": "enabled"
+      "theme-m3-dark": "enabled",
+      "theme-semantics-dark": "source",
+      "theme-dark": "source"
     }
   }
 ]
