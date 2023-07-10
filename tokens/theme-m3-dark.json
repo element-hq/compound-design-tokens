@@ -409,6 +409,19 @@
             }
           }
         }
+      },
+      "opacity-016": {
+        "value": "{sys.on-surface-variant}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.16",
+              "space": "hsl"
+            }
+          }
+        }
       }
     },
     "inverse-on-surface": {
