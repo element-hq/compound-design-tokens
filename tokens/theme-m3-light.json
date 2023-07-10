@@ -485,7 +485,16 @@
     "surface-variant": {
       "opacity-012": {
         "value": "{sys.surface-variant}",
-        "type": "color"
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.12",
+              "space": "hsl"
+            }
+          }
+        }
       }
     }
   },
