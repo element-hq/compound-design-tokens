@@ -1,19 +1,19 @@
 {
   "sys": {
     "primary": {
-      "value": "#1b1d22",
+      "value": "{color.bg.action.primary.rest}",
       "type": "color"
     },
     "on-primary": {
-      "value": "#ffffff",
+      "value": "{color.text.on-solid.primary}",
       "type": "color"
     },
     "primary-container": {
-      "value": "#ffffff",
+      "value": "{color.bg.canvas.default}",
       "type": "color"
     },
     "on-primary-container": {
-      "value": "#1b1d22",
+      "value": "{color.text.primary}",
       "type": "color"
     },
     "secondary": {
