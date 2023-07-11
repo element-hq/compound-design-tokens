@@ -3,7 +3,8 @@
     "id": "e12210b9270d7047e0bed40f06eaa66d5bd7a9c7",
     "name": "Global",
     "selectedTokenSets": {
-      "cross-platform": "enabled"
+      "cross-platform": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -11,7 +12,8 @@
     "id": "96f4f9bd2bf32c4657bfe283f418fc093117942f",
     "name": "Android",
     "selectedTokenSets": {
-      "platform-android": "enabled"
+      "platform-android": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:25abcdb5e09930db0b8238606cb722f34dd09f34,",
@@ -36,7 +38,8 @@
     "id": "0022f9989257cb4474cf2429dc471f3ea70d0f9d",
     "name": "iOS",
     "selectedTokenSets": {
-      "platform-ios": "enabled"
+      "platform-ios": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:43243e3690f15fd4a49f5e9752d23ad2eaab8b5d,",
@@ -61,7 +64,8 @@
     "id": "22ad1f7c65308da86722dc9335e31be4d9fa53d7",
     "name": "Web",
     "selectedTokenSets": {
-      "platform-web": "enabled"
+      "platform-web": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "font.body.xs.regular": "S:acd9364fb96bf307fcc23106bc9958664af9b4f3,",
@@ -93,7 +97,8 @@
     "selectedTokenSets": {
       "theme-light": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light": "enabled"
+      "theme-semantics-light": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:8e148d8d80d552d40db795a6ef9191600e9408c8,",
@@ -467,7 +472,8 @@
     "selectedTokenSets": {
       "theme-dark": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-dark": "enabled"
+      "theme-semantics-dark": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:21581fd42700feae0ea79137c3ee964382b80b15,",
@@ -841,7 +847,8 @@
     "selectedTokenSets": {
       "theme-light-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-light-hc": "enabled"
+      "theme-semantics-light-hc": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:a73ecb030e9eb79f2e8007c51e678a952b1342da,",
@@ -1215,7 +1222,8 @@
     "selectedTokenSets": {
       "theme-dark-hc": "enabled",
       "theme-semantics": "enabled",
-      "theme-semantics-dark-hc": "enabled"
+      "theme-semantics-dark-hc": "enabled",
+      "theme-m3-typography": "disabled"
     },
     "$figmaStyleReferences": {
       "color.text.primary": "S:0f082c1f98d76b0dd50fd7043416aabf2da4347b,",
@@ -1591,7 +1599,8 @@
       "theme-light": "source",
       "theme-semantics-light": "source",
       "theme-semantics": "source",
-      "theme-m3-light": "enabled"
+      "theme-m3-light": "enabled",
+      "theme-m3-typography": "disabled"
     }
   },
   {
@@ -1602,7 +1611,17 @@
       "theme-semantics": "source",
       "theme-m3-dark": "enabled",
       "theme-semantics-dark": "source",
-      "theme-dark": "source"
+      "theme-dark": "source",
+      "theme-m3-typography": "disabled"
+    }
+  },
+  {
+    "id": "a1c823ad84d9d8db0ec95a791e1c0f7033e10f70",
+    "name": "M3 Typography",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "platform-android": "source",
+      "theme-m3-typography": "enabled"
     }
   }
 ]
