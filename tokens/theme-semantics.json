@@ -383,6 +383,13 @@
         "type": "color",
         "description": "WCAG: 16.75"
       }
+    },
+    "brand": {
+      "primary": {
+        "value": "#0dbd8b",
+        "type": "color",
+        "description": "Primary brand color"
+      }
     }
   }
 }
