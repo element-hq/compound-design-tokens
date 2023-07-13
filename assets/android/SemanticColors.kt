@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Color
 
 
 // Do not edit directly
-// Generated on Wed, 28 Jun 2023 10:55:55 GMT
+// Generated on Thu, 13 Jul 2023 10:06:01 GMT
 
 
 
@@ -22,6 +22,20 @@ import androidx.compose.ui.graphics.Color
   */
 @Stable
 class SemanticColors(
+    accent100: Color,
+    accent1000: Color,
+    accent1100: Color,
+    accent1200: Color,
+    accent1300: Color,
+    accent1400: Color,
+    accent200: Color,
+    accent300: Color,
+    accent400: Color,
+    accent500: Color,
+    accent600: Color,
+    accent700: Color,
+    accent800: Color,
+    accent900: Color,
     bgActionPrimaryDisabled: Color,
     bgActionPrimaryHovered: Color,
     bgActionPrimaryPressed: Color,
@@ -49,6 +63,7 @@ class SemanticColors(
     borderInteractivePrimary: Color,
     borderInteractiveSecondary: Color,
     borderSuccessSubtle: Color,
+    brandPrimary: Color,
     iconAccentTertiary: Color,
     iconCriticalPrimary: Color,
     iconDisabled: Color,
@@ -77,6 +92,48 @@ class SemanticColors(
     isLight: Boolean,
 ) {
     var isLight by mutableStateOf(isLight)
+        private set
+    /** WCAG: 1.03 */
+    var accent100 by mutableStateOf(accent100)
+        private set
+    /** WCAG: 6.5 */
+    var accent1000 by mutableStateOf(accent1000)
+        private set
+    /** WCAG: 8 */
+    var accent1100 by mutableStateOf(accent1100)
+        private set
+    /** WCAG: 10.5 */
+    var accent1200 by mutableStateOf(accent1200)
+        private set
+    /** WCAG: 13.75 */
+    var accent1300 by mutableStateOf(accent1300)
+        private set
+    /** WCAG: 16.75 */
+    var accent1400 by mutableStateOf(accent1400)
+        private set
+    /** WCAG: 1.06 */
+    var accent200 by mutableStateOf(accent200)
+        private set
+    /** WCAG: 1.12 */
+    var accent300 by mutableStateOf(accent300)
+        private set
+    /** WCAG: 1.25 */
+    var accent400 by mutableStateOf(accent400)
+        private set
+    /** WCAG: 1.5 */
+    var accent500 by mutableStateOf(accent500)
+        private set
+    /** WCAG: 1.75 */
+    var accent600 by mutableStateOf(accent600)
+        private set
+    /** WCAG: 2.25 */
+    var accent700 by mutableStateOf(accent700)
+        private set
+    /** WCAG: 3.5 */
+    var accent800 by mutableStateOf(accent800)
+        private set
+    /** WCAG: 5.25 */
+    var accent900 by mutableStateOf(accent900)
         private set
     /** Background colour for primary actions. State: Disabled. */
     var bgActionPrimaryDisabled by mutableStateOf(bgActionPrimaryDisabled)
@@ -162,6 +219,9 @@ Elevation: Default (Level 1). */
     /** Subtle border colour for success state elements. */
     var borderSuccessSubtle by mutableStateOf(borderSuccessSubtle)
         private set
+    /** Primary brand color */
+    var brandPrimary by mutableStateOf(brandPrimary)
+        private set
     /** Lowest contrast accessible accent icons. */
     var iconAccentTertiary by mutableStateOf(iconAccentTertiary)
         private set
@@ -239,6 +299,20 @@ Elevation: Default (Level 1). */
         private set
 
     fun copy(
+        accent100: Color = this.accent100,
+        accent1000: Color = this.accent1000,
+        accent1100: Color = this.accent1100,
+        accent1200: Color = this.accent1200,
+        accent1300: Color = this.accent1300,
+        accent1400: Color = this.accent1400,
+        accent200: Color = this.accent200,
+        accent300: Color = this.accent300,
+        accent400: Color = this.accent400,
+        accent500: Color = this.accent500,
+        accent600: Color = this.accent600,
+        accent700: Color = this.accent700,
+        accent800: Color = this.accent800,
+        accent900: Color = this.accent900,
         bgActionPrimaryDisabled: Color = this.bgActionPrimaryDisabled,
         bgActionPrimaryHovered: Color = this.bgActionPrimaryHovered,
         bgActionPrimaryPressed: Color = this.bgActionPrimaryPressed,
@@ -266,6 +340,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary: Color = this.borderInteractivePrimary,
         borderInteractiveSecondary: Color = this.borderInteractiveSecondary,
         borderSuccessSubtle: Color = this.borderSuccessSubtle,
+        brandPrimary: Color = this.brandPrimary,
         iconAccentTertiary: Color = this.iconAccentTertiary,
         iconCriticalPrimary: Color = this.iconCriticalPrimary,
         iconDisabled: Color = this.iconDisabled,
@@ -293,6 +368,20 @@ Elevation: Default (Level 1). */
         textSuccessPrimary: Color = this.textSuccessPrimary,
         isLight: Boolean = this.isLight,
     ) = SemanticColors(
+        accent100 = accent100,
+        accent1000 = accent1000,
+        accent1100 = accent1100,
+        accent1200 = accent1200,
+        accent1300 = accent1300,
+        accent1400 = accent1400,
+        accent200 = accent200,
+        accent300 = accent300,
+        accent400 = accent400,
+        accent500 = accent500,
+        accent600 = accent600,
+        accent700 = accent700,
+        accent800 = accent800,
+        accent900 = accent900,
         bgActionPrimaryDisabled = bgActionPrimaryDisabled,
         bgActionPrimaryHovered = bgActionPrimaryHovered,
         bgActionPrimaryPressed = bgActionPrimaryPressed,
@@ -320,6 +409,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary = borderInteractivePrimary,
         borderInteractiveSecondary = borderInteractiveSecondary,
         borderSuccessSubtle = borderSuccessSubtle,
+        brandPrimary = brandPrimary,
         iconAccentTertiary = iconAccentTertiary,
         iconCriticalPrimary = iconCriticalPrimary,
         iconDisabled = iconDisabled,
@@ -349,6 +439,20 @@ Elevation: Default (Level 1). */
     )
 
     fun updateColorsFrom(other: SemanticColors) {
+        accent100 = other.accent100
+        accent1000 = other.accent1000
+        accent1100 = other.accent1100
+        accent1200 = other.accent1200
+        accent1300 = other.accent1300
+        accent1400 = other.accent1400
+        accent200 = other.accent200
+        accent300 = other.accent300
+        accent400 = other.accent400
+        accent500 = other.accent500
+        accent600 = other.accent600
+        accent700 = other.accent700
+        accent800 = other.accent800
+        accent900 = other.accent900
         bgActionPrimaryDisabled = other.bgActionPrimaryDisabled
         bgActionPrimaryHovered = other.bgActionPrimaryHovered
         bgActionPrimaryPressed = other.bgActionPrimaryPressed
@@ -376,6 +480,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary = other.borderInteractivePrimary
         borderInteractiveSecondary = other.borderInteractiveSecondary
         borderSuccessSubtle = other.borderSuccessSubtle
+        brandPrimary = other.brandPrimary
         iconAccentTertiary = other.iconAccentTertiary
         iconCriticalPrimary = other.iconCriticalPrimary
         iconDisabled = other.iconDisabled

@@ -1,4 +1,5 @@
 :root, [class*="cpd-theme-"] {
+  --cpd-color-brand-primary: #0dbd8b;
   --cpd-font-letter-spacing-heading-xl: -0.0216em;
   --cpd-font-letter-spacing-heading-lg: -0.0209em;
   --cpd-font-letter-spacing-heading-md: -0.0195em;
@@ -7,7 +8,6 @@
   --cpd-font-letter-spacing-body-md: -0.0088em;
   --cpd-font-letter-spacing-body-sm: -0.0031em;
   --cpd-font-letter-spacing-body-xs: 0.0048em;
-  --cpd-font-size-root: 1rem;
   --cpd-font-size-heading-xl: 2rem;
   --cpd-font-size-heading-lg: 1.75rem;
   --cpd-font-size-heading-md: 1.5rem;
@@ -37,6 +37,20 @@
   --cpd-space-6x: 24px;
   --cpd-space-0x: 0px;
   --cpd-space-scale: 4px;
+  --cpd-color-accent-1400: var(--cpd-color-green-1400);
+  --cpd-color-accent-1300: var(--cpd-color-green-1300);
+  --cpd-color-accent-1200: var(--cpd-color-green-1200);
+  --cpd-color-accent-1100: var(--cpd-color-green-1100);
+  --cpd-color-accent-1000: var(--cpd-color-green-1000);
+  --cpd-color-accent-900: var(--cpd-color-green-900);
+  --cpd-color-accent-800: var(--cpd-color-green-800);
+  --cpd-color-accent-700: var(--cpd-color-green-700);
+  --cpd-color-accent-600: var(--cpd-color-green-600);
+  --cpd-color-accent-500: var(--cpd-color-green-500);
+  --cpd-color-accent-400: var(--cpd-color-green-400);
+  --cpd-color-accent-300: var(--cpd-color-green-300);
+  --cpd-color-accent-200: var(--cpd-color-green-200);
+  --cpd-color-accent-100: var(--cpd-color-green-100);
   --cpd-color-icon-on-solid-primary: var(--cpd-color-theme-bg);
   --cpd-color-icon-info-primary: var(--cpd-color-blue-900);
   --cpd-color-icon-success-primary: var(--cpd-color-green-900);
