@@ -1,5 +1,77 @@
 {
   "color": {
+    "accent": {
+      "100": {
+        "value": "{color.green.100}",
+        "type": "color",
+        "description": "WCAG: 1.03"
+      },
+      "200": {
+        "value": "{color.green.200}",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "300": {
+        "value": "{color.green.300}",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "400": {
+        "value": "{color.green.400}",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "500": {
+        "value": "{color.green.500}",
+        "type": "color",
+        "description": "WCAG: 1.5"
+      },
+      "600": {
+        "value": "{color.green.600}",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "700": {
+        "value": "{color.green.700}",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "800": {
+        "value": "{color.green.800}",
+        "type": "color",
+        "description": "WCAG: 3.5"
+      },
+      "900": {
+        "value": "{color.green.900}",
+        "type": "color",
+        "description": "WCAG: 5.25"
+      },
+      "1000": {
+        "value": "{color.green.1000}",
+        "type": "color",
+        "description": "WCAG: 6.5"
+      },
+      "1100": {
+        "value": "{color.green.1100}",
+        "type": "color",
+        "description": "WCAG: 8"
+      },
+      "1200": {
+        "value": "{color.green.1200}",
+        "type": "color",
+        "description": "WCAG: 10.5"
+      },
+      "1300": {
+        "value": "{color.green.1300}",
+        "type": "color",
+        "description": "WCAG: 13.75"
+      },
+      "1400": {
+        "value": "{color.green.1400}",
+        "type": "color",
+        "description": "WCAG: 16.75"
+      }
+    },
     "text": {
       "primary": {
         "value": "{color.gray.1400}",
@@ -278,7 +350,7 @@
       },
       "accent": {
         "tertiary": {
-          "value": "{color.green.800}",
+          "value": "{color.accent.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
         }
@@ -310,78 +382,6 @@
           "type": "color",
           "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
-      }
-    },
-    "accent": {
-      "100": {
-        "value": "{color.green.100}",
-        "type": "color",
-        "description": "WCAG: 1.03"
-      },
-      "200": {
-        "value": "{color.green.200}",
-        "type": "color",
-        "description": "WCAG: 1.06"
-      },
-      "300": {
-        "value": "{color.green.300}",
-        "type": "color",
-        "description": "WCAG: 1.12"
-      },
-      "400": {
-        "value": "{color.green.400}",
-        "type": "color",
-        "description": "WCAG: 1.25"
-      },
-      "500": {
-        "value": "{color.green.500}",
-        "type": "color",
-        "description": "WCAG: 1.5"
-      },
-      "600": {
-        "value": "{color.green.600}",
-        "type": "color",
-        "description": "WCAG: 1.75"
-      },
-      "700": {
-        "value": "{color.green.700}",
-        "type": "color",
-        "description": "WCAG: 2.25"
-      },
-      "800": {
-        "value": "{color.green.800}",
-        "type": "color",
-        "description": "WCAG: 3.5"
-      },
-      "900": {
-        "value": "{color.green.900}",
-        "type": "color",
-        "description": "WCAG: 5.25"
-      },
-      "1000": {
-        "value": "{color.green.1000}",
-        "type": "color",
-        "description": "WCAG: 6.5"
-      },
-      "1100": {
-        "value": "{color.green.1100}",
-        "type": "color",
-        "description": "WCAG: 8"
-      },
-      "1200": {
-        "value": "{color.green.1200}",
-        "type": "color",
-        "description": "WCAG: 10.5"
-      },
-      "1300": {
-        "value": "{color.green.1300}",
-        "type": "color",
-        "description": "WCAG: 13.75"
-      },
-      "1400": {
-        "value": "{color.green.1400}",
-        "type": "color",
-        "description": "WCAG: 16.75"
       }
     },
     "brand": {
