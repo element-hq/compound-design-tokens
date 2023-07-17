@@ -47,6 +47,7 @@ export const cpdFontSizeHeadingSm : string;
 export const cpdFontSizeHeadingMd : string;
 export const cpdFontSizeHeadingLg : string;
 export const cpdFontSizeHeadingXl : string;
+export const cpdFontSizeRoot : string;
 export const cpdFontLetterSpacingBodyXs : string;
 export const cpdFontLetterSpacingBodySm : string;
 export const cpdFontLetterSpacingBodyMd : string;

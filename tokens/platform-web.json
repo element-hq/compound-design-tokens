@@ -74,6 +74,11 @@
           "value": "32",
           "type": "fontSizes"
         }
+      },
+      "root": {
+        "value": "16px",
+        "type": "fontSizes",
+        "description": "Base font size for Tokens Studio and the root html element. https://docs.tokens.studio/tokens/settings"
       }
     },
     "letter-spacing": {
