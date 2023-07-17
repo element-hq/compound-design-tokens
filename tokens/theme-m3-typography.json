@@ -8,7 +8,8 @@
         "fontSize": "57",
         "letterSpacing": "-0.25"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     },
     "medium": {
       "value": {
@@ -18,7 +19,8 @@
         "fontSize": "45",
         "letterSpacing": "0%"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     },
     "small": {
       "value": {
@@ -26,9 +28,11 @@
         "fontWeight": "Regular",
         "lineHeight": "44",
         "fontSize": "36",
-        "letterSpacing": "0%"
+        "letterSpacing": "0%",
+        "description": "No direct counterpart in Compound."
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     }
   },
   "headline": {
@@ -48,7 +52,8 @@
         "fontSize": "24",
         "letterSpacing": "0%"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     }
   },
   "title": {
@@ -88,7 +93,8 @@
         "fontSize": "14",
         "letterSpacing": "0.1"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     },
     "large": {
       "value": "{font.body.md.medium}",
@@ -102,7 +108,8 @@
         "fontSize": "12",
         "letterSpacing": "0.5"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
     },
     "medium": {
       "value": "{font.body.sm.medium}",
