@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Color
 
 
 // Do not edit directly
-// Generated on Mon, 17 Jul 2023 12:20:58 GMT
+// Generated on Tue, 18 Jul 2023 08:39:04 GMT
 
 
 
@@ -93,46 +93,32 @@ class SemanticColors(
 ) {
     var isLight by mutableStateOf(isLight)
         private set
-    /** WCAG: 1.03 */
     var accent100 by mutableStateOf(accent100)
         private set
-    /** WCAG: 6.5 */
     var accent1000 by mutableStateOf(accent1000)
         private set
-    /** WCAG: 8 */
     var accent1100 by mutableStateOf(accent1100)
         private set
-    /** WCAG: 10.5 */
     var accent1200 by mutableStateOf(accent1200)
         private set
-    /** WCAG: 13.75 */
     var accent1300 by mutableStateOf(accent1300)
         private set
-    /** WCAG: 16.75 */
     var accent1400 by mutableStateOf(accent1400)
         private set
-    /** WCAG: 1.06 */
     var accent200 by mutableStateOf(accent200)
         private set
-    /** WCAG: 1.12 */
     var accent300 by mutableStateOf(accent300)
         private set
-    /** WCAG: 1.25 */
     var accent400 by mutableStateOf(accent400)
         private set
-    /** WCAG: 1.5 */
     var accent500 by mutableStateOf(accent500)
         private set
-    /** WCAG: 1.75 */
     var accent600 by mutableStateOf(accent600)
         private set
-    /** WCAG: 2.25 */
     var accent700 by mutableStateOf(accent700)
         private set
-    /** WCAG: 3.5 */
     var accent800 by mutableStateOf(accent800)
         private set
-    /** WCAG: 5.25 */
     var accent900 by mutableStateOf(accent900)
         private set
     /** Background colour for primary actions. State: Disabled. */

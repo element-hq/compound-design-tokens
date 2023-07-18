@@ -3,73 +3,59 @@
     "accent": {
       "100": {
         "value": "{color.green.100}",
-        "type": "color",
-        "description": "WCAG: 1.03"
+        "type": "color"
       },
       "200": {
         "value": "{color.green.200}",
-        "type": "color",
-        "description": "WCAG: 1.06"
+        "type": "color"
       },
       "300": {
         "value": "{color.green.300}",
-        "type": "color",
-        "description": "WCAG: 1.12"
+        "type": "color"
       },
       "400": {
         "value": "{color.green.400}",
-        "type": "color",
-        "description": "WCAG: 1.25"
+        "type": "color"
       },
       "500": {
         "value": "{color.green.500}",
-        "type": "color",
-        "description": "WCAG: 1.5"
+        "type": "color"
       },
       "600": {
         "value": "{color.green.600}",
-        "type": "color",
-        "description": "WCAG: 1.75"
+        "type": "color"
       },
       "700": {
         "value": "{color.green.700}",
-        "type": "color",
-        "description": "WCAG: 2.25"
+        "type": "color"
       },
       "800": {
         "value": "{color.green.800}",
-        "type": "color",
-        "description": "WCAG: 3.5"
+        "type": "color"
       },
       "900": {
         "value": "{color.green.900}",
-        "type": "color",
-        "description": "WCAG: 5.25"
+        "type": "color"
       },
       "1000": {
         "value": "{color.green.1000}",
-        "type": "color",
-        "description": "WCAG: 6.5"
+        "type": "color"
       },
       "1100": {
         "value": "{color.green.1100}",
-        "type": "color",
-        "description": "WCAG: 8"
+        "type": "color"
       },
       "1200": {
         "value": "{color.green.1200}",
-        "type": "color",
-        "description": "WCAG: 10.5"
+        "type": "color"
       },
       "1300": {
         "value": "{color.green.1300}",
-        "type": "color",
-        "description": "WCAG: 13.75"
+        "type": "color"
       },
       "1400": {
         "value": "{color.green.1400}",
-        "type": "color",
-        "description": "WCAG: 16.75"
+        "type": "color"
       }
     },
     "text": {
