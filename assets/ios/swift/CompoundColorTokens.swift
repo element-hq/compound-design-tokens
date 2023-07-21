@@ -1,11 +1,11 @@
 
 //
-// CompoundLightDesignTokens.swift
+// CompoundColorTokens.swift
 //
 
 import SwiftUI
 
-public class CompoundLightDesignTokens {
+public class CompoundColorTokens {
     public static let colorAlphaPink1400 = Color("colorAlphaPink1400", bundle: Bundle.module) 
     public static let colorAlphaPink1300 = Color("colorAlphaPink1300", bundle: Bundle.module) 
     public static let colorAlphaPink1200 = Color("colorAlphaPink1200", bundle: Bundle.module) 
@@ -315,56 +315,6 @@ public class CompoundLightDesignTokens {
     public static let colorGray200 = Color("colorGray200", bundle: Bundle.module) 
     public static let colorGray100 = Color("colorGray100", bundle: Bundle.module) 
     public static let colorThemeBg = Color("colorThemeBg", bundle: Bundle.module) 
-    public static let iconWebBrowser = Image("iconWebBrowser", bundle: Bundle.module) 
-    public static let iconVisibilityVisible = Image("iconVisibilityVisible", bundle: Bundle.module) 
-    public static let iconVisibilityInvisible = Image("iconVisibilityInvisible", bundle: Bundle.module) 
-    public static let iconUser = Image("iconUser", bundle: Bundle.module) 
-    public static let iconThread = Image("iconThread", bundle: Bundle.module) 
-    public static let iconMobile = Image("iconMobile", bundle: Bundle.module) 
-    public static let iconLock = Image("iconLock", bundle: Bundle.module) 
-    public static let iconInfo = Image("iconInfo", bundle: Bundle.module) 
-    public static let iconError = Image("iconError", bundle: Bundle.module) 
-    public static let iconDelete = Image("iconDelete", bundle: Bundle.module) 
-    public static let iconComputer = Image("iconComputer", bundle: Bundle.module) 
-    public static let iconClose = Image("iconClose", bundle: Bundle.module) 
-    public static let iconChevron = Image("iconChevron", bundle: Bundle.module) 
-    public static let iconCheck = Image("iconCheck", bundle: Bundle.module) 
-    public static let iconCheckCircle = Image("iconCheckCircle", bundle: Bundle.module) 
-    public static let iconChat = Image("iconChat", bundle: Bundle.module) 
-    public static let fontSizeHeadingXl = CGFloat(34)
-    public static let fontSizeHeadingLg = CGFloat(28)
-    public static let fontSizeHeadingMd = CGFloat(22)
-    public static let fontSizeHeadingSm = CGFloat(20)
-    public static let fontSizeBodyLg = CGFloat(17)
-    public static let fontSizeBodyMd = CGFloat(15)
-    public static let fontSizeBodySm = CGFloat(13)
-    public static let fontSizeBodyXs = CGFloat(12)
-    public static let fontLineHeightHeadingXlRegular = CGFloat(41)
-    public static let fontLineHeightHeadingLgRegular = CGFloat(34)
-    public static let fontLineHeightHeadingMdRegular = CGFloat(28)
-    public static let fontLineHeightHeadingSmRegular = CGFloat(25)
-    public static let fontLineHeightBodyLgRegular = CGFloat(22)
-    public static let fontLineHeightBodyMdRegular = CGFloat(20)
-    public static let fontLineHeightBodySmRegular = CGFloat(18)
-    public static let fontLineHeightBodyXsRegular = CGFloat(16)
-    public static let fontWeightBold = Font.Weight.regular
-    public static let fontWeightSemibold = Font.Weight.regular
-    public static let fontWeightRegular = Font.Weight.regular
-    public static let fontFamilyMono = "SF Mono"
-    public static let fontFamilySans = "SF Pro"
-    public static let borderWidth0_5 = CGFloat(0.5)
-    public static let borderWidth4 = CGFloat(4)
-    public static let borderWidth2 = CGFloat(2)
-    public static let borderWidth1 = CGFloat(1)
-    public static let space56X = CGFloat(224)
-    public static let space36X = CGFloat(144)
-    public static let space16X = CGFloat(64)
-    public static let space12X = CGFloat(48)
-    public static let space11X = CGFloat(44)
-    public static let space10X = CGFloat(40)
-    public static let space6X = CGFloat(24)
-    public static let space0X = CGFloat(0)
-    public static let spaceScale = CGFloat(4)
     public static let colorIconOnSolidPrimary = colorThemeBg
     public static let colorIconInfoPrimary = colorBlue900
     public static let colorIconSuccessPrimary = colorGreen900
@@ -389,7 +339,7 @@ public class CompoundLightDesignTokens {
     public static let colorBorderInteractivePrimary = colorGray800
     public static let colorBorderFocused = colorBlue900
     public static let colorBorderDisabled = colorGray500
-    public static let colorBgSubtleSecondaryLevel0 = colorGray300
+    public static let colorBgSubtleSecondaryLevel0 = colorThemeBg
     public static let colorBgInfoSubtle = colorBlue200
     public static let colorBgSuccessSubtle = colorGreen200
     public static let colorBgCriticalSubtleHovered = colorRed300
@@ -403,7 +353,7 @@ public class CompoundLightDesignTokens {
     public static let colorBgActionPrimaryPressed = colorGray1100
     public static let colorBgActionPrimaryHovered = colorGray1200
     public static let colorBgActionPrimaryRest = colorGray1400
-    public static let colorBgCanvasDefaultLevel1 = colorThemeBg
+    public static let colorBgCanvasDefaultLevel1 = colorGray300
     public static let colorBgCanvasDisabled = colorGray200
     public static let colorBgCanvasDefault = colorThemeBg
     public static let colorBgSubtleSecondary = colorGray300
@@ -419,24 +369,4 @@ public class CompoundLightDesignTokens {
     public static let colorTextPlaceholder = colorGray800
     public static let colorTextSecondary = colorGray900
     public static let colorTextPrimary = colorGray1400
-    public static let space64X = spaceScale * 64
-    public static let space48X = spaceScale * 48
-    public static let space40X = spaceScale * 40
-    public static let space32X = spaceScale * 32
-    public static let space28X = spaceScale * 28
-    public static let space24X = spaceScale * 24
-    public static let space20X = spaceScale * 20
-    public static let space15X = spaceScale * 15
-    public static let space14X = spaceScale * 14
-    public static let space13X = spaceScale * 13
-    public static let space9X = spaceScale * 9
-    public static let space8X = spaceScale * 8
-    public static let space7X = spaceScale * 7
-    public static let space5X = spaceScale * 5
-    public static let space4X = spaceScale * 4
-    public static let space3X = spaceScale * 3
-    public static let space2X = spaceScale * 2
-    public static let space1_5X = spaceScale * 1.5
-    public static let space1X = spaceScale
-    public static let space0_5X = spaceScale * 0.5
 }

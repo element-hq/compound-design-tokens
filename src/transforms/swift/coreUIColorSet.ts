@@ -20,15 +20,15 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
- * A transformer to change core colours into a SwiftUI Color loaded
+ * A transformer to change core colours into a UIKit UIColor loaded
  * from the asset catalog.
  */
 export default {
   type: "value",
   matcher: isCoreColor.matcher,
   transformer: function (token: TransformedToken) {
-    return `Color("${_.camelCase(
+    return `UIColor(named: "${_.camelCase(
       token.path.join(" ")
-    )}", bundle: Bundle.module)`;
+    )}", in: Bundle.module, compatibleWith: nil)!`;
   },
 } as Transform;

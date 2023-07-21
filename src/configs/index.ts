@@ -19,7 +19,7 @@ import { Config } from "style-dictionary/types/Config";
 
 import { Theme, Platform } from "../@types";
 import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
-import getIOSConfig from "./getIOSConfig";
+import { getIOSColorConfig, getIOSUIColorConfig, getCommonIOSConfig } from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 
 function getConfig(platform: Platform) {
@@ -62,7 +62,8 @@ export function getStyleDictionaryConfig(
       config.platforms.compose = getAndroidConfig(theme);
       break;
     case "ios":
-      config.platforms.iosSwift = getIOSConfig(theme);
+      config.platforms.iosColor = getIOSColorConfig(theme);
+      config.platforms.iosUIColor = getIOSUIColorConfig(theme);
       break;
     default:
       throw `Unsupported platform: ${platform}`;
@@ -83,6 +84,7 @@ export function getStyleDictionaryCommonConfig(
       config.platforms.compose = getCommonAndroidConfig();
       break;
     case "ios":
+      config.platforms.iosSwift = getCommonIOSConfig();
       break;
     default:
       throw `Unsupported platform: ${platform}`;
