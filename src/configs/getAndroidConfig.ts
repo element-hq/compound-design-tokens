@@ -135,7 +135,9 @@ export function getCommonAndroidConfig(): Platform {
             "androidx.compose.ui.text.font.FontWeight",
             "androidx.compose.ui.text.TextStyle",
             "androidx.compose.ui.unit.em",
-            "androidx.compose.ui.unit.sp"
+            "androidx.compose.ui.unit.sp",
+            "androidx.compose.ui.text.PlatformTextStyle",
+            "androidx.compose.ui.text.style.LineHeightStyle"
           ],
         }),
       },

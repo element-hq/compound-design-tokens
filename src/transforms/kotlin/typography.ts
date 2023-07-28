@@ -22,11 +22,13 @@ export default {
       paragraphIndent: "textIndent",
     };
 
-    return (
+    let ARG_INDENT_LEVEL = ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL;
+
+    let output =
       Object.entries(token.value).reduce((props, [propName, val]) => {
         let output = props;
         if (textStylePropertiesMapping[propName]) {
-          output += `${ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL + textStylePropertiesMapping[propName]} = `;
+          output += `${ARG_INDENT_LEVEL + textStylePropertiesMapping[propName]} = `;
           if (propName === "fontFamily") {
             output += "FontFamily.Default";
           } else {
@@ -36,7 +38,11 @@ export default {
         }
 
         return output;
-      }, "TextStyle(\n") + ANDROID_INDENT_LEVEL + ")"
-    );
+      }, "TextStyle(\n");
+
+      output += ARG_INDENT_LEVEL + "platformStyle = PlatformTextStyle(includeFontPadding = false),\n"
+      output += ARG_INDENT_LEVEL + "lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)\n"
+    
+      return output + ANDROID_INDENT_LEVEL + ")";
   },
 } as StyleDictionary.Transform;
