@@ -12,7 +12,11 @@ import androidx.compose.ui.graphics.Color
 
 
 // Do not edit directly
+<<<<<<< Updated upstream
 // Generated on Fri, 28 Jul 2023 10:11:16 GMT
+=======
+// Generated on Wed, 09 Aug 2023 08:06:05 GMT
+>>>>>>> Stashed changes
 
 
 
