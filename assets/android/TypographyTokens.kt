@@ -1,9 +1,5 @@
 
 
-// Do not edit directly
-// Generated on Wed, 09 Aug 2023 08:11:38 GMT
-
-
 
 @file:Suppress("all")
 package io.element.android.libraries.theme.compound.generated
