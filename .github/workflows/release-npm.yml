@@ -25,6 +25,7 @@ jobs:
       - name: 🔧 Set up node environment
         uses: actions/setup-node@v3
         with:
+          node-version: "18"
           cache: "yarn"
 
       - name: 🛠️ Setup
