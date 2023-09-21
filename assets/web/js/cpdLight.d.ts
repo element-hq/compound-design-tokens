@@ -137,6 +137,8 @@ export const cpdIconShare : string;
 export const cpdIconSpotlightView : string;
 export const cpdIconThreadsSolid : string;
 export const cpdIconThreads : string;
+export const cpdIconUnknownSolid : string;
+export const cpdIconUnknown : string;
 export const cpdIconUserAddSolid : string;
 export const cpdIconUserAdd : string;
 export const cpdIconUserProfile : string;
