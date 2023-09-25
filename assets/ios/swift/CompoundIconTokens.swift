@@ -18,6 +18,8 @@ public class CompoundIconTokens {
     public static let iconUserProfile = Image("iconUserProfile", bundle: Bundle.module) 
     public static let iconUserAdd = Image("iconUserAdd", bundle: Bundle.module) 
     public static let iconUserAddSolid = Image("iconUserAddSolid", bundle: Bundle.module) 
+    public static let iconUnknown = Image("iconUnknown", bundle: Bundle.module) 
+    public static let iconUnknownSolid = Image("iconUnknownSolid", bundle: Bundle.module) 
     public static let iconThreads = Image("iconThreads", bundle: Bundle.module) 
     public static let iconThreadsSolid = Image("iconThreadsSolid", bundle: Bundle.module) 
     public static let iconSpotlightView = Image("iconSpotlightView", bundle: Bundle.module) 
