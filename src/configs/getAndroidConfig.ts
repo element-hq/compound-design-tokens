@@ -30,19 +30,28 @@ import { removePrefixAndCamelCase } from "../utils/removePrefixAndCamelCase";
 const packageName = "io.element.android.libraries.theme.compound.generated";
 
 function composeAndroidLicense() {
-  return createTemplate("../formats/templates/compose/android-license.kt.template", null);
+  return createTemplate(
+    "../formats/templates/compose/android-license.kt.template",
+    null
+  );
 }
 
 function composeInternalObject(args: FormatterArguments) {
-  return createTemplate("../formats/templates/compose/internal-object.kt.template", args);
+  return createTemplate(
+    "../formats/templates/compose/internal-object.kt.template",
+    args
+  );
 }
 
 function composeExtraColors(args: FormatterArguments) {
-  return createTemplate("../formats/templates/compose/extra-colors.kt.template", args);
+  return createTemplate(
+    "../formats/templates/compose/extra-colors.kt.template",
+    args
+  );
 }
 
 let defaultOptions: Options = {
-  showFileHeader: true,
+  showFileHeader: false,
   license: composeAndroidLicense(),
   indentLevel: ANDROID_INDENT_LEVEL,
   isInternal: false,
@@ -57,12 +66,18 @@ function withDefaultOptions(options: Options): Options {
 }
 
 function fixColorName(colorName: string): string {
-  return removePrefixAndCamelCase(colorName, 'color');
+  return removePrefixAndCamelCase(colorName, "color");
 }
 
 export function getAndroidConfig(theme: Theme): Platform {
-  StyleDictionary.registerFormat({name: 'compose/internal-object', formatter: composeInternalObject});
-  StyleDictionary.registerFormat({name: 'compose/extra-colors', formatter: composeExtraColors});
+  StyleDictionary.registerFormat({
+    name: "compose/internal-object",
+    formatter: composeInternalObject,
+  });
+  StyleDictionary.registerFormat({
+    name: "compose/extra-colors",
+    formatter: composeExtraColors,
+  });
   return {
     transforms: [
       "camelCaseDecimal",
@@ -76,17 +91,17 @@ export function getAndroidConfig(theme: Theme): Platform {
     files: [
       {
         format: "compose/internal-object",
-        destination: `internal/${_.upperFirst(_.camelCase(theme))}DesignTokens.kt`,
+        destination: `internal/${_.upperFirst(
+          _.camelCase(theme)
+        )}DesignTokens.kt`,
         className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
         packageName: packageName + ".internal",
-        filter: function(token: TransformedToken) {
+        filter: function (token: TransformedToken) {
           return isCoreColor.matcher(token);
         },
         options: withDefaultOptions({
           outputReferences: true,
-          import: [
-            "androidx.compose.ui.graphics.Color",
-          ],
+          import: ["androidx.compose.ui.graphics.Color"],
           isInternal: true,
         }),
       },
@@ -96,8 +111,8 @@ export function getAndroidConfig(theme: Theme): Platform {
         destination: `SemanticColors.kt`,
         className: "SemanticColors",
         packageName: packageName,
-        filter: function(token: TransformedToken) {
-          return token.type == 'color' && isNotCoreColor.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type == "color" && isNotCoreColor.matcher(token);
         },
         options: withDefaultOptions({
           import: [],
@@ -123,7 +138,7 @@ export function getCommonAndroidConfig(): Platform {
     buildPath: `assets/android/`,
     files: [
       {
-        format: 'compose/internal-object',
+        format: "compose/internal-object",
         destination: `TypographyTokens.kt`,
         className: "TypographyTokens",
         packageName: packageName,
@@ -135,7 +150,9 @@ export function getCommonAndroidConfig(): Platform {
             "androidx.compose.ui.text.font.FontWeight",
             "androidx.compose.ui.text.TextStyle",
             "androidx.compose.ui.unit.em",
-            "androidx.compose.ui.unit.sp"
+            "androidx.compose.ui.unit.sp",
+            "androidx.compose.ui.text.PlatformTextStyle",
+            "androidx.compose.ui.text.style.LineHeightStyle",
           ],
         }),
       },

@@ -20,8 +20,8 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
- * A transformer to change tokens.0_5x and keep the underscore
- * after a camel case operation
+ * A transformer to change core colours into a SwiftUI Color loaded
+ * from the asset catalog.
  */
 export default {
   type: "value",

@@ -39,6 +39,7 @@ import pxToDp from "./transforms/kotlin/pxToDp";
 import pxToSp from "./transforms/kotlin/pxToSp";
 import percentageToEm from "./transforms/kotlin/percentageToEm";
 import coreColorSet from "./transforms/swift/coreColorSet";
+import coreUIColorSet from "./transforms/swift/coreUIColorSet";
 import iosExclude from "./filters/ios/exclude";
 import pxToRem from "./transforms/pxToRem";
 import percentageToUnitless from "./transforms/css/percentageToUnitless";
@@ -66,6 +67,10 @@ async function setupDictionary(sb: Core) {
   sb.registerTransform({
     name: "swift/coreColorSet",
     ...coreColorSet,
+  } as Named<Transform>);
+  sb.registerTransform({
+    name: "swift/coreUIColorSet",
+    ...coreUIColorSet,
   } as Named<Transform>);
   sb.registerTransform({
     name: "swift/svgToImageView",

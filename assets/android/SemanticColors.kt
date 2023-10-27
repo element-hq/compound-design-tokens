@@ -11,10 +11,6 @@ import androidx.compose.ui.graphics.Color
 
 
 
-// Do not edit directly
-// Generated on Tue, 18 Jul 2023 08:39:04 GMT
-
-
 
 
 /**
