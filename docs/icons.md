@@ -25,6 +25,9 @@ Transforms the icon to an XCode Image Set
 - Run `yarn build` at the root of the project or ask a maintainer to do this for you
 - Open a pull request against the `develop` branch
 
+## Requesting an icon
+- Create an icon request in [vector-im/compound](https://github.com/vector-im/compound/issues/new/choose)
+
 ## Removing or changing icons
 
 Removing an icon is a breaking change, and should be reflected in the changelog and a major change in package version.
