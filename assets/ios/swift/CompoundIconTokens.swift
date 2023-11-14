@@ -105,6 +105,7 @@ public class CompoundIconTokens {
     public static let iconCheckCircle = Image("iconCheckCircle", bundle: Bundle.module) 
     public static let iconCheckCircleSolid = Image("iconCheckCircleSolid", bundle: Bundle.module) 
     public static let iconChat = Image("iconChat", bundle: Bundle.module) 
+    public static let iconChatSolid = Image("iconChatSolid", bundle: Bundle.module) 
     public static let iconChatProblem = Image("iconChatProblem", bundle: Bundle.module) 
     public static let iconChatNew = Image("iconChatNew", bundle: Bundle.module) 
     public static let iconBlock = Image("iconBlock", bundle: Bundle.module) 

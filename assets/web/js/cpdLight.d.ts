@@ -83,6 +83,7 @@ export const cpdIconArrowUpRight : string;
 export const cpdIconBlock : string;
 export const cpdIconChatNew : string;
 export const cpdIconChatProblem : string;
+export const cpdIconChatSolid : string;
 export const cpdIconChat : string;
 export const cpdIconCheckCircleSolid : string;
 export const cpdIconCheckCircle : string;

@@ -83,6 +83,7 @@ export const cpdIconArrowUpRight = "icons/arrow-up-right.svg";
 export const cpdIconBlock = "icons/block.svg";
 export const cpdIconChatNew = "icons/chat-new.svg";
 export const cpdIconChatProblem = "icons/chat-problem.svg";
+export const cpdIconChatSolid = "icons/chat-solid.svg";
 export const cpdIconChat = "icons/chat.svg";
 export const cpdIconCheckCircleSolid = "icons/check-circle-solid.svg";
 export const cpdIconCheckCircle = "icons/check-circle.svg";
