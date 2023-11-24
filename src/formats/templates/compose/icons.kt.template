@@ -23,4 +23,10 @@ object <%= file.className %> {
           return options.getIconName(prop.name) + ','
         }).join('\n' + options.indentLevel + options.indentLevel ) %>
     )
+
+    val allResIds get() = persistentListOf(
+        <%= allProperties.map(function(prop) {
+          return formatProperty(prop).split(' = ')[1] + ','
+        }).join('\n' + options.indentLevel + options.indentLevel ) %>
+    )
 }
