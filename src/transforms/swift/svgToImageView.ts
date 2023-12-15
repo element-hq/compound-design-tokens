@@ -18,6 +18,7 @@ import path, { dirname } from "path";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
+import { unescape } from "./iconTICamel";
 
 /**
  * A transformer to change svg path to a SwiftUI Image
@@ -29,7 +30,8 @@ export default {
     return token.type === "icon";
   },
   transformer: function (token, platform) {
-    const filename = token.name + ".svg";
+    const tokenName = unescape(token.name)
+    const filename = tokenName + ".svg";
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
       dirname(require.main!.filename),
@@ -46,7 +48,7 @@ export default {
       );
     }
 
-    const imageAssetPath = outputAssetPath + "/" + token.name + ".imageset";
+    const imageAssetPath = outputAssetPath + "/" + tokenName + ".imageset";
     fs.ensureDirSync(imageAssetPath);
 
     const svgContent = fs.readFileSync(sourceIconPath, "utf8");
@@ -65,7 +67,7 @@ export default {
       "utf-8"
     );
 
-    return `Image("${token.name}", bundle: Bundle.module)`;
+    return `Image("${tokenName}", bundle: Bundle.module)`;
   },
 } as Transform;
 

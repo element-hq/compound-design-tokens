@@ -14,11 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import StyleDictionary from "style-dictionary";
 import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
 import { TransformedToken } from "style-dictionary/types";
+import { FormatterArguments } from "style-dictionary/types/Format";
+import createTemplate from "../utils/createTemplate";
 import iosExclude from "../filters/ios/exclude";
 import _ from "lodash";
+
+function swiftClassMembers(args: FormatterArguments) {
+  return createTemplate(
+    "../formats/templates/swift/class-members.template",
+    args
+  )
+}
 
 /* 
  * Config that builds colorsets and creates SwiftUI Colors.
@@ -93,11 +103,16 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
  * Config that creates the remaining iOS tokens.
  */
 export function getCommonIOSConfig(): Platform {
+  StyleDictionary.registerFormat({
+    name: "swift/class-members",
+    formatter: swiftClassMembers,
+  });
   return {
     transforms: [
       "attribute/cti",
       "camelCaseDecimal",
       "font/swift/literal",
+      "swift/icon/ti",
       "swift/pxToCGFloat",
       "swift/toFontWeight",
       "swift/svgToImageView",
@@ -109,14 +124,16 @@ export function getCommonIOSConfig(): Platform {
         filter: function(token: TransformedToken) {
           return token.type == 'icon' && iosExclude.matcher(token);
         },
-        destination: "CompoundIconTokens.swift",
-        format: "ios-swift/class.swift",
+        destination: "CompoundIcons.swift",
+        format: "swift/class-members",
         options: {
           showFileHeader: false,
           outputReferences: true,
-          import: "SwiftUI",
+          import: ["SwiftUI"],
+          objectType: "class",
+          accessControl: "public",
         },
-        className: "CompoundIconTokens",
+        className: "CompoundIcons",
       },
       {
         filter: function(token: TransformedToken) {
