@@ -1,4 +1,7 @@
 <%
+// This file is a tweak based upon the built in any.swift.template. If
+// https://github.com/amzn/style-dictionary/pull/972 is merged, we
+// should be able to remove it and use the upstream flag instead.
 //
 // Copyright 2019 Alaska Air Group or its affiliates. All Rights Reserved.
 //

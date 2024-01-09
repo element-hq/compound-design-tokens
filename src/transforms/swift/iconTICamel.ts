@@ -52,7 +52,12 @@ export function unescape(tokenName: string) {
   }
 }
 
+/* 
+Sourced from The Swift Programming Language book:
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Keywords-and-Punctuation
+*/
 const swiftKeywords = [
+  // declarations
   "associatedtype",
   "class",
   "deinit",
@@ -76,5 +81,43 @@ const swiftKeywords = [
   "struct",
   "subscript",
   "typealias",
-  "var"
+  "var",
+  
+  // statements
+  "break",
+  "case",
+  "catch",
+  "continue",
+  "default",
+  "defer",
+  "do",
+  "else",
+  "fallthrough",
+  "for",
+  "guard",
+  "if",
+  "in",
+  "repeat",
+  "return",
+  "throw",
+  "switch",
+  "where",
+  "while",
+  
+  // expressions and types
+  "Any",
+  "as",
+  "await",
+  "catch",
+  "false",
+  "is",
+  "nil",
+  "rethrows",
+  "self",
+  "Self",
+  "super",
+  "throw",
+  "throws",
+  "true",
+  "try"
 ]
