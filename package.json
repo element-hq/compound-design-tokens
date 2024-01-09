@@ -1,6 +1,6 @@
 {
   "name": "@vector-im/compound-design-tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Compound design tokens",
   "scripts": {
     "build": "ts-node ./build.ts",
