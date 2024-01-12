@@ -6,6 +6,7 @@
 import UIKit
 
 public class CompoundUIColorTokens {
+    public static let colorBrandPrimary = #0dbd8b
     public static let colorAlphaPink1400 = UIColor(named: "colorAlphaPink1400", in: Bundle.module, compatibleWith: nil)!
     public static let colorAlphaPink1300 = UIColor(named: "colorAlphaPink1300", in: Bundle.module, compatibleWith: nil)!
     public static let colorAlphaPink1200 = UIColor(named: "colorAlphaPink1200", in: Bundle.module, compatibleWith: nil)!
@@ -319,7 +320,6 @@ public class CompoundUIColorTokens {
     public static let colorIconInfoPrimary = colorBlue900
     public static let colorIconSuccessPrimary = colorGreen900
     public static let colorIconCriticalPrimary = colorRed900
-    public static let colorIconAccentTertiary = colorGreen800
     public static let colorIconQuaternaryAlpha = colorAlphaGray700
     public static let colorIconTertiaryAlpha = colorAlphaGray800
     public static let colorIconSecondaryAlpha = colorAlphaGray900
@@ -369,4 +369,19 @@ public class CompoundUIColorTokens {
     public static let colorTextPlaceholder = colorGray800
     public static let colorTextSecondary = colorGray900
     public static let colorTextPrimary = colorGray1400
+    public static let colorAccent1400 = colorGreen1400
+    public static let colorAccent1300 = colorGreen1300
+    public static let colorAccent1200 = colorGreen1200
+    public static let colorAccent1100 = colorGreen1100
+    public static let colorAccent1000 = colorGreen1000
+    public static let colorAccent900 = colorGreen900
+    public static let colorAccent800 = colorGreen800
+    public static let colorAccent700 = colorGreen700
+    public static let colorAccent600 = colorGreen600
+    public static let colorAccent500 = colorGreen500
+    public static let colorAccent400 = colorGreen400
+    public static let colorAccent300 = colorGreen300
+    public static let colorAccent200 = colorGreen200
+    public static let colorAccent100 = colorGreen100
+    public static let colorIconAccentTertiary = colorAccent800
 }

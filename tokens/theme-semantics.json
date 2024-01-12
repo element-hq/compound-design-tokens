@@ -1,5 +1,63 @@
 {
   "color": {
+    "accent": {
+      "100": {
+        "value": "{color.green.100}",
+        "type": "color"
+      },
+      "200": {
+        "value": "{color.green.200}",
+        "type": "color"
+      },
+      "300": {
+        "value": "{color.green.300}",
+        "type": "color"
+      },
+      "400": {
+        "value": "{color.green.400}",
+        "type": "color"
+      },
+      "500": {
+        "value": "{color.green.500}",
+        "type": "color"
+      },
+      "600": {
+        "value": "{color.green.600}",
+        "type": "color"
+      },
+      "700": {
+        "value": "{color.green.700}",
+        "type": "color"
+      },
+      "800": {
+        "value": "{color.green.800}",
+        "type": "color"
+      },
+      "900": {
+        "value": "{color.green.900}",
+        "type": "color"
+      },
+      "1000": {
+        "value": "{color.green.1000}",
+        "type": "color"
+      },
+      "1100": {
+        "value": "{color.green.1100}",
+        "type": "color"
+      },
+      "1200": {
+        "value": "{color.green.1200}",
+        "type": "color"
+      },
+      "1300": {
+        "value": "{color.green.1300}",
+        "type": "color"
+      },
+      "1400": {
+        "value": "{color.green.1400}",
+        "type": "color"
+      }
+    },
     "text": {
       "primary": {
         "value": "{color.gray.1400}",
@@ -278,7 +336,7 @@
       },
       "accent": {
         "tertiary": {
-          "value": "{color.green.800}",
+          "value": "{color.accent.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
         }
@@ -310,6 +368,13 @@
           "type": "color",
           "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
+      }
+    },
+    "brand": {
+      "primary": {
+        "value": "#0dbd8b",
+        "type": "color",
+        "description": "Primary brand color"
       }
     }
   }

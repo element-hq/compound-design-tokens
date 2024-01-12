@@ -1,4 +1,5 @@
 :root, [class*="cpd-theme-"] {
+  --cpd-color-brand-primary: #0dbd8b;
   --cpd-font-letter-spacing-heading-xl: -0.0216em;
   --cpd-font-letter-spacing-heading-lg: -0.0209em;
   --cpd-font-letter-spacing-heading-md: -0.0195em;
@@ -41,7 +42,6 @@
   --cpd-color-icon-info-primary: var(--cpd-color-blue-900);
   --cpd-color-icon-success-primary: var(--cpd-color-green-900);
   --cpd-color-icon-critical-primary: var(--cpd-color-red-900);
-  --cpd-color-icon-accent-tertiary: var(--cpd-color-green-800);
   --cpd-color-icon-quaternary-alpha: var(--cpd-color-alpha-gray-700);
   --cpd-color-icon-tertiary-alpha: var(--cpd-color-alpha-gray-800);
   --cpd-color-icon-secondary-alpha: var(--cpd-color-alpha-gray-900);
@@ -89,6 +89,20 @@
   --cpd-color-text-placeholder: var(--cpd-color-gray-800);
   --cpd-color-text-secondary: var(--cpd-color-gray-900);
   --cpd-color-text-primary: var(--cpd-color-gray-1400);
+  --cpd-color-accent-1400: var(--cpd-color-green-1400);
+  --cpd-color-accent-1300: var(--cpd-color-green-1300);
+  --cpd-color-accent-1200: var(--cpd-color-green-1200);
+  --cpd-color-accent-1100: var(--cpd-color-green-1100);
+  --cpd-color-accent-1000: var(--cpd-color-green-1000);
+  --cpd-color-accent-900: var(--cpd-color-green-900);
+  --cpd-color-accent-800: var(--cpd-color-green-800);
+  --cpd-color-accent-700: var(--cpd-color-green-700);
+  --cpd-color-accent-600: var(--cpd-color-green-600);
+  --cpd-color-accent-500: var(--cpd-color-green-500);
+  --cpd-color-accent-400: var(--cpd-color-green-400);
+  --cpd-color-accent-300: var(--cpd-color-green-300);
+  --cpd-color-accent-200: var(--cpd-color-green-200);
+  --cpd-color-accent-100: var(--cpd-color-green-100);
   --cpd-font-heading-xl-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-heading-xl)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-heading-xl-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-heading-xl)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-heading-lg-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-heading-lg)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
@@ -130,4 +144,5 @@
   --cpd-space-1-5x: 6px;
   --cpd-space-1x: var(--cpd-space-scale);
   --cpd-space-0-5x: 2px;
+  --cpd-color-icon-accent-tertiary: var(--cpd-color-accent-800);
 }
