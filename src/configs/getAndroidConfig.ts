@@ -107,7 +107,7 @@ export function getAndroidConfig(theme: Theme): Platform {
     name: "compose/icons",
     formatter: composeIcons,
   });
-  let className = _.upperFirst(_.camelCase(theme));
+  const className = _.upperFirst(_.camelCase(theme));
   return {
     transforms: [
       "camelCaseDecimal",
@@ -117,7 +117,7 @@ export function getAndroidConfig(theme: Theme): Platform {
       "kotlin/pxToDp",
       "kotlin/svgToDrawable",
     ],
-    buildPath: buildPath,
+    buildPath,
     files: [
       {
         format: "compose/core-colors",
@@ -151,7 +151,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         format: "compose/icons",
         destination: `CompoundIcons.kt`,
         className: "CompoundIcons",
-        packageName: packageName,
+        packageName,
         filter: function (token: TransformedToken) {
           return token.type == "icon";
         },
@@ -182,13 +182,13 @@ export function getCommonAndroidConfig(): Platform {
       "kotlin/pxToSp",
       "kotlin/percentageToEm",
     ],
-    buildPath: buildPath,
+    buildPath,
     files: [
       {
         format: "compose/internal-object",
         destination: `TypographyTokens.kt`,
         className: "TypographyTokens",
-        packageName: packageName,
+        packageName,
         filter: isTypographyToken.matcher,
         options: withDefaultOptions({
           outputReferences: false,
