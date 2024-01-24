@@ -1,4 +1,4 @@
-<%= options.customLicense ?? '' %>
+<%= options.license ?? '' %>
 
 @file:Suppress("all")
 package <%= file.packageName %>

@@ -31,7 +31,7 @@ export default {
   },
   transformer: function (token, platform) {
     const iconPath = path.join(dirname(require.main!.filename), token.value);
-    const resPath = `/res/drawable`;
+    const resPath = `../res/drawable`;
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android
     // and on Material

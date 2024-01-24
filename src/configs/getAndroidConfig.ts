@@ -27,7 +27,9 @@ import createTemplate from "../utils/createTemplate";
 import { ANDROID_INDENT_LEVEL } from "../utils/constants";
 import { removePrefixAndCamelCase } from "../utils/removePrefixAndCamelCase";
 
-const packageName = "io.element.android.libraries.theme.compound.generated";
+const packageName = "io.element.android.compound.tokens.generated";
+const packageNameR = "io.element.android.compound.R"
+const buildPath = "assets/android/src/"
 
 function composeAndroidLicense() {
   return createTemplate(
@@ -46,6 +48,20 @@ function composeInternalObject(args: FormatterArguments) {
 function composeExtraColors(args: FormatterArguments) {
   return createTemplate(
     "../formats/templates/compose/extra-colors.kt.template",
+    args
+  );
+}
+
+function composeCoreColors(args: FormatterArguments) {
+  return createTemplate(
+    "../formats/templates/compose/core-colors.kt.template",
+    args
+  );
+}
+
+function composeIcons(args: FormatterArguments) {
+  return createTemplate(
+    "../formats/templates/compose/icons.kt.template",
     args
   );
 }
@@ -69,6 +85,11 @@ function fixColorName(colorName: string): string {
   return removePrefixAndCamelCase(colorName, "color");
 }
 
+function getIconName(iconName: string): string {
+  let camelCaseName = removePrefixAndCamelCase(iconName, "icon");
+  return camelCaseName.charAt(0).toUpperCase() + camelCaseName.slice(1);
+}
+
 export function getAndroidConfig(theme: Theme): Platform {
   StyleDictionary.registerFormat({
     name: "compose/internal-object",
@@ -78,6 +99,15 @@ export function getAndroidConfig(theme: Theme): Platform {
     name: "compose/extra-colors",
     formatter: composeExtraColors,
   });
+  StyleDictionary.registerFormat({
+    name: "compose/core-colors",
+    formatter: composeCoreColors,
+  });
+  StyleDictionary.registerFormat({
+    name: "compose/icons",
+    formatter: composeIcons,
+  });
+  const className = _.upperFirst(_.camelCase(theme));
   return {
     transforms: [
       "camelCaseDecimal",
@@ -87,14 +117,12 @@ export function getAndroidConfig(theme: Theme): Platform {
       "kotlin/pxToDp",
       "kotlin/svgToDrawable",
     ],
-    buildPath: `assets/android/`,
+    buildPath,
     files: [
       {
-        format: "compose/internal-object",
-        destination: `internal/${_.upperFirst(
-          _.camelCase(theme)
-        )}DesignTokens.kt`,
-        className: _.upperFirst(_.camelCase(theme)) + "DesignTokens",
+        format: "compose/core-colors",
+        destination: `internal/${className}ColorTokens.kt`,
+        className: className + "ColorTokens",
         packageName: packageName + ".internal",
         filter: function (token: TransformedToken) {
           return isCoreColor.matcher(token);
@@ -119,6 +147,25 @@ export function getAndroidConfig(theme: Theme): Platform {
           fixColorName,
         }),
       },
+      {
+        format: "compose/icons",
+        destination: `CompoundIcons.kt`,
+        className: "CompoundIcons",
+        packageName,
+        filter: function (token: TransformedToken) {
+          return token.type == "icon";
+        },
+        options: withDefaultOptions({
+          import: [
+            packageNameR,
+            'androidx.compose.runtime.Composable',
+            'androidx.compose.ui.graphics.vector.ImageVector',
+            'androidx.compose.ui.res.vectorResource',
+            'kotlinx.collections.immutable.persistentListOf'
+          ],
+          getIconName,
+        }),
+      }
     ],
   };
 }
@@ -135,13 +182,13 @@ export function getCommonAndroidConfig(): Platform {
       "kotlin/pxToSp",
       "kotlin/percentageToEm",
     ],
-    buildPath: `assets/android/`,
+    buildPath,
     files: [
       {
         format: "compose/internal-object",
         destination: `TypographyTokens.kt`,
         className: "TypographyTokens",
-        packageName: packageName,
+        packageName,
         filter: isTypographyToken.matcher,
         options: withDefaultOptions({
           outputReferences: false,

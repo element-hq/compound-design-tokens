@@ -1,0 +1,32 @@
+<%= options.license ?? '' %>
+<%= fileHeader({file, commentStyle: 'short'}) %>
+
+@file:Suppress("all")
+package <%= file.packageName %>
+
+<%= options.import.map(function(item) {
+    return 'import ' + item
+  }).join('\n')
+%>
+
+object <%= file.className %> {
+    <%= allProperties.map(function(prop) {
+      let comment = "";
+      if (prop.comment) {
+        comment = `/** ${prop.comment} */\n  `
+      }
+      return comment + 'val ' + options.getIconName(prop.name) + ' @Composable get() = ImageVector.vectorResource(' + formatProperty(prop).split(' = ')[1] + ')'
+    }).join('\n' + options.indentLevel ) %>
+
+    val all @Composable get() = persistentListOf(
+        <%= allProperties.map(function(prop) {
+          return options.getIconName(prop.name) + ','
+        }).join('\n' + options.indentLevel + options.indentLevel ) %>
+    )
+
+    val allResIds get() = persistentListOf(
+        <%= allProperties.map(function(prop) {
+          return formatProperty(prop).split(' = ')[1] + ','
+        }).join('\n' + options.indentLevel + options.indentLevel ) %>
+    )
+}
