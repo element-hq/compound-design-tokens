@@ -8,8 +8,10 @@ package <%= file.packageName %>
     return 'import ' + item
   }).join('\n')
 %>
+import io.element.android.compound.annotations.CoreColorToken
 
-<%= options.isInternal ? "internal " : "" %>object <%= file.className %> {
+@CoreColorToken
+object <%= file.className %> {
     <%= allProperties.map(function(prop) {
       let comment = "";
       if (prop.comment) {

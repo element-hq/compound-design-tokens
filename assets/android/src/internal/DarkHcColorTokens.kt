@@ -1,13 +1,29 @@
-
+/*
+ * Copyright (c) 2023 New Vector Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 @file:Suppress("all")
-package io.element.android.libraries.theme.compound.generated.internal
+package io.element.android.compound.tokens.generated.internal
 
 import androidx.compose.ui.graphics.Color
+import io.element.android.compound.annotations.CoreColorToken
 
-internal object DarkHcDesignTokens {
-  val colorAlphaPink1400 = Color(0xfffff0f3)
+@CoreColorToken
+object DarkHcColorTokens {
+    val colorAlphaPink1400 = Color(0xfffff0f3)
     val colorAlphaPink1300 = Color(0xffffebef)
     val colorAlphaPink1200 = Color(0xffffccd7)
     val colorAlphaPink1100 = Color(0xffffbdcb)
