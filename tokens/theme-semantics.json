@@ -73,6 +73,10 @@
           "value": "{color.lime.1100}",
           "type": "color",
           "description": "Decorative text color - Used for usernames and avatars - 1 - Lime."
+        },
+        "2": {
+          "value": "{color.cyan.1100}",
+          "type": "color"
         }
       }
     },
@@ -178,9 +182,13 @@
       },
       "decorative": {
         "1": {
-          "value": "{color.lime.alpha.300}",
+          "value": "{color.alpha.lime.300}",
           "type": "color",
           "description": "Decorative background color - Used for usernames and avatars - 1 - Lime."
+        },
+        "2": {
+          "value": "{color.alpha.cyan.300}",
+          "type": "color"
         }
       }
     },

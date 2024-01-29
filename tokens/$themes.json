@@ -504,7 +504,11 @@
       "color.icon.info.primary": "S:f259ae7aedb674cd29be686ac6d72ef8afabb7b1,",
       "color.icon.on-solid.primary": "S:8afa150a81c836a4ee16d24f709cbaddb296b08b,",
       "color.bg.canvas.default-level-1": "S:04233ecd06019bc7a04449b1d95b4d8af7ec2005,",
-      "color.bg.subtle-secondary-level-0": "S:db7501aebb577b3f17d8eee794407644ad539e7a,"
+      "color.bg.subtle-secondary-level-0": "S:db7501aebb577b3f17d8eee794407644ad539e7a,",
+      "color.text.decorative.1": "S:79b1c82fc109b1a868457a9fea096edef0ac72f0,",
+      "color.bg.decorative.1": "S:c72a26fd1d9eedf7e010e15cae0ab451b7c53d9a,",
+      "color.text.decorative.2": "S:686016d7c5ba3201899c578ccbf9264f7bfcebd6,",
+      "color.bg.decorative.2": "S:1f71f52643e0a00e87f63eec3ef071898562af63,"
     },
     "$figmaCollectionId": "VariableCollectionId:1369:174",
     "$figmaModeId": "1369:4",
