@@ -67,6 +67,11 @@
           "type": "color",
           "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
+      },
+      "testo": {
+        "value": "{color.alpha.blue.100}",
+        "type": "color",
+        "description": "Test colour to trigger diff/push in token studio"
       }
     },
     "bg": {
