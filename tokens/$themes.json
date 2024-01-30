@@ -458,7 +458,19 @@
       "color.icon.info.primary": "S:f259ae7aedb674cd29be686ac6d72ef8afabb7b1,",
       "color.icon.on-solid.primary": "S:8afa150a81c836a4ee16d24f709cbaddb296b08b,",
       "color.bg.canvas.default-level-1": "S:04233ecd06019bc7a04449b1d95b4d8af7ec2005,",
-      "color.bg.subtle-secondary-level-0": "S:db7501aebb577b3f17d8eee794407644ad539e7a,"
+      "color.bg.subtle-secondary-level-0": "S:db7501aebb577b3f17d8eee794407644ad539e7a,",
+      "color.text.decorative.1": "S:a2b3f80beb25965dee620cbebdac494c7afcf205,",
+      "color.text.decorative.2": "S:9173ca55fd66eb123702b44efd7da62104713d6d,",
+      "color.text.decorative.3": "S:02f72780150d25ad50bbec6d68f56f1e4d5445d8,",
+      "color.text.decorative.4": "S:8d03e39f24769042763d7a2bc477c22e71309817,",
+      "color.text.decorative.5": "S:96b30adbdb3d48c1bd8d8f132cd9874ad81ba2f2,",
+      "color.text.decorative.6": "S:56f05ec64d131bb8be3e41567344ce17fe54ea24,",
+      "color.bg.decorative.1": "S:bef8775717de5b4062b533507fe6aa2549ab5743,",
+      "color.bg.decorative.2": "S:b0174d7447c029c978dc6a373f5e12b63edd8ded,",
+      "color.bg.decorative.3": "S:12348db238c91a726b220b01b1e14a1d699102d4,",
+      "color.bg.decorative.4": "S:210cb1fc090facc2f2f87fe66bd48d72aac870ff,",
+      "color.bg.decorative.5": "S:fb0c200f3f19c525817025c836d00a7294e4b228,",
+      "color.bg.decorative.6": "S:49026394d40f4240fa4fdb31af568c3828492701,"
     }
   },
   {

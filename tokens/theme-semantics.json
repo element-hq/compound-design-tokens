@@ -67,6 +67,38 @@
           "type": "color",
           "description": "For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
         }
+      },
+      "decorative": {
+        "1": {
+          "value": "{color.lime.1100}",
+          "type": "color",
+          "description": "Decorative text colour (1, Lime) for avatars and usernames."
+        },
+        "2": {
+          "value": "{color.cyan.1100}",
+          "type": "color",
+          "description": "Decorative text colour (2, Cyan) for avatars and usernames."
+        },
+        "3": {
+          "value": "{color.fuchsia.1100}",
+          "type": "color",
+          "description": "Decorative text colour (3, Fuchsia) for avatars and usernames."
+        },
+        "4": {
+          "value": "{color.purple.1100}",
+          "type": "color",
+          "description": "Decorative text colour (4, Purple) for avatars and usernames."
+        },
+        "5": {
+          "value": "{color.pink.1100}",
+          "type": "color",
+          "description": "Decorative text colour (5, Pink) for avatars and usernames."
+        },
+        "6": {
+          "value": "{color.orange.1100}",
+          "type": "color",
+          "description": "Decorative text colour (6, Orange) for avatars and usernames."
+        }
       }
     },
     "bg": {
@@ -167,6 +199,38 @@
           "value": "{color.blue.200}",
           "type": "color",
           "description": "Subtle background colour for informational elements. State: Rest."
+        }
+      },
+      "decorative": {
+        "1": {
+          "value": "{color.alpha.lime.300}",
+          "type": "color",
+          "description": "Decorative background (1, Lime) for avatars and usernames."
+        },
+        "2": {
+          "value": "{color.alpha.cyan.300}",
+          "type": "color",
+          "description": "Decorative background (2, Cyan) for avatars and usernames."
+        },
+        "3": {
+          "value": "{color.alpha.fuchsia.300}",
+          "type": "color",
+          "description": "Decorative background (3, Fuchsia) for avatars and usernames."
+        },
+        "4": {
+          "value": "{color.alpha.purple.300}",
+          "type": "color",
+          "description": "Decorative background (4, Purple) for avatars and usernames."
+        },
+        "5": {
+          "value": "{color.alpha.pink.300}",
+          "type": "color",
+          "description": "Decorative background (5, Pink) for avatars and usernames."
+        },
+        "6": {
+          "value": "{color.alpha.orange.300}",
+          "type": "color",
+          "description": "Decorative background (6, Orange) for avatars and usernames."
         }
       }
     },

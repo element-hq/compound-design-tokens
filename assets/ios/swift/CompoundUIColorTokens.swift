@@ -340,6 +340,12 @@ public class CompoundUIColorTokens {
     public static let colorBorderFocused = colorBlue900
     public static let colorBorderDisabled = colorGray500
     public static let colorBgSubtleSecondaryLevel0 = colorThemeBg
+    public static let colorBgDecorative6 = colorAlphaOrange300
+    public static let colorBgDecorative5 = colorAlphaPink300
+    public static let colorBgDecorative4 = colorAlphaPurple300
+    public static let colorBgDecorative3 = colorAlphaFuchsia300
+    public static let colorBgDecorative2 = colorAlphaCyan300
+    public static let colorBgDecorative1 = colorAlphaLime300
     public static let colorBgInfoSubtle = colorBlue200
     public static let colorBgSuccessSubtle = colorGreen200
     public static let colorBgCriticalSubtleHovered = colorRed300
@@ -358,6 +364,12 @@ public class CompoundUIColorTokens {
     public static let colorBgCanvasDefault = colorThemeBg
     public static let colorBgSubtleSecondary = colorGray300
     public static let colorBgSubtlePrimary = colorGray400
+    public static let colorTextDecorative6 = colorOrange1100
+    public static let colorTextDecorative5 = colorPink1100
+    public static let colorTextDecorative4 = colorPurple1100
+    public static let colorTextDecorative3 = colorFuchsia1100
+    public static let colorTextDecorative2 = colorCyan1100
+    public static let colorTextDecorative1 = colorLime1100
     public static let colorTextOnSolidPrimary = colorThemeBg
     public static let colorTextInfoPrimary = colorBlue900
     public static let colorTextSuccessPrimary = colorGreen900

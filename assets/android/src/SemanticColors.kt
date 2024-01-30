@@ -45,6 +45,12 @@ class SemanticColors(
     bgCriticalPrimary: Color,
     bgCriticalSubtle: Color,
     bgCriticalSubtleHovered: Color,
+    bgDecorative1: Color,
+    bgDecorative2: Color,
+    bgDecorative3: Color,
+    bgDecorative4: Color,
+    bgDecorative5: Color,
+    bgDecorative6: Color,
     bgInfoSubtle: Color,
     bgSubtlePrimary: Color,
     bgSubtleSecondary: Color,
@@ -76,6 +82,12 @@ class SemanticColors(
     textActionAccent: Color,
     textActionPrimary: Color,
     textCriticalPrimary: Color,
+    textDecorative1: Color,
+    textDecorative2: Color,
+    textDecorative3: Color,
+    textDecorative4: Color,
+    textDecorative5: Color,
+    textDecorative6: Color,
     textDisabled: Color,
     textInfoPrimary: Color,
     textLinkExternal: Color,
@@ -127,6 +139,24 @@ Elevation: Default (Level 0) */
         private set
     /** Default subtle critical surfaces. State: Hover. */
     var bgCriticalSubtleHovered by mutableStateOf(bgCriticalSubtleHovered)
+        private set
+    /** Decorative background (1, Lime) for avatars and usernames. */
+    var bgDecorative1 by mutableStateOf(bgDecorative1)
+        private set
+    /** Decorative background (2, Cyan) for avatars and usernames. */
+    var bgDecorative2 by mutableStateOf(bgDecorative2)
+        private set
+    /** Decorative background (3, Fuchsia) for avatars and usernames. */
+    var bgDecorative3 by mutableStateOf(bgDecorative3)
+        private set
+    /** Decorative background (4, Purple) for avatars and usernames. */
+    var bgDecorative4 by mutableStateOf(bgDecorative4)
+        private set
+    /** Decorative background (5, Pink) for avatars and usernames. */
+    var bgDecorative5 by mutableStateOf(bgDecorative5)
+        private set
+    /** Decorative background (6, Orange) for avatars and usernames. */
+    var bgDecorative6 by mutableStateOf(bgDecorative6)
         private set
     /** Subtle background colour for informational elements. State: Rest. */
     var bgInfoSubtle by mutableStateOf(bgInfoSubtle)
@@ -223,6 +253,24 @@ Elevation: Default (Level 1). */
     /** Text colour for destructive plain actions. */
     var textCriticalPrimary by mutableStateOf(textCriticalPrimary)
         private set
+    /** Decorative text colour (1, Lime) for avatars and usernames. */
+    var textDecorative1 by mutableStateOf(textDecorative1)
+        private set
+    /** Decorative text colour (2, Cyan) for avatars and usernames. */
+    var textDecorative2 by mutableStateOf(textDecorative2)
+        private set
+    /** Decorative text colour (3, Fuchsia) for avatars and usernames. */
+    var textDecorative3 by mutableStateOf(textDecorative3)
+        private set
+    /** Decorative text colour (4, Purple) for avatars and usernames. */
+    var textDecorative4 by mutableStateOf(textDecorative4)
+        private set
+    /** Decorative text colour (5, Pink) for avatars and usernames. */
+    var textDecorative5 by mutableStateOf(textDecorative5)
+        private set
+    /** Decorative text colour (6, Orange) for avatars and usernames. */
+    var textDecorative6 by mutableStateOf(textDecorative6)
+        private set
     /** Use for regular text in disabled elements. There's no minimum contrast requirement. */
     var textDisabled by mutableStateOf(textDisabled)
         private set
@@ -262,6 +310,12 @@ Elevation: Default (Level 1). */
         bgCriticalPrimary: Color = this.bgCriticalPrimary,
         bgCriticalSubtle: Color = this.bgCriticalSubtle,
         bgCriticalSubtleHovered: Color = this.bgCriticalSubtleHovered,
+        bgDecorative1: Color = this.bgDecorative1,
+        bgDecorative2: Color = this.bgDecorative2,
+        bgDecorative3: Color = this.bgDecorative3,
+        bgDecorative4: Color = this.bgDecorative4,
+        bgDecorative5: Color = this.bgDecorative5,
+        bgDecorative6: Color = this.bgDecorative6,
         bgInfoSubtle: Color = this.bgInfoSubtle,
         bgSubtlePrimary: Color = this.bgSubtlePrimary,
         bgSubtleSecondary: Color = this.bgSubtleSecondary,
@@ -293,6 +347,12 @@ Elevation: Default (Level 1). */
         textActionAccent: Color = this.textActionAccent,
         textActionPrimary: Color = this.textActionPrimary,
         textCriticalPrimary: Color = this.textCriticalPrimary,
+        textDecorative1: Color = this.textDecorative1,
+        textDecorative2: Color = this.textDecorative2,
+        textDecorative3: Color = this.textDecorative3,
+        textDecorative4: Color = this.textDecorative4,
+        textDecorative5: Color = this.textDecorative5,
+        textDecorative6: Color = this.textDecorative6,
         textDisabled: Color = this.textDisabled,
         textInfoPrimary: Color = this.textInfoPrimary,
         textLinkExternal: Color = this.textLinkExternal,
@@ -316,6 +376,12 @@ Elevation: Default (Level 1). */
         bgCriticalPrimary = bgCriticalPrimary,
         bgCriticalSubtle = bgCriticalSubtle,
         bgCriticalSubtleHovered = bgCriticalSubtleHovered,
+        bgDecorative1 = bgDecorative1,
+        bgDecorative2 = bgDecorative2,
+        bgDecorative3 = bgDecorative3,
+        bgDecorative4 = bgDecorative4,
+        bgDecorative5 = bgDecorative5,
+        bgDecorative6 = bgDecorative6,
         bgInfoSubtle = bgInfoSubtle,
         bgSubtlePrimary = bgSubtlePrimary,
         bgSubtleSecondary = bgSubtleSecondary,
@@ -347,6 +413,12 @@ Elevation: Default (Level 1). */
         textActionAccent = textActionAccent,
         textActionPrimary = textActionPrimary,
         textCriticalPrimary = textCriticalPrimary,
+        textDecorative1 = textDecorative1,
+        textDecorative2 = textDecorative2,
+        textDecorative3 = textDecorative3,
+        textDecorative4 = textDecorative4,
+        textDecorative5 = textDecorative5,
+        textDecorative6 = textDecorative6,
         textDisabled = textDisabled,
         textInfoPrimary = textInfoPrimary,
         textLinkExternal = textLinkExternal,
@@ -372,6 +444,12 @@ Elevation: Default (Level 1). */
         bgCriticalPrimary = other.bgCriticalPrimary
         bgCriticalSubtle = other.bgCriticalSubtle
         bgCriticalSubtleHovered = other.bgCriticalSubtleHovered
+        bgDecorative1 = other.bgDecorative1
+        bgDecorative2 = other.bgDecorative2
+        bgDecorative3 = other.bgDecorative3
+        bgDecorative4 = other.bgDecorative4
+        bgDecorative5 = other.bgDecorative5
+        bgDecorative6 = other.bgDecorative6
         bgInfoSubtle = other.bgInfoSubtle
         bgSubtlePrimary = other.bgSubtlePrimary
         bgSubtleSecondary = other.bgSubtleSecondary
@@ -403,6 +481,12 @@ Elevation: Default (Level 1). */
         textActionAccent = other.textActionAccent
         textActionPrimary = other.textActionPrimary
         textCriticalPrimary = other.textCriticalPrimary
+        textDecorative1 = other.textDecorative1
+        textDecorative2 = other.textDecorative2
+        textDecorative3 = other.textDecorative3
+        textDecorative4 = other.textDecorative4
+        textDecorative5 = other.textDecorative5
+        textDecorative6 = other.textDecorative6
         textDisabled = other.textDisabled
         textInfoPrimary = other.textInfoPrimary
         textLinkExternal = other.textLinkExternal
