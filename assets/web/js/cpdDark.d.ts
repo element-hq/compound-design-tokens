@@ -135,6 +135,8 @@ export const cpdIconGrid : string;
 export const cpdIconHelpSolid : string;
 export const cpdIconHelp : string;
 export const cpdIconHistory : string;
+export const cpdIconHomeSolid : string;
+export const cpdIconHome : string;
 export const cpdIconHost : string;
 export const cpdIconImageError : string;
 export const cpdIconImage : string;

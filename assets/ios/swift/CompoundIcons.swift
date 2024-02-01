@@ -111,6 +111,8 @@ public class CompoundIcons {
     public let image = Image("image", bundle: Bundle.module) 
     public let imageError = Image("imageError", bundle: Bundle.module) 
     public let host = Image("host", bundle: Bundle.module) 
+    public let home = Image("home", bundle: Bundle.module) 
+    public let homeSolid = Image("homeSolid", bundle: Bundle.module) 
     public let history = Image("history", bundle: Bundle.module) 
     public let help = Image("help", bundle: Bundle.module) 
     public let helpSolid = Image("helpSolid", bundle: Bundle.module) 

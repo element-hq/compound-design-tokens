@@ -83,6 +83,8 @@ object CompoundIcons {
     val Help @Composable get() = ImageVector.vectorResource(R.drawable.ic_help)
     val HelpSolid @Composable get() = ImageVector.vectorResource(R.drawable.ic_help_solid)
     val History @Composable get() = ImageVector.vectorResource(R.drawable.ic_history)
+    val Home @Composable get() = ImageVector.vectorResource(R.drawable.ic_home)
+    val HomeSolid @Composable get() = ImageVector.vectorResource(R.drawable.ic_home_solid)
     val Host @Composable get() = ImageVector.vectorResource(R.drawable.ic_host)
     val Image @Composable get() = ImageVector.vectorResource(R.drawable.ic_image)
     val ImageError @Composable get() = ImageVector.vectorResource(R.drawable.ic_image_error)
@@ -248,6 +250,8 @@ object CompoundIcons {
         Help,
         HelpSolid,
         History,
+        Home,
+        HomeSolid,
         Host,
         Image,
         ImageError,
@@ -414,6 +418,8 @@ object CompoundIcons {
         R.drawable.ic_help,
         R.drawable.ic_help_solid,
         R.drawable.ic_history,
+        R.drawable.ic_home,
+        R.drawable.ic_home_solid,
         R.drawable.ic_host,
         R.drawable.ic_image,
         R.drawable.ic_image_error,
