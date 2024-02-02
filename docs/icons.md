@@ -21,7 +21,7 @@ Transforms the icon to an Xcode Image Set
 - Create the icon and add it to the [Figma icon library](https://www.figma.com/file/gkNXqPoiJhEv2wt0EJpew4/Compound-Icons?type=design&mode=design&t=lYEYAWjnNUSGFhV4-11). Refer to [the guidelines for icon preparation](https://www.figma.com/file/gkNXqPoiJhEv2wt0EJpew4/Compound-Icons?type=design&node-id=280-6047&mode=design&t=wOCsc1FBoOz4YnJo-0).
 - Export the icons from Figma
     - We currently export the 24x24 icon variants only (optical scaling is yet to be adopted). The process is manual but fast to do.
-    - First select all of the 24pt variants from the document above.
+    - First select all of the 24pt variants from the document above. This easiest way to do this is to search for `24` and select all the results except for the placeholder ones.
     - Copy & paste these (or Option/Alt drag) to a safe working area, leaving the originals alone.
     - Using the [SVG Export](https://www.figma.com/community/plugin/814345141907543603) plugin on Figma, apply the `Monochrome` preset to the selected icons. This preset exports using `currentColor` so the icon can be tintable.
     - Download the icons zip file and extract it locally.
