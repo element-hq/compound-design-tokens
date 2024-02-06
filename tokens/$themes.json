@@ -1218,7 +1218,19 @@
       "color.icon.info.primary": "S:8a8555aeb788947f6b39b23491c44e23c36bdfb6,",
       "color.icon.on-solid.primary": "S:e5f5a2a75cf793d1a2ee532cbad094c406c3a41e,",
       "color.bg.canvas.default-level-1": "S:5a7a28a9cacdc83f48f4b84361c7bd94744903d1,",
-      "color.bg.subtle-secondary-level-0": "S:20713d105be83e770686915f372bb159de563b78,"
+      "color.bg.subtle-secondary-level-0": "S:20713d105be83e770686915f372bb159de563b78,",
+      "color.text.decorative.1": "S:7594dbf07fa4c9bce8537fcee4aa409125e408a7,",
+      "color.text.decorative.2": "S:c35f9154c97beb9a74545c5a1c2c3d70bc546e31,",
+      "color.text.decorative.3": "S:42fcec2847b33f52d983fec149c3d60690b2fd62,",
+      "color.text.decorative.4": "S:043e0ee3124ce9a17ddb9db8926dd676873e50d8,",
+      "color.text.decorative.5": "S:0e3fffa23448f354149d5545b408ba639063a1f8,",
+      "color.text.decorative.6": "S:a6fb1035324a35fd496db1b7d2a3c56ce514417f,",
+      "color.bg.decorative.1": "S:79ef8f68e0c5be66cf9bcf4b0052bb0348198a0d,",
+      "color.bg.decorative.2": "S:a0bc15c608134551fd6ea187be27eb3d3de73703,",
+      "color.bg.decorative.3": "S:7ea3220dc131d156c60b62afe339bba06bee5693,",
+      "color.bg.decorative.4": "S:3891b21c7c937a794a0c85694736eacd87a23e2e,",
+      "color.bg.decorative.5": "S:3617840cfd79273beb4387f91620fec0c60c76f8,",
+      "color.bg.decorative.6": "S:95bcb923a6b6d71a1a27850eae46a9e29b255722,"
     }
   },
   {
@@ -1592,7 +1604,19 @@
       "color.icon.info.primary": "S:ef7051ecef582b1c537af11d2997a32635e08a7b,",
       "color.icon.on-solid.primary": "S:50112b9da0def7552ba4d5353a65999ee95d87be,",
       "color.bg.canvas.default-level-1": "S:939d26e5073c51a8656a69975c087df7bea3acad,",
-      "color.bg.subtle-secondary-level-0": "S:329a9b7516c81e59ed955e2a8be63af59a7533ef,"
+      "color.bg.subtle-secondary-level-0": "S:329a9b7516c81e59ed955e2a8be63af59a7533ef,",
+      "color.text.decorative.1": "S:3cb4abd392c4bb3f90c43cb11dcb44fcd82de31f,",
+      "color.text.decorative.2": "S:3bf0a0a70ccbab9d854bf7fcbe89832b798c6c75,",
+      "color.text.decorative.3": "S:61a6ddd2ff6eddc8b04393ed9e86259c6eb3be2b,",
+      "color.text.decorative.4": "S:013c1f70e1ad26223477ca90f997651335b55d6e,",
+      "color.text.decorative.5": "S:4514f30a36407bbf11ce8a29a665177fb4a9a7da,",
+      "color.text.decorative.6": "S:a7b55c282db98b80327bb3913640cf356179b3d6,",
+      "color.bg.decorative.1": "S:817eb4f9a7ea9abdbd60b26150b53fec70fed7e1,",
+      "color.bg.decorative.2": "S:f2a18a503f4c4bb824649bcfc570b0f9b62e4b48,",
+      "color.bg.decorative.3": "S:ae0958cec1c103f4646ecffb458bae4f6ef73e39,",
+      "color.bg.decorative.4": "S:b5cb781c4ba2b7a1bd9272c76f0c7e9c463aad90,",
+      "color.bg.decorative.5": "S:b3bb54fe0776ac140b8c3b404a4531fb10afac8e,",
+      "color.bg.decorative.6": "S:543f80cd8cf680f75887f3fbfa89cd4edda8e99f,"
     }
   }
 ]
