@@ -308,6 +308,4 @@
   --cpd-color-gray-200: #f0f2f5;
   --cpd-color-gray-100: #f7f9fa;
   --cpd-color-theme-bg: #ffffff;
-  --cpd-color-bg-subtle-secondary-level-0: var(--cpd-color-gray-300);
-  --cpd-color-bg-canvas-default-level-1: var(--cpd-color-theme-bg);
 }
