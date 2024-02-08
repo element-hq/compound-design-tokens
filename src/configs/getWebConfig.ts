@@ -18,8 +18,10 @@ import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
 import { File } from "style-dictionary/types/File";
 import _ from "lodash";
-
-const COMPOUND_TOKENS_NAMESPACE = "cpd";
+import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
+import isCoreToken from "../filters/isCoreToken"
+import { isCoreColor } from "../filters/isCoreColor";
+import { COMPOUND_TOKENS_NAMESPACE, cssFileName, Tier } from "../utils/cssFileName";
 
 const basePxFontSize = 16;
 
@@ -73,43 +75,41 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
       },
     ];
   } else {
-    return [
-      {
-        destination: `${COMPOUND_TOKENS_NAMESPACE}-common.css`,
-        format: "css/variables",
-        filter: "isSharedAcrossTheme",
-        options: {
-          showFileHeader: false,
-          outputReferences: true,
-          basePxFontSize,
-          selector: `:root, [class*="cpd-theme-"]`,
-        },
+    const common = (tier: Tier): File => ({
+      destination: cssFileName(null, tier, false),
+      format: "css/variables",
+      filter: t => isSharedAcrossTheme.matcher(t) && isCoreToken.matcher(t) === (tier === 'base'),
+      options: {
+        showFileHeader: false,
+        outputReferences: true,
+        basePxFontSize,
+        selector: `:root, [class*="cpd-theme-"]`,
       },
+    })
+
+    const themed = (tier: Tier, mq: boolean): File => ({
+      destination: cssFileName(theme, tier, mq),
+      format: "css/variables",
+      filter: t => isCoreColor.matcher(t) && isCoreToken.matcher(t) === (tier === 'base'),
+      options: {
+        showFileHeader: false,
+        outputReferences: true,
+        selector: mq ? undefined : `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
+        basePxFontSize,
+      },
+    })
+
+    return [
+      common('base'),
+      common('semantic'),
       // Generates the theme under a scoped selector
       // e.g. .cpd-dark-hc { /* ... */ }
-      {
-        destination: `${COMPOUND_TOKENS_NAMESPACE}-${theme}.css`,
-        format: "css/variables",
-        filter: "isCoreColor",
-        options: {
-          showFileHeader: false,
-          outputReferences: true,
-          selector: `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
-          basePxFontSize,
-        },
-      },
+      themed('base', false),
+      themed('semantic', false),
       // Generates the theme under the :root
       // This file is to be imported with a media query import
-      {
-        destination: `${COMPOUND_TOKENS_NAMESPACE}-${theme}-mq.css`,
-        format: "css/variables",
-        filter: "isCoreColor",
-        options: {
-          showFileHeader: false,
-          outputReferences: true,
-          basePxFontSize,
-        },
-      },
+      themed('base', true),
+      themed('semantic', true),
     ];
   }
 }

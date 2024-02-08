@@ -19,12 +19,14 @@ import * as setupStyleDictionary from "./src/setupStyleDictionary";
 import generateIconTokens from "./src/utils/generateIconTokens";
 
 import fs from "fs-extra";
+import { generateCssIndex } from "./src/utils/generateCssIndex";
 
 const themes: Theme[] = ["light", "light-hc", "dark", "dark-hc"];
 const platforms: Platform[] = ["web", "android", "ios"];
 
 (async () => {
   generateIconTokens();
+  generateCssIndex();
   for (const platform of platforms) {
     for (const theme of themes) {
       const sb = await setupStyleDictionary.themed(theme, platform);

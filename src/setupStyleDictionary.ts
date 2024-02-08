@@ -19,8 +19,6 @@ import { Core } from "style-dictionary";
 import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
-import * as fs from "fs";
-import * as path from "path";
 
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
@@ -48,7 +46,6 @@ import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import iconsImport from "./transforms/css/iconsImport";
 import iconTICamel from "./transforms/swift/iconTICamel";
 import svgToImageView from "./transforms/swift/svgToImageView";
-import * as lodash from "lodash";
 import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
 
 async function setupDictionary(sb: Core) {
