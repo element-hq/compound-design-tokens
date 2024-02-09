@@ -35,7 +35,7 @@ export default {
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android
     // and on Material
-    const imageId = _.snakeCase(token.name.replace("icon", "ic"));
+    const imageId = _.snakeCase(token.name.replace("icon", "ic_compound_"));
 
     let options = {
       fillBlack: true, // Add black color to path element, defaults to false
