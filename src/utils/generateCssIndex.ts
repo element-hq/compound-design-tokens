@@ -19,8 +19,10 @@ import path from 'path'
 import { Theme } from '../@types'
 import { cssFileName, Tier } from './cssFileName'
 
-const header = `/* Establish a layer order that allows semantic tokens to be customized, but not base tokens */
-@layer semantic, custom, base;`
+const header = `/* Establish a layer order that allows semantic tokens to be customized, but not base tokens.
+ * The layers are prefixed by 'cpd-' because Tailwind will interpret '@layer base' directives.
+ */
+@layer cpd-semantic, custom, cpd-base;`
 
 const themes: (Theme | null)[] = [null, 'light', 'light-hc', 'dark', 'dark-hc']
 const tiers: Tier[] = ['base', 'semantic']
@@ -35,7 +37,7 @@ export function generateCssIndex(): void {
             mediaQuery += ` and (prefers-color-scheme: ${theme!.includes('light') ? 'light' : 'dark'})`
             if (theme!.includes('-hc')) mediaQuery += ` and (prefers-contrast: more)`
           }
-          yield `@import url("./${cssFileName(theme, tier, mq)}") layer(${tier}) ${mediaQuery};`
+          yield `@import url("./${cssFileName(theme, tier, mq)}") layer(cpd-${tier}) ${mediaQuery};`
         }
       }
     }
