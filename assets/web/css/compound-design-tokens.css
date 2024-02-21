@@ -1,21 +1,23 @@
-/* Establish a layer order that allows semantic tokens to be customized, but not base tokens */
-@layer semantic, custom, base;
+/* Establish a layer order that allows semantic tokens to be customized, but not base tokens.
+ * The layers are prefixed by 'cpd-' because Tailwind will interpret '@layer base' directives.
+ */
+@layer cpd-semantic, custom, cpd-base;
 
-@import url("./cpd-common-base.css") layer(base) screen;
-@import url("./cpd-common-semantic.css") layer(semantic) screen;
-@import url("./cpd-theme-light-base.css") layer(base) screen;
-@import url("./cpd-theme-light-base-mq.css") layer(base) screen and (prefers-color-scheme: light);
-@import url("./cpd-theme-light-semantic.css") layer(semantic) screen;
-@import url("./cpd-theme-light-semantic-mq.css") layer(semantic) screen and (prefers-color-scheme: light);
-@import url("./cpd-theme-light-hc-base.css") layer(base) screen;
-@import url("./cpd-theme-light-hc-base-mq.css") layer(base) screen and (prefers-color-scheme: light) and (prefers-contrast: more);
-@import url("./cpd-theme-light-hc-semantic.css") layer(semantic) screen;
-@import url("./cpd-theme-light-hc-semantic-mq.css") layer(semantic) screen and (prefers-color-scheme: light) and (prefers-contrast: more);
-@import url("./cpd-theme-dark-base.css") layer(base) screen;
-@import url("./cpd-theme-dark-base-mq.css") layer(base) screen and (prefers-color-scheme: dark);
-@import url("./cpd-theme-dark-semantic.css") layer(semantic) screen;
-@import url("./cpd-theme-dark-semantic-mq.css") layer(semantic) screen and (prefers-color-scheme: dark);
-@import url("./cpd-theme-dark-hc-base.css") layer(base) screen;
-@import url("./cpd-theme-dark-hc-base-mq.css") layer(base) screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
-@import url("./cpd-theme-dark-hc-semantic.css") layer(semantic) screen;
-@import url("./cpd-theme-dark-hc-semantic-mq.css") layer(semantic) screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
+@import url("./cpd-common-base.css") layer(cpd-base) screen;
+@import url("./cpd-common-semantic.css") layer(cpd-semantic) screen;
+@import url("./cpd-theme-light-base.css") layer(cpd-base) screen;
+@import url("./cpd-theme-light-base-mq.css") layer(cpd-base) screen and (prefers-color-scheme: light);
+@import url("./cpd-theme-light-semantic.css") layer(cpd-semantic) screen;
+@import url("./cpd-theme-light-semantic-mq.css") layer(cpd-semantic) screen and (prefers-color-scheme: light);
+@import url("./cpd-theme-light-hc-base.css") layer(cpd-base) screen;
+@import url("./cpd-theme-light-hc-base-mq.css") layer(cpd-base) screen and (prefers-color-scheme: light) and (prefers-contrast: more);
+@import url("./cpd-theme-light-hc-semantic.css") layer(cpd-semantic) screen;
+@import url("./cpd-theme-light-hc-semantic-mq.css") layer(cpd-semantic) screen and (prefers-color-scheme: light) and (prefers-contrast: more);
+@import url("./cpd-theme-dark-base.css") layer(cpd-base) screen;
+@import url("./cpd-theme-dark-base-mq.css") layer(cpd-base) screen and (prefers-color-scheme: dark);
+@import url("./cpd-theme-dark-semantic.css") layer(cpd-semantic) screen;
+@import url("./cpd-theme-dark-semantic-mq.css") layer(cpd-semantic) screen and (prefers-color-scheme: dark);
+@import url("./cpd-theme-dark-hc-base.css") layer(cpd-base) screen;
+@import url("./cpd-theme-dark-hc-base-mq.css") layer(cpd-base) screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
+@import url("./cpd-theme-dark-hc-semantic.css") layer(cpd-semantic) screen;
+@import url("./cpd-theme-dark-hc-semantic-mq.css") layer(cpd-semantic) screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
