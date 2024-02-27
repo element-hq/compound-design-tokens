@@ -848,21 +848,21 @@
       "color.icon.on-solid.primary": "S:ea0c5e54c356cb6bee8de8e90562483d0678eda5,",
       "color.bg.canvas.default-level-1": "S:d2090ebc95eaf6832efaf96ffac3fe88852c94f0,",
       "color.bg.subtle-secondary-level-0": "S:60d43e6541c7412028717530e17f1009545b21b1,",
-      "color.text.decorative.1": "S:5a74c18895895a597a4a3a7f3a251bd14b790cf3,",
-      "color.text.decorative.2": "S:7f2b0e2c9dbe9ae5ecf60465e96ee14a77481348,",
-      "color.text.decorative.3": "S:e646f9e059d2346b338e82d0da2a031f0274c399,",
-      "color.text.decorative.4": "S:5f3163e917448b25b926181d2b312de21f5356d1,",
-      "color.text.decorative.5": "S:cc8c75cf6b1a695cba285a81534f2d2cbbd407c3,",
-      "color.text.decorative.6": "S:f31abf7dde3b09db7846cc71e73256047e6ac449,",
-      "color.bg.decorative.1": "S:41e75645287e9c431918fe0b416edef1d4cc8241,",
-      "color.bg.decorative.2": "S:57e9dfd566750db70db79e25c8b3192c4163e383,",
-      "color.bg.decorative.3": "S:6396de8a2c68116c71d42741421b3ad61507d397,",
-      "color.bg.decorative.4": "S:0f272865bcb99a7e7cc26495f328762c4ca324f0,",
-      "color.bg.decorative.5": "S:444ad166daa05b6545ecaf184925ff70e713bfda,",
-      "color.bg.decorative.6": "S:6383dec12e6915b780a19afd84f30506def008f8,",
-      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
-      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
-      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
+      "color.text.decorative.1": "S:a0246b28defb378c95228d3eaf7fc5e5538b0686,",
+      "color.text.decorative.2": "S:1e0760a6f59451c51e1a405a9dc57a9b526ed613,",
+      "color.text.decorative.3": "S:6f2d47396409a03ffc9b2be9188da2a22ad406a5,",
+      "color.text.decorative.4": "S:ba745f7be9cc4bc9915e2e8bf2232bd440d3a6e8,",
+      "color.text.decorative.5": "S:7109be7ffecb8d11915b5ef6801d81289e8ce93a,",
+      "color.text.decorative.6": "S:51d47561af8dbbc0a996ccdff6203b1e60e91457,",
+      "color.bg.decorative.1": "S:e648c824ef1937c30b06bb83ba767d5d76db10f2,",
+      "color.bg.decorative.2": "S:321ad641c9ce4bdf24732f6684d0945b77f01db4,",
+      "color.bg.decorative.3": "S:b748bdbd8a483e46743c6e64f398cf9994854957,",
+      "color.bg.decorative.4": "S:fd7e2e5dc70266c1772651bf5d687527bc8bff3c,",
+      "color.bg.decorative.5": "S:70d6c3c53155c5b9f46bddcb90786fd1bbee4ba7,",
+      "color.bg.decorative.6": "S:bb4303d8333cbbe69b935339d79f83221f9393a1,",
+      "color.bg.accent.rest": "S:970bcb6a50e57a4a23b71dbe85982acccdd29275,",
+      "color.bg.accent.hovered": "S:d2a2580bbc3a49b20d80bff6e041d8c63d163096,",
+      "color.bg.accent.pressed": "S:d7d921087a362582f8202a5949e416cb9cbdd11c,"
     }
   },
   {
@@ -1249,9 +1249,9 @@
       "color.bg.decorative.4": "S:3891b21c7c937a794a0c85694736eacd87a23e2e,",
       "color.bg.decorative.5": "S:3617840cfd79273beb4387f91620fec0c60c76f8,",
       "color.bg.decorative.6": "S:95bcb923a6b6d71a1a27850eae46a9e29b255722,",
-      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
-      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
-      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
+      "color.bg.accent.rest": "S:d79f034b90817f53cbba62c197d31c778ea8e09a,",
+      "color.bg.accent.hovered": "S:e0adad4161f53f0ab27fda5b640b1bfb96c0d4bf,",
+      "color.bg.accent.pressed": "S:f174aac7bd4c4ebd76f0449197dc92496a70a640,"
     }
   },
   {
@@ -1638,9 +1638,9 @@
       "color.bg.decorative.4": "S:b5cb781c4ba2b7a1bd9272c76f0c7e9c463aad90,",
       "color.bg.decorative.5": "S:b3bb54fe0776ac140b8c3b404a4531fb10afac8e,",
       "color.bg.decorative.6": "S:543f80cd8cf680f75887f3fbfa89cd4edda8e99f,",
-      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
-      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
-      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
+      "color.bg.accent.rest": "S:d84cae77ebab79e4adffd21e7f0574c4692c8a9a,",
+      "color.bg.accent.hovered": "S:d613a08ee025ee7a9ce9ee6e65fda2b088cd47f8,",
+      "color.bg.accent.pressed": "S:62eae9aca98cf02cfe1599fd456bb4995db5b563,"
     }
   }
 ]
