@@ -23,6 +23,9 @@
   --cpd-color-border-interactive-primary: var(--cpd-color-gray-800);
   --cpd-color-border-focused: var(--cpd-color-blue-900);
   --cpd-color-border-disabled: var(--cpd-color-gray-500);
+  --cpd-color-bg-accent-pressed: var(--cpd-color-green-1100);
+  --cpd-color-bg-accent-hovered: var(--cpd-color-green-1000);
+  --cpd-color-bg-accent-rest: var(--cpd-color-green-900);
   --cpd-color-bg-decorative-6: var(--cpd-color-alpha-orange-300);
   --cpd-color-bg-decorative-5: var(--cpd-color-alpha-pink-300);
   --cpd-color-bg-decorative-4: var(--cpd-color-alpha-purple-300);

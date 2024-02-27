@@ -32,6 +32,9 @@ import androidx.compose.ui.graphics.Color
   */
 @Stable
 class SemanticColors(
+    bgAccentHovered: Color,
+    bgAccentPressed: Color,
+    bgAccentRest: Color,
     bgActionPrimaryDisabled: Color,
     bgActionPrimaryHovered: Color,
     bgActionPrimaryPressed: Color,
@@ -99,6 +102,15 @@ class SemanticColors(
     isLight: Boolean,
 ) {
     var isLight by mutableStateOf(isLight)
+        private set
+    /** Background colour for accent or brand actions. State: Hover */
+    var bgAccentHovered by mutableStateOf(bgAccentHovered)
+        private set
+    /** Background colour for accent or brand actions. State: Pressed */
+    var bgAccentPressed by mutableStateOf(bgAccentPressed)
+        private set
+    /** Background colour for accent or brand actions. State: Rest. */
+    var bgAccentRest by mutableStateOf(bgAccentRest)
         private set
     /** Background colour for primary actions. State: Disabled. */
     var bgActionPrimaryDisabled by mutableStateOf(bgActionPrimaryDisabled)
@@ -297,6 +309,9 @@ Elevation: Default (Level 1). */
         private set
 
     fun copy(
+        bgAccentHovered: Color = this.bgAccentHovered,
+        bgAccentPressed: Color = this.bgAccentPressed,
+        bgAccentRest: Color = this.bgAccentRest,
         bgActionPrimaryDisabled: Color = this.bgActionPrimaryDisabled,
         bgActionPrimaryHovered: Color = this.bgActionPrimaryHovered,
         bgActionPrimaryPressed: Color = this.bgActionPrimaryPressed,
@@ -363,6 +378,9 @@ Elevation: Default (Level 1). */
         textSuccessPrimary: Color = this.textSuccessPrimary,
         isLight: Boolean = this.isLight,
     ) = SemanticColors(
+        bgAccentHovered = bgAccentHovered,
+        bgAccentPressed = bgAccentPressed,
+        bgAccentRest = bgAccentRest,
         bgActionPrimaryDisabled = bgActionPrimaryDisabled,
         bgActionPrimaryHovered = bgActionPrimaryHovered,
         bgActionPrimaryPressed = bgActionPrimaryPressed,
@@ -431,6 +449,9 @@ Elevation: Default (Level 1). */
     )
 
     fun updateColorsFrom(other: SemanticColors) {
+        bgAccentHovered = other.bgAccentHovered
+        bgAccentPressed = other.bgAccentPressed
+        bgAccentRest = other.bgAccentRest
         bgActionPrimaryDisabled = other.bgActionPrimaryDisabled
         bgActionPrimaryHovered = other.bgActionPrimaryHovered
         bgActionPrimaryPressed = other.bgActionPrimaryPressed
