@@ -340,6 +340,9 @@ public class CompoundUIColorTokens {
     public static let colorBorderFocused = colorBlue900
     public static let colorBorderDisabled = colorGray500
     public static let colorBgSubtleSecondaryLevel0 = colorThemeBg
+    public static let colorBgAccentPressed = colorGreen1100
+    public static let colorBgAccentHovered = colorGreen1000
+    public static let colorBgAccentRest = colorGreen900
     public static let colorBgDecorative6 = colorAlphaOrange300
     public static let colorBgDecorative5 = colorAlphaPink300
     public static let colorBgDecorative4 = colorAlphaPurple300

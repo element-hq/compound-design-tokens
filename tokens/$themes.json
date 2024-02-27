@@ -470,7 +470,10 @@
       "color.bg.decorative.3": "S:12348db238c91a726b220b01b1e14a1d699102d4,",
       "color.bg.decorative.4": "S:210cb1fc090facc2f2f87fe66bd48d72aac870ff,",
       "color.bg.decorative.5": "S:fb0c200f3f19c525817025c836d00a7294e4b228,",
-      "color.bg.decorative.6": "S:49026394d40f4240fa4fdb31af568c3828492701,"
+      "color.bg.decorative.6": "S:49026394d40f4240fa4fdb31af568c3828492701,",
+      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
+      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
+      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
     }
   },
   {
@@ -844,7 +847,22 @@
       "color.icon.info.primary": "S:3ab8a17c57062f96c18c2eb5c9dd7dad72360e3f,",
       "color.icon.on-solid.primary": "S:ea0c5e54c356cb6bee8de8e90562483d0678eda5,",
       "color.bg.canvas.default-level-1": "S:d2090ebc95eaf6832efaf96ffac3fe88852c94f0,",
-      "color.bg.subtle-secondary-level-0": "S:60d43e6541c7412028717530e17f1009545b21b1,"
+      "color.bg.subtle-secondary-level-0": "S:60d43e6541c7412028717530e17f1009545b21b1,",
+      "color.text.decorative.1": "S:5a74c18895895a597a4a3a7f3a251bd14b790cf3,",
+      "color.text.decorative.2": "S:7f2b0e2c9dbe9ae5ecf60465e96ee14a77481348,",
+      "color.text.decorative.3": "S:e646f9e059d2346b338e82d0da2a031f0274c399,",
+      "color.text.decorative.4": "S:5f3163e917448b25b926181d2b312de21f5356d1,",
+      "color.text.decorative.5": "S:cc8c75cf6b1a695cba285a81534f2d2cbbd407c3,",
+      "color.text.decorative.6": "S:f31abf7dde3b09db7846cc71e73256047e6ac449,",
+      "color.bg.decorative.1": "S:41e75645287e9c431918fe0b416edef1d4cc8241,",
+      "color.bg.decorative.2": "S:57e9dfd566750db70db79e25c8b3192c4163e383,",
+      "color.bg.decorative.3": "S:6396de8a2c68116c71d42741421b3ad61507d397,",
+      "color.bg.decorative.4": "S:0f272865bcb99a7e7cc26495f328762c4ca324f0,",
+      "color.bg.decorative.5": "S:444ad166daa05b6545ecaf184925ff70e713bfda,",
+      "color.bg.decorative.6": "S:6383dec12e6915b780a19afd84f30506def008f8,",
+      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
+      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
+      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
     }
   },
   {
@@ -1230,7 +1248,10 @@
       "color.bg.decorative.3": "S:7ea3220dc131d156c60b62afe339bba06bee5693,",
       "color.bg.decorative.4": "S:3891b21c7c937a794a0c85694736eacd87a23e2e,",
       "color.bg.decorative.5": "S:3617840cfd79273beb4387f91620fec0c60c76f8,",
-      "color.bg.decorative.6": "S:95bcb923a6b6d71a1a27850eae46a9e29b255722,"
+      "color.bg.decorative.6": "S:95bcb923a6b6d71a1a27850eae46a9e29b255722,",
+      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
+      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
+      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
     }
   },
   {
@@ -1616,7 +1637,10 @@
       "color.bg.decorative.3": "S:ae0958cec1c103f4646ecffb458bae4f6ef73e39,",
       "color.bg.decorative.4": "S:b5cb781c4ba2b7a1bd9272c76f0c7e9c463aad90,",
       "color.bg.decorative.5": "S:b3bb54fe0776ac140b8c3b404a4531fb10afac8e,",
-      "color.bg.decorative.6": "S:543f80cd8cf680f75887f3fbfa89cd4edda8e99f,"
+      "color.bg.decorative.6": "S:543f80cd8cf680f75887f3fbfa89cd4edda8e99f,",
+      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
+      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
+      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
     }
   }
 ]
