@@ -232,6 +232,23 @@
           "type": "color",
           "description": "Decorative background (6, Orange) for avatars and usernames."
         }
+      },
+      "accent": {
+        "rest": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Background colour for accent or brand actions. State: Rest."
+        },
+        "hovered": {
+          "value": "{color.green.1000}",
+          "type": "color",
+          "description": "Background colour for accent or brand actions. State: Hover"
+        },
+        "pressed": {
+          "value": "{color.green.1100}",
+          "type": "color",
+          "description": "Background colour for accent or brand actions. State: Pressed"
+        }
       }
     },
     "border": {
