@@ -212,6 +212,7 @@ export const cpdIconSpinner : string;
 export const cpdIconSpotlight : string;
 export const cpdIconStrikethrough : string;
 export const cpdIconSwitchCameraSolid : string;
+export const cpdIconTakePhotoSolid : string;
 export const cpdIconTakePhoto : string;
 export const cpdIconTextFormatting : string;
 export const cpdIconThreadsSolid : string;
