@@ -36,6 +36,7 @@ public class CompoundIcons {
     public let threadsSolid = Image("threadsSolid", bundle: Bundle.module) 
     public let textFormatting = Image("textFormatting", bundle: Bundle.module) 
     public let takePhoto = Image("takePhoto", bundle: Bundle.module) 
+    public let takePhotoSolid = Image("takePhotoSolid", bundle: Bundle.module) 
     public let switchCameraSolid = Image("switchCameraSolid", bundle: Bundle.module) 
     public let strikethrough = Image("strikethrough", bundle: Bundle.module) 
     public let spotlight = Image("spotlight", bundle: Bundle.module) 

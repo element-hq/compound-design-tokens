@@ -433,6 +433,9 @@ object CompoundIcons {
     @Composable fun TakePhoto(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_take_photo)
     }
+    @Composable fun TakePhotoSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_take_photo_solid)
+    }
     @Composable fun TextFormatting(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_text_formatting)
     }
@@ -658,6 +661,7 @@ object CompoundIcons {
         Strikethrough(),
         SwitchCameraSolid(),
         TakePhoto(),
+        TakePhotoSolid(),
         TextFormatting(),
         Threads(),
         ThreadsSolid(),
@@ -826,6 +830,7 @@ object CompoundIcons {
         R.drawable.ic_compound_strikethrough,
         R.drawable.ic_compound_switch_camera_solid,
         R.drawable.ic_compound_take_photo,
+        R.drawable.ic_compound_take_photo_solid,
         R.drawable.ic_compound_text_formatting,
         R.drawable.ic_compound_threads,
         R.drawable.ic_compound_threads_solid,

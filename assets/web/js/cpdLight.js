@@ -212,6 +212,7 @@ export const cpdIconSpinner = "icons/spinner.svg";
 export const cpdIconSpotlight = "icons/spotlight.svg";
 export const cpdIconStrikethrough = "icons/strikethrough.svg";
 export const cpdIconSwitchCameraSolid = "icons/switch-camera-solid.svg";
+export const cpdIconTakePhotoSolid = "icons/take-photo-solid.svg";
 export const cpdIconTakePhoto = "icons/take-photo.svg";
 export const cpdIconTextFormatting = "icons/text-formatting.svg";
 export const cpdIconThreadsSolid = "icons/threads-solid.svg";
