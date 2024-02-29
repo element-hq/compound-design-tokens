@@ -203,32 +203,32 @@
       },
       "decorative": {
         "1": {
-          "value": "{color.alpha.lime.300}",
+          "value": "{color.lime.300}",
           "type": "color",
           "description": "Decorative background (1, Lime) for avatars and usernames."
         },
         "2": {
-          "value": "{color.alpha.cyan.300}",
+          "value": "{color.cyan.300}",
           "type": "color",
           "description": "Decorative background (2, Cyan) for avatars and usernames."
         },
         "3": {
-          "value": "{color.alpha.fuchsia.300}",
+          "value": "{color.fuchsia.300}",
           "type": "color",
           "description": "Decorative background (3, Fuchsia) for avatars and usernames."
         },
         "4": {
-          "value": "{color.alpha.purple.300}",
+          "value": "{color.purple.300}",
           "type": "color",
           "description": "Decorative background (4, Purple) for avatars and usernames."
         },
         "5": {
-          "value": "{color.alpha.pink.300}",
+          "value": "{color.pink.300}",
           "type": "color",
           "description": "Decorative background (5, Pink) for avatars and usernames."
         },
         "6": {
-          "value": "{color.alpha.orange.300}",
+          "value": "{color.orange.300}",
           "type": "color",
           "description": "Decorative background (6, Orange) for avatars and usernames."
         }
