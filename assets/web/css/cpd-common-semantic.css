@@ -26,12 +26,12 @@
   --cpd-color-bg-accent-pressed: var(--cpd-color-green-1100);
   --cpd-color-bg-accent-hovered: var(--cpd-color-green-1000);
   --cpd-color-bg-accent-rest: var(--cpd-color-green-900);
-  --cpd-color-bg-decorative-6: var(--cpd-color-alpha-orange-300);
-  --cpd-color-bg-decorative-5: var(--cpd-color-alpha-pink-300);
-  --cpd-color-bg-decorative-4: var(--cpd-color-alpha-purple-300);
-  --cpd-color-bg-decorative-3: var(--cpd-color-alpha-fuchsia-300);
-  --cpd-color-bg-decorative-2: var(--cpd-color-alpha-cyan-300);
-  --cpd-color-bg-decorative-1: var(--cpd-color-alpha-lime-300);
+  --cpd-color-bg-decorative-6: var(--cpd-color-orange-300);
+  --cpd-color-bg-decorative-5: var(--cpd-color-pink-300);
+  --cpd-color-bg-decorative-4: var(--cpd-color-purple-300);
+  --cpd-color-bg-decorative-3: var(--cpd-color-fuchsia-300);
+  --cpd-color-bg-decorative-2: var(--cpd-color-cyan-300);
+  --cpd-color-bg-decorative-1: var(--cpd-color-lime-300);
   --cpd-color-bg-info-subtle: var(--cpd-color-blue-200);
   --cpd-color-bg-success-subtle: var(--cpd-color-green-200);
   --cpd-color-bg-critical-subtle-hovered: var(--cpd-color-red-300);
