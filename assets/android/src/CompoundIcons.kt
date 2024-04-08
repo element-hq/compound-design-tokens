@@ -169,6 +169,9 @@ object CompoundIcons {
     @Composable fun Extensions(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_extensions)
     }
+    @Composable fun ExtensionsSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_extensions_solid)
+    }
     @Composable fun Favourite(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_favourite)
     }
@@ -303,6 +306,9 @@ object CompoundIcons {
     }
     @Composable fun MicOnSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_mic_on_solid)
+    }
+    @Composable fun Minus(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_minus)
     }
     @Composable fun Mobile(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_mobile)
@@ -573,6 +579,7 @@ object CompoundIcons {
         Expand(),
         ExportArchive(),
         Extensions(),
+        ExtensionsSolid(),
         Favourite(),
         FavouriteSolid(),
         FileError(),
@@ -618,6 +625,7 @@ object CompoundIcons {
         MicOffSolid(),
         MicOn(),
         MicOnSolid(),
+        Minus(),
         Mobile(),
         Notifications(),
         NotificationsOff(),
@@ -742,6 +750,7 @@ object CompoundIcons {
         R.drawable.ic_compound_expand,
         R.drawable.ic_compound_export_archive,
         R.drawable.ic_compound_extensions,
+        R.drawable.ic_compound_extensions_solid,
         R.drawable.ic_compound_favourite,
         R.drawable.ic_compound_favourite_solid,
         R.drawable.ic_compound_file_error,
@@ -787,6 +796,7 @@ object CompoundIcons {
         R.drawable.ic_compound_mic_off_solid,
         R.drawable.ic_compound_mic_on,
         R.drawable.ic_compound_mic_on_solid,
+        R.drawable.ic_compound_minus,
         R.drawable.ic_compound_mobile,
         R.drawable.ic_compound_notifications,
         R.drawable.ic_compound_notifications_off,
