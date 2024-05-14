@@ -463,6 +463,9 @@ object CompoundIcons {
     @Composable fun UnknownSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_unknown_solid)
     }
+    @Composable fun Unread(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_unread)
+    }
     @Composable fun User(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_user)
     }
@@ -677,6 +680,7 @@ object CompoundIcons {
         Underline(),
         Unknown(),
         UnknownSolid(),
+        Unread(),
         User(),
         UserAdd(),
         UserAddSolid(),
@@ -848,6 +852,7 @@ object CompoundIcons {
         R.drawable.ic_compound_underline,
         R.drawable.ic_compound_unknown,
         R.drawable.ic_compound_unknown_solid,
+        R.drawable.ic_compound_unread,
         R.drawable.ic_compound_user,
         R.drawable.ic_compound_user_add,
         R.drawable.ic_compound_user_add_solid,

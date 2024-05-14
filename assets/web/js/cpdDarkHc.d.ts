@@ -223,6 +223,7 @@ export const cpdIconTime : string;
 export const cpdIconUnderline : string;
 export const cpdIconUnknownSolid : string;
 export const cpdIconUnknown : string;
+export const cpdIconUnread : string;
 export const cpdIconUserAddSolid : string;
 export const cpdIconUserAdd : string;
 export const cpdIconUserProfileSolid : string;

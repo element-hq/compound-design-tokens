@@ -223,6 +223,7 @@ export const cpdIconTime = "icons/time.svg";
 export const cpdIconUnderline = "icons/underline.svg";
 export const cpdIconUnknownSolid = "icons/unknown-solid.svg";
 export const cpdIconUnknown = "icons/unknown.svg";
+export const cpdIconUnread = "icons/unread.svg";
 export const cpdIconUserAddSolid = "icons/user-add-solid.svg";
 export const cpdIconUserAdd = "icons/user-add.svg";
 export const cpdIconUserProfileSolid = "icons/user-profile-solid.svg";

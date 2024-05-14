@@ -28,6 +28,7 @@ public class CompoundIcons {
     public let userProfileSolid = Image("userProfileSolid", bundle: Bundle.module) 
     public let userAdd = Image("userAdd", bundle: Bundle.module) 
     public let userAddSolid = Image("userAddSolid", bundle: Bundle.module) 
+    public let unread = Image("unread", bundle: Bundle.module) 
     public let unknown = Image("unknown", bundle: Bundle.module) 
     public let unknownSolid = Image("unknownSolid", bundle: Bundle.module) 
     public let underline = Image("underline", bundle: Bundle.module) 
