@@ -382,6 +382,9 @@ object CompoundIcons {
     @Composable fun ReactionAdd(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction_add)
     }
+    @Composable fun Read(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_read)
+    }
     @Composable fun Reply(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reply)
     }
@@ -653,6 +656,7 @@ object CompoundIcons {
         Quote(),
         Reaction(),
         ReactionAdd(),
+        Read(),
         Reply(),
         Restart(),
         Search(),
@@ -825,6 +829,7 @@ object CompoundIcons {
         R.drawable.ic_compound_quote,
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
+        R.drawable.ic_compound_read,
         R.drawable.ic_compound_reply,
         R.drawable.ic_compound_restart,
         R.drawable.ic_compound_search,

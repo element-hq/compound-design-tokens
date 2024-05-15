@@ -56,6 +56,7 @@ public class CompoundIcons {
     public let search = Image("search", bundle: Bundle.module) 
     public let restart = Image("restart", bundle: Bundle.module) 
     public let reply = Image("reply", bundle: Bundle.module) 
+    public let read = Image("read", bundle: Bundle.module) 
     public let reaction = Image("reaction", bundle: Bundle.module) 
     public let reactionAdd = Image("reactionAdd", bundle: Bundle.module) 
     public let quote = Image("quote", bundle: Bundle.module) 

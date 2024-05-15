@@ -196,6 +196,7 @@ export const cpdIconQrCode : string;
 export const cpdIconQuote : string;
 export const cpdIconReactionAdd : string;
 export const cpdIconReaction : string;
+export const cpdIconRead : string;
 export const cpdIconReply : string;
 export const cpdIconRestart : string;
 export const cpdIconSearch : string;

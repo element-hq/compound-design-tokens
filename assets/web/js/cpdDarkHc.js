@@ -196,6 +196,7 @@ export const cpdIconQrCode = "icons/qr-code.svg";
 export const cpdIconQuote = "icons/quote.svg";
 export const cpdIconReactionAdd = "icons/reaction-add.svg";
 export const cpdIconReaction = "icons/reaction.svg";
+export const cpdIconRead = "icons/read.svg";
 export const cpdIconReply = "icons/reply.svg";
 export const cpdIconRestart = "icons/restart.svg";
 export const cpdIconSearch = "icons/search.svg";
