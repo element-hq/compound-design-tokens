@@ -286,6 +286,12 @@ object CompoundIcons {
     @Composable fun LockSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_lock_solid)
     }
+    @Composable fun MarkAsRead(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_mark_as_read)
+    }
+    @Composable fun MarkAsUnread(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_mark_as_unread)
+    }
     @Composable fun MarkerReadReceipts(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_marker_read_receipts)
     }
@@ -618,6 +624,8 @@ object CompoundIcons {
         Lock(),
         LockOff(),
         LockSolid(),
+        MarkAsRead(),
+        MarkAsUnread(),
         MarkerReadReceipts(),
         Mention(),
         Menu(),
@@ -789,6 +797,8 @@ object CompoundIcons {
         R.drawable.ic_compound_lock,
         R.drawable.ic_compound_lock_off,
         R.drawable.ic_compound_lock_solid,
+        R.drawable.ic_compound_mark_as_read,
+        R.drawable.ic_compound_mark_as_unread,
         R.drawable.ic_compound_marker_read_receipts,
         R.drawable.ic_compound_mention,
         R.drawable.ic_compound_menu,

@@ -164,6 +164,8 @@ export const cpdIconLocationPin : string;
 export const cpdIconLockOff : string;
 export const cpdIconLockSolid : string;
 export const cpdIconLock : string;
+export const cpdIconMarkAsRead : string;
+export const cpdIconMarkAsUnread : string;
 export const cpdIconMarkerReadReceipts : string;
 export const cpdIconMention : string;
 export const cpdIconMenu : string;
