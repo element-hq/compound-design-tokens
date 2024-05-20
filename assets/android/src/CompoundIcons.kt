@@ -286,6 +286,12 @@ object CompoundIcons {
     @Composable fun LockSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_lock_solid)
     }
+    @Composable fun MarkAsRead(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_mark_as_read)
+    }
+    @Composable fun MarkAsUnread(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_mark_as_unread)
+    }
     @Composable fun MarkerReadReceipts(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_marker_read_receipts)
     }
@@ -382,9 +388,6 @@ object CompoundIcons {
     @Composable fun ReactionAdd(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction_add)
     }
-    @Composable fun Read(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_read)
-    }
     @Composable fun Reply(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reply)
     }
@@ -465,9 +468,6 @@ object CompoundIcons {
     }
     @Composable fun UnknownSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_unknown_solid)
-    }
-    @Composable fun Unread(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_unread)
     }
     @Composable fun User(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_user)
@@ -624,6 +624,8 @@ object CompoundIcons {
         Lock(),
         LockOff(),
         LockSolid(),
+        MarkAsRead(),
+        MarkAsUnread(),
         MarkerReadReceipts(),
         Mention(),
         Menu(),
@@ -656,7 +658,6 @@ object CompoundIcons {
         Quote(),
         Reaction(),
         ReactionAdd(),
-        Read(),
         Reply(),
         Restart(),
         Search(),
@@ -684,7 +685,6 @@ object CompoundIcons {
         Underline(),
         Unknown(),
         UnknownSolid(),
-        Unread(),
         User(),
         UserAdd(),
         UserAddSolid(),
@@ -797,6 +797,8 @@ object CompoundIcons {
         R.drawable.ic_compound_lock,
         R.drawable.ic_compound_lock_off,
         R.drawable.ic_compound_lock_solid,
+        R.drawable.ic_compound_mark_as_read,
+        R.drawable.ic_compound_mark_as_unread,
         R.drawable.ic_compound_marker_read_receipts,
         R.drawable.ic_compound_mention,
         R.drawable.ic_compound_menu,
@@ -829,7 +831,6 @@ object CompoundIcons {
         R.drawable.ic_compound_quote,
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
-        R.drawable.ic_compound_read,
         R.drawable.ic_compound_reply,
         R.drawable.ic_compound_restart,
         R.drawable.ic_compound_search,
@@ -857,7 +858,6 @@ object CompoundIcons {
         R.drawable.ic_compound_underline,
         R.drawable.ic_compound_unknown,
         R.drawable.ic_compound_unknown_solid,
-        R.drawable.ic_compound_unread,
         R.drawable.ic_compound_user,
         R.drawable.ic_compound_user_add,
         R.drawable.ic_compound_user_add_solid,
