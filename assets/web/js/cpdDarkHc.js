@@ -621,6 +621,7 @@ export const cpdColorIconSecondaryAlpha = "hsla(211, 91%, 96%, 0.72)";
 export const cpdColorIconTertiaryAlpha = "hsla(216, 94%, 93%, 0.51)";
 export const cpdColorIconQuaternaryAlpha = "hsla(214, 79%, 93%, 0.39)";
 export const cpdColorIconAccentTertiary = "#109173";
+export const cpdColorIconAccentPrimary = "#37c998";
 export const cpdColorIconCriticalPrimary = "#ff968c";
 export const cpdColorIconSuccessPrimary = "#37c998";
 export const cpdColorIconInfoPrimary = "#89b5f6";

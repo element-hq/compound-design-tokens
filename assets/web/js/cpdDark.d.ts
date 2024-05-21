@@ -621,6 +621,7 @@ export const cpdColorIconSecondaryAlpha : string;
 export const cpdColorIconTertiaryAlpha : string;
 export const cpdColorIconQuaternaryAlpha : string;
 export const cpdColorIconAccentTertiary : string;
+export const cpdColorIconAccentPrimary : string;
 export const cpdColorIconCriticalPrimary : string;
 export const cpdColorIconSuccessPrimary : string;
 export const cpdColorIconInfoPrimary : string;
