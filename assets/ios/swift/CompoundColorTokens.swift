@@ -319,6 +319,7 @@ public class CompoundColorTokens {
     public static let colorIconInfoPrimary = colorBlue900
     public static let colorIconSuccessPrimary = colorGreen900
     public static let colorIconCriticalPrimary = colorRed900
+    public static let colorIconAccentPrimary = colorGreen900
     public static let colorIconAccentTertiary = colorGreen800
     public static let colorIconQuaternaryAlpha = colorAlphaGray700
     public static let colorIconTertiaryAlpha = colorAlphaGray800

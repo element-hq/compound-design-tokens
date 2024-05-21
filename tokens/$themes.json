@@ -471,9 +471,10 @@
       "color.bg.decorative.4": "S:210cb1fc090facc2f2f87fe66bd48d72aac870ff,",
       "color.bg.decorative.5": "S:fb0c200f3f19c525817025c836d00a7294e4b228,",
       "color.bg.decorative.6": "S:49026394d40f4240fa4fdb31af568c3828492701,",
-      "color.bg.accent.rest": "S:c1ce7f1ac53b99a301648971274c9ac97bacf10d,",
-      "color.bg.accent.hovered": "S:85425ad871656ba657c960320846ab7853df6172,",
-      "color.bg.accent.pressed": "S:8b742dbca3bd9b20b05ac1eac9ae9464a0e447d6,"
+      "color.bg.accent.rest": "S:0ad925fdff7a16a7b64b279564727c03071f5722,",
+      "color.bg.accent.hovered": "S:6ce4d2e3bf9e5a762dc8077fcf2fa36419cb2562,",
+      "color.bg.accent.pressed": "S:298a3c8274c7f142e4260d93a17d67e5dbad015b,",
+      "color.icon.accent.primary": "S:335e8d3421a11fbd10085c38653cfb1d0972cd36,"
     }
   },
   {
@@ -862,7 +863,8 @@
       "color.bg.decorative.6": "S:bb4303d8333cbbe69b935339d79f83221f9393a1,",
       "color.bg.accent.rest": "S:970bcb6a50e57a4a23b71dbe85982acccdd29275,",
       "color.bg.accent.hovered": "S:d2a2580bbc3a49b20d80bff6e041d8c63d163096,",
-      "color.bg.accent.pressed": "S:d7d921087a362582f8202a5949e416cb9cbdd11c,"
+      "color.bg.accent.pressed": "S:d7d921087a362582f8202a5949e416cb9cbdd11c,",
+      "color.icon.accent.primary": "S:1bad861fc99ed9e04874289a7d3be7cf7fa33772,"
     }
   },
   {
@@ -1251,7 +1253,8 @@
       "color.bg.decorative.6": "S:95bcb923a6b6d71a1a27850eae46a9e29b255722,",
       "color.bg.accent.rest": "S:d79f034b90817f53cbba62c197d31c778ea8e09a,",
       "color.bg.accent.hovered": "S:e0adad4161f53f0ab27fda5b640b1bfb96c0d4bf,",
-      "color.bg.accent.pressed": "S:f174aac7bd4c4ebd76f0449197dc92496a70a640,"
+      "color.bg.accent.pressed": "S:f174aac7bd4c4ebd76f0449197dc92496a70a640,",
+      "color.icon.accent.primary": "S:ca4514d13e1497a75be02cfe41e29f24be2c05ba,"
     }
   },
   {
@@ -1640,7 +1643,8 @@
       "color.bg.decorative.6": "S:543f80cd8cf680f75887f3fbfa89cd4edda8e99f,",
       "color.bg.accent.rest": "S:d84cae77ebab79e4adffd21e7f0574c4692c8a9a,",
       "color.bg.accent.hovered": "S:d613a08ee025ee7a9ce9ee6e65fda2b088cd47f8,",
-      "color.bg.accent.pressed": "S:62eae9aca98cf02cfe1599fd456bb4995db5b563,"
+      "color.bg.accent.pressed": "S:62eae9aca98cf02cfe1599fd456bb4995db5b563,",
+      "color.icon.accent.primary": "S:d3f02cccf95f4800a93ad469d723eca4c9610631,"
     }
   }
 ]

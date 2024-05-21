@@ -68,6 +68,7 @@ class SemanticColors(
     borderInteractivePrimary: Color,
     borderInteractiveSecondary: Color,
     borderSuccessSubtle: Color,
+    iconAccentPrimary: Color,
     iconAccentTertiary: Color,
     iconCriticalPrimary: Color,
     iconDisabled: Color,
@@ -214,6 +215,9 @@ Elevation: Default (Level 1). */
     /** Subtle border colour for success state elements. */
     var borderSuccessSubtle by mutableStateOf(borderSuccessSubtle)
         private set
+    /** Highest contrast accessible accent icons. */
+    var iconAccentPrimary by mutableStateOf(iconAccentPrimary)
+        private set
     /** Lowest contrast accessible accent icons. */
     var iconAccentTertiary by mutableStateOf(iconAccentTertiary)
         private set
@@ -345,6 +349,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary: Color = this.borderInteractivePrimary,
         borderInteractiveSecondary: Color = this.borderInteractiveSecondary,
         borderSuccessSubtle: Color = this.borderSuccessSubtle,
+        iconAccentPrimary: Color = this.iconAccentPrimary,
         iconAccentTertiary: Color = this.iconAccentTertiary,
         iconCriticalPrimary: Color = this.iconCriticalPrimary,
         iconDisabled: Color = this.iconDisabled,
@@ -414,6 +419,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary = borderInteractivePrimary,
         borderInteractiveSecondary = borderInteractiveSecondary,
         borderSuccessSubtle = borderSuccessSubtle,
+        iconAccentPrimary = iconAccentPrimary,
         iconAccentTertiary = iconAccentTertiary,
         iconCriticalPrimary = iconCriticalPrimary,
         iconDisabled = iconDisabled,
@@ -485,6 +491,7 @@ Elevation: Default (Level 1). */
         borderInteractivePrimary = other.borderInteractivePrimary
         borderInteractiveSecondary = other.borderInteractiveSecondary
         borderSuccessSubtle = other.borderSuccessSubtle
+        iconAccentPrimary = other.iconAccentPrimary
         iconAccentTertiary = other.iconAccentTertiary
         iconCriticalPrimary = other.iconCriticalPrimary
         iconDisabled = other.iconDisabled
