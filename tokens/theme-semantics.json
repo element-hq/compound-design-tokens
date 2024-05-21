@@ -362,6 +362,11 @@
           "value": "{color.green.800}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
+        },
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Highest contrast accessible accent icons."
         }
       },
       "critical": {
