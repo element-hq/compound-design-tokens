@@ -1,0 +1,17 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+function FilterIcon(props) {
+  return /*#__PURE__*/_jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    viewBox: "0 0 24 24",
+    ...props,
+    children: /*#__PURE__*/_jsx("path", {
+      d: "M5 7a1 1 0 0 0 0 2h14a1 1 0 1 0 0-2H5Zm3 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm2 5a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1Z"
+    })
+  });
+}
+;
+FilterIcon.displayName = "FilterIcon";
+export default FilterIcon;
