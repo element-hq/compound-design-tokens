@@ -25,17 +25,17 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@tokens-studio/sd-transforms": "^0.4.3",
-    "@types/fs-extra": "^11.0.1",
+    "@tokens-studio/sd-transforms": "^0.12.2",
+    "@types/fs-extra": "^11.0.4",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^18.13.0",
-    "fast-glob": "^3.2.12",
+    "@types/node": "^20.14.6",
+    "fast-glob": "^3.3.2",
     "http-server": "^14.1.1",
     "lodash-es": "^4.17.21",
-    "style-dictionary": "https://github.com/amzn/style-dictionary",
+    "style-dictionary": "3.8.0",
     "svg2vectordrawable": "^2.9.1",
     "tsx": "^4.15.6",
-    "typescript": "^4.9.5"
+    "typescript": "^5.4.5"
   },
   "dependencies": {}
 }
