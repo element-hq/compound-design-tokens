@@ -27,8 +27,8 @@ import svgrPluginJsx from "@svgr/plugin-jsx";
 import { camelCase, startCase } from "lodash-es";
 
 /**
- * Generates `icons/$icons.json` off all the SVG icons discovered in the
- * `icons/` folder
+ * Generates `icons/$icons.json` and React components off all the
+ * SVG icons discovered in the `icons/` folder
  */
 export default async function generateIconTokens(): Promise<void> {
   const outputFileName = "$icons.json";
@@ -45,7 +45,9 @@ export default async function generateIconTokens(): Promise<void> {
   const manifest: Record<string, { value: string; type: "icon" }> = {};
 
   // List of statements to be added to the assets/web/icons/index.js file
-  const statements = [];
+  const indexEsmStatements = [];
+  // The 'module.exports' object for the index.cjs file
+  const indexCjsExportsProperties = [];
 
   for (const icon of icons) {
     const assetPath = path.join(iconsFolder, icon);
@@ -62,7 +64,7 @@ export default async function generateIconTokens(): Promise<void> {
     const componentName = `${startCase(camelCase(parsedPath.name)).replace(/\s/g, "")}Icon`;
 
     // This generates a React component for the icon
-    const result = await svgrTransform(
+    const esm = await svgrTransform(
       svg,
       {
         plugins: [svgrPluginJsx as unknown as ConfigPlugin],
@@ -72,8 +74,7 @@ export default async function generateIconTokens(): Promise<void> {
           babelConfig: {
             plugins: [
               {
-                // For some reason, svgr emits ESM code but without specifying the sourceType, it is treated as CommonJS
-                // This patches the sourceType so that the JSX transform also emits ESM code
+                // This patches the sourceType so that the JSX transform emits ESM code
                 visitor: {
                   Program(program) {
                     program.node.sourceType = "module";
@@ -85,11 +86,8 @@ export default async function generateIconTokens(): Promise<void> {
           } satisfies BabelOptions,
         },
 
-        // Custom template which uses a function instead of an arrow function and sets the component displayName
         template(variables, { tpl }) {
           return tpl`
-          ${variables.imports};
-
           function ${variables.componentName}(${variables.props}) {
             return (
               ${variables.jsx}
@@ -97,7 +95,7 @@ export default async function generateIconTokens(): Promise<void> {
           };
           ${variables.componentName}.displayName = '${variables.componentName}'
 
-          ${variables.exports};
+          export default ${variables.componentName};
         `;
         },
       },
@@ -106,10 +104,45 @@ export default async function generateIconTokens(): Promise<void> {
       },
     );
 
-    // Write the react component to the web output folder
+    const cjs = await svgrTransform(
+      svg,
+      {
+        plugins: [svgrPluginJsx as unknown as ConfigPlugin],
+        icon: true,
+        jsxRuntime: "automatic",
+        jsx: {
+          babelConfig: {
+            plugins: [[babelTransformReactJsx, { runtime: "automatic" }]],
+          } satisfies BabelOptions,
+        },
+
+        template(variables, { tpl }) {
+          return tpl`
+          function ${variables.componentName}(${variables.props}) {
+            return (
+              ${variables.jsx}
+            );
+          };
+          ${variables.componentName}.displayName = '${variables.componentName}'
+
+          module.exports = ${variables.componentName};
+        `;
+        },
+      },
+      {
+        componentName,
+      },
+    );
+
+    // Write the react component to the web output folder, both in cjs and esm format
     await fs.writeFile(
       path.join(webOutput, `${parsedPath.name}.js`),
-      result,
+      esm,
+      "utf-8",
+    );
+    await fs.writeFile(
+      path.join(webOutput, `${parsedPath.name}.cjs`),
+      cjs,
       "utf-8",
     );
 
@@ -134,7 +167,7 @@ export default ${componentName};
 
     // Add the import statement to the list of statements for the index.js
     //   import { default as SomeIcon } from "./some-icon.js";
-    statements.push(
+    indexEsmStatements.push(
       t.exportNamedDeclaration(
         null,
         [
@@ -146,15 +179,42 @@ export default ${componentName};
         t.stringLiteral(`./${parsedPath.name}.js`),
       ),
     );
+
+    // Add the component to the module.exports object for the index.cjs
+    //   SomeIcon: require("./some-icon.cjs"),
+    indexCjsExportsProperties.push(
+      t.objectProperty(
+        t.identifier(componentName),
+        t.callExpression(t.identifier("require"), [
+          t.stringLiteral(`./${parsedPath.name}.cjs`),
+        ]),
+      ),
+    );
   }
 
-  // Generate the index.js file
-  const program = t.program(statements, [], "module");
-  const result = generate.default(program).code;
+  // Craft a program for the index.cjs file
+  //   module.exports = { ... };
+  const cjsProgram = t.program([
+    t.expressionStatement(
+      t.assignmentExpression(
+        "=",
+        t.memberExpression(t.identifier("module"), t.identifier("exports")),
+        t.objectExpression(indexCjsExportsProperties),
+      ),
+    ),
+  ]);
 
-  await fs.writeFile(path.join(webOutput, "index.js"), result, "utf-8");
-  // The index.d.ts is identical to the index as it only re-exports the icons
-  await fs.writeFile(path.join(webOutput, "index.d.ts"), result, "utf-8");
+  // Generate the index.cjs file
+  const cjsCode = generate.default(cjsProgram).code;
+  await fs.writeFile(path.join(webOutput, "index.cjs"), cjsCode, "utf-8");
+
+  // Generate the index.js file
+  const esmProgram = t.program(indexEsmStatements, [], "module");
+  const esmCode = generate.default(esmProgram).code;
+  await fs.writeFile(path.join(webOutput, "index.js"), esmCode, "utf-8");
+
+  // The index.d.ts is identical to the index.js as it only re-exports the icons
+  await fs.writeFile(path.join(webOutput, "index.d.ts"), esmCode, "utf-8");
 
   // Write the icons manifest to the icons folder
   await fs.writeFile(
