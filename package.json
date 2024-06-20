@@ -23,10 +23,12 @@
     },
     "./assets/web/icons": {
       "import": "./assets/web/icons/index.js",
+      "require": "./assets/web/icons/index.cjs",
       "types": "./assets/web/icons/index.d.ts"
     },
     "./assets/web/icons/*": {
       "import": "./assets/web/icons/*.js",
+      "require": "./assets/web/icons/*.cjs",
       "types": "./assets/web/icons/*.d.ts"
     }
   },
