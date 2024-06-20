@@ -21,7 +21,7 @@ import { TransformedToken } from "style-dictionary/types";
 import { FormatterArguments } from "style-dictionary/types/Format";
 import createTemplate from "../utils/createTemplate";
 import iosExclude from "../filters/ios/exclude";
-import _ from "lodash";
+import _ from "lodash-es";
 
 function swiftClassMembers(args: FormatterArguments) {
   return createTemplate(

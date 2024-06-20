@@ -20,7 +20,7 @@ import { TransformedToken } from "style-dictionary/types";
 import { Options } from "style-dictionary/types/Options";
 import { Theme } from "../@types";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
-import _ from "lodash";
+import _ from "lodash-es";
 import isTypographyToken from "../filters/isTypographyToken";
 import { FormatterArguments } from "style-dictionary/types/Format";
 import createTemplate from "../utils/createTemplate";

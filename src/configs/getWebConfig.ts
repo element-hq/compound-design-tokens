@@ -17,7 +17,7 @@ limitations under the License.
 import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
 import { File } from "style-dictionary/types/File";
-import _ from "lodash";
+import _ from "lodash-es";
 import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
 import isCoreToken from "../filters/isCoreToken"
 import { isCoreColor } from "../filters/isCoreColor";
@@ -29,10 +29,10 @@ export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
   const transforms = [
     "ts/resolveMath",
     "ts/size/px",
-    "ts/size/letterspacing",
-    "ts/color/hexrgba",
+    "ts/size/css/letterspacing",
+    "ts/color/css/hexrgba",
     "ts/typography/css/shorthand",
-    "ts/shadow/shorthand",
+    "ts/shadow/css/shorthand",
     "attribute/cti",
     "css/pxToRem",
     "css/percentageToUnitless",

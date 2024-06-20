@@ -14,21 +14,26 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import fs from "fs-extra";
-import path, { dirname } from "path";
+import fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import path from "path";
 
 /**
  * Generates `icons/$icons.json` off all the SVG icons discovered in the
  * `icons/` folder
  */
-export default function generateIconTokens(): void {
+export default async function generateIconTokens(): Promise<void> {
   const outputFileName = "$icons.json";
   const folder = "icons/";
-  const iconsFolder = path.join(dirname(require.main!.filename), folder);
+  const iconsFolder = path.join(fileURLToPath(new URL('../../', import.meta.url)), folder);
 
-  const iconsPath = fs
-    .readdirSync(iconsFolder)
-    .filter((asset) => asset !== ".DS_Store" && asset !== outputFileName)
+  const files = await fs
+    .readdir(iconsFolder);
+
+  const icons = files
+    .filter((asset) => asset.endsWith(".svg"));
+
+  const iconsManifest = Object.fromEntries(icons
     .map((file) => {
       const assetPath = path.join(iconsFolder, file);
       const parsedPath = path.parse(assetPath);
@@ -39,11 +44,11 @@ export default function generateIconTokens(): void {
           type: "icon",
         },
       ];
-    });
+    }));
 
-  fs.writeFileSync(
+  await fs.writeFile(
     path.join(iconsFolder, outputFileName),
-    JSON.stringify({ icon: Object.fromEntries(iconsPath) }),
+    JSON.stringify({ icon: iconsManifest }),
     "utf-8"
   );
 }

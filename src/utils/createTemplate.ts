@@ -14,11 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import _ from "lodash";
+import StyleDictionary, { TransformedToken } from "style-dictionary";
+import _ from "lodash-es";
 import * as fs from "fs";
 import * as path from "path";
 import { FormatterArguments } from "style-dictionary/types/Format";
+import { fileURLToPath } from "url";
   
   /**
    * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.
@@ -27,11 +28,10 @@ import { FormatterArguments } from "style-dictionary/types/Format";
    * @returns 
    */
   export default function createTemplate(templatePath: string, args: FormatterArguments | null) {
-    const template = _.template(fs.readFileSync(path.join(__dirname, templatePath)).toString());
+    const template = _.template(fs.readFileSync(path.join(fileURLToPath(new URL('.', import.meta.url)), templatePath)).toString());
   
-    let allProperties;
     if (args) {
-      const { dictionary, file, options, platform} = args;
+      const { dictionary, file, options } = args;
       const { outputReferences } = options;
       const formatProperty = StyleDictionary.formatHelpers.createPropertyFormatter({
         outputReferences,
@@ -44,6 +44,7 @@ import { FormatterArguments } from "style-dictionary/types/Format";
     
       const fileHeader = StyleDictionary.formatHelpers.fileHeader;
     
+      let allProperties: TransformedToken[];
       if (outputReferences) {
         allProperties = [...dictionary.allProperties].sort(StyleDictionary.formatHelpers.sortByReference(dictionary));
       } else {
