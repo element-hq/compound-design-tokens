@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
+import _ from "lodash-es";
 import type { Transform } from "style-dictionary/types/Transform";
 
 /**
@@ -50,7 +50,7 @@ export function unescapeName(tokenName: string) {
   return tokenName;
 }
 
-/* 
+/*
 Sourced from The Swift Programming Language book:
 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Keywords-and-Punctuation
 */

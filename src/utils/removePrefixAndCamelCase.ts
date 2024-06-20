@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { camelCase, lowerFirst } from "lodash";
+import { camelCase, lowerFirst } from "lodash-es";
 
 /**
  * Removes a given prefix and sets the resulting string to camel case.

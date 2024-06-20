@@ -14,9 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "node:path";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
-import _ from "lodash";
+import _ from "lodash-es";
 import type { Transform } from "style-dictionary/types/Transform";
 import svg2vectordrawable from "svg2vectordrawable";
 
@@ -28,7 +29,10 @@ export default {
   type: "value",
   matcher: (token) => token.type === "icon",
   transformer: (token, platform) => {
-    const iconPath = path.join(dirname(require.main!.filename), token.value);
+    const iconPath = path.join(
+      fileURLToPath(new URL("../../../", import.meta.url)),
+      token.value,
+    );
     const resPath = "../res/drawable";
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android

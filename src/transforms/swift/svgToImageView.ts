@@ -14,7 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "node:path";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
 import type { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
@@ -32,7 +33,7 @@ export default {
     const filename = `${tokenName}.svg`;
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
-      dirname(require.main!.filename),
+      fileURLToPath(new URL("../../../", import.meta.url)),
       token.value,
     );
 

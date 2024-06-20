@@ -3,16 +3,25 @@
   "version": "1.5.0",
   "description": "Compound design tokens",
   "scripts": {
-    "build": "ts-node ./build.ts",
+    "build": "tsx ./build.ts",
     "dev": "http-server .",
     "format": "yarn exec biome -- format",
     "lint": "yarn exec biome -- lint",
     "check": "yarn exec biome -- check",
     "types": "yarn exec tsc -- --noEmit"
   },
-  "keywords": ["compound", "design tokens", "style dictionary", "css"],
-  "files": ["./assets/web/**/*", "./icons/**/*"],
+  "keywords": [
+    "compound",
+    "design tokens",
+    "style dictionary",
+    "css"
+  ],
+  "files": [
+    "./assets/web/**/*",
+    "./icons/**/*"
+  ],
   "main": "assets/web/js/index.js",
+  "type": "module",
   "author": "",
   "license": "Apache-2.0",
   "homepage": "https://github.com/vector-im/compound-design-tokens",
@@ -27,15 +36,15 @@
     "@biomejs/biome": "^1.8.3",
     "@tokens-studio/sd-transforms": "^0.12.2",
     "@types/fs-extra": "^11.0.1",
-    "@types/lodash": "^4.14.191",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^18.13.0",
     "fast-glob": "^3.2.12",
     "http-server": "^14.1.1",
+    "lodash-es": "^4.17.21",
     "style-dictionary": "^3.8.0",
-    "ts-node": "^10.9.1",
+    "svg2vectordrawable": "^2.9.1",
+    "tsx": "^4.15.6",
     "typescript": "^4.9.5"
   },
-  "dependencies": {
-    "svg2vectordrawable": "^2.9.1"
-  }
+  "dependencies": {}
 }
