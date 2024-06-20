@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
+import _ from "lodash-es";
 import { Transform } from "style-dictionary/types/Transform";
 
 /**

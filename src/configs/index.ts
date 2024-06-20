@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as glob from "fast-glob";
+import glob from "fast-glob";
 import { Config } from "style-dictionary/types/Config";
 
 import { Theme, Platform } from "../@types";
@@ -22,12 +22,12 @@ import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
 import { getIOSColorConfig, getIOSUIColorConfig, getCommonIOSConfig } from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 
-function getConfig(platform: Platform) {
+async function getConfig(platform: Platform): Promise<Config> {
   const config: Config = {
     platforms: {},
   };
 
-  config.source = glob.sync([
+  config.source = await glob([
     "tokens/cross-platform.json",
     `tokens/platform-${platform}.json`,
     `icons/$icons.json`,
@@ -35,13 +35,13 @@ function getConfig(platform: Platform) {
   return config;
 }
 
-export function getStyleDictionaryConfig(
+export async function getStyleDictionaryConfig(
   theme: Theme,
   platform: Platform
-): Config {
-  const config: Config = getConfig(platform);
+): Promise<Config> {
+  const config: Config = await getConfig(platform);
 
-  let themeSources = glob.sync([
+  let themeSources = await glob([
     `tokens/theme-${theme}.json`,
     `tokens/theme-semantics.json`,
     `tokens/theme-semantics-${theme}.json`,
@@ -72,10 +72,10 @@ export function getStyleDictionaryConfig(
   return config;
 }
 
-export function getStyleDictionaryCommonConfig(
+export async function getStyleDictionaryCommonConfig(
   platform: Platform
-): Config {
-  const config: Config = getConfig(platform);
+): Promise<Config> {
+  const config: Config = await getConfig(platform);
 
   switch (platform) {
     case "web":

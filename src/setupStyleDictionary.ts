@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as StyleDictionary from "style-dictionary";
+import StyleDictionary from "style-dictionary";
 import { Core } from "style-dictionary";
 import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
@@ -132,13 +132,13 @@ async function setupDictionary(sb: Core) {
 }
 
 export async function themed(theme: Theme, platform: Platform) {
-  const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
+  const sb = StyleDictionary.extend(await getStyleDictionaryConfig(theme, platform));
   setupDictionary(sb);
   return sb;
 }
 
 export async function common(platform: Platform) {
-  const sb = StyleDictionary.extend(getStyleDictionaryCommonConfig(platform));
+  const sb = StyleDictionary.extend(await getStyleDictionaryCommonConfig(platform));
   setupDictionary(sb);
   return sb;
 }

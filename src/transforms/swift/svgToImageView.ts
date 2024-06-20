@@ -14,11 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path from "path";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
 import { unescape } from "./iconTICamel";
+import { fileURLToPath } from "url";
 
 /**
  * A transformer to change svg path to a SwiftUI Image
@@ -34,7 +35,7 @@ export default {
     const filename = tokenName + ".svg";
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
-      dirname(require.main!.filename),
+      fileURLToPath(new URL("../../../", import.meta.url)),
       token.value
     );
 
