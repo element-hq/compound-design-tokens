@@ -35,5 +35,4 @@ const platforms: Platform[] = ["web", "android", "ios"];
     const sb = await setupStyleDictionary.common(platform);
     sb.buildAllPlatforms();
   }
-  fs.copySync("icons", "assets/web/icons", { overwrite: true });
 })();
