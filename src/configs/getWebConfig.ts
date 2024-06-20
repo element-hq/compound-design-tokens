@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
+import _ from "lodash-es";
 import type { File } from "style-dictionary/types/File";
 import type { Platform } from "style-dictionary/types/Platform";
 import type { Theme } from "../@types";

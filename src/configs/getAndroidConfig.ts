@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
+import _ from "lodash-es";
 import StyleDictionary from "style-dictionary";
 import type { TransformedToken } from "style-dictionary/types";
 import type { FormatterArguments } from "style-dictionary/types/Format";

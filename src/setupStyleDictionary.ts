@@ -1,21 +1,18 @@
 /*
-Copyright 2023 The Matrix.org Foundation C.I.C.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
+ Copyright 2023 The Matrix.org Foundation C.I.C.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+ 
 import { registerTransforms } from "@tokens-studio/sd-transforms";
-import * as StyleDictionary from "style-dictionary";
+import StyleDictionary from "style-dictionary";
 import type { Core } from "style-dictionary";
 import type { Transform } from "style-dictionary/types/Transform";
 import type { Named } from "style-dictionary/types/_helpers";
@@ -132,13 +129,17 @@ async function setupDictionary(sb: Core) {
 }
 
 export async function themed(theme: Theme, platform: Platform) {
-  const sb = StyleDictionary.extend(getStyleDictionaryConfig(theme, platform));
+  const sb = StyleDictionary.extend(
+    await getStyleDictionaryConfig(theme, platform),
+  );
   setupDictionary(sb);
   return sb;
 }
 
 export async function common(platform: Platform) {
-  const sb = StyleDictionary.extend(getStyleDictionaryCommonConfig(platform));
+  const sb = StyleDictionary.extend(
+    await getStyleDictionaryCommonConfig(platform),
+  );
   setupDictionary(sb);
   return sb;
 }
