@@ -1,5 +1,5 @@
 <%= options.license ?? '' %>
-<%= fileHeader({file, commentStyle: 'short'}) %>
+<%= fileHeader({file, commentStyle: 'long'}) %>
 
 @file:Suppress("all")
 package <%= file.packageName %>
