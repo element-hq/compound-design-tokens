@@ -3,16 +3,13 @@
 @file:Suppress("all")
 package <%= file.packageName %>
 
-import androidx.compose.runtime.Stable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n') %>
 
-<%= fileHeader({file, commentStyle: 'short'}) %>
+<%= fileHeader({file, commentStyle: 'long'}) %>
 <%
   let colors = allProperties.map(function(prop) {
     return { name: options.fixColorName(prop.name), description: prop.description };
@@ -24,43 +21,16 @@ import androidx.compose.ui.graphics.Color
 /**
   * This class holds all the semantic tokens of the Compound theme.
   */
-@Stable
-class <%= file.className %>(
+@Immutable
+data class <%= file.className %>(
 <%= colors.map(function(color) {
-    return INDENT_LEVEL + color.name + ': Color,'
-  }).join('\n')
-%>
-    isLight: Boolean,
-) {
-    var isLight by mutableStateOf(isLight)
-        private set
-<%= colors.map(function(color) {
-  let comment = "";
-  if (color.description) {
-    comment = INDENT_LEVEL + `/** ${color.description} */\n`
-  }
-  return comment + INDENT_LEVEL + 'var ' + color.name + ' by mutableStateOf(' + color.name + ')\n' + INDENT_2_LEVELS + 'private set'
-}).join('\n' ) %>
-
-    fun copy(
-<%= colors.map(function(color) {
-    return INDENT_2_LEVELS + color.name + ': Color = this.' + color.name + ','
-  }).join('\n')
-%>
-        isLight: Boolean = this.isLight,
-    ) = <%= file.className %>(
-<%= colors.map(function(color) {
-    return INDENT_2_LEVELS + color.name + ' = ' + color.name + ','
-  }).join('\n')
-%>
-        isLight = isLight,
-    )
-
-    fun updateColorsFrom(other: <%= file.className %>) {
-<%= colors.map(function(color) {
-    return INDENT_2_LEVELS + color.name + ' = other.' + color.name
-  }).join('\n')
-    %>
-        isLight = other.isLight
+    let comment = "";
+    if (color.description) {
+      comment = INDENT_LEVEL + `/** ${color.description} */\n`
     }
-}
+    return comment + INDENT_LEVEL + 'val ' + color.name + ': Color,'
+  }).join('\n')
+%>
+    /** True for light theme, false for dark theme. */
+    val isLight: Boolean,
+)
