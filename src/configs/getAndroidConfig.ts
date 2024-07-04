@@ -59,6 +59,13 @@ function composeCoreColors(args: FormatterArguments) {
   );
 }
 
+function composeSemanticColors(args: FormatterArguments) {
+  return createTemplate(
+    "../formats/templates/compose/semantic-colors.kt.template",
+    args
+  );
+}
+
 function composeIcons(args: FormatterArguments) {
   return createTemplate(
     "../formats/templates/compose/icons.kt.template",
@@ -105,10 +112,49 @@ export function getAndroidConfig(theme: Theme): Platform {
     formatter: composeCoreColors,
   });
   StyleDictionary.registerFormat({
+    name: "compose/semantic-colors",
+    formatter: composeSemanticColors,
+  });
+  StyleDictionary.registerFormat({
     name: "compose/icons",
     formatter: composeIcons,
   });
   const className = _.upperFirst(_.camelCase(theme));
+  let valName = "";
+  let themeName = "";
+  let tokenClassName = "";
+  switch(className) {
+    case "Light": {
+      valName = "compoundColorsLight";
+      themeName = "light";
+      tokenClassName = "LightColorTokens";
+      break;
+    }
+    case "LightHc": {
+      valName = "compoundColorsHcLight";
+      themeName = "high contrast light";
+      tokenClassName = "LightHcColorTokens";
+      break;
+    }
+    case "Dark": {
+      valName = "compoundColorsDark";
+      themeName = "dark";
+      tokenClassName = "DarkColorTokens";
+      break;
+    }
+    case "DarkHc": {
+      valName = "compoundColorsHcDark";
+      themeName = "high contrast dark";
+      tokenClassName = "DarkHcColorTokens";
+      break;
+    }
+    default: {
+      valName = "Error";
+      themeName = "Error";
+      tokenClassName = "Error";
+      break;
+    }
+  }
   return {
     transforms: [
       "camelCaseDecimal",
@@ -132,6 +178,27 @@ export function getAndroidConfig(theme: Theme): Platform {
           outputReferences: true,
           import: ["androidx.compose.ui.graphics.Color"],
           isInternal: true,
+        }),
+      },
+      {
+        format: "compose/semantic-colors",
+        destination: `SemanticColors${className}.kt`,
+        className: className + "ColorTokens",
+        packageName: packageName,
+        filter: function (token: TransformedToken) {
+          return token.type == "color" && isNotCoreColor.matcher(token);
+        },
+        options: withDefaultOptions({
+          outputReferences: true,
+          import: [
+            "io.element.android.compound.annotations.CoreColorToken",
+            "io.element.android.compound.tokens.generated.internal." + tokenClassName
+          ],
+          isInternal: true,
+          valName: valName,
+          themeName: themeName,
+          tokenClassName: tokenClassName,
+          isLight: className.startsWith("Light"),
         }),
       },
       // If we find a way to describe semantic colors, it might be possible to move this to 'common'

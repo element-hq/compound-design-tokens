@@ -1,0 +1,25 @@
+<%= options.license ?? '' %>
+<%= fileHeader({file, commentStyle: 'long'}) %>
+
+@file:Suppress("all")
+package <%= file.packageName %>
+
+<%= options.import.map(function(item) {
+    return 'import ' + item
+  }).join('\n')
+%>
+
+/**
+ * Semantic colors for the <%= options.themeName %> Compound theme.
+ */
+@OptIn(CoreColorToken::class)
+val <%= options.valName %> = SemanticColors(
+    <%= allProperties.map(function(prop) {
+      let result = formatProperty(prop)
+      result = result
+        .replace("= ", "= " + options.tokenClassName + ".")
+        .replace("color", "")
+      return result[0].toLowerCase() + result.slice(1);
+    }).sort().join(',\n' + options.indentLevel ) %>,
+    isLight = <%= options.isLight %>,
+)
