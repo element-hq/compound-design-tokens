@@ -135,18 +135,12 @@ function getAppearances(theme: Theme): ColorSetAppearance[] {
   return appearances;
 }
 
-function getOrCreateColorset(path: string): any {
-  let colorset;
+function getOrCreateColorset(path: string): { colors: unknown[] } {
   try {
-    colorset = JSON.parse(fs.readFileSync(path, "utf8"));
-  } catch (_e) {}
-
-  return (
-    colorset ?? {
-      colors: [],
-      ...contents,
-    }
-  );
+    return JSON.parse(fs.readFileSync(path, "utf8"));
+  } catch (_e) {
+    return { colors: [], ...contents };
+  }
 }
 
 export const contents = {

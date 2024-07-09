@@ -17,7 +17,7 @@ limitations under the License.
 import * as fs from "node:fs";
 import * as path from "node:path";
 import _ from "lodash";
-import StyleDictionary from "style-dictionary";
+import StyleDictionary, { type TransformedToken } from "style-dictionary";
 import type { FormatterArguments } from "style-dictionary/types/Format";
 
 /**
@@ -34,9 +34,9 @@ export default function createTemplate(
     fs.readFileSync(path.join(__dirname, templatePath)).toString(),
   );
 
-  let allProperties;
+  let allProperties: TransformedToken[];
   if (args) {
-    const { dictionary, file, options, platform } = args;
+    const { dictionary, file, options } = args;
     const { outputReferences } = options;
     const formatProperty =
       StyleDictionary.formatHelpers.createPropertyFormatter({

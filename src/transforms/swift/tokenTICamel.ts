@@ -32,18 +32,18 @@ export default {
     const name = _.camelCase(
       [prefix].concat(token.path.slice(1, token.path.length)).join(" "),
     );
-    return escape(name);
+    return escapeName(name);
   },
 } as Transform;
 
-function escape(tokenName: string) {
+function escapeName(tokenName: string) {
   if (swiftKeywords.includes(tokenName)) {
     return `\`${tokenName}\``;
   }
   return tokenName;
 }
 
-export function unescape(tokenName: string) {
+export function unescapeName(tokenName: string) {
   if (tokenName.includes("`")) {
     return tokenName.replaceAll("`", "");
   }

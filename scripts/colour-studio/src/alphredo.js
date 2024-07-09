@@ -15,13 +15,13 @@ const hexToRgb = (hex) => {
   ];
 };
 
-const rgbToHsl = (r, g, b) => {
+const rgbToHsl = (r255, g255, b255) => {
   // https://css-tricks.com/converting-color-spaces-in-javascript/
 
   // Make r, g, and b fractions of 1
-  r /= 255;
-  g /= 255;
-  b /= 255;
+  const r = r255 / 255;
+  const g = g255 / 255;
+  const b = b255 / 255;
 
   // Find greatest and smallest channel values
   const cmin = Math.min(r, g, b);
@@ -59,8 +59,8 @@ const rgbToHsl = (r, g, b) => {
   return [h, s, Math.round(l)];
 };
 
-export const hslaToHex = (h, s, l, alpha) => {
-  l /= 100;
+export const hslaToHex = (h, s, l100, alpha) => {
+  const l = l100 / 100;
   const a = (s * Math.min(l, 1 - l)) / 100;
   const f = (n) => {
     const k = (n + h / 30) % 12;

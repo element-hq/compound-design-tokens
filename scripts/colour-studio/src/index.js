@@ -242,7 +242,7 @@ function renderThemeHtml(themeJson, themeName, alpha = false) {
 
   html += `<div class="theme theme--${themeName}" style="background-color: ${background}">`;
 
-  themeJson.forEach((color) => {
+  for (const color of themeJson) {
     if (color.name) {
       if (!alpha) {
         html += `<a class="theme__action" href="${generateContrastGridUrl(
@@ -252,17 +252,17 @@ function renderThemeHtml(themeJson, themeName, alpha = false) {
         )}" target="_blank" rel="noopener">`;
       }
       html += `<div class="theme__hue">`;
-      color.values.forEach((value) => {
+      for (const value of color.values) {
         html += `<div class="theme__swatch" style="background-color: ${
           alpha ? getAlphaColor(value.value, background) : value.value
         }"></div>`;
-      });
+      }
       html += "</div>";
       if (!alpha) {
         html += "</a>";
       }
     }
-  });
+  }
 
   html += "</div>";
 
@@ -348,19 +348,19 @@ function createCssVars(themesJson) {
   let styles = ":root {\n";
 
   for (const themeName of Object.keys(themesJson)) {
-    themesJson[themeName].forEach((group) => {
+    for (const group of themesJson[themeName]) {
       if (group.background) {
         styles += `--color-bg-${themeName}: ${group.background};\n`;
       } else if (group.values) {
-        group.values.forEach((value) => {
+        for (const value of group.values) {
           styles += `--color-${group.name
             .toLowerCase()
             .replace(/\s+/g, "-")}-${value.name.match(/\d+/)}-${themeName}: ${
             value.value
           };\n`;
-        });
+        }
       }
-    });
+    }
   }
 
   styles += "}";
@@ -626,14 +626,15 @@ function addTestHtml(template, themesJson) {
 }
 
 function renderTestCss(template, themesJson, colors) {
-  return Object.keys(themesJson).reduce((css, theme) => {
-    colors.forEach((color) => {
-      css += `${template
-        .replaceAll("{colorName}", color)
-        .replaceAll("{themeName}", theme)}\n`;
-    });
-    return css;
-  }, "");
+  return Object.keys(themesJson)
+    .flatMap((theme) =>
+      colors.map((color) =>
+        template
+          .replaceAll("{colorName}", color)
+          .replaceAll("{themeName}", theme),
+      ),
+    )
+    .join("\n");
 }
 
 function addTestCss(template, themesJson, colors) {
@@ -653,13 +654,13 @@ function generateContrastGridUrl(themesJson, themeName, colorName) {
   const themeJson = themesJson[themeName];
   let contrastGridColors = "";
 
-  themeJson.forEach((color) => {
+  for (const color of themeJson) {
     if (color.name === colorName) {
-      color.values.forEach((swatch) => {
+      for (const swatch of color.value) {
         contrastGridColors += `${swatch.value}, ${swatch.name}\n`;
-      });
+      }
     }
-  });
+  }
 
   const contrastGridSettings =
     "es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18";

@@ -18,7 +18,7 @@ import path, { dirname } from "node:path";
 import fs from "fs-extra";
 import type { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
-import { unescape } from "./tokenTICamel";
+import { unescapeName } from "./tokenTICamel";
 
 /**
  * A transformer to change svg path to a SwiftUI Image
@@ -28,7 +28,7 @@ export default {
   type: "value",
   matcher: (token) => token.type === "icon",
   transformer: (token, platform) => {
-    const tokenName = unescape(token.name);
+    const tokenName = unescapeName(token.name);
     const filename = `${tokenName}.svg`;
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
