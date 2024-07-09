@@ -33,7 +33,7 @@ export default {
     const [val, multiplier] = token.value.split("*");
 
     let transformedValue = !val.includes(".dp")
-      ? val.trim().replace("px", "") + ".dp"
+      ? `${val.trim().replace("px", "")}.dp`
       : val.trim();
 
     /**

@@ -51,11 +51,11 @@ export function getIOSColorConfig(theme: Theme): Platform {
       theme,
     },
     actions: ["ios/colorset"],
-    buildPath: `assets/ios/swift/`,
+    buildPath: "assets/ios/swift/",
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type == "color" && isCoreColor.matcher(token),
+          token.type === "color" && isCoreColor.matcher(token),
         destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -104,11 +104,11 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
     options: {
       theme,
     },
-    buildPath: `assets/ios/swift/`,
+    buildPath: "assets/ios/swift/",
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type == "color" && isCoreColor.matcher(token),
+          token.type === "color" && isCoreColor.matcher(token),
         destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -120,7 +120,7 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
       },
       {
         filter: (token: TransformedToken) =>
-          token.type == "color" && isNotCoreColor.matcher(token),
+          token.type === "color" && isNotCoreColor.matcher(token),
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -156,11 +156,11 @@ export function getCommonIOSConfig(): Platform {
       "swift/svgToImageView",
       "ts/resolveMath",
     ],
-    buildPath: `assets/ios/swift/`,
+    buildPath: "assets/ios/swift/",
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type == "icon" && iosExclude.matcher(token),
+          token.type === "icon" && iosExclude.matcher(token),
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
         options: {
@@ -174,8 +174,8 @@ export function getCommonIOSConfig(): Platform {
       },
       {
         filter: (token: TransformedToken) =>
-          token.type != "color" &&
-          token.type != "icon" &&
+          token.type !== "color" &&
+          token.type !== "icon" &&
           iosExclude.matcher(token),
         destination: "CompoundDesignTokens.swift",
         format: "ios-swift/class.swift",

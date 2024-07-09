@@ -34,7 +34,7 @@ export default {
       // We need an empty `Contents.json` file at the root of the xcassets folder
       // and another one in each colorset folder too
       fs.writeFileSync(
-        assetPath + "/Contents.json",
+        `${assetPath}/Contents.json`,
         JSON.stringify(contents),
         "utf8",
       );
@@ -60,7 +60,7 @@ export default {
       const colorsetPath = `${assetPath}/${coreColor.name}.colorset`;
       fs.ensureDirSync(colorsetPath);
 
-      const colorset = getOrCreateColorset(colorsetPath + "/Contents.json");
+      const colorset = getOrCreateColorset(`${colorsetPath}/Contents.json`);
 
       const color: {
         idiom: string;
@@ -70,7 +70,7 @@ export default {
         idiom: "universal",
         appearances: getAppearances(platform.options!.theme),
         color: {
-          "color-space": `srgb`,
+          "color-space": "srgb",
           components: getSRGBComponent(coreColor.attributes!.rgb),
           /**
            * The `theme` is not a `style-dictionary` value, but an option we pass
@@ -79,7 +79,7 @@ export default {
         },
       };
       if (color.appearances!.length === 0) {
-        delete color.appearances;
+        color.appearances = undefined;
       }
 
       colorset.colors.push(color);
@@ -90,7 +90,7 @@ export default {
       );
     }
   },
-  undo(dictionary, platform): void {
+  undo(_dictionary, platform): void {
     const assetPath = `${platform.buildPath}/Colors.xcassets`;
     // TODO: Find a better way to do this. We rely on the `light` theme being
     // the first one in the list...
@@ -139,7 +139,7 @@ function getOrCreateColorset(path: string): any {
   let colorset;
   try {
     colorset = JSON.parse(fs.readFileSync(path, "utf8"));
-  } catch (e) {}
+  } catch (_e) {}
 
   return (
     colorset ?? {

@@ -26,7 +26,7 @@ export default {
   matcher: (token) => token.type === "color" || token.type === "icon",
   transformer: (token, options) => {
     let prefix = "";
-    if (options && options.prefix) {
+    if (options?.prefix) {
       prefix = options.prefix;
     }
     const name = _.camelCase(
@@ -39,17 +39,15 @@ export default {
 function escape(tokenName: string) {
   if (swiftKeywords.includes(tokenName)) {
     return `\`${tokenName}\``;
-  } else {
-    return tokenName;
   }
+  return tokenName;
 }
 
 export function unescape(tokenName: string) {
   if (tokenName.includes("`")) {
     return tokenName.replaceAll("`", "");
-  } else {
-    return tokenName;
   }
+  return tokenName;
 }
 
 /* 

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path, { dirname } from "node:path";
 import fs from "fs-extra";
 import _ from "lodash";
 import type { Transform } from "style-dictionary/types/Transform";
@@ -29,7 +29,7 @@ export default {
   matcher: (token) => token.type === "icon",
   transformer: (token, platform) => {
     const iconPath = path.join(dirname(require.main!.filename), token.value);
-    const resPath = `../res/drawable`;
+    const resPath = "../res/drawable";
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android
     // and on Material

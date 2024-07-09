@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path, { dirname } from "node:path";
 import fs from "fs-extra";
 import type { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
@@ -29,7 +29,7 @@ export default {
   matcher: (token) => token.type === "icon",
   transformer: (token, platform) => {
     const tokenName = unescape(token.name);
-    const filename = tokenName + ".svg";
+    const filename = `${tokenName}.svg`;
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
       dirname(require.main!.filename),
@@ -46,7 +46,7 @@ export default {
       );
     }
 
-    const imageAssetPath = outputAssetPath + "/" + tokenName + ".imageset";
+    const imageAssetPath = `${outputAssetPath}/${tokenName}.imageset`;
     fs.ensureDirSync(imageAssetPath);
 
     const svgContent = fs.readFileSync(sourceIconPath, "utf8");

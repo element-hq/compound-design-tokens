@@ -26,7 +26,7 @@ export default {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "line-height";
   },
-  transformer: (token, options) => {
+  transformer: (token) => {
     const val = Number.parseFloat(token.value.replace("%", ""));
     return `${val / 100}`;
   },

@@ -84,7 +84,7 @@ const defaultOptions: Options = {
 };
 
 function withDefaultOptions(options: Options): Options {
-  var mergedOptions: Options = { ...defaultOptions };
+  const mergedOptions: Options = { ...defaultOptions };
   for (const key in options) {
     mergedOptions[key] = options[key];
   }
@@ -171,8 +171,8 @@ export function getAndroidConfig(theme: Theme): Platform {
       {
         format: "compose/core-colors",
         destination: `internal/${className}ColorTokens.kt`,
-        className: className + "ColorTokens",
-        packageName: packageName + ".internal",
+        className: `${className}ColorTokens`,
+        packageName: `${packageName}.internal`,
         filter: (token: TransformedToken) => isCoreColor.matcher(token),
         options: withDefaultOptions({
           outputReferences: true,
@@ -183,16 +183,15 @@ export function getAndroidConfig(theme: Theme): Platform {
       {
         format: "compose/semantic-colors",
         destination: `SemanticColors${className}.kt`,
-        className: className + "ColorTokens",
+        className: `${className}ColorTokens`,
         packageName: packageName,
         filter: (token: TransformedToken) =>
-          token.type == "color" && isNotCoreColor.matcher(token),
+          token.type === "color" && isNotCoreColor.matcher(token),
         options: withDefaultOptions({
           outputReferences: true,
           import: [
             "io.element.android.compound.annotations.CoreColorToken",
-            "io.element.android.compound.tokens.generated.internal." +
-              tokenClassName,
+            `io.element.android.compound.tokens.generated.internal.${tokenClassName}`,
           ],
           isInternal: true,
           valName: valName,
@@ -204,11 +203,11 @@ export function getAndroidConfig(theme: Theme): Platform {
       // If we find a way to describe semantic colors, it might be possible to move this to 'common'
       {
         format: "compose/extra-colors",
-        destination: `SemanticColors.kt`,
+        destination: "SemanticColors.kt",
         className: "SemanticColors",
         packageName: packageName,
         filter: (token: TransformedToken) =>
-          token.type == "color" && isNotCoreColor.matcher(token),
+          token.type === "color" && isNotCoreColor.matcher(token),
         options: withDefaultOptions({
           import: [],
           fixColorName,
@@ -216,10 +215,10 @@ export function getAndroidConfig(theme: Theme): Platform {
       },
       {
         format: "compose/icons",
-        destination: `CompoundIcons.kt`,
+        destination: "CompoundIcons.kt",
         className: "CompoundIcons",
         packageName,
-        filter: (token: TransformedToken) => token.type == "icon",
+        filter: (token: TransformedToken) => token.type === "icon",
         options: withDefaultOptions({
           import: [
             packageNameR,
@@ -251,7 +250,7 @@ export function getCommonAndroidConfig(): Platform {
     files: [
       {
         format: "compose/internal-object",
-        destination: `TypographyTokens.kt`,
+        destination: "TypographyTokens.kt",
         className: "TypographyTokens",
         packageName,
         filter: isTypographyToken.matcher,

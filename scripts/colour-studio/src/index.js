@@ -340,12 +340,7 @@ function fromLeonardoColorToTokenStudio(leonardoColors) {
 
 function renderTokensStudioHtml(themesJson) {
   return Object.keys(themesJson).reduce((html, theme) => {
-    return (
-      html +
-      `<details><summary>${theme}</summary><pre>` +
-      JSON.stringify(fromLeonardoColorToTokenStudio(themesJson[theme])) +
-      `</pre></details>`
-    );
+    return `${html}<details><summary>${theme}</summary><pre>${JSON.stringify(fromLeonardoColorToTokenStudio(themesJson[theme]))}</pre></details>`;
   }, "");
 }
 
@@ -633,10 +628,9 @@ function addTestHtml(template, themesJson) {
 function renderTestCss(template, themesJson, colors) {
   return Object.keys(themesJson).reduce((css, theme) => {
     colors.forEach((color) => {
-      css +=
-        template
-          .replaceAll("{colorName}", color)
-          .replaceAll("{themeName}", theme) + "\n";
+      css += `${template
+        .replaceAll("{colorName}", color)
+        .replaceAll("{themeName}", theme)}\n`;
     });
     return css;
   }, "");

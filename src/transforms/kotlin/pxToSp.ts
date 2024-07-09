@@ -29,5 +29,5 @@ export default {
     );
   },
   transformer: (token: TransformedToken): string =>
-    token.value.toString().replace("px", "") + ".sp",
+    `${token.value.toString().replace("px", "")}.sp`,
 };

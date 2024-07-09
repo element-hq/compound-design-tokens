@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path, { dirname } from "path";
+import path, { dirname } from "node:path";
 import fs from "fs-extra";
 
 /**

@@ -27,6 +27,6 @@ export default {
   },
   transformer: (token: TransformedToken): string => {
     const val = Number.parseFloat(token.value.replace("%", ""));
-    return val / 100 + ".em";
+    return `${val / 100}.em`;
   },
 };

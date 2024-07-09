@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import path from "path";
+import path from "node:path";
 import fs from "fs-extra";
 import type { Theme } from "../@types";
 import { type Tier, cssFileName } from "./cssFileName";
@@ -37,7 +37,7 @@ export function generateCssIndex(): void {
             if (mq) {
               mediaQuery += ` and (prefers-color-scheme: ${theme!.includes("light") ? "light" : "dark"})`;
               if (theme!.includes("-hc"))
-                mediaQuery += ` and (prefers-contrast: more)`;
+                mediaQuery += " and (prefers-contrast: more)";
             }
             yield `@import url("./${cssFileName(theme, tier, mq)}") layer(cpd-${tier}) ${mediaQuery};`;
           }

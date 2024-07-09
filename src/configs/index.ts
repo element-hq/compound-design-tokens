@@ -34,7 +34,7 @@ function getConfig(platform: Platform) {
   config.source = glob.sync([
     "tokens/cross-platform.json",
     `tokens/platform-${platform}.json`,
-    `icons/$icons.json`,
+    "icons/$icons.json",
   ]);
   return config;
 }
@@ -47,7 +47,7 @@ export function getStyleDictionaryConfig(
 
   const themeSources = glob.sync([
     `tokens/theme-${theme}.json`,
-    `tokens/theme-semantics.json`,
+    "tokens/theme-semantics.json",
     `tokens/theme-semantics-${theme}.json`,
   ]);
   if (config.source) {

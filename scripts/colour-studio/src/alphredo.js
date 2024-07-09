@@ -1,7 +1,7 @@
 // https://alphredo.app/js/_calculations.js
 
 function roundToTwo(num) {
-  return +(Math.ceil(num + "e+2") + "e-2");
+  return +`${Math.ceil(`${num}e+2`)}e-2`;
 }
 
 export const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
@@ -24,20 +24,20 @@ const rgbToHsl = (r, g, b) => {
   b /= 255;
 
   // Find greatest and smallest channel values
-  let cmin = Math.min(r, g, b),
-    cmax = Math.max(r, g, b),
-    delta = cmax - cmin,
-    h = 0,
-    s = 0,
-    l = 0;
+  const cmin = Math.min(r, g, b);
+  const cmax = Math.max(r, g, b);
+  const delta = cmax - cmin;
+  let h = 0;
+  let s = 0;
+  let l = 0;
 
   // Calculate hue
   // No difference
-  if (delta == 0) h = 0;
+  if (delta === 0) h = 0;
   // Red is max
-  else if (cmax == r) h = ((g - b) / delta) % 6;
+  else if (cmax === r) h = ((g - b) / delta) % 6;
   // Green is max
-  else if (cmax == g) h = (b - r) / delta + 2;
+  else if (cmax === g) h = (b - r) / delta + 2;
   // Blue is max
   else h = (r - g) / delta + 4;
 
@@ -50,7 +50,7 @@ const rgbToHsl = (r, g, b) => {
   l = (cmax + cmin) / 2;
 
   // Calculate saturation
-  s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+  s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
 
   // Multiply l and s by 100
   s = +(s * 100).toFixed(1);
@@ -115,13 +115,12 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
       l: hsl[2],
       a: 1,
     };
-  } else {
-    const hsl = rgbToHsl(alphaColor[0], alphaColor[1], alphaColor[2]);
-    return {
-      h: hsl[0],
-      s: Math.round(hsl[1] * strength),
-      l: hsl[2],
-      a: alpha,
-    };
   }
+  const hsl = rgbToHsl(alphaColor[0], alphaColor[1], alphaColor[2]);
+  return {
+    h: hsl[0],
+    s: Math.round(hsl[1] * strength),
+    l: hsl[2],
+    a: alpha,
+  };
 };

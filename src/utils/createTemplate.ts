@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as fs from "fs";
-import * as path from "path";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import _ from "lodash";
 import StyleDictionary from "style-dictionary";
 import type { FormatterArguments } from "style-dictionary/types/Format";
@@ -67,8 +67,7 @@ export default function createTemplate(
       formatProperty,
       fileHeader,
     });
-  } else {
-    // Path for very simple templates
-    return template();
   }
+  // Path for very simple templates
+  return template();
 }

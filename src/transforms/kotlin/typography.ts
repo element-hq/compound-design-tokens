@@ -34,7 +34,7 @@ export default {
           } else {
             output += val;
           }
-          output += `,\n`;
+          output += ",\n";
         }
 
         return output;
@@ -42,13 +42,9 @@ export default {
       "TextStyle(\n",
     );
 
-    output +=
-      ARG_INDENT_LEVEL +
-      "platformStyle = PlatformTextStyle(includeFontPadding = false),\n";
-    output +=
-      ARG_INDENT_LEVEL +
-      "lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)\n";
+    output += `${ARG_INDENT_LEVEL}platformStyle = PlatformTextStyle(includeFontPadding = false),\n`;
+    output += `${ARG_INDENT_LEVEL}lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)\n`;
 
-    return output + ANDROID_INDENT_LEVEL + ")";
+    return `${output + ANDROID_INDENT_LEVEL})`;
   },
 } as StyleDictionary.Transform;
