@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import _ from "lodash";
 import * as fs from "fs";
 import * as path from "path";
+import _ from "lodash";
+import StyleDictionary from "style-dictionary";
 import { FormatterArguments } from "style-dictionary/types/Format";
 
 /**

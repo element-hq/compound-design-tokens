@@ -14,9 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import { camelCase } from "lodash";
 import { Platform } from "style-dictionary/types/Platform";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import { camelCase } from "lodash";
 
 /**
  * A transformer to font weight for Material 3

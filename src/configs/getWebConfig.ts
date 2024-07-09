@@ -14,17 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import _ from "lodash";
+import { File } from "style-dictionary/types/File";
 import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
-import { File } from "style-dictionary/types/File";
-import _ from "lodash";
-import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
-import isCoreToken from "../filters/isCoreToken";
 import { isCoreColor } from "../filters/isCoreColor";
+import isCoreToken from "../filters/isCoreToken";
+import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
 import {
   COMPOUND_TOKENS_NAMESPACE,
-  cssFileName,
   Tier,
+  cssFileName,
 } from "../utils/cssFileName";
 
 const basePxFontSize = 16;

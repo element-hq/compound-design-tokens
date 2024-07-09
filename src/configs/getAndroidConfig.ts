@@ -14,17 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import _ from "lodash";
 import StyleDictionary from "style-dictionary";
-import { Platform } from "style-dictionary/types/Platform";
 import { TransformedToken } from "style-dictionary/types";
+import { FormatterArguments } from "style-dictionary/types/Format";
 import { Options } from "style-dictionary/types/Options";
+import { Platform } from "style-dictionary/types/Platform";
 import { Theme } from "../@types";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
-import _ from "lodash";
 import isTypographyToken from "../filters/isTypographyToken";
-import { FormatterArguments } from "style-dictionary/types/Format";
-import createTemplate from "../utils/createTemplate";
 import { ANDROID_INDENT_LEVEL } from "../utils/constants";
+import createTemplate from "../utils/createTemplate";
 import { removePrefixAndCamelCase } from "../utils/removePrefixAndCamelCase";
 
 const packageName = "io.element.android.compound.tokens.generated";

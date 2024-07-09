@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
 import fs from "fs-extra";
-import { Theme } from "../../@types";
+import StyleDictionary from "style-dictionary";
 import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**

@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import fs from "fs-extra";
 import path, { dirname } from "path";
+import fs from "fs-extra";
 
 /**
  * Generates `icons/$icons.json` off all the SVG icons discovered in the

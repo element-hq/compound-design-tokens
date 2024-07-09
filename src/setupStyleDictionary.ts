@@ -14,39 +14,39 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import { registerTransforms } from "@tokens-studio/sd-transforms";
 import * as StyleDictionary from "style-dictionary";
 import { Core } from "style-dictionary";
-import { Named } from "style-dictionary/types/_helpers";
 import { Transform } from "style-dictionary/types/Transform";
-import { registerTransforms } from "@tokens-studio/sd-transforms";
+import { Named } from "style-dictionary/types/_helpers";
 
-import camelCaseDecimal from "./transforms/camelCaseDecimal";
-import pxToCGFloat from "./transforms/swift/pxToCGFloat";
-import toFontWeight from "./transforms/swift/toFontWeight";
-import {
-  getStyleDictionaryConfig,
-  getStyleDictionaryCommonConfig,
-} from "./configs";
+import { Action } from "style-dictionary/types/Action";
 import { Platform, Theme } from "./@types";
 import colorset from "./actions/swift/colorset";
-import { Action } from "style-dictionary/types/Action";
+import {
+  getStyleDictionaryCommonConfig,
+  getStyleDictionaryConfig,
+} from "./configs";
+import iosExclude from "./filters/ios/exclude";
+import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
+import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
+import camelCaseDecimal from "./transforms/camelCaseDecimal";
+import iconsImport from "./transforms/css/iconsImport";
+import percentageToUnitless from "./transforms/css/percentageToUnitless";
 import fontWeight from "./transforms/kotlin/fontWeight";
 import literal from "./transforms/kotlin/literal";
-import typography from "./transforms/kotlin/typography";
+import percentageToEm from "./transforms/kotlin/percentageToEm";
 import pxToDp from "./transforms/kotlin/pxToDp";
 import pxToSp from "./transforms/kotlin/pxToSp";
-import percentageToEm from "./transforms/kotlin/percentageToEm";
+import svgToDrawable from "./transforms/kotlin/svgToDrawable";
+import typography from "./transforms/kotlin/typography";
+import pxToRem from "./transforms/pxToRem";
 import coreColorSet from "./transforms/swift/coreColorSet";
 import coreUIColorSet from "./transforms/swift/coreUIColorSet";
-import iosExclude from "./filters/ios/exclude";
-import pxToRem from "./transforms/pxToRem";
-import percentageToUnitless from "./transforms/css/percentageToUnitless";
-import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
-import svgToDrawable from "./transforms/kotlin/svgToDrawable";
-import iconsImport from "./transforms/css/iconsImport";
-import tokenTICamel from "./transforms/swift/tokenTICamel";
+import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import svgToImageView from "./transforms/swift/svgToImageView";
-import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
+import toFontWeight from "./transforms/swift/toFontWeight";
+import tokenTICamel from "./transforms/swift/tokenTICamel";
 
 async function setupDictionary(sb: Core) {
   await registerTransforms(sb);

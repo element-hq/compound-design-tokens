@@ -17,12 +17,12 @@ limitations under the License.
 import * as glob from "fast-glob";
 import { Config } from "style-dictionary/types/Config";
 
-import { Theme, Platform } from "../@types";
+import { Platform, Theme } from "../@types";
 import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
 import {
+  getCommonIOSConfig,
   getIOSColorConfig,
   getIOSUIColorConfig,
-  getCommonIOSConfig,
 } from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 

@@ -16,9 +16,9 @@ limitations under the License.
 
 import path, { dirname } from "path";
 import fs from "fs-extra";
+import _ from "lodash";
 import { Transform } from "style-dictionary/types/Transform";
 import svg2vectordrawable from "svg2vectordrawable";
-import _ from "lodash";
 
 /**
  * A transformer to change svg path to vector drawable path

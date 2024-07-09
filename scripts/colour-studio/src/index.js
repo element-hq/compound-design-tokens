@@ -1,4 +1,4 @@
-import { Theme, Color, BackgroundColor } from "@adobe/leonardo-contrast-colors";
+import { BackgroundColor, Color, Theme } from "@adobe/leonardo-contrast-colors";
 import chroma from "chroma-js";
 import * as Alphredo from "./alphredo.js";
 import "./styles.css";

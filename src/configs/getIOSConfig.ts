@@ -14,15 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import _ from "lodash";
 import StyleDictionary from "style-dictionary";
-import { Platform } from "style-dictionary/types/Platform";
-import { Theme } from "../@types";
 import { TransformedToken } from "style-dictionary/types";
 import { FormatterArguments } from "style-dictionary/types/Format";
-import createTemplate from "../utils/createTemplate";
+import { Platform } from "style-dictionary/types/Platform";
+import { Theme } from "../@types";
 import iosExclude from "../filters/ios/exclude";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
-import _ from "lodash";
+import createTemplate from "../utils/createTemplate";
 
 function swiftClassMembers(args: FormatterArguments) {
   return createTemplate(

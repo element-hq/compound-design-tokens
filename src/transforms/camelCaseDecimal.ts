@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Platform } from "style-dictionary/types/Platform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { camelCase } from "lodash";
+import { Platform } from "style-dictionary/types/Platform";
 import { Transform } from "style-dictionary/types/Transform";
+import { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
