@@ -44,7 +44,7 @@ import percentageToUnitless from "./transforms/css/percentageToUnitless";
 import { isCoreColor, isNotCoreColor } from "./filters/isCoreColor";
 import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import iconsImport from "./transforms/css/iconsImport";
-import iconTICamel from "./transforms/swift/iconTICamel";
+import tokenTICamel from "./transforms/swift/tokenTICamel";
 import svgToImageView from "./transforms/swift/svgToImageView";
 import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
 
@@ -71,8 +71,8 @@ async function setupDictionary(sb: Core) {
     ...coreUIColorSet,
   } as Named<Transform>);
   sb.registerTransform({
-    name: "swift/icon/ti",
-    ...iconTICamel,
+    name: "swift/token/ti",
+    ...tokenTICamel,
   } as Named<Transform>);
   sb.registerTransform({
     name: "swift/svgToImageView",

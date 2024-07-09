@@ -25,7 +25,7 @@ import { isCoreColor } from "../../filters/isCoreColor";
  */
 export default {
   do(dictionary, platform): void {
-    const assetPath = `${platform.buildPath}/Compound.xcassets`;
+    const assetPath = `${platform.buildPath}/Colors.xcassets`;
     // TODO: Find a better way to do this. We rely on the `light` theme being
     // the first one in the list...
     if (platform.options!.theme === "light") {
@@ -91,7 +91,7 @@ export default {
     }
   },
   undo(dictionary, platform): void {
-    const assetPath = `${platform.buildPath}/Compound.xcassets`;
+    const assetPath = `${platform.buildPath}/Colors.xcassets`;
     // TODO: Find a better way to do this. We rely on the `light` theme being
     // the first one in the list...
     if (platform.options!.theme === "light") {

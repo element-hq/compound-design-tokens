@@ -24,7 +24,7 @@ import { Transform } from "style-dictionary/types/Transform";
 export default {
   type: 'name',
   matcher: function (token) {
-    return token.type === "icon";
+    return token.type == "color" || token.type === "icon";
   },
   transformer: function(token, options) {
     let prefix = ''
