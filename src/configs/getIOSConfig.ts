@@ -69,7 +69,7 @@ export function getIOSColorConfig(theme: Theme): Platform {
       },
       {
         filter: function(token: TransformedToken) {
-          return token.type == 'color' && isNotCoreColor.matcher(token);
+          return token.type === 'color' && isNotCoreColor.matcher(token);
         },
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
