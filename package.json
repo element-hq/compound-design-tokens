@@ -28,6 +28,7 @@
     "url": "git+https://github.com/vector-im/compound-design-tokens.git"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
     "@tokens-studio/sd-transforms": "^0.4.3",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash": "^4.14.191",
