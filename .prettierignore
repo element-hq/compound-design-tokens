@@ -1,5 +1,0 @@
-# Ignore artifacts:
-build
-coverage
-storybook-static
-node_modules
