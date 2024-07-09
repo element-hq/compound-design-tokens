@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change `px` to `dp`
@@ -22,14 +22,14 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
 export default {
   type: "value",
   transitive: true,
-  matcher: function (token: TransformedToken): boolean {
+  matcher: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return (
       (attrs.category === "border" && attrs.type === "width") ||
       attrs.category === "space"
     );
   },
-  transformer: function (token: TransformedToken): string {
+  transformer: (token: TransformedToken): string => {
     const [val, multiplier] = token.value.split("*");
 
     let transformedValue = !val.includes(".dp")

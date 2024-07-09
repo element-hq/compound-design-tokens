@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 import { camelCase } from "lodash";
-import { Platform } from "style-dictionary/types/Platform";
-import { Transform } from "style-dictionary/types/Transform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Platform } from "style-dictionary/types/Platform";
+import type { Transform } from "style-dictionary/types/Transform";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
@@ -25,7 +25,7 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
  */
 export default {
   type: "name",
-  transformer: function (token: TransformedToken, options: Platform): string {
+  transformer: (token: TransformedToken, options: Platform): string => {
     const underscore = "ThisShouldBeAnUnderscore";
     const name = [options.prefix].concat(token.path).join(" ");
     return camelCase(name.replaceAll("_", underscore)).replace(underscore, "_");

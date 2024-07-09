@@ -14,19 +14,19 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change `%` to `em`
  */
 export default {
   type: "value",
-  matcher: function (token: TransformedToken): boolean {
+  matcher: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "letter-spacing";
   },
-  transformer: function (token: TransformedToken): string {
-    const val = parseFloat(token.value.replace("%", ""));
+  transformer: (token: TransformedToken): string => {
+    const val = Number.parseFloat(token.value.replace("%", ""));
     return val / 100 + ".em";
   },
 };

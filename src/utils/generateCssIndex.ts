@@ -16,8 +16,8 @@ limitations under the License.
 
 import path from "path";
 import fs from "fs-extra";
-import { Theme } from "../@types";
-import { Tier, cssFileName } from "./cssFileName";
+import type { Theme } from "../@types";
+import { type Tier, cssFileName } from "./cssFileName";
 
 const header = `/* Establish a layer order that allows semantic tokens to be customized, but not base tokens.
  * The layers are prefixed by 'cpd-' because Tailwind will interpret '@layer base' directives.

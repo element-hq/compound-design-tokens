@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type StyleDictionary from "style-dictionary";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 import isCoreToken from "./isCoreToken";
 
 /**
@@ -23,20 +23,15 @@ import isCoreToken from "./isCoreToken";
  */
 const isCoreColor = {
   name: "isCoreColor",
-  matcher: function (token: TransformedToken): boolean {
-    return (
-      (isCoreToken.matcher(token) ||
-        token.filePath.includes("theme-semantics-")) &&
-      token.attributes?.category === "color"
-    );
-  },
+  matcher: (token: TransformedToken): boolean =>
+    (isCoreToken.matcher(token) ||
+      token.filePath.includes("theme-semantics-")) &&
+    token.attributes?.category === "color",
 } as StyleDictionary.Filter;
 
 const isNotCoreColor = {
   name: "isNotCoreColor",
-  matcher: function (token: TransformedToken): boolean {
-    return !isCoreColor.matcher(token);
-  },
+  matcher: (token: TransformedToken): boolean => !isCoreColor.matcher(token),
 };
 
 export { isCoreColor, isNotCoreColor };

@@ -16,11 +16,11 @@ limitations under the License.
 
 import _ from "lodash";
 import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types";
-import { FormatterArguments } from "style-dictionary/types/Format";
-import { Options } from "style-dictionary/types/Options";
-import { Platform } from "style-dictionary/types/Platform";
-import { Theme } from "../@types";
+import type { TransformedToken } from "style-dictionary/types";
+import type { FormatterArguments } from "style-dictionary/types/Format";
+import type { Options } from "style-dictionary/types/Options";
+import type { Platform } from "style-dictionary/types/Platform";
+import type { Theme } from "../@types";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
 import isTypographyToken from "../filters/isTypographyToken";
 import { ANDROID_INDENT_LEVEL } from "../utils/constants";
@@ -70,7 +70,7 @@ function composeIcons(args: FormatterArguments) {
   return createTemplate("../formats/templates/compose/icons.kt.template", args);
 }
 
-let defaultOptions: Options = {
+const defaultOptions: Options = {
   showFileHeader: true,
   fileHeader: () => [
     "!!! WARNING !!!",
@@ -96,7 +96,7 @@ function fixColorName(colorName: string): string {
 }
 
 function getIconName(iconName: string): string {
-  let camelCaseName = removePrefixAndCamelCase(iconName, "icon");
+  const camelCaseName = removePrefixAndCamelCase(iconName, "icon");
   return camelCaseName.charAt(0).toUpperCase() + camelCaseName.slice(1);
 }
 
@@ -173,9 +173,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         destination: `internal/${className}ColorTokens.kt`,
         className: className + "ColorTokens",
         packageName: packageName + ".internal",
-        filter: function (token: TransformedToken) {
-          return isCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) => isCoreColor.matcher(token),
         options: withDefaultOptions({
           outputReferences: true,
           import: ["androidx.compose.ui.graphics.Color"],
@@ -187,9 +185,8 @@ export function getAndroidConfig(theme: Theme): Platform {
         destination: `SemanticColors${className}.kt`,
         className: className + "ColorTokens",
         packageName: packageName,
-        filter: function (token: TransformedToken) {
-          return token.type == "color" && isNotCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "color" && isNotCoreColor.matcher(token),
         options: withDefaultOptions({
           outputReferences: true,
           import: [
@@ -210,9 +207,8 @@ export function getAndroidConfig(theme: Theme): Platform {
         destination: `SemanticColors.kt`,
         className: "SemanticColors",
         packageName: packageName,
-        filter: function (token: TransformedToken) {
-          return token.type == "color" && isNotCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "color" && isNotCoreColor.matcher(token),
         options: withDefaultOptions({
           import: [],
           fixColorName,
@@ -223,9 +219,7 @@ export function getAndroidConfig(theme: Theme): Platform {
         destination: `CompoundIcons.kt`,
         className: "CompoundIcons",
         packageName,
-        filter: function (token: TransformedToken) {
-          return token.type == "icon";
-        },
+        filter: (token: TransformedToken) => token.type == "icon",
         options: withDefaultOptions({
           import: [
             packageNameR,

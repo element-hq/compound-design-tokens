@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Platform, Theme } from "./src/@types/index";
+import type { Platform, Theme } from "./src/@types/index";
 import * as setupStyleDictionary from "./src/setupStyleDictionary";
 import generateIconTokens from "./src/utils/generateIconTokens";
 

@@ -16,12 +16,12 @@ limitations under the License.
 
 import { registerTransforms } from "@tokens-studio/sd-transforms";
 import * as StyleDictionary from "style-dictionary";
-import { Core } from "style-dictionary";
-import { Transform } from "style-dictionary/types/Transform";
-import { Named } from "style-dictionary/types/_helpers";
+import type { Core } from "style-dictionary";
+import type { Transform } from "style-dictionary/types/Transform";
+import type { Named } from "style-dictionary/types/_helpers";
 
-import { Action } from "style-dictionary/types/Action";
-import { Platform, Theme } from "./@types";
+import type { Action } from "style-dictionary/types/Action";
+import type { Platform, Theme } from "./@types";
 import colorset from "./actions/swift/colorset";
 import {
   getStyleDictionaryCommonConfig,

@@ -17,7 +17,7 @@ limitations under the License.
 import path, { dirname } from "path";
 import fs from "fs-extra";
 import _ from "lodash";
-import { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types/Transform";
 import svg2vectordrawable from "svg2vectordrawable";
 
 /**
@@ -26,10 +26,8 @@ import svg2vectordrawable from "svg2vectordrawable";
  */
 export default {
   type: "value",
-  matcher: function (token) {
-    return token.type === "icon";
-  },
-  transformer: function (token, platform) {
+  matcher: (token) => token.type === "icon",
+  transformer: (token, platform) => {
     const iconPath = path.join(dirname(require.main!.filename), token.value);
     const resPath = `../res/drawable`;
 
@@ -37,7 +35,7 @@ export default {
     // and on Material
     const imageId = _.snakeCase(token.name.replace("icon", "ic_compound_"));
 
-    let options = {
+    const options = {
       fillBlack: true, // Add black color to path element, defaults to false
     };
 

@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import _ from "lodash";
-import { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types/Transform";
 
 /**
  * A name transformer based on name/ti/camel that only operates on icons,
@@ -23,15 +23,13 @@ import { Transform } from "style-dictionary/types/Transform";
  */
 export default {
   type: "name",
-  matcher: function (token) {
-    return token.type === "color" || token.type === "icon";
-  },
-  transformer: function (token, options) {
+  matcher: (token) => token.type === "color" || token.type === "icon",
+  transformer: (token, options) => {
     let prefix = "";
     if (options && options.prefix) {
       prefix = options.prefix;
     }
-    let name = _.camelCase(
+    const name = _.camelCase(
       [prefix].concat(token.path.slice(1, token.path.length)).join(" "),
     );
     return escape(name);

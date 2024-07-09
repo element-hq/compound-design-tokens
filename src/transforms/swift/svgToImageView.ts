@@ -16,7 +16,7 @@ limitations under the License.
 
 import path, { dirname } from "path";
 import fs from "fs-extra";
-import { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
 import { unescape } from "./tokenTICamel";
 
@@ -26,10 +26,8 @@ import { unescape } from "./tokenTICamel";
  */
 export default {
   type: "value",
-  matcher: function (token) {
-    return token.type === "icon";
-  },
-  transformer: function (token, platform) {
+  matcher: (token) => token.type === "icon",
+  transformer: (token, platform) => {
     const tokenName = unescape(token.name);
     const filename = tokenName + ".svg";
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;

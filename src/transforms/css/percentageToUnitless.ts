@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types/Transform";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
@@ -22,12 +22,12 @@ import { Transform } from "style-dictionary/types/Transform";
  */
 export default {
   type: "value",
-  matcher: function (token) {
+  matcher: (token) => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "line-height";
   },
-  transformer: function (token, options) {
-    const val = parseFloat(token.value.replace("%", ""));
+  transformer: (token, options) => {
+    const val = Number.parseFloat(token.value.replace("%", ""));
     return `${val / 100}`;
   },
 } as Transform;

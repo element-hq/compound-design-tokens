@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Transform } from "style-dictionary/types/Transform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform } from "style-dictionary/types/Transform";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
@@ -32,7 +32,6 @@ export default {
       (attrs.category === "font" && attrs.type === "size")
     );
   },
-  transformer: function (token: TransformedToken): string {
-    return `CGFloat(${token.value.replaceAll('"', "")})`;
-  },
+  transformer: (token: TransformedToken): string =>
+    `CGFloat(${token.value.replaceAll('"', "")})`,
 } as Transform;

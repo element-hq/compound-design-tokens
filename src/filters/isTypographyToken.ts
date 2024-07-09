@@ -14,15 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type StyleDictionary from "style-dictionary";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * Filter only typography tokens.
  */
 export default {
   name: "isTypography",
-  matcher: function (token: TransformedToken): boolean {
-    return token.type === "typography";
-  },
+  matcher: (token: TransformedToken): boolean => token.type === "typography",
 } as StyleDictionary.Filter;

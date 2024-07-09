@@ -14,9 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
-import { Transform } from "style-dictionary/types/Transform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform } from "style-dictionary/types/Transform";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
@@ -26,7 +25,6 @@ import { isCoreColor } from "../../filters/isCoreColor";
 export default {
   type: "value",
   matcher: isCoreColor.matcher,
-  transformer: function (token: TransformedToken) {
-    return `UIColor(named: "${token.name}", in: Bundle.module, compatibleWith: nil)!`;
-  },
+  transformer: (token: TransformedToken) =>
+    `UIColor(named: "${token.name}", in: Bundle.module, compatibleWith: nil)!`,
 } as Transform;

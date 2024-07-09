@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 import * as glob from "fast-glob";
-import { Config } from "style-dictionary/types/Config";
+import type { Config } from "style-dictionary/types/Config";
 
-import { Platform, Theme } from "../@types";
+import type { Platform, Theme } from "../@types";
 import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
 import {
   getCommonIOSConfig,
@@ -45,7 +45,7 @@ export function getStyleDictionaryConfig(
 ): Config {
   const config: Config = getConfig(platform);
 
-  let themeSources = glob.sync([
+  const themeSources = glob.sync([
     `tokens/theme-${theme}.json`,
     `tokens/theme-semantics.json`,
     `tokens/theme-semantics-${theme}.json`,

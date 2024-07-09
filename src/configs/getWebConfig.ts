@@ -15,15 +15,15 @@ limitations under the License.
 */
 
 import _ from "lodash";
-import { File } from "style-dictionary/types/File";
-import { Platform } from "style-dictionary/types/Platform";
-import { Theme } from "../@types";
+import type { File } from "style-dictionary/types/File";
+import type { Platform } from "style-dictionary/types/Platform";
+import type { Theme } from "../@types";
 import { isCoreColor } from "../filters/isCoreColor";
 import isCoreToken from "../filters/isCoreToken";
 import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
 import {
   COMPOUND_TOKENS_NAMESPACE,
-  Tier,
+  type Tier,
   cssFileName,
 } from "../utils/cssFileName";
 

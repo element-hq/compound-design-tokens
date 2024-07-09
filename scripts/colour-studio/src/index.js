@@ -99,7 +99,7 @@ function generateThemeJson(leonardoConfig, theme) {
   const colorSmoothing = leonardoConfig.colorSmoothing;
   const contrastRatios = leonardoConfig.themes[theme].ratios;
 
-  let gray = new BackgroundColor({
+  const gray = new BackgroundColor({
     name: "gray",
     colorKeys: leonardoConfig.colors.gray,
     colorspace: colorSpace,
@@ -107,7 +107,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let blue = new Color({
+  const blue = new Color({
     name: "blue",
     colorKeys: leonardoConfig.colors.blue,
     colorspace: colorSpace,
@@ -115,7 +115,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let cyan = new Color({
+  const cyan = new Color({
     name: "cyan",
     colorKeys: leonardoConfig.colors.cyan,
     colorspace: colorSpace,
@@ -123,7 +123,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let fuchsia = new Color({
+  const fuchsia = new Color({
     name: "fuchsia",
     colorKeys: leonardoConfig.colors.fuchsia,
     colorspace: colorSpace,
@@ -131,7 +131,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let green = new Color({
+  const green = new Color({
     name: "green",
     colorKeys: leonardoConfig.colors.green,
     colorspace: colorSpace,
@@ -139,7 +139,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let lime = new Color({
+  const lime = new Color({
     name: "lime",
     colorKeys: leonardoConfig.colors.lime,
     colorspace: colorSpace,
@@ -147,7 +147,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let orange = new Color({
+  const orange = new Color({
     name: "orange",
     colorKeys: leonardoConfig.colors.orange,
     colorspace: colorSpace,
@@ -155,7 +155,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let pink = new Color({
+  const pink = new Color({
     name: "pink",
     colorKeys: leonardoConfig.colors.pink,
     colorspace: colorSpace,
@@ -163,7 +163,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let purple = new Color({
+  const purple = new Color({
     name: "purple",
     colorKeys: leonardoConfig.colors.purple,
     colorspace: colorSpace,
@@ -171,7 +171,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let red = new Color({
+  const red = new Color({
     name: "red",
     colorKeys: leonardoConfig.colors.red,
     colorspace: colorSpace,
@@ -179,7 +179,7 @@ function generateThemeJson(leonardoConfig, theme) {
     smooth: colorSmoothing,
   });
 
-  let yellow = new Color({
+  const yellow = new Color({
     name: "yellow",
     colorKeys: leonardoConfig.colors.yellow,
     colorspace: colorSpace,
@@ -201,7 +201,7 @@ function generateThemeJson(leonardoConfig, theme) {
     pink,
   };
 
-  let leonardoTheme = new Theme({
+  const leonardoTheme = new Theme({
     colors: Object.values(colorMap),
     backgroundColor: colorMap[leonardoConfig.backgroundColor],
     contrast: leonardoConfig.themes[theme].contrast,
@@ -238,7 +238,7 @@ function generateThemesJson(leonardoConfig) {
 
 function renderThemeHtml(themeJson, themeName, alpha = false) {
   let html = "";
-  let background = themeJson[0].background;
+  const background = themeJson[0].background;
 
   html += `<div class="theme theme--${themeName}" style="background-color: ${background}">`;
 
@@ -284,10 +284,10 @@ function renderThemesHtml(themesJson, alpha = false) {
 }
 
 function fromLeonardoColorToTokenStudio(leonardoColors) {
-  let background = leonardoColors[0].background;
-  let output = {};
+  const background = leonardoColors[0].background;
+  const output = {};
 
-  output.color = leonardoColors.reduce(function (memo, entry) {
+  output.color = leonardoColors.reduce((memo, entry) => {
     if (entry.background) {
       memo.theme = {
         bg: {
@@ -314,7 +314,7 @@ function fromLeonardoColorToTokenStudio(leonardoColors) {
     return memo;
   }, {});
 
-  output.color.alpha = leonardoColors.reduce(function (memo, entry) {
+  output.color.alpha = leonardoColors.reduce((memo, entry) => {
     if (entry.values) {
       for (const value of entry.values) {
         const [name, shade] = value.name.split(/(\d+)/);
@@ -624,7 +624,7 @@ function renderTestHtml(template, themesJson) {
 }
 
 function addTestHtml(template, themesJson) {
-  let testContainer = document.createElement("div");
+  const testContainer = document.createElement("div");
   testContainer.className = "tests__case";
   testContainer.innerHTML = renderTestHtml(template, themesJson);
   document.querySelector(".tests").appendChild(testContainer);
@@ -656,7 +656,7 @@ addTestHtml(templateHtmlLabels, themesJson);
 addTestCss(templateCssLabels, themesJson, getHues(leonardoConfig));
 
 function generateContrastGridUrl(themesJson, themeName, colorName) {
-  let themeJson = themesJson[themeName];
+  const themeJson = themesJson[themeName];
   let contrastGridColors = "";
 
   themeJson.forEach((color) => {
@@ -667,7 +667,7 @@ function generateContrastGridUrl(themesJson, themeName, colorName) {
     }
   });
 
-  let contrastGridSettings =
+  const contrastGridSettings =
     "es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18";
 
   contrastGridColors = encodeURIComponent(contrastGridColors);

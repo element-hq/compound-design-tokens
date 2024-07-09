@@ -14,21 +14,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to change `px` to `sp`
  */
 export default {
   type: "value",
-  matcher: function (token: TransformedToken): boolean {
+  matcher: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return (
       attrs.category === "font" &&
       (attrs.type === "line-height" || attrs.type === "size")
     );
   },
-  transformer: function (token: TransformedToken): string {
-    return token.value.toString().replace("px", "") + ".sp";
-  },
+  transformer: (token: TransformedToken): string =>
+    token.value.toString().replace("px", "") + ".sp",
 };

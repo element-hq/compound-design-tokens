@@ -14,15 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type StyleDictionary from "style-dictionary";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * Filter the core tokens
  */
 export default {
   name: "isCoreToken",
-  matcher: function (token: TransformedToken): boolean {
+  matcher: (token: TransformedToken): boolean => {
     /**
      * all tokens that are not in the semantics files are "core" and should
      * only be used directly under rare occasions

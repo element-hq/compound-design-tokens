@@ -26,7 +26,7 @@ export function removePrefixAndCamelCase(
   original: string,
   prefix: string,
 ): string {
-  let regex = new RegExp("^" + prefix);
-  let trimmed = original.replace(regex, "");
+  const regex = new RegExp("^" + prefix);
+  const trimmed = original.replace(regex, "");
   return camelCase(lowerFirst(trimmed));
 }

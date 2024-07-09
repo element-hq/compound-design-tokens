@@ -18,7 +18,7 @@ import * as fs from "fs";
 import * as path from "path";
 import _ from "lodash";
 import StyleDictionary from "style-dictionary";
-import { FormatterArguments } from "style-dictionary/types/Format";
+import type { FormatterArguments } from "style-dictionary/types/Format";
 
 /**
  * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.

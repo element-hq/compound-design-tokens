@@ -1,5 +1,5 @@
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type StyleDictionary from "style-dictionary";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { ANDROID_INDENT_LEVEL } from "../../utils/constants";
 
 export default {
@@ -22,7 +22,7 @@ export default {
       paragraphIndent: "textIndent",
     };
 
-    let ARG_INDENT_LEVEL = ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL;
+    const ARG_INDENT_LEVEL = ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL;
 
     let output = Object.entries(token.value).reduce(
       (props, [propName, val]) => {

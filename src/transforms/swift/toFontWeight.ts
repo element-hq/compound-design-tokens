@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Transform } from "style-dictionary/types/Transform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform } from "style-dictionary/types/Transform";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to weight values to UIKit `Font.Weight`
@@ -27,7 +27,7 @@ export default {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "weight";
   },
-  transformer: function (token: TransformedToken): string {
+  transformer: (token: TransformedToken): string => {
     switch (token.value) {
       case "700":
         return "Font.Weight.bold";

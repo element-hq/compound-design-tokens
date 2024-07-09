@@ -14,12 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash";
 import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types";
-import { FormatterArguments } from "style-dictionary/types/Format";
-import { Platform } from "style-dictionary/types/Platform";
-import { Theme } from "../@types";
+import type { TransformedToken } from "style-dictionary/types";
+import type { FormatterArguments } from "style-dictionary/types/Format";
+import type { Platform } from "style-dictionary/types/Platform";
+import type { Theme } from "../@types";
 import iosExclude from "../filters/ios/exclude";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
 import createTemplate from "../utils/createTemplate";
@@ -55,9 +54,8 @@ export function getIOSColorConfig(theme: Theme): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function (token: TransformedToken) {
-          return token.type == "color" && isCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "color" && isCoreColor.matcher(token),
         destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -68,9 +66,8 @@ export function getIOSColorConfig(theme: Theme): Platform {
         className: "CompoundCoreColorTokens",
       },
       {
-        filter: function (token: TransformedToken) {
-          return token.type === "color" && isNotCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type === "color" && isNotCoreColor.matcher(token),
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -110,9 +107,8 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function (token: TransformedToken) {
-          return token.type == "color" && isCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "color" && isCoreColor.matcher(token),
         destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -123,9 +119,8 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
         className: "CompoundCoreUIColorTokens",
       },
       {
-        filter: function (token: TransformedToken) {
-          return token.type == "color" && isNotCoreColor.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "color" && isNotCoreColor.matcher(token),
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -164,9 +159,8 @@ export function getCommonIOSConfig(): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function (token: TransformedToken) {
-          return token.type == "icon" && iosExclude.matcher(token);
-        },
+        filter: (token: TransformedToken) =>
+          token.type == "icon" && iosExclude.matcher(token),
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
         options: {
@@ -179,13 +173,10 @@ export function getCommonIOSConfig(): Platform {
         className: "CompoundIcons",
       },
       {
-        filter: function (token: TransformedToken) {
-          return (
-            token.type != "color" &&
-            token.type != "icon" &&
-            iosExclude.matcher(token)
-          );
-        },
+        filter: (token: TransformedToken) =>
+          token.type != "color" &&
+          token.type != "icon" &&
+          iosExclude.matcher(token),
         destination: "CompoundDesignTokens.swift",
         format: "ios-swift/class.swift",
         options: {

@@ -9,9 +9,9 @@ export const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 const hexToRgb = (hex) => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return [
-    parseInt(result[1], 16),
-    parseInt(result[2], 16),
-    parseInt(result[3], 16),
+    Number.parseInt(result[1], 16),
+    Number.parseInt(result[2], 16),
+    Number.parseInt(result[3], 16),
   ];
 };
 
@@ -92,7 +92,7 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
     ];
   });
 
-  let alpha = roundToTwo(
+  const alpha = roundToTwo(
     Math.max(
       ...alphaPerChannel.flat().filter((value) => /^-?\d+\.?\d*$/.test(value)),
     ),
@@ -107,7 +107,7 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
   });
 
   // If no alpha color was found, return original, otherwise return alpha color
-  if (alphaColor.includes(NaN)) {
+  if (alphaColor.includes(Number.NaN)) {
     const hsl = rgbToHsl(color[0], color[1], color[2]);
     return {
       h: hsl[0],

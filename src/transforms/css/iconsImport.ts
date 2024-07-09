@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types/Transform";
 
 /**
  * transforms path to a `url()` in CSS
@@ -22,10 +22,6 @@ import { Transform } from "style-dictionary/types/Transform";
  */
 export default {
   type: "value",
-  matcher: function (token) {
-    return token.type === "icon";
-  },
-  transformer: function (token) {
-    return `url(../${token.value})`;
-  },
+  matcher: (token) => token.type === "icon",
+  transformer: (token) => `url(../${token.value})`,
 } as Transform;

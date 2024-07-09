@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 import fs from "fs-extra";
-import StyleDictionary from "style-dictionary";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
-import { Theme } from "../../@types";
+import type StyleDictionary from "style-dictionary";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**

@@ -14,14 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 import { isNotCoreColor } from "./isCoreColor";
 
 const isSharedAcrossTheme = {
   name: "isSharedAcrossTheme",
-  matcher: function (token: TransformedToken): boolean {
-    return isNotCoreColor.matcher(token) && token.type !== "icon";
-  },
+  matcher: (token: TransformedToken): boolean =>
+    isNotCoreColor.matcher(token) && token.type !== "icon",
 };
 
 export { isSharedAcrossTheme };

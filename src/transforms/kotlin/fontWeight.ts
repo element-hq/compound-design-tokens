@@ -14,20 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { camelCase } from "lodash";
-import { Platform } from "style-dictionary/types/Platform";
-import { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /**
  * A transformer to font weight for Material 3
  */
 export default {
   type: "value",
-  matcher: function (token: TransformedToken): boolean {
+  matcher: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "weight";
   },
-  transformer: function (token: TransformedToken): string {
+  transformer: (token: TransformedToken): string => {
     // See https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight
     return `FontWeight.W${token.value}`;
   },
