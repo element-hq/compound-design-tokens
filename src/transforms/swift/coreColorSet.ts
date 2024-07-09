@@ -27,8 +27,6 @@ export default {
   type: "value",
   matcher: isCoreColor.matcher,
   transformer: function (token: TransformedToken) {
-    return `Color("${_.camelCase(
-      token.path.join(" ")
-    )}", bundle: Bundle.module)`;
+    return `Color("${token.name}", bundle: Bundle.module)`;
   },
 } as Transform;

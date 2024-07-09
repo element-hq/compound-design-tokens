@@ -27,8 +27,6 @@ export default {
   type: "value",
   matcher: isCoreColor.matcher,
   transformer: function (token: TransformedToken) {
-    return `UIColor(named: "${_.camelCase(
-      token.path.join(" ")
-    )}", in: Bundle.module, compatibleWith: nil)!`;
+    return `UIColor(named: "${token.name}", in: Bundle.module, compatibleWith: nil)!`;
   },
 } as Transform;

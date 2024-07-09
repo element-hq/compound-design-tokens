@@ -18,7 +18,7 @@ import path, { dirname } from "path";
 import fs from "fs-extra";
 import { Transform } from "style-dictionary/types/Transform";
 import { contents } from "../../actions/swift/colorset";
-import { unescape } from "./iconTICamel";
+import { unescape } from "./tokenTICamel";
 
 /**
  * A transformer to change svg path to a SwiftUI Image
