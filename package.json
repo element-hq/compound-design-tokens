@@ -4,7 +4,10 @@
   "description": "Compound design tokens",
   "scripts": {
     "build": "ts-node ./build.ts",
-    "dev": "http-server ."
+    "dev": "http-server .",
+    "format": "yarn exec biome -- format",
+    "lint": "yarn exec biome -- lint",
+    "check": "yarn exec biome -- check"
   },
   "keywords": ["compound", "design tokens", "style dictionary", "css"],
   "files": ["./assets/web/**/*", "./icons/**/*"],
