@@ -36,7 +36,7 @@ export default {
       fs.writeFileSync(
         assetPath + "/Contents.json",
         JSON.stringify(contents),
-        "utf8"
+        "utf8",
       );
     } else {
       fs.ensureDirSync(assetPath);
@@ -53,7 +53,7 @@ export default {
           isCoreColor.matcher(token) &&
           !dictionary.usesReference(token.original.value)
         );
-      }
+      },
     );
 
     for (const coreColor of coreColorTokens) {
@@ -86,7 +86,7 @@ export default {
 
       fs.writeFileSync(
         `${colorsetPath}/Contents.json`,
-        JSON.stringify(colorset, null, 2)
+        JSON.stringify(colorset, null, 2),
       );
     }
   },

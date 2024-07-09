@@ -19,7 +19,11 @@ import { Config } from "style-dictionary/types/Config";
 
 import { Theme, Platform } from "../@types";
 import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
-import { getIOSColorConfig, getIOSUIColorConfig, getCommonIOSConfig } from "./getIOSConfig";
+import {
+  getIOSColorConfig,
+  getIOSUIColorConfig,
+  getCommonIOSConfig,
+} from "./getIOSConfig";
 import getWebConfig from "./getWebConfig";
 
 function getConfig(platform: Platform) {
@@ -37,7 +41,7 @@ function getConfig(platform: Platform) {
 
 export function getStyleDictionaryConfig(
   theme: Theme,
-  platform: Platform
+  platform: Platform,
 ): Config {
   const config: Config = getConfig(platform);
 
@@ -72,9 +76,7 @@ export function getStyleDictionaryConfig(
   return config;
 }
 
-export function getStyleDictionaryCommonConfig(
-  platform: Platform
-): Config {
+export function getStyleDictionaryCommonConfig(platform: Platform): Config {
   const config: Config = getConfig(platform);
 
   switch (platform) {

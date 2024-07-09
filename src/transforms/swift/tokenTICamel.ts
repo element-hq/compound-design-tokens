@@ -22,33 +22,35 @@ import { Transform } from "style-dictionary/types/Transform";
  * safely transforming Swift keywords by escaping them with backticks
  */
 export default {
-  type: 'name',
+  type: "name",
   matcher: function (token) {
     return token.type === "color" || token.type === "icon";
   },
-  transformer: function(token, options) {
-    let prefix = ''
+  transformer: function (token, options) {
+    let prefix = "";
     if (options && options.prefix) {
-      prefix = options.prefix
+      prefix = options.prefix;
     }
-    let name = _.camelCase( [prefix].concat(token.path.slice(1, token.path.length)).join(' ') );
-    return escape(name)
+    let name = _.camelCase(
+      [prefix].concat(token.path.slice(1, token.path.length)).join(" "),
+    );
+    return escape(name);
   },
 } as Transform;
 
 function escape(tokenName: string) {
   if (swiftKeywords.includes(tokenName)) {
-    return `\`${tokenName}\``
+    return `\`${tokenName}\``;
   } else {
-    return tokenName
+    return tokenName;
   }
 }
 
 export function unescape(tokenName: string) {
   if (tokenName.includes("`")) {
-    return tokenName.replaceAll("`", "")
+    return tokenName.replaceAll("`", "");
   } else {
-    return tokenName
+    return tokenName;
   }
 }
 
@@ -82,7 +84,7 @@ const swiftKeywords = [
   "subscript",
   "typealias",
   "var",
-  
+
   // statements
   "break",
   "case",
@@ -103,7 +105,7 @@ const swiftKeywords = [
   "switch",
   "where",
   "while",
-  
+
   // expressions and types
   "Any",
   "as",
@@ -119,5 +121,5 @@ const swiftKeywords = [
   "throw",
   "throws",
   "true",
-  "try"
-]
+  "try",
+];

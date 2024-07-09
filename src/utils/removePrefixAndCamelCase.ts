@@ -22,8 +22,11 @@ import { lowerFirst, camelCase } from "lodash";
  * @param prefix the prefix to remove from the string
  * @returns the original string without the prefix in camel case form.
  */
-export function removePrefixAndCamelCase(original: string, prefix: string): string {
-    let regex = new RegExp("^" + prefix);
-    let trimmed = original.replace(regex, '');
-    return camelCase(lowerFirst(trimmed));
+export function removePrefixAndCamelCase(
+  original: string,
+  prefix: string,
+): string {
+  let regex = new RegExp("^" + prefix);
+  let trimmed = original.replace(regex, "");
+  return camelCase(lowerFirst(trimmed));
 }

@@ -30,12 +30,12 @@ export default {
     return token.type === "icon";
   },
   transformer: function (token, platform) {
-    const tokenName = unescape(token.name)
+    const tokenName = unescape(token.name);
     const filename = tokenName + ".svg";
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;
     const sourceIconPath = path.join(
       dirname(require.main!.filename),
-      token.value
+      token.value,
     );
 
     // Create the xcassets folder and its `Contents.json` root file if they don't exist
@@ -44,7 +44,7 @@ export default {
       fs.writeFileSync(
         `${outputAssetPath}/Contents.json`,
         JSON.stringify(contents),
-        "utf-8"
+        "utf-8",
       );
     }
 
@@ -58,13 +58,13 @@ export default {
       // It would theoratically still works but is not convienient when developing
       // as the icon is invisible in the image set
       svgContent.replaceAll("currentColor", "black"),
-      "utf-8"
+      "utf-8",
     );
 
     fs.writeFileSync(
       `${imageAssetPath}/Contents.json`,
       JSON.stringify(getImagesetContents(filename)),
-      "utf-8"
+      "utf-8",
     );
 
     return `Image("${tokenName}", bundle: Bundle.module)`;

@@ -19,13 +19,13 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
 
 /** Font token types used in the project. */
 const fontTokenTypes = [
-  'typography',
-  'fontFamilies',
-  'fontWeights',
-  'letterSpacing',
-  'fontSizes',
-  'lineHeights'
-]
+  "typography",
+  "fontFamilies",
+  "fontWeights",
+  "letterSpacing",
+  "fontSizes",
+  "lineHeights",
+];
 
 /**
  * Filter any token related to fonts (typography, size, spacing, etc.).

@@ -19,40 +19,56 @@ import _ from "lodash";
 import * as fs from "fs";
 import * as path from "path";
 import { FormatterArguments } from "style-dictionary/types/Format";
-  
-  /**
-   * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.
-   * @param templatePath path to the template file in the project
-   * @param args a nullable set of arguments for the formatter, including dictionary and file info, as well as formatting options
-   * @returns 
-   */
-  export default function createTemplate(templatePath: string, args: FormatterArguments | null) {
-    const template = _.template(fs.readFileSync(path.join(__dirname, templatePath)).toString());
-  
-    let allProperties;
-    if (args) {
-      const { dictionary, file, options, platform} = args;
-      const { outputReferences } = options;
-      const formatProperty = StyleDictionary.formatHelpers.createPropertyFormatter({
+
+/**
+ * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.
+ * @param templatePath path to the template file in the project
+ * @param args a nullable set of arguments for the formatter, including dictionary and file info, as well as formatting options
+ * @returns
+ */
+export default function createTemplate(
+  templatePath: string,
+  args: FormatterArguments | null,
+) {
+  const template = _.template(
+    fs.readFileSync(path.join(__dirname, templatePath)).toString(),
+  );
+
+  let allProperties;
+  if (args) {
+    const { dictionary, file, options, platform } = args;
+    const { outputReferences } = options;
+    const formatProperty =
+      StyleDictionary.formatHelpers.createPropertyFormatter({
         outputReferences,
         dictionary,
         formatting: {
-          suffix: '',
-          commentStyle: 'none' // We will add the comment in the format template
-        }
+          suffix: "",
+          commentStyle: "none", // We will add the comment in the format template
+        },
       });
-    
-      const fileHeader = StyleDictionary.formatHelpers.fileHeader;
-    
-      if (outputReferences) {
-        allProperties = [...dictionary.allProperties].sort(StyleDictionary.formatHelpers.sortByReference(dictionary));
-      } else {
-        allProperties = [...dictionary.allProperties].sort(StyleDictionary.formatHelpers.sortByName);
-      }
-    
-      return template({allProperties, file, options, formatProperty, fileHeader});
+
+    const fileHeader = StyleDictionary.formatHelpers.fileHeader;
+
+    if (outputReferences) {
+      allProperties = [...dictionary.allProperties].sort(
+        StyleDictionary.formatHelpers.sortByReference(dictionary),
+      );
     } else {
-      // Path for very simple templates
-      return template();
+      allProperties = [...dictionary.allProperties].sort(
+        StyleDictionary.formatHelpers.sortByName,
+      );
     }
+
+    return template({
+      allProperties,
+      file,
+      options,
+      formatProperty,
+      fileHeader,
+    });
+  } else {
+    // Path for very simple templates
+    return template();
   }
+}

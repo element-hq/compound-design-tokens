@@ -19,9 +19,13 @@ import { Theme } from "../@types";
 import { File } from "style-dictionary/types/File";
 import _ from "lodash";
 import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
-import isCoreToken from "../filters/isCoreToken"
+import isCoreToken from "../filters/isCoreToken";
 import { isCoreColor } from "../filters/isCoreColor";
-import { COMPOUND_TOKENS_NAMESPACE, cssFileName, Tier } from "../utils/cssFileName";
+import {
+  COMPOUND_TOKENS_NAMESPACE,
+  cssFileName,
+  Tier,
+} from "../utils/cssFileName";
 
 const basePxFontSize = 16;
 
@@ -58,7 +62,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     return [
       {
         destination: `${_.camelCase(
-          COMPOUND_TOKENS_NAMESPACE + "." + theme
+          COMPOUND_TOKENS_NAMESPACE + "." + theme,
         )}.d.ts`,
         format: "typescript/es6-declarations",
         options,
@@ -68,7 +72,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     return [
       {
         destination: `${_.camelCase(
-          COMPOUND_TOKENS_NAMESPACE + "." + theme
+          COMPOUND_TOKENS_NAMESPACE + "." + theme,
         )}.js`,
         format: "javascript/es6",
         options,
@@ -78,38 +82,43 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     const common = (tier: Tier): File => ({
       destination: cssFileName(null, tier, false),
       format: "css/variables",
-      filter: t => isSharedAcrossTheme.matcher(t) && isCoreToken.matcher(t) === (tier === 'base'),
+      filter: (t) =>
+        isSharedAcrossTheme.matcher(t) &&
+        isCoreToken.matcher(t) === (tier === "base"),
       options: {
         showFileHeader: false,
         outputReferences: true,
         basePxFontSize,
         selector: `:root, [class*="cpd-theme-"]`,
       },
-    })
+    });
 
     const themed = (tier: Tier, mq: boolean): File => ({
       destination: cssFileName(theme, tier, mq),
       format: "css/variables",
-      filter: t => isCoreColor.matcher(t) && isCoreToken.matcher(t) === (tier === 'base'),
+      filter: (t) =>
+        isCoreColor.matcher(t) && isCoreToken.matcher(t) === (tier === "base"),
       options: {
         showFileHeader: false,
         outputReferences: true,
-        selector: mq ? undefined : `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
+        selector: mq
+          ? undefined
+          : `.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}.${COMPOUND_TOKENS_NAMESPACE}-theme-${theme}`,
         basePxFontSize,
       },
-    })
+    });
 
     return [
-      common('base'),
-      common('semantic'),
+      common("base"),
+      common("semantic"),
       // Generates the theme under a scoped selector
       // e.g. .cpd-dark-hc { /* ... */ }
-      themed('base', false),
-      themed('semantic', false),
+      themed("base", false),
+      themed("semantic", false),
       // Generates the theme under the :root
       // This file is to be imported with a media query import
-      themed('base', true),
-      themed('semantic', true),
+      themed("base", true),
+      themed("semantic", true),
     ];
   }
 }

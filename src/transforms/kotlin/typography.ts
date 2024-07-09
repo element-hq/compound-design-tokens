@@ -24,8 +24,8 @@ export default {
 
     let ARG_INDENT_LEVEL = ANDROID_INDENT_LEVEL + ANDROID_INDENT_LEVEL;
 
-    let output =
-      Object.entries(token.value).reduce((props, [propName, val]) => {
+    let output = Object.entries(token.value).reduce(
+      (props, [propName, val]) => {
         let output = props;
         if (textStylePropertiesMapping[propName]) {
           output += `${ARG_INDENT_LEVEL + textStylePropertiesMapping[propName]} = `;
@@ -38,11 +38,17 @@ export default {
         }
 
         return output;
-      }, "TextStyle(\n");
+      },
+      "TextStyle(\n",
+    );
 
-      output += ARG_INDENT_LEVEL + "platformStyle = PlatformTextStyle(includeFontPadding = false),\n"
-      output += ARG_INDENT_LEVEL + "lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)\n"
-    
-      return output + ANDROID_INDENT_LEVEL + ")";
+    output +=
+      ARG_INDENT_LEVEL +
+      "platformStyle = PlatformTextStyle(includeFontPadding = false),\n";
+    output +=
+      ARG_INDENT_LEVEL +
+      "lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)\n";
+
+    return output + ANDROID_INDENT_LEVEL + ")";
   },
 } as StyleDictionary.Transform;

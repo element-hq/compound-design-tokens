@@ -21,8 +21,8 @@ import { TransformedToken } from "style-dictionary/types/TransformedToken";
  * Filter only typography tokens.
  */
 export default {
-    name: "isTypography",
-    matcher: function (token: TransformedToken): boolean {
-      return token.type === 'typography';
-    },
-  } as StyleDictionary.Filter;
+  name: "isTypography",
+  matcher: function (token: TransformedToken): boolean {
+    return token.type === "typography";
+  },
+} as StyleDictionary.Filter;

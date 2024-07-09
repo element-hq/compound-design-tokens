@@ -11,7 +11,7 @@ const hexToRgb = (hex) => {
   return [
     parseInt(result[1], 16),
     parseInt(result[2], 16),
-    parseInt(result[3], 16)
+    parseInt(result[3], 16),
   ];
 };
 
@@ -80,22 +80,22 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
     backgroundHex === "white"
       ? "#FFFFFF"
       : backgroundHex === "black"
-      ? "#000000"
-      : backgroundHex
+        ? "#000000"
+        : backgroundHex,
   );
 
   // Calculate alpha value per channel, pick the highest value
   const alphaPerChannel = color.map((channel, i) => {
     return [
       (channel - surface[i]) / (255 - surface[i]),
-      (channel - surface[i]) / (0 - surface[i])
+      (channel - surface[i]) / (0 - surface[i]),
     ];
   });
 
   let alpha = roundToTwo(
     Math.max(
-      ...alphaPerChannel.flat().filter((value) => /^-?\d+\.?\d*$/.test(value))
-    )
+      ...alphaPerChannel.flat().filter((value) => /^-?\d+\.?\d*$/.test(value)),
+    ),
   );
 
   // Force minimum alpha for opaque colors
@@ -113,7 +113,7 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
       h: hsl[0],
       s: Math.round(hsl[1] * strength),
       l: hsl[2],
-      a: 1
+      a: 1,
     };
   } else {
     const hsl = rgbToHsl(alphaColor[0], alphaColor[1], alphaColor[2]);
@@ -121,7 +121,7 @@ export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
       h: hsl[0],
       s: Math.round(hsl[1] * strength),
       l: hsl[2],
-      a: alpha
+      a: alpha,
     };
   }
 };

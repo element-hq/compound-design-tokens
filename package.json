@@ -6,16 +6,8 @@
     "build": "ts-node ./build.ts",
     "dev": "http-server ."
   },
-  "keywords": [
-    "compound",
-    "design tokens",
-    "style dictionary",
-    "css"
-  ],
-  "files": [
-    "./assets/web/**/*",
-    "./icons/**/*"
-  ],
+  "keywords": ["compound", "design tokens", "style dictionary", "css"],
+  "files": ["./assets/web/**/*", "./icons/**/*"],
   "main": "assets/web/js/index.js",
   "author": "",
   "license": "Apache-2.0",

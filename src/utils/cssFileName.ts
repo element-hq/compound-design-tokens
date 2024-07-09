@@ -14,11 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Theme } from '../@types'
+import { Theme } from "../@types";
 
-export type Tier = 'base' | 'semantic'
+export type Tier = "base" | "semantic";
 
 export const COMPOUND_TOKENS_NAMESPACE = "cpd";
 
 export const cssFileName = (theme: Theme | null, tier: Tier, mq: boolean) =>
-  `${COMPOUND_TOKENS_NAMESPACE}-${theme === null ? 'common' : `theme-${theme}`}-${tier}${mq ? '-mq' : ''}.css`
+  `${COMPOUND_TOKENS_NAMESPACE}-${theme === null ? "common" : `theme-${theme}`}-${tier}${mq ? "-mq" : ""}.css`;

@@ -28,94 +28,46 @@ const leonardoConfig = {
     blue: [hslToHex(212, 98, 46), hslToHex(222, 95, 25)],
     purple: [hslToHex(258, 94, 64), hslToHex(265, 100, 35)],
     fuchsia: [hslToHex(295, 56, 50), hslToHex(285, 80, 25)],
-    pink: [hslToHex(334, 90, 50), hslToHex(330, 91, 25)]
+    pink: [hslToHex(334, 90, 50), hslToHex(330, 91, 25)],
   },
   themes: {
     light: {
       ratios: [
-        1.03,
-        1.06,
-        1.12,
-        1.25,
-        1.5,
-        1.75,
-        2.25,
-        3.5,
-        5.25,
-        6.5,
-        8,
-        10.5,
-        13.75,
-        16.75
+        1.03, 1.06, 1.12, 1.25, 1.5, 1.75, 2.25, 3.5, 5.25, 6.5, 8, 10.5, 13.75,
+        16.75,
       ],
       contrast: 1,
       lightness: 100,
-      saturation: 100
+      saturation: 100,
     },
     dark: {
       ratios: [
-        1.03,
-        1.06,
-        1.12,
-        1.25,
-        1.5,
-        1.75,
-        2.25,
-        3.5,
-        5.25,
-        6.5,
-        8,
-        10.5,
-        13.75,
-        16
+        1.03, 1.06, 1.12, 1.25, 1.5, 1.75, 2.25, 3.5, 5.25, 6.5, 8, 10.5, 13.75,
+        16,
       ],
       contrast: 1,
       lightness: 6,
-      saturation: 97
+      saturation: 97,
     },
     lightHc: {
       ratios: [
-        1.06,
-        1.12,
-        1.25,
-        1.37,
-        1.75,
-        2.25,
-        3.25,
-        4.75,
-        8.87,
-        10,
-        11.75,
-        13.25,
-        16,
-        17
+        1.06, 1.12, 1.25, 1.37, 1.75, 2.25, 3.25, 4.75, 8.87, 10, 11.75, 13.25,
+        16, 17,
       ],
       contrast: 1,
       lightness: 100,
-      saturation: 100
+      saturation: 100,
     },
     darkHc: {
       ratios: [
-        1.06,
-        1.12,
-        1.25,
-        1.37,
-        1.75,
-        2.25,
-        3.25,
-        4.75,
-        8.87,
-        10,
-        11.75,
-        13.25,
-        16,
-        17
+        1.06, 1.12, 1.25, 1.37, 1.75, 2.25, 3.25, 4.75, 8.87, 10, 11.75, 13.25,
+        16, 17,
       ],
       contrast: 1,
       lightness: 6,
-      saturation: 97
-    }
-  }
+      saturation: 97,
+    },
+  },
 };
 
 // Color playground (temporary overrides)
@@ -152,7 +104,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.gray,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let blue = new Color({
@@ -160,7 +112,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.blue,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let cyan = new Color({
@@ -168,7 +120,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.cyan,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let fuchsia = new Color({
@@ -176,7 +128,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.fuchsia,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let green = new Color({
@@ -184,7 +136,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.green,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let lime = new Color({
@@ -192,7 +144,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.lime,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let orange = new Color({
@@ -200,7 +152,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.orange,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let pink = new Color({
@@ -208,7 +160,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.pink,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let purple = new Color({
@@ -216,7 +168,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.purple,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let red = new Color({
@@ -224,7 +176,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.red,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   let yellow = new Color({
@@ -232,7 +184,7 @@ function generateThemeJson(leonardoConfig, theme) {
     colorKeys: leonardoConfig.colors.yellow,
     colorspace: colorSpace,
     ratios: contrastRatios,
-    smooth: colorSmoothing
+    smooth: colorSmoothing,
   });
 
   const colorMap = {
@@ -246,7 +198,7 @@ function generateThemeJson(leonardoConfig, theme) {
     blue,
     purple,
     fuchsia,
-    pink
+    pink,
   };
 
   let leonardoTheme = new Theme({
@@ -256,7 +208,7 @@ function generateThemeJson(leonardoConfig, theme) {
     lightness: leonardoConfig.themes[theme].lightness,
     saturation: leonardoConfig.themes[theme].saturation,
     output: leonardoConfig.output,
-    formula: leonardoConfig.formula
+    formula: leonardoConfig.formula,
   });
 
   return leonardoTheme.contrastColors;
@@ -296,7 +248,7 @@ function renderThemeHtml(themeJson, themeName, alpha = false) {
         html += `<a class="theme__action" href="${generateContrastGridUrl(
           themesJson,
           themeName,
-          color.name
+          color.name,
         )}" target="_blank" rel="noopener">`;
       }
       html += `<div class="theme__hue">`;
@@ -324,7 +276,7 @@ function renderThemesHtml(themesJson, alpha = false) {
     themesHtml[themeName] = renderThemeHtml(
       themesJson[themeName],
       themeName,
-      alpha
+      alpha,
     );
   }
 
@@ -341,8 +293,8 @@ function fromLeonardoColorToTokenStudio(leonardoColors) {
         bg: {
           value: entry.background,
           type: "color",
-          description: "WCAG: 1"
-        }
+          description: "WCAG: 1",
+        },
       };
     } else if (entry.values) {
       for (const value of entry.values) {
@@ -353,8 +305,8 @@ function fromLeonardoColorToTokenStudio(leonardoColors) {
           [shade]: {
             value: value.value,
             type: "color",
-            description: `WCAG: ${value.contrast}`
-          }
+            description: `WCAG: ${value.contrast}`,
+          },
         };
       }
     }
@@ -374,8 +326,8 @@ function fromLeonardoColorToTokenStudio(leonardoColors) {
             type: "color",
             description: `WCAG: ${
               value.contrast
-            } Opacity: ${getAlphaColorOpacity(value.value, background)}`
-          }
+            } Opacity: ${getAlphaColorOpacity(value.value, background)}`,
+          },
         };
       }
     }
@@ -444,7 +396,7 @@ function generateLeonardoUrl(leonardoConfig, theme) {
       colorKeys: value,
       colorspace: leonardoConfig.colorSpace,
       ratios: leonardoConfig.themes[theme].ratios,
-      smooth: leonardoConfig.colorSmoothing
+      smooth: leonardoConfig.colorSmoothing,
     });
   }
 
@@ -460,7 +412,7 @@ function renderLeonardoHtml(leonardoConfig) {
   for (const themeName of Object.keys(leonardoConfig.themes)) {
     html += `<li><a href="${generateLeonardoUrl(
       leonardoConfig,
-      themeName
+      themeName,
     )}" target="_blank" rel="noopener">${themeName} ↗</a></li>`;
     themesHtml[themeName] = renderThemeHtml(themesJson[themeName], themeName);
   }
@@ -480,13 +432,11 @@ const leonardoHtml = renderLeonardoHtml(leonardoConfig);
 
 document.querySelector(".key-colors").innerHTML = keyColorsHtml;
 
-document.querySelector(".themes").innerHTML = Object.values(themesHtml).join(
-  ""
-);
+document.querySelector(".themes").innerHTML =
+  Object.values(themesHtml).join("");
 
-document.querySelector(".themes-alpha").innerHTML = Object.values(
-  themesHtmlAlpha
-).join("");
+document.querySelector(".themes-alpha").innerHTML =
+  Object.values(themesHtmlAlpha).join("");
 
 document.querySelector(".tokens-studio").innerHTML = tokensStudioHtml;
 

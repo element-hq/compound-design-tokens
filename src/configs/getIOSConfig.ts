@@ -27,11 +27,11 @@ import _ from "lodash";
 function swiftClassMembers(args: FormatterArguments) {
   return createTemplate(
     "../formats/templates/swift/class-members.template",
-    args
-  )
+    args,
+  );
 }
 
-/* 
+/*
  * Config that builds colorsets and creates SwiftUI Colors.
  */
 export function getIOSColorConfig(theme: Theme): Platform {
@@ -55,8 +55,8 @@ export function getIOSColorConfig(theme: Theme): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function(token: TransformedToken) {
-          return token.type == 'color' && isCoreColor.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type == "color" && isCoreColor.matcher(token);
         },
         destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
@@ -68,8 +68,8 @@ export function getIOSColorConfig(theme: Theme): Platform {
         className: "CompoundCoreColorTokens",
       },
       {
-        filter: function(token: TransformedToken) {
-          return token.type === 'color' && isNotCoreColor.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type === "color" && isNotCoreColor.matcher(token);
         },
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
@@ -79,15 +79,15 @@ export function getIOSColorConfig(theme: Theme): Platform {
           import: ["SwiftUI"],
           objectType: "class",
           accessControl: "public",
-          referenceClass: "CompoundCoreColorTokens"
+          referenceClass: "CompoundCoreColorTokens",
         },
         className: "CompoundColorTokens",
       },
-    ]
-  }
+    ],
+  };
 }
 
-/* 
+/*
  * Config that creates UIKit Colors.
  */
 export function getIOSUIColorConfig(theme: Theme): Platform {
@@ -110,8 +110,8 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function(token: TransformedToken) {
-          return token.type == 'color' && isCoreColor.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type == "color" && isCoreColor.matcher(token);
         },
         destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
@@ -123,8 +123,8 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
         className: "CompoundCoreUIColorTokens",
       },
       {
-        filter: function(token: TransformedToken) {
-          return token.type == 'color' && isNotCoreColor.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type == "color" && isNotCoreColor.matcher(token);
         },
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
@@ -134,15 +134,15 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
           import: ["UIKit"],
           objectType: "class",
           accessControl: "public",
-          referenceClass: "CompoundCoreUIColorTokens"
+          referenceClass: "CompoundCoreUIColorTokens",
         },
         className: "CompoundUIColorTokens",
       },
-    ]
-  }
+    ],
+  };
 }
 
-/* 
+/*
  * Config that creates the remaining iOS tokens.
  */
 export function getCommonIOSConfig(): Platform {
@@ -164,8 +164,8 @@ export function getCommonIOSConfig(): Platform {
     buildPath: `assets/ios/swift/`,
     files: [
       {
-        filter: function(token: TransformedToken) {
-          return token.type == 'icon' && iosExclude.matcher(token);
+        filter: function (token: TransformedToken) {
+          return token.type == "icon" && iosExclude.matcher(token);
         },
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
@@ -179,8 +179,12 @@ export function getCommonIOSConfig(): Platform {
         className: "CompoundIcons",
       },
       {
-        filter: function(token: TransformedToken) {
-          return token.type != 'color' && token.type != 'icon' && iosExclude.matcher(token);
+        filter: function (token: TransformedToken) {
+          return (
+            token.type != "color" &&
+            token.type != "icon" &&
+            iosExclude.matcher(token)
+          );
         },
         destination: "CompoundDesignTokens.swift",
         format: "ios-swift/class.swift",
