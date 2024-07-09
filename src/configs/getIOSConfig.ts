@@ -21,6 +21,7 @@ import { TransformedToken } from "style-dictionary/types";
 import { FormatterArguments } from "style-dictionary/types/Format";
 import createTemplate from "../utils/createTemplate";
 import iosExclude from "../filters/ios/exclude";
+import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
 import _ from "lodash";
 
 function swiftClassMembers(args: FormatterArguments) {
@@ -34,6 +35,10 @@ function swiftClassMembers(args: FormatterArguments) {
  * Config that builds colorsets and creates SwiftUI Colors.
  */
 export function getIOSColorConfig(theme: Theme): Platform {
+  StyleDictionary.registerFormat({
+    name: "swift/class-members",
+    formatter: swiftClassMembers,
+  });
   return {
     transforms: [
       "attribute/cti",
@@ -51,14 +56,30 @@ export function getIOSColorConfig(theme: Theme): Platform {
     files: [
       {
         filter: function(token: TransformedToken) {
-          return token.type == 'color' && iosExclude.matcher(token);
+          return token.type == 'color' && isCoreColor.matcher(token);
         },
-        destination: "CompoundColorTokens.swift",
+        destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "SwiftUI",
+        },
+        className: "CompoundCoreColorTokens",
+      },
+      {
+        filter: function(token: TransformedToken) {
+          return token.type == 'color' && isNotCoreColor.matcher(token);
+        },
+        destination: "CompoundColorTokens.swift",
+        format: "swift/class-members",
+        options: {
+          showFileHeader: false,
+          outputReferences: true,
+          import: ["SwiftUI"],
+          objectType: "class",
+          accessControl: "public",
+          referenceClass: "CompoundCoreColorTokens"
         },
         className: "CompoundColorTokens",
       },
@@ -70,6 +91,10 @@ export function getIOSColorConfig(theme: Theme): Platform {
  * Config that creates UIKit Colors.
  */
 export function getIOSUIColorConfig(theme: Theme): Platform {
+  StyleDictionary.registerFormat({
+    name: "swift/class-members",
+    formatter: swiftClassMembers,
+  });
   return {
     transforms: [
       "attribute/cti",
@@ -86,14 +111,30 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
     files: [
       {
         filter: function(token: TransformedToken) {
-          return token.type == 'color' && iosExclude.matcher(token);
+          return token.type == 'color' && isCoreColor.matcher(token);
         },
-        destination: "CompoundUIColorTokens.swift",
+        destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "UIKit",
+        },
+        className: "CompoundCoreUIColorTokens",
+      },
+      {
+        filter: function(token: TransformedToken) {
+          return token.type == 'color' && isNotCoreColor.matcher(token);
+        },
+        destination: "CompoundUIColorTokens.swift",
+        format: "swift/class-members",
+        options: {
+          showFileHeader: false,
+          outputReferences: true,
+          import: ["UIKit"],
+          objectType: "class",
+          accessControl: "public",
+          referenceClass: "CompoundCoreUIColorTokens"
         },
         className: "CompoundUIColorTokens",
       },

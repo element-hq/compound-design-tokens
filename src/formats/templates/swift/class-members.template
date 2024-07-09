@@ -21,13 +21,18 @@
 //
 <%= fileHeader({file, commentStyle: 'short'}) %>
 <%= options.import.map(function(item) {
-    return 'import ' + item
+    return `import ${item}`
   }).join('\n')
 %>
 
 <%= options.accessControl %> <%= options.objectType %> <%= file.className %> {
     <%= allProperties.map(function(prop) {
-      return options.accessControl + ' let ' + formatProperty(prop);
+      let formatted = formatProperty(prop);
+      if (options.referenceClass) {
+        let components = formatted.split(' = ');
+        formatted = `${components[0]} = ${options.referenceClass}.${components[1]}`;
+      }
+      return `${options.accessControl} let ${formatted}`;
     }).join('\n    ') %>
     <%= options.accessControl %> init() { }
 }
