@@ -7,7 +7,8 @@
     "dev": "http-server .",
     "format": "yarn exec biome -- format",
     "lint": "yarn exec biome -- lint",
-    "check": "yarn exec biome -- check"
+    "check": "yarn exec biome -- check",
+    "types": "yarn exec tsc -- --noEmit"
   },
   "keywords": ["compound", "design tokens", "style dictionary", "css"],
   "files": ["./assets/web/**/*", "./icons/**/*"],
