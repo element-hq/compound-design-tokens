@@ -35,7 +35,7 @@ jobs:
         run: yarn exec biome -- ci
 
   build:
-    name: Build generated files
+    name: Check that generated files are up to date
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -55,7 +55,7 @@ jobs:
             echo "Generated files are up to date."
             exit 0
           else
-            echo "Some files have not been regenerated recently. Please run 'yarn build' to fix this."
+            echo "The files below have not been regenerated. Please run 'yarn build' to fix this."
             echo "$(git status)"
             exit 1
           fi
