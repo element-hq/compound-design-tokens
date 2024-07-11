@@ -11,3 +11,13 @@ Generate them by running:
 ```
 yarn build
 ```
+
+If you change the code, make sure it is formatted correctly and free of lint errors.
+You can do this by running:
+
+```
+yarn run check --write
+```
+
+This will format your code and automatically apply any lint fixes that are considered 'safe', all at once.
+There's also `yarn format` and `yarn lint` if you want to do them individually.
