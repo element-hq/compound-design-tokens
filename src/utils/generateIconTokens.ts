@@ -19,12 +19,16 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { TransformOptions as BabelOptions } from "@babel/core";
-import generate from "@babel/generator";
+import generate_ from "@babel/generator";
 import babelTransformReactJsx from "@babel/plugin-transform-react-jsx";
 import t from "@babel/types";
 import { type ConfigPlugin, transform as svgrTransform } from "@svgr/core";
 import svgrPluginJsx from "@svgr/plugin-jsx";
 import { camelCase, startCase } from "lodash-es";
+
+// Types for the default export of @babel/generator are wrong
+const generate = (generate_ as unknown as { default: typeof generate_ })
+  .default;
 
 /**
  * Generates `icons/$icons.json` and React components off all the
@@ -205,12 +209,12 @@ export default ${componentName};
   ]);
 
   // Generate the index.cjs file
-  const cjsCode = generate.default(cjsProgram).code;
+  const cjsCode = generate(cjsProgram).code;
   await fs.writeFile(path.join(webOutput, "index.cjs"), cjsCode, "utf-8");
 
   // Generate the index.js file
   const esmProgram = t.program(indexEsmStatements, [], "module");
-  const esmCode = generate.default(esmProgram).code;
+  const esmCode = generate(esmProgram).code;
   await fs.writeFile(path.join(webOutput, "index.js"), esmCode, "utf-8");
 
   // The index.d.ts is identical to the index.js as it only re-exports the icons
