@@ -33,10 +33,10 @@ export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
   const transforms = [
     "ts/resolveMath",
     "ts/size/px",
-    "ts/size/letterspacing",
-    "ts/color/hexrgba",
+    "ts/size/css/letterspacing",
+    "ts/color/css/hexrgba",
     "ts/typography/css/shorthand",
-    "ts/shadow/shorthand",
+    "ts/shadow/css/shorthand",
     "attribute/cti",
     "css/pxToRem",
     "css/percentageToUnitless",

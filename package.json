@@ -7,7 +7,8 @@
     "dev": "http-server .",
     "format": "yarn exec biome -- format",
     "lint": "yarn exec biome -- lint",
-    "check": "yarn exec biome -- check"
+    "check": "yarn exec biome -- check",
+    "types": "yarn exec tsc -- --noEmit"
   },
   "keywords": ["compound", "design tokens", "style dictionary", "css"],
   "files": ["./assets/web/**/*", "./icons/**/*"],
@@ -24,13 +25,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@tokens-studio/sd-transforms": "^0.4.3",
+    "@tokens-studio/sd-transforms": "^0.12.2",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.13.0",
     "fast-glob": "^3.2.12",
     "http-server": "^14.1.1",
-    "style-dictionary": "https://github.com/amzn/style-dictionary",
+    "style-dictionary": "^3.8.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
