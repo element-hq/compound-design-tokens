@@ -14,19 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Filter, TransformedToken } from "style-dictionary/types";
 
 /**
  * Filter the core tokens
  */
 export default {
   name: "isCoreToken",
-  matcher: (token: TransformedToken): boolean => {
+  filter: (token: TransformedToken): boolean => {
     /**
      * all tokens that are not in the semantics files are "core" and should
      * only be used directly under rare occasions
      */
     return !token.filePath.includes("theme-semantics");
   },
-} as StyleDictionary.Filter;
+} satisfies Filter;

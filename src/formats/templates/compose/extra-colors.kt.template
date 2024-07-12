@@ -1,7 +1,7 @@
 <%= options.license ?? '' %>
 
 @file:Suppress("all")
-package <%= file.packageName %>
+package <%= options.packageName %>
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
@@ -9,9 +9,9 @@ import androidx.compose.ui.graphics.Color
     return 'import ' + item
   }).join('\n') %>
 
-<%= fileHeader({file, commentStyle: 'long'}) %>
+<%= fileHeader %>
 <%
-  let colors = allProperties.map(function(prop) {
+  let colors = allTokens.map(function(prop) {
     return { name: options.fixColorName(prop.name), description: prop.description };
   });
   let INDENT_LEVEL = options.indentLevel;
@@ -22,7 +22,7 @@ import androidx.compose.ui.graphics.Color
   * This class holds all the semantic tokens of the Compound theme.
   */
 @Immutable
-data class <%= file.className %>(
+data class <%= options.className %>(
 <%= colors.map(function(color) {
     let comment = "";
     if (color.description) {

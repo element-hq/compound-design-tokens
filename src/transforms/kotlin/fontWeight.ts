@@ -14,19 +14,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 
 /**
  * A transformer to font weight for Material 3
  */
 export default {
+  name: "kotlin/fontWeight",
   type: "value",
-  matcher: (token: TransformedToken): boolean => {
+  filter: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "weight";
   },
-  transformer: (token: TransformedToken): string => {
+  transform: (token: TransformedToken): string => {
     // See https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight
     return `FontWeight.W${token.value}`;
   },
-};
+} satisfies Transform;

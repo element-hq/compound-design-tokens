@@ -14,8 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { Transform } from "style-dictionary/types/Transform";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 import { isCoreColor } from "../../filters/isCoreColor";
 
 /**
@@ -23,8 +22,9 @@ import { isCoreColor } from "../../filters/isCoreColor";
  * from the asset catalog.
  */
 export default {
+  name: "swift/coreColorSet",
   type: "value",
-  matcher: isCoreColor.matcher,
-  transformer: (token: TransformedToken) =>
+  filter: isCoreColor.filter,
+  transform: (token: TransformedToken) =>
     `Color("${token.name}", bundle: Bundle.module)`,
 } as Transform;

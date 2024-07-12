@@ -15,15 +15,17 @@ limitations under the License.
 */
 
 import StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types";
-import type { FormatterArguments } from "style-dictionary/types/Format";
-import type { Platform } from "style-dictionary/types/Platform";
+import type {
+  FormatFnArguments,
+  PlatformConfig,
+  TransformedToken,
+} from "style-dictionary/types";
 import type { Theme } from "../@types";
 import iosExclude from "../filters/ios/exclude";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
 import createTemplate from "../utils/createTemplate";
 
-function swiftClassMembers(args: FormatterArguments) {
+function swiftClassMembers(args: FormatFnArguments) {
   return createTemplate(
     "../formats/templates/swift/class-members.template",
     args,
@@ -33,10 +35,10 @@ function swiftClassMembers(args: FormatterArguments) {
 /*
  * Config that builds colorsets and creates SwiftUI Colors.
  */
-export function getIOSColorConfig(theme: Theme): Platform {
+export function getIOSColorConfig(theme: Theme): PlatformConfig {
   StyleDictionary.registerFormat({
     name: "swift/class-members",
-    formatter: swiftClassMembers,
+    format: swiftClassMembers,
   });
   return {
     transforms: [
@@ -55,19 +57,19 @@ export function getIOSColorConfig(theme: Theme): Platform {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isCoreColor.matcher(token),
+          token.type === "color" && isCoreColor.filter(token),
         destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "SwiftUI",
+          className: "CompoundCoreColorTokens",
         },
-        className: "CompoundCoreColorTokens",
       },
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isNotCoreColor.matcher(token),
+          token.type === "color" && isNotCoreColor.filter(token),
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -77,8 +79,8 @@ export function getIOSColorConfig(theme: Theme): Platform {
           objectType: "class",
           accessControl: "public",
           referenceClass: "CompoundCoreColorTokens",
+          className: "CompoundColorTokens",
         },
-        className: "CompoundColorTokens",
       },
     ],
   };
@@ -87,10 +89,10 @@ export function getIOSColorConfig(theme: Theme): Platform {
 /*
  * Config that creates UIKit Colors.
  */
-export function getIOSUIColorConfig(theme: Theme): Platform {
+export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
   StyleDictionary.registerFormat({
     name: "swift/class-members",
-    formatter: swiftClassMembers,
+    format: swiftClassMembers,
   });
   return {
     transforms: [
@@ -108,19 +110,19 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isCoreColor.matcher(token),
+          token.type === "color" && isCoreColor.filter(token),
         destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "UIKit",
+          className: "CompoundCoreUIColorTokens",
         },
-        className: "CompoundCoreUIColorTokens",
       },
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isNotCoreColor.matcher(token),
+          token.type === "color" && isNotCoreColor.filter(token),
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -130,8 +132,8 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
           objectType: "class",
           accessControl: "public",
           referenceClass: "CompoundCoreUIColorTokens",
+          className: "CompoundUIColorTokens",
         },
-        className: "CompoundUIColorTokens",
       },
     ],
   };
@@ -140,16 +142,16 @@ export function getIOSUIColorConfig(theme: Theme): Platform {
 /*
  * Config that creates the remaining iOS tokens.
  */
-export function getCommonIOSConfig(): Platform {
+export function getCommonIOSConfig(): PlatformConfig {
   StyleDictionary.registerFormat({
     name: "swift/class-members",
-    formatter: swiftClassMembers,
+    format: swiftClassMembers,
   });
   return {
     transforms: [
       "attribute/cti",
       "camelCaseDecimal",
-      "font/swift/literal",
+      "swift/literalFont",
       "swift/token/ti",
       "swift/pxToCGFloat",
       "swift/toFontWeight",
@@ -160,7 +162,7 @@ export function getCommonIOSConfig(): Platform {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "icon" && iosExclude.matcher(token),
+          token.type === "icon" && iosExclude.filter(token),
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
         options: {
@@ -169,22 +171,22 @@ export function getCommonIOSConfig(): Platform {
           import: ["SwiftUI"],
           objectType: "class",
           accessControl: "public",
+          className: "CompoundIcons",
         },
-        className: "CompoundIcons",
       },
       {
         filter: (token: TransformedToken) =>
           token.type !== "color" &&
           token.type !== "icon" &&
-          iosExclude.matcher(token),
+          iosExclude.filter(token),
         destination: "CompoundDesignTokens.swift",
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "SwiftUI",
+          className: "CompoundDesignTokens",
         },
-        className: "CompoundDesignTokens",
       },
     ],
   };

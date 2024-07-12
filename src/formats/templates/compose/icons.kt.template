@@ -1,17 +1,17 @@
 <%= options.license ?? '' %>
 
-<%= fileHeader({file, commentStyle: 'long'}) %>
+<%= fileHeader %>
 
 @file:Suppress("all")
-package <%= file.packageName %>
+package <%= options.packageName %>
 
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n')
 %>
 
-object <%= file.className %> {
-    <%= allProperties.map(function(prop) {
+object <%= options.className %> {
+    <%= allTokens.map(function(prop) {
       let comment = "";
       if (prop.comment) {
         comment = `/** ${prop.comment} */\n  `
@@ -22,13 +22,13 @@ object <%= file.className %> {
     }).join('\n' + options.indentLevel ) %>
 
     val all @Composable get() = persistentListOf<ImageVector>(
-        <%= allProperties.map(function(prop) {
+        <%= allTokens.map(function(prop) {
           return options.getIconName(prop.name) + '(),'
         }).join('\n' + options.indentLevel + options.indentLevel ) %>
     )
 
     val allResIds get() = persistentListOf(
-        <%= allProperties.map(function(prop) {
+        <%= allTokens.map(function(prop) {
           return formatProperty(prop).split(' = ')[1] + ','
         }).join('\n' + options.indentLevel + options.indentLevel ) %>
     )

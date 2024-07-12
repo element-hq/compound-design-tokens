@@ -1,8 +1,8 @@
 <%= options.license ?? '' %>
-<%= fileHeader({file, commentStyle: 'long'}) %>
+<%= fileHeader %>
 
 @file:Suppress("all")
-package <%= file.packageName %>
+package <%= options.packageName %>
 
 <%= options.import.map(function(item) {
     return 'import ' + item
@@ -14,7 +14,7 @@ package <%= file.packageName %>
  */
 @OptIn(CoreColorToken::class)
 val <%= options.valName %> = SemanticColors(
-    <%= allProperties.map(function(prop) {
+    <%= allTokens.map(function(prop) {
       let result = formatProperty(prop)
       result = result
         .replace("= ", "= " + options.tokenClassName + ".")

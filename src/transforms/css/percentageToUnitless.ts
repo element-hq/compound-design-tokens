@@ -14,20 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
  * after a camel case operation
  */
 export default {
+  name: "css/percentageToUnitless",
   type: "value",
-  matcher: (token) => {
+  filter: (token) => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "line-height";
   },
-  transformer: (token) => {
+  transform: (token) => {
     const val = Number.parseFloat(token.value.replace("%", ""));
     return `${val / 100}`;
   },
-} as Transform;
+} satisfies Transform;

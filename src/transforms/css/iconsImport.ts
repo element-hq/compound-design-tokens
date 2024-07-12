@@ -14,14 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 
 /**
  * transforms path to a `url()` in CSS
  * Prepends `options.pathImportPrefix` if it exists
  */
 export default {
+  name: "css/iconsImport",
   type: "value",
-  matcher: (token) => token.type === "icon",
-  transformer: (token) => `url(../${token.value})`,
-} as Transform;
+  filter: (token) => token.type === "icon",
+  transform: (token) => `url(../${token.value})`,
+} satisfies Transform;

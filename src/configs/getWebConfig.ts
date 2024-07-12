@@ -15,8 +15,7 @@ limitations under the License.
 */
 
 import _ from "lodash-es";
-import type { File } from "style-dictionary/types/File";
-import type { Platform } from "style-dictionary/types/Platform";
+import type { File, PlatformConfig } from "style-dictionary/types";
 import type { Theme } from "../@types";
 import { isCoreColor } from "../filters/isCoreColor";
 import isCoreToken from "../filters/isCoreToken";
@@ -29,18 +28,21 @@ import {
 
 const basePxFontSize = 16;
 
-export default function (target: "js" | "css" | "ts", theme: Theme): Platform {
+export default function (
+  target: "js" | "css" | "ts",
+  theme: Theme,
+): PlatformConfig {
   const transforms = [
     "ts/resolveMath",
-    "ts/size/px",
+    "css/px",
     "ts/size/css/letterspacing",
     "ts/color/css/hexrgba",
-    "ts/typography/css/shorthand",
-    "ts/shadow/css/shorthand",
+    "typography/css/shorthand",
+    "shadow/css/shorthand",
     "attribute/cti",
     "css/pxToRem",
     "css/percentageToUnitless",
-    target === "css" ? "name/cti/kebab" : "camelCaseDecimal",
+    target === "css" ? "name/kebab" : "camelCaseDecimal",
   ];
 
   return {
@@ -84,8 +86,8 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     destination: cssFileName(null, tier, false),
     format: "css/variables",
     filter: (t) =>
-      isSharedAcrossTheme.matcher(t) &&
-      isCoreToken.matcher(t) === (tier === "base"),
+      isSharedAcrossTheme.filter(t) &&
+      isCoreToken.filter(t) === (tier === "base"),
     options: {
       showFileHeader: false,
       outputReferences: true,
@@ -98,7 +100,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     destination: cssFileName(theme, tier, mq),
     format: "css/variables",
     filter: (t) =>
-      isCoreColor.matcher(t) && isCoreToken.matcher(t) === (tier === "base"),
+      isCoreColor.filter(t) && isCoreToken.filter(t) === (tier === "base"),
     options: {
       showFileHeader: false,
       outputReferences: true,

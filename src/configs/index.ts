@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import glob from "fast-glob";
-import type { Config } from "style-dictionary/types/Config";
+import type { Config } from "style-dictionary/types";
 
 import type { Platform, Theme } from "../@types";
 import { getAndroidConfig, getCommonAndroidConfig } from "./getAndroidConfig";
@@ -58,16 +58,16 @@ export async function getStyleDictionaryConfig(
 
   switch (platform) {
     case "web":
-      config.platforms.js = getWebConfig("js", theme);
-      config.platforms.ts = getWebConfig("ts", theme);
-      config.platforms.css = getWebConfig("css", theme);
+      config.platforms!.js = getWebConfig("js", theme);
+      config.platforms!.ts = getWebConfig("ts", theme);
+      config.platforms!.css = getWebConfig("css", theme);
       break;
     case "android":
-      config.platforms.compose = getAndroidConfig(theme);
+      config.platforms!.compose = getAndroidConfig(theme);
       break;
     case "ios":
-      config.platforms.iosColor = getIOSColorConfig(theme);
-      config.platforms.iosUIColor = getIOSUIColorConfig(theme);
+      config.platforms!.iosColor = getIOSColorConfig(theme);
+      config.platforms!.iosUIColor = getIOSUIColorConfig(theme);
       break;
     default:
       throw `Unsupported platform: ${platform}`;
@@ -85,10 +85,10 @@ export async function getStyleDictionaryCommonConfig(
     case "web":
       break;
     case "android":
-      config.platforms.compose = getCommonAndroidConfig();
+      config.platforms!.compose = getCommonAndroidConfig();
       break;
     case "ios":
-      config.platforms.iosSwift = getCommonIOSConfig();
+      config.platforms!.iosSwift = getCommonIOSConfig();
       break;
     default:
       throw `Unsupported platform: ${platform}`;

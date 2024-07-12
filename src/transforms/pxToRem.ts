@@ -14,21 +14,22 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
  * after a camel case operation
  */
 export default {
+  name: "css/pxToRem",
   type: "value",
-  matcher: (token) => {
+  filter: (token) => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "size";
   },
-  transformer: (token, options) => {
+  transform: (token, options) => {
     const basePxFontSize = options?.basePxFontSize ?? 16;
     const val = Number.parseFloat(token.value.replace("px", ""));
     return `${val / basePxFontSize}rem`;
   },
-} as Transform;
+} satisfies Transform;
