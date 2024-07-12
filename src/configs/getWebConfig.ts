@@ -90,7 +90,13 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
       isCoreToken.filter(t) === (tier === "base"),
     options: {
       showFileHeader: false,
-      outputReferences: true,
+      // Workaround for https://github.com/tokens-studio/sd-transforms/issues/203.
+      // ts/resolveMath currently has no way to insert calc() around
+      // var(...) * num expressions, so we instead force it to avoid outputting
+      // the var() reference and resolve the expression to a static value.
+      outputReferences: (token) =>
+        typeof token.original.value !== "string" ||
+        !token.original.value.includes("{space.scale} * "),
       basePxFontSize,
       selector: `:root, [class*="cpd-theme-"]`,
     },
