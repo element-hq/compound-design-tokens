@@ -16,6 +16,7 @@ limitations under the License.
 
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 import _ from "lodash";
 import StyleDictionary, { type TransformedToken } from "style-dictionary";
 import type { FormatterArguments } from "style-dictionary/types/Format";
@@ -31,7 +32,11 @@ export default function createTemplate(
   args: FormatterArguments | null,
 ) {
   const template = _.template(
-    fs.readFileSync(path.join(__dirname, templatePath)).toString(),
+    fs
+      .readFileSync(
+        path.join(fileURLToPath(new URL(".", import.meta.url)), templatePath),
+      )
+      .toString(),
   );
 
   let allProperties: TransformedToken[];

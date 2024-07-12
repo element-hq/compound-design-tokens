@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "target": "es6",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "target": "esnext",
     "lib": ["ES2022", "DOM"],
     "strict": true,
     "sourceMap": true,
