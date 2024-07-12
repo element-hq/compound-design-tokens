@@ -22,8 +22,8 @@ public class CompoundDesignTokens {
     public static let fontLineHeightBodyMdRegular = CGFloat(20)
     public static let fontLineHeightBodySmRegular = CGFloat(18)
     public static let fontLineHeightBodyXsRegular = CGFloat(16)
-    public static let fontWeightBold = Font.Weight.regular
-    public static let fontWeightSemibold = Font.Weight.regular
+    public static let fontWeightBold = Font.Weight.bold
+    public static let fontWeightSemibold = Font.Weight.semibold
     public static let fontWeightRegular = Font.Weight.regular
     public static let fontFamilyMono = "SF Mono"
     public static let fontFamilySans = "SF Pro"

@@ -18,7 +18,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
 import _ from "lodash-es";
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 import svg2vectordrawable from "svg2vectordrawable";
 
 /**
@@ -26,9 +26,10 @@ import svg2vectordrawable from "svg2vectordrawable";
  * Also generates the drawable.
  */
 export default {
+  name: "kotlin/svgToDrawable",
   type: "value",
-  matcher: (token) => token.type === "icon",
-  transformer: (token, platform) => {
+  filter: (token) => token.type === "icon",
+  transform: (token, platform) => {
     const iconPath = path.join(
       fileURLToPath(new URL("../../../", import.meta.url)),
       token.value,

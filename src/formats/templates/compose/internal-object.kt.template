@@ -1,17 +1,17 @@
 <%= options.license ?? '' %>
 
-<%= fileHeader({file, commentStyle: 'long'}) %>
+<%= fileHeader %>
 
 @file:Suppress("all")
-package <%= file.packageName %>
+package <%= options.packageName %>
 
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n')
 %>
 
-<%= options.isInternal ? "internal " : "" %>object <%= file.className %> {
-    <%= allProperties.map(function(prop) {
+<%= options.isInternal ? "internal " : "" %>object <%= options.className %> {
+    <%= allTokens.map(function(prop) {
       let comment = "";
       if (prop.comment) {
         comment = `/** ${prop.comment} */\n  `

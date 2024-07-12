@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 import fs from "fs-extra";
-import type StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Action, TransformedToken } from "style-dictionary/types";
+import { usesReferences } from "style-dictionary/utils";
 import type { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
 
@@ -24,6 +24,7 @@ import { isCoreColor } from "../../filters/isCoreColor";
  * Filter the core color
  */
 export default {
+  name: "ios/colorset",
   do(dictionary, platform): void {
     const assetPath = `${platform.buildPath}/Colors.xcassets`;
     // TODO: Find a better way to do this. We rely on the `light` theme being
@@ -47,11 +48,10 @@ export default {
      * other tokens will be defined on a more semantic layer and will reference
      * the values from the colorset
      */
-    const coreColorTokens = dictionary.allProperties.filter(
+    const coreColorTokens = dictionary.allTokens.filter(
       (token: TransformedToken) => {
         return (
-          isCoreColor.matcher(token) &&
-          !dictionary.usesReference(token.original.value)
+          isCoreColor.filter(token) && !usesReferences(token.original.value)
         );
       },
     );
@@ -71,7 +71,14 @@ export default {
         appearances: getAppearances(platform.options!.theme),
         color: {
           "color-space": "srgb",
-          components: getSRGBComponent(coreColor.attributes!.rgb),
+          components: getSRGBComponent(
+            coreColor.attributes!.rgb as {
+              a: number;
+              r: number;
+              g: number;
+              b: number;
+            },
+          ),
           /**
            * The `theme` is not a `style-dictionary` value, but an option we pass
            * on the iOS config. They refer to the compound themes
@@ -98,7 +105,7 @@ export default {
       fs.rmSync(assetPath, { recursive: true });
     }
   },
-} as StyleDictionary.Action;
+} as Action;
 
 type ColorSetAppearance = {
   appearance: string;

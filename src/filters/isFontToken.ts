@@ -14,8 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Filter, TransformedToken } from "style-dictionary/types";
 
 /** Font token types used in the project. */
 const fontTokenTypes = [
@@ -32,6 +31,6 @@ const fontTokenTypes = [
  */
 export default {
   name: "isFontToken",
-  matcher: (token: TransformedToken): boolean =>
-    fontTokenTypes.includes(token.type),
-} as StyleDictionary.Filter;
+  filter: (token: TransformedToken): boolean =>
+    token.type !== undefined && fontTokenTypes.includes(token.type),
+} satisfies Filter;

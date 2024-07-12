@@ -14,16 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 
 /**
  * A transformer to literals in Kotlin
  */
 export default {
+  name: "kotlin/literal",
   type: "value",
-  matcher: (token: TransformedToken): boolean => {
+  filter: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return attrs.category === "font" && attrs.type === "family";
   },
-  transformer: (token: TransformedToken): string => `"${token.value}"`,
-};
+  transform: (token: TransformedToken): string => `"${token.value}"`,
+} satisfies Transform;

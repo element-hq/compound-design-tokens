@@ -15,16 +15,17 @@ limitations under the License.
 */
 
 import _ from "lodash-es";
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 
 /**
  * A name transformer based on name/ti/camel that only operates on icons,
  * safely transforming Swift keywords by escaping them with backticks
  */
 export default {
+  name: "swift/token/ti",
   type: "name",
-  matcher: (token) => token.type === "color" || token.type === "icon",
-  transformer: (token, options) => {
+  filter: (token) => token.type === "color" || token.type === "icon",
+  transform: (token, options) => {
     let prefix = "";
     if (options?.prefix) {
       prefix = options.prefix;

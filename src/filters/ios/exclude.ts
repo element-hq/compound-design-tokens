@@ -14,19 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Filter, TransformedToken } from "style-dictionary/types";
 
 /**
  * Excluded tokens in the iOS bundle
  */
 export default {
   name: "ios/exclude",
-  matcher: (token: TransformedToken): boolean => {
+  filter: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     const isTypography = token.type === "typography";
     const isLetterSpacing =
       attrs.category === "font" && attrs.type === "letter-spacing";
     return !isTypography && !isLetterSpacing;
   },
-} as StyleDictionary.Filter;
+} satisfies Filter;

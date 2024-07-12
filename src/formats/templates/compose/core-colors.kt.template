@@ -1,8 +1,8 @@
 <%= options.license ?? '' %>
-<%= fileHeader({file, commentStyle: 'long'}) %>
+<%= fileHeader %>
 
 @file:Suppress("all")
-package <%= file.packageName %>
+package <%= options.packageName %>
 
 <%= options.import.map(function(item) {
     return 'import ' + item
@@ -11,8 +11,8 @@ package <%= file.packageName %>
 import io.element.android.compound.annotations.CoreColorToken
 
 @CoreColorToken
-object <%= file.className %> {
-    <%= allProperties.map(function(prop) {
+object <%= options.className %> {
+    <%= allTokens.map(function(prop) {
       let comment = "";
       if (prop.comment) {
         comment = `/** ${prop.comment} */\n  `

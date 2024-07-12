@@ -18,8 +18,14 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import _ from "lodash";
-import StyleDictionary, { type TransformedToken } from "style-dictionary";
-import type { FormatterArguments } from "style-dictionary/types/Format";
+import type { TransformedToken } from "style-dictionary";
+import type { FormatFnArguments } from "style-dictionary/types";
+import {
+  createPropertyFormatter,
+  fileHeader,
+  sortByName,
+  sortByReference,
+} from "style-dictionary/utils";
 
 /**
  * Creates a `TemplateExecutor` from a template in the provided path and runs it with the given arguments.
@@ -27,9 +33,9 @@ import type { FormatterArguments } from "style-dictionary/types/Format";
  * @param args a nullable set of arguments for the formatter, including dictionary and file info, as well as formatting options
  * @returns
  */
-export default function createTemplate(
+export default async function createTemplate(
   templatePath: string,
-  args: FormatterArguments | null,
+  args: FormatFnArguments | null,
 ) {
   const template = _.template(
     fs
@@ -39,38 +45,40 @@ export default function createTemplate(
       .toString(),
   );
 
-  let allProperties: TransformedToken[];
+  let allTokens: TransformedToken[];
   if (args) {
     const { dictionary, file, options } = args;
-    const { outputReferences } = options;
-    const formatProperty =
-      StyleDictionary.formatHelpers.createPropertyFormatter({
-        outputReferences,
-        dictionary,
-        formatting: {
-          suffix: "",
-          commentStyle: "none", // We will add the comment in the format template
-        },
-      });
-
-    const fileHeader = StyleDictionary.formatHelpers.fileHeader;
+    const { outputReferences, commentStyle } = options;
+    const formatProperty = createPropertyFormatter({
+      outputReferences,
+      dictionary,
+      formatting: {
+        suffix: "",
+        commentStyle: "none", // We will add the comment in the format template
+      },
+    });
 
     if (outputReferences) {
-      allProperties = [...dictionary.allProperties].sort(
-        StyleDictionary.formatHelpers.sortByReference(dictionary),
+      allTokens = [...dictionary.allTokens].sort(
+        sortByReference(dictionary.tokens),
       );
     } else {
-      allProperties = [...dictionary.allProperties].sort(
-        StyleDictionary.formatHelpers.sortByName,
-      );
+      allTokens = [...dictionary.allTokens].sort(sortByName);
     }
 
+    const headerResult = await fileHeader({
+      file,
+      commentStyle: commentStyle ?? "long",
+    });
+    if (typeof headerResult !== "string")
+      throw new Error(`header is ${headerResult}`);
+
     return template({
-      allProperties,
+      allTokens,
       file,
       options,
       formatProperty,
-      fileHeader,
+      fileHeader: headerResult,
     });
   }
   // Path for very simple templates

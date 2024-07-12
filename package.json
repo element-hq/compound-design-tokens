@@ -51,7 +51,7 @@
     "@babel/types": "^7.24.7",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
-    "@tokens-studio/sd-transforms": "^0.12.2",
+    "@tokens-studio/sd-transforms": "^1.0.0",
     "@types/babel__core": "^7.20.5",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash-es": "^4.17.12",
@@ -59,7 +59,7 @@
     "fast-glob": "^3.3.2",
     "http-server": "^14.1.1",
     "lodash-es": "^4.17.21",
-    "style-dictionary": "^3.8.0",
+    "style-dictionary": "^4.0.0",
     "svg2vectordrawable": "^2.9.1",
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"

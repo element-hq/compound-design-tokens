@@ -14,16 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { Transform } from "style-dictionary/types/Transform";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 
 /**
  * A transformer to change tokens.0_5x and keep the underscore
  * after a camel case operation
  */
 export default {
+  name: "swift/pxToCGFloat",
   type: "value",
-  matcher: (token: TransformedToken) => {
+  filter: (token: TransformedToken) => {
     const attrs = token.attributes ?? {};
     return (
       attrs.category === "space" ||
@@ -32,6 +32,6 @@ export default {
       (attrs.category === "font" && attrs.type === "size")
     );
   },
-  transformer: (token: TransformedToken): string =>
+  transform: (token: TransformedToken): string =>
     `CGFloat(${token.value.replaceAll('"', "")})`,
 } as Transform;

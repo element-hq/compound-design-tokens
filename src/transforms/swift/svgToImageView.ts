@@ -17,7 +17,7 @@ limitations under the License.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
-import type { Transform } from "style-dictionary/types/Transform";
+import type { Transform } from "style-dictionary/types";
 import { contents } from "../../actions/swift/colorset";
 import { unescapeName } from "./tokenTICamel";
 
@@ -26,9 +26,10 @@ import { unescapeName } from "./tokenTICamel";
  * Also generates the related imageset.
  */
 export default {
+  name: "swift/svgToImageView",
   type: "value",
-  matcher: (token) => token.type === "icon",
-  transformer: (token, platform) => {
+  filter: (token) => token.type === "icon",
+  transform: (token, platform) => {
     const tokenName = unescapeName(token.name);
     const filename = `${tokenName}.svg`;
     const outputAssetPath = `${platform!.buildPath}/Icons.xcassets`;

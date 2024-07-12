@@ -11,13 +11,9 @@
  limitations under the License.
  */
 
-import { registerTransforms } from "@tokens-studio/sd-transforms";
+import { register } from "@tokens-studio/sd-transforms";
 import StyleDictionary from "style-dictionary";
-import type { Core } from "style-dictionary";
-import type { Transform } from "style-dictionary/types/Transform";
-import type { Named } from "style-dictionary/types/_helpers";
 
-import type { Action } from "style-dictionary/types/Action";
 import type { Platform, Theme } from "./@types";
 import colorset from "./actions/swift/colorset";
 import {
@@ -30,6 +26,7 @@ import { isSharedAcrossTheme } from "./filters/isSharedAcrossTheme";
 import camelCaseDecimal from "./transforms/camelCaseDecimal";
 import iconsImport from "./transforms/css/iconsImport";
 import percentageToUnitless from "./transforms/css/percentageToUnitless";
+import px from "./transforms/css/px";
 import fontWeight from "./transforms/kotlin/fontWeight";
 import literal from "./transforms/kotlin/literal";
 import percentageToEm from "./transforms/kotlin/percentageToEm";
@@ -40,87 +37,36 @@ import typography from "./transforms/kotlin/typography";
 import pxToRem from "./transforms/pxToRem";
 import coreColorSet from "./transforms/swift/coreColorSet";
 import coreUIColorSet from "./transforms/swift/coreUIColorSet";
+import literalFont from "./transforms/swift/literalFont.js";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import svgToImageView from "./transforms/swift/svgToImageView";
 import toFontWeight from "./transforms/swift/toFontWeight";
 import tokenTICamel from "./transforms/swift/tokenTICamel";
 
-async function setupDictionary(sb: Core) {
-  await registerTransforms(sb);
-  sb.registerTransform({
-    name: "camelCaseDecimal",
-    ...camelCaseDecimal,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/pxToCGFloat",
-    ...pxToCGFloat,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/toFontWeight",
-    ...toFontWeight,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/coreColorSet",
-    ...coreColorSet,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/coreUIColorSet",
-    ...coreUIColorSet,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/token/ti",
-    ...tokenTICamel,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "swift/svgToImageView",
-    ...svgToImageView,
-  } as Named<Transform>);
+async function setupDictionary(sb: StyleDictionary) {
+  await register(StyleDictionary);
+  sb.registerTransform(camelCaseDecimal);
+  sb.registerTransform(literalFont);
+  sb.registerTransform(pxToCGFloat);
+  sb.registerTransform(toFontWeight);
+  sb.registerTransform(coreColorSet);
+  sb.registerTransform(coreUIColorSet);
+  sb.registerTransform(tokenTICamel);
+  sb.registerTransform(svgToImageView);
 
-  sb.registerAction({
-    name: "ios/colorset",
-    ...colorset,
-  } as Named<Action>);
-  sb.registerTransform({
-    name: "kotlin/svgToDrawable",
-    ...svgToDrawable,
-  } as Named<Transform>);
+  sb.registerAction(colorset);
+  sb.registerTransform(svgToDrawable);
 
-  sb.registerTransform({
-    name: "kotlin/fontWeight",
-    ...fontWeight,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "kotlin/literal",
-    ...literal,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "kotlin/pxToDp",
-    ...pxToDp,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "kotlin/pxToSp",
-    ...pxToSp,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "kotlin/percentageToEm",
-    ...percentageToEm,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "kotlin/typography/shorthand",
-    ...typography,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "css/pxToRem",
-    ...pxToRem,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "css/percentageToUnitless",
-    ...percentageToUnitless,
-  } as Named<Transform>);
-  sb.registerTransform({
-    name: "css/iconsImport",
-    ...iconsImport,
-  } as Named<Transform>);
+  sb.registerTransform(fontWeight);
+  sb.registerTransform(literal);
+  sb.registerTransform(pxToDp);
+  sb.registerTransform(pxToSp);
+  sb.registerTransform(percentageToEm);
+  sb.registerTransform(typography);
+  sb.registerTransform(pxToRem);
+  sb.registerTransform(percentageToUnitless);
+  sb.registerTransform(iconsImport);
+  sb.registerTransform(px);
 
   sb.registerFilter(iosExclude);
   sb.registerFilter(isCoreColor);
@@ -129,17 +75,17 @@ async function setupDictionary(sb: Core) {
 }
 
 export async function themed(theme: Theme, platform: Platform) {
-  const sb = StyleDictionary.extend(
+  const sb = new StyleDictionary(
     await getStyleDictionaryConfig(theme, platform),
   );
-  setupDictionary(sb);
+  await setupDictionary(sb);
   return sb;
 }
 
 export async function common(platform: Platform) {
-  const sb = StyleDictionary.extend(
+  const sb = new StyleDictionary(
     await getStyleDictionaryCommonConfig(platform),
   );
-  setupDictionary(sb);
+  await setupDictionary(sb);
   return sb;
 }

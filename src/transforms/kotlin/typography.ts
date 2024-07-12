@@ -1,12 +1,12 @@
-import type StyleDictionary from "style-dictionary";
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 import { ANDROID_INDENT_LEVEL } from "../../utils/constants";
 
 export default {
+  name: "kotlin/typography/shorthand",
   type: "value",
   transitive: true,
-  matcher: (token) => token.type === "typography",
-  transformer: (token: TransformedToken) => {
+  filter: (token) => token.type === "typography",
+  transform: (token: TransformedToken) => {
     /**
      * Mapping between https://docs.tokens.studio/available-tokens/typography-tokens
      * and https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle
@@ -47,4 +47,4 @@ export default {
 
     return `${output + ANDROID_INDENT_LEVEL})`;
   },
-} as StyleDictionary.Transform;
+} satisfies Transform;

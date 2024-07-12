@@ -14,22 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { TransformedToken } from "style-dictionary/types/TransformedToken";
+import type { Transform, TransformedToken } from "style-dictionary/types";
 
 /**
  * A transformer to change `px` to `dp`
  */
 export default {
+  name: "kotlin/pxToDp",
   type: "value",
   transitive: true,
-  matcher: (token: TransformedToken): boolean => {
+  filter: (token: TransformedToken): boolean => {
     const attrs = token.attributes ?? {};
     return (
       (attrs.category === "border" && attrs.type === "width") ||
       attrs.category === "space"
     );
   },
-  transformer: (token: TransformedToken): string => {
+  transform: (token: TransformedToken): string => {
     const [val, multiplier] = token.value.split("*");
 
     let transformedValue = !val.includes(".dp")
@@ -47,4 +48,4 @@ export default {
 
     return transformedValue;
   },
-};
+} satisfies Transform;
