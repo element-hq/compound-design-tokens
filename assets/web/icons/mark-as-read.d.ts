@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * mark-as-read.svg
  */
-declare const MarkAsReadIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const MarkAsReadIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default MarkAsReadIcon;

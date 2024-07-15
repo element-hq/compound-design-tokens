@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * sign-out.svg
  */
-declare const SignOutIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const SignOutIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default SignOutIcon;

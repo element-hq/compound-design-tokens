@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * public.svg
  */
-declare const PublicIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const PublicIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default PublicIcon;

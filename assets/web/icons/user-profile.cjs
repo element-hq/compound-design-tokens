@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function UserProfileIcon(props) {
+var React = require("react");
+function UserProfileIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M9.175 13.825C9.958 14.608 10.9 15 12 15s2.042-.392 2.825-1.175C15.608 13.042 16 12.1 16 11s-.392-2.042-1.175-2.825C14.042 7.392 13.1 7 12 7s-2.042.392-2.825 1.175C8.392 8.958 8 9.9 8 11s.392 2.042 1.175 2.825Zm4.237-1.412A1.926 1.926 0 0 1 12 13c-.55 0-1.02-.196-1.412-.588A1.926 1.926 0 0 1 10 11c0-.55.196-1.02.588-1.412A1.926 1.926 0 0 1 12 9c.55 0 1.02.196 1.412.588.392.391.588.862.588 1.412 0 .55-.196 1.02-.588 1.412Z"
@@ -18,4 +20,4 @@ function UserProfileIcon(props) {
 }
 ;
 UserProfileIcon.displayName = "UserProfileIcon";
-module.exports = UserProfileIcon;
+module.exports = React.forwardRef(UserProfileIcon);

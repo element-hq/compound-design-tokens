@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * list-numbered.svg
  */
-declare const ListNumberedIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ListNumberedIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ListNumberedIcon;

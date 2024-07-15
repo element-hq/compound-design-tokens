@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * voice-call.svg
  */
-declare const VoiceCallIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const VoiceCallIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default VoiceCallIcon;

@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function ImageIcon(props) {
+var React = require("react");
+function ImageIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M17 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
@@ -16,4 +18,4 @@ function ImageIcon(props) {
 }
 ;
 ImageIcon.displayName = "ImageIcon";
-module.exports = ImageIcon;
+module.exports = React.forwardRef(ImageIcon);

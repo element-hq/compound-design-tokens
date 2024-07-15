@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx } from "react/jsx-runtime";
-function LocationNavigatorIcon(props) {
+function LocationNavigatorIcon(props, ref) {
   return /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: /*#__PURE__*/_jsx("path", {
       d: "M11 22v-1c-2.084-.233-3.871-1.096-5.363-2.587-1.491-1.492-2.354-3.28-2.587-5.363h-1a.968.968 0 0 1-.713-.288.968.968 0 0 1-.287-.712c0-.283.096-.52.287-.713a.967.967 0 0 1 .713-.287h1c.233-2.083 1.096-3.87 2.587-5.363C7.13 4.196 8.917 3.333 11 3.1v-1c0-.283.096-.52.287-.713A.968.968 0 0 1 12 1.1a.97.97 0 0 1 .712.287c.192.192.288.43.288.713v1c2.083.233 3.87 1.096 5.362 2.587 1.492 1.492 2.355 3.28 2.588 5.363h1a.97.97 0 0 1 .712.287c.192.192.288.43.288.713s-.096.52-.288.712a.968.968 0 0 1-.712.288h-1c-.233 2.083-1.096 3.87-2.588 5.363C16.871 19.904 15.083 20.767 13 21v1c0 .283-.096.52-.288.712A.968.968 0 0 1 12 23a.968.968 0 0 1-.713-.288A.968.968 0 0 1 11 22Zm1-2.95c1.933 0 3.583-.683 4.95-2.05 1.367-1.367 2.05-3.017 2.05-4.95 0-1.933-.683-3.583-2.05-4.95-1.367-1.367-3.017-2.05-4.95-2.05-1.934 0-3.584.683-4.95 2.05C5.683 8.467 5 10.117 5 12.05c0 1.933.683 3.583 2.05 4.95 1.366 1.367 3.016 2.05 4.95 2.05Z"
@@ -14,4 +16,4 @@ function LocationNavigatorIcon(props) {
 }
 ;
 LocationNavigatorIcon.displayName = "LocationNavigatorIcon";
-export default LocationNavigatorIcon;
+export default forwardRef(LocationNavigatorIcon);

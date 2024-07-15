@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * history.svg
  */
-declare const HistoryIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const HistoryIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default HistoryIcon;

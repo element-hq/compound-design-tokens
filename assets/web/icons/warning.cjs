@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function WarningIcon(props) {
+var React = require("react");
+function WarningIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M12.713 17.712A.968.968 0 0 1 12 18a.968.968 0 0 1-.713-.288A.968.968 0 0 1 11 17a.97.97 0 0 1 .287-.712A.968.968 0 0 1 12 16a.97.97 0 0 1 .713.288c.191.191.287.429.287.712s-.096.52-.287.712Zm0-3.999A.968.968 0 0 1 12 14a.968.968 0 0 1-.713-.287A.968.968 0 0 1 11 13V9c0-.283.096-.52.287-.713A.968.968 0 0 1 12 8c.283 0 .52.096.713.287.191.192.287.43.287.713v4c0 .283-.096.52-.287.713Z"
@@ -18,4 +20,4 @@ function WarningIcon(props) {
 }
 ;
 WarningIcon.displayName = "WarningIcon";
-module.exports = WarningIcon;
+module.exports = React.forwardRef(WarningIcon);

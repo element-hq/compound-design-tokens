@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * user-add.svg
  */
-declare const UserAddIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const UserAddIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default UserAddIcon;

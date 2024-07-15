@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * key.svg
  */
-declare const KeyIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const KeyIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default KeyIcon;
