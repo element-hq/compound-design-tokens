@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function UserProfileSolidIcon(props) {
+var React = require("react");
+function UserProfileSolidIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M12 15c-1.1 0-2.042-.392-2.825-1.175C8.392 13.042 8 12.1 8 11s.392-2.042 1.175-2.825C9.958 7.392 10.9 7 12 7s2.042.392 2.825 1.175C15.608 8.958 16 9.9 16 11s-.392 2.042-1.175 2.825C14.042 14.608 13.1 15 12 15Z"
@@ -16,4 +18,4 @@ function UserProfileSolidIcon(props) {
 }
 ;
 UserProfileSolidIcon.displayName = "UserProfileSolidIcon";
-module.exports = UserProfileSolidIcon;
+module.exports = React.forwardRef(UserProfileSolidIcon);

@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-function LeaveIcon(props) {
+function LeaveIcon(props, ref) {
   return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("path", {
       d: "M14 13c.283 0 .52-.096.713-.287A.968.968 0 0 0 15 12a.968.968 0 0 0-.287-.713A.968.968 0 0 0 14 11a.968.968 0 0 0-.713.287A.968.968 0 0 0 13 12c0 .283.096.52.287.713.192.191.43.287.713.287Z"
@@ -16,4 +18,4 @@ function LeaveIcon(props) {
 }
 ;
 LeaveIcon.displayName = "LeaveIcon";
-export default LeaveIcon;
+export default forwardRef(LeaveIcon);

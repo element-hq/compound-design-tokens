@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-function LabsIcon(props) {
+function LabsIcon(props, ref) {
   return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("path", {
       d: "M12 5a1 1 0 0 1-1-1V3a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm-7.071-.071a1 1 0 0 1 1.414 0l.707.707A1 1 0 0 1 5.636 7.05l-.707-.707a1 1 0 0 1 0-1.414Z"
@@ -20,4 +22,4 @@ function LabsIcon(props) {
 }
 ;
 LabsIcon.displayName = "LabsIcon";
-export default LabsIcon;
+export default forwardRef(LabsIcon);

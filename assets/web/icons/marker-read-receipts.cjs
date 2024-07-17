@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function MarkerReadReceiptsIcon(props) {
+var React = require("react");
+function MarkerReadReceiptsIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M14.707 10.707a1 1 0 0 0-1.414-1.414L10 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
@@ -16,4 +18,4 @@ function MarkerReadReceiptsIcon(props) {
 }
 ;
 MarkerReadReceiptsIcon.displayName = "MarkerReadReceiptsIcon";
-module.exports = MarkerReadReceiptsIcon;
+module.exports = React.forwardRef(MarkerReadReceiptsIcon);

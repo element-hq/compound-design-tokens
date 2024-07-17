@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function MarkAsUnreadIcon(props) {
+var React = require("react");
+function MarkAsUnreadIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M20 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
@@ -18,4 +20,4 @@ function MarkAsUnreadIcon(props) {
 }
 ;
 MarkAsUnreadIcon.displayName = "MarkAsUnreadIcon";
-module.exports = MarkAsUnreadIcon;
+module.exports = React.forwardRef(MarkAsUnreadIcon);

@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * end-call.svg
  */
-declare const EndCallIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const EndCallIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default EndCallIcon;

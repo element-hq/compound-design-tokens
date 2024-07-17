@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function VideoCallOffSolidIcon(props) {
+var React = require("react");
+function VideoCallOffSolidIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M2.747 2.753 4.35 4.355l.008-.003L18 17.994v.012l3.247 3.247a1 1 0 1 1-1.414 1.414l-2.898-2.898A1.99 1.99 0 0 1 16 20H6a4 4 0 0 1-4-4V8c0-.892.292-1.715.785-2.38L1.333 4.166a1 1 0 0 1 1.414-1.414ZM18 15.166 6.834 4H16a2 2 0 0 1 2 2v4.286l3.35-2.871a1 1 0 0 1 1.65.76v7.65a1 1 0 0 1-1.65.76L18 13.715v1.45Z"
@@ -14,4 +16,4 @@ function VideoCallOffSolidIcon(props) {
 }
 ;
 VideoCallOffSolidIcon.displayName = "VideoCallOffSolidIcon";
-module.exports = VideoCallOffSolidIcon;
+module.exports = React.forwardRef(VideoCallOffSolidIcon);

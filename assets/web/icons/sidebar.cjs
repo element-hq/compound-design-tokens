@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function SidebarIcon(props) {
+var React = require("react");
+function SidebarIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
       fillRule: "evenodd",
@@ -16,4 +18,4 @@ function SidebarIcon(props) {
 }
 ;
 SidebarIcon.displayName = "SidebarIcon";
-module.exports = SidebarIcon;
+module.exports = React.forwardRef(SidebarIcon);

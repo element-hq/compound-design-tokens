@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * close.svg
  */
-declare const CloseIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const CloseIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default CloseIcon;

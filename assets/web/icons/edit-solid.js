@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-function EditSolidIcon(props) {
+function EditSolidIcon(props, ref) {
   return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("mask", {
       id: "a",
@@ -26,4 +28,4 @@ function EditSolidIcon(props) {
 }
 ;
 EditSolidIcon.displayName = "EditSolidIcon";
-export default EditSolidIcon;
+export default forwardRef(EditSolidIcon);

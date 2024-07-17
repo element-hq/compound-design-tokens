@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function ChatNewIcon(props) {
+var React = require("react");
+function ChatNewIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M19 6h-2a.968.968 0 0 1-.712-.287A.967.967 0 0 1 16 5a.97.97 0 0 1 .288-.713A.968.968 0 0 1 17 4h2V2c0-.283.096-.52.288-.712A.968.968 0 0 1 20 1c.283 0 .52.096.712.288A.965.965 0 0 1 21 2v2h2a.97.97 0 0 1 .712.287c.192.192.288.43.288.713s-.096.52-.288.713A.968.968 0 0 1 23 6h-2v2a.97.97 0 0 1-.288.713A.968.968 0 0 1 20 9a.968.968 0 0 1-.712-.287A.967.967 0 0 1 19 8V6Z"
@@ -16,4 +18,4 @@ function ChatNewIcon(props) {
 }
 ;
 ChatNewIcon.displayName = "ChatNewIcon";
-module.exports = ChatNewIcon;
+module.exports = React.forwardRef(ChatNewIcon);

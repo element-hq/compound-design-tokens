@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * volume-off.svg
  */
-declare const VolumeOffIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const VolumeOffIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default VolumeOffIcon;

@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx } from "react/jsx-runtime";
-function SendIcon(props) {
+function SendIcon(props, ref) {
   return /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: /*#__PURE__*/_jsx("path", {
       fillRule: "evenodd",
@@ -16,4 +18,4 @@ function SendIcon(props) {
 }
 ;
 SendIcon.displayName = "SendIcon";
-export default SendIcon;
+export default forwardRef(SendIcon);

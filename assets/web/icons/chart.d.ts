@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * chart.svg
  */
-declare const ChartIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ChartIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ChartIcon;

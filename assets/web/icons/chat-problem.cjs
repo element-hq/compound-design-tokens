@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function ChatProblemIcon(props) {
+var React = require("react");
+function ChatProblemIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M12.712 16.712A.968.968 0 0 1 12 17a.967.967 0 0 1-.713-.288A.968.968 0 0 1 11 16c0-.283.096-.52.287-.713A.967.967 0 0 1 12 15a.97.97 0 0 1 .712.287c.192.192.288.43.288.713s-.096.52-.288.712Zm0-3.999A.968.968 0 0 1 12 13a.967.967 0 0 1-.713-.287A.968.968 0 0 1 11 12V8c0-.283.096-.52.287-.713A.967.967 0 0 1 12 7a.97.97 0 0 1 .712.287c.192.192.288.43.288.713v4a.97.97 0 0 1-.288.713Z"
@@ -16,4 +18,4 @@ function ChatProblemIcon(props) {
 }
 ;
 ChatProblemIcon.displayName = "ChatProblemIcon";
-module.exports = ChatProblemIcon;
+module.exports = React.forwardRef(ChatProblemIcon);

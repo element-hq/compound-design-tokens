@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * grid.svg
  */
-declare const GridIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const GridIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default GridIcon;

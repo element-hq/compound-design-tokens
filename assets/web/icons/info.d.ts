@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * info.svg
  */
-declare const InfoIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const InfoIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default InfoIcon;

@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function ImageErrorIcon(props) {
+var React = require("react");
+function ImageErrorIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.803a5.958 5.958 0 0 1-.72-2H5v-3.172l4-4 3.585 3.585a6.015 6.015 0 0 1 1.172-1.656l-3.343-3.343a2 2 0 0 0-2.828 0L5 13V5h14v7.083c.718.12 1.393.368 2 .72V5a2 2 0 0 0-2-2H5Z"
@@ -16,4 +18,4 @@ function ImageErrorIcon(props) {
 }
 ;
 ImageErrorIcon.displayName = "ImageErrorIcon";
-module.exports = ImageErrorIcon;
+module.exports = React.forwardRef(ImageErrorIcon);

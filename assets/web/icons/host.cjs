@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function HostIcon(props) {
+var React = require("react");
+function HostIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M16.712 6.713A.968.968 0 0 1 16 7a.968.968 0 0 1-.713-.287A.967.967 0 0 1 15 6c0-.283.096-.52.287-.713A.968.968 0 0 1 16 5a.97.97 0 0 1 .712.287c.192.192.288.43.288.713s-.096.52-.288.713Z"
@@ -18,4 +20,4 @@ function HostIcon(props) {
 }
 ;
 HostIcon.displayName = "HostIcon";
-module.exports = HostIcon;
+module.exports = React.forwardRef(HostIcon);

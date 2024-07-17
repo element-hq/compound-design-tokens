@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-function KeyOffIcon(props) {
+function KeyOffIcon(props, ref) {
   return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("path", {
       d: "M7 14c-.55 0-1.02-.196-1.412-.587A1.926 1.926 0 0 1 5 12c0-.55.196-1.02.588-1.412A1.926 1.926 0 0 1 7 10c.55 0 1.02.196 1.412.588.392.391.588.862.588 1.412 0 .55-.196 1.02-.588 1.413A1.926 1.926 0 0 1 7 14Z"
@@ -16,4 +18,4 @@ function KeyOffIcon(props) {
 }
 ;
 KeyOffIcon.displayName = "KeyOffIcon";
-export default KeyOffIcon;
+export default forwardRef(KeyOffIcon);

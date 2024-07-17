@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function MicOnSolidIcon(props) {
+var React = require("react");
+function MicOnSolidIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
       d: "M8 6a4 4 0 1 1 8 0v6a4 4 0 0 1-8 0V6Z"
@@ -16,4 +18,4 @@ function MicOnSolidIcon(props) {
 }
 ;
 MicOnSolidIcon.displayName = "MicOnSolidIcon";
-module.exports = MicOnSolidIcon;
+module.exports = React.forwardRef(MicOnSolidIcon);

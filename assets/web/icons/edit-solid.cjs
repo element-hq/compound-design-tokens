@@ -1,11 +1,13 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
-function EditSolidIcon(props) {
+var React = require("react");
+function EditSolidIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("mask", {
       id: "a",
@@ -26,4 +28,4 @@ function EditSolidIcon(props) {
 }
 ;
 EditSolidIcon.displayName = "EditSolidIcon";
-module.exports = EditSolidIcon;
+module.exports = React.forwardRef(EditSolidIcon);

@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * labs.svg
  */
-declare const LabsIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const LabsIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default LabsIcon;

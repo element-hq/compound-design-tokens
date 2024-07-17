@@ -73,6 +73,7 @@ export default async function generateIconTokens(): Promise<void> {
       {
         plugins: [svgrPluginJsx as unknown as ConfigPlugin],
         icon: true,
+        ref: true,
         jsxRuntime: "automatic",
         jsx: {
           babelConfig: {
@@ -92,6 +93,8 @@ export default async function generateIconTokens(): Promise<void> {
 
         template(variables, { tpl }) {
           return tpl`
+          import { forwardRef } from "react";
+
           function ${variables.componentName}(${variables.props}) {
             return (
               ${variables.jsx}
@@ -99,7 +102,7 @@ export default async function generateIconTokens(): Promise<void> {
           };
           ${variables.componentName}.displayName = '${variables.componentName}'
 
-          export default ${variables.componentName};
+          export default forwardRef(${variables.componentName});
         `;
         },
       },
@@ -113,6 +116,7 @@ export default async function generateIconTokens(): Promise<void> {
       {
         plugins: [svgrPluginJsx as unknown as ConfigPlugin],
         icon: true,
+        ref: true,
         jsxRuntime: "automatic",
         jsx: {
           babelConfig: {
@@ -122,6 +126,8 @@ export default async function generateIconTokens(): Promise<void> {
 
         template(variables, { tpl }) {
           return tpl`
+          var React = require("react");
+
           function ${variables.componentName}(${variables.props}) {
             return (
               ${variables.jsx}
@@ -129,7 +135,7 @@ export default async function generateIconTokens(): Promise<void> {
           };
           ${variables.componentName}.displayName = '${variables.componentName}'
 
-          module.exports = ${variables.componentName};
+          module.exports = React.forwardRef(${variables.componentName});
         `;
         },
       },
@@ -151,13 +157,14 @@ export default async function generateIconTokens(): Promise<void> {
     );
 
     // Generate a .d.ts (typescript declaration) file for the icon
-    const dTs = `import * as React from "react";
+    const dTs = `import React from "react";
 
 /**
  * ${parsedPath.base}
  */
-declare const ${componentName}: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ${componentName}: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ${componentName};

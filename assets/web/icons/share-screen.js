@@ -1,11 +1,13 @@
+import { forwardRef } from "react";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-function ShareScreenIcon(props) {
+function ShareScreenIcon(props, ref) {
   return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
     fill: "currentColor",
     viewBox: "0 0 24 24",
+    ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("path", {
       d: "M1.288 20.712A.965.965 0 0 0 2 21h20c.283 0 .52-.096.712-.288A.968.968 0 0 0 23 20a.968.968 0 0 0-.288-.712A.968.968 0 0 0 22 19H2a.967.967 0 0 0-.712.288A.968.968 0 0 0 1 20c0 .283.096.52.288.712ZM12.707 7.293a1 1 0 0 0-1.414 0l-2.5 2.5a1 1 0 0 0 1.414 1.414l.793-.793V13a1 1 0 1 0 2 0v-2.586l.793.793a1 1 0 0 0 1.414-1.414l-2.5-2.5Z"
@@ -16,4 +18,4 @@ function ShareScreenIcon(props) {
 }
 ;
 ShareScreenIcon.displayName = "ShareScreenIcon";
-export default ShareScreenIcon;
+export default forwardRef(ShareScreenIcon);

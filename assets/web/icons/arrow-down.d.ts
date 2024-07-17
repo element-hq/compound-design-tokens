@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * arrow-down.svg
  */
-declare const ArrowDownIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ArrowDownIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ArrowDownIcon;

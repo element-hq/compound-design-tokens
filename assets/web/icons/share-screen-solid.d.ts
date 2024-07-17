@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * share-screen-solid.svg
  */
-declare const ShareScreenSolidIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ShareScreenSolidIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ShareScreenSolidIcon;

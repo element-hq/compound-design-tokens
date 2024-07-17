@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * underline.svg
  */
-declare const UnderlineIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const UnderlineIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default UnderlineIcon;

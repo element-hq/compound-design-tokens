@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * image-error.svg
  */
-declare const ImageErrorIcon: React.FunctionComponent<
-    React.ComponentProps<"svg">
+declare const ImageErrorIcon: React.ForwardRefExoticComponent<
+    Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
+    React.RefAttributes<SVGSVGElement>
 >;
 
 export default ImageErrorIcon;
