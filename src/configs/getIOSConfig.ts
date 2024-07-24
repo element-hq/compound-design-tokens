@@ -161,8 +161,7 @@ export function getCommonIOSConfig(): PlatformConfig {
     buildPath: "assets/ios/swift/",
     files: [
       {
-        filter: (token: TransformedToken) =>
-          token.type === "icon",
+        filter: (token: TransformedToken) => token.type === "icon",
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
         options: {
