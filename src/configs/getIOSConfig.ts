@@ -162,7 +162,7 @@ export function getCommonIOSConfig(): PlatformConfig {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "icon" && iosExclude.filter(token),
+          token.type === "icon",
         destination: "CompoundIcons.swift",
         format: "swift/class-members",
         options: {
