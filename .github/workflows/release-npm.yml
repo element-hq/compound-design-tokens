@@ -40,7 +40,7 @@ jobs:
           git push
       - name: 🚀 Publish to npm
         id: npm-publish
-        uses: JS-DevTools/npm-publish@v1
+        uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.ELEMENT_NPM_TOKEN }}
           access: public
