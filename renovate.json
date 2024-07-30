@@ -4,6 +4,12 @@
   "semanticCommits": "disabled",
   "packageRules": [
     {
+      "groupName": "GitHub Actions",
+      "matchDepTypes": ["action"],
+      "pinDigests": true,
+      "extends": ["schedule:monthly"]
+    },
+    {
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchUpdateTypes": ["minor", "patch"],
