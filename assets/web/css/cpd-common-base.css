@@ -43,9 +43,9 @@
   --cpd-font-heading-lg-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-heading-lg)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-heading-md-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-heading-md)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-heading-md-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-heading-md)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
-  --cpd-font-heading-sm-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-line-height-tight)rem/1.25 var(--cpd-font-family-sans);
-  --cpd-font-heading-sm-medium: var(--cpd-font-weight-medium) var(--cpd-font-line-height-tight)rem/1.25 var(--cpd-font-family-sans);
-  --cpd-font-heading-sm-regular: var(--cpd-font-weight-regular) var(--cpd-font-line-height-tight)rem/1.25 var(--cpd-font-family-sans);
+  --cpd-font-heading-sm-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-heading-sm)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
+  --cpd-font-heading-sm-medium: var(--cpd-font-weight-medium) var(--cpd-font-size-heading-sm)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
+  --cpd-font-heading-sm-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-heading-sm)/var(--cpd-font-line-height-tight) var(--cpd-font-family-sans);
   --cpd-font-body-lg-semibold: var(--cpd-font-weight-semibold) var(--cpd-font-size-body-lg)/var(--cpd-font-line-height-regular) var(--cpd-font-family-sans);
   --cpd-font-body-lg-medium: var(--cpd-font-weight-medium) var(--cpd-font-size-body-lg)/var(--cpd-font-line-height-regular) var(--cpd-font-family-sans);
   --cpd-font-body-lg-regular: var(--cpd-font-weight-regular) var(--cpd-font-size-body-lg)/var(--cpd-font-line-height-regular) var(--cpd-font-family-sans);
