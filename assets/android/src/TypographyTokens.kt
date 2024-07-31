@@ -40,7 +40,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W500,
         lineHeight = 22.sp,
         fontSize = 16.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.015625.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -49,7 +49,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 22.sp,
         fontSize = 16.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.015625.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -58,7 +58,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W500,
         lineHeight = 20.sp,
         fontSize = 14.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.017857.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -67,7 +67,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 20.sp,
         fontSize = 14.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.017857.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -76,7 +76,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W500,
         lineHeight = 17.sp,
         fontSize = 12.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.033333.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -85,7 +85,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 17.sp,
         fontSize = 12.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.033333.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -94,7 +94,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W500,
         lineHeight = 15.sp,
         fontSize = 11.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.045454.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -103,7 +103,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 15.sp,
         fontSize = 11.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.045454.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -112,7 +112,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W700,
         lineHeight = 34.sp,
         fontSize = 28.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -121,7 +121,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 34.sp,
         fontSize = 28.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -130,7 +130,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W700,
         lineHeight = 27.sp,
         fontSize = 22.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -139,7 +139,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 27.sp,
         fontSize = 22.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -148,7 +148,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W500,
         lineHeight = 25.sp,
         fontSize = 20.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -157,7 +157,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 25.sp,
         fontSize = 20.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -166,7 +166,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W700,
         lineHeight = 41.sp,
         fontSize = 34.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )
@@ -175,7 +175,7 @@ object TypographyTokens {
         fontWeight = FontWeight.W400,
         lineHeight = 41.sp,
         fontSize = 34.sp,
-        letterSpacing = 0.0.em,
+        letterSpacing = 0.em,
         platformStyle = PlatformTextStyle(includeFontPadding = false),
         lineHeightStyle = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.None)
     )

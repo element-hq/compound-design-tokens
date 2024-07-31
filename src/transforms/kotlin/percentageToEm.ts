@@ -28,6 +28,6 @@ export default {
   },
   transform: (token: TransformedToken): string => {
     const val = Number.parseFloat(token.value.replace("%", ""));
-    return `${(val / 100).toFixed(1)}.em`;
+    return `${val / 100}.em`;
   },
 } satisfies Transform;

@@ -240,7 +240,6 @@ export function getCommonAndroidConfig(): PlatformConfig {
   return {
     transforms: [
       "camelCaseDecimal",
-      "ts/resolveMath",
       "attribute/cti",
       "kotlin/fontWeight",
       "kotlin/literal",
