@@ -11,16 +11,8 @@
     "check": "yarn exec biome -- check",
     "types": "yarn exec tsc -- --noEmit"
   },
-  "keywords": [
-    "compound",
-    "design tokens",
-    "style dictionary",
-    "css"
-  ],
-  "files": [
-    "./assets/web/**/*",
-    "./icons/**/*"
-  ],
+  "keywords": ["compound", "design tokens", "style dictionary", "css"],
+  "files": ["./assets/web/**/*", "./icons/**/*"],
   "main": "assets/web/js/index.js",
   "type": "module",
   "exports": {
