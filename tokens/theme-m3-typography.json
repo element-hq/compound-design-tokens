@@ -1,0 +1,123 @@
+{
+  "display": {
+    "large": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "Regular",
+        "lineHeight": "64",
+        "fontSize": "57",
+        "letterSpacing": "-0.25"
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    },
+    "medium": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "Regular",
+        "lineHeight": "52",
+        "fontSize": "45",
+        "letterSpacing": "0%"
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    },
+    "small": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "Regular",
+        "lineHeight": "44",
+        "fontSize": "36",
+        "letterSpacing": "0%",
+        "description": "No direct counterpart in Compound."
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    }
+  },
+  "headline": {
+    "large": {
+      "value": "{font.heading.xl.regular}",
+      "type": "typography"
+    },
+    "medium": {
+      "value": "{font.heading.lg.regular}",
+      "type": "typography"
+    },
+    "small": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "Regular",
+        "lineHeight": "32",
+        "fontSize": "24",
+        "letterSpacing": "0%"
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    }
+  },
+  "title": {
+    "large": {
+      "value": "{font.heading.md.regular}",
+      "type": "typography"
+    },
+    "medium": {
+      "value": "{font.body.lg.medium}",
+      "type": "typography"
+    },
+    "small": {
+      "value": "{font.body.md.medium}",
+      "type": "typography"
+    }
+  },
+  "body": {
+    "large": {
+      "value": "{font.body.lg.regular}",
+      "type": "typography"
+    },
+    "medium": {
+      "value": "{font.body.md.regular}",
+      "type": "typography"
+    },
+    "small": {
+      "value": "{font.body.sm.regular}",
+      "type": "typography"
+    }
+  },
+  "label": {
+    "large - prominent": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "SemiBold",
+        "lineHeight": "20",
+        "fontSize": "14",
+        "letterSpacing": "0.1"
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    },
+    "large": {
+      "value": "{font.body.md.medium}",
+      "type": "typography"
+    },
+    "medium - prominent": {
+      "value": {
+        "fontFamily": "Roboto",
+        "fontWeight": "SemiBold",
+        "lineHeight": "17",
+        "fontSize": "12",
+        "letterSpacing": "0.5"
+      },
+      "type": "typography",
+      "description": "No direct counterpart in Compound."
+    },
+    "medium": {
+      "value": "{font.body.sm.medium}",
+      "type": "typography"
+    },
+    "small": {
+      "value": "{font.body.xs.medium}",
+      "type": "typography"
+    }
+  }
+}
