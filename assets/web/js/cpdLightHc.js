@@ -167,6 +167,7 @@ export const cpdIconLockSolid = "icons/lock-solid.svg";
 export const cpdIconLock = "icons/lock.svg";
 export const cpdIconMarkAsRead = "icons/mark-as-read.svg";
 export const cpdIconMarkAsUnread = "icons/mark-as-unread.svg";
+export const cpdIconMarkThreadsAsRead = "icons/mark-threads-as-read.svg";
 export const cpdIconMarkerReadReceipts = "icons/marker-read-receipts.svg";
 export const cpdIconMention = "icons/mention.svg";
 export const cpdIconMenu = "icons/menu.svg";

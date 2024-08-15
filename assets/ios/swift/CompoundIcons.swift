@@ -89,6 +89,7 @@ public class CompoundIcons {
     public let menu = Image("menu", bundle: Bundle.module)
     public let mention = Image("mention", bundle: Bundle.module)
     public let markerReadReceipts = Image("markerReadReceipts", bundle: Bundle.module)
+    public let markThreadsAsRead = Image("markThreadsAsRead", bundle: Bundle.module)
     public let markAsUnread = Image("markAsUnread", bundle: Bundle.module)
     public let markAsRead = Image("markAsRead", bundle: Bundle.module)
     public let lock = Image("lock", bundle: Bundle.module)

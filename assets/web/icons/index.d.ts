@@ -88,6 +88,7 @@ export { default as LockSolidIcon } from "./lock-solid.js";
 export { default as LockIcon } from "./lock.js";
 export { default as MarkAsReadIcon } from "./mark-as-read.js";
 export { default as MarkAsUnreadIcon } from "./mark-as-unread.js";
+export { default as MarkThreadsAsReadIcon } from "./mark-threads-as-read.js";
 export { default as MarkerReadReceiptsIcon } from "./marker-read-receipts.js";
 export { default as MentionIcon } from "./mention.js";
 export { default as MenuIcon } from "./menu.js";
