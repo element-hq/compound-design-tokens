@@ -89,6 +89,7 @@ module.exports = {
   LockIcon: require("./lock.cjs"),
   MarkAsReadIcon: require("./mark-as-read.cjs"),
   MarkAsUnreadIcon: require("./mark-as-unread.cjs"),
+  MarkThreadsAsReadIcon: require("./mark-threads-as-read.cjs"),
   MarkerReadReceiptsIcon: require("./marker-read-receipts.cjs"),
   MentionIcon: require("./mention.cjs"),
   MenuIcon: require("./menu.cjs"),
