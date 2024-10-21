@@ -1,0 +1,427 @@
+/* Fallback for Inter regular */
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue'), local('HelveticaNeue');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 91.2883%;
+  descent-override: 22.7301%;
+  line-gap-override: 0%;
+  size-adjust: 106.1198%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI'), local('SegoeUI');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 89.9412%;
+  descent-override: 22.3946%;
+  size-adjust: 107.7093%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto'), local('Roboto-Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 90.2384%;
+  descent-override: 22.4686%;
+  size-adjust: 107.3546%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 92.3027%;
+  descent-override: 22.9826%;
+  line-gap-override: 0%;
+  size-adjust: 104.9536%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans Regular'), local('FiraSans-Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 92.9112%;
+  descent-override: 23.1342%;
+  size-adjust: 104.2662%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans Regular'), local('NotoSans-Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 96.1571%;
+  descent-override: 23.9423%;
+  size-adjust: 100.7466%;
+}
+@font-face {
+  font-family: "Inter Fallback: Arial";
+  src: local('Arial'), local('ArialMT');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 90.4365%;
+  descent-override: 22.518%;
+  line-gap-override: 0%;
+  size-adjust: 107.1194%;
+}
+
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue Italic'), local('HelveticaNeue-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 90.3285%;
+  descent-override: 22.4911%;
+  line-gap-override: 0%;
+  size-adjust: 107.2475%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI Italic'), local('SegoeUI-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 87.4238%;
+  descent-override: 21.7678%;
+  size-adjust: 110.8108%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto Italic'), local('Roboto-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 87.916%;
+  descent-override: 21.8904%;
+  size-adjust: 110.1904%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 88.7154%;
+  descent-override: 22.0894%;
+  line-gap-override: 0%;
+  size-adjust: 109.1974%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans Italic'), local('FiraSans-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 91.3366%;
+  descent-override: 22.7421%;
+  size-adjust: 106.0637%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans Italic'), local('NotoSans-Italic');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 90.1268%;
+  descent-override: 22.4409%;
+  size-adjust: 107.4874%;
+}
+@font-face {
+  font-family: "Inter Fallback: Arial";
+  src: local('Arial Italic'), local('Arial-ItalicMT');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 89.885%;
+  descent-override: 22.3806%;
+  line-gap-override: 0%;
+  size-adjust: 107.7766%;
+}
+
+
+/* Fallback for Inter medium */
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue Medium'), local('HelveticaNeue-Medium');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 93.3765%;
+  descent-override: 23.25%;
+  line-gap-override: 0%;
+  size-adjust: 103.7466%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 91.8744%;
+  descent-override: 22.876%;
+  size-adjust: 105.4429%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto Medium'), local('Roboto-Medium');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 90.2075%;
+  descent-override: 22.4609%;
+  size-adjust: 107.3913%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 93.5773%;
+  descent-override: 23.3%;
+  line-gap-override: 0%;
+  size-adjust: 103.524%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans Medium'), local('FiraSans-Medium');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 92.1717%;
+  descent-override: 22.95%;
+  size-adjust: 105.1028%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans Medium'), local('NotoSans-Medium');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 96.9911%;
+  descent-override: 24.15%;
+  size-adjust: 99.8803%;
+}
+
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue Medium Italic'), local('HelveticaNeue-MediumItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 92.8129%;
+  descent-override: 23.1097%;
+  line-gap-override: 0%;
+  size-adjust: 104.3767%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI Semibold Italic'), local('SegoeUI-SemiboldItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 90.3452%;
+  descent-override: 22.4952%;
+  line-gap-override: 0%;
+  size-adjust: 107.2276%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 87.9087%;
+  descent-override: 21.8886%;
+  size-adjust: 110.1996%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 90.6173%;
+  descent-override: 22.563%;
+  line-gap-override: 0%;
+  size-adjust: 106.9056%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans Medium Italic'), local('FiraSans-MediumItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 90.2181%;
+  descent-override: 22.4636%;
+  size-adjust: 107.3787%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans Medium Italic'), local('NotoSans-MediumItalic');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  ascent-override: 91.0165%;
+  descent-override: 22.6624%;
+  size-adjust: 106.4367%;
+}
+
+
+/* Fallback for Inter semibold */
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue Bold'), local('HelveticaNeue-Bold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 95.4228%;
+  descent-override: 23.7595%;
+  line-gap-override: 0%;
+  size-adjust: 101.5218%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI Bold'), local('SegoeUI-Bold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 94.4483%;
+  descent-override: 23.5169%;
+  size-adjust: 102.5694%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto Bold'), local('Roboto-Bold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 89.886%;
+  descent-override: 22.3809%;
+  size-adjust: 107.7754%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 95.4228%;
+  descent-override: 23.7595%;
+  line-gap-override: 0%;
+  size-adjust: 101.5218%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 91.2481%;
+  descent-override: 22.72%;
+  size-adjust: 106.1666%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans SemiBold'), local('NotoSans-SemiBold');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 98.0072%;
+  descent-override: 24.403%;
+  size-adjust: 98.8448%;
+}
+@font-face {
+  font-family: "Inter Fallback: Arial";
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 95.419%;
+  descent-override: 23.7586%;
+  line-gap-override: 0%;
+  size-adjust: 101.5259%;
+}
+
+@font-face {
+  font-family: "Inter Fallback: Helvetica Neue";
+  src: local('Helvetica Neue Bold Italic'), local('HelveticaNeue-BoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 94.9556%;
+  descent-override: 23.6432%;
+  line-gap-override: 0%;
+  size-adjust: 102.0213%;
+}
+@font-face {
+  font-family: "Inter Fallback: Segoe UI";
+  src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 93.4049%;
+  descent-override: 23.2571%;
+  size-adjust: 103.7152%;
+}
+@font-face {
+  font-family: "Inter Fallback: Roboto";
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 87.6213%;
+  descent-override: 21.817%;
+  size-adjust: 110.5611%;
+}
+@font-face {
+  font-family: "Inter Fallback: Ubuntu";
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 92.3893%;
+  descent-override: 23.0042%;
+  line-gap-override: 0%;
+  size-adjust: 104.8553%;
+}
+@font-face {
+  font-family: "Inter Fallback: Fira Sans";
+  src: local('Fira Sans SemiBold Italic'), local('FiraSans-SemiBoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 89.2306%;
+  descent-override: 22.2177%;
+  size-adjust: 108.567%;
+}
+@font-face {
+  font-family: "Inter Fallback: Noto Sans";
+  src: local('Noto Sans SemiBold Italic'), local('NotoSans-SemiBoldItalic');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 91.9944%;
+  descent-override: 22.9059%;
+  size-adjust: 105.3053%;
+}
+@font-face {
+  font-family: "Inter Fallback: Arial";
+  src: local('Arial Bold Italic'), local('Arial-BoldItalicMT');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  ascent-override: 94.7544%;
+  descent-override: 23.5931%;
+  line-gap-override: 0%;
+  size-adjust: 102.238%;
+}

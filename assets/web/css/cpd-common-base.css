@@ -12,8 +12,8 @@
   --cpd-border-width-2: 2px;
   --cpd-border-width-4: 4px;
   --cpd-border-width-0-5: 0.5px;
-  --cpd-font-family-sans: Inter;
-  --cpd-font-family-mono: Inconsolata;
+  --cpd-font-family-sans: Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif;
+  --cpd-font-family-mono: Inconsolata, ui-monospace, monospace;
   --cpd-font-weight-regular: 400;
   --cpd-font-weight-medium: 500;
   --cpd-font-weight-semibold: 600;
