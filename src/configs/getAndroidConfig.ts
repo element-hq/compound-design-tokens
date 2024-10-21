@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash-es";
+import { camelCase, upperFirst } from "lodash-es";
 import StyleDictionary from "style-dictionary";
 import type {
   FormatFnArguments,
@@ -123,7 +123,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
     name: "compose/icons",
     format: composeIcons,
   });
-  const className = _.upperFirst(_.camelCase(theme));
+  const className = upperFirst(camelCase(theme));
   let valName = "";
   let themeName = "";
   let tokenClassName = "";

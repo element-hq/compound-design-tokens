@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash-es";
+import { camelCase } from "lodash-es";
 import type { File, PlatformConfig } from "style-dictionary/types";
 import type { Theme } from "../@types";
 import { isCoreColor } from "../filters/isCoreColor";
@@ -63,7 +63,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
   if (target === "ts") {
     return [
       {
-        destination: `${_.camelCase(
+        destination: `${camelCase(
           `${COMPOUND_TOKENS_NAMESPACE}.${theme}`,
         )}.d.ts`,
         format: "typescript/es6-declarations",
@@ -74,9 +74,7 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
   if (target === "js") {
     return [
       {
-        destination: `${_.camelCase(
-          `${COMPOUND_TOKENS_NAMESPACE}.${theme}`,
-        )}.js`,
+        destination: `${camelCase(`${COMPOUND_TOKENS_NAMESPACE}.${theme}`)}.js`,
         format: "javascript/es6",
         options,
       },

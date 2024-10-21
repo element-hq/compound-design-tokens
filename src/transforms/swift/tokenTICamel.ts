@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import _ from "lodash-es";
+import { camelCase } from "lodash-es";
 import type { Transform } from "style-dictionary/types";
 
 /**
@@ -30,7 +30,7 @@ export default {
     if (options?.prefix) {
       prefix = options.prefix;
     }
-    const name = _.camelCase(
+    const name = camelCase(
       [prefix].concat(token.path.slice(1, token.path.length)).join(" "),
     );
     return escapeName(name);
