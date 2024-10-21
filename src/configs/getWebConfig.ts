@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 import { camelCase } from "lodash-es";
+import StyleDictionary from "style-dictionary";
 import type { File, PlatformConfig } from "style-dictionary/types";
 import type { Theme } from "../@types";
 import { isCoreColor } from "../filters/isCoreColor";
@@ -25,8 +26,21 @@ import {
   type Tier,
   cssFileName,
 } from "../utils/cssFileName";
+import { fontFaces, fontFamilyOverrides } from "../utils/fontFallbacks";
 
 const basePxFontSize = 16;
+
+StyleDictionary.registerFormat({
+  name: "css/fontFallbacks",
+  format: () => fontFaces,
+});
+
+StyleDictionary.registerTransform({
+  name: "css/fontFallbacks",
+  type: "value",
+  filter: (token) => token.type === "fontFamilies",
+  transform: (token) => fontFamilyOverrides[token.value] ?? token.value,
+});
 
 export default function (
   target: "js" | "css" | "ts",
@@ -42,6 +56,7 @@ export default function (
     "attribute/cti",
     "css/pxToRem",
     "css/percentageToUnitless",
+    "css/fontFallbacks",
     target === "css" ? "name/kebab" : "camelCaseDecimal",
   ];
 
@@ -115,6 +130,11 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     },
   });
 
+  const fontFaces = {
+    destination: `${COMPOUND_TOKENS_NAMESPACE}-font-fallbacks.css`,
+    format: "css/fontFallbacks",
+  };
+
   return [
     common("base"),
     common("semantic"),
@@ -126,5 +146,6 @@ function getFilesFormat(theme: Theme, target: "css" | "js" | "ts"): File[] {
     // This file is to be imported with a media query import
     themed("base", true),
     themed("semantic", true),
+    fontFaces,
   ];
 }
