@@ -3,6 +3,7 @@
  */
 @layer cpd-semantic, custom, cpd-base;
 
+@import url("./cpd-font-fallbacks.css");
 @import url("./cpd-common-base.css") layer(cpd-base) screen;
 @import url("./cpd-common-semantic.css") layer(cpd-semantic) screen;
 @import url("./cpd-theme-light-base.css") layer(cpd-base) screen;
