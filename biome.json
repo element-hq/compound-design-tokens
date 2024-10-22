@@ -15,10 +15,11 @@
       "correctness": {
         "noUnusedImports": "error",
         "noUnusedPrivateClassMembers": "error",
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
+        "noUnusedFunctionParameters": "error"
       },
       "style": { "noNonNullAssertion": "off" },
-      "nursery": { "noUnusedFunctionParameters": "error" }
+      "nursery": {}
     }
   },
   "vcs": {
