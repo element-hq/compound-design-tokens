@@ -1,4 +1,4 @@
 .cpd-theme-dark-hc.cpd-theme-dark-hc {
-  --cpd-color-bg-subtle-secondary-level-0: var(--cpd-color-theme-bg);
   --cpd-color-bg-canvas-default-level-1: var(--cpd-color-gray-300);
+  --cpd-color-bg-subtle-secondary-level-0: var(--cpd-color-theme-bg);
 }

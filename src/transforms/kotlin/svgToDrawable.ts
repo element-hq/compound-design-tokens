@@ -17,7 +17,7 @@ limitations under the License.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
-import _ from "lodash-es";
+import { snakeCase } from "lodash-es";
 import type { Transform } from "style-dictionary/types";
 import svg2vectordrawable from "svg2vectordrawable";
 
@@ -38,7 +38,7 @@ export default {
 
     // Snake case and replace `icon` with `ic` as this is the convention on Android
     // and on Material
-    const imageId = _.snakeCase(token.name.replace("icon", "ic_compound_"));
+    const imageId = snakeCase(token.name.replace("icon", "ic_compound_"));
 
     const options = {
       fillBlack: true, // Add black color to path element, defaults to false
