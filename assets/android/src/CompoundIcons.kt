@@ -204,6 +204,9 @@ object CompoundIcons {
     @Composable fun Grid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_grid)
     }
+    @Composable fun HandRaised(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_hand_raised)
+    }
     @Composable fun Help(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_help)
     }
@@ -614,6 +617,7 @@ object CompoundIcons {
         Filter(),
         Forward(),
         Grid(),
+        HandRaised(),
         Help(),
         HelpSolid(),
         History(),
@@ -791,6 +795,7 @@ object CompoundIcons {
         R.drawable.ic_compound_filter,
         R.drawable.ic_compound_forward,
         R.drawable.ic_compound_grid,
+        R.drawable.ic_compound_hand_raised,
         R.drawable.ic_compound_help,
         R.drawable.ic_compound_help_solid,
         R.drawable.ic_compound_history,

@@ -134,6 +134,7 @@ export const cpdIconFiles = "icons/files.svg";
 export const cpdIconFilter = "icons/filter.svg";
 export const cpdIconForward = "icons/forward.svg";
 export const cpdIconGrid = "icons/grid.svg";
+export const cpdIconHandRaised = "icons/hand-raised.svg";
 export const cpdIconHelpSolid = "icons/help-solid.svg";
 export const cpdIconHelp = "icons/help.svg";
 export const cpdIconHistory = "icons/history.svg";

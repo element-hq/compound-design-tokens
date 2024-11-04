@@ -63,6 +63,7 @@ public class CompoundIcons {
     public let filter = Image("filter", bundle: Bundle.module)
     public let forward = Image("forward", bundle: Bundle.module)
     public let grid = Image("grid", bundle: Bundle.module)
+    public let handRaised = Image("handRaised", bundle: Bundle.module)
     public let helpSolid = Image("helpSolid", bundle: Bundle.module)
     public let help = Image("help", bundle: Bundle.module)
     public let history = Image("history", bundle: Bundle.module)
