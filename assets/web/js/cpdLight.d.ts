@@ -134,6 +134,7 @@ export const cpdIconFiles : string;
 export const cpdIconFilter : string;
 export const cpdIconForward : string;
 export const cpdIconGrid : string;
+export const cpdIconHandRaised : string;
 export const cpdIconHelpSolid : string;
 export const cpdIconHelp : string;
 export const cpdIconHistory : string;

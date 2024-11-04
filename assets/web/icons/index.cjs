@@ -56,6 +56,7 @@ module.exports = {
   FilterIcon: require("./filter.cjs"),
   ForwardIcon: require("./forward.cjs"),
   GridIcon: require("./grid.cjs"),
+  HandRaisedIcon: require("./hand-raised.cjs"),
   HelpSolidIcon: require("./help-solid.cjs"),
   HelpIcon: require("./help.cjs"),
   HistoryIcon: require("./history.cjs"),

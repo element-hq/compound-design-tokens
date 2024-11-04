@@ -55,6 +55,7 @@ export { default as FilesIcon } from "./files.js";
 export { default as FilterIcon } from "./filter.js";
 export { default as ForwardIcon } from "./forward.js";
 export { default as GridIcon } from "./grid.js";
+export { default as HandRaisedIcon } from "./hand-raised.js";
 export { default as HelpSolidIcon } from "./help-solid.js";
 export { default as HelpIcon } from "./help.js";
 export { default as HistoryIcon } from "./history.js";
