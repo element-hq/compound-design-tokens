@@ -1,11 +1,11 @@
 import React from "react";
 
 /**
- * hand-raised.svg
+ * raised-hand-solid.svg
  */
-declare const HandRaisedIcon: React.ForwardRefExoticComponent<
+declare const RaisedHandSolidIcon: React.ForwardRefExoticComponent<
     Omit<React.SVGProps<SVGSVGElement>, "ref" | "children"> &
     React.RefAttributes<SVGSVGElement>
 >;
 
-export default HandRaisedIcon;
+export default RaisedHandSolidIcon;
