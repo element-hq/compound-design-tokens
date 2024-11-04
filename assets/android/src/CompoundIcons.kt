@@ -204,9 +204,6 @@ object CompoundIcons {
     @Composable fun Grid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_grid)
     }
-    @Composable fun HandRaised(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_hand_raised)
-    }
     @Composable fun Help(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_help)
     }
@@ -398,6 +395,9 @@ object CompoundIcons {
     }
     @Composable fun Quote(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_quote)
+    }
+    @Composable fun RaisedHandSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_raised_hand_solid)
     }
     @Composable fun Reaction(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction)
@@ -617,7 +617,6 @@ object CompoundIcons {
         Filter(),
         Forward(),
         Grid(),
-        HandRaised(),
         Help(),
         HelpSolid(),
         History(),
@@ -682,6 +681,7 @@ object CompoundIcons {
         Public(),
         QrCode(),
         Quote(),
+        RaisedHandSolid(),
         Reaction(),
         ReactionAdd(),
         Reply(),
@@ -795,7 +795,6 @@ object CompoundIcons {
         R.drawable.ic_compound_filter,
         R.drawable.ic_compound_forward,
         R.drawable.ic_compound_grid,
-        R.drawable.ic_compound_hand_raised,
         R.drawable.ic_compound_help,
         R.drawable.ic_compound_help_solid,
         R.drawable.ic_compound_history,
@@ -860,6 +859,7 @@ object CompoundIcons {
         R.drawable.ic_compound_public,
         R.drawable.ic_compound_qr_code,
         R.drawable.ic_compound_quote,
+        R.drawable.ic_compound_raised_hand_solid,
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
         R.drawable.ic_compound_reply,
