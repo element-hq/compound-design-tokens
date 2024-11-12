@@ -31,7 +31,8 @@ export const cpdBorderWidth1 = "1px";
 export const cpdBorderWidth2 = "2px";
 export const cpdBorderWidth4 = "4px";
 export const cpdBorderWidth0_5 = "0.5px";
-export const cpdFontFamilySans = "Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
+export const cpdFontFamilySans =
+  'Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
 export const cpdFontFamilyMono = "Inconsolata, ui-monospace, monospace";
 export const cpdFontWeightRegular = "400";
 export const cpdFontWeightMedium = "500";
@@ -56,27 +57,48 @@ export const cpdFontLetterSpacingHeadingSm = "-0.0166em";
 export const cpdFontLetterSpacingHeadingMd = "-0.0195em";
 export const cpdFontLetterSpacingHeadingLg = "-0.0209em";
 export const cpdFontLetterSpacingHeadingXl = "-0.0216em";
-export const cpdFontBodyXsRegular = "400 0.6875rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyXsMedium = "500 0.6875rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyXsSemibold = "600 0.6875rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodySmRegular = "400 0.8125rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodySmMedium = "500 0.8125rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodySmSemibold = "600 0.8125rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyMdRegular = "400 0.9375rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyMdMedium = "500 0.9375rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyMdSemibold = "600 0.9375rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyLgRegular = "400 1.0625rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyLgMedium = "500 1.0625rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontBodyLgSemibold = "600 1.0625rem/1.5 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingSmRegular = "400 1.25rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingSmMedium = "500 1.25rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingSmSemibold = "600 1.25rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingMdRegular = "400 1.5rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingMdSemibold = "600 1.5rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingLgRegular = "400 1.75rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingLgSemibold = "600 1.75rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingXlRegular = "400 2rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
-export const cpdFontHeadingXlSemibold = "600 2rem/1.25 Inter, \"Inter Fallback: Helvetica Neue\", \"Inter Fallback: Segoe UI\", \"Inter Fallback: Roboto\", \"Inter Fallback: Ubuntu\", \"Inter Fallback: Fira Sans\", \"Inter Fallback: Noto Sans\", \"Inter Fallback: Arial\", \"Helvetica Neue\", \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", \"Noto Sans\", Arial, sans-serif";
+export const cpdFontBodyXsRegular =
+  '400 0.6875rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyXsMedium =
+  '500 0.6875rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyXsSemibold =
+  '600 0.6875rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodySmRegular =
+  '400 0.8125rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodySmMedium =
+  '500 0.8125rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodySmSemibold =
+  '600 0.8125rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyMdRegular =
+  '400 0.9375rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyMdMedium =
+  '500 0.9375rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyMdSemibold =
+  '600 0.9375rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyLgRegular =
+  '400 1.0625rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyLgMedium =
+  '500 1.0625rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontBodyLgSemibold =
+  '600 1.0625rem/1.5 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingSmRegular =
+  '400 1.25rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingSmMedium =
+  '500 1.25rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingSmSemibold =
+  '600 1.25rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingMdRegular =
+  '400 1.5rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingMdSemibold =
+  '600 1.5rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingLgRegular =
+  '400 1.75rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingLgSemibold =
+  '600 1.75rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingXlRegular =
+  '400 2rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
+export const cpdFontHeadingXlSemibold =
+  '600 2rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
 export const cpdIconAdmin = "icons/admin.svg";
 export const cpdIconArrowDown = "icons/arrow-down.svg";
 export const cpdIconArrowLeft = "icons/arrow-left.svg";
@@ -158,7 +180,8 @@ export const cpdIconLeave = "icons/leave.svg";
 export const cpdIconLink = "icons/link.svg";
 export const cpdIconListBulleted = "icons/list-bulleted.svg";
 export const cpdIconListNumbered = "icons/list-numbered.svg";
-export const cpdIconLocationNavigatorCentred = "icons/location-navigator-centred.svg";
+export const cpdIconLocationNavigatorCentred =
+  "icons/location-navigator-centred.svg";
 export const cpdIconLocationNavigator = "icons/location-navigator.svg";
 export const cpdIconLocationPinSolid = "icons/location-pin-solid.svg";
 export const cpdIconLocationPin = "icons/location-pin.svg";
@@ -237,7 +260,8 @@ export const cpdIconUserProfile = "icons/user-profile.svg";
 export const cpdIconUserSolid = "icons/user-solid.svg";
 export const cpdIconUser = "icons/user.svg";
 export const cpdIconVerified = "icons/verified.svg";
-export const cpdIconVideoCallDeclinedSolid = "icons/video-call-declined-solid.svg";
+export const cpdIconVideoCallDeclinedSolid =
+  "icons/video-call-declined-solid.svg";
 export const cpdIconVideoCallMissedSolid = "icons/video-call-missed-solid.svg";
 export const cpdIconVideoCallOffSolid = "icons/video-call-off-solid.svg";
 export const cpdIconVideoCallOff = "icons/video-call-off.svg";
