@@ -66,7 +66,9 @@
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^3.3.3"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "react": "^17 || ^18"
