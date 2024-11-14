@@ -1,6 +1,6 @@
 {
   "name": "@vector-im/compound-design-tokens",
-  "version": "1.9.2",
+  "version": "2.0.0",
   "description": "Compound design tokens",
   "sideEffects": false,
   "scripts": {
