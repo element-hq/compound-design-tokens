@@ -223,6 +223,7 @@ export const cpdIconQrCode = "icons/qr-code.svg";
 export const cpdIconQuote = "icons/quote.svg";
 export const cpdIconRaisedHandSolid = "icons/raised-hand-solid.svg";
 export const cpdIconReactionAdd = "icons/reaction-add.svg";
+export const cpdIconReactionSolid = "icons/reaction-solid.svg";
 export const cpdIconReaction = "icons/reaction.svg";
 export const cpdIconReply = "icons/reply.svg";
 export const cpdIconRestart = "icons/restart.svg";
