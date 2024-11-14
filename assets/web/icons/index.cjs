@@ -122,6 +122,7 @@ module.exports = {
   QuoteIcon: require("./quote.cjs"),
   RaisedHandSolidIcon: require("./raised-hand-solid.cjs"),
   ReactionAddIcon: require("./reaction-add.cjs"),
+  ReactionSolidIcon: require("./reaction-solid.cjs"),
   ReactionIcon: require("./reaction.cjs"),
   ReplyIcon: require("./reply.cjs"),
   RestartIcon: require("./restart.cjs"),

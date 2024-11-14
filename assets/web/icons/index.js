@@ -121,6 +121,7 @@ export { default as QrCodeIcon } from "./qr-code.js";
 export { default as QuoteIcon } from "./quote.js";
 export { default as RaisedHandSolidIcon } from "./raised-hand-solid.js";
 export { default as ReactionAddIcon } from "./reaction-add.js";
+export { default as ReactionSolidIcon } from "./reaction-solid.js";
 export { default as ReactionIcon } from "./reaction.js";
 export { default as ReplyIcon } from "./reply.js";
 export { default as RestartIcon } from "./restart.js";

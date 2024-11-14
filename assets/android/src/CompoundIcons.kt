@@ -405,6 +405,9 @@ object CompoundIcons {
     @Composable fun ReactionAdd(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction_add)
     }
+    @Composable fun ReactionSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_reaction_solid)
+    }
     @Composable fun Reply(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reply)
     }
@@ -684,6 +687,7 @@ object CompoundIcons {
         RaisedHandSolid(),
         Reaction(),
         ReactionAdd(),
+        ReactionSolid(),
         Reply(),
         Restart(),
         Room(),
@@ -862,6 +866,7 @@ object CompoundIcons {
         R.drawable.ic_compound_raised_hand_solid,
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
+        R.drawable.ic_compound_reaction_solid,
         R.drawable.ic_compound_reply,
         R.drawable.ic_compound_restart,
         R.drawable.ic_compound_room,

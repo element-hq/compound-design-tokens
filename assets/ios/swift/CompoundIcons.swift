@@ -129,6 +129,7 @@ public class CompoundIcons {
     public let quote = Image("quote", bundle: Bundle.module)
     public let raisedHandSolid = Image("raisedHandSolid", bundle: Bundle.module)
     public let reactionAdd = Image("reactionAdd", bundle: Bundle.module)
+    public let reactionSolid = Image("reactionSolid", bundle: Bundle.module)
     public let reaction = Image("reaction", bundle: Bundle.module)
     public let reply = Image("reply", bundle: Bundle.module)
     public let restart = Image("restart", bundle: Bundle.module)

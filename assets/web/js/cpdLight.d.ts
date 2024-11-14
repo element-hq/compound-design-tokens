@@ -200,6 +200,7 @@ export const cpdIconQrCode: string;
 export const cpdIconQuote: string;
 export const cpdIconRaisedHandSolid: string;
 export const cpdIconReactionAdd: string;
+export const cpdIconReactionSolid: string;
 export const cpdIconReaction: string;
 export const cpdIconReply: string;
 export const cpdIconRestart: string;
