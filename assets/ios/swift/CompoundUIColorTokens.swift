@@ -71,7 +71,6 @@ public class CompoundUIColorTokens {
     public let textActionAccent = CompoundCoreUIColorTokens.green900
     public let textActionPrimary = CompoundCoreUIColorTokens.gray1400
     public let textDisabled = CompoundCoreUIColorTokens.gray800
-    public let textPlaceholder = CompoundCoreUIColorTokens.gray800
     public let textSecondary = CompoundCoreUIColorTokens.gray900
     public let textPrimary = CompoundCoreUIColorTokens.gray1400
     public init() { }

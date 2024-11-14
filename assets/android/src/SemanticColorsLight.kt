@@ -97,7 +97,6 @@ val compoundColorsLight = SemanticColors(
     textInfoPrimary = LightColorTokens.colorBlue900,
     textLinkExternal = LightColorTokens.colorBlue900,
     textOnSolidPrimary = LightColorTokens.colorThemeBg,
-    textPlaceholder = LightColorTokens.colorGray800,
     textPrimary = LightColorTokens.colorGray1400,
     textSecondary = LightColorTokens.colorGray900,
     textSuccessPrimary = LightColorTokens.colorGreen900,

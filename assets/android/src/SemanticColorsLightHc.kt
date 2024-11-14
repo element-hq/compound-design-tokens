@@ -97,7 +97,6 @@ val compoundColorsHcLight = SemanticColors(
     textInfoPrimary = LightHcColorTokens.colorBlue900,
     textLinkExternal = LightHcColorTokens.colorBlue900,
     textOnSolidPrimary = LightHcColorTokens.colorThemeBg,
-    textPlaceholder = LightHcColorTokens.colorGray800,
     textPrimary = LightHcColorTokens.colorGray1400,
     textSecondary = LightHcColorTokens.colorGray900,
     textSuccessPrimary = LightHcColorTokens.colorGreen900,

@@ -1,7 +1,6 @@
 :root, [class*="cpd-theme-"] {
   --cpd-color-text-primary: var(--cpd-color-gray-1400);
   --cpd-color-text-secondary: var(--cpd-color-gray-900);
-  --cpd-color-text-placeholder: var(--cpd-color-gray-800);
   --cpd-color-text-disabled: var(--cpd-color-gray-800);
   --cpd-color-text-action-primary: var(--cpd-color-gray-1400);
   --cpd-color-text-action-accent: var(--cpd-color-green-900);
