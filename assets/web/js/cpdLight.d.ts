@@ -564,7 +564,6 @@ export const cpdColorAlphaPink1300: string;
 export const cpdColorAlphaPink1400: string;
 export const cpdColorTextPrimary: string;
 export const cpdColorTextSecondary: string;
-export const cpdColorTextPlaceholder: string;
 export const cpdColorTextDisabled: string;
 export const cpdColorTextActionPrimary: string;
 export const cpdColorTextActionAccent: string;

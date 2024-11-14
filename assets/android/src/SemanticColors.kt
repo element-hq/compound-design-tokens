@@ -167,8 +167,6 @@ Elevation: Default (Level 1). */
     val textLinkExternal: Color,
     /** For use as text color on top of high-contrast solid backgrounds like primary, accent, or destructive actions. */
     val textOnSolidPrimary: Color,
-    /** Use for placeholder text. Placeholder text should be non-essential. Do not rely exclusively on it. */
-    val textPlaceholder: Color,
     /** Highest contrast text. */
     val textPrimary: Color,
     /** Lowest contrast text. */

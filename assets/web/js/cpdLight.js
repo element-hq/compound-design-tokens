@@ -588,7 +588,6 @@ export const cpdColorAlphaPink1300 = "hsl(333, 100%, 19%, 1)";
 export const cpdColorAlphaPink1400 = "hsl(339, 100%, 13%, 1)";
 export const cpdColorTextPrimary = "#1b1d22";
 export const cpdColorTextSecondary = "#656d77";
-export const cpdColorTextPlaceholder = "#818a95";
 export const cpdColorTextDisabled = "#818a95";
 export const cpdColorTextActionPrimary = "#1b1d22";
 export const cpdColorTextActionAccent = "#007a61";

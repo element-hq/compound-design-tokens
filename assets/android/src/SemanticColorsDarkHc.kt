@@ -97,7 +97,6 @@ val compoundColorsHcDark = SemanticColors(
     textInfoPrimary = DarkHcColorTokens.colorBlue900,
     textLinkExternal = DarkHcColorTokens.colorBlue900,
     textOnSolidPrimary = DarkHcColorTokens.colorThemeBg,
-    textPlaceholder = DarkHcColorTokens.colorGray800,
     textPrimary = DarkHcColorTokens.colorGray1400,
     textSecondary = DarkHcColorTokens.colorGray900,
     textSuccessPrimary = DarkHcColorTokens.colorGreen900,

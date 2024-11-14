@@ -11,11 +11,6 @@
         "type": "color",
         "description": "Lowest contrast text."
       },
-      "placeholder": {
-        "value": "{color.gray.800}",
-        "type": "color",
-        "description": "Use for placeholder text. Placeholder text should be non-essential. Do not rely exclusively on it."
-      },
       "disabled": {
         "value": "{color.gray.800}",
         "type": "color",
