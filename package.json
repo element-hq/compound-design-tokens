@@ -61,14 +61,13 @@
     "fast-glob": "^3.3.2",
     "http-server": "^14.1.1",
     "lodash-es": "^4.17.21",
+    "prettier": "^3.3.3",
     "style-dictionary": "^4.0.0",
     "svg2vectordrawable": "^2.9.1",
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"
   },
-  "dependencies": {
-    "prettier": "^3.3.3"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@types/react": "*",
     "react": "^17 || ^18"
