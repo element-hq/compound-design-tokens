@@ -5,6 +5,8 @@ module.exports = {
   ArrowRightIcon: require("./arrow-right.cjs"),
   ArrowUpRightIcon: require("./arrow-up-right.cjs"),
   ArrowUpIcon: require("./arrow-up.cjs"),
+  AskToJoinSolidIcon: require("./ask-to-join-solid.cjs"),
+  AskToJoinIcon: require("./ask-to-join.cjs"),
   AttachmentIcon: require("./attachment.cjs"),
   BlockIcon: require("./block.cjs"),
   BoldIcon: require("./bold.cjs"),
@@ -46,6 +48,7 @@ module.exports = {
   EndCallIcon: require("./end-call.cjs"),
   ErrorIcon: require("./error.cjs"),
   ExpandIcon: require("./expand.cjs"),
+  ExploreIcon: require("./explore.cjs"),
   ExportArchiveIcon: require("./export-archive.cjs"),
   ExtensionsSolidIcon: require("./extensions-solid.cjs"),
   ExtensionsIcon: require("./extensions.cjs"),
@@ -56,6 +59,7 @@ module.exports = {
   FilterIcon: require("./filter.cjs"),
   ForwardIcon: require("./forward.cjs"),
   GridIcon: require("./grid.cjs"),
+  GroupIcon: require("./group.cjs"),
   HelpSolidIcon: require("./help-solid.cjs"),
   HelpIcon: require("./help.cjs"),
   HistoryIcon: require("./history.cjs"),
@@ -78,6 +82,7 @@ module.exports = {
   LabsIcon: require("./labs.cjs"),
   LeaveIcon: require("./leave.cjs"),
   LinkIcon: require("./link.cjs"),
+  LinuxIcon: require("./linux.cjs"),
   ListBulletedIcon: require("./list-bulleted.cjs"),
   ListNumberedIcon: require("./list-numbered.cjs"),
   LocationNavigatorCentredIcon: require("./location-navigator-centred.cjs"),
@@ -87,6 +92,7 @@ module.exports = {
   LockOffIcon: require("./lock-off.cjs"),
   LockSolidIcon: require("./lock-solid.cjs"),
   LockIcon: require("./lock.cjs"),
+  MacIcon: require("./mac.cjs"),
   MarkAsReadIcon: require("./mark-as-read.cjs"),
   MarkAsUnreadIcon: require("./mark-as-unread.cjs"),
   MarkThreadsAsReadIcon: require("./mark-threads-as-read.cjs"),
@@ -174,5 +180,6 @@ module.exports = {
   VolumeOnSolidIcon: require("./volume-on-solid.cjs"),
   VolumeOnIcon: require("./volume-on.cjs"),
   WarningIcon: require("./warning.cjs"),
-  WebBrowserIcon: require("./web-browser.cjs")
+  WebBrowserIcon: require("./web-browser.cjs"),
+  WindowsIcon: require("./windows.cjs")
 };
