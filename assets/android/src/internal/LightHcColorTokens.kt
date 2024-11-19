@@ -184,8 +184,6 @@ object LightHcColorTokens {
     val colorAlphaYellow700 = Color(0xffc28100)
     val colorAlphaYellow800 = Color(0xffa86500)
     val colorAlphaYellow900 = Color(0xff753700)
-    val colorBgCanvasDefaultLevel1 = colorThemeBg
-    val colorBgSubtleSecondaryLevel0 = colorGray300
     val colorBlue100 = Color(0xfff4f8ff)
     val colorBlue1000 = Color(0xff053b9a)
     val colorBlue1100 = Color(0xff043088)
