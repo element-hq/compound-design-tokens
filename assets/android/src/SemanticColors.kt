@@ -59,6 +59,9 @@ data class SemanticColors(
     /** Default global background for the user interface.
 Elevation: Default (Level 0) */
     val bgCanvasDefault: Color,
+    /** Default global background for the user interface.
+Elevation: Level 1. */
+    val bgCanvasDefaultLevel1: Color,
     /** Default background for disabled elements. There's no minimum contrast requirement. */
     val bgCanvasDisabled: Color,
     /** High-contrast background color for critical state. State: Hover. */
@@ -89,6 +92,9 @@ Elevation: Default (Level 2). */
     /** Low contrast surfaces.
 Elevation: Default (Level 1). */
     val bgSubtleSecondary: Color,
+    /** Lower contrast surfaces.
+Elevation: Level 0. */
+    val bgSubtleSecondaryLevel0: Color,
     /** Subtle background colour for success state elements. State: Rest. */
     val bgSuccessSubtle: Color,
     /** High-contrast border for critical state. State: Hover. */
