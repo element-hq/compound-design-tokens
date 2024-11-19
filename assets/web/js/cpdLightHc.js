@@ -224,6 +224,10 @@ export const cpdIconPollsEnd = "icons/polls-end.svg";
 export const cpdIconPolls = "icons/polls.svg";
 export const cpdIconPopOut = "icons/pop-out.svg";
 export const cpdIconPreferences = "icons/preferences.svg";
+export const cpdIconPresenceOutline8X8 = "icons/presence-outline-8x8.svg";
+export const cpdIconPresenceSolid8X8 = "icons/presence-solid-8x8.svg";
+export const cpdIconPresenceStrikethrough8X8 =
+  "icons/presence-strikethrough-8x8.svg";
 export const cpdIconPublic = "icons/public.svg";
 export const cpdIconQrCode = "icons/qr-code.svg";
 export const cpdIconQuote = "icons/quote.svg";

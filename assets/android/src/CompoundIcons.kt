@@ -405,6 +405,15 @@ object CompoundIcons {
     @Composable fun Preferences(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_preferences)
     }
+    @Composable fun PresenceOutline8X8(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_presence_outline_8_x_8)
+    }
+    @Composable fun PresenceSolid8X8(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_presence_solid_8_x_8)
+    }
+    @Composable fun PresenceStrikethrough8X8(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_presence_strikethrough_8_x_8)
+    }
     @Composable fun Public(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_public)
     }
@@ -708,6 +717,9 @@ object CompoundIcons {
         PollsEnd(),
         PopOut(),
         Preferences(),
+        PresenceOutline8X8(),
+        PresenceSolid8X8(),
+        PresenceStrikethrough8X8(),
         Public(),
         QrCode(),
         Quote(),
@@ -894,6 +906,9 @@ object CompoundIcons {
         R.drawable.ic_compound_polls_end,
         R.drawable.ic_compound_pop_out,
         R.drawable.ic_compound_preferences,
+        R.drawable.ic_compound_presence_outline_8_x_8,
+        R.drawable.ic_compound_presence_solid_8_x_8,
+        R.drawable.ic_compound_presence_strikethrough_8_x_8,
         R.drawable.ic_compound_public,
         R.drawable.ic_compound_qr_code,
         R.drawable.ic_compound_quote,
