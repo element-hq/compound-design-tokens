@@ -184,8 +184,8 @@ object LightColorTokens {
     val colorAlphaYellow700 = Color(0xffe0a500)
     val colorAlphaYellow800 = Color(0xffbd7b00)
     val colorAlphaYellow900 = Color(0xff9e5a00)
-    val colorBgCanvasDefaultLevel1 = Color(0xffffffff)
-    val colorBgSubtleSecondaryLevel0 = Color(0xfff0f2f5)
+    val colorBgCanvasDefaultLevel1 = colorThemeBg
+    val colorBgSubtleSecondaryLevel0 = colorGray300
     val colorBlue100 = Color(0xfff9fcff)
     val colorBlue1000 = Color(0xff0558c7)
     val colorBlue1100 = Color(0xff064ab1)

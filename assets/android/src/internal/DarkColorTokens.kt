@@ -184,8 +184,8 @@ object DarkColorTokens {
     val colorAlphaYellow700 = Color(0xeb854200)
     val colorAlphaYellow800 = Color(0xff9e5c00)
     val colorAlphaYellow900 = Color(0xffbd7b00)
-    val colorBgCanvasDefaultLevel1 = Color(0xff1d1f24)
-    val colorBgSubtleSecondaryLevel0 = Color(0xff101317)
+    val colorBgCanvasDefaultLevel1 = colorGray300
+    val colorBgSubtleSecondaryLevel0 = colorThemeBg
     val colorBlue100 = Color(0xff00055a)
     val colorBlue1000 = Color(0xff5e99f0)
     val colorBlue1100 = Color(0xff7aacf4)
