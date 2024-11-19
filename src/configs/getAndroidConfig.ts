@@ -209,6 +209,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         filter: (token: TransformedToken) =>
           token.type === "color" && isNotCoreColor.filter(token),
         options: withDefaultOptions({
+          outputReferences: true,
           import: [],
           fixColorName,
           className: "SemanticColors",
@@ -220,6 +221,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         destination: "CompoundIcons.kt",
         filter: (token: TransformedToken) => token.type === "icon",
         options: withDefaultOptions({
+          outputReferences: true,
           import: [
             packageNameR,
             "androidx.compose.runtime.Composable",
