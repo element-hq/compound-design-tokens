@@ -48,7 +48,7 @@ export default async function createTemplate(
   let allTokens: TransformedToken[];
   if (args) {
     const { dictionary, file, options } = args;
-    const { outputReferences, commentStyle } = options;
+    const { outputReferences, commentStyle, sortTokensByReference } = options;
     const formatProperty = createPropertyFormatter({
       outputReferences,
       dictionary,
@@ -58,12 +58,12 @@ export default async function createTemplate(
       },
     });
 
-    if (outputReferences) {
-      allTokens = [...dictionary.allTokens].sort(
-        sortByReference(dictionary.tokens),
-      );
+    allTokens = [...dictionary.allTokens];
+
+    if (sortTokensByReference) {
+      allTokens = allTokens.sort(sortByReference(dictionary.tokens));
     } else {
-      allTokens = [...dictionary.allTokens].sort(sortByName);
+      allTokens = allTokens.sort(sortByName);
     }
 
     const headerResult = await fileHeader({

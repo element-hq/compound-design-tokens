@@ -175,7 +175,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         destination: `internal/${className}ColorTokens.kt`,
         filter: (token: TransformedToken) => isCoreColor.filter(token),
         options: withDefaultOptions({
-          outputReferences: false,
+          outputReferences: true,
           import: ["androidx.compose.ui.graphics.Color"],
           isInternal: true,
           className: `${className}ColorTokens`,
@@ -188,7 +188,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         filter: (token: TransformedToken) =>
           token.type === "color" && isNotCoreColor.filter(token),
         options: withDefaultOptions({
-          outputReferences: false,
+          outputReferences: true,
           import: [
             "io.element.android.compound.annotations.CoreColorToken",
             `io.element.android.compound.tokens.generated.internal.${tokenClassName}`,
@@ -209,7 +209,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         filter: (token: TransformedToken) =>
           token.type === "color" && isNotCoreColor.filter(token),
         options: withDefaultOptions({
-          outputReferences: false,
+          outputReferences: true,
           import: [],
           fixColorName,
           className: "SemanticColors",
@@ -221,7 +221,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         destination: "CompoundIcons.kt",
         filter: (token: TransformedToken) => token.type === "icon",
         options: withDefaultOptions({
-          outputReferences: false,
+          outputReferences: true,
           import: [
             packageNameR,
             "androidx.compose.runtime.Composable",
