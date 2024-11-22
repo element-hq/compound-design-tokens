@@ -312,9 +312,9 @@
     csstype "^3.1.1"
 
 "@capsizecss/metrics@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@capsizecss/metrics/-/metrics-3.3.0.tgz#bbbe3df4cd5acedbb605757ae0ba440cf7ea9d17"
-  integrity sha512-WAQtKgyz7fZDEMuERSLPmWXuV53O/HDJZLof8BMWEX1GTWYiiNdqGA6j56+GCSSeVyzYDxkBnm5taIh0YyW6fQ==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@capsizecss/metrics/-/metrics-3.4.0.tgz#caf02650d987d0714e775af77d2967e97d440944"
+  integrity sha512-hIn8MAHxLvwyUh6ZvLQHDt2GPShBz6+gxBs1JTD9GleBkht1AZvtCFo0adr7bQvYYuQzUJeKi69zqlAwgKMHNA==
 
 "@esbuild/aix-ppc64@0.23.1":
   version "0.23.1"
@@ -697,9 +697,9 @@
   integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
 
 "@types/node@^22.0.0":
-  version "22.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.9.0.tgz#b7f16e5c3384788542c72dc3d561a7ceae2c0365"
-  integrity sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==
+  version "22.9.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.9.1.tgz#bdf91c36e0e7ecfb7257b2d75bf1b206b308ca71"
+  integrity sha512-p8Yy/8sw1caA8CdRIQBG5tiLHmxtQKObCijiAa9Ez+d4+PRffM4054xbju0msf+cvhJpnFEeNjxmVT/0ipktrg==
   dependencies:
     undici-types "~6.19.8"
 
@@ -2349,9 +2349,9 @@ tsx@^4.15.6:
     fsevents "~2.3.3"
 
 typescript@^5.4.5:
-  version "5.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
-  integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.2.tgz#3169cf8c4c8a828cde53ba9ecb3d2b1d5dd67be6"
+  integrity sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==
 
 undici-types@~6.19.8:
   version "6.19.8"
