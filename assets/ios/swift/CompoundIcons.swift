@@ -16,6 +16,7 @@ public class CompoundIcons {
     public let askToJoin = Image("askToJoin", bundle: Bundle.module)
     public let askToJoinSolid = Image("askToJoinSolid", bundle: Bundle.module)
     public let attachment = Image("attachment", bundle: Bundle.module)
+    public let audio = Image("audio", bundle: Bundle.module)
     public let block = Image("block", bundle: Bundle.module)
     public let bold = Image("bold", bundle: Bundle.module)
     public let calendar = Image("calendar", bundle: Bundle.module)

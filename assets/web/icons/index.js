@@ -7,6 +7,7 @@ export { default as ArrowUpIcon } from "./arrow-up.js";
 export { default as AskToJoinSolidIcon } from "./ask-to-join-solid.js";
 export { default as AskToJoinIcon } from "./ask-to-join.js";
 export { default as AttachmentIcon } from "./attachment.js";
+export { default as AudioIcon } from "./audio.js";
 export { default as BlockIcon } from "./block.js";
 export { default as BoldIcon } from "./bold.js";
 export { default as CalendarIcon } from "./calendar.js";

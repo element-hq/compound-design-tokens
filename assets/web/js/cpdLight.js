@@ -108,6 +108,7 @@ export const cpdIconArrowUp = "icons/arrow-up.svg";
 export const cpdIconAskToJoinSolid = "icons/ask-to-join-solid.svg";
 export const cpdIconAskToJoin = "icons/ask-to-join.svg";
 export const cpdIconAttachment = "icons/attachment.svg";
+export const cpdIconAudio = "icons/audio.svg";
 export const cpdIconBlock = "icons/block.svg";
 export const cpdIconBold = "icons/bold.svg";
 export const cpdIconCalendar = "icons/calendar.svg";
