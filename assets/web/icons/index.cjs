@@ -8,6 +8,7 @@ module.exports = {
   AskToJoinSolidIcon: require("./ask-to-join-solid.cjs"),
   AskToJoinIcon: require("./ask-to-join.cjs"),
   AttachmentIcon: require("./attachment.cjs"),
+  AudioIcon: require("./audio.cjs"),
   BlockIcon: require("./block.cjs"),
   BoldIcon: require("./bold.cjs"),
   CalendarIcon: require("./calendar.cjs"),

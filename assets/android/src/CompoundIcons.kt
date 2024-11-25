@@ -60,6 +60,9 @@ object CompoundIcons {
     @Composable fun Attachment(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_attachment)
     }
+    @Composable fun Audio(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_audio)
+    }
     @Composable fun Block(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_block)
     }
@@ -602,6 +605,7 @@ object CompoundIcons {
         AskToJoin(),
         AskToJoinSolid(),
         Attachment(),
+        Audio(),
         Block(),
         Bold(),
         Calendar(),
@@ -791,6 +795,7 @@ object CompoundIcons {
         R.drawable.ic_compound_ask_to_join,
         R.drawable.ic_compound_ask_to_join_solid,
         R.drawable.ic_compound_attachment,
+        R.drawable.ic_compound_audio,
         R.drawable.ic_compound_block,
         R.drawable.ic_compound_bold,
         R.drawable.ic_compound_calendar,

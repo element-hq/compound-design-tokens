@@ -86,6 +86,7 @@ export const cpdIconArrowUp: string;
 export const cpdIconAskToJoinSolid: string;
 export const cpdIconAskToJoin: string;
 export const cpdIconAttachment: string;
+export const cpdIconAudio: string;
 export const cpdIconBlock: string;
 export const cpdIconBold: string;
 export const cpdIconCalendar: string;
