@@ -70,7 +70,7 @@
   "dependencies": {},
   "peerDependencies": {
     "@types/react": "*",
-    "react": "^17 || ^18"
+    "react": "^17 || ^18 || ^19.0.0"
   },
   "peerDependenciesMeta": {
     "react": {
