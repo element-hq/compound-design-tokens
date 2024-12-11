@@ -294,6 +294,9 @@ object CompoundIcons {
     @Composable fun ListNumbered(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_list_numbered)
     }
+    @Composable fun ListView(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_list_view)
+    }
     @Composable fun LocationNavigator(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_location_navigator)
     }
@@ -489,6 +492,9 @@ object CompoundIcons {
     @Composable fun Spotlight(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_spotlight)
     }
+    @Composable fun SpotlightView(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_spotlight_view)
+    }
     @Composable fun Strikethrough(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_strikethrough)
     }
@@ -572,6 +578,9 @@ object CompoundIcons {
     }
     @Composable fun VoiceCall(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_voice_call)
+    }
+    @Composable fun VoiceCallSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_voice_call_solid)
     }
     @Composable fun VolumeOff(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_volume_off)
@@ -683,6 +692,7 @@ object CompoundIcons {
         Linux(),
         ListBulleted(),
         ListNumbered(),
+        ListView(),
         LocationNavigator(),
         LocationNavigatorCentred(),
         LocationPin(),
@@ -748,6 +758,7 @@ object CompoundIcons {
         SignOut(),
         Spinner(),
         Spotlight(),
+        SpotlightView(),
         Strikethrough(),
         SwitchCameraSolid(),
         TakePhoto(),
@@ -776,6 +787,7 @@ object CompoundIcons {
         VisibilityOff(),
         VisibilityOn(),
         VoiceCall(),
+        VoiceCallSolid(),
         VolumeOff(),
         VolumeOffSolid(),
         VolumeOn(),
@@ -873,6 +885,7 @@ object CompoundIcons {
         R.drawable.ic_compound_linux,
         R.drawable.ic_compound_list_bulleted,
         R.drawable.ic_compound_list_numbered,
+        R.drawable.ic_compound_list_view,
         R.drawable.ic_compound_location_navigator,
         R.drawable.ic_compound_location_navigator_centred,
         R.drawable.ic_compound_location_pin,
@@ -938,6 +951,7 @@ object CompoundIcons {
         R.drawable.ic_compound_sign_out,
         R.drawable.ic_compound_spinner,
         R.drawable.ic_compound_spotlight,
+        R.drawable.ic_compound_spotlight_view,
         R.drawable.ic_compound_strikethrough,
         R.drawable.ic_compound_switch_camera_solid,
         R.drawable.ic_compound_take_photo,
@@ -966,6 +980,7 @@ object CompoundIcons {
         R.drawable.ic_compound_visibility_off,
         R.drawable.ic_compound_visibility_on,
         R.drawable.ic_compound_voice_call,
+        R.drawable.ic_compound_voice_call_solid,
         R.drawable.ic_compound_volume_off,
         R.drawable.ic_compound_volume_off_solid,
         R.drawable.ic_compound_volume_on,
