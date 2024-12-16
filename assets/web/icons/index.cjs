@@ -39,6 +39,7 @@ module.exports = {
   DeleteIcon: require("./delete.cjs"),
   DevicesIcon: require("./devices.cjs"),
   DocumentIcon: require("./document.cjs"),
+  DownloadIosIcon: require("./download-ios.cjs"),
   DownloadIcon: require("./download.cjs"),
   DragGridIcon: require("./drag-grid.cjs"),
   DragListIcon: require("./drag-list.cjs"),

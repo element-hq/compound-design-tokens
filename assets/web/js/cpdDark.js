@@ -139,6 +139,7 @@ export const cpdIconDarkMode = "icons/dark-mode.svg";
 export const cpdIconDelete = "icons/delete.svg";
 export const cpdIconDevices = "icons/devices.svg";
 export const cpdIconDocument = "icons/document.svg";
+export const cpdIconDownloadIos = "icons/download-ios.svg";
 export const cpdIconDownload = "icons/download.svg";
 export const cpdIconDragGrid = "icons/drag-grid.svg";
 export const cpdIconDragList = "icons/drag-list.svg";
