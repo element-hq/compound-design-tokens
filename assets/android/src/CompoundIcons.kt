@@ -156,6 +156,9 @@ object CompoundIcons {
     @Composable fun Download(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_download)
     }
+    @Composable fun DownloadIos(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_download_ios)
+    }
     @Composable fun DragGrid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_drag_grid)
     }
@@ -646,6 +649,7 @@ object CompoundIcons {
         Devices(),
         Document(),
         Download(),
+        DownloadIos(),
         DragGrid(),
         DragList(),
         Edit(),
@@ -839,6 +843,7 @@ object CompoundIcons {
         R.drawable.ic_compound_devices,
         R.drawable.ic_compound_document,
         R.drawable.ic_compound_download,
+        R.drawable.ic_compound_download_ios,
         R.drawable.ic_compound_drag_grid,
         R.drawable.ic_compound_drag_list,
         R.drawable.ic_compound_edit,

@@ -38,6 +38,7 @@ export { default as DarkModeIcon } from "./dark-mode.js";
 export { default as DeleteIcon } from "./delete.js";
 export { default as DevicesIcon } from "./devices.js";
 export { default as DocumentIcon } from "./document.js";
+export { default as DownloadIosIcon } from "./download-ios.js";
 export { default as DownloadIcon } from "./download.js";
 export { default as DragGridIcon } from "./drag-grid.js";
 export { default as DragListIcon } from "./drag-list.js";

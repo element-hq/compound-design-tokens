@@ -117,6 +117,7 @@ export const cpdIconDarkMode: string;
 export const cpdIconDelete: string;
 export const cpdIconDevices: string;
 export const cpdIconDocument: string;
+export const cpdIconDownloadIos: string;
 export const cpdIconDownload: string;
 export const cpdIconDragGrid: string;
 export const cpdIconDragList: string;
