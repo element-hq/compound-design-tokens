@@ -140,6 +140,8 @@ export const cpdIconFilter: string;
 export const cpdIconForward: string;
 export const cpdIconGrid: string;
 export const cpdIconGroup: string;
+export const cpdIconHeadphonesOffSolid: string;
+export const cpdIconHeadphonesSolid: string;
 export const cpdIconHelpSolid: string;
 export const cpdIconHelp: string;
 export const cpdIconHistory: string;

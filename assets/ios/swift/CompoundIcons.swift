@@ -70,6 +70,8 @@ public class CompoundIcons {
     public let forward = Image("forward", bundle: Bundle.module)
     public let grid = Image("grid", bundle: Bundle.module)
     public let group = Image("group", bundle: Bundle.module)
+    public let headphonesOffSolid = Image("headphonesOffSolid", bundle: Bundle.module)
+    public let headphonesSolid = Image("headphonesSolid", bundle: Bundle.module)
     public let help = Image("help", bundle: Bundle.module)
     public let helpSolid = Image("helpSolid", bundle: Bundle.module)
     public let history = Image("history", bundle: Bundle.module)

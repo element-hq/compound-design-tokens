@@ -222,6 +222,12 @@ object CompoundIcons {
     @Composable fun Group(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_group)
     }
+    @Composable fun HeadphonesOffSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_headphones_off_solid)
+    }
+    @Composable fun HeadphonesSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_headphones_solid)
+    }
     @Composable fun Help(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_help)
     }
@@ -671,6 +677,8 @@ object CompoundIcons {
         Forward(),
         Grid(),
         Group(),
+        HeadphonesOffSolid(),
+        HeadphonesSolid(),
         Help(),
         HelpSolid(),
         History(),
@@ -865,6 +873,8 @@ object CompoundIcons {
         R.drawable.ic_compound_forward,
         R.drawable.ic_compound_grid,
         R.drawable.ic_compound_group,
+        R.drawable.ic_compound_headphones_off_solid,
+        R.drawable.ic_compound_headphones_solid,
         R.drawable.ic_compound_help,
         R.drawable.ic_compound_help_solid,
         R.drawable.ic_compound_history,
