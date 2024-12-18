@@ -62,6 +62,8 @@ module.exports = {
   ForwardIcon: require("./forward.cjs"),
   GridIcon: require("./grid.cjs"),
   GroupIcon: require("./group.cjs"),
+  HeadphonesOffSolidIcon: require("./headphones-off-solid.cjs"),
+  HeadphonesSolidIcon: require("./headphones-solid.cjs"),
   HelpSolidIcon: require("./help-solid.cjs"),
   HelpIcon: require("./help.cjs"),
   HistoryIcon: require("./history.cjs"),
