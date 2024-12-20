@@ -33,9 +33,9 @@ import io.element.android.compound.tokens.generated.internal.DarkHcColorTokens
  */
 @OptIn(CoreColorToken::class)
 val compoundColorsHcDark = SemanticColors(
-    bgAccentHovered = DarkHcColorTokens.colorGreen1000,
-    bgAccentPressed = DarkHcColorTokens.colorGreen1100,
-    bgAccentRest = DarkHcColorTokens.colorGreen900,
+    bgAccentHovered = DarkHcColorTokens.colorBlue1000,
+    bgAccentPressed = DarkHcColorTokens.colorBlue1100,
+    bgAccentRest = DarkHcColorTokens.colorBlue900,
     bgActionPrimaryDisabled = DarkHcColorTokens.colorGray700,
     bgActionPrimaryHovered = DarkHcColorTokens.colorGray1200,
     bgActionPrimaryPressed = DarkHcColorTokens.colorGray1100,

@@ -6,9 +6,9 @@
 import SwiftUI
 
 public class CompoundColorTokens {
-    public let bgAccentHovered = CompoundCoreColorTokens.green1000
-    public let bgAccentPressed = CompoundCoreColorTokens.green1100
-    public let bgAccentRest = CompoundCoreColorTokens.green900
+    public let bgAccentHovered = CompoundCoreColorTokens.blue1000
+    public let bgAccentPressed = CompoundCoreColorTokens.blue1100
+    public let bgAccentRest = CompoundCoreColorTokens.blue900
     public let bgActionPrimaryDisabled = CompoundCoreColorTokens.gray700
     public let bgActionPrimaryHovered = CompoundCoreColorTokens.gray1200
     public let bgActionPrimaryPressed = CompoundCoreColorTokens.gray1100

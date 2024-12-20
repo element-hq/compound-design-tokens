@@ -230,17 +230,17 @@
       },
       "accent": {
         "rest": {
-          "value": "{color.green.900}",
+          "value": "{color.blue.900}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Rest."
         },
         "hovered": {
-          "value": "{color.green.1000}",
+          "value": "{color.blue.1000}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Hover"
         },
         "pressed": {
-          "value": "{color.green.1100}",
+          "value": "{color.blue.1100}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Pressed"
         }

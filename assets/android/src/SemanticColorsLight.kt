@@ -33,9 +33,9 @@ import io.element.android.compound.tokens.generated.internal.LightColorTokens
  */
 @OptIn(CoreColorToken::class)
 val compoundColorsLight = SemanticColors(
-    bgAccentHovered = LightColorTokens.colorGreen1000,
-    bgAccentPressed = LightColorTokens.colorGreen1100,
-    bgAccentRest = LightColorTokens.colorGreen900,
+    bgAccentHovered = LightColorTokens.colorBlue1000,
+    bgAccentPressed = LightColorTokens.colorBlue1100,
+    bgAccentRest = LightColorTokens.colorBlue900,
     bgActionPrimaryDisabled = LightColorTokens.colorGray700,
     bgActionPrimaryHovered = LightColorTokens.colorGray1200,
     bgActionPrimaryPressed = LightColorTokens.colorGray1100,
