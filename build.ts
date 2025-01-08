@@ -17,14 +17,14 @@ limitations under the License.
 import type { Platform, Theme } from "./src/@types/index";
 import * as setupStyleDictionary from "./src/setupStyleDictionary";
 import { generateCssIndex } from "./src/utils/generateCssIndex";
-import generateIconTokens from "./src/utils/generateIconTokens";
+import generateIconComponents from "./src/utils/generateIconComponents";
 import { normalizeTokens } from "./src/utils/normalizeTokens";
 
 const themes: Theme[] = ["light", "light-hc", "dark", "dark-hc"];
 const platforms: Platform[] = ["web", "android", "ios"];
 
 await normalizeTokens();
-generateIconTokens();
+await generateIconComponents();
 generateCssIndex();
 
 for (const platform of platforms) {

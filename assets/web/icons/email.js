@@ -6,11 +6,10 @@ function EmailIcon(props, ref) {
     width: "1em",
     height: "1em",
     fill: "currentColor",
-    viewBox: "0 0 24 24",
     ref: ref,
     ...props,
     children: /*#__PURE__*/_jsx("path", {
-      d: "M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0v1.412l8 4.444 8-4.444V6H4Zm0 3.7V18h16V9.7l-7.514 4.174a1 1 0 0 1-.972 0L4 9.7Z"
+      d: "M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 0v1.412l8 4.444 8-4.444V6zm0 3.7V18h16V9.7l-7.514 4.174a1 1 0 0 1-.972 0z"
     })
   });
 }

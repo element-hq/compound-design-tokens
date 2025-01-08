@@ -6,13 +6,12 @@ function PresenceSolid8X8Icon(props, ref) {
     width: "1em",
     height: "1em",
     fill: "currentColor",
-    viewBox: "0 0 8 8",
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("g", {
       clipPath: "url(#a)",
       children: /*#__PURE__*/_jsx("path", {
-        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0"
       })
     }), /*#__PURE__*/_jsx("defs", {
       children: /*#__PURE__*/_jsx("clipPath", {

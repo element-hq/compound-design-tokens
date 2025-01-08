@@ -6,11 +6,10 @@ function ArrowUpIcon(props, ref) {
     width: "1em",
     height: "1em",
     fill: "currentColor",
-    viewBox: "0 0 24 24",
     ref: ref,
     ...props,
     children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
-      d: "M12 19.5a1 1 0 0 0 1-1V7.914l4.293 4.293a1 1 0 0 0 1.414-1.414l-6-6a1 1 0 0 0-1.414 0l-6 6a1 1 0 1 0 1.414 1.414L11 7.914V18.5a1 1 0 0 0 1 1Z"
+      d: "M12 19.5a1 1 0 0 0 1-1V7.914l4.293 4.293a1 1 0 0 0 1.414-1.414l-6-6a1 1 0 0 0-1.414 0l-6 6a1 1 0 1 0 1.414 1.414L11 7.914V18.5a1 1 0 0 0 1 1"
     })
   });
 }
