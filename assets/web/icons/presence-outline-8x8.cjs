@@ -6,6 +6,7 @@ function PresenceOutline8X8Icon(props, ref) {
     width: "1em",
     height: "1em",
     fill: "currentColor",
+    viewBox: "0 0 8 8",
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
