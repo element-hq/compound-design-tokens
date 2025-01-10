@@ -10,10 +10,10 @@ function KeyboardIcon(props, ref) {
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("path", {
-      d: "M5.188 8v2h2V8h-2Zm3.875 0v2h2V8h-2Zm3.875 0v2h2V8h-2Zm3.875 0v2h2V8h-2ZM5.188 11.531v2h2v-2h-2Zm3.875 0v2h2v-2h-2Zm3.875 0v2h2v-2h-2Zm3.875 0v2h2v-2h-2ZM9 15a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H9Z"
+      d: "M5.188 8v2h2V8zm3.875 0v2h2V8zm3.875 0v2h2V8zm3.875 0v2h2V8zM5.188 11.531v2h2v-2zm3.875 0v2h2v-2zm3.875 0v2h2v-2zm3.875 0v2h2v-2zM9 15a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z"
     }), /*#__PURE__*/_jsx("path", {
       fillRule: "evenodd",
-      d: "M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0h16v12H4V6Z",
+      d: "M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 0h16v12H4z",
       clipRule: "evenodd"
     })]
   });

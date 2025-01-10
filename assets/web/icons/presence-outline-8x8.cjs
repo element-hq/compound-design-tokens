@@ -13,7 +13,7 @@ function PresenceOutline8X8Icon(props, ref) {
       clipPath: "url(#a)",
       children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
         fillRule: "evenodd",
-        d: "M4 6.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM4 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z",
+        d: "M4 6.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M4 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8",
         clipRule: "evenodd"
       })
     }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {

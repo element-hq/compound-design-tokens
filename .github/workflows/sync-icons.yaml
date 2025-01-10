@@ -1,0 +1,37 @@
+name: Sync icons
+on:
+  # Allow workflow to be run manually
+  workflow_dispatch: {}
+  schedule:
+    # Run at least once per week
+    - cron: '20 2 * * WED'
+jobs:
+  types:
+    name: Sync icons
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Set up cache
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
+        with:
+          node-version: "lts/*"
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Sync icons
+        run: yarn sync:icons
+        env:
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+      - name: Generate files
+        run: yarn build
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7
+        with:
+          # CI won't run if we use the default GITHUB_TOKEN
+          token: ${{ secrets.ELEMENT_BOT_TOKEN }}
+          commit-message: Sync icons from Figma
+          title: Sync icons from Figma
+          body: New data is available from [Compound Icons](https://www.figma.com/design/gkNXqPoiJhEv2wt0EJpew4/Compound-Icons).
+          branch: actions/sync-tokens
+          delete-branch: true

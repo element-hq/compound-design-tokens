@@ -10,7 +10,7 @@ function CompanyIcon(props, ref) {
     ref: ref,
     ...props,
     children: /*#__PURE__*/_jsx("path", {
-      d: "M14 7h5a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2Zm-2-2H5v2h3a1 1 0 0 1 0 2H5v2h3a1 1 0 1 1 0 2H5v2h3a1 1 0 1 1 0 2H5v2h7V5Zm2 4v2h2a1 1 0 1 1 0 2h-2v2h2a1 1 0 1 1 0 2h-2v2h5V9h-5Z"
+      d: "M14 7h5a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2zm-2-2H5v2h3a1 1 0 0 1 0 2H5v2h3a1 1 0 1 1 0 2H5v2h3a1 1 0 1 1 0 2H5v2h7zm2 4v2h2a1 1 0 1 1 0 2h-2v2h2a1 1 0 1 1 0 2h-2v2h5V9z"
     })
   });
 }

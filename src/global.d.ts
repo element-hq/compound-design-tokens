@@ -19,10 +19,6 @@ declare module "prettier" {
   export interface Options {}
 }
 
-declare module "svgo" {
-  export interface Config {}
-}
-
 // This module doens't have a type definition
 declare module "@babel/plugin-transform-react-jsx" {
   import type { PluginItem } from "@babel/core";

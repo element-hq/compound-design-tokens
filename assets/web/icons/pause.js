@@ -10,7 +10,7 @@ function PauseIcon(props, ref) {
     ref: ref,
     ...props,
     children: /*#__PURE__*/_jsx("path", {
-      d: "M5 6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6Zm2 0v12h2V6H7Zm6 0a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2V6Zm2 0v12h2V6h-2Z"
+      d: "M5 6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2zm2 0v12h2V6zm6 0a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm2 0v12h2V6z"
     })
   });
 }
