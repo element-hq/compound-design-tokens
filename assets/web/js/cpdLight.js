@@ -99,7 +99,7 @@ export const cpdFontHeadingXlRegular =
   '400 2rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
 export const cpdFontHeadingXlSemibold =
   '600 2rem/1.25 Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Segoe UI", "Inter Fallback: Roboto", "Inter Fallback: Ubuntu", "Inter Fallback: Fira Sans", "Inter Fallback: Noto Sans", "Inter Fallback: Arial", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "Fira Sans", "Noto Sans", Arial, sans-serif';
-export const cpdIconError = "icons/error.svg";
+export const cpdIconErrorSolid = "icons/error-solid.svg";
 export const cpdIconPublic = "icons/public.svg";
 export const cpdIconClose = "icons/close.svg";
 export const cpdIconPlus = "icons/plus.svg";
@@ -295,6 +295,8 @@ export const cpdIconPresenceSolid8X8 = "icons/presence-solid-8x8.svg";
 export const cpdIconPresenceOutline8X8 = "icons/presence-outline-8x8.svg";
 export const cpdIconPresenceStrikethrough8X8 =
   "icons/presence-strikethrough-8x8.svg";
+export const cpdIconError = "icons/error.svg";
+export const cpdIconDialPad = "icons/dial-pad.svg";
 export const cpdColorThemeBg = "#ffffff";
 export const cpdColorGray100 = "#fbfcfd";
 export const cpdColorGray200 = "#f7f9fa";

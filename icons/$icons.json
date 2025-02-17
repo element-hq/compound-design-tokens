@@ -1,7 +1,7 @@
 {
   "icon": {
-    "error": {
-      "value": "icons/error.svg",
+    "error-solid": {
+      "value": "icons/error-solid.svg",
       "type": "icon"
     },
     "public": {
@@ -770,6 +770,14 @@
     },
     "presence-strikethrough-8x8": {
       "value": "icons/presence-strikethrough-8x8.svg",
+      "type": "icon"
+    },
+    "error": {
+      "value": "icons/error.svg",
+      "type": "icon"
+    },
+    "dial-pad": {
+      "value": "icons/dial-pad.svg",
       "type": "icon"
     }
   }
