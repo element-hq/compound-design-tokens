@@ -142,6 +142,9 @@ object CompoundIcons {
     @Composable fun Devices(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_devices)
     }
+    @Composable fun DialPad(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_dial_pad)
+    }
     @Composable fun Document(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_document)
     }
@@ -174,6 +177,9 @@ object CompoundIcons {
     }
     @Composable fun Error(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_error)
+    }
+    @Composable fun ErrorSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_error_solid)
     }
     @Composable fun Expand(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_expand)
@@ -645,6 +651,7 @@ object CompoundIcons {
         DarkMode(),
         Delete(),
         Devices(),
+        DialPad(),
         Document(),
         Download(),
         DownloadIos(),
@@ -656,6 +663,7 @@ object CompoundIcons {
         EmailSolid(),
         EndCall(),
         Error(),
+        ErrorSolid(),
         Expand(),
         Explore(),
         ExportArchive(),
@@ -841,6 +849,7 @@ object CompoundIcons {
         R.drawable.ic_compound_dark_mode,
         R.drawable.ic_compound_delete,
         R.drawable.ic_compound_devices,
+        R.drawable.ic_compound_dial_pad,
         R.drawable.ic_compound_document,
         R.drawable.ic_compound_download,
         R.drawable.ic_compound_download_ios,
@@ -852,6 +861,7 @@ object CompoundIcons {
         R.drawable.ic_compound_email_solid,
         R.drawable.ic_compound_end_call,
         R.drawable.ic_compound_error,
+        R.drawable.ic_compound_error_solid,
         R.drawable.ic_compound_expand,
         R.drawable.ic_compound_explore,
         R.drawable.ic_compound_export_archive,
