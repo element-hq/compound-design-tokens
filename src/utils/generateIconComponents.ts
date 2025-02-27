@@ -1,17 +1,9 @@
 /*
+Copyright 2024 New Vector Ltd.
 Copyright 2023 The Matrix.org Foundation C.I.C.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
+Please see LICENSE files in the repository root for full details.
 */
 
 import fs from "node:fs/promises";
@@ -31,12 +23,9 @@ const generate = (generate_ as unknown as { default: typeof generate_ })
   .default;
 
 /**
- * Generates `icons/$icons.json` and React components off all the
- * SVG icons discovered in the `icons/` folder
+ * Generates React components off all the icons discovered in the icons/ folder.
  */
-export default async function generateIconTokens(): Promise<void> {
-  const outputFileName = "$icons.json";
-  const folder = "icons/";
+export default async function generateIconComponents(): Promise<void> {
   const iconsFolder = fileURLToPath(new URL("../../icons/", import.meta.url));
   const webOutput = fileURLToPath(
     new URL("../../assets/web/icons/", import.meta.url),
@@ -45,8 +34,6 @@ export default async function generateIconTokens(): Promise<void> {
   const files = await fs.readdir(iconsFolder);
 
   const icons = files.filter((asset) => asset.endsWith(".svg"));
-
-  const manifest: Record<string, { value: string; type: "icon" }> = {};
 
   // List of statements to be added to the assets/web/icons/index.js file
   const indexEsmStatements = [];
@@ -57,11 +44,6 @@ export default async function generateIconTokens(): Promise<void> {
     const assetPath = path.join(iconsFolder, icon);
     const parsedPath = path.parse(assetPath);
     const svg = await fs.readFile(assetPath, "utf-8");
-
-    manifest[parsedPath.name] = {
-      value: `${folder}${parsedPath.base}`,
-      type: "icon",
-    };
 
     // Compute the component name
     // mic-on.svg -> MicOnIcon
@@ -226,11 +208,4 @@ export default ${componentName};
 
   // The index.d.ts is identical to the index.js as it only re-exports the icons
   await fs.writeFile(path.join(webOutput, "index.d.ts"), esmCode, "utf-8");
-
-  // Write the icons manifest to the icons folder
-  await fs.writeFile(
-    path.join(iconsFolder, outputFileName),
-    JSON.stringify({ icon: manifest }),
-    "utf-8",
-  );
 }

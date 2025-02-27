@@ -10,7 +10,7 @@ function HomeSolidIcon(props, ref) {
     ref: ref,
     ...props,
     children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
-      d: "m12.971 3.54 7 3.889A2 2 0 0 1 21 9.177V19a2 2 0 0 1-2 2h-4v-9H9v9H5a2 2 0 0 1-2-2V9.177a2 2 0 0 1 1.029-1.748l7-3.89a2 2 0 0 1 1.942 0Z"
+      d: "m12.971 3.54 7 3.889A2 2 0 0 1 21 9.177V19a2 2 0 0 1-2 2h-4v-9H9v9H5a2 2 0 0 1-2-2V9.177a2 2 0 0 1 1.029-1.748l7-3.89a2 2 0 0 1 1.942 0"
     })
   });
 }

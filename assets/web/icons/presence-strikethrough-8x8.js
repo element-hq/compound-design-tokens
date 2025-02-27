@@ -13,7 +13,7 @@ function PresenceStrikethrough8X8Icon(props, ref) {
       clipPath: "url(#a)",
       children: /*#__PURE__*/_jsx("path", {
         fillRule: "evenodd",
-        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM5.435 6.048A2.5 2.5 0 0 1 1.687 3.05l3.748 2.998Zm.914-1.19L2.648 1.897a2.5 2.5 0 0 1 3.701 2.961Z",
+        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0M5.435 6.048A2.5 2.5 0 0 1 1.687 3.05zm.914-1.19L2.648 1.897a2.5 2.5 0 0 1 3.701 2.961",
         clipRule: "evenodd"
       })
     }), /*#__PURE__*/_jsx("defs", {

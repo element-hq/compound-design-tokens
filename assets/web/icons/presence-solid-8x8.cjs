@@ -12,7 +12,7 @@ function PresenceSolid8X8Icon(props, ref) {
     children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
       clipPath: "url(#a)",
       children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
-        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+        d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0"
       })
     }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {
       children: /*#__PURE__*/_reactJsxRuntime.jsx("clipPath", {
