@@ -121,7 +121,7 @@
         "description": "WCAG: 3.5"
       },
       "900": {
-        "value": "#d51928",
+        "value": "#E1000F",
         "type": "color",
         "description": "WCAG: 5.25"
       },
@@ -513,72 +513,72 @@
     },
     "blue": {
       "100": {
-        "value": "#f9fcff",
+        "value": "#FBFAFF",
         "type": "color",
         "description": "WCAG: 1.03"
       },
       "200": {
-        "value": "#f4f8ff",
+        "value": "#F6F5FC",
         "type": "color",
         "description": "WCAG: 1.06"
       },
       "300": {
-        "value": "#e9f2ff",
+        "value": "#F2F1F8",
         "type": "color",
         "description": "WCAG: 1.12"
       },
       "400": {
-        "value": "#d8e7fe",
+        "value": "#E1E0F9",
         "type": "color",
         "description": "WCAG: 1.25"
       },
       "500": {
-        "value": "#bad5fc",
+        "value": "#CFCFF9",
         "type": "color",
         "description": "WCAG: 1.5"
       },
       "600": {
-        "value": "#a3c6fa",
+        "value": "#BEBDFA",
         "type": "color",
         "description": "WCAG: 1.75"
       },
       "700": {
-        "value": "#7eaff6",
+        "value": "#ACACFA",
         "type": "color",
         "description": "WCAG: 2.25"
       },
       "800": {
-        "value": "#4088ee",
+        "value": "#9999FC",
         "type": "color",
         "description": "WCAG: 3.5"
       },
       "900": {
-        "value": "#0467dd",
+        "value": "#7E7EC4",
         "type": "color",
         "description": "WCAG: 5.25"
       },
       "1000": {
-        "value": "#0558c7",
+        "value": "#6262BD",
         "type": "color",
         "description": "WCAG: 6.5"
       },
       "1100": {
-        "value": "#064ab1",
+        "value": "#4A4AA8",
         "type": "color",
         "description": "WCAG: 8"
       },
       "1200": {
-        "value": "#043894",
+        "value": "#000091",
         "type": "color",
         "description": "WCAG: 10.5"
       },
       "1300": {
-        "value": "#012478",
+        "value": "#19197F",
         "type": "color",
         "description": "WCAG: 13.75"
       },
       "1400": {
-        "value": "#000e65",
+        "value": "#00006B",
         "type": "color",
         "description": "WCAG: 16.75"
       }

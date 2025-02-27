@@ -23,7 +23,7 @@
           "description": "Default text colour for plain actions."
         },
         "accent": {
-          "value": "{color.green.900}",
+          "value": "{color.blue.1200}",
           "type": "color",
           "description": "Accent text colour for plain actions."
         }
@@ -122,22 +122,22 @@
       "action": {
         "primary": {
           "rest": {
-            "value": "{color.gray.1400}",
+            "value": "{color.blue.1200}",
             "type": "color",
             "description": "Background colour for primary actions. State: Rest."
           },
           "hovered": {
-            "value": "{color.gray.1200}",
+            "value": "{color.blue.1100}",
             "type": "color",
             "description": "Background colour for primary actions. State: Hover."
           },
           "pressed": {
-            "value": "{color.gray.1100}",
+            "value": "{color.blue.1000}",
             "type": "color",
             "description": "Background colour for primary actions. State: Pressed."
           },
           "disabled": {
-            "value": "{color.gray.700}",
+            "value": "{color.blue.800}",
             "type": "color",
             "description": "Background colour for primary actions. State: Disabled."
           }
@@ -308,7 +308,7 @@
     },
     "icon": {
       "primary": {
-        "value": "{color.gray.1400}",
+        "value": "{color.blue.1200}",
         "type": "color",
         "description": "Highest contrast icons."
       },
@@ -354,12 +354,12 @@
       },
       "accent": {
         "tertiary": {
-          "value": "{color.green.800}",
+          "value": "{color.blue.1200}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
         },
         "primary": {
-          "value": "{color.green.900}",
+          "value": "{color.blue.1400}",
           "type": "color",
           "description": "Highest contrast accessible accent icons."
         }
