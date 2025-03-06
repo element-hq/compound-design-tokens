@@ -16,6 +16,8 @@ public class CompoundColorTokens {
     public let bgActionSecondaryHovered = CompoundCoreColorTokens.alphaGray200
     public let bgActionSecondaryPressed = CompoundCoreColorTokens.alphaGray300
     public let bgActionSecondaryRest = CompoundCoreColorTokens.themeBg
+    public let bgBadgeAccent = CompoundCoreColorTokens.alphaGreen300
+    public let bgBadgeInfo = CompoundCoreColorTokens.alphaBlue300
     public let bgCanvasDefault = CompoundCoreColorTokens.themeBg
     public let bgCanvasDisabled = CompoundCoreColorTokens.gray200
     public let bgCriticalHovered = CompoundCoreColorTokens.red1000
@@ -59,6 +61,8 @@ public class CompoundColorTokens {
     public let iconTertiaryAlpha = CompoundCoreColorTokens.alphaGray800
     public let textActionAccent = CompoundCoreColorTokens.green900
     public let textActionPrimary = CompoundCoreColorTokens.gray1400
+    public let textBadgeAccent = CompoundCoreColorTokens.green1100
+    public let textBadgeInfo = CompoundCoreColorTokens.blue1100
     public let textCriticalPrimary = CompoundCoreColorTokens.red900
     public let textDecorative1 = CompoundCoreColorTokens.lime1100
     public let textDecorative2 = CompoundCoreColorTokens.cyan1100
