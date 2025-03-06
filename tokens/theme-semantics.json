@@ -94,6 +94,18 @@
           "type": "color",
           "description": "Decorative text colour (6, Orange) for avatars and usernames."
         }
+      },
+      "badge": {
+        "accent": {
+          "value": "{color.green.1100}",
+          "type": "color",
+          "description": "Badge accent text colour"
+        },
+        "info": {
+          "value": "{color.blue.1100}",
+          "type": "color",
+          "description": "Badge info text colour"
+        }
       }
     },
     "bg": {
@@ -243,6 +255,18 @@
           "value": "{color.green.1100}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Pressed"
+        }
+      },
+      "badge": {
+        "accent": {
+          "value": "{color.alpha.green.300}",
+          "type": "color",
+          "description": "Badge accent background colour"
+        },
+        "info": {
+          "value": "{color.alpha.blue.300}",
+          "type": "color",
+          "description": "Badge info background colour"
         }
       }
     },

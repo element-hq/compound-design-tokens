@@ -48,6 +48,10 @@ data class SemanticColors(
     val bgActionSecondaryPressed: Color,
     /** Background colour for secondary actions. State: Rest. */
     val bgActionSecondaryRest: Color,
+    /** Badge accent background colour */
+    val bgBadgeAccent: Color,
+    /** Badge info background colour */
+    val bgBadgeInfo: Color,
     /** Default global background for the user interface.
 Elevation: Default (Level 0) */
     val bgCanvasDefault: Color,
@@ -143,6 +147,10 @@ Elevation: Level 0. */
     val textActionAccent: Color,
     /** Default text colour for plain actions. */
     val textActionPrimary: Color,
+    /** Badge accent text colour */
+    val textBadgeAccent: Color,
+    /** Badge info text colour */
+    val textBadgeInfo: Color,
     /** Text colour for destructive plain actions. */
     val textCriticalPrimary: Color,
     /** Decorative text colour (1, Lime) for avatars and usernames. */

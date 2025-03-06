@@ -473,7 +473,11 @@
       "color.bg.accent.rest": "S:0ad925fdff7a16a7b64b279564727c03071f5722,",
       "color.bg.accent.hovered": "S:6ce4d2e3bf9e5a762dc8077fcf2fa36419cb2562,",
       "color.bg.accent.pressed": "S:298a3c8274c7f142e4260d93a17d67e5dbad015b,",
-      "color.icon.accent.primary": "S:335e8d3421a11fbd10085c38653cfb1d0972cd36,"
+      "color.icon.accent.primary": "S:335e8d3421a11fbd10085c38653cfb1d0972cd36,",
+      "color.text.badge.accent": "S:52cfa06b8fb99ce5f6a20fee1c8b88681e3e9627,",
+      "color.text.badge.info": "S:93ee4d6095e2915ab5738467e05a6a8c978db4cb,",
+      "color.bg.badge.accent": "S:b5f70ed6d7483155e50cb408af60cd3b21a2bfc0,",
+      "color.bg.badge.info": "S:6314532de767c8ca0f50eda707834295b5bd80ab,"
     }
   },
   {
@@ -862,7 +866,11 @@
       "color.bg.accent.rest": "S:970bcb6a50e57a4a23b71dbe85982acccdd29275,",
       "color.bg.accent.hovered": "S:d2a2580bbc3a49b20d80bff6e041d8c63d163096,",
       "color.bg.accent.pressed": "S:d7d921087a362582f8202a5949e416cb9cbdd11c,",
-      "color.icon.accent.primary": "S:1bad861fc99ed9e04874289a7d3be7cf7fa33772,"
+      "color.icon.accent.primary": "S:1bad861fc99ed9e04874289a7d3be7cf7fa33772,",
+      "color.text.badge.accent": "S:660b4b90f66aa46a66cb11cd3c633dfbfb86622d,",
+      "color.text.badge.info": "S:438180ee20793406df6a2d5caa93b9af769208bc,",
+      "color.bg.badge.accent": "S:42d531b2e86a8cb6fa32804316bdc4e7ae21c767,",
+      "color.bg.badge.info": "S:f26edf77753c8ce3dc3f7544eadc355937691b17,"
     }
   },
   {
@@ -1251,7 +1259,11 @@
       "color.bg.accent.rest": "S:d79f034b90817f53cbba62c197d31c778ea8e09a,",
       "color.bg.accent.hovered": "S:e0adad4161f53f0ab27fda5b640b1bfb96c0d4bf,",
       "color.bg.accent.pressed": "S:f174aac7bd4c4ebd76f0449197dc92496a70a640,",
-      "color.icon.accent.primary": "S:ca4514d13e1497a75be02cfe41e29f24be2c05ba,"
+      "color.icon.accent.primary": "S:ca4514d13e1497a75be02cfe41e29f24be2c05ba,",
+      "color.text.badge.accent": "S:4c9ad4661fd7b4faf5ce6f5272d122333048e7d1,",
+      "color.text.badge.info": "S:f842c7f15d25aa728f0cf0333550331dcd254dc7,",
+      "color.bg.badge.accent": "S:dd4fdb5b900f9535c9e692337e25cb0d7cbf25ac,",
+      "color.bg.badge.info": "S:af45de93ee6c2bb34751a5e3ab47edd76b364c87,"
     }
   },
   {
@@ -1640,7 +1652,11 @@
       "color.bg.accent.rest": "S:d84cae77ebab79e4adffd21e7f0574c4692c8a9a,",
       "color.bg.accent.hovered": "S:d613a08ee025ee7a9ce9ee6e65fda2b088cd47f8,",
       "color.bg.accent.pressed": "S:62eae9aca98cf02cfe1599fd456bb4995db5b563,",
-      "color.icon.accent.primary": "S:d3f02cccf95f4800a93ad469d723eca4c9610631,"
+      "color.icon.accent.primary": "S:d3f02cccf95f4800a93ad469d723eca4c9610631,",
+      "color.text.badge.accent": "S:f450c6f2e2acb31b944cebdc36caa2bbc9d330ab,",
+      "color.text.badge.info": "S:6fb27bf524524715cf199df01f65efd13d6c755b,",
+      "color.bg.badge.accent": "S:292e7ac04a28fc3638aa988f3888d19a5c1e7936,",
+      "color.bg.badge.info": "S:3d83f372809d73777218dcacfd249feb07a53596,"
     }
   }
 ]
