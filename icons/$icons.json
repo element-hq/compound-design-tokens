@@ -779,6 +779,18 @@
     "dial-pad": {
       "value": "icons/dial-pad.svg",
       "type": "icon"
+    },
+    "workspace": {
+      "value": "icons/workspace.svg",
+      "type": "icon"
+    },
+    "workspace-solid": {
+      "value": "icons/workspace-solid.svg",
+      "type": "icon"
+    },
+    "guest": {
+      "value": "icons/guest.svg",
+      "type": "icon"
     }
   }
 }

@@ -220,6 +220,9 @@ object CompoundIcons {
     @Composable fun Group(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_group)
     }
+    @Composable fun Guest(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_guest)
+    }
     @Composable fun HeadphonesOffSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_headphones_off_solid)
     }
@@ -610,6 +613,12 @@ object CompoundIcons {
     @Composable fun Windows(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_windows)
     }
+    @Composable fun Workspace(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_workspace)
+    }
+    @Composable fun WorkspaceSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_workspace_solid)
+    }
 
     val all @Composable get() = persistentListOf<ImageVector>(
         Admin(),
@@ -677,6 +686,7 @@ object CompoundIcons {
         Forward(),
         Grid(),
         Group(),
+        Guest(),
         HeadphonesOffSolid(),
         HeadphonesSolid(),
         Help(),
@@ -807,6 +817,8 @@ object CompoundIcons {
         Warning(),
         WebBrowser(),
         Windows(),
+        Workspace(),
+        WorkspaceSolid(),
     )
 
     val allResIds get() = persistentListOf(
@@ -875,6 +887,7 @@ object CompoundIcons {
         R.drawable.ic_compound_forward,
         R.drawable.ic_compound_grid,
         R.drawable.ic_compound_group,
+        R.drawable.ic_compound_guest,
         R.drawable.ic_compound_headphones_off_solid,
         R.drawable.ic_compound_headphones_solid,
         R.drawable.ic_compound_help,
@@ -1005,5 +1018,7 @@ object CompoundIcons {
         R.drawable.ic_compound_warning,
         R.drawable.ic_compound_web_browser,
         R.drawable.ic_compound_windows,
+        R.drawable.ic_compound_workspace,
+        R.drawable.ic_compound_workspace_solid,
     )
 }

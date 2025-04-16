@@ -64,6 +64,7 @@ module.exports = {
   ForwardIcon: require("./forward.cjs"),
   GridIcon: require("./grid.cjs"),
   GroupIcon: require("./group.cjs"),
+  GuestIcon: require("./guest.cjs"),
   HeadphonesOffSolidIcon: require("./headphones-off-solid.cjs"),
   HeadphonesSolidIcon: require("./headphones-solid.cjs"),
   HelpSolidIcon: require("./help-solid.cjs"),
@@ -193,5 +194,7 @@ module.exports = {
   VolumeOnIcon: require("./volume-on.cjs"),
   WarningIcon: require("./warning.cjs"),
   WebBrowserIcon: require("./web-browser.cjs"),
-  WindowsIcon: require("./windows.cjs")
+  WindowsIcon: require("./windows.cjs"),
+  WorkspaceSolidIcon: require("./workspace-solid.cjs"),
+  WorkspaceIcon: require("./workspace.cjs")
 };
