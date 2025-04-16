@@ -297,6 +297,9 @@ export const cpdIconPresenceStrikethrough8X8 =
   "icons/presence-strikethrough-8x8.svg";
 export const cpdIconError = "icons/error.svg";
 export const cpdIconDialPad = "icons/dial-pad.svg";
+export const cpdIconWorkspace = "icons/workspace.svg";
+export const cpdIconWorkspaceSolid = "icons/workspace-solid.svg";
+export const cpdIconGuest = "icons/guest.svg";
 export const cpdColorThemeBg = "#101317";
 export const cpdColorGray100 = "#181a1f";
 export const cpdColorGray200 = "#1d1f24";
