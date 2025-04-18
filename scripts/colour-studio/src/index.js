@@ -656,7 +656,7 @@ function generateContrastGridUrl(themesJson, themeName, colorName) {
 
   for (const color of themeJson) {
     if (color.name === colorName) {
-      for (const swatch of color.value) {
+      for (const swatch of color.values) {
         contrastGridColors += `${swatch.value}, ${swatch.name}\n`;
       }
     }
