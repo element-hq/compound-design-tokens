@@ -72,6 +72,9 @@ const leonardoConfig = {
 
 // Color playground (temporary overrides)
 
+// A custom color to help generate color overrides.
+leonardoConfig.colors.custom = ["#571EFA"];
+
 // leonardoConfig.colors.gray: [hslToHex(220, 8, 50)],
 // leonardoConfig.colors.gray: [hslToHex(210, 10, 50)],
 // leonardoConfig.colors.red = [hslToHex(2, 100, 50), hslToHex(350, 100, 30)];
@@ -186,6 +189,14 @@ function generateThemeJson(leonardoConfig, theme) {
     ratios: contrastRatios,
     smooth: colorSmoothing,
   });
+  
+  const custom = new Color({
+    name: "custom",
+    colorKeys: leonardoConfig.colors.custom,
+    colorspace: colorSpace,
+    ratios: contrastRatios,
+    smooth: colorSmoothing,
+  });
 
   const colorMap = {
     gray,
@@ -199,6 +210,7 @@ function generateThemeJson(leonardoConfig, theme) {
     purple,
     fuchsia,
     pink,
+    custom, // Show the custom color at the end.
   };
 
   const leonardoTheme = new Theme({
@@ -217,13 +229,22 @@ function generateThemeJson(leonardoConfig, theme) {
 function renderKeyColorsHtml(leonardoConfig) {
   let html = "";
 
-  for (const colors of Object.values(leonardoConfig.colors)) {
+  for (const [key, colors] of Object.entries(leonardoConfig.colors)) {
+    // The custom color is shown in the picker below.
+    if (key === "custom") continue;
+
     html += `<div class="key-colors__hue">`;
     for (const color of colors) {
       html += `<div class="key-colors__swatch" style="background-color: ${color}"></div>`;
     }
     html += "</div>";
   }
+
+  const customColor = leonardoConfig.colors.custom[0] || "#000000";
+  html += `<div class="key-colors__picker">
+             <label for="color-picker" class="text-body-sm text--primary-{themeName}">🎨</label>
+             <input type="color" id="color-picker" name="color-picker" value="${customColor}" />
+           </div>`;
 
   return html;
 }
@@ -417,28 +438,42 @@ function renderLeonardoHtml(leonardoConfig) {
   return html;
 }
 
-const keyColorsHtml = renderKeyColorsHtml(leonardoConfig);
-const themesJson = generateThemesJson(leonardoConfig);
-const themesHtml = renderThemesHtml(themesJson);
-const themesHtmlAlpha = renderThemesHtml(themesJson, true);
-const tokensStudioHtml = renderTokensStudioHtml(themesJson);
-const cssVars = createCssVars(themesJson);
-const leonardoHtml = renderLeonardoHtml(leonardoConfig);
+let themesJson = {};
+let themesHtml = {};
 
-document.querySelector(".key-colors").innerHTML = keyColorsHtml;
+function renderPage() {
+  themesJson = generateThemesJson(leonardoConfig);
+  themesHtml = renderThemesHtml(themesJson);
 
-document.querySelector(".themes").innerHTML =
-  Object.values(themesHtml).join("");
+  const keyColorsHtml = renderKeyColorsHtml(leonardoConfig);
+  const themesHtmlAlpha = renderThemesHtml(themesJson, true);
+  const tokensStudioHtml = renderTokensStudioHtml(themesJson);
+  const cssVars = createCssVars(themesJson);
+  const leonardoHtml = renderLeonardoHtml(leonardoConfig);
 
-document.querySelector(".themes-alpha").innerHTML =
-  Object.values(themesHtmlAlpha).join("");
+  document.querySelector(".key-colors").innerHTML = keyColorsHtml;
 
-document.querySelector(".tokens-studio").innerHTML = tokensStudioHtml;
+  document.querySelector(".themes").innerHTML =
+    Object.values(themesHtml).join("");
 
-addStylesToHead(cssVars);
-document.querySelector(".css-vars__output").innerHTML = cssVars;
+  document.querySelector(".themes-alpha").innerHTML =
+    Object.values(themesHtmlAlpha).join("");
 
-document.querySelector(".leonardo-editor__links").innerHTML = leonardoHtml;
+  document.querySelector(".tokens-studio").innerHTML = tokensStudioHtml;
+
+  addStylesToHead(cssVars);
+  document.querySelector(".css-vars__output").innerHTML = cssVars;
+
+  document.querySelector(".leonardo-editor__links").innerHTML = leonardoHtml;
+
+  document.querySelector(".key-colors__picker, #color-picker").addEventListener("input", (event) => {
+    // Update the custom colour and re-render.
+    leonardoConfig.colors.custom = [event.target.value];
+    renderPage();
+  });
+}
+
+renderPage();
 
 const templateHtmlButtons = `
 <div class="bg bg--{themeName}">
