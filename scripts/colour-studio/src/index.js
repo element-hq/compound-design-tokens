@@ -73,7 +73,7 @@ const leonardoConfig = {
 // Color playground (temporary overrides)
 
 // A custom color to help generate color overrides.
-leonardoConfig.colors.custom = ["#571EFA"];
+// leonardoConfig.colors.custom = ["#571EFA"];
 
 // leonardoConfig.colors.gray: [hslToHex(220, 8, 50)],
 // leonardoConfig.colors.gray: [hslToHex(210, 10, 50)],
@@ -189,14 +189,6 @@ function generateThemeJson(leonardoConfig, theme) {
     ratios: contrastRatios,
     smooth: colorSmoothing,
   });
-  
-  const custom = new Color({
-    name: "custom",
-    colorKeys: leonardoConfig.colors.custom,
-    colorspace: colorSpace,
-    ratios: contrastRatios,
-    smooth: colorSmoothing,
-  });
 
   const colorMap = {
     gray,
@@ -210,8 +202,18 @@ function generateThemeJson(leonardoConfig, theme) {
     purple,
     fuchsia,
     pink,
-    custom, // Show the custom color at the end.
   };
+
+  // Add in the custom colour at the end if it has been set.
+  if (leonardoConfig.colors.custom) {
+    colorMap.custom = new Color({
+      name: "custom",
+      colorKeys: leonardoConfig.colors.custom,
+      colorspace: colorSpace,
+      ratios: contrastRatios,
+      smooth: colorSmoothing,
+    });
+  }
 
   const leonardoTheme = new Theme({
     colors: Object.values(colorMap),
@@ -240,7 +242,7 @@ function renderKeyColorsHtml(leonardoConfig) {
     html += "</div>";
   }
 
-  const customColor = leonardoConfig.colors.custom[0] || "#000000";
+  const customColor = leonardoConfig.colors.custom?.[0] ?? "#000000";
   html += `<div class="key-colors__picker">
              <label for="color-picker" class="text-body-sm text--primary-{themeName}">🎨</label>
              <input type="color" id="color-picker" name="color-picker" value="${customColor}" />
