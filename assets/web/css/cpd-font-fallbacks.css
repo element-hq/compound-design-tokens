@@ -22,7 +22,7 @@
 }
 @font-face {
   font-family: "Inter Fallback: Roboto";
-  src: local('Roboto'), local('Roboto-Regular');
+  src: local('Roboto Regular'), local('Roboto-Regular');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -100,9 +100,9 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  ascent-override: 87.916%;
-  descent-override: 21.8904%;
-  size-adjust: 110.1904%;
+  ascent-override: 87.2269%;
+  descent-override: 21.7188%;
+  size-adjust: 111.0609%;
 }
 @font-face {
   font-family: "Inter Fallback: Ubuntu";
@@ -176,9 +176,9 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  ascent-override: 90.2075%;
-  descent-override: 22.4609%;
-  size-adjust: 107.3913%;
+  ascent-override: 90.1094%;
+  descent-override: 22.4365%;
+  size-adjust: 107.5082%;
 }
 @font-face {
   font-family: "Inter Fallback: Ubuntu";
@@ -240,9 +240,9 @@
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  ascent-override: 87.9087%;
-  descent-override: 21.8886%;
-  size-adjust: 110.1996%;
+  ascent-override: 87.0316%;
+  descent-override: 21.6702%;
+  size-adjust: 111.3102%;
 }
 @font-face {
   font-family: "Inter Fallback: Ubuntu";
@@ -379,9 +379,9 @@
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  ascent-override: 87.6213%;
-  descent-override: 21.817%;
-  size-adjust: 110.5611%;
+  ascent-override: 86.7537%;
+  descent-override: 21.601%;
+  size-adjust: 111.6667%;
 }
 @font-face {
   font-family: "Inter Fallback: Ubuntu";
