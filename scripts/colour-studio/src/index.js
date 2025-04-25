@@ -468,13 +468,11 @@ function renderPage() {
 
   document.querySelector(".leonardo-editor__links").innerHTML = leonardoHtml;
 
-  document
-    .querySelector("#color-picker")
-    .addEventListener("input", (event) => {
-      // Update the custom colour and re-render.
-      leonardoConfig.colors.custom = [event.target.value];
-      renderPage();
-    });
+  document.querySelector("#color-picker").addEventListener("input", (event) => {
+    // Update the custom colour and re-render.
+    leonardoConfig.colors.custom = [event.target.value];
+    renderPage();
+  });
 }
 
 renderPage();
