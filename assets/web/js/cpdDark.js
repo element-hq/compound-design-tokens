@@ -227,6 +227,7 @@ export const cpdIconRaisedHandSolid = "icons/raised-hand-solid.svg";
 export const cpdIconAudio = "icons/audio.svg";
 export const cpdIconSpotlightView = "icons/spotlight-view.svg";
 export const cpdIconListView = "icons/list-view.svg";
+export const cpdIconEarpiece = "icons/earpiece.svg";
 export const cpdIconKeyOffSolid = "icons/key-off-solid.svg";
 export const cpdIconCloudSolid = "icons/cloud-solid.svg";
 export const cpdIconKeyOff = "icons/key-off.svg";

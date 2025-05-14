@@ -508,6 +508,10 @@
       "value": "icons/list-view.svg",
       "type": "icon"
     },
+    "earpiece": {
+      "value": "icons/earpiece.svg",
+      "type": "icon"
+    },
     "key-off-solid": {
       "value": "icons/key-off-solid.svg",
       "type": "icon"
