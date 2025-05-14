@@ -43,6 +43,7 @@ export { default as DownloadIosIcon } from "./download-ios.js";
 export { default as DownloadIcon } from "./download.js";
 export { default as DragGridIcon } from "./drag-grid.js";
 export { default as DragListIcon } from "./drag-list.js";
+export { default as EarpieceIcon } from "./earpiece.js";
 export { default as EditSolidIcon } from "./edit-solid.js";
 export { default as EditIcon } from "./edit.js";
 export { default as EmailSolidIcon } from "./email-solid.js";

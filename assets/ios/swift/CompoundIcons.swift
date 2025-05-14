@@ -52,6 +52,7 @@ public class CompoundIcons {
     public let downloadIos = Image("downloadIos", bundle: Bundle.module)
     public let dragGrid = Image("dragGrid", bundle: Bundle.module)
     public let dragList = Image("dragList", bundle: Bundle.module)
+    public let earpiece = Image("earpiece", bundle: Bundle.module)
     public let edit = Image("edit", bundle: Bundle.module)
     public let editSolid = Image("editSolid", bundle: Bundle.module)
     public let email = Image("email", bundle: Bundle.module)

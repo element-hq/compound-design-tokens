@@ -160,6 +160,9 @@ object CompoundIcons {
     @Composable fun DragList(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_drag_list)
     }
+    @Composable fun Earpiece(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_earpiece)
+    }
     @Composable fun Edit(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_edit)
     }
@@ -666,6 +669,7 @@ object CompoundIcons {
         DownloadIos(),
         DragGrid(),
         DragList(),
+        Earpiece(),
         Edit(),
         EditSolid(),
         Email(),
@@ -867,6 +871,7 @@ object CompoundIcons {
         R.drawable.ic_compound_download_ios,
         R.drawable.ic_compound_drag_grid,
         R.drawable.ic_compound_drag_list,
+        R.drawable.ic_compound_earpiece,
         R.drawable.ic_compound_edit,
         R.drawable.ic_compound_edit_solid,
         R.drawable.ic_compound_email,

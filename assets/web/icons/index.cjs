@@ -44,6 +44,7 @@ module.exports = {
   DownloadIcon: require("./download.cjs"),
   DragGridIcon: require("./drag-grid.cjs"),
   DragListIcon: require("./drag-list.cjs"),
+  EarpieceIcon: require("./earpiece.cjs"),
   EditSolidIcon: require("./edit-solid.cjs"),
   EditIcon: require("./edit.cjs"),
   EmailSolidIcon: require("./email-solid.cjs"),
