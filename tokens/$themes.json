@@ -1658,5 +1658,36 @@
       "color.bg.badge.accent": "S:292e7ac04a28fc3638aa988f3888d19a5c1e7936,",
       "color.bg.badge.info": "S:3d83f372809d73777218dcacfd249feb07a53596,"
     }
+  },
+  {
+    "id": "008a55be10669135dc71f916d5f14e02ce12ce22",
+    "name": "M3 Light",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "theme-light": "source",
+      "theme-semantics-light": "source",
+      "theme-semantics": "source",
+      "theme-m3-light": "enabled"
+    }
+  },
+  {
+    "id": "606e2c16d27574a9cc71921cebd6fc0377bf6700",
+    "name": "M3 Dark",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "theme-semantics": "source",
+      "theme-m3-dark": "enabled",
+      "theme-semantics-dark": "source",
+      "theme-dark": "source"
+    }
+  },
+  {
+    "id": "a1c823ad84d9d8db0ec95a791e1c0f7033e10f70",
+    "name": "M3 Typography",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "platform-android": "source",
+      "theme-m3-typography": "enabled"
+    }
   }
 ]
