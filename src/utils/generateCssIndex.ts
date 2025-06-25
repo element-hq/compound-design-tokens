@@ -10,8 +10,8 @@ import fs from "fs-extra";
 import type { Theme } from "../@types";
 import {
   COMPOUND_TOKENS_NAMESPACE,
-  type Tier,
   cssFileName,
+  type Tier,
 } from "./cssFileName";
 
 const header = `/* Establish a layer order that allows semantic tokens to be customized, but not base tokens.

@@ -15,8 +15,8 @@ import isCoreToken from "../filters/isCoreToken";
 import { isSharedAcrossTheme } from "../filters/isSharedAcrossTheme";
 import {
   COMPOUND_TOKENS_NAMESPACE,
-  type Tier,
   cssFileName,
+  type Tier,
 } from "../utils/cssFileName";
 import { fontFaces, fontFamilyOverrides } from "../utils/fontFallbacks";
 
