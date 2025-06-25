@@ -269,6 +269,7 @@ export const cpdIconCopy = "icons/copy.svg";
 export const cpdIconHistory = "icons/history.svg";
 export const cpdIconDocument = "icons/document.svg";
 export const cpdIconAdmin = "icons/admin.svg";
+export const cpdIconShield = "icons/shield.svg";
 export const cpdIconHost = "icons/host.svg";
 export const cpdIconCompany = "icons/company.svg";
 export const cpdIconDarkMode = "icons/dark-mode.svg";

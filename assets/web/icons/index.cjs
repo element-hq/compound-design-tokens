@@ -155,6 +155,7 @@ module.exports = {
   ShareScreenSolidIcon: require("./share-screen-solid.cjs"),
   ShareScreenIcon: require("./share-screen.cjs"),
   ShareIcon: require("./share.cjs"),
+  ShieldIcon: require("./shield.cjs"),
   SidebarIcon: require("./sidebar.cjs"),
   SignOutIcon: require("./sign-out.cjs"),
   SpinnerIcon: require("./spinner.cjs"),

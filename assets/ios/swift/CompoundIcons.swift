@@ -162,6 +162,7 @@ public class CompoundIcons {
     public let shareIos = Image("shareIos", bundle: Bundle.module)
     public let shareScreen = Image("shareScreen", bundle: Bundle.module)
     public let shareScreenSolid = Image("shareScreenSolid", bundle: Bundle.module)
+    public let shield = Image("shield", bundle: Bundle.module)
     public let sidebar = Image("sidebar", bundle: Bundle.module)
     public let signOut = Image("signOut", bundle: Bundle.module)
     public let spinner = Image("spinner", bundle: Bundle.module)

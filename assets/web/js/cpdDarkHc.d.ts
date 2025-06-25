@@ -245,6 +245,7 @@ export const cpdIconCopy: string;
 export const cpdIconHistory: string;
 export const cpdIconDocument: string;
 export const cpdIconAdmin: string;
+export const cpdIconShield: string;
 export const cpdIconHost: string;
 export const cpdIconCompany: string;
 export const cpdIconDarkMode: string;

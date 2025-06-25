@@ -672,6 +672,10 @@
       "value": "icons/admin.svg",
       "type": "icon"
     },
+    "shield": {
+      "value": "icons/shield.svg",
+      "type": "icon"
+    },
     "host": {
       "value": "icons/host.svg",
       "type": "icon"
