@@ -493,6 +493,9 @@ object CompoundIcons {
     @Composable fun ShareScreenSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_share_screen_solid)
     }
+    @Composable fun Shield(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_shield)
+    }
     @Composable fun Sidebar(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_sidebar)
     }
@@ -780,6 +783,7 @@ object CompoundIcons {
         ShareIos(),
         ShareScreen(),
         ShareScreenSolid(),
+        Shield(),
         Sidebar(),
         SignOut(),
         Spinner(),
@@ -982,6 +986,7 @@ object CompoundIcons {
         R.drawable.ic_compound_share_ios,
         R.drawable.ic_compound_share_screen,
         R.drawable.ic_compound_share_screen_solid,
+        R.drawable.ic_compound_shield,
         R.drawable.ic_compound_sidebar,
         R.drawable.ic_compound_sign_out,
         R.drawable.ic_compound_spinner,

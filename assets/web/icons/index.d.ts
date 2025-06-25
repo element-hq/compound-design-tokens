@@ -154,6 +154,7 @@ export { default as ShareIosIcon } from "./share-ios.js";
 export { default as ShareScreenSolidIcon } from "./share-screen-solid.js";
 export { default as ShareScreenIcon } from "./share-screen.js";
 export { default as ShareIcon } from "./share.js";
+export { default as ShieldIcon } from "./shield.js";
 export { default as SidebarIcon } from "./sidebar.js";
 export { default as SignOutIcon } from "./sign-out.js";
 export { default as SpinnerIcon } from "./spinner.js";
