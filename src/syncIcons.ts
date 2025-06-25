@@ -225,15 +225,7 @@ await Promise.all(
     let svg = icon.svg.replace(/\b(fill|stroke)="\S*"/g, "");
     const fillIndex = svg.indexOf('xmlns="');
     svg = `${svg.slice(0, fillIndex)} fill="currentColor" ${svg.slice(fillIndex)}`;
-    svg = optimize(svg, {
-      multipass: true,
-      plugins: [
-        {
-          name: "preset-default",
-          params: { overrides: { removeViewBox: false } },
-        },
-      ],
-    }).data;
+    svg = optimize(svg, { multipass: true }).data;
 
     const slug = icon.name.toLowerCase().replace(/\s/g, "-");
     const fileName = `${slug}.svg`;
