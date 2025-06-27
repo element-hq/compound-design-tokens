@@ -255,6 +255,11 @@
           "value": "{color.green.1100}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Pressed"
+        },
+        "selected": {
+          "value": "{color.alpha.green.300}",
+          "type": "color",
+          "description": "Background colour for accent or brand actions. State: Selected"
         }
       },
       "badge": {
@@ -267,6 +272,11 @@
           "value": "{color.alpha.blue.300}",
           "type": "color",
           "description": "Badge info background colour"
+        },
+        "default": {
+          "value": "{color.alpha.gray.300}",
+          "type": "color",
+          "description": "Badge default background colour"
         }
       }
     },
@@ -324,9 +334,16 @@
       },
       "info": {
         "subtle": {
-          "value": "{color.blue.500}",
+          "value": "{color.blue.700}",
           "type": "color",
           "description": "Subtle border colour for informational elements."
+        }
+      },
+      "accent": {
+        "subtle": {
+          "value": "{color.green.700}",
+          "type": "color",
+          "description": "accent border intended for keylines on message highlights"
         }
       }
     },
@@ -414,6 +431,94 @@
           "value": "{color.theme.bg}",
           "type": "color",
           "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
+      }
+    },
+    "gradient": {
+      "action": {
+        "stop1": {
+          "value": "{color.green.500}",
+          "type": "color",
+          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
+        },
+        "stop2": {
+          "value": "{color.green.700}",
+          "type": "color",
+          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
+        },
+        "stop3": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
+        },
+        "stop4": {
+          "value": "{color.green.1100}",
+          "type": "color",
+          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
+        }
+      },
+      "subtle": {
+        "stop1": {
+          "value": "{color.alpha.green.500}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop2": {
+          "value": "{color.alpha.green.400}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop3": {
+          "value": "{color.alpha.green.300}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop4": {
+          "value": "{color.alpha.green.200}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop5": {
+          "value": "{color.alpha.green.100}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop6": {
+          "value": "rgba(0,0,0,0)",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        }
+      },
+      "info": {
+        "stop1": {
+          "value": "{color.alpha.blue.500}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop2": {
+          "value": "{color.alpha.blue.400}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop3": {
+          "value": "{color.alpha.blue.300}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop4": {
+          "value": "{color.alpha.blue.200}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop5": {
+          "value": "{color.alpha.blue.100}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop6": {
+          "value": "rgba(0,0,0,0)",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
         }
       }
     }
