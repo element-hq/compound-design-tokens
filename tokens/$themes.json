@@ -1706,7 +1706,9 @@
       "color.gradient.info-test": "S:be5ef8a184849f32031bb26259dbe3b29acd0dc0,",
       "color.gradient.subtle-gradient": "S:927449278563d66095480cdd694f0e61019cf7eb,",
       "color.gradient.info-gradient": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,",
-      "color.gradient.super": "S:55fcfd41c6527949eced8010c045b837488a74e8,"
+      "color.gradient.super": "S:55fcfd41c6527949eced8010c045b837488a74e8,",
+      "color.gradient.subtle-linear": "S:927449278563d66095480cdd694f0e61019cf7eb,",
+      "color.gradient.info-linear": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,"
     },
     "$figmaVariableReferences": {}
   }

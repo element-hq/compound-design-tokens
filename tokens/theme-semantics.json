@@ -499,12 +499,12 @@
           "description": "Subtle background gradient stop for info"
         }
       },
-      "subtle-gradient": {
+      "subtle-linear": {
         "value": "linear-gradient(180deg, {color.gradient.subtle.stop1} 0%, {color.gradient.subtle.stop2} 20%, {color.gradient.subtle.stop3} 40%, {color.gradient.subtle.stop4} 60%, {color.gradient.subtle.stop5} 80%, {color.gradient.subtle.stop6} 100%)",
         "type": "color",
         "description": "subtle accent gradient token, for bloom and message highlight"
       },
-      "info-gradient": {
+      "info-linear": {
         "value": "linear-gradient(180deg, {color.gradient.info.stop1} 0%, {color.gradient.info.stop2} 20%, {color.gradient.info.stop3} 40%, {color.gradient.info.stop4} 60%, {color.gradient.info.stop5} 80%, {color.gradient.info.stop6} 100%)",
         "type": "color",
         "description": "info gradient"
