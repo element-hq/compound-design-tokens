@@ -317,6 +317,7 @@ object LightColorTokens {
     val colorRed800 = Color(0xffff3d3d)
     val colorRed900 = Color(0xffd51928)
     val colorThemeBg = Color(0xffffffff)
+    val colorTransparent = Color(0x00000000)
     val colorYellow100 = Color(0xfffffcf0)
     val colorYellow1000 = Color(0xff8f4d00)
     val colorYellow1100 = Color(0xff803f00)

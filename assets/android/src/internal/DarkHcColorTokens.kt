@@ -317,6 +317,7 @@ object DarkHcColorTokens {
     val colorRed800 = Color(0xfff52f33)
     val colorRed900 = Color(0xffff968c)
     val colorThemeBg = Color(0xff101317)
+    val colorTransparent = Color(0x00000000)
     val colorYellow100 = Color(0xff3a0300)
     val colorYellow1000 = Color(0xffebb607)
     val colorYellow1100 = Color(0xfff7c816)

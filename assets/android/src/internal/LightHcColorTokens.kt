@@ -317,6 +317,7 @@ object LightHcColorTokens {
     val colorRed800 = Color(0xffe11e2a)
     val colorRed900 = Color(0xff99001a)
     val colorThemeBg = Color(0xffffffff)
+    val colorTransparent = Color(0x00000000)
     val colorYellow100 = Color(0xfffff8e0)
     val colorYellow1000 = Color(0xff6e3100)
     val colorYellow1100 = Color(0xff612600)
