@@ -498,11 +498,17 @@
           "type": "color",
           "description": "Subtle background gradient stop for info"
         }
+      },
+      "subtle-test": {
+        "value": "linear-gradient(180deg, {color.alpha.green.500} 0%, {color.alpha.green.400} 20%, {color.alpha.green.300} 40%, {color.alpha.green.200} 60%, {color.alpha.green.100} 80%, {color.transparent} 100%)",
+        "type": "color",
+        "description": "Testing a gradient token"
+      },
+      "info-test": {
+        "value": "linear-gradient(180deg, {color.alpha.blue.500} 0%, {color.alpha.blue.400} 20%, {color.alpha.blue.300} 40%, {color.alpha.blue.200} 60%, {color.alpha.blue.100} 80%, {color.transparent} 100%)",
+        "type": "color",
+        "description": "Testing a gradient token"
       }
-    },
-    "transparent": {
-      "value": "rgba(0,0,0,0)",
-      "type": "color"
     }
   }
 }
