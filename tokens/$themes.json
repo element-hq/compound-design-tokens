@@ -477,7 +477,11 @@
       "color.text.badge.accent": "S:52cfa06b8fb99ce5f6a20fee1c8b88681e3e9627,",
       "color.text.badge.info": "S:93ee4d6095e2915ab5738467e05a6a8c978db4cb,",
       "color.bg.badge.accent": "S:b5f70ed6d7483155e50cb408af60cd3b21a2bfc0,",
-      "color.bg.badge.info": "S:6314532de767c8ca0f50eda707834295b5bd80ab,"
+      "color.bg.badge.info": "S:6314532de767c8ca0f50eda707834295b5bd80ab,",
+      "color.gradient.action.stop1": "S:a700f8c5f074bffebd2fbcbcd21b64a0553b0628,",
+      "color.gradient.action.stop2": "S:ad6d9d72c954b56ec4bf46959444203397ce30c5,",
+      "color.gradient.action.stop3": "S:4735587bcde99515d46d5495c3c2bb0c1732add9,",
+      "color.gradient.action.stop4": "S:397be8b04b69aeb7bb648bb91e8f20a05be17ba2,"
     }
   },
   {
@@ -870,7 +874,11 @@
       "color.text.badge.accent": "S:660b4b90f66aa46a66cb11cd3c633dfbfb86622d,",
       "color.text.badge.info": "S:438180ee20793406df6a2d5caa93b9af769208bc,",
       "color.bg.badge.accent": "S:42d531b2e86a8cb6fa32804316bdc4e7ae21c767,",
-      "color.bg.badge.info": "S:f26edf77753c8ce3dc3f7544eadc355937691b17,"
+      "color.bg.badge.info": "S:f26edf77753c8ce3dc3f7544eadc355937691b17,",
+      "color.gradient.action.stop1": "S:af6fce276bfca6c15a31607faed6afb5c4629b63,",
+      "color.gradient.action.stop2": "S:e814f61ccde156a0e6792d37b8e930f326d36a25,",
+      "color.gradient.action.stop3": "S:93e48e0ada63b32ddd40e5993999bc1f2ad35c35,",
+      "color.gradient.action.stop4": "S:78d495b4e612e20ee827f44aed336a79b4d5c7d2,"
     }
   },
   {
@@ -1263,7 +1271,11 @@
       "color.text.badge.accent": "S:4c9ad4661fd7b4faf5ce6f5272d122333048e7d1,",
       "color.text.badge.info": "S:f842c7f15d25aa728f0cf0333550331dcd254dc7,",
       "color.bg.badge.accent": "S:dd4fdb5b900f9535c9e692337e25cb0d7cbf25ac,",
-      "color.bg.badge.info": "S:af45de93ee6c2bb34751a5e3ab47edd76b364c87,"
+      "color.bg.badge.info": "S:af45de93ee6c2bb34751a5e3ab47edd76b364c87,",
+      "color.gradient.action.stop1": "S:340f127fcf120331b98ad45986999c629214ef06,",
+      "color.gradient.action.stop2": "S:d39ce56493ba66d192c8e5f22f05caec7f08c153,",
+      "color.gradient.action.stop3": "S:eeaa9735c91ac2f54c8b313428cffb87c40ef832,",
+      "color.gradient.action.stop4": "S:475d3c4847b018f9029131aea8a7e33ff602ed3f,"
     }
   },
   {
