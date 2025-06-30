@@ -700,9 +700,9 @@ export const cpdColorGradientInfoStop3 = "hsl(229, 100%, 20%, 1)";
 export const cpdColorGradientInfoStop4 = "hsl(234, 100%, 18%, 1)";
 export const cpdColorGradientInfoStop5 = "hsl(237, 100%, 18%, 1)";
 export const cpdColorGradientInfoStop6 = "rgba(0,0,0,0)";
-export const cpdColorGradientSubtleGradient =
+export const cpdColorGradientSubtleLinear =
   "linear-gradient(180deg, hsl(160, 100%, 12%, 1) 0%, hsl(155, 100%, 9%, 1) 20%, hsl(151, 100%, 7%, 1) 40%, hsl(147, 100%, 6%, 1) 60%, hsl(144, 100%, 6%, 1) 80%, rgba(0,0,0,0) 100%)";
-export const cpdColorGradientInfoGradient =
+export const cpdColorGradientInfoLinear =
   "linear-gradient(180deg, hsla(221, 100%, 37%, 0.63) 0%, hsl(224, 100%, 22%, 1) 20%, hsl(229, 100%, 20%, 1) 40%, hsl(234, 100%, 18%, 1) 60%, hsl(237, 100%, 18%, 1) 80%, rgba(0,0,0,0) 100%)";
 export const cpdColorGradientActionStop1 = "#1fc090";
 export const cpdColorGradientActionStop2 = "#129a78";

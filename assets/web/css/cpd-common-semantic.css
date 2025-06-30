@@ -85,6 +85,6 @@
   --cpd-color-gradient-info-stop4: var(--cpd-color-alpha-blue-200);
   --cpd-color-gradient-info-stop5: var(--cpd-color-alpha-blue-100);
   --cpd-color-gradient-info-stop6: var(--cpd-color-transparent);
-  --cpd-color-gradient-subtle-gradient: linear-gradient(180deg, var(--cpd-color-gradient-subtle-stop1) 0%, var(--cpd-color-gradient-subtle-stop2) 20%, var(--cpd-color-gradient-subtle-stop3) 40%, var(--cpd-color-gradient-subtle-stop4) 60%, var(--cpd-color-gradient-subtle-stop5) 80%, var(--cpd-color-gradient-subtle-stop6) 100%);
-  --cpd-color-gradient-info-gradient: linear-gradient(180deg, var(--cpd-color-gradient-info-stop1) 0%, var(--cpd-color-gradient-info-stop2) 20%, var(--cpd-color-gradient-info-stop3) 40%, var(--cpd-color-gradient-info-stop4) 60%, var(--cpd-color-gradient-info-stop5) 80%, var(--cpd-color-gradient-info-stop6) 100%);
+  --cpd-color-gradient-subtle-linear: linear-gradient(180deg, var(--cpd-color-gradient-subtle-stop1) 0%, var(--cpd-color-gradient-subtle-stop2) 20%, var(--cpd-color-gradient-subtle-stop3) 40%, var(--cpd-color-gradient-subtle-stop4) 60%, var(--cpd-color-gradient-subtle-stop5) 80%, var(--cpd-color-gradient-subtle-stop6) 100%);
+  --cpd-color-gradient-info-linear: linear-gradient(180deg, var(--cpd-color-gradient-info-stop1) 0%, var(--cpd-color-gradient-info-stop2) 20%, var(--cpd-color-gradient-info-stop3) 40%, var(--cpd-color-gradient-info-stop4) 60%, var(--cpd-color-gradient-info-stop5) 80%, var(--cpd-color-gradient-info-stop6) 100%);
 }
