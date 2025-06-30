@@ -1675,7 +1675,8 @@
       "color.gradient.info.stop4": "S:f6c8d775ce0c5825340b0bd88544eb046eb564e3,",
       "color.gradient.info.stop5": "S:6564af4bac72587f472085ed844d66f3d9314819,",
       "color.gradient.info.stop6": "S:d8e6f3676f9c2a9c3a6796745d228ea741f98390,",
-      "color.border.accent.subtle": "S:d5b32f0a922e967cbf7acb5ad039600354cb69ac,"
+      "color.border.accent.subtle": "S:d5b32f0a922e967cbf7acb5ad039600354cb69ac,",
+      "color.transparent": "S:f7e9e037bd40db5ea41f0f2e4fc670f0d2a70a52,"
     }
   }
 ]

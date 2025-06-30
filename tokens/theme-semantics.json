@@ -435,28 +435,6 @@
       }
     },
     "gradient": {
-      "action": {
-        "stop1": {
-          "value": "{color.green.500}",
-          "type": "color",
-          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
-        },
-        "stop2": {
-          "value": "{color.green.700}",
-          "type": "color",
-          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
-        },
-        "stop3": {
-          "value": "{color.green.900}",
-          "type": "color",
-          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
-        },
-        "stop4": {
-          "value": "{color.green.1100}",
-          "type": "color",
-          "description": "Gradient colour stop for send and super buttons. (Reverse order 4-1 on dark)"
-        }
-      },
       "subtle": {
         "stop1": {
           "value": "{color.alpha.green.500}",
@@ -484,7 +462,7 @@
           "description": "Subtle background gradient stop for message highlight and bloom"
         },
         "stop6": {
-          "value": "rgba(0,0,0,0)",
+          "value": "{color.transparent}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         }
@@ -516,11 +494,15 @@
           "description": "Subtle background gradient stop for info"
         },
         "stop6": {
-          "value": "rgba(0,0,0,0)",
+          "value": "{color.transparent}",
           "type": "color",
           "description": "Subtle background gradient stop for info"
         }
       }
+    },
+    "transparent": {
+      "value": "rgba(0,0,0,0)",
+      "type": "color"
     }
   }
 }

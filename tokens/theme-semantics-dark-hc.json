@@ -13,6 +13,30 @@
           "description": "Default global background for the user interface.\nElevation: Level 1."
         }
       }
+    },
+    "gradient": {
+      "action": {
+        "stop1": {
+          "value": "{color.green.1100}",
+          "type": "color",
+          "description": "Background gradient stop for super and send buttons buttons"
+        },
+        "stop2": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Background gradient stop for super and send buttons buttons"
+        },
+        "stop3": {
+          "value": "{color.green.700}",
+          "type": "color",
+          "description": "Background gradient stop for super and send buttons buttons"
+        },
+        "stop4": {
+          "value": "{color.green.500}",
+          "type": "color",
+          "description": "Background gradient stop for super and send buttons buttons"
+        }
+      }
     }
   }
 }
