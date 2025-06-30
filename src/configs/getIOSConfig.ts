@@ -15,6 +15,7 @@ import type {
 import type { Theme } from "../@types";
 import iosExclude from "../filters/ios/exclude";
 import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
+import { isCssGradient } from "../filters/isCssGradient";
 import createTemplate from "../utils/createTemplate";
 
 function swiftClassMembers(args: FormatFnArguments) {
@@ -49,7 +50,9 @@ export function getIOSColorConfig(theme: Theme): PlatformConfig {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isCoreColor.filter(token),
+          token.type === "color" &&
+          isCoreColor.filter(token) &&
+          !isCssGradient.filter(token),
         destination: "CompoundCoreColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -61,7 +64,9 @@ export function getIOSColorConfig(theme: Theme): PlatformConfig {
       },
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isNotCoreColor.filter(token),
+          token.type === "color" &&
+          isNotCoreColor.filter(token) &&
+          !isCssGradient.filter(token),
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
         options: {
@@ -102,7 +107,9 @@ export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
     files: [
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isCoreColor.filter(token),
+          token.type === "color" &&
+          isCoreColor.filter(token) &&
+          !isCssGradient.filter(token),
         destination: "CompoundCoreUIColorTokens.swift",
         format: "ios-swift/class.swift",
         options: {
@@ -114,7 +121,9 @@ export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
       },
       {
         filter: (token: TransformedToken) =>
-          token.type === "color" && isNotCoreColor.filter(token),
+          token.type === "color" &&
+          isNotCoreColor.filter(token) &&
+          !isCssGradient.filter(token),
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
         options: {
