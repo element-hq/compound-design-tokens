@@ -486,7 +486,8 @@
       "color.gradient.action.stop2": "S:ad6d9d72c954b56ec4bf46959444203397ce30c5,",
       "color.gradient.action.stop3": "S:4735587bcde99515d46d5495c3c2bb0c1732add9,",
       "color.gradient.action.stop4": "S:397be8b04b69aeb7bb648bb91e8f20a05be17ba2,",
-      "color.transparent": "S:f9aa06deef5ed5f45f6fb04ebf95325cccd537ad,"
+      "color.transparent": "S:f9aa06deef5ed5f45f6fb04ebf95325cccd537ad,",
+      "color.gradient.super": "S:196e4889d3ae2469b3a01cf57dc644d226b8845d,"
     },
     "$figmaVariableReferences": {}
   },
@@ -885,7 +886,8 @@
       "color.gradient.action.stop2": "S:e814f61ccde156a0e6792d37b8e930f326d36a25,",
       "color.gradient.action.stop3": "S:93e48e0ada63b32ddd40e5993999bc1f2ad35c35,",
       "color.gradient.action.stop4": "S:78d495b4e612e20ee827f44aed336a79b4d5c7d2,",
-      "color.transparent": "S:6c21355877c1caf3cc6b44e46ddfe8f27f74dd3b,"
+      "color.transparent": "S:6c21355877c1caf3cc6b44e46ddfe8f27f74dd3b,",
+      "color.gradient.super": "S:88164e61b4f985e82e49debd18c2e56651d1fd38,"
     },
     "$figmaVariableReferences": {}
   },
@@ -1284,7 +1286,8 @@
       "color.gradient.action.stop2": "S:d39ce56493ba66d192c8e5f22f05caec7f08c153,",
       "color.gradient.action.stop3": "S:eeaa9735c91ac2f54c8b313428cffb87c40ef832,",
       "color.gradient.action.stop4": "S:475d3c4847b018f9029131aea8a7e33ff602ed3f,",
-      "color.transparent": "S:dc0abc3f87d1fe15910cb90c2e34d9d41fdd7e2d,"
+      "color.transparent": "S:dc0abc3f87d1fe15910cb90c2e34d9d41fdd7e2d,",
+      "color.gradient.super": "S:012790c8c979c2e2d44a175382ee3b5865467656,"
     },
     "$figmaVariableReferences": {}
   },
@@ -1700,7 +1703,10 @@
       "color.border.accent.subtle": "S:d5b32f0a922e967cbf7acb5ad039600354cb69ac,",
       "color.gradient.subtle-test": "S:ef2702c4f083b453d74f661640e5589446e5845e,",
       "color.transparent": "S:64a44683cca21851a5d88410327b0300e1279bf5,",
-      "color.gradient.info-test": "S:be5ef8a184849f32031bb26259dbe3b29acd0dc0,"
+      "color.gradient.info-test": "S:be5ef8a184849f32031bb26259dbe3b29acd0dc0,",
+      "color.gradient.subtle-gradient": "S:927449278563d66095480cdd694f0e61019cf7eb,",
+      "color.gradient.info-gradient": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,",
+      "color.gradient.super": "S:55fcfd41c6527949eced8010c045b837488a74e8,"
     },
     "$figmaVariableReferences": {}
   }
