@@ -708,5 +708,5 @@ export const cpdColorGradientActionStop1 = "#8fddbc";
 export const cpdColorGradientActionStop2 = "#37c998";
 export const cpdColorGradientActionStop3 = "#00745c";
 export const cpdColorGradientActionStop4 = "#004832";
-export const cpdColorGradientSuper =
+export const cpdColorGradientActionLinear =
   "linear-gradient(180deg, #8fddbc 0%, #37c998 33%, #00745c 66%, #004832 100%)";

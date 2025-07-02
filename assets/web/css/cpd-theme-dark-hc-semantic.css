@@ -5,5 +5,5 @@
   --cpd-color-gradient-action-stop2: var(--cpd-color-green-900);
   --cpd-color-gradient-action-stop3: var(--cpd-color-green-700);
   --cpd-color-gradient-action-stop4: var(--cpd-color-green-500);
-  --cpd-color-gradient-super: linear-gradient(180deg, var(--cpd-color-gradient-action-stop1) 0%, var(--cpd-color-gradient-action-stop2) 33%, var(--cpd-color-gradient-action-stop3) 66%, var(--cpd-color-gradient-action-stop4) 100%);
+  --cpd-color-gradient-action-linear: linear-gradient(180deg, var(--cpd-color-gradient-action-stop1) 0%, var(--cpd-color-gradient-action-stop2) 33%, var(--cpd-color-gradient-action-stop3) 66%, var(--cpd-color-gradient-action-stop4) 100%);
 }

@@ -681,4 +681,4 @@ export const cpdColorGradientActionStop1: string;
 export const cpdColorGradientActionStop2: string;
 export const cpdColorGradientActionStop3: string;
 export const cpdColorGradientActionStop4: string;
-export const cpdColorGradientSuper: string;
+export const cpdColorGradientActionLinear: string;
