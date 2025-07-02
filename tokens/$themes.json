@@ -487,7 +487,8 @@
       "color.gradient.action.stop3": "S:4735587bcde99515d46d5495c3c2bb0c1732add9,",
       "color.gradient.action.stop4": "S:397be8b04b69aeb7bb648bb91e8f20a05be17ba2,",
       "color.transparent": "S:f9aa06deef5ed5f45f6fb04ebf95325cccd537ad,",
-      "color.gradient.super": "S:196e4889d3ae2469b3a01cf57dc644d226b8845d,"
+      "color.gradient.super": "S:196e4889d3ae2469b3a01cf57dc644d226b8845d,",
+      "color.gradient.action-linear": "S:7063dc71af7eeeba675f3c783d1e6eea904b9e0e,"
     },
     "$figmaVariableReferences": {}
   },
@@ -887,7 +888,7 @@
       "color.gradient.action.stop3": "S:93e48e0ada63b32ddd40e5993999bc1f2ad35c35,",
       "color.gradient.action.stop4": "S:78d495b4e612e20ee827f44aed336a79b4d5c7d2,",
       "color.transparent": "S:6c21355877c1caf3cc6b44e46ddfe8f27f74dd3b,",
-      "color.gradient.super": "S:88164e61b4f985e82e49debd18c2e56651d1fd38,"
+      "color.gradient.action-linear": "S:88164e61b4f985e82e49debd18c2e56651d1fd38,"
     },
     "$figmaVariableReferences": {}
   },
@@ -1287,7 +1288,8 @@
       "color.gradient.action.stop3": "S:eeaa9735c91ac2f54c8b313428cffb87c40ef832,",
       "color.gradient.action.stop4": "S:475d3c4847b018f9029131aea8a7e33ff602ed3f,",
       "color.transparent": "S:dc0abc3f87d1fe15910cb90c2e34d9d41fdd7e2d,",
-      "color.gradient.super": "S:012790c8c979c2e2d44a175382ee3b5865467656,"
+      "color.gradient.super": "S:012790c8c979c2e2d44a175382ee3b5865467656,",
+      "color.gradient.action-linear": "S:bdb4c153486b9065f994f56049f10e60fb8decfc,"
     },
     "$figmaVariableReferences": {}
   },
@@ -1708,7 +1710,8 @@
       "color.gradient.info-gradient": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,",
       "color.gradient.super": "S:55fcfd41c6527949eced8010c045b837488a74e8,",
       "color.gradient.subtle-linear": "S:927449278563d66095480cdd694f0e61019cf7eb,",
-      "color.gradient.info-linear": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,"
+      "color.gradient.info-linear": "S:48544dcd9dff61ed07c8a4547acbcda9484f9364,",
+      "color.gradient.action-linear": "S:07fe955d6f8a73d315e8f5f768cb852240360af1,"
     },
     "$figmaVariableReferences": {}
   }

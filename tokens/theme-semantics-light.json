@@ -37,7 +37,7 @@
           "description": "Background gradient stop for super and send buttons buttons"
         }
       },
-      "super": {
+      "action-linear": {
         "value": "linear-gradient(180deg, {color.gradient.action.stop1} 0%, {color.gradient.action.stop2} 33%, {color.gradient.action.stop3} 66%, {color.gradient.action.stop4} 100%)",
         "type": "color",
         "description": "Intended for super and send buttons. References gradient/action/stop1 -4"
