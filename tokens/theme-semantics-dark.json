@@ -19,28 +19,28 @@
         "stop1": {
           "value": "{color.green.1100}",
           "type": "color",
-          "description": "Background gradient stop for super and send buttons buttons"
+          "description": "Background gradient stop for super and send buttons"
         },
         "stop2": {
           "value": "{color.green.900}",
           "type": "color",
-          "description": "Background gradient stop for super and send buttons buttons"
+          "description": "Background gradient stop for super and send buttons"
         },
         "stop3": {
           "value": "{color.green.700}",
           "type": "color",
-          "description": "Background gradient stop for super and send buttons buttons"
+          "description": "Background gradient stop for super and send buttons"
         },
         "stop4": {
           "value": "{color.green.500}",
           "type": "color",
-          "description": "Background gradient stop for super and send buttons buttons"
+          "description": "Background gradient stop for super and send buttons"
+        },
+        "linear": {
+          "value": "linear-gradient(180deg, {color.gradient.action.stop1} 0%, {color.gradient.action.stop2} 33%, {color.gradient.action.stop3} 66%, {color.gradient.action.stop4} 100%)",
+          "type": "color",
+          "description": "Intended for super and send buttons. References gradient/action/stop1 -4"
         }
-      },
-      "action-linear": {
-        "value": "linear-gradient(180deg, {color.gradient.action.stop1} 0%, {color.gradient.action.stop2} 33%, {color.gradient.action.stop3} 66%, {color.gradient.action.stop4} 100%)",
-        "type": "color",
-        "description": "Intended for super and send buttons. References gradient/action/stop1 -4"
       }
     }
   }
