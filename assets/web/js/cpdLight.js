@@ -694,14 +694,14 @@ export const cpdColorGradientSubtleStop3 = "hsla(150, 100%, 36%, 0.11)";
 export const cpdColorGradientSubtleStop4 = "hsla(150, 79%, 41%, 0.06)";
 export const cpdColorGradientSubtleStop5 = "hsla(156, 79%, 41%, 0.03)";
 export const cpdColorGradientSubtleStop6 = "rgba(0,0,0,0)";
+export const cpdColorGradientSubtleLinear =
+  "linear-gradient(180deg, hsla(154, 96%, 37%, 0.41) 0%, hsla(151, 93%, 37%, 0.23) 20%, hsla(150, 100%, 36%, 0.11) 40%, hsla(150, 79%, 41%, 0.06) 60%, hsla(156, 79%, 41%, 0.03) 80%, rgba(0,0,0,0) 100%)";
 export const cpdColorGradientInfoStop1 = "hsla(215, 93%, 50%, 0.28)";
 export const cpdColorGradientInfoStop2 = "hsla(216, 95%, 51%, 0.16)";
 export const cpdColorGradientInfoStop3 = "hsla(215, 100%, 52%, 0.09)";
 export const cpdColorGradientInfoStop4 = "hsla(218, 100%, 57%, 0.05)";
 export const cpdColorGradientInfoStop5 = "hsla(210, 100%, 61%, 0.03)";
 export const cpdColorGradientInfoStop6 = "rgba(0,0,0,0)";
-export const cpdColorGradientSubtleLinear =
-  "linear-gradient(180deg, hsla(154, 96%, 37%, 0.41) 0%, hsla(151, 93%, 37%, 0.23) 20%, hsla(150, 100%, 36%, 0.11) 40%, hsla(150, 79%, 41%, 0.06) 60%, hsla(156, 79%, 41%, 0.03) 80%, rgba(0,0,0,0) 100%)";
 export const cpdColorGradientInfoLinear =
   "linear-gradient(180deg, hsla(215, 93%, 50%, 0.28) 0%, hsla(216, 95%, 51%, 0.16) 20%, hsla(215, 100%, 52%, 0.09) 40%, hsla(218, 100%, 57%, 0.05) 60%, hsla(210, 100%, 61%, 0.03) 80%, rgba(0,0,0,0) 100%)";
 export const cpdColorGradientActionStop1 = "#98e1c1";

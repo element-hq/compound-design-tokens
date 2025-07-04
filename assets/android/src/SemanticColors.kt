@@ -119,13 +119,13 @@ Elevation: Level 0. */
     val borderInteractiveSecondary: Color,
     /** Subtle border colour for success state elements. */
     val borderSuccessSubtle: Color,
-    /** Background gradient stop for super and send buttons buttons */
+    /** Background gradient stop for super and send buttons */
     val gradientActionStop1: Color,
-    /** Background gradient stop for super and send buttons buttons */
+    /** Background gradient stop for super and send buttons */
     val gradientActionStop2: Color,
-    /** Background gradient stop for super and send buttons buttons */
+    /** Background gradient stop for super and send buttons */
     val gradientActionStop3: Color,
-    /** Background gradient stop for super and send buttons buttons */
+    /** Background gradient stop for super and send buttons */
     val gradientActionStop4: Color,
     /** Subtle background gradient stop for info */
     val gradientInfoStop1: Color,
