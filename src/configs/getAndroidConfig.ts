@@ -16,6 +16,7 @@ import type {
 } from "style-dictionary/types";
 import type { Theme } from "../@types";
 import isCoreToken from "../filters/isCoreToken";
+import { isCssGradient } from "../filters/isCssGradient";
 import isTypographyToken from "../filters/isTypographyToken";
 import { ANDROID_INDENT_LEVEL } from "../utils/constants";
 import createTemplate from "../utils/createTemplate";
@@ -166,7 +167,9 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         format: "compose/core-colors",
         destination: `internal/${className}ColorTokens.kt`,
         filter: (token: TransformedToken) =>
-          token.type === "color" && isCoreToken.filter(token),
+          token.type === "color" &&
+          isCoreToken.filter(token) &&
+          !isCssGradient.filter(token),
         options: withDefaultOptions({
           outputReferences: false,
           import: ["androidx.compose.ui.graphics.Color"],
@@ -179,7 +182,9 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         format: "compose/semantic-colors",
         destination: `SemanticColors${className}.kt`,
         filter: (token: TransformedToken) =>
-          token.type === "color" && !isCoreToken.filter(token),
+          token.type === "color" &&
+          !isCoreToken.filter(token) &&
+          !isCssGradient.filter(token),
         options: withDefaultOptions({
           outputReferences: true,
           import: [
@@ -200,7 +205,9 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
         format: "compose/extra-colors",
         destination: "SemanticColors.kt",
         filter: (token: TransformedToken) =>
-          token.type === "color" && !isCoreToken.filter(token),
+          token.type === "color" &&
+          !isCoreToken.filter(token) &&
+          !isCssGradient.filter(token),
         options: withDefaultOptions({
           outputReferences: true,
           import: [],

@@ -34,6 +34,8 @@ data class SemanticColors(
     val bgAccentPressed: Color,
     /** Background colour for accent or brand actions. State: Rest. */
     val bgAccentRest: Color,
+    /** Background colour for accent or brand actions. State: Selected */
+    val bgAccentSelected: Color,
     /** Background colour for primary actions. State: Disabled. */
     val bgActionPrimaryDisabled: Color,
     /** Background colour for primary actions. State: Hover. */
@@ -50,6 +52,8 @@ data class SemanticColors(
     val bgActionSecondaryRest: Color,
     /** Badge accent background colour */
     val bgBadgeAccent: Color,
+    /** Badge default background colour */
+    val bgBadgeDefault: Color,
     /** Badge info background colour */
     val bgBadgeInfo: Color,
     /** Default global background for the user interface.
@@ -93,6 +97,8 @@ Elevation: Level 0. */
     val bgSubtleSecondaryLevel0: Color,
     /** Subtle background colour for success state elements. State: Rest. */
     val bgSuccessSubtle: Color,
+    /** accent border intended for keylines on message highlights */
+    val borderAccentSubtle: Color,
     /** High-contrast border for critical state. State: Hover. */
     val borderCriticalHovered: Color,
     /** High-contrast border for critical state. State: Rest. */
@@ -113,6 +119,38 @@ Elevation: Level 0. */
     val borderInteractiveSecondary: Color,
     /** Subtle border colour for success state elements. */
     val borderSuccessSubtle: Color,
+    /** Background gradient stop for super and send buttons */
+    val gradientActionStop1: Color,
+    /** Background gradient stop for super and send buttons */
+    val gradientActionStop2: Color,
+    /** Background gradient stop for super and send buttons */
+    val gradientActionStop3: Color,
+    /** Background gradient stop for super and send buttons */
+    val gradientActionStop4: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop1: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop2: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop3: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop4: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop5: Color,
+    /** Subtle background gradient stop for info */
+    val gradientInfoStop6: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop1: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop2: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop3: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop4: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop5: Color,
+    /** Subtle background gradient stop for message highlight and bloom */
+    val gradientSubtleStop6: Color,
     /** Highest contrast accessible accent icons. */
     val iconAccentPrimary: Color,
     /** Lowest contrast accessible accent icons. */

@@ -1592,6 +1592,10 @@
           "description": "WCAG: 16 Opacity: 1"
         }
       }
+    },
+    "transparent": {
+      "value": "rgba(0,0,0,0)",
+      "type": "color"
     }
   }
 }

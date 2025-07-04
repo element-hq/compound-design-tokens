@@ -255,6 +255,11 @@
           "value": "{color.green.1100}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Pressed"
+        },
+        "selected": {
+          "value": "{color.alpha.green.300}",
+          "type": "color",
+          "description": "Background colour for accent or brand actions. State: Selected"
         }
       },
       "badge": {
@@ -267,6 +272,11 @@
           "value": "{color.alpha.blue.300}",
           "type": "color",
           "description": "Badge info background colour"
+        },
+        "default": {
+          "value": "{color.alpha.gray.300}",
+          "type": "color",
+          "description": "Badge default background colour"
         }
       }
     },
@@ -324,9 +334,16 @@
       },
       "info": {
         "subtle": {
-          "value": "{color.blue.500}",
+          "value": "{color.blue.700}",
           "type": "color",
           "description": "Subtle border colour for informational elements."
+        }
+      },
+      "accent": {
+        "subtle": {
+          "value": "{color.green.700}",
+          "type": "color",
+          "description": "accent border intended for keylines on message highlights"
         }
       }
     },
@@ -414,6 +431,82 @@
           "value": "{color.theme.bg}",
           "type": "color",
           "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
+      }
+    },
+    "gradient": {
+      "subtle": {
+        "stop1": {
+          "value": "{color.alpha.green.500}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop2": {
+          "value": "{color.alpha.green.400}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop3": {
+          "value": "{color.alpha.green.300}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop4": {
+          "value": "{color.alpha.green.200}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop5": {
+          "value": "{color.alpha.green.100}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "stop6": {
+          "value": "{color.transparent}",
+          "type": "color",
+          "description": "Subtle background gradient stop for message highlight and bloom"
+        },
+        "linear": {
+          "value": "linear-gradient(180deg, {color.gradient.subtle.stop1} 0%, {color.gradient.subtle.stop2} 20%, {color.gradient.subtle.stop3} 40%, {color.gradient.subtle.stop4} 60%, {color.gradient.subtle.stop5} 80%, {color.gradient.subtle.stop6} 100%)",
+          "type": "color",
+          "description": "subtle accent gradient token, for bloom and message highlight"
+        }
+      },
+      "info": {
+        "stop1": {
+          "value": "{color.alpha.blue.500}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop2": {
+          "value": "{color.alpha.blue.400}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop3": {
+          "value": "{color.alpha.blue.300}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop4": {
+          "value": "{color.alpha.blue.200}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop5": {
+          "value": "{color.alpha.blue.100}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "stop6": {
+          "value": "{color.transparent}",
+          "type": "color",
+          "description": "Subtle background gradient stop for info"
+        },
+        "linear": {
+          "value": "linear-gradient(180deg, {color.gradient.info.stop1} 0%, {color.gradient.info.stop2} 20%, {color.gradient.info.stop3} 40%, {color.gradient.info.stop4} 60%, {color.gradient.info.stop5} 80%, {color.gradient.info.stop6} 100%)",
+          "type": "color",
+          "description": "info gradient"
         }
       }
     }

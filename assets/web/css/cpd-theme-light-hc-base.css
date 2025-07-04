@@ -308,4 +308,5 @@
   --cpd-color-alpha-pink-1200: hsl(332, 100%, 20%, 1);
   --cpd-color-alpha-pink-1300: hsl(337, 100%, 15%, 1);
   --cpd-color-alpha-pink-1400: hsl(341, 100%, 13%, 1);
+  --cpd-color-transparent: rgba(0,0,0,0);
 }
