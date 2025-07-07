@@ -8,9 +8,10 @@ Please see LICENSE files in the repository root for full details.
 
 import fs from "fs-extra";
 import type { Action, TransformedToken } from "style-dictionary/types";
-import { usesReferences } from "style-dictionary/utils";
+import { usesReferences, getReferences } from "style-dictionary/utils";
 import type { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
+import { isCssGradient } from "../../filters/isCssGradient";
 
 /**
  * Filter the core color
@@ -43,7 +44,7 @@ export default {
     const coreColorTokens = dictionary.allTokens.filter(
       (token: TransformedToken) => {
         return (
-          isCoreColor.filter(token) && !usesReferences(token.original.value)
+          isCoreColor.filter(token) && !isCssGradient.filter(token)
         );
       },
     );
@@ -53,6 +54,11 @@ export default {
       fs.ensureDirSync(colorsetPath);
 
       const colorset = getOrCreateColorset(`${colorsetPath}/Contents.json`);
+
+      // We need to resolve the references of asymmetric tokens.
+      const resolvedToken = usesReferences(coreColor.original.value)
+        ? getReferences(coreColor.original.value, dictionary.tokens)[0]
+        : coreColor;
 
       const color: {
         idiom: string;
@@ -64,7 +70,7 @@ export default {
         color: {
           "color-space": "srgb",
           components: getSRGBComponent(
-            coreColor.attributes!.rgb as {
+            resolvedToken.attributes!.rgb as {
               a: number;
               r: number;
               g: number;
