@@ -37,9 +37,9 @@ export default {
     }
 
     /**
-     * We're only interested in creating colorset for the core tokens. All the
-     * other tokens will be defined on a more semantic layer and will reference
-     * the values from the colorset
+     * We're only interested in creating colorsets for the core colors (which includes
+     * the asymmetric semantic tokens). All the symmetric semantic tokens will reference
+     * the values from the generated colorsets
      */
     const coreColorTokens = dictionary.allTokens.filter(
       (token: TransformedToken) => {
@@ -55,7 +55,10 @@ export default {
 
       const colorset = getOrCreateColorset(`${colorsetPath}/Contents.json`);
 
-      // We need to resolve the references of asymmetric tokens.
+      /**
+       * We need to resolve the references for asymmetric tokens otherwise there isn't
+       * and RGB color value to .
+       */
       const resolvedToken = usesReferences(coreColor.original.value)
         ? getReferences(coreColor.original.value, dictionary.tokens)[0]
         : coreColor;

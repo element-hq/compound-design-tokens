@@ -30,17 +30,17 @@ function swiftClassMembers(args: FormatFnArguments) {
   );
 }
 
-/*
- * Post-processes semantic colors so that asymmetric colors are loaded from their
- * colorset asset and symmetric colors reference the core color class.
+/**
+ * Post-processes semantic colors so that asymmetric colors are loaded from the
+ * asset catalog and symmetric colors reference the core color class.
  */
 function postProcessSemanticColorToken(token: TransformedToken, formatted: string, isSwiftUIColor: boolean): string {
   let components = formatted.split(' = ');
 
-  if (isCoreColor.filter(token)) { // If a semantic token is a core color, it is an asymmetric color.
+  if (isCoreColor.filter(token)) { // If a semantic token is a core color it's an asymmetric color and has a colorset.
     let init = isSwiftUIColor ? colorAssetInit : uiColorAssetInit
     return `${components[0]} = ${init(components[0])}`;
-  } else { // Otherwise, it is a symmetric color (and we need to access the reference on the core color class).
+  } else { // Otherwise, this is a symmetric color which references a token in the core color class.
     let referenceClass = isSwiftUIColor ? coreColorClass : coreUIColorClass
     return `${components[0]} = ${referenceClass}.${components[1]}`;
   }
