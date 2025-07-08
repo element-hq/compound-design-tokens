@@ -14,15 +14,36 @@ import type {
 } from "style-dictionary/types";
 import type { Theme } from "../@types";
 import iosExclude from "../filters/ios/exclude";
-import { isCoreColor, isNotCoreColor } from "../filters/isCoreColor";
+import { isCoreColor } from "../filters/isCoreColor";
+import isCoreToken from "../filters/isCoreToken";
 import { isCssGradient } from "../filters/isCssGradient";
 import createTemplate from "../utils/createTemplate";
+import { colorAssetInit, uiColorAssetInit } from "../transforms/swift/colorAsset";
+
+const coreColorClass = "CompoundCoreColorTokens";
+const coreUIColorClass = "CompoundCoreUIColorTokens";
 
 function swiftClassMembers(args: FormatFnArguments) {
   return createTemplate(
     "../formats/templates/swift/class-members.template",
     args,
   );
+}
+
+/*
+ * Post-processes semantic colors so that asymmetric colors are loaded from their
+ * colorset asset and symmetric colors reference the core color class.
+ */
+function postProcessSemanticColorToken(token: TransformedToken, formatted: string, isSwiftUIColor: boolean): string {
+  let components = formatted.split(' = ');
+
+  if (isCoreColor.filter(token)) { // If a semantic token is a core color, it is an asymmetric color.
+    let init = isSwiftUIColor ? colorAssetInit : uiColorAssetInit
+    return `${components[0]} = ${init(components[0])}`;
+  } else { // Otherwise, it is a symmetric color (and we need to access the reference on the core color class).
+    let referenceClass = isSwiftUIColor ? coreColorClass : coreUIColorClass
+    return `${components[0]} = ${referenceClass}.${components[1]}`;
+  }
 }
 
 /*
@@ -39,7 +60,7 @@ export function getIOSColorConfig(theme: Theme): PlatformConfig {
       "camelCaseDecimal",
       "attribute/color",
       "swift/token/ti",
-      "swift/coreColorSet",
+      "swift/coreColorAsset",
       "ts/resolveMath",
     ],
     options: {
@@ -51,21 +72,21 @@ export function getIOSColorConfig(theme: Theme): PlatformConfig {
       {
         filter: (token: TransformedToken) =>
           token.type === "color" &&
-          isCoreColor.filter(token) &&
+          isCoreToken.filter(token) &&
           !isCssGradient.filter(token),
-        destination: "CompoundCoreColorTokens.swift",
+        destination: `${coreColorClass}.swift`,
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "SwiftUI",
-          className: "CompoundCoreColorTokens",
+          className: coreColorClass,
         },
       },
       {
         filter: (token: TransformedToken) =>
           token.type === "color" &&
-          isNotCoreColor.filter(token) &&
+          !isCoreToken.filter(token) &&
           !isCssGradient.filter(token),
         destination: "CompoundColorTokens.swift",
         format: "swift/class-members",
@@ -75,8 +96,8 @@ export function getIOSColorConfig(theme: Theme): PlatformConfig {
           import: ["SwiftUI"],
           objectType: "class",
           accessControl: "public",
-          referenceClass: "CompoundCoreColorTokens",
           className: "CompoundColorTokens",
+          postProcessSemanticColorToken,
         },
       },
     ],
@@ -97,7 +118,7 @@ export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
       "camelCaseDecimal",
       "attribute/color",
       "swift/token/ti",
-      "swift/coreUIColorSet",
+      "swift/coreUIColorAsset",
       "ts/resolveMath",
     ],
     options: {
@@ -108,21 +129,21 @@ export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
       {
         filter: (token: TransformedToken) =>
           token.type === "color" &&
-          isCoreColor.filter(token) &&
+          isCoreToken.filter(token) &&
           !isCssGradient.filter(token),
-        destination: "CompoundCoreUIColorTokens.swift",
+        destination: `${coreUIColorClass}.swift`,
         format: "ios-swift/class.swift",
         options: {
           showFileHeader: false,
           outputReferences: true,
           import: "UIKit",
-          className: "CompoundCoreUIColorTokens",
+          className: coreUIColorClass,
         },
       },
       {
         filter: (token: TransformedToken) =>
           token.type === "color" &&
-          isNotCoreColor.filter(token) &&
+          !isCoreToken.filter(token) &&
           !isCssGradient.filter(token),
         destination: "CompoundUIColorTokens.swift",
         format: "swift/class-members",
@@ -132,8 +153,8 @@ export function getIOSUIColorConfig(theme: Theme): PlatformConfig {
           import: ["UIKit"],
           objectType: "class",
           accessControl: "public",
-          referenceClass: "CompoundCoreUIColorTokens",
           className: "CompoundUIColorTokens",
+          postProcessSemanticColorToken,
         },
       },
     ],

@@ -21,6 +21,7 @@ public class CompoundUIColorTokens {
     public let bgBadgeDefault = CompoundCoreUIColorTokens.alphaGray300
     public let bgBadgeInfo = CompoundCoreUIColorTokens.alphaBlue300
     public let bgCanvasDefault = CompoundCoreUIColorTokens.themeBg
+    public let bgCanvasDefaultLevel1 = UIColor(named: "bgCanvasDefaultLevel1", in: Bundle.module, compatibleWith: nil)!
     public let bgCanvasDisabled = CompoundCoreUIColorTokens.gray200
     public let bgCriticalHovered = CompoundCoreUIColorTokens.red1000
     public let bgCriticalPrimary = CompoundCoreUIColorTokens.red900
@@ -35,6 +36,7 @@ public class CompoundUIColorTokens {
     public let bgInfoSubtle = CompoundCoreUIColorTokens.blue200
     public let bgSubtlePrimary = CompoundCoreUIColorTokens.gray400
     public let bgSubtleSecondary = CompoundCoreUIColorTokens.gray300
+    public let bgSubtleSecondaryLevel0 = UIColor(named: "bgSubtleSecondaryLevel0", in: Bundle.module, compatibleWith: nil)!
     public let bgSuccessSubtle = CompoundCoreUIColorTokens.green200
     public let borderAccentSubtle = CompoundCoreUIColorTokens.green700
     public let borderCriticalHovered = CompoundCoreUIColorTokens.red1000
@@ -47,6 +49,10 @@ public class CompoundUIColorTokens {
     public let borderInteractivePrimary = CompoundCoreUIColorTokens.gray800
     public let borderInteractiveSecondary = CompoundCoreUIColorTokens.gray600
     public let borderSuccessSubtle = CompoundCoreUIColorTokens.green500
+    public let gradientActionStop1 = UIColor(named: "gradientActionStop1", in: Bundle.module, compatibleWith: nil)!
+    public let gradientActionStop2 = UIColor(named: "gradientActionStop2", in: Bundle.module, compatibleWith: nil)!
+    public let gradientActionStop3 = UIColor(named: "gradientActionStop3", in: Bundle.module, compatibleWith: nil)!
+    public let gradientActionStop4 = UIColor(named: "gradientActionStop4", in: Bundle.module, compatibleWith: nil)!
     public let gradientInfoStop1 = CompoundCoreUIColorTokens.alphaBlue500
     public let gradientInfoStop2 = CompoundCoreUIColorTokens.alphaBlue400
     public let gradientInfoStop3 = CompoundCoreUIColorTokens.alphaBlue300

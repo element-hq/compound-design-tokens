@@ -28,9 +28,8 @@
 <%= options.accessControl %> <%= options.objectType %> <%= options.className %> {
     <%= allTokens.map(function(prop) {
       let formatted = formatProperty(prop);
-      if (options.referenceClass) {
-        let components = formatted.split(' = ');
-        formatted = `${components[0]} = ${options.referenceClass}.${components[1]}`;
+      if (options.postProcessSemanticColorToken) {
+        formatted = options.postProcessSemanticColorToken(prop, formatted, options.import.includes("SwiftUI"));
       }
       return `${options.accessControl} let ${formatted}`;
     }).join('\n    ') %>
