@@ -21,6 +21,7 @@ public class CompoundColorTokens {
     public let bgBadgeDefault = CompoundCoreColorTokens.alphaGray300
     public let bgBadgeInfo = CompoundCoreColorTokens.alphaBlue300
     public let bgCanvasDefault = CompoundCoreColorTokens.themeBg
+    public let bgCanvasDefaultLevel1 = Color("bgCanvasDefaultLevel1", bundle: Bundle.module)
     public let bgCanvasDisabled = CompoundCoreColorTokens.gray200
     public let bgCriticalHovered = CompoundCoreColorTokens.red1000
     public let bgCriticalPrimary = CompoundCoreColorTokens.red900
@@ -35,6 +36,7 @@ public class CompoundColorTokens {
     public let bgInfoSubtle = CompoundCoreColorTokens.blue200
     public let bgSubtlePrimary = CompoundCoreColorTokens.gray400
     public let bgSubtleSecondary = CompoundCoreColorTokens.gray300
+    public let bgSubtleSecondaryLevel0 = Color("bgSubtleSecondaryLevel0", bundle: Bundle.module)
     public let bgSuccessSubtle = CompoundCoreColorTokens.green200
     public let borderAccentSubtle = CompoundCoreColorTokens.green700
     public let borderCriticalHovered = CompoundCoreColorTokens.red1000
@@ -47,6 +49,10 @@ public class CompoundColorTokens {
     public let borderInteractivePrimary = CompoundCoreColorTokens.gray800
     public let borderInteractiveSecondary = CompoundCoreColorTokens.gray600
     public let borderSuccessSubtle = CompoundCoreColorTokens.green500
+    public let gradientActionStop1 = Color("gradientActionStop1", bundle: Bundle.module)
+    public let gradientActionStop2 = Color("gradientActionStop2", bundle: Bundle.module)
+    public let gradientActionStop3 = Color("gradientActionStop3", bundle: Bundle.module)
+    public let gradientActionStop4 = Color("gradientActionStop4", bundle: Bundle.module)
     public let gradientInfoStop1 = CompoundCoreColorTokens.alphaBlue500
     public let gradientInfoStop2 = CompoundCoreColorTokens.alphaBlue400
     public let gradientInfoStop3 = CompoundCoreColorTokens.alphaBlue300

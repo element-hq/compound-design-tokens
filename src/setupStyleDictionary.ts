@@ -30,8 +30,10 @@ import pxToSp from "./transforms/kotlin/pxToSp";
 import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import typography from "./transforms/kotlin/typography";
 import pxToRem from "./transforms/pxToRem";
-import coreColorSet from "./transforms/swift/coreColorSet";
-import coreUIColorSet from "./transforms/swift/coreUIColorSet";
+import {
+  coreColorAsset,
+  coreUIColorAsset,
+} from "./transforms/swift/colorAsset";
 import literalFont from "./transforms/swift/literalFont.js";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import svgToImageView from "./transforms/swift/svgToImageView";
@@ -44,8 +46,8 @@ async function setupDictionary(sb: StyleDictionary) {
   sb.registerTransform(literalFont);
   sb.registerTransform(pxToCGFloat);
   sb.registerTransform(toFontWeight);
-  sb.registerTransform(coreColorSet);
-  sb.registerTransform(coreUIColorSet);
+  sb.registerTransform(coreColorAsset);
+  sb.registerTransform(coreUIColorAsset);
   sb.registerTransform(tokenTICamel);
   sb.registerTransform(svgToImageView);
 

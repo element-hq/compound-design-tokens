@@ -8,9 +8,10 @@ Please see LICENSE files in the repository root for full details.
 
 import fs from "fs-extra";
 import type { Action, TransformedToken } from "style-dictionary/types";
-import { usesReferences } from "style-dictionary/utils";
+import { getReferences, usesReferences } from "style-dictionary/utils";
 import type { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
+import { isCssGradient } from "../../filters/isCssGradient";
 
 /**
  * Filter the core color
@@ -36,15 +37,13 @@ export default {
     }
 
     /**
-     * We're only interested in creating colorset for the core tokens. All the
-     * other tokens will be defined on a more semantic layer and will reference
-     * the values from the colorset
+     * We're only interested in creating colorsets for the core colors (which includes
+     * the asymmetric semantic tokens). All the symmetric semantic tokens will reference
+     * the values from the generated colorsets
      */
     const coreColorTokens = dictionary.allTokens.filter(
       (token: TransformedToken) => {
-        return (
-          isCoreColor.filter(token) && !usesReferences(token.original.value)
-        );
+        return isCoreColor.filter(token) && !isCssGradient.filter(token);
       },
     );
 
@@ -53,6 +52,14 @@ export default {
       fs.ensureDirSync(colorsetPath);
 
       const colorset = getOrCreateColorset(`${colorsetPath}/Contents.json`);
+
+      /**
+       * We need to resolve the references for asymmetric tokens otherwise there isn't
+       * an RGB color value in the attributes that we can use to populate the JSON.
+       */
+      const resolvedToken = usesReferences(coreColor.original.value)
+        ? getReferences(coreColor.original.value, dictionary.tokens)[0]
+        : coreColor;
 
       const color: {
         idiom: string;
@@ -64,7 +71,7 @@ export default {
         color: {
           "color-space": "srgb",
           components: getSRGBComponent(
-            coreColor.attributes!.rgb as {
+            resolvedToken.attributes!.rgb as {
               a: number;
               r: number;
               g: number;
