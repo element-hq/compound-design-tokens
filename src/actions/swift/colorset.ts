@@ -55,7 +55,7 @@ export default {
 
       /**
        * We need to resolve the references for asymmetric tokens otherwise there isn't
-       * and RGB color value to .
+       * an RGB color value in the attributes that we can use to populate the JSON.
        */
       const resolvedToken = usesReferences(coreColor.original.value)
         ? getReferences(coreColor.original.value, dictionary.tokens)[0]
