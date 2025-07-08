@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import fs from "fs-extra";
 import type { Action, TransformedToken } from "style-dictionary/types";
-import { usesReferences, getReferences } from "style-dictionary/utils";
+import { getReferences, usesReferences } from "style-dictionary/utils";
 import type { Theme } from "../../@types";
 import { isCoreColor } from "../../filters/isCoreColor";
 import { isCssGradient } from "../../filters/isCssGradient";
@@ -43,9 +43,7 @@ export default {
      */
     const coreColorTokens = dictionary.allTokens.filter(
       (token: TransformedToken) => {
-        return (
-          isCoreColor.filter(token) && !isCssGradient.filter(token)
-        );
+        return isCoreColor.filter(token) && !isCssGradient.filter(token);
       },
     );
 

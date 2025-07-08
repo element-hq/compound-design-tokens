@@ -30,7 +30,10 @@ import pxToSp from "./transforms/kotlin/pxToSp";
 import svgToDrawable from "./transforms/kotlin/svgToDrawable";
 import typography from "./transforms/kotlin/typography";
 import pxToRem from "./transforms/pxToRem";
-import { coreColorAsset, coreUIColorAsset } from "./transforms/swift/colorAsset";
+import {
+  coreColorAsset,
+  coreUIColorAsset,
+} from "./transforms/swift/colorAsset";
 import literalFont from "./transforms/swift/literalFont.js";
 import pxToCGFloat from "./transforms/swift/pxToCGFloat";
 import svgToImageView from "./transforms/swift/svgToImageView";

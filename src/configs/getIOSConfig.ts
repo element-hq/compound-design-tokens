@@ -17,8 +17,11 @@ import iosExclude from "../filters/ios/exclude";
 import { isCoreColor } from "../filters/isCoreColor";
 import isCoreToken from "../filters/isCoreToken";
 import { isCssGradient } from "../filters/isCssGradient";
+import {
+  colorAssetInit,
+  uiColorAssetInit,
+} from "../transforms/swift/colorAsset";
 import createTemplate from "../utils/createTemplate";
-import { colorAssetInit, uiColorAssetInit } from "../transforms/swift/colorAsset";
 
 const coreColorClass = "CompoundCoreColorTokens";
 const coreUIColorClass = "CompoundCoreUIColorTokens";
@@ -34,17 +37,21 @@ function swiftClassMembers(args: FormatFnArguments) {
  * Post-processes semantic colors so that asymmetric colors are loaded from the
  * asset catalog and symmetric colors reference the core color class.
  */
-function postProcessSemanticColorToken(token: TransformedToken, formatted: string, isSwiftUIColor: boolean): string {
-  const components = formatted.split(' = ');
+function postProcessSemanticColorToken(
+  token: TransformedToken,
+  formatted: string,
+  isSwiftUIColor: boolean,
+): string {
+  const components = formatted.split(" = ");
 
   // If a semantic token is a core color that means it is an asymmetric color and has a colorset.
   if (isCoreColor.filter(token)) {
-    const init = isSwiftUIColor ? colorAssetInit : uiColorAssetInit
+    const init = isSwiftUIColor ? colorAssetInit : uiColorAssetInit;
     return `${components[0]} = ${init(components[0])}`;
   }
 
   // Otherwise, it is a symmetric color which references a token in the core color class.
-  const referenceClass = isSwiftUIColor ? coreColorClass : coreUIColorClass
+  const referenceClass = isSwiftUIColor ? coreColorClass : coreUIColorClass;
   return `${components[0]} = ${referenceClass}.${components[1]}`;
 }
 
