@@ -12,6 +12,23 @@
           "type": "color",
           "description": "Default global background for the user interface.\nElevation: Level 1."
         }
+      },
+      "badge": {
+        "accent": {
+          "value": "{color.alpha.green.400}",
+          "type": "color",
+          "description": "Badge accent background colour"
+        },
+        "info": {
+          "value": "{color.alpha.blue.400}",
+          "type": "color",
+          "description": "Badge info background colour"
+        },
+        "default": {
+          "value": "{color.alpha.gray.400}",
+          "type": "color",
+          "description": "Badge default background colour"
+        }
       }
     },
     "gradient": {

@@ -261,23 +261,6 @@
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Selected"
         }
-      },
-      "badge": {
-        "accent": {
-          "value": "{color.alpha.green.300}",
-          "type": "color",
-          "description": "Badge accent background colour"
-        },
-        "info": {
-          "value": "{color.alpha.blue.300}",
-          "type": "color",
-          "description": "Badge info background colour"
-        },
-        "default": {
-          "value": "{color.alpha.gray.300}",
-          "type": "color",
-          "description": "Badge default background colour"
-        }
       }
     },
     "border": {

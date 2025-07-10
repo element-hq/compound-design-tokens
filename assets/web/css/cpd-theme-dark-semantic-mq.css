@@ -1,6 +1,9 @@
 :root {
   --cpd-color-bg-canvas-default-level-1: var(--cpd-color-gray-300);
   --cpd-color-bg-subtle-secondary-level-0: var(--cpd-color-theme-bg);
+  --cpd-color-bg-badge-accent: var(--cpd-color-alpha-green-500);
+  --cpd-color-bg-badge-info: var(--cpd-color-alpha-blue-500);
+  --cpd-color-bg-badge-default: var(--cpd-color-alpha-gray-500);
   --cpd-color-gradient-action-stop1: var(--cpd-color-green-1100);
   --cpd-color-gradient-action-stop2: var(--cpd-color-green-900);
   --cpd-color-gradient-action-stop3: var(--cpd-color-green-700);
