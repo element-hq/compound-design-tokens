@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { jsx as _jsx } from "react/jsx-runtime";
-function WorkspaceIcon(props, ref) {
+function SpaceIcon(props, ref) {
   return /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
@@ -15,5 +15,5 @@ function WorkspaceIcon(props, ref) {
   });
 }
 ;
-WorkspaceIcon.displayName = "WorkspaceIcon";
-export default forwardRef(WorkspaceIcon);
+SpaceIcon.displayName = "SpaceIcon";
+export default forwardRef(SpaceIcon);

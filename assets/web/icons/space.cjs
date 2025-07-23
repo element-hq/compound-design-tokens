@@ -1,6 +1,6 @@
 var _reactJsxRuntime = require("react/jsx-runtime");
 var React = require("react");
-function WorkspaceIcon(props, ref) {
+function SpaceIcon(props, ref) {
   return /*#__PURE__*/_reactJsxRuntime.jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
@@ -15,5 +15,5 @@ function WorkspaceIcon(props, ref) {
   });
 }
 ;
-WorkspaceIcon.displayName = "WorkspaceIcon";
-module.exports = React.forwardRef(WorkspaceIcon);
+SpaceIcon.displayName = "SpaceIcon";
+module.exports = React.forwardRef(SpaceIcon);

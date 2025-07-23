@@ -788,12 +788,12 @@
       "value": "icons/dial-pad.svg",
       "type": "icon"
     },
-    "workspace": {
-      "value": "icons/workspace.svg",
+    "space": {
+      "value": "icons/space.svg",
       "type": "icon"
     },
-    "workspace-solid": {
-      "value": "icons/workspace-solid.svg",
+    "space-solid": {
+      "value": "icons/space-solid.svg",
       "type": "icon"
     },
     "guest": {

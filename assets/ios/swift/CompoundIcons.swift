@@ -165,6 +165,8 @@ public class CompoundIcons {
     public let shield = Image("shield", bundle: Bundle.module)
     public let sidebar = Image("sidebar", bundle: Bundle.module)
     public let signOut = Image("signOut", bundle: Bundle.module)
+    public let space = Image("space", bundle: Bundle.module)
+    public let spaceSolid = Image("spaceSolid", bundle: Bundle.module)
     public let spinner = Image("spinner", bundle: Bundle.module)
     public let spotlight = Image("spotlight", bundle: Bundle.module)
     public let spotlightView = Image("spotlightView", bundle: Bundle.module)
@@ -204,7 +206,5 @@ public class CompoundIcons {
     public let warning = Image("warning", bundle: Bundle.module)
     public let webBrowser = Image("webBrowser", bundle: Bundle.module)
     public let windows = Image("windows", bundle: Bundle.module)
-    public let workspace = Image("workspace", bundle: Bundle.module)
-    public let workspaceSolid = Image("workspaceSolid", bundle: Bundle.module)
     public init() { }
 }
