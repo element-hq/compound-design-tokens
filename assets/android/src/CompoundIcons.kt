@@ -502,6 +502,12 @@ object CompoundIcons {
     @Composable fun SignOut(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_sign_out)
     }
+    @Composable fun Space(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_space)
+    }
+    @Composable fun SpaceSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_space_solid)
+    }
     @Composable fun Spinner(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_spinner)
     }
@@ -618,12 +624,6 @@ object CompoundIcons {
     }
     @Composable fun Windows(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_windows)
-    }
-    @Composable fun Workspace(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_workspace)
-    }
-    @Composable fun WorkspaceSolid(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_workspace_solid)
     }
 
     val all @Composable get() = persistentListOf<ImageVector>(
@@ -786,6 +786,8 @@ object CompoundIcons {
         Shield(),
         Sidebar(),
         SignOut(),
+        Space(),
+        SpaceSolid(),
         Spinner(),
         Spotlight(),
         SpotlightView(),
@@ -825,8 +827,6 @@ object CompoundIcons {
         Warning(),
         WebBrowser(),
         Windows(),
-        Workspace(),
-        WorkspaceSolid(),
     )
 
     val allResIds get() = persistentListOf(
@@ -989,6 +989,8 @@ object CompoundIcons {
         R.drawable.ic_compound_shield,
         R.drawable.ic_compound_sidebar,
         R.drawable.ic_compound_sign_out,
+        R.drawable.ic_compound_space,
+        R.drawable.ic_compound_space_solid,
         R.drawable.ic_compound_spinner,
         R.drawable.ic_compound_spotlight,
         R.drawable.ic_compound_spotlight_view,
@@ -1028,7 +1030,5 @@ object CompoundIcons {
         R.drawable.ic_compound_warning,
         R.drawable.ic_compound_web_browser,
         R.drawable.ic_compound_windows,
-        R.drawable.ic_compound_workspace,
-        R.drawable.ic_compound_workspace_solid,
     )
 }

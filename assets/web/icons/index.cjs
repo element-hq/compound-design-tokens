@@ -158,6 +158,8 @@ module.exports = {
   ShieldIcon: require("./shield.cjs"),
   SidebarIcon: require("./sidebar.cjs"),
   SignOutIcon: require("./sign-out.cjs"),
+  SpaceSolidIcon: require("./space-solid.cjs"),
+  SpaceIcon: require("./space.cjs"),
   SpinnerIcon: require("./spinner.cjs"),
   SpotlightViewIcon: require("./spotlight-view.cjs"),
   SpotlightIcon: require("./spotlight.cjs"),
@@ -196,7 +198,5 @@ module.exports = {
   VolumeOnIcon: require("./volume-on.cjs"),
   WarningIcon: require("./warning.cjs"),
   WebBrowserIcon: require("./web-browser.cjs"),
-  WindowsIcon: require("./windows.cjs"),
-  WorkspaceSolidIcon: require("./workspace-solid.cjs"),
-  WorkspaceIcon: require("./workspace.cjs")
+  WindowsIcon: require("./windows.cjs")
 };
