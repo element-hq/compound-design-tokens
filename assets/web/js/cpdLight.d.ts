@@ -205,6 +205,8 @@ export const cpdIconAudio: string;
 export const cpdIconSpotlightView: string;
 export const cpdIconListView: string;
 export const cpdIconEarpiece: string;
+export const cpdIconFullScreen: string;
+export const cpdIconExitFullScreen: string;
 export const cpdIconKeyOffSolid: string;
 export const cpdIconCloudSolid: string;
 export const cpdIconKeyOff: string;
