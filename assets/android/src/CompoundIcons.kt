@@ -184,6 +184,9 @@ object CompoundIcons {
     @Composable fun ErrorSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_error_solid)
     }
+    @Composable fun ExitFullScreen(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_exit_full_screen)
+    }
     @Composable fun Expand(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_expand)
     }
@@ -216,6 +219,9 @@ object CompoundIcons {
     }
     @Composable fun Forward(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_forward)
+    }
+    @Composable fun FullScreen(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_full_screen)
     }
     @Composable fun Grid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_grid)
@@ -680,6 +686,7 @@ object CompoundIcons {
         EndCall(),
         Error(),
         ErrorSolid(),
+        ExitFullScreen(),
         Expand(),
         Explore(),
         ExportArchive(),
@@ -691,6 +698,7 @@ object CompoundIcons {
         Files(),
         Filter(),
         Forward(),
+        FullScreen(),
         Grid(),
         Group(),
         Guest(),
@@ -883,6 +891,7 @@ object CompoundIcons {
         R.drawable.ic_compound_end_call,
         R.drawable.ic_compound_error,
         R.drawable.ic_compound_error_solid,
+        R.drawable.ic_compound_exit_full_screen,
         R.drawable.ic_compound_expand,
         R.drawable.ic_compound_explore,
         R.drawable.ic_compound_export_archive,
@@ -894,6 +903,7 @@ object CompoundIcons {
         R.drawable.ic_compound_files,
         R.drawable.ic_compound_filter,
         R.drawable.ic_compound_forward,
+        R.drawable.ic_compound_full_screen,
         R.drawable.ic_compound_grid,
         R.drawable.ic_compound_group,
         R.drawable.ic_compound_guest,

@@ -512,6 +512,14 @@
       "value": "icons/earpiece.svg",
       "type": "icon"
     },
+    "full-screen": {
+      "value": "icons/full-screen.svg",
+      "type": "icon"
+    },
+    "exit-full-screen": {
+      "value": "icons/exit-full-screen.svg",
+      "type": "icon"
+    },
     "key-off-solid": {
       "value": "icons/key-off-solid.svg",
       "type": "icon"
