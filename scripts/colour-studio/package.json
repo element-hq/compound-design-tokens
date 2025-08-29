@@ -2,6 +2,7 @@
   "name": "color-system-generator",
   "version": "1.0.0",
   "description": "A playground for defining, fine-tuning, and testing color systems across multiple themes (light, dark, and high-contrast variants) and contexts. Based on Leonardo Color by Adobe.",
+  "type": "module",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -15,6 +16,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.49.0"
   }
 }

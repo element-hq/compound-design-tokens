@@ -1,5 +1,6 @@
 import { BackgroundColor, Color, Theme } from "@adobe/leonardo-contrast-colors";
 import chroma from "chroma-js";
+import {getAlphaColor, hslaToHex} from "./alphredo";
 
 // Color spaces for color interpolation
 // CAM02, CAM02p, LCH, LAB, HSL, HSLuv, HSV, RGB, OKLAB, OKLCH
@@ -209,4 +210,27 @@ export function generateThemesJson(leonardoConfig) {
         output[theme] = generateThemeJson(leonardoConfig, theme);
     }
     return output;
+}
+
+export function generateCustomColors(customColorHex) {
+    leonardoConfig.colors.custom = [customColorHex];
+    let themes = generateThemesJson(leonardoConfig);
+
+    return Object.fromEntries(
+        Object.entries(themes).map(([theme, contrastColors]) => {
+            const customColors = contrastColors.find(item => item && item.name === 'custom');
+
+            const baseMap = Object.fromEntries(
+                customColors.values.map(({ name, value }) => [name, value])
+            );
+
+            // include the alpha variants too
+            for (const [name, value] of Object.entries(baseMap)) {
+                let alphaColor = getAlphaColor(value, contrastColors[0].background);
+                baseMap[`alpha${name.charAt(0).toUpperCase() + name.slice(1)}`] = hslaToHex(alphaColor.h, alphaColor.s, alphaColor.l, alphaColor.a);
+            }
+
+            return [theme, baseMap];
+        })
+    );
 }
