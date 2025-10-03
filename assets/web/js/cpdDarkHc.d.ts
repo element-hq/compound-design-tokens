@@ -639,6 +639,8 @@ export const cpdColorBgSubtleSecondaryLevel0: string;
 export const cpdColorBgBadgeAccent: string;
 export const cpdColorBgBadgeInfo: string;
 export const cpdColorBgBadgeDefault: string;
+export const cpdColorBgSelection: string;
+export const cpdColorBgHover: string;
 export const cpdColorBorderDisabled: string;
 export const cpdColorBorderFocused: string;
 export const cpdColorBorderInteractivePrimary: string;
