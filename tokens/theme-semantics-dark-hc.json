@@ -29,6 +29,16 @@
           "type": "color",
           "description": "Badge default background colour"
         }
+      },
+      "selection": {
+        "value": "{color.gray.1400}",
+        "type": "color",
+        "description": "HC Selection background"
+      },
+      "hover": {
+        "value": "{color.gray.1200}",
+        "type": "color",
+        "description": "HC Hover background"
       }
     },
     "gradient": {
