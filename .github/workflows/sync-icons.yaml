@@ -6,7 +6,7 @@ on:
     # Run at least once per week
     - cron: '20 2 * * WED'
 env:
-  svg2xml_version: 1.0.1
+  svg2xml_version: 1.0.2
 jobs:
   types:
     name: Sync icons
