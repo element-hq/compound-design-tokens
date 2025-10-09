@@ -6,8 +6,8 @@
  * Please see LICENSE files in the repository root for full details.
  */
 
-import { mkdir, rm, writeFile } from "node:fs/promises";
 import { exec } from "node:child_process";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { cwd, env, exit } from "node:process";
 import { optimize } from "svgo";
