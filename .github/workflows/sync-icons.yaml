@@ -24,7 +24,7 @@ jobs:
       - name: Setup svg2xml
         run: |
           ./.github/workflows/scripts/svg2xml.sh ${{ env.svg2xml_version }}
-          echo "svg2xml-${{ env.svg2xml_version }}/bin" >> $GITHUB_PATH
+          echo "$PWD/svg2xml-${{ env.svg2xml_version }}/bin" >> $GITHUB_PATH
       - name: Sync icons
         run: yarn sync:icons
         env:
