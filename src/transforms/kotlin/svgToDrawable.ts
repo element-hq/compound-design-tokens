@@ -1,5 +1,5 @@
 /*
-Copyright 2024 New Vector Ltd.
+Copyright 2025 New Vector Ltd.
 Copyright 2023 The Matrix.org Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
@@ -11,7 +11,6 @@ import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
 import { snakeCase } from "lodash-es";
 import type { Transform } from "style-dictionary/types";
-import svg2vectordrawable from "svg2vectordrawable";
 
 /**
  * A transformer to change svg path to vector drawable path
@@ -35,13 +34,6 @@ export default {
     const options = {
       fillBlack: true, // Add black color to path element, defaults to false
     };
-
-    const svgContent = fs.readFileSync(iconPath, "utf8");
-    svg2vectordrawable(svgContent, options).then((xmlContent) => {
-      const outputFolder = path.join(platform?.buildPath!, resPath);
-      fs.ensureDirSync(outputFolder);
-      fs.writeFileSync(`${outputFolder}/${imageId}.xml`, xmlContent, "utf8");
-    });
 
     return `R.drawable.${imageId}`;
   },

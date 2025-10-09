@@ -73,7 +73,6 @@
     "lodash-es": "^4.17.21",
     "prettier": "^3.3.3",
     "style-dictionary": "^5.0.0",
-    "svg2vectordrawable": "^2.9.1",
     "svgo": "^4.0.0",
     "tsx": "^4.15.6",
     "typescript": "^5.4.5",
