@@ -21,14 +21,18 @@ jobs:
           cache: yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Setup svg2xml
+        run: |
+          ./.github/workflows/scripts/svg2xml.sh ${{ env.svg2xml_version }}
+          echo "svg2xml-${{ env.svg2xml_version }}/bin" >> $GITHUB_PATH
       - name: Sync icons
         run: yarn sync:icons
         env:
           FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
       - name: Generate files
         run: yarn build
-      - name: Generate Android icons using svg2xml
-        run: ./.github/workflows/scripts/svg2xml.sh ${{ env.svg2xml_version }}
+      - name: Clean up
+        run: rm -r svg2xml*
       - name: Create pull request
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:

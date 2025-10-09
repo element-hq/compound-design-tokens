@@ -7,10 +7,3 @@ set -e
 curl -L "https://github.com/element-hq/compound-svg2xml/releases/download/v$1/svg2xml-$1.zip" > svg2xml.zip
 unzip svg2xml.zip
 chmod +x svg2xml-$1/bin/svg2xml
-
-# Perform bathc conversion
-echo "Converting Android icons from SVG to XML..."
-svg2xml-$1/bin/svg2xml icons assets/android/res/drawable/ ic_compound
-
-# Do some cleanup
-rm -r svg2xml*
