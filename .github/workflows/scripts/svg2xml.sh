@@ -25,3 +25,6 @@ for icon in $(ls icons/*.svg); do
 	dest=$(snake_case $dest)
 	svg2xml-$1/bin/svg2xml $icon assets/android/res/drawable/ic_compound_$dest.xml
 done
+
+# Do some cleanup
+rm -r svg2xml*
