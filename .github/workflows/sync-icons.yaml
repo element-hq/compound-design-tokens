@@ -29,15 +29,15 @@ jobs:
         run: yarn build
       - name: Generate Android icons using svg2xml
         run: |
-          curl -L "https://github.com/element-hq/compound-svg2xml/releases/download/v{{ env.svg2xml_version }}/svg2xml-{{ env.svg2xml_version }}.zip" > svg2xml.zip && \
+          curl -L "https://github.com/element-hq/compound-svg2xml/releases/download/v${{ env.svg2xml_version }}/svg2xml-${{ env.svg2xml_version }}.zip" > svg2xml.zip && \
           unzip svg2xml.zip && \
-          chmod +x svg2xml-{{ env.svg2xml_version }}/bin/svg2xml && \
+          chmod +x svg2xml-${{ env.svg2xml_version }}/bin/svg2xml && \
           for icon in $(ls icons/*.svg); do
             echo "Transforming $icon to Android XML format"
             dest=${icon/icons\//}
             dest=${dest/\-/_}
             dest=${dest/.svg/.xml}
-            svg2xml-{{ env.svg2xml_version }}/bin/svg2xml $icon assets/android/res/drawable/ic_compound_$dest
+            svg2xml-${{ env.svg2xml_version }}/bin/svg2xml $icon assets/android/res/drawable/ic_compound_$dest
           done
       - name: Create pull request
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
