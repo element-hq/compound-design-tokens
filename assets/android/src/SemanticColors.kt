@@ -84,8 +84,12 @@ Elevation: Level 1. */
     val bgDecorative5: Color,
     /** Decorative background (6, Orange) for avatars and usernames. */
     val bgDecorative6: Color,
+    /** HC Hover background */
+    val bgHover: Color,
     /** Subtle background colour for informational elements. State: Rest. */
     val bgInfoSubtle: Color,
+    /** HC Selection background */
+    val bgSelection: Color,
     /** Medium contrast surfaces.
 Elevation: Default (Level 2). */
     val bgSubtlePrimary: Color,

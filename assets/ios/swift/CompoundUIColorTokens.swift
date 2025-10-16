@@ -33,7 +33,9 @@ public class CompoundUIColorTokens {
     public let bgDecorative4 = CompoundCoreUIColorTokens.purple300
     public let bgDecorative5 = CompoundCoreUIColorTokens.pink300
     public let bgDecorative6 = CompoundCoreUIColorTokens.orange300
+    public let bgHover = UIColor(named: "bgHover", in: Bundle.module, compatibleWith: nil)!
     public let bgInfoSubtle = CompoundCoreUIColorTokens.blue200
+    public let bgSelection = UIColor(named: "bgSelection", in: Bundle.module, compatibleWith: nil)!
     public let bgSubtlePrimary = CompoundCoreUIColorTokens.gray400
     public let bgSubtleSecondary = CompoundCoreUIColorTokens.gray300
     public let bgSubtleSecondaryLevel0 = UIColor(named: "bgSubtleSecondaryLevel0", in: Bundle.module, compatibleWith: nil)!
