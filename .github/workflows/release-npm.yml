@@ -12,6 +12,9 @@ on:
           - minor
           - major
 concurrency: release
+permissions:
+  id-token: write # Allow npm to authenticate as a trusted publisher
+  contents: write # Allow creating a release
 jobs:
   release:
     name: "Release & Publish"
@@ -39,12 +42,10 @@ jobs:
           git config --global user.email 'releases@riot.im'
           git commit -am "${{ github.event.inputs.version-bump }} version bump"
           git push
+
       - name: 🚀 Publish to npm
-        id: npm-publish
-        uses: JS-DevTools/npm-publish@7f8fe47b3bea1be0c3aec2b717c5ec1f3e03410b # v4
-        with:
-          token: ${{ secrets.ELEMENT_NPM_TOKEN }}
-          access: public
+        # We use npm since Yarn Classic doesn't support trusted publishing
+        run: npm publish --provenance --ignore-scripts
 
       - name: 🧬 Create release
         uses: actions/create-release@0cb9c9b65d5d1901c1f53e5e66eaf4afd303e70e # v1
