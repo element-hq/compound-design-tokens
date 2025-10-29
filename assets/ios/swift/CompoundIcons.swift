@@ -99,6 +99,7 @@ public class CompoundIcons {
     public let keyboard = Image("keyboard", bundle: Bundle.module)
     public let labs = Image("labs", bundle: Bundle.module)
     public let leave = Image("leave", bundle: Bundle.module)
+    public let leftPanelClose = Image("leftPanelClose", bundle: Bundle.module)
     public let link = Image("link", bundle: Bundle.module)
     public let linux = Image("linux", bundle: Bundle.module)
     public let listBulleted = Image("listBulleted", bundle: Bundle.module)

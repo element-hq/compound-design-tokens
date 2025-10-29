@@ -91,6 +91,7 @@ module.exports = {
   KeyboardIcon: require("./keyboard.cjs"),
   LabsIcon: require("./labs.cjs"),
   LeaveIcon: require("./leave.cjs"),
+  LeftPanelCloseIcon: require("./left-panel-close.cjs"),
   LinkIcon: require("./link.cjs"),
   LinuxIcon: require("./linux.cjs"),
   ListBulletedIcon: require("./list-bulleted.cjs"),
