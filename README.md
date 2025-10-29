@@ -24,6 +24,7 @@ Tokens are exported to three platforms
 
 - [Development](./docs/development.md)
 - [Icons](./docs/icons.md)
+- [Colors](./docs/colors.md)
 - [Release](./docs/release.md)
 - [Synchronise with Figma](https://compound.element.io/?path=/docs/design-get-started--docs)
 
