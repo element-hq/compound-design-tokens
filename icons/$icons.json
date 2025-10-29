@@ -807,6 +807,10 @@
     "guest": {
       "value": "icons/guest.svg",
       "type": "icon"
+    },
+    "left-panel-close": {
+      "value": "icons/left-panel-close.svg",
+      "type": "icon"
     }
   }
 }

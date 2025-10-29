@@ -279,6 +279,7 @@ export const cpdIconDialPad: string;
 export const cpdIconSpace: string;
 export const cpdIconSpaceSolid: string;
 export const cpdIconGuest: string;
+export const cpdIconLeftPanelClose: string;
 export const cpdColorThemeBg: string;
 export const cpdColorGray100: string;
 export const cpdColorGray200: string;

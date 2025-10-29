@@ -90,6 +90,7 @@ export { default as KeyIcon } from "./key.js";
 export { default as KeyboardIcon } from "./keyboard.js";
 export { default as LabsIcon } from "./labs.js";
 export { default as LeaveIcon } from "./leave.js";
+export { default as LeftPanelCloseIcon } from "./left-panel-close.js";
 export { default as LinkIcon } from "./link.js";
 export { default as LinuxIcon } from "./linux.js";
 export { default as ListBulletedIcon } from "./list-bulleted.js";

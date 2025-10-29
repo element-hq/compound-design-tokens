@@ -304,6 +304,7 @@ export const cpdIconDialPad = "icons/dial-pad.svg";
 export const cpdIconSpace = "icons/space.svg";
 export const cpdIconSpaceSolid = "icons/space-solid.svg";
 export const cpdIconGuest = "icons/guest.svg";
+export const cpdIconLeftPanelClose = "icons/left-panel-close.svg";
 export const cpdColorThemeBg = "#101317";
 export const cpdColorGray100 = "#181a1f";
 export const cpdColorGray200 = "#1d1f24";

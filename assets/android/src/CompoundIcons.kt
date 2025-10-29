@@ -301,6 +301,9 @@ object CompoundIcons {
     @Composable fun Leave(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_leave)
     }
+    @Composable fun LeftPanelClose(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_left_panel_close)
+    }
     @Composable fun Link(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_link)
     }
@@ -725,6 +728,7 @@ object CompoundIcons {
         Keyboard(),
         Labs(),
         Leave(),
+        LeftPanelClose(),
         Link(),
         Linux(),
         ListBulleted(),
@@ -930,6 +934,7 @@ object CompoundIcons {
         R.drawable.ic_compound_keyboard,
         R.drawable.ic_compound_labs,
         R.drawable.ic_compound_leave,
+        R.drawable.ic_compound_left_panel_close,
         R.drawable.ic_compound_link,
         R.drawable.ic_compound_linux,
         R.drawable.ic_compound_list_bulleted,
