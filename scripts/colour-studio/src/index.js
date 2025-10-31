@@ -682,7 +682,8 @@ addTestHtml(templateHtmlText, themesJson);
 addTestCss(templateCssText, themesJson, ["gray"]);
 
 addTestHtml(templateHtmlButtons, themesJson);
-addTestCss(templateCssButtons, themesJson, ["gray", "red", "blue"]);
+// Gray is set manually in styles.css to use 1400 colors
+addTestCss(templateCssButtons, themesJson, ["red", "blue"]);
 
 addTestHtml(templateHtmlLabels, themesJson);
 addTestCss(templateCssLabels, themesJson, getHues(leonardoConfig));

@@ -111,10 +111,12 @@
 
         document
           .querySelectorAll("link")
-          .forEach((link) => document.body.removeChild(link));
+          .forEach((link) => {
+            document.body.removeChild(link);
+          });
 
         const ln = document.createElement("link");
-        ln.href = "../assets/web/css/" + theme;
+        ln.href = `../assets/web/css/${theme}`;
         ln.rel = "stylesheet";
         document.body.append(ln);
       }
