@@ -29,6 +29,16 @@
           "type": "color",
           "description": "Badge default background colour"
         }
+      },
+      "selection": {
+        "value": "{color.gray.500}",
+        "type": "color",
+        "description": "Selection background"
+      },
+      "hover": {
+        "value": "{color.gray.400}",
+        "type": "color",
+        "description": "Hover background"
       }
     },
     "gradient": {
