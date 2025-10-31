@@ -188,19 +188,23 @@ pre {
 */
 
 .button--gray-light {
-  background-color: var(--color-gray-1400-light) !important;
+  background-color: var(--color-gray-1400-light);
+  color: var(--color-bg-light);
 }
 
 .button--gray-lightHc {
-  background-color: var(--color-gray-1400-lightHc) !important;
+  background-color: var(--color-gray-1400-lightHc);
+  color: var(--color-bg-lightHc);
 }
 
 .button--gray-dark {
-  background-color: var(--color-gray-1400-dark) !important;
+  background-color: var(--color-gray-1400-dark);
+  color: var(--color-bg-dark);
 }
 
 .button--gray-darkHc {
-  background-color: var(--color-gray-1400-darkHc) !important;
+  background-color: var(--color-gray-1400-darkHc);
+  color: var(--color-bg-darkHc);
 }
 
 .label {
