@@ -2,7 +2,7 @@
 
 # Compound design tokens
 
-[![](https://img.shields.io/github/license/vector-im/compound)](https://github.com/vector-im/compound/blob/main/LICENSE)
+[![](https://img.shields.io/github/license/element-hq/compound)](https://github.com/element-hq/compound/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/@vector-im/compound-design-tokens)](https://www.npmjs.com/package/@vector-im/compound-design-tokens)
 
 Home to the design tokens.
