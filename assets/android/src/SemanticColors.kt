@@ -50,6 +50,9 @@ data class SemanticColors(
     val bgActionSecondaryPressed: Color,
     /** Background colour for secondary actions. State: Rest. */
     val bgActionSecondaryRest: Color,
+    val bgActionTertiaryHovered: Color,
+    val bgActionTertiaryRest: Color,
+    val bgActionTertiarySelected: Color,
     /** Badge accent background colour */
     val bgBadgeAccent: Color,
     /** Badge default background colour */
