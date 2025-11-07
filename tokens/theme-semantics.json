@@ -170,6 +170,23 @@
             "type": "color",
             "description": "Background colour for secondary actions. State: Pressed."
           }
+        },
+        "tertiary": {
+          "rest": {
+            "value": "{color.theme.bg}",
+            "type": "color",
+            "description": "Background colour for tertiary actions. State: Rest"
+          },
+          "hovered": {
+            "value": "{color.gray.300}",
+            "type": "color",
+            "description": "Background colour for tertiary actions. State: Hover"
+          },
+          "selected": {
+            "value": "{color.gray.400}",
+            "type": "color",
+            "description": "Background colour for tertiary actions. State: Selected"
+          }
         }
       },
       "critical": {
