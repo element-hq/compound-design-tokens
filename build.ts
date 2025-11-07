@@ -12,12 +12,14 @@ import * as setupStyleDictionary from "./src/setupStyleDictionary";
 import { generateCssIndex } from "./src/utils/generateCssIndex";
 import generateIconComponents from "./src/utils/generateIconComponents";
 import { normalizeTokens } from "./src/utils/normalizeTokens";
+import { copyThemeDist } from "./src/copyThemeDist";
 
 const themes: Theme[] = ["light", "light-hc", "dark", "dark-hc"];
 const platforms: Platform[] = ["web", "android", "ios"];
 
 await normalizeTokens();
 await generateIconComponents();
+await copyThemeDist();
 generateCssIndex();
 
 for (const platform of platforms) {
