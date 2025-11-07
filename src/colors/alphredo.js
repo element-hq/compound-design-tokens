@@ -79,9 +79,9 @@ export const hslaToHex = (h, s, l100, alpha) => {
   const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
   const alphaClamped = clamp(alpha, 0, 1);
   const aHex = Math.round(alphaClamped * 255)
-      .toString(16)
-      .padStart(2, "0")
-      .toUpperCase();
+    .toString(16)
+    .padStart(2, "0")
+    .toUpperCase();
 
   return `#${r}${g}${b}${aHex}`;
 };

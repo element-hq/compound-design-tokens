@@ -13,15 +13,16 @@ export async function copyThemeDist() {
   const filename = "theme.iife.js";
   const dist = fileURLToPath(new URL("../dist", import.meta.url));
 
-  const androidResources = fileURLToPath(new URL("../assets/android/res", import.meta.url));
-  const iosResources = fileURLToPath(new URL("../assets/ios/swift/Resources", import.meta.url));
+  const androidResources = fileURLToPath(
+    new URL("../assets/android/res", import.meta.url),
+  );
+  const iosResources = fileURLToPath(
+    new URL("../assets/ios/swift/Resources", import.meta.url),
+  );
 
   const destinations = [androidResources, iosResources];
 
   for (const destination of destinations) {
-    await copyFile(
-        path.join(dist, filename),
-        path.join(destination, filename),
-    );
+    await copyFile(path.join(dist, filename), path.join(destination, filename));
   }
 }
