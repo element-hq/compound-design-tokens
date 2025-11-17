@@ -62,21 +62,3 @@ jobs:
             echo "$(git status)"
             exit 1
           fi
-
-  build-colour-studio:
-    name: Build color system generator
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
-      - name: Set up cache
-        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
-        with:
-          node-version: "lts/*"
-          cache: yarn
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-        working-directory: scripts/colour-studio
-      - name: Build generated files
-        run: yarn build
-        working-directory: scripts/colour-studio

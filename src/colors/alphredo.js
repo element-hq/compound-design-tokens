@@ -70,7 +70,20 @@ export const hslaToHex = (h, s, l100, alpha) => {
       .padStart(2, "0")
       .toUpperCase(); // convert to Hex and prefix "0" if needed
   };
-  return `#${f(0)}${f(8)}${f(4)}, ${alpha}`;
+
+  const r = f(0);
+  const g = f(8);
+  const b = f(4);
+
+  // Clamp alpha to [0,1], convert to 0-255 then to two-digit hex
+  const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+  const alphaClamped = clamp(alpha, 0, 1);
+  const aHex = Math.round(alphaClamped * 255)
+    .toString(16)
+    .padStart(2, "0")
+    .toUpperCase();
+
+  return `#${r}${g}${b}${aHex}`;
 };
 
 export const getAlphaColor = (colorHex, backgroundHex, strength = 1) => {
