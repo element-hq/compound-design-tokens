@@ -5,14 +5,6 @@
  * Please see LICENSE files in the repository root for full details.
  */
 
-
-@file:Suppress("all")
-package io.element.android.compound.tokens.generated
-
-import androidx.compose.runtime.Immutable
-import androidx.compose.ui.graphics.Color
-
-
 /**
  * !!! WARNING !!!
  * 
@@ -20,13 +12,14 @@ import androidx.compose.ui.graphics.Color
  * DO NOT EDIT MANUALLY.
  */
 
+@file:Suppress("all")
+package io.element.android.compound.tokens.generated
 
-
+import androidx.compose.ui.graphics.Color
 
 /**
-  * This class holds all the semantic tokens of the Compound theme.
-  */
-@Immutable
+ * This class holds all the semantic tokens of the Compound theme.
+ */
 data class SemanticColors(
     /** Background colour for accent or brand actions. State: Hover */
     val bgAccentHovered: Color,
@@ -62,11 +55,9 @@ data class SemanticColors(
     val bgBadgeDefault: Color,
     /** Badge info background colour */
     val bgBadgeInfo: Color,
-    /** Default global background for the user interface.
-Elevation: Default (Level 0) */
+    /** Default global background for the user interface. Elevation: Default (Level 0) */
     val bgCanvasDefault: Color,
-    /** Default global background for the user interface.
-Elevation: Level 1. */
+    /** Default global background for the user interface. Elevation: Level 1. */
     val bgCanvasDefaultLevel1: Color,
     /** Default background for disabled elements. There's no minimum contrast requirement. */
     val bgCanvasDisabled: Color,
@@ -92,14 +83,11 @@ Elevation: Level 1. */
     val bgDecorative6: Color,
     /** Subtle background colour for informational elements. State: Rest. */
     val bgInfoSubtle: Color,
-    /** Medium contrast surfaces.
-Elevation: Default (Level 2). */
+    /** Medium contrast surfaces. Elevation: Default (Level 2). */
     val bgSubtlePrimary: Color,
-    /** Low contrast surfaces.
-Elevation: Default (Level 1). */
+    /** Low contrast surfaces. Elevation: Default (Level 1). */
     val bgSubtleSecondary: Color,
-    /** Lower contrast surfaces.
-Elevation: Level 0. */
+    /** Lower contrast surfaces. Elevation: Level 0. */
     val bgSubtleSecondaryLevel0: Color,
     /** Subtle background colour for success state elements. State: Rest. */
     val bgSuccessSubtle: Color,
