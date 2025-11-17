@@ -1,7 +1,5 @@
 <%= options.license ?? '' %>
-<%= fileHeader %>
-
-@file:Suppress("all")
+<%= fileHeader %>@file:Suppress("all")
 package <%= options.packageName %>
 
 <%= options.import.map(function(item) {

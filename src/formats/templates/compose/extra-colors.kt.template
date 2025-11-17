@@ -1,32 +1,25 @@
 <%= options.license ?? '' %>
-
-@file:Suppress("all")
+<%= fileHeader %>@file:Suppress("all")
 package <%= options.packageName %>
 
-import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
 <%= options.import.map(function(item) {
     return 'import ' + item
-  }).join('\n') %>
-
-<%= fileHeader %>
-<%
+  }).join('\n') %><%
   let colors = allTokens.map(function(prop) {
     return { name: options.fixColorName(prop.name), description: prop.description };
   });
   let INDENT_LEVEL = options.indentLevel;
   let INDENT_2_LEVELS = INDENT_LEVEL + INDENT_LEVEL;
 %>
-
 /**
-  * This class holds all the semantic tokens of the Compound theme.
-  */
-@Immutable
+ * This class holds all the semantic tokens of the Compound theme.
+ */
 data class <%= options.className %>(
 <%= colors.map(function(color) {
     let comment = "";
     if (color.description) {
-      comment = INDENT_LEVEL + `/** ${color.description} */\n`
+      comment = INDENT_LEVEL + `/** ${color.description.replace("\n", " ")} */\n`
     }
     return comment + INDENT_LEVEL + 'val ' + color.name + ': Color,'
   }).join('\n')

@@ -12,8 +12,6 @@
  * DO NOT EDIT MANUALLY.
  */
 
-
-
 @file:Suppress("all")
 package io.element.android.compound.tokens.generated
 
