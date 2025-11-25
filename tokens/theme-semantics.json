@@ -30,7 +30,7 @@
       },
       "link": {
         "external": {
-          "value": "{color.blue.900}",
+          "value": "{color.blue.1100}",
           "type": "color",
           "description": "Text colour for external links."
         }
