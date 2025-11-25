@@ -96,7 +96,7 @@ public class CompoundUIColorTokens {
     public let textDecorative6 = CompoundCoreUIColorTokens.orange1100
     public let textDisabled = CompoundCoreUIColorTokens.gray800
     public let textInfoPrimary = CompoundCoreUIColorTokens.blue900
-    public let textLinkExternal = CompoundCoreUIColorTokens.blue900
+    public let textLinkExternal = CompoundCoreUIColorTokens.blue1100
     public let textOnSolidPrimary = CompoundCoreUIColorTokens.themeBg
     public let textPrimary = CompoundCoreUIColorTokens.gray1400
     public let textSecondary = CompoundCoreUIColorTokens.gray900
