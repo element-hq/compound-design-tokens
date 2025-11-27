@@ -421,7 +421,7 @@
       },
       "info": {
         "primary": {
-          "value": "{color.blue.900}",
+          "value": "{color.blue.1100}",
           "type": "color",
           "description": "High-contrast icon for informational elements."
         }
