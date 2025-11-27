@@ -51,7 +51,7 @@
       },
       "info": {
         "primary": {
-          "value": "{color.blue.900}",
+          "value": "{color.blue.1100}",
           "type": "color",
           "description": "Accent text colour for informational elements."
         }
