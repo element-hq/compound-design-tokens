@@ -72,7 +72,7 @@ public class CompoundUIColorTokens {
     public let iconAccentTertiary = CompoundCoreUIColorTokens.green800
     public let iconCriticalPrimary = CompoundCoreUIColorTokens.red900
     public let iconDisabled = CompoundCoreUIColorTokens.gray700
-    public let iconInfoPrimary = CompoundCoreUIColorTokens.blue900
+    public let iconInfoPrimary = CompoundCoreUIColorTokens.blue1100
     public let iconOnSolidPrimary = CompoundCoreUIColorTokens.themeBg
     public let iconPrimary = CompoundCoreUIColorTokens.gray1400
     public let iconPrimaryAlpha = CompoundCoreUIColorTokens.alphaGray1400
@@ -95,7 +95,7 @@ public class CompoundUIColorTokens {
     public let textDecorative5 = CompoundCoreUIColorTokens.pink1100
     public let textDecorative6 = CompoundCoreUIColorTokens.orange1100
     public let textDisabled = CompoundCoreUIColorTokens.gray800
-    public let textInfoPrimary = CompoundCoreUIColorTokens.blue900
+    public let textInfoPrimary = CompoundCoreUIColorTokens.blue1100
     public let textLinkExternal = CompoundCoreUIColorTokens.blue1100
     public let textOnSolidPrimary = CompoundCoreUIColorTokens.themeBg
     public let textPrimary = CompoundCoreUIColorTokens.gray1400
