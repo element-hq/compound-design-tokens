@@ -7,7 +7,7 @@
  * Please see LICENSE files in the repository root for full details.
  */
 
-import { exec } from "node:child_process";
+import { execSync } from "node:child_process";
 import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { cwd, env, exit } from "node:process";
@@ -248,4 +248,4 @@ console.log("All icons saved");
 
 console.log("Converting SVG files to Android XML vector drawables...");
 
-exec("svg2xml icons assets/android/res/drawable ic_compound");
+execSync("svg2xml icons assets/android/res/drawable ic_compound");
