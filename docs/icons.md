@@ -1,5 +1,7 @@
 # Icons
 
+The existing icons can be seen at https://compound.element.io/?path=/docs/tokens-icons--docs.
+
 ## Consuming icons
 
 All icons are prepared for platform specific needs
