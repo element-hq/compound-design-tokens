@@ -811,6 +811,22 @@
     "left-panel-close": {
       "value": "icons/left-panel-close.svg",
       "type": "icon"
+    },
+    "left-panel-open": {
+      "value": "icons/left-panel-open.svg",
+      "type": "icon"
+    },
+    "backspace-solid": {
+      "value": "icons/backspace-solid.svg",
+      "type": "icon"
+    },
+    "backspace": {
+      "value": "icons/backspace.svg",
+      "type": "icon"
+    },
+    "sticker": {
+      "value": "icons/sticker.svg",
+      "type": "icon"
     }
   }
 }
