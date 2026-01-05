@@ -1,0 +1,19 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+var React = require("react");
+function BackspaceSolidIcon(props, ref) {
+  return /*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    viewBox: "0 0 24 24",
+    ref: ref,
+    ...props,
+    children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M21.15 4H7.283c-.638 0-1.137.311-1.47.782l-4.66 6.73a.87.87 0 0 0 0 .986l4.66 6.72c.333.462.832.782 1.47.782h13.869C22.168 20 23 19.2 23 18.222V5.778C23 4.8 22.168 4 21.15 4m-3.42 11.822a.947.947 0 0 1-1.304 0l-2.672-2.569-2.672 2.57a.947.947 0 0 1-1.303 0 .86.86 0 0 1 0-1.254L12.45 12 9.779 9.431a.86.86 0 0 1 0-1.253.947.947 0 0 1 1.303 0l2.672 2.569 2.672-2.57a.947.947 0 0 1 1.304 0c.36.347.36.907 0 1.254L15.058 12l2.672 2.569a.877.877 0 0 1 0 1.253"
+    })
+  });
+}
+;
+BackspaceSolidIcon.displayName = "BackspaceSolidIcon";
+module.exports = React.forwardRef(BackspaceSolidIcon);

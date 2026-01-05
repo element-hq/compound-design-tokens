@@ -1,0 +1,29 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+var React = require("react");
+function BackspaceIcon(props, ref) {
+  return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    viewBox: "0 0 24 24",
+    ref: ref,
+    ...props,
+    children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
+      clipPath: "url(#a)",
+      children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+        d: "M21.167 3.75H7.417c-.633 0-1.128.32-1.458.807L1 12l4.96 7.434c.33.486.824.816 1.457.816h13.75A1.84 1.84 0 0 0 23 18.417V5.583a1.84 1.84 0 0 0-1.833-1.833m0 14.667H7.48L3.2 12l4.272-6.417h13.695zm-10.625-1.834 3.291-3.29 3.291 3.29 1.293-1.292L15.126 12l3.29-3.29-1.292-1.293-3.29 3.29-3.291-3.29L9.25 8.709 12.54 12l-3.29 3.29z"
+      })
+    }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {
+      children: /*#__PURE__*/_reactJsxRuntime.jsx("clipPath", {
+        id: "a",
+        children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+          d: "M0 0h24v24H0z"
+        })
+      })
+    })]
+  });
+}
+;
+BackspaceIcon.displayName = "BackspaceIcon";
+module.exports = React.forwardRef(BackspaceIcon);
