@@ -827,6 +827,38 @@
     "sticker": {
       "value": "icons/sticker.svg",
       "type": "icon"
+    },
+    "advanced-settings": {
+      "value": "icons/advanced-settings.svg",
+      "type": "icon"
+    },
+    "tree": {
+      "value": "icons/tree.svg",
+      "type": "icon"
+    },
+    "bug": {
+      "value": "icons/bug.svg",
+      "type": "icon"
+    },
+    "translate": {
+      "value": "icons/translate.svg",
+      "type": "icon"
+    },
+    "rotate-left": {
+      "value": "icons/rotate-left.svg",
+      "type": "icon"
+    },
+    "rotate-right": {
+      "value": "icons/rotate-right.svg",
+      "type": "icon"
+    },
+    "zoom-in": {
+      "value": "icons/zoom-in.svg",
+      "type": "icon"
+    },
+    "zoom-out": {
+      "value": "icons/zoom-out.svg",
+      "type": "icon"
     }
   }
 }

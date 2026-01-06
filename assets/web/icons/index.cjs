@@ -1,5 +1,6 @@
 module.exports = {
   AdminIcon: require("./admin.cjs"),
+  AdvancedSettingsIcon: require("./advanced-settings.cjs"),
   ArrowDownIcon: require("./arrow-down.cjs"),
   ArrowLeftIcon: require("./arrow-left.cjs"),
   ArrowRightIcon: require("./arrow-right.cjs"),
@@ -13,6 +14,7 @@ module.exports = {
   BackspaceIcon: require("./backspace.cjs"),
   BlockIcon: require("./block.cjs"),
   BoldIcon: require("./bold.cjs"),
+  BugIcon: require("./bug.cjs"),
   CalendarIcon: require("./calendar.cjs"),
   ChartIcon: require("./chart.cjs"),
   ChatNewIcon: require("./chat-new.cjs"),
@@ -151,6 +153,8 @@ module.exports = {
   ReplyIcon: require("./reply.cjs"),
   RestartIcon: require("./restart.cjs"),
   RoomIcon: require("./room.cjs"),
+  RotateLeftIcon: require("./rotate-left.cjs"),
+  RotateRightIcon: require("./rotate-right.cjs"),
   SearchIcon: require("./search.cjs"),
   SendSolidIcon: require("./send-solid.cjs"),
   SendIcon: require("./send.cjs"),
@@ -178,6 +182,8 @@ module.exports = {
   ThreadsSolidIcon: require("./threads-solid.cjs"),
   ThreadsIcon: require("./threads.cjs"),
   TimeIcon: require("./time.cjs"),
+  TranslateIcon: require("./translate.cjs"),
+  TreeIcon: require("./tree.cjs"),
   UnderlineIcon: require("./underline.cjs"),
   UnknownSolidIcon: require("./unknown-solid.cjs"),
   UnknownIcon: require("./unknown.cjs"),
@@ -205,5 +211,7 @@ module.exports = {
   VolumeOnIcon: require("./volume-on.cjs"),
   WarningIcon: require("./warning.cjs"),
   WebBrowserIcon: require("./web-browser.cjs"),
-  WindowsIcon: require("./windows.cjs")
+  WindowsIcon: require("./windows.cjs"),
+  ZoomInIcon: require("./zoom-in.cjs"),
+  ZoomOutIcon: require("./zoom-out.cjs")
 };

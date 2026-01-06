@@ -8,6 +8,7 @@ import SwiftUI
 public class CompoundIcons {
     public let `public` = Image("public", bundle: Bundle.module)
     public let admin = Image("admin", bundle: Bundle.module)
+    public let advancedSettings = Image("advancedSettings", bundle: Bundle.module)
     public let arrowDown = Image("arrowDown", bundle: Bundle.module)
     public let arrowLeft = Image("arrowLeft", bundle: Bundle.module)
     public let arrowRight = Image("arrowRight", bundle: Bundle.module)
@@ -21,6 +22,7 @@ public class CompoundIcons {
     public let backspaceSolid = Image("backspaceSolid", bundle: Bundle.module)
     public let block = Image("block", bundle: Bundle.module)
     public let bold = Image("bold", bundle: Bundle.module)
+    public let bug = Image("bug", bundle: Bundle.module)
     public let calendar = Image("calendar", bundle: Bundle.module)
     public let chart = Image("chart", bundle: Bundle.module)
     public let chat = Image("chat", bundle: Bundle.module)
@@ -158,6 +160,8 @@ public class CompoundIcons {
     public let reply = Image("reply", bundle: Bundle.module)
     public let restart = Image("restart", bundle: Bundle.module)
     public let room = Image("room", bundle: Bundle.module)
+    public let rotateLeft = Image("rotateLeft", bundle: Bundle.module)
+    public let rotateRight = Image("rotateRight", bundle: Bundle.module)
     public let search = Image("search", bundle: Bundle.module)
     public let send = Image("send", bundle: Bundle.module)
     public let sendSolid = Image("sendSolid", bundle: Bundle.module)
@@ -185,6 +189,8 @@ public class CompoundIcons {
     public let threads = Image("threads", bundle: Bundle.module)
     public let threadsSolid = Image("threadsSolid", bundle: Bundle.module)
     public let time = Image("time", bundle: Bundle.module)
+    public let translate = Image("translate", bundle: Bundle.module)
+    public let tree = Image("tree", bundle: Bundle.module)
     public let underline = Image("underline", bundle: Bundle.module)
     public let unknown = Image("unknown", bundle: Bundle.module)
     public let unknownSolid = Image("unknownSolid", bundle: Bundle.module)
@@ -213,5 +219,7 @@ public class CompoundIcons {
     public let warning = Image("warning", bundle: Bundle.module)
     public let webBrowser = Image("webBrowser", bundle: Bundle.module)
     public let windows = Image("windows", bundle: Bundle.module)
+    public let zoomIn = Image("zoomIn", bundle: Bundle.module)
+    public let zoomOut = Image("zoomOut", bundle: Bundle.module)
     public init() { }
 }
