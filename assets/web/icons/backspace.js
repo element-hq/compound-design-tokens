@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
-import { jsx as _jsx } from "react/jsx-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 function BackspaceIcon(props, ref) {
-  return /*#__PURE__*/_jsx("svg", {
+  return /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1em",
     height: "1em",
@@ -9,9 +9,13 @@ function BackspaceIcon(props, ref) {
     viewBox: "0 0 24 24",
     ref: ref,
     ...props,
-    children: /*#__PURE__*/_jsx("path", {
-      d: "M21.167 3.75H7.417c-.633 0-1.128.32-1.458.807L1 12l4.96 7.434c.33.486.824.816 1.457.816h13.75A1.84 1.84 0 0 0 23 18.417V5.583a1.84 1.84 0 0 0-1.833-1.833m0 14.667H7.48L3.2 12l4.272-6.417h13.695zm-10.625-1.834 3.291-3.29 3.291 3.29 1.293-1.292L15.126 12l3.29-3.29-1.292-1.293-3.29 3.29-3.291-3.29L9.25 8.709 12.54 12l-3.29 3.29z"
-    })
+    children: [/*#__PURE__*/_jsx("path", {
+      d: "M15.043 8.457a1 1 0 0 1 1.414 1.414l-2.043 2.043 2.129 2.129a1 1 0 1 1-1.414 1.414l-2.13-2.129-2.127 2.129a1 1 0 0 1-1.415-1.414l2.129-2.129-2.043-2.043a1 1 0 0 1 1.414-1.414L13 10.5z"
+    }), /*#__PURE__*/_jsx("path", {
+      fillRule: "evenodd",
+      d: "M20 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7.28a2 2 0 0 1-1.655-.877l-4.072-6a2 2 0 0 1 0-2.246l4.072-6A2 2 0 0 1 7.28 4zM3.208 12l4.072 6H20V6H7.28z",
+      clipRule: "evenodd"
+    })]
   });
 }
 ;

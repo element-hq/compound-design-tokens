@@ -9,11 +9,15 @@ function ZoomOutIcon(props, ref) {
     viewBox: "0 0 24 24",
     ref: ref,
     ...props,
-    children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
+    children: [/*#__PURE__*/_reactJsxRuntime.jsxs("g", {
       clipPath: "url(#a)",
-      children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
-        d: "M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.26 4.25c.41.41 1.07.41 1.48 0l.01-.01c.41-.41.41-1.07 0-1.48zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14m-2-5h4c.28 0 .5.22.5.5s-.22.5-.5.5h-4c-.28 0-.5-.22-.5-.5s.22-.5.5-.5"
-      })
+      children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
+        d: "M13.5 9.5q.425 0 .713.287.288.288.287.713a.97.97 0 0 1-.287.713.97.97 0 0 1-.713.287h-6a.97.97 0 0 1-.713-.287.97.97 0 0 1-.287-.713q0-.425.287-.713A.97.97 0 0 1 7.5 9.5z"
+      }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+        fillRule: "evenodd",
+        d: "M10.5 3a7.5 7.5 0 0 1 5.963 12.049l3.244 3.244a1 1 0 1 1-1.414 1.414l-3.244-3.244A7.5 7.5 0 1 1 10.5 3m0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11",
+        clipRule: "evenodd"
+      })]
     }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {
       children: /*#__PURE__*/_reactJsxRuntime.jsx("clipPath", {
         id: "a",

@@ -317,6 +317,13 @@ export const cpdIconRotateLeft = "icons/rotate-left.svg";
 export const cpdIconRotateRight = "icons/rotate-right.svg";
 export const cpdIconZoomIn = "icons/zoom-in.svg";
 export const cpdIconZoomOut = "icons/zoom-out.svg";
+export const cpdIconVideoCallOutgoingSolid =
+  "icons/video-call-outgoing-solid.svg";
+export const cpdIconVoiceCallMissedSolid = "icons/voice-call-missed-solid.svg";
+export const cpdIconVoiceCallDeclinedSolid =
+  "icons/voice-call-declined-solid.svg";
+export const cpdIconVoiceCallOutgoingSolid =
+  "icons/voice-call-outgoing-solid.svg";
 export const cpdColorThemeBg = "#ffffff";
 export const cpdColorGray100 = "#f7f9fa";
 export const cpdColorGray200 = "#f0f2f5";
