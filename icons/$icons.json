@@ -859,6 +859,22 @@
     "zoom-out": {
       "value": "icons/zoom-out.svg",
       "type": "icon"
+    },
+    "video-call-outgoing-solid": {
+      "value": "icons/video-call-outgoing-solid.svg",
+      "type": "icon"
+    },
+    "voice-call-missed-solid": {
+      "value": "icons/voice-call-missed-solid.svg",
+      "type": "icon"
+    },
+    "voice-call-declined-solid": {
+      "value": "icons/voice-call-declined-solid.svg",
+      "type": "icon"
+    },
+    "voice-call-outgoing-solid": {
+      "value": "icons/voice-call-outgoing-solid.svg",
+      "type": "icon"
     }
   }
 }

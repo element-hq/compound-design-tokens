@@ -625,6 +625,9 @@ object CompoundIcons {
     @Composable fun VideoCallOffSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_video_call_off_solid)
     }
+    @Composable fun VideoCallOutgoingSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_video_call_outgoing_solid)
+    }
     @Composable fun VideoCallSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_video_call_solid)
     }
@@ -636,6 +639,15 @@ object CompoundIcons {
     }
     @Composable fun VoiceCall(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_voice_call)
+    }
+    @Composable fun VoiceCallDeclinedSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_voice_call_declined_solid)
+    }
+    @Composable fun VoiceCallMissedSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_voice_call_missed_solid)
+    }
+    @Composable fun VoiceCallOutgoingSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_voice_call_outgoing_solid)
     }
     @Composable fun VoiceCallSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_voice_call_solid)
@@ -870,10 +882,14 @@ object CompoundIcons {
         VideoCallMissedSolid(),
         VideoCallOff(),
         VideoCallOffSolid(),
+        VideoCallOutgoingSolid(),
         VideoCallSolid(),
         VisibilityOff(),
         VisibilityOn(),
         VoiceCall(),
+        VoiceCallDeclinedSolid(),
+        VoiceCallMissedSolid(),
+        VoiceCallOutgoingSolid(),
         VoiceCallSolid(),
         VolumeOff(),
         VolumeOffSolid(),
@@ -1088,10 +1104,14 @@ object CompoundIcons {
         R.drawable.ic_compound_video_call_missed_solid,
         R.drawable.ic_compound_video_call_off,
         R.drawable.ic_compound_video_call_off_solid,
+        R.drawable.ic_compound_video_call_outgoing_solid,
         R.drawable.ic_compound_video_call_solid,
         R.drawable.ic_compound_visibility_off,
         R.drawable.ic_compound_visibility_on,
         R.drawable.ic_compound_voice_call,
+        R.drawable.ic_compound_voice_call_declined_solid,
+        R.drawable.ic_compound_voice_call_missed_solid,
+        R.drawable.ic_compound_voice_call_outgoing_solid,
         R.drawable.ic_compound_voice_call_solid,
         R.drawable.ic_compound_volume_off,
         R.drawable.ic_compound_volume_off_solid,

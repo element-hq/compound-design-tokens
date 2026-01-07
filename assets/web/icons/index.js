@@ -198,10 +198,14 @@ export { default as VideoCallDeclinedSolidIcon } from "./video-call-declined-sol
 export { default as VideoCallMissedSolidIcon } from "./video-call-missed-solid.js";
 export { default as VideoCallOffSolidIcon } from "./video-call-off-solid.js";
 export { default as VideoCallOffIcon } from "./video-call-off.js";
+export { default as VideoCallOutgoingSolidIcon } from "./video-call-outgoing-solid.js";
 export { default as VideoCallSolidIcon } from "./video-call-solid.js";
 export { default as VideoCallIcon } from "./video-call.js";
 export { default as VisibilityOffIcon } from "./visibility-off.js";
 export { default as VisibilityOnIcon } from "./visibility-on.js";
+export { default as VoiceCallDeclinedSolidIcon } from "./voice-call-declined-solid.js";
+export { default as VoiceCallMissedSolidIcon } from "./voice-call-missed-solid.js";
+export { default as VoiceCallOutgoingSolidIcon } from "./voice-call-outgoing-solid.js";
 export { default as VoiceCallSolidIcon } from "./voice-call-solid.js";
 export { default as VoiceCallIcon } from "./voice-call.js";
 export { default as VolumeOffSolidIcon } from "./volume-off-solid.js";
