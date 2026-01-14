@@ -296,6 +296,7 @@ export const cpdIconVideoCallOutgoingSolid: string;
 export const cpdIconVoiceCallMissedSolid: string;
 export const cpdIconVoiceCallDeclinedSolid: string;
 export const cpdIconVoiceCallOutgoingSolid: string;
+export const cpdIconTheme: string;
 export const cpdColorThemeBg: string;
 export const cpdColorGray100: string;
 export const cpdColorGray200: string;

@@ -186,6 +186,7 @@ public class CompoundIcons {
     public let takePhoto = Image("takePhoto", bundle: Bundle.module)
     public let takePhotoSolid = Image("takePhotoSolid", bundle: Bundle.module)
     public let textFormatting = Image("textFormatting", bundle: Bundle.module)
+    public let theme = Image("theme", bundle: Bundle.module)
     public let threads = Image("threads", bundle: Bundle.module)
     public let threadsSolid = Image("threadsSolid", bundle: Bundle.module)
     public let time = Image("time", bundle: Bundle.module)
