@@ -876,6 +876,14 @@
       "value": "icons/voice-call-outgoing-solid.svg",
       "type": "icon"
     },
+    "stop-solid": {
+      "value": "icons/stop-solid.svg",
+      "type": "icon"
+    },
+    "stop": {
+      "value": "icons/stop.svg",
+      "type": "icon"
+    },
     "theme": {
       "value": "icons/theme.svg",
       "type": "icon"

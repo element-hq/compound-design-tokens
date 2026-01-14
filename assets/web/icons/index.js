@@ -173,6 +173,8 @@ export { default as SpinnerIcon } from "./spinner.js";
 export { default as SpotlightViewIcon } from "./spotlight-view.js";
 export { default as SpotlightIcon } from "./spotlight.js";
 export { default as StickerIcon } from "./sticker.js";
+export { default as StopSolidIcon } from "./stop-solid.js";
+export { default as StopIcon } from "./stop.js";
 export { default as StrikethroughIcon } from "./strikethrough.js";
 export { default as SwitchCameraSolidIcon } from "./switch-camera-solid.js";
 export { default as TakePhotoSolidIcon } from "./take-photo-solid.js";

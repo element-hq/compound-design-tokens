@@ -174,6 +174,8 @@ module.exports = {
   SpotlightViewIcon: require("./spotlight-view.cjs"),
   SpotlightIcon: require("./spotlight.cjs"),
   StickerIcon: require("./sticker.cjs"),
+  StopSolidIcon: require("./stop-solid.cjs"),
+  StopIcon: require("./stop.cjs"),
   StrikethroughIcon: require("./strikethrough.cjs"),
   SwitchCameraSolidIcon: require("./switch-camera-solid.cjs"),
   TakePhotoSolidIcon: require("./take-photo-solid.cjs"),
