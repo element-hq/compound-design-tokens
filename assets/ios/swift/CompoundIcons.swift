@@ -181,6 +181,8 @@ public class CompoundIcons {
     public let spotlight = Image("spotlight", bundle: Bundle.module)
     public let spotlightView = Image("spotlightView", bundle: Bundle.module)
     public let sticker = Image("sticker", bundle: Bundle.module)
+    public let stop = Image("stop", bundle: Bundle.module)
+    public let stopSolid = Image("stopSolid", bundle: Bundle.module)
     public let strikethrough = Image("strikethrough", bundle: Bundle.module)
     public let switchCameraSolid = Image("switchCameraSolid", bundle: Bundle.module)
     public let takePhoto = Image("takePhoto", bundle: Bundle.module)
