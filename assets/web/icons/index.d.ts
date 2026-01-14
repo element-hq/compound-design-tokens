@@ -178,6 +178,7 @@ export { default as SwitchCameraSolidIcon } from "./switch-camera-solid.js";
 export { default as TakePhotoSolidIcon } from "./take-photo-solid.js";
 export { default as TakePhotoIcon } from "./take-photo.js";
 export { default as TextFormattingIcon } from "./text-formatting.js";
+export { default as ThemeIcon } from "./theme.js";
 export { default as ThreadsSolidIcon } from "./threads-solid.js";
 export { default as ThreadsIcon } from "./threads.js";
 export { default as TimeIcon } from "./time.js";

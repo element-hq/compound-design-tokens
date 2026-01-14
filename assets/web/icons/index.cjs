@@ -179,6 +179,7 @@ module.exports = {
   TakePhotoSolidIcon: require("./take-photo-solid.cjs"),
   TakePhotoIcon: require("./take-photo.cjs"),
   TextFormattingIcon: require("./text-formatting.cjs"),
+  ThemeIcon: require("./theme.cjs"),
   ThreadsSolidIcon: require("./threads-solid.cjs"),
   ThreadsIcon: require("./threads.cjs"),
   TimeIcon: require("./time.cjs"),

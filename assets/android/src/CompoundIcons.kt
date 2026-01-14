@@ -562,6 +562,9 @@ object CompoundIcons {
     @Composable fun TextFormatting(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_text_formatting)
     }
+    @Composable fun Theme(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_theme)
+    }
     @Composable fun Threads(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_threads)
     }
@@ -861,6 +864,7 @@ object CompoundIcons {
         TakePhoto(),
         TakePhotoSolid(),
         TextFormatting(),
+        Theme(),
         Threads(),
         ThreadsSolid(),
         Time(),
@@ -1083,6 +1087,7 @@ object CompoundIcons {
         R.drawable.ic_compound_take_photo,
         R.drawable.ic_compound_take_photo_solid,
         R.drawable.ic_compound_text_formatting,
+        R.drawable.ic_compound_theme,
         R.drawable.ic_compound_threads,
         R.drawable.ic_compound_threads_solid,
         R.drawable.ic_compound_time,
