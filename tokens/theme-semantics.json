@@ -508,6 +508,43 @@
           "type": "color",
           "description": "info gradient"
         }
+      },
+      "critical": {
+        "stop1": {
+          "value": "{color.alpha.red.500}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "stop2": {
+          "value": "{color.alpha.red.400}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "stop3": {
+          "value": "{color.alpha.red.300}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "stop4": {
+          "value": "{color.alpha.red.200}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "stop5": {
+          "value": "{color.alpha.red.100}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "stop6": {
+          "value": "{color.transparent}",
+          "type": "color",
+          "description": "Subtle background gradient stop for critical"
+        },
+        "linear": {
+          "value": "linear-gradient(180deg, {color.gradient.critical.stop1} 0%, {color.gradient.critical.stop2} 20%, {color.gradient.critical.stop3} 40%, {color.gradient.critical.stop4} 60%, {color.gradient.critical.stop5} 80%, {color.gradient.critical.stop6} 100%)",
+          "type": "color",
+          "description": "Critical gradient"
+        }
       }
     }
   }
