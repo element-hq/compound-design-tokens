@@ -1715,7 +1715,14 @@
       "color.gradient.action.linear": "S:2b5db46d90deabb0efbfe8d1d49c21d3ee5c1967,",
       "color.bg.action.tertiary.rest": "S:be774d50bfd7feae31b320a6400b9a74ab6e3437,",
       "color.bg.action.tertiary.hovered": "S:ba5e00308106fa703ab2944a65764b238e7a69a6,",
-      "color.bg.action.tertiary.selected": "S:63f56dd4ede2df7350cfeb1f0235b591a630f366,"
+      "color.bg.action.tertiary.selected": "S:63f56dd4ede2df7350cfeb1f0235b591a630f366,",
+      "color.gradient.critical.stop1": "S:2f9ad7b9a6b220f40073fea1a62b445a4f019b95,",
+      "color.gradient.critical.stop2": "S:3e58255b6ca5be16ad31ec41fa149263434ff6c5,",
+      "color.gradient.critical.stop3": "S:6f2bbbc99ea2c0bc43f2aa35fdca5a3230b24934,",
+      "color.gradient.critical.stop4": "S:7a277de6254f5195b703d496f73790db4f7478ed,",
+      "color.gradient.critical.stop5": "S:cf62cfed4a3385c2384133c0100d73b7a2ac7809,",
+      "color.gradient.critical.stop6": "S:9eb9520a008956b19f1e4e29bd2df6714182b278,",
+      "color.gradient.critical.linear": "S:ab2b68403d1766570a2e8c1b351390cae139f715,"
     },
     "$figmaVariableReferences": {}
   }
