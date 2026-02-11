@@ -301,6 +301,7 @@ export const cpdIconPresenceStrikethrough8X8 =
   "icons/presence-strikethrough-8x8.svg";
 export const cpdIconError = "icons/error.svg";
 export const cpdIconDialPad = "icons/dial-pad.svg";
+export const cpdIconReOrder = "icons/re-order.svg";
 export const cpdIconSpace = "icons/space.svg";
 export const cpdIconSpaceSolid = "icons/space-solid.svg";
 export const cpdIconGuest = "icons/guest.svg";
@@ -327,6 +328,7 @@ export const cpdIconVoiceCallOutgoingSolid =
 export const cpdIconStopSolid = "icons/stop-solid.svg";
 export const cpdIconStop = "icons/stop.svg";
 export const cpdIconTheme = "icons/theme.svg";
+export const cpdIconSection = "icons/section.svg";
 export const cpdColorThemeBg = "#ffffff";
 export const cpdColorGray100 = "#f7f9fa";
 export const cpdColorGray200 = "#f0f2f5";
