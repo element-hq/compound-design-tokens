@@ -466,6 +466,9 @@ object CompoundIcons {
     @Composable fun RaisedHandSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_raised_hand_solid)
     }
+    @Composable fun ReOrder(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_re_order)
+    }
     @Composable fun Reaction(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction)
     }
@@ -492,6 +495,9 @@ object CompoundIcons {
     }
     @Composable fun Search(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_search)
+    }
+    @Composable fun Section(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_section)
     }
     @Composable fun Send(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_send)
@@ -838,6 +844,7 @@ object CompoundIcons {
         QrCode(),
         Quote(),
         RaisedHandSolid(),
+        ReOrder(),
         Reaction(),
         ReactionAdd(),
         ReactionSolid(),
@@ -847,6 +854,7 @@ object CompoundIcons {
         RotateLeft(),
         RotateRight(),
         Search(),
+        Section(),
         Send(),
         SendSolid(),
         Settings(),
@@ -1063,6 +1071,7 @@ object CompoundIcons {
         R.drawable.ic_compound_qr_code,
         R.drawable.ic_compound_quote,
         R.drawable.ic_compound_raised_hand_solid,
+        R.drawable.ic_compound_re_order,
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
         R.drawable.ic_compound_reaction_solid,
@@ -1072,6 +1081,7 @@ object CompoundIcons {
         R.drawable.ic_compound_rotate_left,
         R.drawable.ic_compound_rotate_right,
         R.drawable.ic_compound_search,
+        R.drawable.ic_compound_section,
         R.drawable.ic_compound_send,
         R.drawable.ic_compound_send_solid,
         R.drawable.ic_compound_settings,

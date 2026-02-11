@@ -796,6 +796,10 @@
       "value": "icons/dial-pad.svg",
       "type": "icon"
     },
+    "re-order": {
+      "value": "icons/re-order.svg",
+      "type": "icon"
+    },
     "space": {
       "value": "icons/space.svg",
       "type": "icon"
@@ -886,6 +890,10 @@
     },
     "theme": {
       "value": "icons/theme.svg",
+      "type": "icon"
+    },
+    "section": {
+      "value": "icons/section.svg",
       "type": "icon"
     }
   }
