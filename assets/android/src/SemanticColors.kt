@@ -125,26 +125,10 @@ data class SemanticColors(
     val gradientCriticalStop1: Color,
     /** Subtle background gradient stop for critical */
     val gradientCriticalStop2: Color,
-    /** Subtle background gradient stop for critical */
-    val gradientCriticalStop3: Color,
-    /** Subtle background gradient stop for critical */
-    val gradientCriticalStop4: Color,
-    /** Subtle background gradient stop for critical */
-    val gradientCriticalStop5: Color,
-    /** Subtle background gradient stop for critical */
-    val gradientCriticalStop6: Color,
     /** Subtle background gradient stop for info */
     val gradientInfoStop1: Color,
     /** Subtle background gradient stop for info */
     val gradientInfoStop2: Color,
-    /** Subtle background gradient stop for info */
-    val gradientInfoStop3: Color,
-    /** Subtle background gradient stop for info */
-    val gradientInfoStop4: Color,
-    /** Subtle background gradient stop for info */
-    val gradientInfoStop5: Color,
-    /** Subtle background gradient stop for info */
-    val gradientInfoStop6: Color,
     /** Subtle background gradient stop for message highlight and bloom */
     val gradientSubtleStop1: Color,
     /** Subtle background gradient stop for message highlight and bloom */
