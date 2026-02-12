@@ -474,74 +474,34 @@
       },
       "info": {
         "stop1": {
-          "value": "{color.alpha.blue.500}",
+          "value": "{color.bg.info.subtle}",
           "type": "color",
           "description": "Subtle background gradient stop for info"
         },
         "stop2": {
-          "value": "{color.alpha.blue.400}",
-          "type": "color",
-          "description": "Subtle background gradient stop for info"
-        },
-        "stop3": {
-          "value": "{color.alpha.blue.300}",
-          "type": "color",
-          "description": "Subtle background gradient stop for info"
-        },
-        "stop4": {
-          "value": "{color.alpha.blue.200}",
-          "type": "color",
-          "description": "Subtle background gradient stop for info"
-        },
-        "stop5": {
-          "value": "{color.alpha.blue.100}",
-          "type": "color",
-          "description": "Subtle background gradient stop for info"
-        },
-        "stop6": {
-          "value": "{color.transparent}",
+          "value": "{color.theme.bg}",
           "type": "color",
           "description": "Subtle background gradient stop for info"
         },
         "linear": {
-          "value": "linear-gradient(180deg, {color.gradient.info.stop1} 0%, {color.gradient.info.stop2} 20%, {color.gradient.info.stop3} 40%, {color.gradient.info.stop4} 60%, {color.gradient.info.stop5} 80%, {color.gradient.info.stop6} 100%)",
+          "value": "linear-gradient(180deg, {color.gradient.info.stop1} 0%, {color.gradient.info.stop2} 100%)",
           "type": "color",
           "description": "info gradient"
         }
       },
       "critical": {
         "stop1": {
-          "value": "{color.alpha.red.500}",
+          "value": "{color.bg.critical.subtle}",
           "type": "color",
           "description": "Subtle background gradient stop for critical"
         },
         "stop2": {
-          "value": "{color.alpha.red.400}",
-          "type": "color",
-          "description": "Subtle background gradient stop for critical"
-        },
-        "stop3": {
-          "value": "{color.alpha.red.300}",
-          "type": "color",
-          "description": "Subtle background gradient stop for critical"
-        },
-        "stop4": {
-          "value": "{color.alpha.red.200}",
-          "type": "color",
-          "description": "Subtle background gradient stop for critical"
-        },
-        "stop5": {
-          "value": "{color.alpha.red.100}",
-          "type": "color",
-          "description": "Subtle background gradient stop for critical"
-        },
-        "stop6": {
-          "value": "{color.transparent}",
+          "value": "{color.theme.bg}",
           "type": "color",
           "description": "Subtle background gradient stop for critical"
         },
         "linear": {
-          "value": "linear-gradient(180deg, {color.gradient.critical.stop1} 0%, {color.gradient.critical.stop2} 20%, {color.gradient.critical.stop3} 40%, {color.gradient.critical.stop4} 60%, {color.gradient.critical.stop5} 80%, {color.gradient.critical.stop6} 100%)",
+          "value": "linear-gradient(180deg, {color.gradient.critical.stop1} 0%, {color.gradient.critical.stop2} 100%)",
           "type": "color",
           "description": "Critical gradient"
         }
