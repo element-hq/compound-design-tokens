@@ -1712,7 +1712,9 @@
       "color.bg.action.tertiary.hovered": "S:ba5e00308106fa703ab2944a65764b238e7a69a6,",
       "color.bg.action.tertiary.selected": "S:63f56dd4ede2df7350cfeb1f0235b591a630f366,",
       "color.gradient.critical.stop1": "S:2f9ad7b9a6b220f40073fea1a62b445a4f019b95,",
-      "color.gradient.critical.stop2": "S:3e58255b6ca5be16ad31ec41fa149263434ff6c5,"
+      "color.gradient.critical.stop2": "S:3e58255b6ca5be16ad31ec41fa149263434ff6c5,",
+      "color.gradient.info.linear": "S:85ccf6914f29b428781609b4b438cc2756916fd6,",
+      "color.gradient.critical.linear": "S:c5da2690b3fc7fd696ba22d999f03a72bfe1b3d4,"
     },
     "$figmaVariableReferences": {}
   }
