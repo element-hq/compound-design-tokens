@@ -79,19 +79,11 @@
   --cpd-color-gradient-subtle-stop4: var(--cpd-color-alpha-green-200);
   --cpd-color-gradient-subtle-stop5: var(--cpd-color-alpha-green-100);
   --cpd-color-gradient-subtle-stop6: var(--cpd-color-transparent);
-  --cpd-color-gradient-info-stop1: var(--cpd-color-alpha-blue-500);
-  --cpd-color-gradient-info-stop2: var(--cpd-color-alpha-blue-400);
-  --cpd-color-gradient-info-stop3: var(--cpd-color-alpha-blue-300);
-  --cpd-color-gradient-info-stop4: var(--cpd-color-alpha-blue-200);
-  --cpd-color-gradient-info-stop5: var(--cpd-color-alpha-blue-100);
-  --cpd-color-gradient-info-stop6: var(--cpd-color-transparent);
-  --cpd-color-gradient-critical-stop1: var(--cpd-color-alpha-red-500);
-  --cpd-color-gradient-critical-stop2: var(--cpd-color-alpha-red-400);
-  --cpd-color-gradient-critical-stop3: var(--cpd-color-alpha-red-300);
-  --cpd-color-gradient-critical-stop4: var(--cpd-color-alpha-red-200);
-  --cpd-color-gradient-critical-stop5: var(--cpd-color-alpha-red-100);
-  --cpd-color-gradient-critical-stop6: var(--cpd-color-transparent);
+  --cpd-color-gradient-info-stop2: var(--cpd-color-theme-bg);
+  --cpd-color-gradient-critical-stop2: var(--cpd-color-theme-bg);
   --cpd-color-gradient-subtle-linear: linear-gradient(180deg, var(--cpd-color-gradient-subtle-stop1) 0%, var(--cpd-color-gradient-subtle-stop2) 20%, var(--cpd-color-gradient-subtle-stop3) 40%, var(--cpd-color-gradient-subtle-stop4) 60%, var(--cpd-color-gradient-subtle-stop5) 80%, var(--cpd-color-gradient-subtle-stop6) 100%);
-  --cpd-color-gradient-info-linear: linear-gradient(180deg, var(--cpd-color-gradient-info-stop1) 0%, var(--cpd-color-gradient-info-stop2) 20%, var(--cpd-color-gradient-info-stop3) 40%, var(--cpd-color-gradient-info-stop4) 60%, var(--cpd-color-gradient-info-stop5) 80%, var(--cpd-color-gradient-info-stop6) 100%);
-  --cpd-color-gradient-critical-linear: linear-gradient(180deg, var(--cpd-color-gradient-critical-stop1) 0%, var(--cpd-color-gradient-critical-stop2) 20%, var(--cpd-color-gradient-critical-stop3) 40%, var(--cpd-color-gradient-critical-stop4) 60%, var(--cpd-color-gradient-critical-stop5) 80%, var(--cpd-color-gradient-critical-stop6) 100%);
+  --cpd-color-gradient-info-stop1: var(--cpd-color-bg-info-subtle);
+  --cpd-color-gradient-critical-stop1: var(--cpd-color-bg-critical-subtle);
+  --cpd-color-gradient-info-linear: linear-gradient(180deg, var(--cpd-color-gradient-info-stop1) 0%, var(--cpd-color-gradient-info-stop2) 100%);
+  --cpd-color-gradient-critical-linear: linear-gradient(180deg, var(--cpd-color-gradient-critical-stop1) 0%, var(--cpd-color-gradient-critical-stop2) 100%);
 }
