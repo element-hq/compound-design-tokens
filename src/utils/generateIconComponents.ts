@@ -15,9 +15,11 @@ import type { TransformOptions as BabelOptions } from "@babel/core";
 import generate_ from "@babel/generator";
 import babelTransformReactJsx from "@babel/plugin-transform-react-jsx";
 import t from "@babel/types";
-import { type ConfigPlugin, transform as svgrTransform } from "@svgr/core";
+import { transform as svgrTransform } from "@svgr/core";
 import svgrPluginJsx from "@svgr/plugin-jsx";
+import svgrPluginSvgo from "@svgr/plugin-svgo";
 import { camelCase, startCase } from "lodash-es";
+import type { Config as SvgoConfig } from "svgo";
 
 // Types for the default export of @babel/generator are wrong
 const generate = (generate_ as unknown as { default: typeof generate_ })
@@ -50,11 +52,28 @@ export default async function generateIconComponents(): Promise<void> {
     // mic-on.svg -> MicOnIcon
     const componentName = `${startCase(camelCase(parsedPath.name)).replace(/\s/g, "")}Icon`;
 
+    // Use SVGO to add prefixes to all IDs - not to actually optimize the SVG
+    // any further (files in icons/ are assumed to already be optimized)
+    const svgoConfig: SvgoConfig = {
+      plugins: [
+        {
+          name: "prefixIds",
+          params: {
+            prefixIds: true,
+            prefixClassNames: true,
+            prefix: `cpd_${componentName}`,
+            delim: "_",
+          },
+        },
+      ],
+    };
+
     // This generates a React component for the icon
     const esm = await svgrTransform(
       svg,
       {
-        plugins: [svgrPluginJsx as unknown as ConfigPlugin],
+        plugins: [svgrPluginSvgo, svgrPluginJsx],
+        svgoConfig,
         icon: true,
         ref: true,
         jsxRuntime: "automatic",
@@ -97,7 +116,8 @@ export default async function generateIconComponents(): Promise<void> {
     const cjs = await svgrTransform(
       svg,
       {
-        plugins: [svgrPluginJsx as unknown as ConfigPlugin],
+        plugins: [svgrPluginSvgo, svgrPluginJsx],
+        svgoConfig,
         icon: true,
         ref: true,
         jsxRuntime: "automatic",
