@@ -1023,6 +1023,15 @@
     "@svgr/hast-util-to-babel-ast" "8.0.0"
     svg-parser "^2.0.4"
 
+"@svgr/plugin-svgo@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-8.1.0.tgz#b115b7b967b564f89ac58feae89b88c3decd0f00"
+  integrity sha512-Ywtl837OGO9pTLIN/onoWLmDQ4zFUycI1g76vuKGEz6evR/ZTJlJuz3G/fIkb6OVBJ2g0o6CGJzaEjfmEo3AHA==
+  dependencies:
+    cosmiconfig "^8.1.3"
+    deepmerge "^4.3.1"
+    svgo "^3.0.2"
+
 "@tokens-studio/sd-transforms@^2.0.0":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@tokens-studio/sd-transforms/-/sd-transforms-2.0.3.tgz#46dfcdac413c32df1fedc608b3f1db76cc5d7734"
@@ -1039,6 +1048,11 @@
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@tokens-studio/types/-/types-0.5.2.tgz#cac9bce7a27dda7254664d7acab7b088e2aefe33"
   integrity sha512-rzMcZP0bj2E5jaa7Fj0LGgYHysoCrbrxILVbT0ohsCUH5uCHY/u6J7Qw/TE0n6gR9Js/c9ZO9T8mOoz0HdLMbA==
+
+"@trysound/sax@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
+  integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -1373,6 +1387,11 @@ commander@^12.1.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3"
   integrity sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==
 
+commander@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
+
 component-emitter@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-2.0.0.tgz#3a137dfe66fcf2efe3eab7cb7d5f51741b3620c6"
@@ -1417,6 +1436,14 @@ css-select@^5.1.0:
     domhandler "^5.0.2"
     domutils "^3.0.1"
     nth-check "^2.0.1"
+
+css-tree@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-2.3.1.tgz#10264ce1e5442e8572fc82fbe490644ff54b5c20"
+  integrity sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==
+  dependencies:
+    mdn-data "2.0.30"
+    source-map-js "^1.0.1"
 
 css-tree@^3.0.1:
   version "3.1.0"
@@ -2111,6 +2138,11 @@ mdn-data@2.0.28:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.28.tgz#5ec48e7bef120654539069e1ae4ddc81ca490eba"
   integrity sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==
 
+mdn-data@2.0.30:
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.30.tgz#ce4df6f80af6cfbe218ecd5c552ba13c4dfa08cc"
+  integrity sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==
+
 mdn-data@2.12.2:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.12.2.tgz#9ae6c41a9e65adf61318b32bff7b64fbfb13f8cf"
@@ -2658,6 +2690,19 @@ svg-parser@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
   integrity sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==
+
+svgo@^3.0.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-3.3.2.tgz#ad58002652dffbb5986fc9716afe52d869ecbda8"
+  integrity sha512-OoohrmuUlBs8B8o6MB2Aevn+pRIH9zDALSR+6hhqVfa6fRwG/Qw9VUMSMW9VNg2CFc/MTIfabtdOVl9ODIJjpw==
+  dependencies:
+    "@trysound/sax" "0.2.0"
+    commander "^7.2.0"
+    css-select "^5.1.0"
+    css-tree "^2.3.1"
+    css-what "^6.1.0"
+    csso "^5.0.5"
+    picocolors "^1.0.0"
 
 svgo@^4.0.0:
   version "4.0.0"

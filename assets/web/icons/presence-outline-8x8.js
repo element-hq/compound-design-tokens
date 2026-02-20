@@ -10,7 +10,7 @@ function PresenceOutline8X8Icon(props, ref) {
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("g", {
-      clipPath: "url(#a)",
+      clipPath: "url(#cpd_PresenceOutline8X8Icon_a)",
       children: /*#__PURE__*/_jsx("path", {
         fillRule: "evenodd",
         d: "M4 6.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M4 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8",
@@ -18,7 +18,7 @@ function PresenceOutline8X8Icon(props, ref) {
       })
     }), /*#__PURE__*/_jsx("defs", {
       children: /*#__PURE__*/_jsx("clipPath", {
-        id: "a",
+        id: "cpd_PresenceOutline8X8Icon_a",
         children: /*#__PURE__*/_jsx("path", {
           d: "M0 0h8v8H0z"
         })
