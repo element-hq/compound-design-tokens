@@ -56,9 +56,9 @@ public class CompoundUIColorTokens {
     public let gradientActionStop2 = UIColor(named: "gradientActionStop2", in: Bundle.module, compatibleWith: nil)!
     public let gradientActionStop3 = UIColor(named: "gradientActionStop3", in: Bundle.module, compatibleWith: nil)!
     public let gradientActionStop4 = UIColor(named: "gradientActionStop4", in: Bundle.module, compatibleWith: nil)!
-    public let gradientCriticalStop1 = CompoundCoreUIColorTokens.bgCriticalSubtle
+    public let gradientCriticalStop1 = CompoundCoreUIColorTokens.red200
     public let gradientCriticalStop2 = CompoundCoreUIColorTokens.themeBg
-    public let gradientInfoStop1 = CompoundCoreUIColorTokens.bgInfoSubtle
+    public let gradientInfoStop1 = CompoundCoreUIColorTokens.blue200
     public let gradientInfoStop2 = CompoundCoreUIColorTokens.themeBg
     public let gradientSubtleStop1 = CompoundCoreUIColorTokens.alphaGreen500
     public let gradientSubtleStop2 = CompoundCoreUIColorTokens.alphaGreen400
