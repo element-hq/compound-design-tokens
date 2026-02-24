@@ -10,7 +10,7 @@ function ZoomInIcon(props, ref) {
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsxs("g", {
-      clipPath: "url(#a)",
+      clipPath: "url(#cpd_ZoomInIcon_a)",
       children: [/*#__PURE__*/_jsx("path", {
         d: "M10.5 6.5q.425 0 .713.287.288.288.287.713v2h2q.425 0 .713.287.288.288.287.713a.97.97 0 0 1-.287.713.97.97 0 0 1-.713.287h-2v2a.97.97 0 0 1-.287.713.97.97 0 0 1-.713.287.97.97 0 0 1-.713-.287.97.97 0 0 1-.287-.713v-2h-2a.97.97 0 0 1-.713-.287.97.97 0 0 1-.287-.713q0-.425.287-.713A.97.97 0 0 1 7.5 9.5h2v-2q0-.425.287-.713A.97.97 0 0 1 10.5 6.5"
       }), /*#__PURE__*/_jsx("path", {
@@ -24,7 +24,7 @@ function ZoomInIcon(props, ref) {
       })]
     }), /*#__PURE__*/_jsx("defs", {
       children: /*#__PURE__*/_jsx("clipPath", {
-        id: "a",
+        id: "cpd_ZoomInIcon_a",
         children: /*#__PURE__*/_jsx("path", {
           d: "M0 0h24v24H0z"
         })

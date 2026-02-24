@@ -10,13 +10,13 @@ function PresenceSolid8X8Icon(props, ref) {
     ref: ref,
     ...props,
     children: [/*#__PURE__*/_jsx("g", {
-      clipPath: "url(#a)",
+      clipPath: "url(#cpd_PresenceSolid8X8Icon_a)",
       children: /*#__PURE__*/_jsx("path", {
         d: "M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0"
       })
     }), /*#__PURE__*/_jsx("defs", {
       children: /*#__PURE__*/_jsx("clipPath", {
-        id: "a",
+        id: "cpd_PresenceSolid8X8Icon_a",
         children: /*#__PURE__*/_jsx("path", {
           d: "M0 0h8v8H0z"
         })
