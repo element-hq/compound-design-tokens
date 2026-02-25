@@ -49,6 +49,7 @@ public class CompoundIcons {
     public let copy = Image("copy", bundle: Bundle.module)
     public let darkMode = Image("darkMode", bundle: Bundle.module)
     public let delete = Image("delete", bundle: Bundle.module)
+    public let devicePasskey = Image("devicePasskey", bundle: Bundle.module)
     public let devices = Image("devices", bundle: Bundle.module)
     public let dialPad = Image("dialPad", bundle: Bundle.module)
     public let document = Image("document", bundle: Bundle.module)
