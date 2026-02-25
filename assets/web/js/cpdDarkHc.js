@@ -302,6 +302,7 @@ export const cpdIconPresenceStrikethrough8X8 =
 export const cpdIconError = "icons/error.svg";
 export const cpdIconDialPad = "icons/dial-pad.svg";
 export const cpdIconReOrder = "icons/re-order.svg";
+export const cpdIconDevicePasskey = "icons/device-passkey.svg";
 export const cpdIconSpace = "icons/space.svg";
 export const cpdIconSpaceSolid = "icons/space-solid.svg";
 export const cpdIconGuest = "icons/guest.svg";

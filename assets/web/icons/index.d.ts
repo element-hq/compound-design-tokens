@@ -40,6 +40,7 @@ export { default as ComputerIcon } from "./computer.js";
 export { default as CopyIcon } from "./copy.js";
 export { default as DarkModeIcon } from "./dark-mode.js";
 export { default as DeleteIcon } from "./delete.js";
+export { default as DevicePasskeyIcon } from "./device-passkey.js";
 export { default as DevicesIcon } from "./devices.js";
 export { default as DialPadIcon } from "./dial-pad.js";
 export { default as DocumentIcon } from "./document.js";

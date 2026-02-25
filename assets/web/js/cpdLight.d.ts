@@ -277,6 +277,7 @@ export const cpdIconPresenceStrikethrough8X8: string;
 export const cpdIconError: string;
 export const cpdIconDialPad: string;
 export const cpdIconReOrder: string;
+export const cpdIconDevicePasskey: string;
 export const cpdIconSpace: string;
 export const cpdIconSpaceSolid: string;
 export const cpdIconGuest: string;

@@ -800,6 +800,10 @@
       "value": "icons/re-order.svg",
       "type": "icon"
     },
+    "device-passkey": {
+      "value": "icons/device-passkey.svg",
+      "type": "icon"
+    },
     "space": {
       "value": "icons/space.svg",
       "type": "icon"
