@@ -1,5 +1,6 @@
 export { default as AdminIcon } from "./admin.js";
 export { default as AdvancedSettingsIcon } from "./advanced-settings.js";
+export { default as AiIcon } from "./ai.js";
 export { default as ArrowDownIcon } from "./arrow-down.js";
 export { default as ArrowLeftIcon } from "./arrow-left.js";
 export { default as ArrowRightIcon } from "./arrow-right.js";

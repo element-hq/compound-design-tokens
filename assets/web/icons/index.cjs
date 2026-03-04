@@ -1,6 +1,7 @@
 module.exports = {
   AdminIcon: require("./admin.cjs"),
   AdvancedSettingsIcon: require("./advanced-settings.cjs"),
+  AiIcon: require("./ai.cjs"),
   ArrowDownIcon: require("./arrow-down.cjs"),
   ArrowLeftIcon: require("./arrow-left.cjs"),
   ArrowRightIcon: require("./arrow-right.cjs"),

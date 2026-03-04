@@ -330,6 +330,7 @@ export const cpdIconStopSolid = "icons/stop-solid.svg";
 export const cpdIconStop = "icons/stop.svg";
 export const cpdIconTheme = "icons/theme.svg";
 export const cpdIconSection = "icons/section.svg";
+export const cpdIconAi = "icons/ai.svg";
 export const cpdColorThemeBg = "#ffffff";
 export const cpdColorGray100 = "#f7f9fa";
 export const cpdColorGray200 = "#f0f2f5";

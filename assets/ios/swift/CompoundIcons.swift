@@ -9,6 +9,7 @@ public class CompoundIcons {
     public let `public` = Image("public", bundle: Bundle.module)
     public let admin = Image("admin", bundle: Bundle.module)
     public let advancedSettings = Image("advancedSettings", bundle: Bundle.module)
+    public let ai = Image("ai", bundle: Bundle.module)
     public let arrowDown = Image("arrowDown", bundle: Bundle.module)
     public let arrowLeft = Image("arrowLeft", bundle: Bundle.module)
     public let arrowRight = Image("arrowRight", bundle: Bundle.module)
