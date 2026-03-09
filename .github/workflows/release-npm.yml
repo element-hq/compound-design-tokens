@@ -53,13 +53,18 @@ jobs:
           echo "VERSION=$(jq '.version' --raw-output package.json)" >> "$GITHUB_ENV"
 
       - name: 🧬 Create release
-        # TODO: This action has been archived, find a new one.
-        uses: actions/create-release@0cb9c9b65d5d1901c1f53e5e66eaf4afd303e70e # v1.1.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
-          tag_name: v${{ env.VERSION }}
-          release_name: Release ${{ env.VERSION }}
-          body: ${{ env.VERSION }} Release
-          draft: false
-          prerelease: false
+          script: |
+            const { VERSION } = process.env;
+            const { owner, repo } = context.repo;
+
+            await github.rest.repos.createRelease({
+              owner,
+              repo,
+              tag_name: `v${VERSION}`,
+              name: `Release ${VERSION}`,
+              body: `${VERSION} Release`,
+              draft: false,
+              prerelease: false,
+            });
