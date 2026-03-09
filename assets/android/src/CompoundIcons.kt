@@ -28,6 +28,9 @@ object CompoundIcons {
     @Composable fun AdvancedSettings(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_advanced_settings)
     }
+    @Composable fun Ai(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_ai)
+    }
     @Composable fun ArrowDown(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_arrow_down)
     }
@@ -701,6 +704,7 @@ object CompoundIcons {
     val all @Composable get() = persistentListOf<ImageVector>(
         Admin(),
         AdvancedSettings(),
+        Ai(),
         ArrowDown(),
         ArrowLeft(),
         ArrowRight(),
@@ -929,6 +933,7 @@ object CompoundIcons {
     val allResIds get() = persistentListOf(
         R.drawable.ic_compound_admin,
         R.drawable.ic_compound_advanced_settings,
+        R.drawable.ic_compound_ai,
         R.drawable.ic_compound_arrow_down,
         R.drawable.ic_compound_arrow_left,
         R.drawable.ic_compound_arrow_right,

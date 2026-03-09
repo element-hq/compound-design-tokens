@@ -899,6 +899,10 @@
     "section": {
       "value": "icons/section.svg",
       "type": "icon"
+    },
+    "ai": {
+      "value": "icons/ai.svg",
+      "type": "icon"
     }
   }
 }
