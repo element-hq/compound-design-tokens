@@ -1,6 +1,5 @@
 export { default as AdminIcon } from "./admin.js";
 export { default as AdvancedSettingsIcon } from "./advanced-settings.js";
-export { default as AiIcon } from "./ai.js";
 export { default as ArrowDownIcon } from "./arrow-down.js";
 export { default as ArrowLeftIcon } from "./arrow-left.js";
 export { default as ArrowRightIcon } from "./arrow-right.js";
@@ -68,6 +67,7 @@ export { default as FavouriteIcon } from "./favourite.js";
 export { default as FileErrorIcon } from "./file-error.js";
 export { default as FilesIcon } from "./files.js";
 export { default as FilterIcon } from "./filter.js";
+export { default as FolderIcon } from "./folder.js";
 export { default as ForwardIcon } from "./forward.js";
 export { default as FullScreenIcon } from "./full-screen.js";
 export { default as GridIcon } from "./grid.js";
