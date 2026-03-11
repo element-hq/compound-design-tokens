@@ -900,8 +900,8 @@
       "value": "icons/section.svg",
       "type": "icon"
     },
-    "ai": {
-      "value": "icons/ai.svg",
+    "folder": {
+      "value": "icons/folder.svg",
       "type": "icon"
     }
   }

@@ -28,9 +28,6 @@ object CompoundIcons {
     @Composable fun AdvancedSettings(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_advanced_settings)
     }
-    @Composable fun Ai(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_ai)
-    }
     @Composable fun ArrowDown(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_arrow_down)
     }
@@ -231,6 +228,9 @@ object CompoundIcons {
     }
     @Composable fun Filter(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_filter)
+    }
+    @Composable fun Folder(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_folder)
     }
     @Composable fun Forward(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_forward)
@@ -704,7 +704,6 @@ object CompoundIcons {
     val all @Composable get() = persistentListOf<ImageVector>(
         Admin(),
         AdvancedSettings(),
-        Ai(),
         ArrowDown(),
         ArrowLeft(),
         ArrowRight(),
@@ -772,6 +771,7 @@ object CompoundIcons {
         FileError(),
         Files(),
         Filter(),
+        Folder(),
         Forward(),
         FullScreen(),
         Grid(),
@@ -933,7 +933,6 @@ object CompoundIcons {
     val allResIds get() = persistentListOf(
         R.drawable.ic_compound_admin,
         R.drawable.ic_compound_advanced_settings,
-        R.drawable.ic_compound_ai,
         R.drawable.ic_compound_arrow_down,
         R.drawable.ic_compound_arrow_left,
         R.drawable.ic_compound_arrow_right,
@@ -1001,6 +1000,7 @@ object CompoundIcons {
         R.drawable.ic_compound_file_error,
         R.drawable.ic_compound_files,
         R.drawable.ic_compound_filter,
+        R.drawable.ic_compound_folder,
         R.drawable.ic_compound_forward,
         R.drawable.ic_compound_full_screen,
         R.drawable.ic_compound_grid,

@@ -1,7 +1,6 @@
 module.exports = {
   AdminIcon: require("./admin.cjs"),
   AdvancedSettingsIcon: require("./advanced-settings.cjs"),
-  AiIcon: require("./ai.cjs"),
   ArrowDownIcon: require("./arrow-down.cjs"),
   ArrowLeftIcon: require("./arrow-left.cjs"),
   ArrowRightIcon: require("./arrow-right.cjs"),
@@ -69,6 +68,7 @@ module.exports = {
   FileErrorIcon: require("./file-error.cjs"),
   FilesIcon: require("./files.cjs"),
   FilterIcon: require("./filter.cjs"),
+  FolderIcon: require("./folder.cjs"),
   ForwardIcon: require("./forward.cjs"),
   FullScreenIcon: require("./full-screen.cjs"),
   GridIcon: require("./grid.cjs"),
