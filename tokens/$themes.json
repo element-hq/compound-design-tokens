@@ -480,16 +480,13 @@
       "color.icon.accent.primary": "S:335e8d3421a11fbd10085c38653cfb1d0972cd36,",
       "color.text.badge.accent": "S:52cfa06b8fb99ce5f6a20fee1c8b88681e3e9627,",
       "color.text.badge.info": "S:93ee4d6095e2915ab5738467e05a6a8c978db4cb,",
-      "color.bg.badge.accent": "S:b5f70ed6d7483155e50cb408af60cd3b21a2bfc0,",
-      "color.bg.badge.info": "S:6314532de767c8ca0f50eda707834295b5bd80ab,",
       "color.gradient.action.stop1": "S:a700f8c5f074bffebd2fbcbcd21b64a0553b0628,",
       "color.gradient.action.stop2": "S:ad6d9d72c954b56ec4bf46959444203397ce30c5,",
       "color.gradient.action.stop3": "S:4735587bcde99515d46d5495c3c2bb0c1732add9,",
       "color.gradient.action.stop4": "S:397be8b04b69aeb7bb648bb91e8f20a05be17ba2,",
       "color.transparent": "S:5d8ab4ab3426fd58ea457823bb4f067a78e8ac0b,",
       "color.gradient.super": "S:196e4889d3ae2469b3a01cf57dc644d226b8845d,",
-      "color.gradient.action.linear": "S:9360b9de9c1fb80e3c7d8d9f33ca4d03c85f9ee3,",
-      "color.bg.badge.default": "S:8b756b2f5a03678b99193385ccd94d44c55b0eab,"
+      "color.gradient.action.linear": "S:9360b9de9c1fb80e3c7d8d9f33ca4d03c85f9ee3,"
     },
     "$figmaVariableReferences": {}
   },
@@ -882,15 +879,12 @@
       "color.icon.accent.primary": "S:1bad861fc99ed9e04874289a7d3be7cf7fa33772,",
       "color.text.badge.accent": "S:660b4b90f66aa46a66cb11cd3c633dfbfb86622d,",
       "color.text.badge.info": "S:438180ee20793406df6a2d5caa93b9af769208bc,",
-      "color.bg.badge.accent": "S:42d531b2e86a8cb6fa32804316bdc4e7ae21c767,",
-      "color.bg.badge.info": "S:f26edf77753c8ce3dc3f7544eadc355937691b17,",
       "color.gradient.action.stop1": "S:af6fce276bfca6c15a31607faed6afb5c4629b63,",
       "color.gradient.action.stop2": "S:e814f61ccde156a0e6792d37b8e930f326d36a25,",
       "color.gradient.action.stop3": "S:93e48e0ada63b32ddd40e5993999bc1f2ad35c35,",
       "color.gradient.action.stop4": "S:78d495b4e612e20ee827f44aed336a79b4d5c7d2,",
       "color.transparent": "S:c02f26f6543d05dc79d63f4b3fe83601adefac38,",
-      "color.gradient.action.linear": "S:6d880836984a73db7082926ae6b218ae54354e5c,",
-      "color.bg.badge.default": "S:57e909559c32022c51be0c39a99f2785827dd1f5,"
+      "color.gradient.action.linear": "S:6d880836984a73db7082926ae6b218ae54354e5c,"
     },
     "$figmaVariableReferences": {}
   },
