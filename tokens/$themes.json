@@ -1277,16 +1277,13 @@
       "color.icon.accent.primary": "S:ca4514d13e1497a75be02cfe41e29f24be2c05ba,",
       "color.text.badge.accent": "S:4c9ad4661fd7b4faf5ce6f5272d122333048e7d1,",
       "color.text.badge.info": "S:f842c7f15d25aa728f0cf0333550331dcd254dc7,",
-      "color.bg.badge.accent": "S:dd4fdb5b900f9535c9e692337e25cb0d7cbf25ac,",
-      "color.bg.badge.info": "S:af45de93ee6c2bb34751a5e3ab47edd76b364c87,",
       "color.gradient.action.stop1": "S:340f127fcf120331b98ad45986999c629214ef06,",
       "color.gradient.action.stop2": "S:d39ce56493ba66d192c8e5f22f05caec7f08c153,",
       "color.gradient.action.stop3": "S:eeaa9735c91ac2f54c8b313428cffb87c40ef832,",
       "color.gradient.action.stop4": "S:475d3c4847b018f9029131aea8a7e33ff602ed3f,",
       "color.transparent": "S:dc0abc3f87d1fe15910cb90c2e34d9d41fdd7e2d,",
       "color.gradient.super": "S:012790c8c979c2e2d44a175382ee3b5865467656,",
-      "color.gradient.action.linear": "S:f429bb5c10c2aa662f844bdaaaa0378fdac2bdfa,",
-      "color.bg.badge.default": "S:2e389dd1535965b7704292fcaeac993cfe68887b,"
+      "color.gradient.action.linear": "S:f429bb5c10c2aa662f844bdaaaa0378fdac2bdfa,"
     },
     "$figmaVariableReferences": {}
   },
@@ -1679,9 +1676,6 @@
       "color.icon.accent.primary": "S:d3f02cccf95f4800a93ad469d723eca4c9610631,",
       "color.text.badge.accent": "S:f450c6f2e2acb31b944cebdc36caa2bbc9d330ab,",
       "color.text.badge.info": "S:6fb27bf524524715cf199df01f65efd13d6c755b,",
-      "color.bg.badge.accent": "S:292e7ac04a28fc3638aa988f3888d19a5c1e7936,",
-      "color.bg.badge.info": "S:3d83f372809d73777218dcacfd249feb07a53596,",
-      "color.bg.badge.default": "S:6511e8909adf90250ab9f093c472b69bf7205541,",
       "color.bg.accent.selected": "S:b5913763790793e39e2f1961ee98d0c75b6872ac,",
       "color.gradient.action.stop1": "S:e6575f3346a3d3f391328b02f408ac1a182f8797,",
       "color.gradient.action.stop2": "S:cd4c8da861228efd49641e516eec3f8b379c8e86,",
@@ -1708,7 +1702,13 @@
       "color.gradient.critical.stop1": "S:2f9ad7b9a6b220f40073fea1a62b445a4f019b95,",
       "color.gradient.critical.stop2": "S:3e58255b6ca5be16ad31ec41fa149263434ff6c5,",
       "color.gradient.info.linear": "S:85ccf6914f29b428781609b4b438cc2756916fd6,",
-      "color.gradient.critical.linear": "S:c5da2690b3fc7fd696ba22d999f03a72bfe1b3d4,"
+      "color.gradient.critical.linear": "S:c5da2690b3fc7fd696ba22d999f03a72bfe1b3d4,",
+      "color.bg.badge.accent": "S:9e3fb260e08eaf41bdb7207aca3259cee48d13f6,",
+      "color.bg.badge.info": "S:5e35e9987b5367cec970d45ced4272f18385f472,",
+      "color.bg.badge.default": "S:ddd01880858cadbe1ce3d6a8959a324fce2124e0,",
+      "color.bg.badge.primary": "S:8629783614d53fc9663beeb5f9ccf56adbb00b2d,",
+      "color.bg.badge.secondary": "S:23dacd565dd48162895c4d7b18a5f4951485b320,",
+      "color.bg.badge.critical": "S:a66a628f649a1815cff6c367cb0efc204c3f3239,"
     },
     "$figmaVariableReferences": {}
   }
