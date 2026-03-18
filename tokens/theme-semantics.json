@@ -281,11 +281,11 @@
       },
       "badge": {
         "accent": {
-          "value": "{color.green.300}",
+          "value": "{color.green.400}",
           "type": "color"
         },
         "info": {
-          "value": "{color.blue.300}",
+          "value": "{color.blue.400}",
           "type": "color"
         },
         "default": {
@@ -297,7 +297,7 @@
           "type": "color"
         },
         "secondary": {
-          "value": "{color.gray.300}",
+          "value": "{color.gray.400}",
           "type": "color"
         },
         "critical": {
