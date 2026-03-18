@@ -278,6 +278,32 @@
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Selected"
         }
+      },
+      "badge": {
+        "accent": {
+          "value": "{color.green.400}",
+          "type": "color"
+        },
+        "info": {
+          "value": "{color.blue.400}",
+          "type": "color"
+        },
+        "default": {
+          "value": "{color.theme.bg}",
+          "type": "color"
+        },
+        "primary": {
+          "value": "{color.gray.1400}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.gray.400}",
+          "type": "color"
+        },
+        "critical": {
+          "value": "{color.red.300}",
+          "type": "color"
+        }
       }
     },
     "border": {
