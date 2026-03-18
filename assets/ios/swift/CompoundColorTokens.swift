@@ -20,12 +20,12 @@ public class CompoundColorTokens {
     public let bgActionTertiaryHovered = CompoundCoreColorTokens.gray300
     public let bgActionTertiaryRest = CompoundCoreColorTokens.themeBg
     public let bgActionTertiarySelected = CompoundCoreColorTokens.gray400
-    public let bgBadgeAccent = CompoundCoreColorTokens.green300
+    public let bgBadgeAccent = CompoundCoreColorTokens.green400
     public let bgBadgeCritical = CompoundCoreColorTokens.red300
     public let bgBadgeDefault = CompoundCoreColorTokens.themeBg
-    public let bgBadgeInfo = CompoundCoreColorTokens.blue300
+    public let bgBadgeInfo = CompoundCoreColorTokens.blue400
     public let bgBadgePrimary = CompoundCoreColorTokens.gray1400
-    public let bgBadgeSecondary = CompoundCoreColorTokens.gray300
+    public let bgBadgeSecondary = CompoundCoreColorTokens.gray400
     public let bgCanvasDefault = CompoundCoreColorTokens.themeBg
     public let bgCanvasDefaultLevel1 = Color("bgCanvasDefaultLevel1", bundle: Bundle.module)
     public let bgCanvasDisabled = CompoundCoreColorTokens.gray200
