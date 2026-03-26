@@ -370,6 +370,11 @@
           "value": "{color.green.700}",
           "type": "color",
           "description": "accent border intended for keylines on message highlights"
+        },
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Accent borders for containers"
         }
       }
     },
