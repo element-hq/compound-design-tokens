@@ -365,7 +365,7 @@
           "description": "Subtle border colour for informational elements."
         }
       },
-      "accent": {
+      "highlight": {
         "subtle": {
           "value": "{color.green.700}",
           "type": "color",
