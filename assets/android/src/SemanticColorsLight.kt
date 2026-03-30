@@ -61,6 +61,7 @@ val compoundColorsLight = SemanticColors(
     bgSubtleSecondary = LightColorTokens.colorGray300,
     bgSubtleSecondaryLevel0 = LightColorTokens.colorGray300,
     bgSuccessSubtle = LightColorTokens.colorGreen200,
+    borderAccentPrimary = LightColorTokens.colorGreen900,
     borderAccentSubtle = LightColorTokens.colorGreen700,
     borderCriticalHovered = LightColorTokens.colorRed1000,
     borderCriticalPrimary = LightColorTokens.colorRed900,

@@ -1708,7 +1708,8 @@
       "color.bg.badge.default": "S:ddd01880858cadbe1ce3d6a8959a324fce2124e0,",
       "color.bg.badge.primary": "S:8629783614d53fc9663beeb5f9ccf56adbb00b2d,",
       "color.bg.badge.secondary": "S:23dacd565dd48162895c4d7b18a5f4951485b320,",
-      "color.bg.badge.critical": "S:a66a628f649a1815cff6c367cb0efc204c3f3239,"
+      "color.bg.badge.critical": "S:a66a628f649a1815cff6c367cb0efc204c3f3239,",
+      "color.border.accent.primary": "S:11bd771db2da76f1a41ea8714ff75727d4b459a7,"
     },
     "$figmaVariableReferences": {}
   }

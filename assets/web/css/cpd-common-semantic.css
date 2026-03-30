@@ -64,6 +64,7 @@
   --cpd-color-border-success-subtle: var(--cpd-color-green-500);
   --cpd-color-border-info-subtle: var(--cpd-color-blue-700);
   --cpd-color-border-accent-subtle: var(--cpd-color-green-700);
+  --cpd-color-border-accent-primary: var(--cpd-color-green-900);
   --cpd-color-icon-primary: var(--cpd-color-gray-1400);
   --cpd-color-icon-secondary: var(--cpd-color-gray-900);
   --cpd-color-icon-tertiary: var(--cpd-color-gray-800);

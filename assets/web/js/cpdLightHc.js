@@ -707,6 +707,7 @@ export const cpdColorBorderCriticalSubtle = "#ffafa5";
 export const cpdColorBorderSuccessSubtle = "#71d7ae";
 export const cpdColorBorderInfoSubtle = "#4a8ef0";
 export const cpdColorBorderAccentSubtle = "#00a27c";
+export const cpdColorBorderAccentPrimary = "#00553d";
 export const cpdColorIconPrimary = "#1a1c21";
 export const cpdColorIconSecondary = "#474a51";
 export const cpdColorIconTertiary = "#6c737e";
