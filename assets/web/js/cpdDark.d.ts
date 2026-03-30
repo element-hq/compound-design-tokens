@@ -679,6 +679,7 @@ export const cpdColorBorderCriticalSubtle: string;
 export const cpdColorBorderSuccessSubtle: string;
 export const cpdColorBorderInfoSubtle: string;
 export const cpdColorBorderAccentSubtle: string;
+export const cpdColorBorderAccentPrimary: string;
 export const cpdColorIconPrimary: string;
 export const cpdColorIconSecondary: string;
 export const cpdColorIconTertiary: string;
