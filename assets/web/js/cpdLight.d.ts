@@ -713,3 +713,4 @@ export const cpdColorGradientActionStop2: string;
 export const cpdColorGradientActionStop3: string;
 export const cpdColorGradientActionStop4: string;
 export const cpdColorGradientActionLinear: string;
+export const cpdColorSeparatorCanvas: string;
