@@ -43,6 +43,7 @@ public class CompoundIcons {
     public let cloudSolid = Image("cloudSolid", bundle: Bundle.module)
     public let code = Image("code", bundle: Bundle.module)
     public let collapse = Image("collapse", bundle: Bundle.module)
+    public let collapseAll = Image("collapseAll", bundle: Bundle.module)
     public let company = Image("company", bundle: Bundle.module)
     public let compose = Image("compose", bundle: Bundle.module)
     public let computer = Image("computer", bundle: Bundle.module)
