@@ -173,8 +173,8 @@ data class SemanticColors(
     val iconTertiary: Color,
     /** Translucent version of tertiary icon. Refer to it for intended use. */
     val iconTertiaryAlpha: Color,
-    /** Used to separate core sections of the UI */
-    val separatorCanvas: Color,
+    /** Used to separate core sections of the UI as well as containers */
+    val separatorPrimary: Color,
     /** Accent text colour for plain actions. */
     val textActionAccent: Color,
     /** Default text colour for plain actions. */
