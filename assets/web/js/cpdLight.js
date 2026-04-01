@@ -746,3 +746,4 @@ export const cpdColorGradientActionStop4 = "#005c45";
 export const cpdColorGradientActionLinear =
   "linear-gradient(180deg, #98e1c1 0%, #0bc491 33%, #007a61 66%, #005c45 100%)";
 export const cpdColorSeparatorPrimary = "#e1e6ec";
+export const cpdColorSeparatorSecondary = "#f0f2f5";
