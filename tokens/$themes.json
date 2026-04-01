@@ -1710,7 +1710,8 @@
       "color.bg.badge.secondary": "S:23dacd565dd48162895c4d7b18a5f4951485b320,",
       "color.bg.badge.critical": "S:a66a628f649a1815cff6c367cb0efc204c3f3239,",
       "color.border.accent.primary": "S:11bd771db2da76f1a41ea8714ff75727d4b459a7,",
-      "color.separator.primary": "S:332b0352edb5a3ed5b16ec34d02c6ee67c7d6849,"
+      "color.separator.primary": "S:332b0352edb5a3ed5b16ec34d02c6ee67c7d6849,",
+      "color.separator.secondary": "S:a793e60e9db17fee365fc147e01c0872dd6b007c,"
     },
     "$figmaVariableReferences": {}
   }
