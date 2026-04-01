@@ -539,10 +539,10 @@
       }
     },
     "separator": {
-      "canvas": {
+      "primary": {
         "value": "{color.gray.400}",
         "type": "color",
-        "description": "Used to separate core sections of the UI"
+        "description": "Used to separate core sections of the UI as well as containers"
       }
     }
   }
