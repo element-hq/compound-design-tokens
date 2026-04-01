@@ -33,6 +33,7 @@ export { default as CloseIcon } from "./close.js";
 export { default as CloudSolidIcon } from "./cloud-solid.js";
 export { default as CloudIcon } from "./cloud.js";
 export { default as CodeIcon } from "./code.js";
+export { default as CollapseAllIcon } from "./collapse-all.js";
 export { default as CollapseIcon } from "./collapse.js";
 export { default as CompanyIcon } from "./company.js";
 export { default as ComposeIcon } from "./compose.js";

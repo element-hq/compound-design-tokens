@@ -899,6 +899,10 @@
     "section": {
       "value": "icons/section.svg",
       "type": "icon"
+    },
+    "collapse-all": {
+      "value": "icons/collapse-all.svg",
+      "type": "icon"
     }
   }
 }

@@ -302,6 +302,7 @@ export const cpdIconStopSolid: string;
 export const cpdIconStop: string;
 export const cpdIconTheme: string;
 export const cpdIconSection: string;
+export const cpdIconCollapseAll: string;
 export const cpdColorThemeBg: string;
 export const cpdColorGray100: string;
 export const cpdColorGray200: string;
