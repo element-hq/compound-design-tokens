@@ -903,6 +903,10 @@
     "collapse-all": {
       "value": "icons/collapse-all.svg",
       "type": "icon"
+    },
+    "folder": {
+      "value": "icons/folder.svg",
+      "type": "icon"
     }
   }
 }

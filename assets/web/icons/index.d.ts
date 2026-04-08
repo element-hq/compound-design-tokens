@@ -68,6 +68,7 @@ export { default as FavouriteIcon } from "./favourite.js";
 export { default as FileErrorIcon } from "./file-error.js";
 export { default as FilesIcon } from "./files.js";
 export { default as FilterIcon } from "./filter.js";
+export { default as FolderIcon } from "./folder.js";
 export { default as ForwardIcon } from "./forward.js";
 export { default as FullScreenIcon } from "./full-screen.js";
 export { default as GridIcon } from "./grid.js";
