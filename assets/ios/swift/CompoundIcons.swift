@@ -77,6 +77,7 @@ public class CompoundIcons {
     public let fileError = Image("fileError", bundle: Bundle.module)
     public let files = Image("files", bundle: Bundle.module)
     public let filter = Image("filter", bundle: Bundle.module)
+    public let folder = Image("folder", bundle: Bundle.module)
     public let forward = Image("forward", bundle: Bundle.module)
     public let fullScreen = Image("fullScreen", bundle: Bundle.module)
     public let grid = Image("grid", bundle: Bundle.module)

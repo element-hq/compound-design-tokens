@@ -69,6 +69,7 @@ module.exports = {
   FileErrorIcon: require("./file-error.cjs"),
   FilesIcon: require("./files.cjs"),
   FilterIcon: require("./filter.cjs"),
+  FolderIcon: require("./folder.cjs"),
   ForwardIcon: require("./forward.cjs"),
   FullScreenIcon: require("./full-screen.cjs"),
   GridIcon: require("./grid.cjs"),
