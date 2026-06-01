@@ -520,6 +520,18 @@
       "value": "icons/exit-full-screen.svg",
       "type": "icon"
     },
+    "flip-horizontal": {
+      "value": "icons/flip-horizontal.svg",
+      "type": "icon"
+    },
+    "flip-vertical": {
+      "value": "icons/flip-vertical.svg",
+      "type": "icon"
+    },
+    "crop": {
+      "value": "icons/crop.svg",
+      "type": "icon"
+    },
     "key-off-solid": {
       "value": "icons/key-off-solid.svg",
       "type": "icon"
@@ -598,6 +610,10 @@
     },
     "indent-decrease": {
       "value": "icons/indent-decrease.svg",
+      "type": "icon"
+    },
+    "calendar": {
+      "value": "icons/calendar.svg",
       "type": "icon"
     },
     "lock": {
@@ -742,10 +758,6 @@
     },
     "mark-as-read": {
       "value": "icons/mark-as-read.svg",
-      "type": "icon"
-    },
-    "calendar": {
-      "value": "icons/calendar.svg",
       "type": "icon"
     },
     "mac": {
@@ -904,8 +916,24 @@
       "value": "icons/collapse-all.svg",
       "type": "icon"
     },
+    "expand-all": {
+      "value": "icons/expand-all.svg",
+      "type": "icon"
+    },
     "folder": {
       "value": "icons/folder.svg",
+      "type": "icon"
+    },
+    "save": {
+      "value": "icons/save.svg",
+      "type": "icon"
+    },
+    "unsave": {
+      "value": "icons/unsave.svg",
+      "type": "icon"
+    },
+    "save-solid": {
+      "value": "icons/save-solid.svg",
       "type": "icon"
     }
   }
