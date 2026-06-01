@@ -1,0 +1,23 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+var React = require("react");
+function UnsaveIcon(props, ref) {
+  return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    viewBox: "0 0 24 24",
+    ref: ref,
+    ...props,
+    children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      fillRule: "evenodd",
+      d: "M3.503 2.083a1 1 0 0 1 1.414 0l17 17a1 1 0 1 1-1.414 1.414L20 19.994v.342c0 1.582-1.75 2.538-3.082 1.683l-3.836-2.467a2 2 0 0 0-2.164 0l-3.836 2.467-.126.075C5.643 22.814 4 21.869 4 20.336V3.994l-.497-.497a1 1 0 0 1 0-1.414M6 20.336l3.837-2.467a4 4 0 0 1 4.326 0L18 20.336v-2.342l-12-12z",
+      clipRule: "evenodd"
+    }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M18 2a2 2 0 0 1 2 2v10.35l-2-2V4H9.65l-2-2z"
+    })]
+  });
+}
+;
+UnsaveIcon.displayName = "UnsaveIcon";
+module.exports = React.forwardRef(UnsaveIcon);
