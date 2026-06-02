@@ -311,10 +311,10 @@
   dependencies:
     csstype "^3.1.1"
 
-"@capsizecss/metrics@^3.3.0":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@capsizecss/metrics/-/metrics-3.7.0.tgz#f5fa487582d7b6f194790485c2d3d78d96eac089"
-  integrity sha512-NHdEMrl/zd2XgiSv2xHRF/FxGc2OTBKjhPzr9SgbHzqmoTVn8BbRK88Dtq0m65idX/RMD7ptyVdbGHFcvlErSw==
+"@capsizecss/metrics@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@capsizecss/metrics/-/metrics-4.0.0.tgz#ea9b5e49ecfaa5655337609f783d7338735ee26d"
+  integrity sha512-GlazGWqxc+7ZJX0jGFTdolzKqP6X3dWXyjFmMzqTslsdqHCctkKV5eHxyMD9njrWqjQOYEeTFlE1lq8+1DClug==
 
 "@emnapi/core@1.10.0":
   version "1.10.0"
