@@ -13,8 +13,8 @@ declare module "prettier" {
 
 // This module doens't have a type definition
 declare module "@babel/plugin-transform-react-jsx" {
-  import type { PluginItem } from "@babel/core";
+  import type { PluginTarget } from "@babel/core";
 
-  const babelTransformReactJsx: PluginItem;
+  const babelTransformReactJsx: PluginTarget;
   export default babelTransformReactJsx;
 }

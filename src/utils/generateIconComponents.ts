@@ -11,19 +11,15 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import type { TransformOptions as BabelOptions } from "@babel/core";
-import generate_ from "@babel/generator";
+import type { InputOptions as BabelOptions, NodePath } from "@babel/core";
+import { generate } from "@babel/generator";
 import babelTransformReactJsx from "@babel/plugin-transform-react-jsx";
-import t from "@babel/types";
+import * as t from "@babel/types";
 import { transform as svgrTransform } from "@svgr/core";
 import svgrPluginJsx from "@svgr/plugin-jsx";
 import svgrPluginSvgo from "@svgr/plugin-svgo";
 import { camelCase, startCase } from "lodash-es";
 import type { Config as SvgoConfig } from "svgo";
-
-// Types for the default export of @babel/generator are wrong
-const generate = (generate_ as unknown as { default: typeof generate_ })
-  .default;
 
 /**
  * Generates React components off all the icons discovered in the icons/ folder.
@@ -80,14 +76,14 @@ export default async function generateIconComponents(): Promise<void> {
         jsx: {
           babelConfig: {
             plugins: [
-              {
+              () => ({
                 // This patches the sourceType so that the JSX transform emits ESM code
                 visitor: {
-                  Program(program) {
+                  Program(program: NodePath<t.Program>) {
                     program.node.sourceType = "module";
                   },
                 },
-              },
+              }),
               [babelTransformReactJsx, { runtime: "automatic" }],
             ],
           } satisfies BabelOptions,
