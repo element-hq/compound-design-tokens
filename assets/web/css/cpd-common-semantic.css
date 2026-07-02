@@ -48,6 +48,7 @@
   --cpd-color-bg-accent-hovered: var(--cpd-color-green-1000);
   --cpd-color-bg-accent-pressed: var(--cpd-color-green-1100);
   --cpd-color-bg-accent-selected: var(--cpd-color-alpha-green-300);
+  --cpd-color-bg-accent-subtle: var(--cpd-color-green-200);
   --cpd-color-bg-badge-accent: var(--cpd-color-green-400);
   --cpd-color-bg-badge-info: var(--cpd-color-blue-400);
   --cpd-color-bg-badge-default: var(--cpd-color-theme-bg);

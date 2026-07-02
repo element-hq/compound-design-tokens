@@ -27,6 +27,7 @@ val compoundColorsHcDark = SemanticColors(
     bgAccentPressed = DarkHcColorTokens.colorGreen1100,
     bgAccentRest = DarkHcColorTokens.colorGreen900,
     bgAccentSelected = DarkHcColorTokens.colorAlphaGreen300,
+    bgAccentSubtle = DarkHcColorTokens.colorGreen200,
     bgActionPrimaryDisabled = DarkHcColorTokens.colorGray700,
     bgActionPrimaryHovered = DarkHcColorTokens.colorGray1200,
     bgActionPrimaryPressed = DarkHcColorTokens.colorGray1100,

@@ -27,6 +27,7 @@ val compoundColorsLight = SemanticColors(
     bgAccentPressed = LightColorTokens.colorGreen1100,
     bgAccentRest = LightColorTokens.colorGreen900,
     bgAccentSelected = LightColorTokens.colorAlphaGreen300,
+    bgAccentSubtle = LightColorTokens.colorGreen200,
     bgActionPrimaryDisabled = LightColorTokens.colorGray700,
     bgActionPrimaryHovered = LightColorTokens.colorGray1200,
     bgActionPrimaryPressed = LightColorTokens.colorGray1100,
