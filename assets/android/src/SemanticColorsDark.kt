@@ -102,6 +102,7 @@ val compoundColorsDark = SemanticColors(
     iconSuccessPrimary = DarkColorTokens.colorGreen900,
     iconTertiary = DarkColorTokens.colorGray800,
     iconTertiaryAlpha = DarkColorTokens.colorAlphaGray800,
+    iconWarningPrimary = DarkColorTokens.colorOrange900,
     separatorPrimary = DarkColorTokens.colorGray400,
     separatorSecondary = DarkColorTokens.colorGray300,
     textActionAccent = DarkColorTokens.colorGreen900,
@@ -122,5 +123,6 @@ val compoundColorsDark = SemanticColors(
     textPrimary = DarkColorTokens.colorGray1400,
     textSecondary = DarkColorTokens.colorGray900,
     textSuccessPrimary = DarkColorTokens.colorGreen900,
+    textWarningPrimary = DarkColorTokens.colorOrange900,
     isLight = false,
 )
