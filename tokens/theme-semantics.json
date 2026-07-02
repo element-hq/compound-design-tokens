@@ -277,6 +277,11 @@
           "value": "{color.alpha.green.300}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Selected"
+        },
+        "subtle": {
+          "value": "{color.green.200}",
+          "type": "color",
+          "description": "Accent colour, subtle shade for Text buttons Hover/press"
         }
       },
       "badge": {
