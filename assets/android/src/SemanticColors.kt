@@ -29,6 +29,8 @@ data class SemanticColors(
     val bgAccentRest: Color,
     /** Background colour for accent or brand actions. State: Selected */
     val bgAccentSelected: Color,
+    /** Accent colour, subtle shade for Text buttons Hover/press */
+    val bgAccentSubtle: Color,
     /** Background colour for primary actions. State: Disabled. */
     val bgActionPrimaryDisabled: Color,
     /** Background colour for primary actions. State: Hover. */

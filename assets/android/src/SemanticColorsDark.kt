@@ -27,6 +27,7 @@ val compoundColorsDark = SemanticColors(
     bgAccentPressed = DarkColorTokens.colorGreen1100,
     bgAccentRest = DarkColorTokens.colorGreen900,
     bgAccentSelected = DarkColorTokens.colorAlphaGreen300,
+    bgAccentSubtle = DarkColorTokens.colorGreen200,
     bgActionPrimaryDisabled = DarkColorTokens.colorGray700,
     bgActionPrimaryHovered = DarkColorTokens.colorGray1200,
     bgActionPrimaryPressed = DarkColorTokens.colorGray1100,

@@ -698,6 +698,7 @@ export const cpdColorBgAccentRest = "#37c998";
 export const cpdColorBgAccentHovered = "#61d2a6";
 export const cpdColorBgAccentPressed = "#8fddbc";
 export const cpdColorBgAccentSelected = "hsl(155, 100%, 9%, 1)";
+export const cpdColorBgAccentSubtle = "#002513";
 export const cpdColorBgBadgeAccent = "#003622";
 export const cpdColorBgBadgeInfo = "#032677";
 export const cpdColorBgBadgeDefault = "#101317";

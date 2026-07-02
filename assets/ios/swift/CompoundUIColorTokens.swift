@@ -10,6 +10,7 @@ public class CompoundUIColorTokens {
     public let bgAccentPressed = CompoundCoreUIColorTokens.green1100
     public let bgAccentRest = CompoundCoreUIColorTokens.green900
     public let bgAccentSelected = CompoundCoreUIColorTokens.alphaGreen300
+    public let bgAccentSubtle = CompoundCoreUIColorTokens.green200
     public let bgActionPrimaryDisabled = CompoundCoreUIColorTokens.gray700
     public let bgActionPrimaryHovered = CompoundCoreUIColorTokens.gray1200
     public let bgActionPrimaryPressed = CompoundCoreUIColorTokens.gray1100
