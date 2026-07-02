@@ -475,7 +475,7 @@
         "primary": {
           "value": "{color.orange.900}",
           "type": "color",
-          "description": "Warning icon "
+          "description": "Warning icon"
         }
       }
     },
