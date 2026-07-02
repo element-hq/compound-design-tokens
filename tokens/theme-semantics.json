@@ -106,6 +106,13 @@
           "type": "color",
           "description": "Badge info text colour"
         }
+      },
+      "warning": {
+        "primary": {
+          "value": "{color.orange.900}",
+          "type": "color",
+          "description": "Warning text"
+        }
       }
     },
     "bg": {
@@ -462,6 +469,13 @@
           "value": "{color.theme.bg}",
           "type": "color",
           "description": "Highest contrast icon color on top of high-contrast solid backgrounds like primary, accent, or destructive actions."
+        }
+      },
+      "warning": {
+        "primary": {
+          "value": "{color.orange.900}",
+          "type": "color",
+          "description": "Warning icon"
         }
       }
     },

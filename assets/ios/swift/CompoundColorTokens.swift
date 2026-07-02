@@ -85,6 +85,7 @@ public class CompoundColorTokens {
     public let iconSuccessPrimary = CompoundCoreColorTokens.green900
     public let iconTertiary = CompoundCoreColorTokens.gray800
     public let iconTertiaryAlpha = CompoundCoreColorTokens.alphaGray800
+    public let iconWarningPrimary = CompoundCoreColorTokens.orange900
     public let separatorPrimary = CompoundCoreColorTokens.gray400
     public let separatorSecondary = CompoundCoreColorTokens.gray300
     public let textActionAccent = CompoundCoreColorTokens.green900
@@ -105,5 +106,6 @@ public class CompoundColorTokens {
     public let textPrimary = CompoundCoreColorTokens.gray1400
     public let textSecondary = CompoundCoreColorTokens.gray900
     public let textSuccessPrimary = CompoundCoreColorTokens.green900
+    public let textWarningPrimary = CompoundCoreColorTokens.orange900
     public init() { }
 }
