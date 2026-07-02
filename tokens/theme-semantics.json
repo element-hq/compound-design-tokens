@@ -304,6 +304,11 @@
           "value": "{color.red.300}",
           "type": "color"
         }
+      },
+      "appheader": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "App header background for Web/Desktop apps"
       }
     },
     "border": {
