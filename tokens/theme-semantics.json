@@ -26,6 +26,11 @@
           "value": "{color.green.900}",
           "type": "color",
           "description": "Accent text colour for plain actions."
+        },
+        "success": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Text label success state"
         }
       },
       "link": {
@@ -223,6 +228,21 @@
           "value": "{color.green.200}",
           "type": "color",
           "description": "Subtle background colour for success state elements. State: Rest."
+        },
+        "rest": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Default Background for success states"
+        },
+        "hovered": {
+          "value": "{color.green.1000}",
+          "type": "color",
+          "description": "Hovered Background for success states"
+        },
+        "pressed": {
+          "value": "{color.green.1100}",
+          "type": "color",
+          "description": "Pressed Background for success states"
         }
       },
       "info": {
@@ -368,6 +388,11 @@
           "value": "{color.green.500}",
           "type": "color",
           "description": "Subtle border colour for success state elements."
+        },
+        "primary": {
+          "value": "{color.green.900}",
+          "type": "color",
+          "description": "Border success state"
         }
       },
       "info": {

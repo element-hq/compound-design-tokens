@@ -4,6 +4,7 @@
   --cpd-color-text-disabled: var(--cpd-color-gray-800);
   --cpd-color-text-action-primary: var(--cpd-color-gray-1400);
   --cpd-color-text-action-accent: var(--cpd-color-green-900);
+  --cpd-color-text-action-success: var(--cpd-color-green-900);
   --cpd-color-text-link-external: var(--cpd-color-blue-1100);
   --cpd-color-text-critical-primary: var(--cpd-color-red-900);
   --cpd-color-text-success-primary: var(--cpd-color-green-900);
@@ -37,6 +38,9 @@
   --cpd-color-bg-critical-subtle: var(--cpd-color-red-200);
   --cpd-color-bg-critical-subtle-hovered: var(--cpd-color-red-300);
   --cpd-color-bg-success-subtle: var(--cpd-color-green-200);
+  --cpd-color-bg-success-rest: var(--cpd-color-green-900);
+  --cpd-color-bg-success-hovered: var(--cpd-color-green-1000);
+  --cpd-color-bg-success-pressed: var(--cpd-color-green-1100);
   --cpd-color-bg-info-subtle: var(--cpd-color-blue-200);
   --cpd-color-bg-decorative-1: var(--cpd-color-lime-300);
   --cpd-color-bg-decorative-2: var(--cpd-color-cyan-300);
@@ -64,6 +68,7 @@
   --cpd-color-border-critical-hovered: var(--cpd-color-red-1000);
   --cpd-color-border-critical-subtle: var(--cpd-color-red-500);
   --cpd-color-border-success-subtle: var(--cpd-color-green-500);
+  --cpd-color-border-success-primary: var(--cpd-color-green-900);
   --cpd-color-border-info-subtle: var(--cpd-color-blue-700);
   --cpd-color-border-accent-subtle: var(--cpd-color-green-700);
   --cpd-color-border-accent-primary: var(--cpd-color-green-900);
