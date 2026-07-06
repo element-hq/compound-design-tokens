@@ -119,12 +119,17 @@
       "subtle-primary": {
         "value": "{color.gray.400}",
         "type": "color",
-        "description": "Medium contrast surfaces.\nElevation: Default (Level 2)."
+        "description": "Medium contrast surfaces.\nElevation: Default (Level 3)."
       },
       "subtle-secondary": {
         "value": "{color.gray.300}",
         "type": "color",
-        "description": "Low contrast surfaces.\nElevation: Default (Level 1)."
+        "description": "Low contrast surfaces.\nElevation: Default (Level 2)."
+      },
+      "subtle-tertiary": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "Lowest contrast surfaces.\nElevation: Default (Level 1)."
       },
       "canvas": {
         "default": {
@@ -316,11 +321,6 @@
           "value": "{color.red.300}",
           "type": "color"
         }
-      },
-      "appheader": {
-        "value": "{color.gray.100}",
-        "type": "color",
-        "description": "App header background for Web/Desktop apps"
       }
     },
     "border": {
