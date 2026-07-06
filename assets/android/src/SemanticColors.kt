@@ -29,6 +29,8 @@ data class SemanticColors(
     val bgAccentRest: Color,
     /** Background colour for accent or brand actions. State: Selected */
     val bgAccentSelected: Color,
+    /** Accent colour, subtle shade for Text buttons Hover/press */
+    val bgAccentSubtle: Color,
     /** Background colour for primary actions. State: Disabled. */
     val bgActionPrimaryDisabled: Color,
     /** Background colour for primary actions. State: Hover. */
@@ -173,6 +175,8 @@ data class SemanticColors(
     val iconTertiary: Color,
     /** Translucent version of tertiary icon. Refer to it for intended use. */
     val iconTertiaryAlpha: Color,
+    /** Warning icon */
+    val iconWarningPrimary: Color,
     /** Used to separate core sections of the UI as well as containers */
     val separatorPrimary: Color,
     /** Secondary shade for separating sections of components or list items */
@@ -213,6 +217,8 @@ data class SemanticColors(
     val textSecondary: Color,
     /** Accent text colour for success state elements. */
     val textSuccessPrimary: Color,
+    /** Warning text */
+    val textWarningPrimary: Color,
     /** True for light theme, false for dark theme. */
     val isLight: Boolean,
 )
