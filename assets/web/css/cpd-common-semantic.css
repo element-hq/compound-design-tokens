@@ -20,6 +20,7 @@
   --cpd-color-text-warning-primary: var(--cpd-color-orange-900);
   --cpd-color-bg-subtle-primary: var(--cpd-color-gray-400);
   --cpd-color-bg-subtle-secondary: var(--cpd-color-gray-300);
+  --cpd-color-bg-subtle-tertiary: var(--cpd-color-gray-100);
   --cpd-color-bg-canvas-default: var(--cpd-color-theme-bg);
   --cpd-color-bg-canvas-disabled: var(--cpd-color-gray-200);
   --cpd-color-bg-action-primary-rest: var(--cpd-color-gray-1400);

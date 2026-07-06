@@ -642,6 +642,7 @@ export const cpdColorTextBadgeInfo: string;
 export const cpdColorTextWarningPrimary: string;
 export const cpdColorBgSubtlePrimary: string;
 export const cpdColorBgSubtleSecondary: string;
+export const cpdColorBgSubtleTertiary: string;
 export const cpdColorBgCanvasDefault: string;
 export const cpdColorBgCanvasDisabled: string;
 export const cpdColorBgCanvasDefaultLevel1: string;

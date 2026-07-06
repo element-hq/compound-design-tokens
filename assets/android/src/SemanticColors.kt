@@ -85,12 +85,14 @@ data class SemanticColors(
     val bgDecorative6: Color,
     /** Subtle background colour for informational elements. State: Rest. */
     val bgInfoSubtle: Color,
-    /** Medium contrast surfaces. Elevation: Default (Level 2). */
+    /** Medium contrast surfaces. Elevation: Default (Level 3). */
     val bgSubtlePrimary: Color,
-    /** Low contrast surfaces. Elevation: Default (Level 1). */
+    /** Low contrast surfaces. Elevation: Default (Level 2). */
     val bgSubtleSecondary: Color,
     /** Lower contrast surfaces. Elevation: Level 0. */
     val bgSubtleSecondaryLevel0: Color,
+    /** Lowest contrast surfaces. Elevation: Default (Level 1). */
+    val bgSubtleTertiary: Color,
     /** Subtle background colour for success state elements. State: Rest. */
     val bgSuccessSubtle: Color,
     /** Accent borders for containers */
