@@ -10,6 +10,7 @@ public class CompoundColorTokens {
     public let bgAccentPressed = CompoundCoreColorTokens.green1100
     public let bgAccentRest = CompoundCoreColorTokens.green900
     public let bgAccentSelected = CompoundCoreColorTokens.alphaGreen300
+    public let bgAccentSubtle = CompoundCoreColorTokens.green200
     public let bgActionPrimaryDisabled = CompoundCoreColorTokens.gray700
     public let bgActionPrimaryHovered = CompoundCoreColorTokens.gray1200
     public let bgActionPrimaryPressed = CompoundCoreColorTokens.gray1100
@@ -85,6 +86,7 @@ public class CompoundColorTokens {
     public let iconSuccessPrimary = CompoundCoreColorTokens.green900
     public let iconTertiary = CompoundCoreColorTokens.gray800
     public let iconTertiaryAlpha = CompoundCoreColorTokens.alphaGray800
+    public let iconWarningPrimary = CompoundCoreColorTokens.orange900
     public let separatorPrimary = CompoundCoreColorTokens.gray400
     public let separatorSecondary = CompoundCoreColorTokens.gray300
     public let textActionAccent = CompoundCoreColorTokens.green900
@@ -105,5 +107,6 @@ public class CompoundColorTokens {
     public let textPrimary = CompoundCoreColorTokens.gray1400
     public let textSecondary = CompoundCoreColorTokens.gray900
     public let textSuccessPrimary = CompoundCoreColorTokens.green900
+    public let textWarningPrimary = CompoundCoreColorTokens.orange900
     public init() { }
 }

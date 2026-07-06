@@ -1716,7 +1716,10 @@
       "color.bg.success.hovered": "S:bcfbb60be1722c7820b38b920dc28b5f40883e61,",
       "color.bg.success.pressed": "S:d149e21b01b86f32d237ee99d082662a9474872c,",
       "color.text.action.success": "S:1d712e5f8ec3d023de25db292a9256f8e9a18d7c,",
-      "color.border.success.primary": "S:967dce92f6cc2c3c6dcdf6a3f7c790c244f433a6,"
+      "color.border.success.primary": "S:967dce92f6cc2c3c6dcdf6a3f7c790c244f433a6,",
+      "color.icon.warning.primary": "S:6b94823f3903ad6f6fa69121e6b7b598c4f82f10,",
+      "color.text.warning.primary": "S:ddc2b3420d54dd22a7cdb7283193e70960227787,",
+      "color.bg.accent.subtle": "S:50fbadaa53f95ee6c1c9fa1db0811f79dfeae19d,"
     },
     "$figmaVariableReferences": {}
   }
