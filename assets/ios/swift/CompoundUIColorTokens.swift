@@ -45,6 +45,9 @@ public class CompoundUIColorTokens {
     public let bgSubtleSecondary = CompoundCoreUIColorTokens.gray300
     public let bgSubtleSecondaryLevel0 = UIColor(named: "bgSubtleSecondaryLevel0", in: Bundle.module, compatibleWith: nil)!
     public let bgSubtleTertiary = CompoundCoreUIColorTokens.gray100
+    public let bgSuccessHovered = CompoundCoreUIColorTokens.green1000
+    public let bgSuccessPressed = CompoundCoreUIColorTokens.green1100
+    public let bgSuccessRest = CompoundCoreUIColorTokens.green900
     public let bgSuccessSubtle = CompoundCoreUIColorTokens.green200
     public let borderAccentPrimary = CompoundCoreUIColorTokens.green900
     public let borderAccentSubtle = CompoundCoreUIColorTokens.green700
@@ -57,6 +60,7 @@ public class CompoundUIColorTokens {
     public let borderInteractiveHovered = CompoundCoreUIColorTokens.gray1100
     public let borderInteractivePrimary = CompoundCoreUIColorTokens.gray800
     public let borderInteractiveSecondary = CompoundCoreUIColorTokens.gray600
+    public let borderSuccessPrimary = CompoundCoreUIColorTokens.green900
     public let borderSuccessSubtle = CompoundCoreUIColorTokens.green500
     public let gradientActionStop1 = UIColor(named: "gradientActionStop1", in: Bundle.module, compatibleWith: nil)!
     public let gradientActionStop2 = UIColor(named: "gradientActionStop2", in: Bundle.module, compatibleWith: nil)!
@@ -92,6 +96,7 @@ public class CompoundUIColorTokens {
     public let separatorSecondary = CompoundCoreUIColorTokens.gray300
     public let textActionAccent = CompoundCoreUIColorTokens.green900
     public let textActionPrimary = CompoundCoreUIColorTokens.gray1400
+    public let textActionSuccess = CompoundCoreUIColorTokens.green900
     public let textBadgeAccent = CompoundCoreUIColorTokens.green1100
     public let textBadgeInfo = CompoundCoreUIColorTokens.blue1100
     public let textCriticalPrimary = CompoundCoreUIColorTokens.red900

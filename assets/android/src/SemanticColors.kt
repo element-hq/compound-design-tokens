@@ -93,6 +93,12 @@ data class SemanticColors(
     val bgSubtleSecondaryLevel0: Color,
     /** Lowest contrast surfaces. Elevation: Default (Level 1). */
     val bgSubtleTertiary: Color,
+    /** Hovered Background for success states */
+    val bgSuccessHovered: Color,
+    /** Pressed Background for success states */
+    val bgSuccessPressed: Color,
+    /** Default Background for success states */
+    val bgSuccessRest: Color,
     /** Subtle background colour for success state elements. State: Rest. */
     val bgSuccessSubtle: Color,
     /** Accent borders for containers */
@@ -117,6 +123,8 @@ data class SemanticColors(
     val borderInteractivePrimary: Color,
     /** ⚠️ Lowest contrast for non-accessible interactive element borders, <3:1. Only use for non-essential borders. Do not rely exclusively on them. State: Rest. */
     val borderInteractiveSecondary: Color,
+    /** Border success state */
+    val borderSuccessPrimary: Color,
     /** Subtle border colour for success state elements. */
     val borderSuccessSubtle: Color,
     /** Background gradient stop for super and send buttons */
@@ -187,6 +195,8 @@ data class SemanticColors(
     val textActionAccent: Color,
     /** Default text colour for plain actions. */
     val textActionPrimary: Color,
+    /** Text label success state */
+    val textActionSuccess: Color,
     /** Badge accent text colour */
     val textBadgeAccent: Color,
     /** Badge info text colour */
