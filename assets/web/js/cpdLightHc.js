@@ -671,6 +671,7 @@ export const cpdColorTextBadgeInfo = "#043088";
 export const cpdColorTextWarningPrimary = "#931700";
 export const cpdColorBgSubtlePrimary = "#d7dce3";
 export const cpdColorBgSubtleSecondary = "#e1e6ec";
+export const cpdColorBgSubtleTertiary = "#f7f9fa";
 export const cpdColorBgCanvasDefault = "#ffffff";
 export const cpdColorBgCanvasDisabled = "#f0f2f5";
 export const cpdColorBgCanvasDefaultLevel1 = "#ffffff";

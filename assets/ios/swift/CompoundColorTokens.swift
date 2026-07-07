@@ -44,6 +44,7 @@ public class CompoundColorTokens {
     public let bgSubtlePrimary = CompoundCoreColorTokens.gray400
     public let bgSubtleSecondary = CompoundCoreColorTokens.gray300
     public let bgSubtleSecondaryLevel0 = Color("bgSubtleSecondaryLevel0", bundle: Bundle.module)
+    public let bgSubtleTertiary = CompoundCoreColorTokens.gray100
     public let bgSuccessHovered = CompoundCoreColorTokens.green1000
     public let bgSuccessPressed = CompoundCoreColorTokens.green1100
     public let bgSuccessRest = CompoundCoreColorTokens.green900

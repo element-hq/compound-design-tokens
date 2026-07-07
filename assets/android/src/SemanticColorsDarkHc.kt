@@ -61,6 +61,7 @@ val compoundColorsHcDark = SemanticColors(
     bgSubtlePrimary = DarkHcColorTokens.colorGray400,
     bgSubtleSecondary = DarkHcColorTokens.colorGray300,
     bgSubtleSecondaryLevel0 = DarkHcColorTokens.colorThemeBg,
+    bgSubtleTertiary = DarkHcColorTokens.colorGray100,
     bgSuccessHovered = DarkHcColorTokens.colorGreen1000,
     bgSuccessPressed = DarkHcColorTokens.colorGreen1100,
     bgSuccessRest = DarkHcColorTokens.colorGreen900,
