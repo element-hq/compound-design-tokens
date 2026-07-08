@@ -10,7 +10,7 @@ Please see LICENSE files in the repository root for full details.
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import _ from "lodash";
+import { template } from "lodash-es";
 import type { TransformedToken } from "style-dictionary";
 import type { FormatFnArguments } from "style-dictionary/types";
 import {
@@ -30,7 +30,7 @@ export default async function createTemplate(
   templatePath: string,
   args: FormatFnArguments | null,
 ) {
-  const template = _.template(
+  const compiledTemplate = template(
     fs
       .readFileSync(
         path.join(fileURLToPath(new URL(".", import.meta.url)), templatePath),
@@ -66,7 +66,7 @@ export default async function createTemplate(
     if (typeof headerResult !== "string")
       throw new Error(`header is ${headerResult}`);
 
-    return template({
+    return compiledTemplate({
       allTokens,
       file,
       options,
@@ -75,5 +75,5 @@ export default async function createTemplate(
     });
   }
   // Path for very simple templates
-  return template();
+  return compiledTemplate();
 }
