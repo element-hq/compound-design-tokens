@@ -2,16 +2,17 @@
   "name": "@vector-im/compound-design-tokens",
   "version": "10.2.2",
   "description": "Compound design tokens",
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b",
   "sideEffects": false,
   "scripts": {
     "build": "vite build && tsx ./build.ts",
     "sync:icons": "tsx src/syncIcons.ts",
     "dev": "http-server .",
     "dev:colors": "vite --open src/colors/applet.html",
-    "format": "yarn exec biome -- format",
-    "lint": "yarn exec biome -- lint",
-    "check": "yarn exec biome -- check",
-    "types": "yarn exec tsc -- --noEmit"
+    "format": "biome format",
+    "lint": "biome lint",
+    "check": "biome check",
+    "types": "tsc --noEmit"
   },
   "keywords": [
     "compound",
@@ -85,7 +86,6 @@
     "vite": "^8.0.0",
     "zod": "^4.0.0"
   },
-  "dependencies": {},
   "peerDependencies": {
     "@types/react": "*",
     "react": "^17 || ^18 || ^19.0.0"
