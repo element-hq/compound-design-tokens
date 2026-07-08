@@ -68,6 +68,7 @@
     "@svgr/plugin-svgo": "^8.1.0",
     "@tokens-studio/sd-transforms": "^2.0.0",
     "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^24.0.0",
