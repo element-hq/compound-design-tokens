@@ -9,15 +9,15 @@ These generated files live in the `assets/` folder, and the code that generates 
 Generate them by running:
 
 ```
-yarn build
+pnpm build
 ```
 
 If you change the code, make sure it is formatted correctly and free of lint errors.
 You can do this by running:
 
 ```
-yarn run check --write
+pnpm check --write
 ```
 
 This will format your code and automatically apply any lint fixes that are considered 'safe', all at once.
-There's also `yarn format` and `yarn lint` if you want to do them individually.
+There's also `pnpm format` and `pnpm lint` if you want to do them individually.

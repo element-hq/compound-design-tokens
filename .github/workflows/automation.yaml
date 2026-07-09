@@ -13,15 +13,17 @@ jobs:
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
+      - name: Install pnpm
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
       - name: Set up cache
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: "lts/*"
-          cache: yarn
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Check types
-        run: yarn types
+        run: pnpm types
 
   lint:
     name: Lint
@@ -31,15 +33,17 @@ jobs:
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
+      - name: Install pnpm
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
       - name: Set up cache
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: "lts/*"
-          cache: yarn
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Lint
-        run: yarn exec biome -- ci
+        run: pnpm exec biome ci
 
   build:
     name: Check that generated files are up to date
@@ -49,15 +53,17 @@ jobs:
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
+      - name: Install pnpm
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
       - name: Set up cache
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: "lts/*"
-          cache: yarn
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Build generated files
-        run: yarn build
+        run: pnpm build
       - name: Check for changes
         run: >
           if [ -z "$(git status --porcelain)" ];
@@ -65,7 +71,7 @@ jobs:
             echo "Generated files are up to date."
             exit 0
           else
-            echo "The files below have not been regenerated. Please run 'yarn build' to fix this."
+            echo "The files below have not been regenerated. Please run 'pnpm build' to fix this."
             echo "$(git status)"
             exit 1
           fi
