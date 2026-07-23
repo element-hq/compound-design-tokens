@@ -22,7 +22,8 @@
   ],
   "files": [
     "./assets/web/**/*",
-    "./icons/**/*"
+    "./icons/**/*",
+    "./src/colors/*"
   ],
   "main": "assets/web/js/index.js",
   "type": "module",
