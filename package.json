@@ -22,7 +22,8 @@
   ],
   "files": [
     "./assets/web/**/*",
-    "./icons/**/*"
+    "./icons/**/*",
+    "./src/colors/**/*"
   ],
   "main": "assets/web/js/index.js",
   "type": "module",
@@ -88,10 +89,18 @@
     "zod": "^4.0.0"
   },
   "peerDependencies": {
+    "@adobe/leonardo-contrast-colors": "^1.0.0",
     "@types/react": "*",
+    "chroma-js": "^3.0.0",
     "react": "^17 || ^18 || ^19.0.0"
   },
   "peerDependenciesMeta": {
+    "@adobe/leonardo-contrast-colors": {
+      "optional": true
+    },
+    "chroma-js": {
+      "optional": true
+    },
     "react": {
       "optional": true
     },
