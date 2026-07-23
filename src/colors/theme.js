@@ -1,6 +1,6 @@
 import { BackgroundColor, Color, Theme } from "@adobe/leonardo-contrast-colors";
 import chroma from "chroma-js";
-import { getAlphaColor, hslaToHex } from "./alphredo";
+import { getAlphaColor, hslaToHex } from "./alphredo.js";
 
 // Color spaces for color interpolation
 // CAM02, CAM02p, LCH, LAB, HSL, HSLuv, HSV, RGB, OKLAB, OKLCH
