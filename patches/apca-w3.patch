@@ -1,0 +1,31 @@
+diff --git a/src/apca-w3.js b/src/apca-w3.js
+index 07b4451b88818163d8e3db0a7058261757353069..75013b517672ef5799a36937dbf0f9f995f7a817 100644
+--- a/src/apca-w3.js
++++ b/src/apca-w3.js
+@@ -135,7 +135,6 @@
+ /*    ////  LOCAL TESTING SWITCH for using test.html
+     import{colorParsley}from'../node_modules/colorparsley/src/colorparsley.js';
+ /*/   //// TOGGLE
+-    import { colorParsley } from 'colorparsley';
+ // */ //// END LOCAL TESTING SWITCH
+ 
+ 
+@@ -426,18 +425,6 @@ export function reverseAPCA (contrast = 0,knownY = 1.0,
+ 
+ 
+ 
+-//////////  ƒ  calcAPCA()  /////////////////////////////////////////////
+-export function calcAPCA (textColor, bgColor, places = -1, round = true) {
+-
+-        // Note that this function requires colorParsley !!
+-	let bgClr = colorParsley(bgColor);
+-	let txClr = colorParsley(textColor);
+-	let hasAlpha = (txClr[3] == '' || txClr[3] == 1) ? false : true ;
+-
+-	if (hasAlpha) { txClr = alphaBlend( txClr, bgClr, round); };
+-
+-	return APCAcontrast( sRGBtoY(txClr), sRGBtoY(bgClr), places)
+-} // End calcAPCA()
+ 
+ 
+ 
