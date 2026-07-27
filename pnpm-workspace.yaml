@@ -3,3 +3,12 @@ onlyBuiltDependencies:
 
 allowBuilds:
   esbuild: true
+
+overrides:
+  # AGPL code which adobe leonardo doesn't actually call upon
+  colorparsley: "-"
+
+patchedDependencies:
+  # Patch out unconditional import of colorparsley
+  apca-w3: patches/apca-w3.patch
+
