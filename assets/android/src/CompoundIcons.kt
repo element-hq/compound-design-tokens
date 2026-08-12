@@ -286,6 +286,12 @@ object CompoundIcons {
     @Composable fun Host(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_host)
     }
+    @Composable fun Hourglass(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_hourglass)
+    }
+    @Composable fun HourglassSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_hourglass_solid)
+    }
     @Composable fun Image(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_image)
     }
@@ -814,6 +820,8 @@ object CompoundIcons {
         Home(),
         HomeSolid(),
         Host(),
+        Hourglass(),
+        HourglassSolid(),
         Image(),
         ImageError(),
         IndentDecrease(),
@@ -1051,6 +1059,8 @@ object CompoundIcons {
         R.drawable.ic_compound_home,
         R.drawable.ic_compound_home_solid,
         R.drawable.ic_compound_host,
+        R.drawable.ic_compound_hourglass,
+        R.drawable.ic_compound_hourglass_solid,
         R.drawable.ic_compound_image,
         R.drawable.ic_compound_image_error,
         R.drawable.ic_compound_indent_decrease,

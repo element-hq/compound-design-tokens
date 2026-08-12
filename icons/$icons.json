@@ -935,6 +935,14 @@
     "save-solid": {
       "value": "icons/save-solid.svg",
       "type": "icon"
+    },
+    "hourglass-solid": {
+      "value": "icons/hourglass-solid.svg",
+      "type": "icon"
+    },
+    "hourglass": {
+      "value": "icons/hourglass.svg",
+      "type": "icon"
     }
   }
 }

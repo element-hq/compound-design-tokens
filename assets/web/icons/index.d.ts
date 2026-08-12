@@ -86,6 +86,8 @@ export { default as HistoryIcon } from "./history.js";
 export { default as HomeSolidIcon } from "./home-solid.js";
 export { default as HomeIcon } from "./home.js";
 export { default as HostIcon } from "./host.js";
+export { default as HourglassSolidIcon } from "./hourglass-solid.js";
+export { default as HourglassIcon } from "./hourglass.js";
 export { default as ImageErrorIcon } from "./image-error.js";
 export { default as ImageIcon } from "./image.js";
 export { default as IndentDecreaseIcon } from "./indent-decrease.js";
