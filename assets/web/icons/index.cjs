@@ -87,6 +87,8 @@ module.exports = {
   HomeSolidIcon: require("./home-solid.cjs"),
   HomeIcon: require("./home.cjs"),
   HostIcon: require("./host.cjs"),
+  HourglassSolidIcon: require("./hourglass-solid.cjs"),
+  HourglassIcon: require("./hourglass.cjs"),
   ImageErrorIcon: require("./image-error.cjs"),
   ImageIcon: require("./image.cjs"),
   IndentDecreaseIcon: require("./indent-decrease.cjs"),
