@@ -107,7 +107,7 @@ importers:
         version: 7.0.2
       undici:
         specifier: ^8.0.0
-        version: 8.7.0
+        version: 8.9.0
       vite:
         specifier: ^8.0.0
         version: 8.1.4(@types/node@24.13.3)(esbuild@0.28.1)(tsx@4.23.1)
@@ -1810,8 +1810,8 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  undici@8.7.0:
-    resolution: {integrity: sha512-N7iQtfyLhIMOFgQubvmLV26svHpO0bqKnAiWotTQCVKCmWrcGbBotPuW1x+xwYZ2VHdSTVUfPQQnlEt1/LouTQ==}
+  undici@8.9.0:
+    resolution: {integrity: sha512-aWZpUj7XoGonMClx4gdDRfgBjqeA+F473aDmROQQbM9n6PRfK/u1q/a0X4wMTgcHfT8H6fpbt98PFuDUwFg2YA==}
     engines: {node: '>=22.19.0'}
 
   union@0.5.0:
@@ -3504,7 +3504,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  undici@8.7.0: {}
+  undici@8.9.0: {}
 
   union@0.5.0:
     dependencies:
