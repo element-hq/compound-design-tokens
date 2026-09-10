@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-public class CompoundColorTokens {
+public final class CompoundColorTokens: Sendable {
     public let bgAccentHovered = CompoundCoreColorTokens.green1000
     public let bgAccentPressed = CompoundCoreColorTokens.green1100
     public let bgAccentRest = CompoundCoreColorTokens.green900

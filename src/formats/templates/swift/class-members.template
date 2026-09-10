@@ -25,7 +25,7 @@
   }).join('\n')
 %>
 
-<%= options.accessControl %> <%= options.objectType %> <%= options.className %> {
+<%= options.accessControl %> <%= options.objectType %> <%= options.className %><%= options.conformances ? `: ${options.conformances.join(", ")}` : "" %> {
     <%= allTokens.map(function(prop) {
       let formatted = formatProperty(prop);
       if (options.postProcessSemanticColorToken) {
