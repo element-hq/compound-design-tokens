@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-public class CompoundIcons {
+public final class CompoundIcons: Sendable {
     public let `public` = Image("public", bundle: Bundle.module)
     public let admin = Image("admin", bundle: Bundle.module)
     public let advancedSettings = Image("advancedSettings", bundle: Bundle.module)

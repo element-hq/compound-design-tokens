@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class CompoundUIColorTokens {
+public final class CompoundUIColorTokens: Sendable {
     public let bgAccentHovered = CompoundCoreUIColorTokens.green1000
     public let bgAccentPressed = CompoundCoreUIColorTokens.green1100
     public let bgAccentRest = CompoundCoreUIColorTokens.green900
