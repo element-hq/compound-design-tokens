@@ -180,6 +180,7 @@ export { default as ShareIcon } from "./share.js";
 export { default as ShieldIcon } from "./shield.js";
 export { default as SidebarIcon } from "./sidebar.js";
 export { default as SignOutIcon } from "./sign-out.js";
+export { default as SmartTilesIcon } from "./smart-tiles.js";
 export { default as SpaceSolidIcon } from "./space-solid.js";
 export { default as SpaceIcon } from "./space.js";
 export { default as SpinnerIcon } from "./spinner.js";

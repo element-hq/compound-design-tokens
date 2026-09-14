@@ -943,6 +943,10 @@
     "hourglass": {
       "value": "icons/hourglass.svg",
       "type": "icon"
+    },
+    "smart-tiles": {
+      "value": "icons/smart-tiles.svg",
+      "type": "icon"
     }
   }
 }

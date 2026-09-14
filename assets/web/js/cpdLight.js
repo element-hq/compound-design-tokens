@@ -341,6 +341,7 @@ export const cpdIconUnsave = "icons/unsave.svg";
 export const cpdIconSaveSolid = "icons/save-solid.svg";
 export const cpdIconHourglassSolid = "icons/hourglass-solid.svg";
 export const cpdIconHourglass = "icons/hourglass.svg";
+export const cpdIconSmartTiles = "icons/smart-tiles.svg";
 export const cpdColorThemeBg = "#ffffff";
 export const cpdColorGray100 = "#fbfcfd";
 export const cpdColorGray200 = "#f7f9fa";

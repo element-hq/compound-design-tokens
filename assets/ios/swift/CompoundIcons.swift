@@ -188,6 +188,7 @@ public final class CompoundIcons: Sendable {
     public let shield = Image("shield", bundle: Bundle.module)
     public let sidebar = Image("sidebar", bundle: Bundle.module)
     public let signOut = Image("signOut", bundle: Bundle.module)
+    public let smartTiles = Image("smartTiles", bundle: Bundle.module)
     public let space = Image("space", bundle: Bundle.module)
     public let spaceSolid = Image("spaceSolid", bundle: Bundle.module)
     public let spinner = Image("spinner", bundle: Bundle.module)
