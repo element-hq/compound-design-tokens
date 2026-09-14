@@ -181,6 +181,7 @@ module.exports = {
   ShieldIcon: require("./shield.cjs"),
   SidebarIcon: require("./sidebar.cjs"),
   SignOutIcon: require("./sign-out.cjs"),
+  SmartTilesIcon: require("./smart-tiles.cjs"),
   SpaceSolidIcon: require("./space-solid.cjs"),
   SpaceIcon: require("./space.cjs"),
   SpinnerIcon: require("./spinner.cjs"),

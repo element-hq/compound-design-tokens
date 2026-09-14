@@ -313,6 +313,7 @@ export const cpdIconUnsave: string;
 export const cpdIconSaveSolid: string;
 export const cpdIconHourglassSolid: string;
 export const cpdIconHourglass: string;
+export const cpdIconSmartTiles: string;
 export const cpdColorThemeBg: string;
 export const cpdColorGray100: string;
 export const cpdColorGray200: string;

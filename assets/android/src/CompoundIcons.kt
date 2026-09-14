@@ -568,6 +568,9 @@ object CompoundIcons {
     @Composable fun SignOut(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_sign_out)
     }
+    @Composable fun SmartTiles(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_smart_tiles)
+    }
     @Composable fun Space(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_space)
     }
@@ -914,6 +917,7 @@ object CompoundIcons {
         Shield(),
         Sidebar(),
         SignOut(),
+        SmartTiles(),
         Space(),
         SpaceSolid(),
         Spinner(),
@@ -1153,6 +1157,7 @@ object CompoundIcons {
         R.drawable.ic_compound_shield,
         R.drawable.ic_compound_sidebar,
         R.drawable.ic_compound_sign_out,
+        R.drawable.ic_compound_smart_tiles,
         R.drawable.ic_compound_space,
         R.drawable.ic_compound_space_solid,
         R.drawable.ic_compound_spinner,
