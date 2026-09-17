@@ -64,6 +64,9 @@ object CompoundIcons {
     @Composable fun Block(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_block)
     }
+    @Composable fun Blur(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_blur)
+    }
     @Composable fun Bold(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_bold)
     }
@@ -261,6 +264,9 @@ object CompoundIcons {
     }
     @Composable fun Guest(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_guest)
+    }
+    @Composable fun GuestSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_guest_solid)
     }
     @Composable fun HeadphonesOffSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_headphones_off_solid)
@@ -568,6 +574,9 @@ object CompoundIcons {
     @Composable fun SignOut(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_sign_out)
     }
+    @Composable fun SmartTiles(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_smart_tiles)
+    }
     @Composable fun Space(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_space)
     }
@@ -746,6 +755,7 @@ object CompoundIcons {
         Backspace(),
         BackspaceSolid(),
         Block(),
+        Blur(),
         Bold(),
         Bug(),
         Calendar(),
@@ -812,6 +822,7 @@ object CompoundIcons {
         Grid(),
         Group(),
         Guest(),
+        GuestSolid(),
         HeadphonesOffSolid(),
         HeadphonesSolid(),
         Help(),
@@ -914,6 +925,7 @@ object CompoundIcons {
         Shield(),
         Sidebar(),
         SignOut(),
+        SmartTiles(),
         Space(),
         SpaceSolid(),
         Spinner(),
@@ -985,6 +997,7 @@ object CompoundIcons {
         R.drawable.ic_compound_backspace,
         R.drawable.ic_compound_backspace_solid,
         R.drawable.ic_compound_block,
+        R.drawable.ic_compound_blur,
         R.drawable.ic_compound_bold,
         R.drawable.ic_compound_bug,
         R.drawable.ic_compound_calendar,
@@ -1051,6 +1064,7 @@ object CompoundIcons {
         R.drawable.ic_compound_grid,
         R.drawable.ic_compound_group,
         R.drawable.ic_compound_guest,
+        R.drawable.ic_compound_guest_solid,
         R.drawable.ic_compound_headphones_off_solid,
         R.drawable.ic_compound_headphones_solid,
         R.drawable.ic_compound_help,
@@ -1153,6 +1167,7 @@ object CompoundIcons {
         R.drawable.ic_compound_shield,
         R.drawable.ic_compound_sidebar,
         R.drawable.ic_compound_sign_out,
+        R.drawable.ic_compound_smart_tiles,
         R.drawable.ic_compound_space,
         R.drawable.ic_compound_space_solid,
         R.drawable.ic_compound_spinner,

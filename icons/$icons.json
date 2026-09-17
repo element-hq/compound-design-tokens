@@ -824,8 +824,8 @@
       "value": "icons/space-solid.svg",
       "type": "icon"
     },
-    "guest": {
-      "value": "icons/guest.svg",
+    "guest-solid": {
+      "value": "icons/guest-solid.svg",
       "type": "icon"
     },
     "left-panel-close": {
@@ -942,6 +942,18 @@
     },
     "hourglass": {
       "value": "icons/hourglass.svg",
+      "type": "icon"
+    },
+    "smart-tiles": {
+      "value": "icons/smart-tiles.svg",
+      "type": "icon"
+    },
+    "blur": {
+      "value": "icons/blur.svg",
+      "type": "icon"
+    },
+    "guest": {
+      "value": "icons/guest.svg",
       "type": "icon"
     }
   }
