@@ -121,6 +121,12 @@ object CompoundIcons {
     @Composable fun Close(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_close)
     }
+    @Composable fun ClosedCaptions(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_closed_captions)
+    }
+    @Composable fun ClosedCaptionsSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_closed_captions_solid)
+    }
     @Composable fun Cloud(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_cloud)
     }
@@ -774,6 +780,8 @@ object CompoundIcons {
         ChevronUpDown(),
         Circle(),
         Close(),
+        ClosedCaptions(),
+        ClosedCaptionsSolid(),
         Cloud(),
         CloudSolid(),
         Code(),
@@ -1016,6 +1024,8 @@ object CompoundIcons {
         R.drawable.ic_compound_chevron_up_down,
         R.drawable.ic_compound_circle,
         R.drawable.ic_compound_close,
+        R.drawable.ic_compound_closed_captions,
+        R.drawable.ic_compound_closed_captions_solid,
         R.drawable.ic_compound_cloud,
         R.drawable.ic_compound_cloud_solid,
         R.drawable.ic_compound_code,

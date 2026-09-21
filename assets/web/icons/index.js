@@ -31,6 +31,8 @@ export { default as ChevronUpDownIcon } from "./chevron-up-down.js";
 export { default as ChevronUpIcon } from "./chevron-up.js";
 export { default as CircleIcon } from "./circle.js";
 export { default as CloseIcon } from "./close.js";
+export { default as ClosedCaptionsIcon } from "./closed-captions-.js";
+export { default as ClosedCaptionsSolidIcon } from "./closed-captions-solid.js";
 export { default as CloudSolidIcon } from "./cloud-solid.js";
 export { default as CloudIcon } from "./cloud.js";
 export { default as CodeIcon } from "./code.js";
