@@ -40,6 +40,8 @@ public final class CompoundIcons: Sendable {
     public let chevronUpDown = Image("chevronUpDown", bundle: Bundle.module)
     public let circle = Image("circle", bundle: Bundle.module)
     public let close = Image("close", bundle: Bundle.module)
+    public let closedCaptions = Image("closedCaptions", bundle: Bundle.module)
+    public let closedCaptionsSolid = Image("closedCaptionsSolid", bundle: Bundle.module)
     public let cloud = Image("cloud", bundle: Bundle.module)
     public let cloudSolid = Image("cloudSolid", bundle: Bundle.module)
     public let code = Image("code", bundle: Bundle.module)

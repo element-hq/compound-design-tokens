@@ -32,6 +32,8 @@ module.exports = {
   ChevronUpIcon: require("./chevron-up.cjs"),
   CircleIcon: require("./circle.cjs"),
   CloseIcon: require("./close.cjs"),
+  ClosedCaptionsIcon: require("./closed-captions-.cjs"),
+  ClosedCaptionsSolidIcon: require("./closed-captions-solid.cjs"),
   CloudSolidIcon: require("./cloud-solid.cjs"),
   CloudIcon: require("./cloud.cjs"),
   CodeIcon: require("./code.cjs"),

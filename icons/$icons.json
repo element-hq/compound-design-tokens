@@ -864,6 +864,14 @@
       "value": "icons/translate.svg",
       "type": "icon"
     },
+    "closed-captions-solid": {
+      "value": "icons/closed-captions-solid.svg",
+      "type": "icon"
+    },
+    "closed-captions-": {
+      "value": "icons/closed-captions-.svg",
+      "type": "icon"
+    },
     "rotate-left": {
       "value": "icons/rotate-left.svg",
       "type": "icon"

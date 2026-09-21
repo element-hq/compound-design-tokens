@@ -293,6 +293,8 @@ export const cpdIconAdvancedSettings: string;
 export const cpdIconTree: string;
 export const cpdIconBug: string;
 export const cpdIconTranslate: string;
+export const cpdIconClosedCaptionsSolid: string;
+export const cpdIconClosedCaptions: string;
 export const cpdIconRotateLeft: string;
 export const cpdIconRotateRight: string;
 export const cpdIconZoomIn: string;
