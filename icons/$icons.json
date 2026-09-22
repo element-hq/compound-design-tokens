@@ -864,12 +864,12 @@
       "value": "icons/translate.svg",
       "type": "icon"
     },
-    "closed-captions-solid": {
-      "value": "icons/closed-captions-solid.svg",
+    "captions-solid": {
+      "value": "icons/captions-solid.svg",
       "type": "icon"
     },
-    "closed-captions-": {
-      "value": "icons/closed-captions-.svg",
+    "captions": {
+      "value": "icons/captions.svg",
       "type": "icon"
     },
     "rotate-left": {
@@ -962,6 +962,22 @@
     },
     "guest": {
       "value": "icons/guest.svg",
+      "type": "icon"
+    },
+    "transcribe": {
+      "value": "icons/transcribe.svg",
+      "type": "icon"
+    },
+    "record": {
+      "value": "icons/record.svg",
+      "type": "icon"
+    },
+    "record-border": {
+      "value": "icons/record-border.svg",
+      "type": "icon"
+    },
+    "record-dot": {
+      "value": "icons/record-dot.svg",
       "type": "icon"
     }
   }

@@ -1,0 +1,23 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+var React = require("react");
+function TranscribeIcon(props, ref) {
+  return /*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    viewBox: "0 0 24 24",
+    ref: ref,
+    ...props,
+    children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M17.633 9.413a2 2 0 0 1 2.829 0l.937.938a2 2 0 0 1 0 2.829l-5.727 5.726q-.037.035-.076.069l-.411.412c-.25.25-.55.419-.869.508q-.03.015-.063.027l-3.158 1.054a1 1 0 0 1-1.266-1.266l1.054-3.158q.012-.038.028-.072c.09-.315.26-.611.507-.859l3.656-3.656.07-.065z"
+    }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M19 3a2 2 0 0 1 2 2v2a1 1 0 1 1-2 0V5H5v14h2a1 1 0 1 1 0 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+    }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M9 15a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm2-4a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm4-4a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z"
+    })]
+  });
+}
+;
+TranscribeIcon.displayName = "TranscribeIcon";
+module.exports = React.forwardRef(TranscribeIcon);
