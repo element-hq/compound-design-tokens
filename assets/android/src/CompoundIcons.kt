@@ -76,6 +76,12 @@ object CompoundIcons {
     @Composable fun Calendar(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_calendar)
     }
+    @Composable fun Captions(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_captions)
+    }
+    @Composable fun CaptionsSolid(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_captions_solid)
+    }
     @Composable fun Chart(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_chart)
     }
@@ -120,12 +126,6 @@ object CompoundIcons {
     }
     @Composable fun Close(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_close)
-    }
-    @Composable fun ClosedCaptions(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_closed_captions)
-    }
-    @Composable fun ClosedCaptionsSolid(): ImageVector {
-        return ImageVector.vectorResource(R.drawable.ic_compound_closed_captions_solid)
     }
     @Composable fun Cloud(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_cloud)
@@ -517,6 +517,15 @@ object CompoundIcons {
     @Composable fun ReactionSolid(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reaction_solid)
     }
+    @Composable fun Record(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_record)
+    }
+    @Composable fun RecordBorder(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_record_border)
+    }
+    @Composable fun RecordDot(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_record_dot)
+    }
     @Composable fun Reply(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_reply)
     }
@@ -633,6 +642,9 @@ object CompoundIcons {
     }
     @Composable fun Time(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_time)
+    }
+    @Composable fun Transcribe(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_transcribe)
     }
     @Composable fun Translate(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_translate)
@@ -765,6 +777,8 @@ object CompoundIcons {
         Bold(),
         Bug(),
         Calendar(),
+        Captions(),
+        CaptionsSolid(),
         Chart(),
         Chat(),
         ChatNew(),
@@ -780,8 +794,6 @@ object CompoundIcons {
         ChevronUpDown(),
         Circle(),
         Close(),
-        ClosedCaptions(),
-        ClosedCaptionsSolid(),
         Cloud(),
         CloudSolid(),
         Code(),
@@ -912,6 +924,9 @@ object CompoundIcons {
         Reaction(),
         ReactionAdd(),
         ReactionSolid(),
+        Record(),
+        RecordBorder(),
+        RecordDot(),
         Reply(),
         Restart(),
         Room(),
@@ -951,6 +966,7 @@ object CompoundIcons {
         Threads(),
         ThreadsSolid(),
         Time(),
+        Transcribe(),
         Translate(),
         Tree(),
         Underline(),
@@ -1009,6 +1025,8 @@ object CompoundIcons {
         R.drawable.ic_compound_bold,
         R.drawable.ic_compound_bug,
         R.drawable.ic_compound_calendar,
+        R.drawable.ic_compound_captions,
+        R.drawable.ic_compound_captions_solid,
         R.drawable.ic_compound_chart,
         R.drawable.ic_compound_chat,
         R.drawable.ic_compound_chat_new,
@@ -1024,8 +1042,6 @@ object CompoundIcons {
         R.drawable.ic_compound_chevron_up_down,
         R.drawable.ic_compound_circle,
         R.drawable.ic_compound_close,
-        R.drawable.ic_compound_closed_captions,
-        R.drawable.ic_compound_closed_captions_solid,
         R.drawable.ic_compound_cloud,
         R.drawable.ic_compound_cloud_solid,
         R.drawable.ic_compound_code,
@@ -1156,6 +1172,9 @@ object CompoundIcons {
         R.drawable.ic_compound_reaction,
         R.drawable.ic_compound_reaction_add,
         R.drawable.ic_compound_reaction_solid,
+        R.drawable.ic_compound_record,
+        R.drawable.ic_compound_record_border,
+        R.drawable.ic_compound_record_dot,
         R.drawable.ic_compound_reply,
         R.drawable.ic_compound_restart,
         R.drawable.ic_compound_room,
@@ -1195,6 +1214,7 @@ object CompoundIcons {
         R.drawable.ic_compound_threads,
         R.drawable.ic_compound_threads_solid,
         R.drawable.ic_compound_time,
+        R.drawable.ic_compound_transcribe,
         R.drawable.ic_compound_translate,
         R.drawable.ic_compound_tree,
         R.drawable.ic_compound_underline,
