@@ -231,7 +231,7 @@ await Promise.all(
     svg = `${svg.slice(0, fillIndex)} fill="currentColor" ${svg.slice(fillIndex)}`;
     svg = optimize(svg, { multipass: true }).data;
 
-    const slug = icon.name.toLowerCase().replace(/\s/g, "-");
+    const slug = icon.name.toLowerCase().replace(/[\s\-]+/g, "-");
     const fileName = `${slug}.svg`;
     manifest[slug] = { value: join(iconsDir, fileName), type: "icon" };
     return writeFile(resolve(cwd(), iconsDir, fileName), svg);
