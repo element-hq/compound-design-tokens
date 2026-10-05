@@ -2,7 +2,7 @@
   "name": "@vector-im/compound-design-tokens",
   "version": "11.1.0",
   "description": "Compound design tokens",
-  "packageManager": "pnpm@12.4.2+sha512.08adc6613180275c7c9edada39dcf08c9c61ad4e7eaf330a4f3461f102b0f907423454d117f98e72d47fef0616070644d7bffc973a6a57f5090a6d7c368b07c9",
+  "packageManager": "pnpm@12.8.2+sha512.a5941679663d952c5f0ecc38ba98af98b4dc01b95780354f6894f2f873973cef2f7e2989d7db3ee5393938ae21f62fe06bcdf685d475ddad829a62095d2b8b11",
   "sideEffects": false,
   "scripts": {
     "build": "vite build && tsx ./build.ts",
