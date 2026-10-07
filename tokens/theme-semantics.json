@@ -369,6 +369,11 @@
           "value": "{color.gray.1100}",
           "type": "color",
           "description": "Default contrast for accessible interactive element borders. State: Hover."
+        },
+        "pressed": {
+          "value": "{color.gray.1400}",
+          "type": "color",
+          "description": "Default contrast for accessible interactive element borders. State: Pressed."
         }
       },
       "critical": {

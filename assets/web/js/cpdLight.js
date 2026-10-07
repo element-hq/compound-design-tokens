@@ -728,6 +728,7 @@ export const cpdColorBorderFocused = "#0467dd";
 export const cpdColorBorderInteractivePrimary = "#818a95";
 export const cpdColorBorderInteractiveSecondary = "#bdc4cc";
 export const cpdColorBorderInteractiveHovered = "#4c5158";
+export const cpdColorBorderInteractivePressed = "#1b1d22";
 export const cpdColorBorderCriticalPrimary = "#d51928";
 export const cpdColorBorderCriticalHovered = "#bc0f22";
 export const cpdColorBorderCriticalSubtle = "#ffc5bc";
