@@ -150,6 +150,7 @@ export { default as PlayIcon } from "./play.js";
 export { default as PlusIcon } from "./plus.js";
 export { default as PollsEndIcon } from "./polls-end.js";
 export { default as PollsIcon } from "./polls.js";
+export { default as PopInIcon } from "./pop-in.js";
 export { default as PopOutIcon } from "./pop-out.js";
 export { default as PreferencesIcon } from "./preferences.js";
 export { default as PresenceOutline8X8Icon } from "./presence-outline-8x8.js";
