@@ -65,6 +65,7 @@
   --cpd-color-border-interactive-primary: var(--cpd-color-gray-800);
   --cpd-color-border-interactive-secondary: var(--cpd-color-gray-600);
   --cpd-color-border-interactive-hovered: var(--cpd-color-gray-1100);
+  --cpd-color-border-interactive-pressed: var(--cpd-color-gray-1400);
   --cpd-color-border-critical-primary: var(--cpd-color-red-900);
   --cpd-color-border-critical-hovered: var(--cpd-color-red-1000);
   --cpd-color-border-critical-subtle: var(--cpd-color-red-500);

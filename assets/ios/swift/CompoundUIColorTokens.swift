@@ -58,6 +58,7 @@ public final class CompoundUIColorTokens: Sendable {
     public let borderFocused = CompoundCoreUIColorTokens.blue900
     public let borderInfoSubtle = CompoundCoreUIColorTokens.blue700
     public let borderInteractiveHovered = CompoundCoreUIColorTokens.gray1100
+    public let borderInteractivePressed = CompoundCoreUIColorTokens.gray1400
     public let borderInteractivePrimary = CompoundCoreUIColorTokens.gray800
     public let borderInteractiveSecondary = CompoundCoreUIColorTokens.gray600
     public let borderSuccessPrimary = CompoundCoreUIColorTokens.green900

@@ -700,6 +700,7 @@ export const cpdColorBorderFocused: string;
 export const cpdColorBorderInteractivePrimary: string;
 export const cpdColorBorderInteractiveSecondary: string;
 export const cpdColorBorderInteractiveHovered: string;
+export const cpdColorBorderInteractivePressed: string;
 export const cpdColorBorderCriticalPrimary: string;
 export const cpdColorBorderCriticalHovered: string;
 export const cpdColorBorderCriticalSubtle: string;

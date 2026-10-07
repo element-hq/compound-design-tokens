@@ -119,6 +119,8 @@ data class SemanticColors(
     val borderInfoSubtle: Color,
     /** Default contrast for accessible interactive element borders. State: Hover. */
     val borderInteractiveHovered: Color,
+    /** Default contrast for accessible interactive element borders. State: Pressed. */
+    val borderInteractivePressed: Color,
     /** Default contrast for accessible interactive element borders. State: Rest. */
     val borderInteractivePrimary: Color,
     /** ⚠️ Lowest contrast for non-accessible interactive element borders, <3:1. Only use for non-essential borders. Do not rely exclusively on them. State: Rest. */
