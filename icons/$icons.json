@@ -208,6 +208,10 @@
       "value": "icons/pop-out.svg",
       "type": "icon"
     },
+    "pop-in": {
+      "value": "icons/pop-in.svg",
+      "type": "icon"
+    },
     "arrow-up-right": {
       "value": "icons/arrow-up-right.svg",
       "type": "icon"

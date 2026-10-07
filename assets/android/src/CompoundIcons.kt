@@ -478,6 +478,9 @@ object CompoundIcons {
     @Composable fun PollsEnd(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_polls_end)
     }
+    @Composable fun PopIn(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_pop_in)
+    }
     @Composable fun PopOut(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_pop_out)
     }
@@ -911,6 +914,7 @@ object CompoundIcons {
         Plus(),
         Polls(),
         PollsEnd(),
+        PopIn(),
         PopOut(),
         Preferences(),
         PresenceOutline8X8(),
@@ -1159,6 +1163,7 @@ object CompoundIcons {
         R.drawable.ic_compound_plus,
         R.drawable.ic_compound_polls,
         R.drawable.ic_compound_polls_end,
+        R.drawable.ic_compound_pop_in,
         R.drawable.ic_compound_pop_out,
         R.drawable.ic_compound_preferences,
         R.drawable.ic_compound_presence_outline_8_x_8,

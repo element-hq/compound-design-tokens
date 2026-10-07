@@ -151,6 +151,7 @@ export const cpdIconUserAdd = "icons/user-add.svg";
 export const cpdIconUser = "icons/user.svg";
 export const cpdIconDelete = "icons/delete.svg";
 export const cpdIconPopOut = "icons/pop-out.svg";
+export const cpdIconPopIn = "icons/pop-in.svg";
 export const cpdIconArrowUpRight = "icons/arrow-up-right.svg";
 export const cpdIconArrowDown = "icons/arrow-down.svg";
 export const cpdIconThreadsSolid = "icons/threads-solid.svg";

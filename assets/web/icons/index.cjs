@@ -151,6 +151,7 @@ module.exports = {
   PlusIcon: require("./plus.cjs"),
   PollsEndIcon: require("./polls-end.cjs"),
   PollsIcon: require("./polls.cjs"),
+  PopInIcon: require("./pop-in.cjs"),
   PopOutIcon: require("./pop-out.cjs"),
   PreferencesIcon: require("./preferences.cjs"),
   PresenceOutline8X8Icon: require("./presence-outline-8x8.cjs"),

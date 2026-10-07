@@ -159,6 +159,7 @@ public final class CompoundIcons: Sendable {
     public let plus = Image("plus", bundle: Bundle.module)
     public let polls = Image("polls", bundle: Bundle.module)
     public let pollsEnd = Image("pollsEnd", bundle: Bundle.module)
+    public let popIn = Image("popIn", bundle: Bundle.module)
     public let popOut = Image("popOut", bundle: Bundle.module)
     public let preferences = Image("preferences", bundle: Bundle.module)
     public let presenceOutline8X8 = Image("presenceOutline8X8", bundle: Bundle.module)

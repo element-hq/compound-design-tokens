@@ -129,6 +129,7 @@ export const cpdIconUserAdd: string;
 export const cpdIconUser: string;
 export const cpdIconDelete: string;
 export const cpdIconPopOut: string;
+export const cpdIconPopIn: string;
 export const cpdIconArrowUpRight: string;
 export const cpdIconArrowDown: string;
 export const cpdIconThreadsSolid: string;
