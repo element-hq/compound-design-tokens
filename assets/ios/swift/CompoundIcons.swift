@@ -21,6 +21,7 @@ public final class CompoundIcons: Sendable {
     public let backspace = Image("backspace", bundle: Bundle.module)
     public let backspaceSolid = Image("backspaceSolid", bundle: Bundle.module)
     public let block = Image("block", bundle: Bundle.module)
+    public let bluetoothOutput = Image("bluetoothOutput", bundle: Bundle.module)
     public let blur = Image("blur", bundle: Bundle.module)
     public let bold = Image("bold", bundle: Bundle.module)
     public let bug = Image("bug", bundle: Bundle.module)

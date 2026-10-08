@@ -64,6 +64,9 @@ object CompoundIcons {
     @Composable fun Block(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_block)
     }
+    @Composable fun BluetoothOutput(): ImageVector {
+        return ImageVector.vectorResource(R.drawable.ic_compound_bluetooth_output)
+    }
     @Composable fun Blur(): ImageVector {
         return ImageVector.vectorResource(R.drawable.ic_compound_blur)
     }
@@ -776,6 +779,7 @@ object CompoundIcons {
         Backspace(),
         BackspaceSolid(),
         Block(),
+        BluetoothOutput(),
         Blur(),
         Bold(),
         Bug(),
@@ -1025,6 +1029,7 @@ object CompoundIcons {
         R.drawable.ic_compound_backspace,
         R.drawable.ic_compound_backspace_solid,
         R.drawable.ic_compound_block,
+        R.drawable.ic_compound_bluetooth_output,
         R.drawable.ic_compound_blur,
         R.drawable.ic_compound_bold,
         R.drawable.ic_compound_bug,

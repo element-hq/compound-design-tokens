@@ -12,6 +12,7 @@ export { default as AudioIcon } from "./audio.js";
 export { default as BackspaceSolidIcon } from "./backspace-solid.js";
 export { default as BackspaceIcon } from "./backspace.js";
 export { default as BlockIcon } from "./block.js";
+export { default as BluetoothOutputIcon } from "./bluetooth-output.js";
 export { default as BlurIcon } from "./blur.js";
 export { default as BoldIcon } from "./bold.js";
 export { default as BugIcon } from "./bug.js";
