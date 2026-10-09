@@ -13,6 +13,7 @@ module.exports = {
   BackspaceSolidIcon: require("./backspace-solid.cjs"),
   BackspaceIcon: require("./backspace.cjs"),
   BlockIcon: require("./block.cjs"),
+  BluetoothOutputIcon: require("./bluetooth-output.cjs"),
   BlurIcon: require("./blur.cjs"),
   BoldIcon: require("./bold.cjs"),
   BugIcon: require("./bug.cjs"),

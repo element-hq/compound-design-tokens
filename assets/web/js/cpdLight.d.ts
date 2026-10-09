@@ -193,6 +193,7 @@ export const cpdIconPlay: string;
 export const cpdIconPause: string;
 export const cpdIconPreferences: string;
 export const cpdIconSidebar: string;
+export const cpdIconBluetoothOutput: string;
 export const cpdIconHomeSolid: string;
 export const cpdIconHome: string;
 export const cpdIconPin: string;

@@ -216,6 +216,7 @@ export const cpdIconPlay = "icons/play.svg";
 export const cpdIconPause = "icons/pause.svg";
 export const cpdIconPreferences = "icons/preferences.svg";
 export const cpdIconSidebar = "icons/sidebar.svg";
+export const cpdIconBluetoothOutput = "icons/bluetooth-output.svg";
 export const cpdIconHomeSolid = "icons/home-solid.svg";
 export const cpdIconHome = "icons/home.svg";
 export const cpdIconPin = "icons/pin.svg";

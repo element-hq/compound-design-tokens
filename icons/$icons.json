@@ -464,6 +464,10 @@
       "value": "icons/sidebar.svg",
       "type": "icon"
     },
+    "bluetooth-output": {
+      "value": "icons/bluetooth-output.svg",
+      "type": "icon"
+    },
     "home-solid": {
       "value": "icons/home-solid.svg",
       "type": "icon"
