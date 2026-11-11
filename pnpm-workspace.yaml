@@ -11,4 +11,3 @@ overrides:
 patchedDependencies:
   # Patch out unconditional import of colorparsley
   apca-w3: patches/apca-w3.patch
-
