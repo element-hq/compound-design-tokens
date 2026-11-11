@@ -1,6 +1,6 @@
 # 🎨 Colors
 
-All of Compound's color tokens are generated from a handful of *key colors* using a script based on Leonardo Color by Adobe. This repository includes a web applet which can be used to visualize the generated color palette and experiment with custom key colors. To launch it, run:
+All of Compound's color tokens are generated from a handful of _key colors_ using a script based on Leonardo Color by Adobe. This repository includes a web applet which can be used to visualize the generated color palette and experiment with custom key colors. To launch it, run:
 
 ```
 pnpm dev:colors

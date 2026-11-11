@@ -27,6 +27,7 @@ Updates to [Compound Icons](https://github.com/element-hq/compound-design-tokens
 - A pull request will be created containing the latest icon changes.
 
 ## Requesting an icon
+
 - Create an icon request in [element-hq/compound](https://github.com/element-hq/compound/issues/new/choose)
 
 ## Removing or changing icons

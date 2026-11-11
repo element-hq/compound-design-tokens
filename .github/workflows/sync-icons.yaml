@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   schedule:
     # Run at least once per week
-    - cron: '20 2 * * WED'
+    - cron: "20 2 * * WED"
 permissions: {}
 env:
   svg2xml_version: 1.0.2
